@@ -447,7 +447,7 @@ body {
 /* Early Access Section */
 .early-access {
     padding: var(--space-20) 0;
-    background-color: var(--background);
+    background-color: var(--background-alt);
 }
 
 .early-access-content {
