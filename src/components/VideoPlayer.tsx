@@ -3,16 +3,16 @@ import React from 'react';
 interface VideoPlayerProps {
   title: string;
   subtitle: string;
-  videoId: string;
-  videoTitle: string;
+  videoSrc: string;
+  posterSrc?: string;
   id?: string;
 }
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({
   title,
   subtitle,
-  videoId,
-  videoTitle,
+  videoSrc,
+  posterSrc,
   id = "video"
 }) => {
   return (
@@ -26,15 +26,15 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         </div>
         <div className="video-container">
           <div className="video-wrapper">
-            <iframe
-              src={`https://www.youtube.com/embed/${videoId}?rel=0&controls=1&iv_load_policy=3&fs=0&disablekb=1`}
-              title={videoTitle}
-              style={{ border: 'none' }}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              className="video-iframe"
-            ></iframe>
+            <video
+              className="video-element"
+              controls
+              preload="metadata"
+              poster={posterSrc}
+            >
+              <source src={videoSrc} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
