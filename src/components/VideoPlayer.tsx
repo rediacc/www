@@ -27,7 +27,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
         <div className="video-container">
           <div className="video-wrapper">
             <iframe
-              src={`https://www.youtube.com/embed/${videoId}`}
+              src={`https://www.youtube.com/embed/${videoId}?rel=0&controls=1&iv_load_policy=3&fs=0&disablekb=1`}
               title={videoTitle}
               style={{ border: 'none' }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
