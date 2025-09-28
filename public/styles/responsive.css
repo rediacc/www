@@ -246,6 +246,18 @@
         padding: var(--space-1) var(--space-3);
     }
 
+    .video-player {
+        padding: var(--space-12) 0;
+    }
+
+    .video-player .section-header {
+        margin-bottom: var(--space-8);
+    }
+
+    .video-container {
+        padding: 0 var(--space-4);
+    }
+
 }
 
 /* Landscape orientation on mobile devices */
@@ -370,5 +382,9 @@
     .form-input::placeholder,
     .form-textarea::placeholder {
         color: var(--text-secondary);
+    }
+
+    .video-player {
+        background-color: var(--background-alt);
     }
 }
