@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero';
 import Problem from '../components/Problem';
 import Solutions from '../components/Solutions';
+import VideoPlayer from '../components/VideoPlayer';
 import EarlyAccess from '../components/EarlyAccess';
 ---
 
@@ -10,6 +11,13 @@ import EarlyAccess from '../components/EarlyAccess';
   <Hero client:load />
   <Problem client:load />
   <Solutions client:load />
+  <VideoPlayer
+    client:load
+    title="See Rediacc in Action"
+    subtitle="Watch how Rediacc transforms infrastructure operations from hours to minutes"
+    videoId="cJ2LeA3kDxw"
+    videoTitle="Rediacc Platform Demo"
+  />
   <EarlyAccess client:load />
 
   <!-- Success/Error Messages -->
