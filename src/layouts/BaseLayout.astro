@@ -1,0 +1,59 @@
+---
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+}
+
+const {
+  title,
+  description = "Infrastructure Automation Platform designed for accelerated development operations. Get early access to instant development environments and next-generation disaster recovery.",
+  keywords = "infrastructure automation, AI operations, disaster recovery, development environments, Model Context Protocol",
+  ogTitle = title,
+  ogDescription = description,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <meta name="keywords" content={keywords}>
+    <meta property="og:title" content={ogTitle}>
+    <meta property="og:description" content={ogDescription}>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content={canonicalURL}>
+    <link rel="canonical" href={canonicalURL}>
+
+    <title>{title}</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLFCSWPL71"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NLFCSWPL71');
+    </script>
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+<body>
+    <Navigation currentPath={Astro.url.pathname} client:load />
+    <main>
+        <slot />
+    </main>
+    <Footer client:load />
+    <script src="/scripts/main.js" is:inline></script>
+</body>
+</html>
