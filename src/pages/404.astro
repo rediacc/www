@@ -1,0 +1,228 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Home', url: '/' },
+  { name: '404 - Page Not Found', url: '/404' }
+];
+---
+
+<BaseLayout
+  title="404 - Page Not Found | Rediacc"
+  description="The page you're looking for could not be found. Browse our infrastructure automation platform or contact us for assistance."
+  keywords="404, page not found, infrastructure automation, Rediacc"
+  ogType="website"
+  structuredDataType="organization"
+>
+  <div class="container">
+    <Breadcrumb items={breadcrumbItems} />
+  </div>
+
+  <section class="error-page">
+    <div class="container">
+      <div class="error-content">
+        <div class="error-illustration">
+          <div class="error-code">404</div>
+          <div class="error-icon">
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="60" cy="60" r="50" stroke="currentColor" stroke-width="4" fill="none" opacity="0.2"/>
+              <path d="M40 45 L80 75 M80 45 L40 75" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="60" cy="60" r="8" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="error-text">
+          <h1 class="error-title">Page Not Found</h1>
+          <p class="error-description">
+            Sorry, the page you're looking for doesn't exist or has been moved.
+            This might happen if you followed an outdated link or typed the URL incorrectly.
+          </p>
+
+          <div class="error-suggestions">
+            <h2>What you can do:</h2>
+            <ul>
+              <li>Check the URL for any typos</li>
+              <li>Go back to the <a href="/">homepage</a></li>
+              <li>Learn about our <a href="/#solutions">infrastructure automation solutions</a></li>
+              <li>Get in touch through our <a href="/contact">contact page</a></li>
+              <li>Request <a href="/#early-access">early access</a> to our platform</li>
+            </ul>
+          </div>
+
+          <div class="error-actions">
+            <a href="/" class="btn btn-primary">Go to Homepage</a>
+            <a href="/contact" class="btn btn-secondary">Contact Support</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="error-help">
+        <h3>Need Help?</h3>
+        <p>
+          If you believe this is an error or you were expecting to find content here,
+          please <a href="/contact">contact our support team</a>. We're here to help you
+          find what you're looking for.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+.error-page {
+  padding: var(--space-20, 5rem) 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.error-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-12, 3rem);
+  align-items: center;
+  margin-bottom: var(--space-16, 4rem);
+}
+
+.error-illustration {
+  text-align: center;
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--primary-color, #667eea);
+  line-height: 1;
+  margin-bottom: var(--space-4, 1rem);
+  opacity: 0.7;
+}
+
+.error-icon {
+  color: var(--text-secondary, #666);
+  margin-bottom: var(--space-4, 1rem);
+}
+
+.error-title {
+  font-size: var(--font-size-4xl, 2.5rem);
+  color: var(--text-primary, #333);
+  margin-bottom: var(--space-4, 1rem);
+  font-weight: 700;
+}
+
+.error-description {
+  font-size: var(--font-size-lg, 1.125rem);
+  color: var(--text-secondary, #666);
+  line-height: 1.6;
+  margin-bottom: var(--space-8, 2rem);
+}
+
+.error-suggestions {
+  margin-bottom: var(--space-8, 2rem);
+}
+
+.error-suggestions h2 {
+  font-size: var(--font-size-xl, 1.25rem);
+  color: var(--text-primary, #333);
+  margin-bottom: var(--space-4, 1rem);
+  font-weight: 600;
+}
+
+.error-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-suggestions li {
+  padding: var(--space-2, 0.5rem) 0;
+  color: var(--text-secondary, #666);
+  border-left: 3px solid var(--primary-color, #667eea);
+  padding-left: var(--space-4, 1rem);
+  margin-bottom: var(--space-2, 0.5rem);
+}
+
+.error-suggestions a {
+  color: var(--primary-color, #667eea);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-suggestions a:hover {
+  text-decoration: underline;
+}
+
+.error-actions {
+  display: flex;
+  gap: var(--space-4, 1rem);
+  flex-wrap: wrap;
+}
+
+.error-help {
+  background: var(--background-alt, #f8f9fa);
+  padding: var(--space-8, 2rem);
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #e9ecef);
+  text-align: center;
+}
+
+.error-help h3 {
+  color: var(--text-primary, #333);
+  margin-bottom: var(--space-4, 1rem);
+  font-size: var(--font-size-xl, 1.25rem);
+  font-weight: 600;
+}
+
+.error-help p {
+  color: var(--text-secondary, #666);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.error-help a {
+  color: var(--primary-color, #667eea);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error-help a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .error-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-8, 2rem);
+    text-align: center;
+  }
+
+  .error-code {
+    font-size: 4rem;
+  }
+
+  .error-title {
+    font-size: var(--font-size-3xl, 2rem);
+  }
+
+  .error-actions {
+    justify-content: center;
+  }
+
+  .error-help {
+    padding: var(--space-6, 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .error-actions {
+    flex-direction: column;
+  }
+
+  .error-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>

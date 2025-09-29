@@ -26,9 +26,11 @@ const Problem: React.FC = () => {
                 <div className="scenario-illustration">
                   <img
                     src="/assets/images/problem.svg"
-                    alt="Problem scenario showing frustrated stakeholders dealing with slow traditional workflows"
+                    alt="Diagram illustrating traditional infrastructure workflow challenges: frustrated developers waiting for environment provisioning, stakeholders demanding faster deployment, and teams resorting to dangerous production testing due to slow sandbox updates"
                     className="scenario-image clickable-image"
-                    onClick={() => openImageModal('/assets/images/problem.svg', 'Problem scenario showing frustrated stakeholders dealing with slow traditional workflows')}
+                    loading="lazy"
+                    decoding="async"
+                    onClick={() => openImageModal('/assets/images/problem.svg', 'Diagram illustrating traditional infrastructure workflow challenges: frustrated developers waiting for environment provisioning, stakeholders demanding faster deployment, and teams resorting to dangerous production testing due to slow sandbox updates')}
                   />
                 </div>
               </div>
@@ -39,9 +41,11 @@ const Problem: React.FC = () => {
                 <div className="scenario-illustration">
                   <img
                     src="/assets/images/solution.svg"
-                    alt="Solution scenario showing Rediacc platform with instant production clones"
+                    alt="Rediacc platform solution diagram: automated infrastructure provisioning, instant production-like environment clones, streamlined developer workflows, and AI-safe operations with Model Context Protocol integration"
                     className="scenario-image clickable-image"
-                    onClick={() => openImageModal('/assets/images/solution.svg', 'Solution scenario showing Rediacc platform with instant production clones')}
+                    loading="lazy"
+                    decoding="async"
+                    onClick={() => openImageModal('/assets/images/solution.svg', 'Rediacc platform solution diagram: automated infrastructure provisioning, instant production-like environment clones, streamlined developer workflows, and AI-safe operations with Model Context Protocol integration')}
                   />
                 </div>
               </div>
