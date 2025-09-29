@@ -416,12 +416,12 @@ let dragOffset = { x: 0, y: 0 };
 // Image gallery data
 const imageGallery = [
     {
-        src: 'assets/images/problem.svg',
+        src: '/assets/images/problem.svg',
         alt: 'Problem scenario showing frustrated stakeholders dealing with slow traditional workflows',
         title: 'The Problem'
     },
     {
-        src: 'assets/images/solution.svg',
+        src: '/assets/images/solution.svg',
         alt: 'Solution scenario showing Rediacc platform with instant production clones',
         title: 'The Solution'
     }
