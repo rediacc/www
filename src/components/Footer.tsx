@@ -4,11 +4,19 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer" role="contentinfo">
+    <footer id="footer" className="footer" role="contentinfo">
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <img src="/assets/images/logo_white.png" alt="Rediacc" className="footer-logo" />
+            <img
+              src="/assets/images/logo_white.png"
+              alt="Rediacc - Infrastructure Automation Platform"
+              className="footer-logo"
+              loading="lazy"
+              decoding="async"
+              width="120"
+              height="40"
+            />
             <p>Infrastructure Automation Platform for AI-Driven Operations</p>
           </div>
           <div className="footer-links">

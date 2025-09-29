@@ -1,6 +1,7 @@
 ---
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import StructuredData from '../components/StructuredData.astro';
 
 export interface Props {
   title: string;
@@ -8,17 +9,26 @@ export interface Props {
   keywords?: string;
   ogTitle?: string;
   ogDescription?: string;
+  ogImage?: string;
+  ogType?: string;
+  structuredDataType?: 'organization' | 'website' | 'service' | 'breadcrumb';
+  structuredData?: any;
 }
 
 const {
   title,
   description = "Infrastructure Automation Platform designed for accelerated development operations. Get early access to instant development environments and next-generation disaster recovery.",
-  keywords = "infrastructure automation, AI operations, disaster recovery, development environments, Model Context Protocol",
+  keywords = "infrastructure automation, AI operations, disaster recovery, development environments, Model Context Protocol, DevOps, CI/CD",
   ogTitle = title,
   ogDescription = description,
+  ogImage = `${Astro.site}favicon.svg`,
+  ogType = "website",
+  structuredDataType = "organization",
+  structuredData = {}
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const isHomePage = Astro.url.pathname === '/';
 ---
 
 <!DOCTYPE html>
@@ -28,13 +38,59 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
     <meta name="keywords" content={keywords}>
+    <meta name="author" content="Rediacc">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#667eea">
+
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={ogType}>
     <meta property="og:title" content={ogTitle}>
     <meta property="og:description" content={ogDescription}>
-    <meta property="og:type" content="website">
+    <meta property="og:image" content={ogImage}>
     <meta property="og:url" content={canonicalURL}>
+    <meta property="og:site_name" content="Rediacc">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content={ogTitle}>
+    <meta name="twitter:description" content={ogDescription}>
+    <meta name="twitter:image" content={ogImage}>
+    <meta name="twitter:site" content="@rediacc">
+    <meta name="twitter:creator" content="@rediacc">
+
+    <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL}>
 
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <!-- Fallback for browsers that don't support SVG favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="16x16">
+    <!-- Apple touch icon fallback to SVG until PNG is generated -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+
     <title>{title}</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/styles/main.css" as="style">
+    <link rel="preload" href="/styles/responsive.css" as="style">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+
+    <!-- Structured Data -->
+    <StructuredData type={structuredDataType} data={structuredData} />
+    {isHomePage && <StructuredData type="website" />}
+    {isHomePage && <StructuredData type="service" />}
+    {isHomePage && <StructuredData type="sitenavigation" />}
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLFCSWPL71"></script>
@@ -47,10 +103,155 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+
+    <!-- Skip Navigation Styles -->
+    <style>
+      .skip-nav {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        z-index: 9999;
+      }
+
+      .skip-nav-link {
+        position: absolute;
+        top: -100px;
+        left: 6px;
+        background: #000;
+        color: #fff;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 0 0 4px 4px;
+        transition: top 0.3s ease;
+        border: 2px solid #fff;
+      }
+
+      .skip-nav-link:focus {
+        top: 0;
+        outline: none;
+      }
+
+      .skip-nav-link:hover:focus {
+        background: #333;
+      }
+    </style>
+
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      /* Critical CSS Variables */
+      :root {
+        --primary-color: #556b2f;
+        --primary-hover: #4c6029;
+        --text-primary: #1e293b;
+        --text-secondary: #64748b;
+        --background: #ffffff;
+        --background-alt: #f8fafc;
+        --border-color: #e2e8f0;
+        --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        --font-size-base: 1rem;
+        --font-size-lg: 1.125rem;
+        --font-size-xl: 1.25rem;
+        --font-size-2xl: 1.5rem;
+        --font-size-3xl: 1.875rem;
+        --font-size-4xl: 2.25rem;
+        --space-2: 0.5rem;
+        --space-4: 1rem;
+        --space-8: 2rem;
+        --space-16: 4rem;
+        --space-20: 5rem;
+        --max-width: 1200px;
+        --border-radius: 0.5rem;
+      }
+
+      /* Critical Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-family);
+        font-size: var(--font-size-base);
+        line-height: 1.6;
+        color: var(--text-primary);
+        background-color: var(--background);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Container */
+      .container {
+        width: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 var(--space-4);
+      }
+
+      /* Critical Navigation Styles */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border-color);
+        z-index: 100;
+      }
+
+      .nav-container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 var(--space-4);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+      }
+
+      .nav-brand .logo {
+        height: 2rem;
+        width: auto;
+      }
+
+      /* Critical Hero Styles */
+      .hero {
+        padding: var(--space-20) 0 var(--space-16);
+        background: linear-gradient(135deg, var(--background) 0%, var(--background-alt) 100%);
+        margin-top: 4rem;
+      }
+
+      .hero-container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 var(--space-4);
+      }
+
+      .hero-title {
+        font-size: var(--font-size-4xl);
+        font-weight: 800;
+        line-height: 1.1;
+        color: var(--text-primary);
+        margin-bottom: var(--space-4);
+      }
+
+      .hero-highlight {
+        color: var(--primary-color);
+      }
+    </style>
 </head>
 <body>
+    <!-- Skip Navigation Links for Accessibility -->
+    <div class="skip-nav">
+      <a href="#main-content" class="skip-nav-link">Skip to main content</a>
+      <a href="#navigation" class="skip-nav-link">Skip to navigation</a>
+      <a href="#footer" class="skip-nav-link">Skip to footer</a>
+    </div>
+
     <Navigation currentPath={Astro.url.pathname} client:load />
-    <main>
+    <main id="main-content">
         <slot />
     </main>
     <Footer client:load />

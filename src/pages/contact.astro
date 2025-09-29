@@ -1,8 +1,32 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+
+const breadcrumbItems = [
+  { name: 'Home', url: '/' },
+  { name: 'Contact', url: '/contact' }
+];
 ---
 
-<BaseLayout title="Contact | Rediacc" description="Get in touch with the Rediacc team for questions, support, or partnership opportunities.">
+<BaseLayout
+  title="Contact Rediacc | Infrastructure Automation Platform Support"
+  description="Get in touch with the Rediacc team for early access, technical support, partnership opportunities, and questions about our infrastructure automation platform."
+  keywords="contact Rediacc, infrastructure automation support, early access program, technical support, partnership opportunities, DevOps consultation"
+  ogType="website"
+  structuredDataType="organization"
+  structuredData={{
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+      email: 'contact@rediacc.com',
+      url: 'https://www.rediacc.com/contact'
+    }
+  }}
+>
+  <div class="container">
+    <Breadcrumb items={breadcrumbItems} />
+  </div>
+
   <section class="hero">
     <div class="hero-container">
       <div class="hero-content">
