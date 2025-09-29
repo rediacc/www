@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
             <p>Infrastructure Automation Platform for AI-Driven Operations</p>
           </div>
           <div className="footer-links">
-            <a href="/" className="footer-link">Home</a>
-            <a href="/contact" className="footer-link">Contact</a>
+            <a href="/" className="footer-link">Return to Home</a>
+            <a href="/contact" className="footer-link">Contact Support</a>
           </div>
         </div>
         <div className="footer-bottom">
