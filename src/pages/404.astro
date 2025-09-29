@@ -1,11 +1,30 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
+import StructuredData from '../components/StructuredData.astro';
 
 const breadcrumbItems = [
   { name: 'Home', url: '/' },
   { name: '404 - Page Not Found', url: '/404' }
 ];
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  'name': '404 - Page Not Found',
+  'description': 'The requested page could not be found on this website.',
+  'url': 'https://www.rediacc.com/404',
+  'mainEntity': {
+    '@type': 'Thing',
+    'name': 'Page Not Found Error',
+    'description': 'HTTP 404 error indicating the requested resource was not found'
+  },
+  'isPartOf': {
+    '@type': 'WebSite',
+    'name': 'Rediacc - Infrastructure Automation Platform',
+    'url': 'https://www.rediacc.com'
+  }
+};
 ---
 
 <BaseLayout
@@ -14,7 +33,13 @@ const breadcrumbItems = [
   keywords="404, page not found, infrastructure automation, Rediacc"
   ogType="website"
   structuredDataType="organization"
+  robots="noindex, nofollow, noarchive, nosnippet"
+  canonical="https://www.rediacc.com/404"
 >
+  <Fragment slot="head">
+    <!-- Custom structured data for 404 page -->
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
+  </Fragment>
   <div class="container">
     <Breadcrumb items={breadcrumbItems} />
   </div>
