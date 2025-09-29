@@ -13,6 +13,8 @@ export interface Props {
   ogType?: string;
   structuredDataType?: 'organization' | 'website' | 'service' | 'breadcrumb';
   structuredData?: any;
+  robots?: string;
+  canonical?: string;
 }
 
 const {
@@ -24,10 +26,12 @@ const {
   ogImage = `${Astro.site}favicon.svg`,
   ogType = "website",
   structuredDataType = "organization",
-  structuredData = {}
+  structuredData = {},
+  robots = "index, follow",
+  canonical
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site);
 const isHomePage = Astro.url.pathname === '/';
 ---
 
@@ -39,7 +43,7 @@ const isHomePage = Astro.url.pathname === '/';
     <meta name="description" content={description}>
     <meta name="keywords" content={keywords}>
     <meta name="author" content="Rediacc">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content={robots}>
     <meta name="theme-color" content="#667eea">
 
     <!-- Security Headers -->
@@ -91,6 +95,9 @@ const isHomePage = Astro.url.pathname === '/';
     {isHomePage && <StructuredData type="website" />}
     {isHomePage && <StructuredData type="service" />}
     {isHomePage && <StructuredData type="sitenavigation" />}
+
+    <!-- Custom head content from pages -->
+    <slot name="head" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLFCSWPL71"></script>
