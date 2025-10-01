@@ -1,23 +1,26 @@
 import React from 'react';
+import { useTranslation } from '../i18n/react';
 
 interface NavigationProps {
   currentPath?: string;
 }
 
 const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
+  const { t } = useTranslation();
+
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: t('navigation.home') },
+    { href: '/contact', label: t('navigation.contact') },
   ];
 
   return (
-    <nav id="navigation" className="nav" role="navigation" aria-label="Main navigation">
+    <nav id="navigation" className="nav" role="navigation" aria-label={t('common.aria.mainNavigation')}>
       <div className="nav-container">
         <div className="nav-brand">
           <a href="/">
             <img
               src="/assets/images/logo_black.png"
-              alt="Rediacc - Infrastructure Automation Platform"
+              alt={t('common.logoAlt')}
               className="logo"
               loading="eager"
               decoding="async"
