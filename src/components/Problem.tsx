@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from '../i18n/react';
 
 const Problem: React.FC = () => {
+  const { t } = useTranslation();
+
   const openImageModal = (src: string, alt: string) => {
     // This function will be available from the global script
     if (typeof window !== 'undefined' && (window as any).openImageModal) {
@@ -12,40 +15,39 @@ const Problem: React.FC = () => {
     <section className="problem" id="problem">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">The Speed Mismatch Crisis</h2>
+          <h2 className="section-title">{t('problem.title')}</h2>
           <p className="section-subtitle">
-            When production environments have terabytes of data but sandbox environments only sync monthly,
-            teams face impossible choices that lead to dangerous workarounds.
+            {t('problem.subtitle')}
           </p>
         </div>
         <div className="problem-content">
           <div className="scenario-grid">
             <div className="scenario-column">
               <div className="problem-scenario">
-                <h3>The Reality: Frustrated Teams, Dangerous Workarounds</h3>
+                <h3>{t('problem.reality.title')}</h3>
                 <div className="scenario-illustration">
                   <img
                     src="/assets/images/problem.svg"
-                    alt="Diagram illustrating traditional infrastructure workflow challenges: frustrated developers waiting for environment provisioning, stakeholders demanding faster deployment, and teams resorting to dangerous production testing due to slow sandbox updates"
+                    alt={t('problem.reality.imageAlt')}
                     className="scenario-image clickable-image"
                     loading="lazy"
                     decoding="async"
-                    onClick={() => openImageModal('/assets/images/problem.svg', 'Diagram illustrating traditional infrastructure workflow challenges: frustrated developers waiting for environment provisioning, stakeholders demanding faster deployment, and teams resorting to dangerous production testing due to slow sandbox updates')}
+                    onClick={() => openImageModal('/assets/images/problem.svg', t('problem.reality.imageAlt'))}
                   />
                 </div>
               </div>
             </div>
             <div className="scenario-column">
               <div className="solution-scenario">
-                <h3>The Solution: Rediacc Platform</h3>
+                <h3>{t('problem.solution.title')}</h3>
                 <div className="scenario-illustration">
                   <img
                     src="/assets/images/solution.svg"
-                    alt="Rediacc platform solution diagram: automated infrastructure provisioning, instant production-like environment clones, streamlined developer workflows, and AI-safe operations with Model Context Protocol integration"
+                    alt={t('problem.solution.imageAlt')}
                     className="scenario-image clickable-image"
                     loading="lazy"
                     decoding="async"
-                    onClick={() => openImageModal('/assets/images/solution.svg', 'Rediacc platform solution diagram: automated infrastructure provisioning, instant production-like environment clones, streamlined developer workflows, and AI-safe operations with Model Context Protocol integration')}
+                    onClick={() => openImageModal('/assets/images/solution.svg', t('problem.solution.imageAlt'))}
                   />
                 </div>
               </div>

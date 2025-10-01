@@ -2,10 +2,13 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import StructuredData from '../components/StructuredData.astro';
+import { createTranslator } from '../i18n/utils';
+
+const { t } = createTranslator();
 
 const breadcrumbItems = [
-  { name: 'Home', url: '/' },
-  { name: '404 - Page Not Found', url: '/404' }
+  { name: t('pages.notFound.breadcrumb.home'), url: '/' },
+  { name: t('pages.notFound.breadcrumb.notFound'), url: '/404' }
 ];
 
 const structuredData = {
@@ -28,9 +31,9 @@ const structuredData = {
 ---
 
 <BaseLayout
-  title="404 - Page Not Found | Rediacc"
-  description="The page you're looking for could not be found. Browse our infrastructure automation platform or contact us for assistance."
-  keywords="404, page not found, infrastructure automation, Rediacc"
+  title={t('pages.notFound.meta.title')}
+  description={t('pages.notFound.meta.description')}
+  keywords={t('pages.notFound.meta.keywords')}
   ogType="website"
   structuredDataType="organization"
   robots="noindex, nofollow, noarchive, nosnippet"
@@ -59,35 +62,34 @@ const structuredData = {
         </div>
 
         <div class="error-text">
-          <h1 class="error-title">Page Not Found</h1>
+          <h1 class="error-title">{t('pages.notFound.title')}</h1>
           <p class="error-description">
-            Sorry, the page you're looking for doesn't exist or has been moved.
-            This might happen if you followed an outdated link or typed the URL incorrectly.
+            {t('pages.notFound.description')}
           </p>
 
           <div class="error-suggestions">
-            <h2>What you can do:</h2>
+            <h2>{t('pages.notFound.suggestions.title')}</h2>
             <ul>
-              <li>Check the URL for any typos</li>
-              <li>Go back to the <a href="/">homepage</a></li>
-              <li>Learn about our <a href="/#solutions">infrastructure automation solutions</a></li>
-              <li>Get in touch through our <a href="/contact">contact page</a></li>
-              <li>Request <a href="/#early-access">early access</a> to our platform</li>
+              <li>{t('pages.notFound.suggestions.items.0')}</li>
+              <li>Go back to the <a href="/">{t('pages.notFound.suggestions.links.homepage')}</a></li>
+              <li>Learn about our <a href="/#solutions">{t('pages.notFound.suggestions.links.solutions')}</a></li>
+              <li>Get in touch through our <a href="/contact">{t('pages.notFound.suggestions.links.contact')}</a></li>
+              <li>Request <a href="/#early-access">{t('pages.notFound.suggestions.links.earlyAccess')}</a> to our platform</li>
             </ul>
           </div>
 
           <div class="error-actions">
-            <a href="/" class="btn btn-primary">Go to Homepage</a>
-            <a href="/contact" class="btn btn-secondary">Contact Support</a>
+            <a href="/" class="btn btn-primary">{t('pages.notFound.actions.homepage')}</a>
+            <a href="/contact" class="btn btn-secondary">{t('pages.notFound.actions.contactSupport')}</a>
           </div>
         </div>
       </div>
 
       <div class="error-help">
-        <h3>Need Help?</h3>
+        <h3>{t('pages.notFound.help.title')}</h3>
         <p>
-          If you believe this is an error or you were expecting to find content here,
-          please <a href="/contact">contact our support team</a>. We're here to help you
+          {t('pages.notFound.help.description')}
+          <a href="/contact">{t('pages.notFound.help.link')}</a>. We're here to help you
           find what you're looking for.
         </p>
       </div>

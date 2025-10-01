@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from '../i18n/react';
 
 interface SolutionCardProps {
   icon: React.ReactNode;
@@ -23,6 +24,9 @@ const SolutionCard: React.FC<SolutionCardProps> = ({ icon, title, description, b
 );
 
 const Solutions: React.FC = () => {
+  const { t, to } = useTranslation();
+  const solutionsData = to('solutions.items');
+
   const solutions = [
     {
       icon: (
@@ -36,13 +40,9 @@ const Solutions: React.FC = () => {
           <path d="M8 36h32l-4 8H12l-4-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none"/>
         </svg>
       ),
-      title: "Accelerated Development Operations",
-      description: "Instant environment provisioning for testing, staging, and development. No more waiting hours or days for production-like environments.",
-      benefits: [
-        "Environment setup from days to minutes",
-        "Instant production-like testing environments",
-        "Streamlined development workflows"
-      ]
+      title: solutionsData[0]?.title || '',
+      description: solutionsData[0]?.description || '',
+      benefits: solutionsData[0]?.benefits || []
     },
     {
       icon: (
@@ -53,13 +53,9 @@ const Solutions: React.FC = () => {
           <path d="M16 28h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
         </svg>
       ),
-      title: "Next-Generation Disaster Recovery",
-      description: "Continuous, lightweight snapshots enable rapid restoration with minimal infrastructure overhead using Smart deduplication storage architecture.",
-      benefits: [
-        "5X-10X reduction in backup overhead",
-        "Minutes instead of hours for recovery",
-        "No costly duplicate infrastructure required"
-      ]
+      title: solutionsData[1]?.title || '',
+      description: solutionsData[1]?.description || '',
+      benefits: solutionsData[1]?.benefits || []
     },
     {
       icon: (
@@ -71,13 +67,9 @@ const Solutions: React.FC = () => {
           <path d="M16 19l8 10 8-10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
-      title: "AI-Safe Infrastructure Operations",
-      description: "Native support for Model Context Protocol (MCP) enabling AI systems like Claude Code and Gemini to safely interact with infrastructure through instant production clones.",
-      benefits: [
-        "Safe sandbox environments for AI experimentation",
-        "Instant production clones for testing",
-        "Zero production risk rollback capabilities"
-      ]
+      title: solutionsData[2]?.title || '',
+      description: solutionsData[2]?.description || '',
+      benefits: solutionsData[2]?.benefits || []
     }
   ];
 
@@ -85,10 +77,9 @@ const Solutions: React.FC = () => {
     <section className="solutions" id="solutions">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Three Converging Solutions</h2>
+          <h2 className="section-title">{t('solutions.title')}</h2>
           <p className="section-subtitle">
-            Rediacc addresses the speed mismatch with instant infrastructure operations
-            designed for the AI era.
+            {t('solutions.subtitle')}
           </p>
         </div>
         <div className="solutions-grid">

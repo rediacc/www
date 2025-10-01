@@ -2,6 +2,9 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import StructuredData from '../components/StructuredData.astro';
+import { createTranslator } from '../i18n/utils';
+
+const { t } = createTranslator();
 
 export interface Props {
   title: string;
@@ -19,8 +22,8 @@ export interface Props {
 
 const {
   title,
-  description = "Infrastructure Automation Platform designed for accelerated development operations. Get early access to instant development environments and next-generation disaster recovery.",
-  keywords = "infrastructure automation, AI operations, disaster recovery, development environments, Model Context Protocol, DevOps, CI/CD",
+  description = t('layout.meta.defaultDescription'),
+  keywords = t('layout.meta.defaultKeywords'),
   ogTitle = title,
   ogDescription = description,
   ogImage = `${Astro.site}favicon.svg`,
@@ -42,13 +45,12 @@ const isHomePage = Astro.url.pathname === '/';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content={description}>
     <meta name="keywords" content={keywords}>
-    <meta name="author" content="Rediacc">
+    <meta name="author" content={t('layout.meta.author')}>
     <meta name="robots" content={robots}>
     <meta name="theme-color" content="#667eea">
 
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
@@ -59,16 +61,16 @@ const isHomePage = Astro.url.pathname === '/';
     <meta property="og:description" content={ogDescription}>
     <meta property="og:image" content={ogImage}>
     <meta property="og:url" content={canonicalURL}>
-    <meta property="og:site_name" content="Rediacc">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content={t('layout.meta.siteName')}>
+    <meta property="og:locale" content={t('layout.meta.locale')}>
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content={ogTitle}>
     <meta name="twitter:description" content={ogDescription}>
     <meta name="twitter:image" content={ogImage}>
-    <meta name="twitter:site" content="@rediacc">
-    <meta name="twitter:creator" content="@rediacc">
+    <meta name="twitter:site" content={t('layout.meta.twitter.site')}>
+    <meta name="twitter:creator" content={t('layout.meta.twitter.creator')}
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL}>
@@ -252,9 +254,9 @@ const isHomePage = Astro.url.pathname === '/';
 <body>
     <!-- Skip Navigation Links for Accessibility -->
     <div class="skip-nav">
-      <a href="#main-content" class="skip-nav-link">Skip to main content</a>
-      <a href="#navigation" class="skip-nav-link">Skip to navigation</a>
-      <a href="#footer" class="skip-nav-link">Skip to footer</a>
+      <a href="#main-content" class="skip-nav-link">{t('common.skipNavigation.skipToMainContent')}</a>
+      <a href="#navigation" class="skip-nav-link">{t('common.skipNavigation.skipToNavigation')}</a>
+      <a href="#footer" class="skip-nav-link">{t('common.skipNavigation.skipToFooter')}</a>
     </div>
 
     <Navigation currentPath={Astro.url.pathname} client:load />

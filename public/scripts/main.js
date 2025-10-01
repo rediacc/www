@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScrolling();
     initFormValidation();
     initMessageOverlay();
-    initFormSubmission();
     initImageModal();
 
     // Add loading states
@@ -318,32 +317,8 @@ function initFormEnhancements() {
         });
     });
 
-    // Character count for textarea
-    const textarea = form.querySelector('.form-textarea');
-    if (textarea) {
-        const maxLength = 500; // Set reasonable limit
-
-        // Create character counter
-        const counter = document.createElement('div');
-        counter.className = 'character-counter';
-        counter.style.cssText = 'font-size: var(--font-size-sm); color: var(--text-light); text-align: right; margin-top: var(--space-1);';
-
-        textarea.parentNode.appendChild(counter);
-
-        const updateCounter = () => {
-            const remaining = maxLength - textarea.value.length;
-            counter.textContent = `${remaining} characters remaining`;
-
-            if (remaining < 50) {
-                counter.style.color = 'var(--error-color)';
-            } else {
-                counter.style.color = 'var(--text-light)';
-            }
-        };
-
-        textarea.addEventListener('input', updateCounter);
-        updateCounter(); // Initial count
-    }
+    // Note: Character counter removed to prevent React hydration mismatch
+    // If needed in future, implement it in React component instead
 }
 
 // Initialize form enhancements
@@ -401,8 +376,9 @@ if ('IntersectionObserver' in window) {
     }, observerOptions);
 
     // Observe sections for animation
+    // Note: Removed .early-access-text to prevent React hydration mismatch
     document.addEventListener('DOMContentLoaded', function() {
-        const animatedElements = document.querySelectorAll('.solution-card, .timeline-item, .early-access-text');
+        const animatedElements = document.querySelectorAll('.solution-card, .timeline-item');
         animatedElements.forEach(el => observer.observe(el));
     });
 }

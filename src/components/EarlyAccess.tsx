@@ -1,21 +1,24 @@
 import React from 'react';
+import { useTranslation } from '../i18n/react';
 
 const EarlyAccess: React.FC = () => {
+  const { t, ta, to } = useTranslation();
+  const benefits = ta('earlyAccess.benefits');
+  const formFields = to('earlyAccess.form.fields');
+
   return (
     <section className="early-access" id="early-access">
       <div className="container">
         <div className="early-access-content">
           <div className="early-access-text">
-            <h2 className="section-title">Get Early Access</h2>
+            <h2 className="section-title">{t('earlyAccess.title')}</h2>
             <p className="section-subtitle">
-              Be among the first to experience infrastructure automation designed for accelerated development.
-              Join our early access program and revolutionize your development workflows.
+              {t('earlyAccess.subtitle')}
             </p>
             <ul className="early-access-benefits">
-              <li>Priority access to Rediacc platform</li>
-              <li>Direct input on feature development</li>
-              <li>Exclusive early adopter pricing</li>
-              <li>Dedicated implementation support</li>
+              {benefits.map((benefit, index) => (
+                <li key={index}>{benefit}</li>
+              ))}
             </ul>
           </div>
           <div className="early-access-form">
@@ -27,7 +30,7 @@ const EarlyAccess: React.FC = () => {
               className="form"
             >
               <div className="form-group">
-                <label htmlFor="name" className="form-label">Full Name *</label>
+                <label htmlFor="name" className="form-label">{formFields.name?.label}</label>
                 <input
                   type="text"
                   id="name"
@@ -35,13 +38,14 @@ const EarlyAccess: React.FC = () => {
                   className="form-input"
                   required
                   aria-describedby="name-error"
-                  autoComplete="name"
+                  autoComplete={formFields.name?.autoComplete}
+                  suppressHydrationWarning
                 />
                 <div className="form-error" id="name-error" role="alert" aria-live="polite"></div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="email" className="form-label">Email Address *</label>
+                <label htmlFor="email" className="form-label">{formFields.email?.label}</label>
                 <input
                   type="email"
                   id="email"
@@ -49,13 +53,14 @@ const EarlyAccess: React.FC = () => {
                   className="form-input"
                   required
                   aria-describedby="email-error"
-                  autoComplete="email"
+                  autoComplete={formFields.email?.autoComplete}
+                  suppressHydrationWarning
                 />
                 <div className="form-error" id="email-error" role="alert" aria-live="polite"></div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="company" className="form-label">Company / Organization *</label>
+                <label htmlFor="company" className="form-label">{formFields.company?.label}</label>
                 <input
                   type="text"
                   id="company"
@@ -63,47 +68,50 @@ const EarlyAccess: React.FC = () => {
                   className="form-input"
                   required
                   aria-describedby="company-error"
-                  autoComplete="organization"
+                  autoComplete={formFields.company?.autoComplete}
+                  suppressHydrationWarning
                 />
                 <div className="form-error" id="company-error" role="alert" aria-live="polite"></div>
               </div>
 
               <div className="form-group">
-                <label htmlFor="role" className="form-label">Role / Title</label>
+                <label htmlFor="role" className="form-label">{formFields.role?.label}</label>
                 <input
                   type="text"
                   id="role"
                   name="role"
                   className="form-input"
-                  autoComplete="organization-title"
+                  autoComplete={formFields.role?.autoComplete}
+                  suppressHydrationWarning
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="use-case" className="form-label">Primary Use Case</label>
+                <label htmlFor="use-case" className="form-label">{formFields.useCase?.label}</label>
                 <select id="use-case" name="use-case" className="form-select">
-                  <option value="">Select your primary interest</option>
-                  <option value="development-acceleration">Accelerated Development Operations</option>
-                  <option value="disaster-recovery">Next-Generation Disaster Recovery</option>
-                  <option value="ai-safe-operations">AI-Safe Infrastructure Operations</option>
-                  <option value="multiple">Multiple Use Cases</option>
-                  <option value="other">Other</option>
+                  <option value="">{formFields.useCase?.options?.placeholder}</option>
+                  <option value="development-acceleration">{formFields.useCase?.options?.developmentAcceleration}</option>
+                  <option value="disaster-recovery">{formFields.useCase?.options?.disasterRecovery}</option>
+                  <option value="ai-safe-operations">{formFields.useCase?.options?.aiSafeOperations}</option>
+                  <option value="multiple">{formFields.useCase?.options?.multiple}</option>
+                  <option value="other">{formFields.useCase?.options?.other}</option>
                 </select>
               </div>
 
               <div className="form-group">
-                <label htmlFor="message" className="form-label">Additional Information</label>
+                <label htmlFor="message" className="form-label">{formFields.message?.label}</label>
                 <textarea
                   id="message"
                   name="message"
                   className="form-textarea"
                   rows={4}
-                  placeholder="Tell us about your infrastructure challenges or specific requirements..."
+                  placeholder={formFields.message?.placeholder}
+                  suppressHydrationWarning
                 />
               </div>
 
               <button type="submit" className="btn btn-primary btn-full">
-                Request Early Access
+                {t('earlyAccess.form.submit')}
               </button>
             </form>
           </div>

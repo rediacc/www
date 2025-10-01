@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from '../i18n/react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useTranslation();
 
   return (
     <footer id="footer" className="footer" role="contentinfo">
@@ -10,22 +12,22 @@ const Footer: React.FC = () => {
           <div className="footer-brand">
             <img
               src="/assets/images/logo_white.png"
-              alt="Rediacc - Infrastructure Automation Platform"
+              alt={t('common.logoAlt')}
               className="footer-logo"
               loading="lazy"
               decoding="async"
               width="120"
               height="40"
             />
-            <p>Infrastructure Automation Platform for AI-Driven Operations</p>
+            <p>{t('footer.tagline')}</p>
           </div>
           <div className="footer-links">
-            <a href="/" className="footer-link">Return to Home</a>
-            <a href="/contact" className="footer-link">Contact Support</a>
+            <a href="/" className="footer-link">{t('footer.links.returnToHome')}</a>
+            <a href="/contact" className="footer-link">{t('footer.links.contactSupport')}</a>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Rediacc. All rights reserved.</p>
+          <p>&copy; {t('footer.copyright', { year: String(currentYear) })}</p>
         </div>
       </div>
     </footer>

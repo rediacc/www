@@ -1,0 +1,264 @@
+{
+  "common": {
+    "siteName": "Rediacc",
+    "logoAlt": "Rediacc - Infrastructure Automation Platform",
+    "buttons": {
+      "close": "Close",
+      "learnMore": "Learn More",
+      "requestEarlyAccess": "Request Early Access",
+      "goToHomepage": "Go to Homepage",
+      "contactSupport": "Contact Support",
+      "sendMessage": "Send Message"
+    },
+    "aria": {
+      "mainNavigation": "Main navigation",
+      "previousImage": "Previous image",
+      "nextImage": "Next image",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "resetZoom": "Reset zoom",
+      "closeImageModal": "Close image modal",
+      "statusMessage": "Status message"
+    },
+    "skipNavigation": {
+      "skipToMainContent": "Skip to main content",
+      "skipToNavigation": "Skip to navigation",
+      "skipToFooter": "Skip to footer"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "footer": {
+    "tagline": "Infrastructure Automation Platform for AI-Driven Operations",
+    "links": {
+      "returnToHome": "Return to Home",
+      "contactSupport": "Contact Support"
+    },
+    "copyright": "{{year}} Rediacc. All rights reserved."
+  },
+  "hero": {
+    "title": "Infrastructure Automation Platform for",
+    "titleHighlight": " Accelerated Development",
+    "subtitle": "Accelerate development workflows with instant environment provisioning and production-like testing. Get accelerated development environments, next-generation disaster recovery, and AI-safe infrastructure operations.",
+    "cta": {
+      "earlyAccess": "Request Early Access",
+      "learnMore": "Learn More"
+    }
+  },
+  "problem": {
+    "title": "The Speed Mismatch Crisis",
+    "subtitle": "When production environments have terabytes of data but sandbox environments only sync monthly, teams face impossible choices that lead to dangerous workarounds.",
+    "reality": {
+      "title": "The Reality: Frustrated Teams, Dangerous Workarounds",
+      "imageAlt": "Diagram illustrating traditional infrastructure workflow challenges: frustrated developers waiting for environment provisioning, stakeholders demanding faster deployment, and teams resorting to dangerous production testing due to slow sandbox updates"
+    },
+    "solution": {
+      "title": "The Solution: Rediacc Platform",
+      "imageAlt": "Rediacc platform solution diagram: automated infrastructure provisioning, instant production-like environment clones, streamlined developer workflows, and AI-safe operations with Model Context Protocol integration"
+    }
+  },
+  "solutions": {
+    "title": "Three Converging Solutions",
+    "subtitle": "Rediacc addresses the speed mismatch with instant infrastructure operations designed for the AI era.",
+    "items": [
+      {
+        "title": "Accelerated Development Operations",
+        "description": "Instant environment provisioning for testing, staging, and development. No more waiting hours or days for production-like environments.",
+        "benefits": [
+          "Environment setup from days to minutes",
+          "Instant production-like testing environments",
+          "Streamlined development workflows"
+        ]
+      },
+      {
+        "title": "Next-Generation Disaster Recovery",
+        "description": "Continuous, lightweight snapshots enable rapid restoration with minimal infrastructure overhead using Smart deduplication storage architecture.",
+        "benefits": [
+          "5X-10X reduction in backup overhead",
+          "Minutes instead of hours for recovery",
+          "No costly duplicate infrastructure required"
+        ]
+      },
+      {
+        "title": "AI-Safe Infrastructure Operations",
+        "description": "Native support for Model Context Protocol (MCP) enabling AI systems like Claude Code and Gemini to safely interact with infrastructure through instant production clones.",
+        "benefits": [
+          "Safe sandbox environments for AI experimentation",
+          "Instant production clones for testing",
+          "Zero production risk rollback capabilities"
+        ]
+      }
+    ]
+  },
+  "earlyAccess": {
+    "title": "Get Early Access",
+    "subtitle": "Be among the first to experience infrastructure automation designed for accelerated development. Join our early access program and revolutionize your development workflows.",
+    "benefits": [
+      "Priority access to Rediacc platform",
+      "Direct input on feature development",
+      "Exclusive early adopter pricing",
+      "Dedicated implementation support"
+    ],
+    "form": {
+      "fields": {
+        "name": {
+          "label": "Full Name *",
+          "autoComplete": "name"
+        },
+        "email": {
+          "label": "Email Address *",
+          "autoComplete": "email"
+        },
+        "company": {
+          "label": "Company / Organization *",
+          "autoComplete": "organization"
+        },
+        "role": {
+          "label": "Role / Title",
+          "autoComplete": "organization-title"
+        },
+        "useCase": {
+          "label": "Primary Use Case",
+          "options": {
+            "placeholder": "Select your primary interest",
+            "developmentAcceleration": "Accelerated Development Operations",
+            "disasterRecovery": "Next-Generation Disaster Recovery",
+            "aiSafeOperations": "AI-Safe Infrastructure Operations",
+            "multiple": "Multiple Use Cases",
+            "other": "Other"
+          }
+        },
+        "message": {
+          "label": "Additional Information",
+          "placeholder": "Tell us about your infrastructure challenges or specific requirements..."
+        }
+      },
+      "submit": "Request Early Access"
+    }
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Rediacc - Infrastructure Automation Platform",
+        "description": "Transform development with Rediacc's infrastructure automation. Get instant environments, disaster recovery & AI-safe operations.",
+        "keywords": "infrastructure automation, development environments, disaster recovery, DevOps automation, CI/CD pipeline, cloud infrastructure, development operations, Model Context Protocol, AI-safe infrastructure"
+      },
+      "imageModal": {
+        "indicator": "{{current}} / {{total}}"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact Rediacc | Infrastructure Automation Platform Support",
+        "description": "Get in touch with the Rediacc team for early access, technical support, partnership opportunities, and questions about our infrastructure automation platform.",
+        "keywords": "contact Rediacc, infrastructure automation support, early access program, technical support, partnership opportunities, DevOps consultation"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "contact": "Contact"
+      },
+      "hero": {
+        "title": "Contact Us",
+        "subtitle": "Ready to revolutionize your infrastructure operations? Get in touch with our team."
+      },
+      "info": {
+        "title": "Get in Touch",
+        "description": "Whether you're interested in early access, have questions about our platform, or want to explore partnership opportunities, we'd love to hear from you.",
+        "methods": {
+          "general": {
+            "title": "General Inquiries",
+            "email": "contact@rediacc.com"
+          },
+          "earlyAccess": {
+            "title": "Early Access Program",
+            "description": "Interested in being among the first to experience Rediacc?",
+            "link": "Request early access"
+          },
+          "technicalSupport": {
+            "title": "Technical Support",
+            "description": "For existing users and technical questions about our platform, please contact our technical support team directly."
+          }
+        }
+      },
+      "form": {
+        "fields": {
+          "name": {
+            "label": "Name *"
+          },
+          "email": {
+            "label": "Email *"
+          },
+          "subject": {
+            "label": "Subject *",
+            "options": {
+              "placeholder": "Select a topic",
+              "earlyAccess": "Early Access Program",
+              "partnership": "Partnership Opportunities",
+              "technical": "Technical Questions",
+              "general": "General Inquiry",
+              "other": "Other"
+            }
+          },
+          "message": {
+            "label": "Message *",
+            "placeholder": "Tell us about your inquiry..."
+          }
+        },
+        "submit": "Send Message"
+      }
+    },
+    "notFound": {
+      "meta": {
+        "title": "404 - Page Not Found | Rediacc",
+        "description": "The page you're looking for could not be found. Browse our infrastructure automation platform or contact us for assistance.",
+        "keywords": "404, page not found, infrastructure automation, Rediacc"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "notFound": "404 - Page Not Found"
+      },
+      "title": "Page Not Found",
+      "description": "Sorry, the page you're looking for doesn't exist or has been moved. This might happen if you followed an outdated link or typed the URL incorrectly.",
+      "suggestions": {
+        "title": "What you can do:",
+        "items": [
+          "Check the URL for any typos",
+          "Go back to the homepage",
+          "Learn about our infrastructure automation solutions",
+          "Get in touch through our contact page",
+          "Request early access to our platform"
+        ],
+        "links": {
+          "homepage": "homepage",
+          "solutions": "infrastructure automation solutions",
+          "contact": "contact page",
+          "earlyAccess": "early access"
+        }
+      },
+      "actions": {
+        "homepage": "Go to Homepage",
+        "contactSupport": "Contact Support"
+      },
+      "help": {
+        "title": "Need Help?",
+        "description": "If you believe this is an error or you were expecting to find content here, please contact our support team. We're here to help you find what you're looking for.",
+        "link": "contact our support team"
+      }
+    }
+  },
+  "layout": {
+    "meta": {
+      "defaultDescription": "Infrastructure Automation Platform designed for accelerated development operations. Get early access to instant development environments and next-generation disaster recovery.",
+      "defaultKeywords": "infrastructure automation, AI operations, disaster recovery, development environments, Model Context Protocol, DevOps, CI/CD",
+      "author": "Rediacc",
+      "siteName": "Rediacc",
+      "locale": "en_US",
+      "twitter": {
+        "site": "@rediacc",
+        "creator": "@rediacc"
+      }
+    }
+  }
+}
