@@ -1,4 +1,6 @@
 ---
+import { CONTACT_EMAIL } from '../config/constants';
+
 export interface Props {
   type?: 'organization' | 'website' | 'service' | 'breadcrumb' | 'sitenavigation';
   data?: any;
@@ -28,7 +30,7 @@ const getStructuredData = (type: string, customData: any = {}) => {
         contactPoint: {
           '@type': 'ContactPoint',
           contactType: 'Customer Service',
-          email: 'contact@rediacc.com',
+          email: CONTACT_EMAIL,
           url: `${baseUrl}/contact`
         },
         address: {
