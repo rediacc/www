@@ -1,5 +1,8 @@
 // Early Access Landing Page JavaScript
 
+// NOTE: Keep this in sync with src/config/constants.ts
+const CONTACT_EMAIL = 'contact@rediacc.com';
+
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize components
     initSmoothScrolling();
@@ -175,12 +178,12 @@ function submitForm(form) {
         form.submit();
 
         // Show success message with fallback info
-        showMessage('success', 'Thank You!', 'Your email client should open with the form data. If it doesn\'t open automatically, please email us at: contact@rediacc.com');
+        showMessage('success', 'Thank You!', `Your email client should open with the form data. If it doesn't open automatically, please email us at: ${CONTACT_EMAIL}`);
         form.reset();
     } catch (error) {
         console.error('Form submission error:', error);
         // Show error message with email address
-        showMessage('error', 'Email Client Issue', 'Unable to open your email client automatically. Please send your request manually to: contact@rediacc.com');
+        showMessage('error', 'Email Client Issue', `Unable to open your email client automatically. Please send your request manually to: ${CONTACT_EMAIL}`);
     }
 
     // Reset button state

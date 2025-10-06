@@ -101,6 +101,11 @@
       "Exclusive early adopter pricing",
       "Dedicated implementation support"
     ],
+    "notice": {
+      "title": "How to Submit",
+      "description": "Clicking submit will open your email client with your information. If this doesn't work, you can email us directly at",
+      "emailLabel": "or copy this email"
+    },
     "form": {
       "fields": {
         "name": {
@@ -181,6 +186,11 @@
             "description": "For existing users and technical questions about our platform, please contact our technical support team directly."
           }
         }
+      },
+      "notice": {
+        "title": "How to Submit",
+        "description": "Clicking submit will open your email client with your message. If this doesn't work, you can email us directly at",
+        "emailLabel": "or copy this email"
       },
       "form": {
         "fields": {
