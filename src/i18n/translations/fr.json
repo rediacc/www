@@ -1,0 +1,360 @@
+{
+  "common": {
+    "aria": {
+      "closeImageModal": "Fermer l'image modale",
+      "mainNavigation": "Navigation principale",
+      "nextImage": "Image suivante",
+      "previousImage": "Image précédente",
+      "resetZoom": "Réinitialiser le zoom",
+      "statusMessage": "Message d'état",
+      "zoomIn": "Zoomer",
+      "zoomOut": "Zoom arrière"
+    },
+    "buttons": {
+      "close": "Fermer",
+      "contactSupport": "Contacter l'assistance",
+      "goToHomepage": "Aller à la page d'accueil",
+      "learnMore": "Apprendre encore plus",
+      "requestEarlyAccess": "Demander un accès anticipé",
+      "sendMessage": "Envoyer un message"
+    },
+    "logoAlt": "Rediacc - Plateforme d'automatisation des infrastructures",
+    "search": {
+      "closeModal": "Fermer la recherche",
+      "keyboardShortcut": "⌘K pour rechercher",
+      "navigate": "Naviguer",
+      "noResults": "Aucun résultat trouvé",
+      "placeholder": "Rechercher de la documentation, des solutions, des fonctionnalités...",
+      "searching": "Recherche...",
+      "select": "Sélectionner",
+      "suggestions": {
+        "browseSolutions": "Parcourir notre page de solutions",
+        "checkSpelling": "Vérifier votre orthographe",
+        "contactSupport": "Contacter notre équipe d'assistance",
+        "differentKeywords": "Différents mots-clés ou termes plus courts",
+        "title": "Essayer:"
+      }
+    },
+    "siteName": "Rediac",
+    "skipNavigation": {
+      "skipToFooter": "Passer au pied de page",
+      "skipToMainContent": "Passer au contenu principal",
+      "skipToNavigation": "Passer à la navigation"
+    }
+  },
+  "earlyAccess": {
+    "benefits": [
+      "Accès prioritaire à la plateforme Rediacc",
+      "Contribution directe au développement de fonctionnalités",
+      "Tarifs exclusifs pour les premiers utilisateurs",
+      "Assistance dédiée à la mise en œuvre"
+    ],
+    "form": {
+      "fields": {
+        "company": {
+          "autoComplete": "organisation",
+          "label": "Entreprise / Organisation *"
+        },
+        "email": {
+          "autoComplete": "e-mail",
+          "label": "Adresse e-mail *"
+        },
+        "message": {
+          "label": "Informations Complémentaires",
+          "placeholder": "Parlez-nous de vos défis en matière d'infrastructure ou de vos besoins spécifiques..."
+        },
+        "name": {
+          "autoComplete": "nom",
+          "label": "Nom et prénom *"
+        },
+        "role": {
+          "autoComplete": "titre de l'organisation",
+          "label": "Rôle/Titre"
+        },
+        "useCase": {
+          "label": "Cas d'utilisation principal",
+          "options": {
+            "aiSafeOperations": "Protection de la cybersécurité",
+            "developmentAcceleration": "Accélération du développement",
+            "disasterRecovery": "Reprise après sinistre",
+            "multiple": "Cas d'utilisation multiples",
+            "other": "Autre",
+            "placeholder": "Sélectionnez votre intérêt principal"
+          }
+        }
+      },
+      "submit": "Demander un accès anticipé"
+    },
+    "notice": {
+      "description": "En cliquant sur Soumettre, vous ouvrirez votre client de messagerie avec vos informations. Si cela ne fonctionne pas, vous pouvez nous envoyer un email directement à",
+      "emailLabel": "ou copiez cet email",
+      "title": "Comment soumettre"
+    },
+    "subtitle": "Rejoignez notre programme d'accès anticipé et bénéficiez d'une reprise après sinistre vérifiée, d'une protection contre les ransomwares et d'une indépendance de l'infrastructure.",
+    "title": "Obtenez un accès anticipé"
+  },
+  "footer": {
+    "columns": {
+      "company": "Entreprise",
+      "legal": "Légale",
+      "product": "Produit",
+      "support": "Soutien"
+    },
+    "companyLinks": {
+      "aboutUs": "À propos de nous",
+      "contact": "Contact"
+    },
+    "copyright": "{{année}} Rediacc. Tous droits réservés.",
+    "legalLinks": {
+      "privacyPolicy": "politique de confidentialité",
+      "termsOfUse": "Conditions d'utilisation"
+    },
+    "links": {
+      "contactSupport": "Contacter l'assistance",
+      "returnToHome": "Retour à la maison"
+    },
+    "productLinks": {
+      "overview": "Aperçu",
+      "solutions": "Solutions"
+    },
+    "supportLinks": {
+      "contactSupport": "Contacter l'assistance",
+      "helpCenter": "Centre d'aide"
+    },
+    "tagline": "Plateforme d'automatisation de l'infrastructure pour les opérations basées sur l'IA"
+  },
+  "hero": {
+    "cta": {
+      "contactUs": "Contactez-nous",
+      "learnMore": "Apprendre encore plus"
+    },
+    "subtitle": "Reprise après sinistre vérifiée. Protection contre les rançongiciels. Zéro dépendance envers un fournisseur.",
+    "title": "Infrastructure qui",
+    "titleHighlight": "Fonctionne tout simplement"
+  },
+  "layout": {
+    "meta": {
+      "author": "Rediac",
+      "defaultDescription": "Plateforme d'automatisation d'infrastructure conçue pour les opérations de développement accélérées. Bénéficiez d’un accès anticipé aux environnements de développement instantanés et à la reprise après sinistre de nouvelle génération.",
+      "defaultKeywords": "automatisation des infrastructures, opérations d'IA, reprise après sinistre, environnements de développement, Model Context Protocol, DevOps, CI/CD",
+      "locale": "et_US",
+      "siteName": "Rediac",
+      "twitter": {
+        "creator": "@rediacc",
+        "site": "@rediacc"
+      }
+    }
+  },
+  "navigation": {
+    "blog": "Blogue",
+    "contact": "Contact",
+    "docs": "Documents",
+    "home": "Maison",
+    "login": "Se connecter",
+    "search": "Recherche",
+    "solutions": {
+      "cybersecurity": "Cybersécurité",
+      "development": "Développement",
+      "disasterRecovery": "Reprise après sinistre"
+    },
+    "toggleMenu": "Changer de menu"
+  },
+  "pages": {
+    "blog": {
+      "allArticles": "Tous les articles",
+      "backToBlog": "Retour au blog",
+      "byAuthor": "Par {{auteur}}",
+      "category": "Catégorie",
+      "featured": "Articles en vedette",
+      "meta": {
+        "description": "Lisez des informations, des guides et des mises à jour sur l'exécution de tâches distribuées, l'automatisation de l'infrastructure et les meilleures pratiques DevOps.",
+        "keywords": "blog sur l'automatisation de l'infrastructure, guides DevOps, systèmes distribués, exécution de tâches, infrastructure cloud",
+        "title": "Blogue | Rediacc - Informations sur l'automatisation de l'infrastructure"
+      },
+      "published": "Publié",
+      "readMore": "En savoir plus",
+      "relatedArticles": "Articles connexes",
+      "sharingIs": "Partager, c'est prendre soin",
+      "subtitle": "Informations, guides et mises à jour sur l'exécution de tâches distribuées",
+      "title": "Blogue"
+    },
+    "contact": {
+      "breadcrumb": {
+        "contact": "Contact",
+        "home": "Maison"
+      },
+      "form": {
+        "fields": {
+          "email": {
+            "label": "E-mail *"
+          },
+          "message": {
+            "label": "Message *",
+            "placeholder": "Parlez-nous de votre demande..."
+          },
+          "name": {
+            "label": "Nom *"
+          },
+          "subject": {
+            "label": "Sujet *",
+            "options": {
+              "earlyAccess": "Programme d'accès anticipé",
+              "general": "Enquête générale",
+              "other": "Autre",
+              "partnership": "Opportunités de partenariat",
+              "placeholder": "Sélectionnez un sujet",
+              "technical": "Questions techniques"
+            }
+          }
+        },
+        "submit": "Envoyer un message"
+      },
+      "hero": {
+        "subtitle": "Prêt à révolutionner vos opérations d’infrastructure ? Prenez contact avec notre équipe.",
+        "title": "Contactez-nous"
+      },
+      "info": {
+        "description": "Que vous soyez intéressé par un accès anticipé, que vous ayez des questions sur notre plateforme ou que vous souhaitiez explorer des opportunités de partenariat, nous serions ravis d'avoir de vos nouvelles.",
+        "methods": {
+          "earlyAccess": {
+            "description": "Vous souhaitez être parmi les premiers à découvrir Rediacc ?",
+            "link": "Demander un accès anticipé",
+            "title": "Programme d'accès anticipé"
+          },
+          "general": {
+            "email": "contact@rediacc.com",
+            "title": "Demandes générales"
+          },
+          "technicalSupport": {
+            "description": "Pour les utilisateurs existants et les questions techniques sur notre plateforme, veuillez contacter directement notre équipe d’assistance technique.",
+            "title": "Assistance technique"
+          }
+        },
+        "title": "Entrer en contact"
+      },
+      "meta": {
+        "description": "Contactez l'équipe Rediacc pour un accès anticipé, une assistance technique, des opportunités de partenariat et des questions sur notre plateforme d'automatisation de l'infrastructure.",
+        "keywords": "contactez Rediacc, support pour l'automatisation de l'infrastructure, programme d'accès anticipé, support technique, opportunités de partenariat, consultation DevOps",
+        "title": "Contacter Rediacc | Prise en charge de la plateforme d'automatisation de l'infrastructure"
+      },
+      "notice": {
+        "description": "En cliquant sur Soumettre, vous ouvrirez votre client de messagerie avec votre message. Si cela ne fonctionne pas, vous pouvez nous envoyer un email directement à",
+        "emailLabel": "ou copiez cet email",
+        "title": "Comment soumettre"
+      }
+    },
+    "docs": {
+      "allDocumentation": "Toute la documentation",
+      "backToDocs": "Retour aux documents",
+      "cliReference": "Référence CLI",
+      "cliReferenceDesc": "Référence complète pour toutes les commandes et options de l’interface de ligne de commande.",
+      "gettingStarted": "Commencer",
+      "gettingStartedDesc": "Nouveau sur Rediacc ? Commencez par les bases et apprenez les concepts fondamentaux.",
+      "meta": {
+        "description": "Découvrez comment utiliser Rediacc avec notre documentation complète, nos guides et notre référence API pour l'exécution de tâches distribuées.",
+        "keywords": "documentation, référence API, guides, automatisation de l'infrastructure, référence CLI, système de file d'attente",
+        "title": "Documents | Rediacc - Plateforme d'automatisation des infrastructures"
+      },
+      "queueSystem": "Système de file d'attente",
+      "queueSystemDesc": "Comprenez comment les tâches sont gérées et exécutées sur les machines.",
+      "subtitle": "Apprenez à utiliser Rediacc et à maîtriser l'exécution de tâches distribuées",
+      "tableOfContents": "Sur cette page",
+      "title": "Documentation",
+      "welcome": "Bienvenue dans la documentation Rediacc",
+      "welcomeDescription": "Rediacc est un puissant système d'exécution de tâches distribuées. Que vous débutiez ou cherchiez à maîtriser des fonctionnalités avancées, vous trouverez ici tout ce dont vous avez besoin."
+    },
+    "home": {
+      "imageModal": {
+        "indicator": "{{actuel}} / {{total}}"
+      },
+      "meta": {
+        "description": "Transformez le développement avec l'automatisation de l'infrastructure de Rediacc. Bénéficiez d’environnements instantanés, d’une reprise après sinistre et d’opérations sécurisées par l’IA.",
+        "keywords": "automatisation de l'infrastructure, environnements de développement, reprise après sinistre, automatisation DevOps, pipeline CI/CD, infrastructure cloud, opérations de développement, Model Context Protocol, infrastructure sécurisée pour l'IA",
+        "title": "Rediacc - Plateforme d'automatisation des infrastructures"
+      }
+    },
+    "notFound": {
+      "actions": {
+        "contactSupport": "Contacter l'assistance",
+        "homepage": "Aller à la page d'accueil"
+      },
+      "breadcrumb": {
+        "home": "Maison",
+        "notFound": "404 - Page introuvable"
+      },
+      "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée. Cela peut se produire si vous avez suivi un lien obsolète ou si vous avez mal saisi l'URL.",
+      "help": {
+        "description": "Si vous pensez qu'il s'agit d'une erreur ou si vous vous attendiez à trouver du contenu ici, veuillez contacter notre équipe d'assistance. Nous sommes là pour vous aider à trouver ce que vous cherchez.",
+        "link": "contactez notre équipe d'assistance",
+        "title": "Besoin d'aide ?"
+      },
+      "meta": {
+        "description": "La page que vous recherchez est introuvable. Parcourez notre plateforme d’automatisation des infrastructures ou contactez-nous pour obtenir de l’aide.",
+        "keywords": "404, page introuvable, automatisation de l'infrastructure, Rediacc",
+        "title": "404 - Page introuvable | Rediac"
+      },
+      "suggestions": {
+        "items": [
+          "Vérifiez l'URL pour toute faute de frappe",
+          "Retourner à la page d'accueil",
+          "Découvrez nos solutions d’automatisation des infrastructures",
+          "Contactez-nous via notre page contact",
+          "Demandez un accès anticipé à notre plateforme"
+        ],
+        "links": {
+          "contact": "page de contact",
+          "earlyAccess": "accès anticipé",
+          "homepage": "page d'accueil",
+          "solutions": "solutions d'automatisation des infrastructures"
+        },
+        "title": "Ce que vous pouvez faire :"
+      },
+      "title": "Page introuvable"
+    }
+  },
+  "problem": {
+    "reality": {
+      "imageAlt": "Diagramme illustrant les défis liés aux flux de travail d'infrastructure traditionnels : développeurs frustrés attendant le provisionnement de l'environnement, parties prenantes exigeant un déploiement plus rapide et équipes ayant recours à des tests de production dangereux en raison de la lenteur des mises à jour du bac à sable.",
+      "title": "La réalité : des équipes frustrées, des solutions de contournement dangereuses"
+    },
+    "solution": {
+      "imageAlt": "Schéma de solution de la plate-forme Rediacc : provisionnement automatisé de l'infrastructure, clones d'environnement de type production instantanés, flux de travail de développement rationalisés et opérations sécurisées pour l'IA avec intégration du protocole de contexte de modèle",
+      "title": "La solution : la plateforme Rediacc"
+    },
+    "subtitle": "Lorsque les environnements de production contiennent des téraoctets de données mais que les environnements sandbox ne se synchronisent que mensuellement, les équipes sont confrontées à des choix impossibles qui conduisent à des solutions de contournement dangereuses.",
+    "title": "La crise du décalage de vitesse"
+  },
+  "solutions": {
+    "items": [
+      {
+        "benefits": [
+          "Sauvegardes testées automatiquement, pas seulement effectuées",
+          "Conservez des mois d'historique, pas seulement 1 à 3 copies",
+          "Protection interrégionale intégrée"
+        ],
+        "description": "Vos sauvegardes fonctionnent. Nous les vérifions.",
+        "title": "Reprise après sinistre"
+      },
+      {
+        "benefits": [
+          "Sauvegardes immuables que le ransomware ne peut pas toucher",
+          "Chaque VM sauvegardée avec un état propre vérifié",
+          "Environnements de tests d'intrusion sans risque"
+        ],
+        "description": "Les ransomwares ne peuvent pas chiffrer ce qu’ils ne peuvent atteindre.",
+        "title": "Protection de la cybersécurité"
+      },
+      {
+        "benefits": [
+          "Fonctionne avec n'importe quel système d'exploitation, VM ou fournisseur de cloud",
+          "Mises à niveau sécurisées de PostgreSQL et modifications de schéma",
+          "Testez les charges de travail GPU avant d'acheter du matériel"
+        ],
+        "description": "Testez les migrations avant de vous engager.",
+        "title": "Accélération du développement"
+      }
+    ],
+    "subtitle": "Trois problèmes critiques qui empêchent les équipes d’infrastructure de dormir la nuit.",
+    "title": "Ce que nous résolvons"
+  }
+}

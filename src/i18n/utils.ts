@@ -1,8 +1,24 @@
 import type { Language, InterpolationParams } from './types';
 import enTranslations from './translations/en.json';
+import deTranslations from './translations/de.json';
+import esTranslations from './translations/es.json';
+import frTranslations from './translations/fr.json';
+import jaTranslations from './translations/ja.json';
+import arTranslations from './translations/ar.json';
+import ruTranslations from './translations/ru.json';
+import trTranslations from './translations/tr.json';
+import zhTranslations from './translations/zh.json';
 
 const translations = {
   en: enTranslations,
+  de: deTranslations,
+  es: esTranslations,
+  fr: frTranslations,
+  ja: jaTranslations,
+  ar: arTranslations,
+  ru: ruTranslations,
+  tr: trTranslations,
+  zh: zhTranslations,
 };
 
 /**

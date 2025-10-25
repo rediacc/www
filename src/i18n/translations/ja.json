@@ -1,0 +1,360 @@
+{
+  "common": {
+    "aria": {
+      "closeImageModal": "画像モーダルを閉じる",
+      "mainNavigation": "メインナビゲーション",
+      "nextImage": "次の画像",
+      "previousImage": "前の画像",
+      "resetZoom": "ズームをリセットする",
+      "statusMessage": "ステータスメッセージ",
+      "zoomIn": "ズームイン",
+      "zoomOut": "ズームアウト"
+    },
+    "buttons": {
+      "close": "近い",
+      "contactSupport": "サポートに連絡する",
+      "goToHomepage": "ホームページへ行く",
+      "learnMore": "もっと詳しく知る",
+      "requestEarlyAccess": "早期アクセスをリクエストする",
+      "sendMessage": "メッセージを送信する"
+    },
+    "logoAlt": "Rediacc - インフラストラクチャ自動化プラットフォーム",
+    "search": {
+      "closeModal": "検索を閉じる",
+      "keyboardShortcut": "⌘Kで検索",
+      "navigate": "ナビゲート",
+      "noResults": "結果が見つかりませんでした",
+      "placeholder": "ドキュメント、ソリューション、機能を検索...",
+      "searching": "検索中...",
+      "select": "選択",
+      "suggestions": {
+        "browseSolutions": "ソリューションページの閲覧",
+        "checkSpelling": "スペルをチェックする",
+        "contactSupport": "サポートチームへのお問い合わせ",
+        "differentKeywords": "異なるキーワードまたは短い用語",
+        "title": "試す："
+      }
+    },
+    "siteName": "レディアク",
+    "skipNavigation": {
+      "skipToFooter": "フッターにスキップ",
+      "skipToMainContent": "メインコンテンツにスキップ",
+      "skipToNavigation": "ナビゲーションにスキップ"
+    }
+  },
+  "earlyAccess": {
+    "benefits": [
+      "Rediacc プラットフォームへの優先アクセス",
+      "機能開発に関する直接の意見",
+      "早期導入者限定の価格設定",
+      "専用の導入サポート"
+    ],
+    "form": {
+      "fields": {
+        "company": {
+          "autoComplete": "組織",
+          "label": "会社・団体 *"
+        },
+        "email": {
+          "autoComplete": "電子メール",
+          "label": "電子メールアドレス *"
+        },
+        "message": {
+          "label": "追加情報",
+          "placeholder": "インフラストラクチャの課題や具体的な要件についてお聞かせください..."
+        },
+        "name": {
+          "autoComplete": "名前",
+          "label": "フルネーム *"
+        },
+        "role": {
+          "autoComplete": "組織のタイトル",
+          "label": "役割・役職"
+        },
+        "useCase": {
+          "label": "主な使用例",
+          "options": {
+            "aiSafeOperations": "サイバーセキュリティ保護",
+            "developmentAcceleration": "開発の加速",
+            "disasterRecovery": "災害復旧",
+            "multiple": "複数の使用例",
+            "other": "他の",
+            "placeholder": "主な興味を選択してください"
+          }
+        }
+      },
+      "submit": "早期アクセスをリクエストする"
+    },
+    "notice": {
+      "description": "「送信」をクリックすると、電子メール クライアントが開き、あなたの情報が表示されます。 これで問題が解決しない場合は、次のアドレスに直接メールしてください。",
+      "emailLabel": "またはこのメールをコピーしてください",
+      "title": "提出方法"
+    },
+    "subtitle": "早期アクセス プログラムに参加して、検証済みの災害復旧、ランサムウェア保護、インフラストラクチャの独立性を取得してください。",
+    "title": "早期アクセスを入手"
+  },
+  "footer": {
+    "columns": {
+      "company": "会社",
+      "legal": "法律上の",
+      "product": "製品",
+      "support": "サポート"
+    },
+    "companyLinks": {
+      "aboutUs": "私たちについて",
+      "contact": "接触"
+    },
+    "copyright": "{{年}} レディアック。 無断転載を禁じます。",
+    "legalLinks": {
+      "privacyPolicy": "プライバシーポリシー",
+      "termsOfUse": "利用規約"
+    },
+    "links": {
+      "contactSupport": "サポートに連絡する",
+      "returnToHome": "ホームに戻る"
+    },
+    "productLinks": {
+      "overview": "概要",
+      "solutions": "ソリューション"
+    },
+    "supportLinks": {
+      "contactSupport": "サポートに連絡する",
+      "helpCenter": "ヘルプセンター"
+    },
+    "tagline": "AI主導の運用のためのインフラストラクチャ自動化プラットフォーム"
+  },
+  "hero": {
+    "cta": {
+      "contactUs": "お問い合わせ",
+      "learnMore": "もっと詳しく知る"
+    },
+    "subtitle": "災害復旧を確認しました。 ランサムウェアからの保護。 ベンダーロックインゼロ。",
+    "title": "インフラストラクチャ",
+    "titleHighlight": "ジャストワークス"
+  },
+  "layout": {
+    "meta": {
+      "author": "レディアク",
+      "defaultDescription": "開発運用を加速するために設計されたインフラストラクチャ自動化プラットフォーム。 インスタント開発環境と次世代の災害復旧に早期にアクセスできます。",
+      "defaultKeywords": "インフラストラクチャの自動化、AI 運用、災害復旧、開発環境、モデル コンテキスト プロトコル、DevOps、CI/CD",
+      "locale": "and_US",
+      "siteName": "レディアク",
+      "twitter": {
+        "creator": "@rediacc",
+        "site": "@rediacc"
+      }
+    }
+  },
+  "navigation": {
+    "blog": "ブログ",
+    "contact": "接触",
+    "docs": "ドキュメント",
+    "home": "家",
+    "login": "ログイン",
+    "search": "検索",
+    "solutions": {
+      "cybersecurity": "サイバーセキュリティ",
+      "development": "発達",
+      "disasterRecovery": "災害復旧"
+    },
+    "toggleMenu": "メニューの切り替え"
+  },
+  "pages": {
+    "blog": {
+      "allArticles": "すべての記事",
+      "backToBlog": "ブログに戻る",
+      "byAuthor": "投稿者: {{著者}}",
+      "category": "カテゴリ",
+      "featured": "注目の記事",
+      "meta": {
+        "description": "分散タスクの実行、インフラストラクチャの自動化、DevOps のベスト プラクティスに関する洞察、ガイド、最新情報をお読みください。",
+        "keywords": "インフラストラクチャ自動化ブログ、DevOps ガイド、分散システム、タスク実行、クラウド インフラストラクチャ",
+        "title": "ブログ | Rediacc - インフラストラクチャ自動化の洞察"
+      },
+      "published": "発行済み",
+      "readMore": "続きを読む",
+      "relatedArticles": "関連記事",
+      "sharingIs": "共有することは思いやりです",
+      "subtitle": "分散タスクの実行に関する洞察、ガイド、最新情報",
+      "title": "ブログ"
+    },
+    "contact": {
+      "breadcrumb": {
+        "contact": "接触",
+        "home": "家"
+      },
+      "form": {
+        "fields": {
+          "email": {
+            "label": "電子メール *"
+          },
+          "message": {
+            "label": "メッセージ *",
+            "placeholder": "お問い合わせ内容をお知らせください..."
+          },
+          "name": {
+            "label": "名前 *"
+          },
+          "subject": {
+            "label": "主題 *",
+            "options": {
+              "earlyAccess": "早期アクセス プログラム",
+              "general": "一般的なお問い合わせ",
+              "other": "他の",
+              "partnership": "パートナーシップの機会",
+              "placeholder": "トピックを選択してください",
+              "technical": "技術的な質問"
+            }
+          }
+        },
+        "submit": "メッセージを送信する"
+      },
+      "hero": {
+        "subtitle": "インフラストラクチャ運用に革命を起こす準備はできていますか? 私たちのチームにご連絡ください。",
+        "title": "お問い合わせ"
+      },
+      "info": {
+        "description": "早期アクセスに興味がある場合でも、当社のプラットフォームについて質問がある場合でも、パートナーシップの機会を検討したい場合でも、ぜひご連絡をお待ちしております。",
+        "methods": {
+          "earlyAccess": {
+            "description": "Rediacc をいち早く体験してみませんか?",
+            "link": "早期アクセスをリクエストする",
+            "title": "早期アクセス プログラム"
+          },
+          "general": {
+            "email": "contact@rediacc.com",
+            "title": "一般的なお問い合わせ"
+          },
+          "technicalSupport": {
+            "description": "既存のユーザーおよびプラットフォームに関する技術的な質問については、テクニカル サポート チームに直接お問い合わせください。",
+            "title": "テクニカルサポート"
+          }
+        },
+        "title": "連絡する"
+      },
+      "meta": {
+        "description": "早期アクセス、テクニカル サポート、パートナーシップの機会、インフラストラクチャ自動化プラットフォームに関する質問については、Rediacc チームにお問い合わせください。",
+        "keywords": "Rediacc へのお問い合わせ、インフラストラクチャ自動化サポート、早期アクセス プログラム、テクニカル サポート、パートナーシップの機会、DevOps コンサルティング",
+        "title": "Rediacc にお問い合わせください | インフラストラクチャ自動化プラットフォームのサポート"
+      },
+      "notice": {
+        "description": "「送信」をクリックすると、電子メール クライアントが開き、メッセージが表示されます。 これで問題が解決しない場合は、次のアドレスに直接メールしてください。",
+        "emailLabel": "またはこのメールをコピーしてください",
+        "title": "提出方法"
+      }
+    },
+    "docs": {
+      "allDocumentation": "すべてのドキュメント",
+      "backToDocs": "ドキュメントに戻る",
+      "cliReference": "CLI リファレンス",
+      "cliReferenceDesc": "すべてのコマンドライン インターフェイスのコマンドとオプションの完全なリファレンス。",
+      "gettingStarted": "はじめる",
+      "gettingStartedDesc": "Rediacc を初めてご利用ですか? 基本から始めて、基本的な概念を学びます。",
+      "meta": {
+        "description": "分散タスク実行のための包括的なドキュメント、ガイド、API リファレンスを使用して、Rediacc の使用方法を学びます。",
+        "keywords": "ドキュメント、API リファレンス、ガイド、インフラストラクチャ自動化、CLI リファレンス、キュー システム",
+        "title": "ドキュメント | Rediacc - インフラストラクチャ自動化プラットフォーム"
+      },
+      "queueSystem": "キューシステム",
+      "queueSystemDesc": "複数のマシン間でタスクがどのように管理および実行されるかを理解します。",
+      "subtitle": "Rediacc の使用方法を学び、分散タスクの実行をマスターする",
+      "tableOfContents": "このページでは",
+      "title": "ドキュメント",
+      "welcome": "Rediacc ドキュメントへようこそ",
+      "welcomeDescription": "Rediacc は、強力な分散タスク実行システムです。 始めたばかりの場合でも、高度な機能をマスターしたい場合でも、必要なものはすべてここで見つかります。"
+    },
+    "home": {
+      "imageModal": {
+        "indicator": "{{現在}} / {{合計}}"
+      },
+      "meta": {
+        "description": "Rediacc のインフラストラクチャ自動化で開発を変革します。 インスタント環境、災害復旧、AI に安全な運用を実現します。",
+        "keywords": "インフラストラクチャ自動化、開発環境、災害復旧、DevOps 自動化、CI/CD パイプライン、クラウド インフラストラクチャ、開発運用、モデル コンテキスト プロトコル、AI セーフ インフラストラクチャ",
+        "title": "Rediacc - インフラストラクチャ自動化プラットフォーム"
+      }
+    },
+    "notFound": {
+      "actions": {
+        "contactSupport": "サポートに連絡する",
+        "homepage": "ホームページへ行く"
+      },
+      "breadcrumb": {
+        "home": "家",
+        "notFound": "404 - ページが見つかりません"
+      },
+      "description": "申し訳ございませんが、お探しのページは存在しないか、移動されました。 これは、古いリンクをたどった場合、または URL を間違って入力した場合に発生する可能性があります。",
+      "help": {
+        "description": "これがエラーであると思われる場合、またはここにコンテンツがあることを期待していた場合は、サポート チームにご連絡ください。 あなたが探しているものを見つけるお手伝いをします。",
+        "link": "サポートチームにお問い合わせください",
+        "title": "助けが必要ですか?"
+      },
+      "meta": {
+        "description": "お探しのページは見つかりませんでした。 当社のインフラ自動化プラットフォームを参照するか、サポートが必要な場合はお問い合わせください。",
+        "keywords": "404、ページが見つかりません、インフラストラクチャ自動化、Rediacc",
+        "title": "404 - ページが見つかりません | レディアク"
+      },
+      "suggestions": {
+        "items": [
+          "URL にタイプミスがないか確認してください",
+          "ホームページに戻る",
+          "当社のインフラストラクチャ自動化ソリューションについて学ぶ",
+          "お問い合わせページからご連絡ください",
+          "プラットフォームへの早期アクセスをリクエストする"
+        ],
+        "links": {
+          "contact": "お問い合わせページ",
+          "earlyAccess": "早期アクセス",
+          "homepage": "ホームページ",
+          "solutions": "インフラ自動化ソリューション"
+        },
+        "title": "できること:"
+      },
+      "title": "ページが見つかりません"
+    }
+  },
+  "problem": {
+    "reality": {
+      "imageAlt": "従来のインフラストラクチャ ワークフローの課題を示す図: 環境のプロビジョニングを待ってイライラする開発者、より迅速な展開を要求する関係者、サンドボックスの更新が遅いためにチームが危険な実稼働テストに頼っている",
+      "title": "現実: 不満を抱えるチーム、危険な回避策"
+    },
+    "solution": {
+      "imageAlt": "Rediacc プラットフォーム ソリューションの図: 自動化されたインフラストラクチャ プロビジョニング、即時本番環境のような環境クローン、合理化された開発者ワークフロー、モデル コンテキスト プロトコル統合による AI 安全な運用",
+      "title": "ソリューション: Rediacc プラットフォーム"
+    },
+    "subtitle": "実稼働環境にはテラバイト規模のデータがあるが、サンドボックス環境では毎月しか同期しない場合、チームは危険な回避策につながる不可能な選択に直面します。",
+    "title": "スピードミスマッチの危機"
+  },
+  "solutions": {
+    "items": [
+      {
+        "benefits": [
+          "バックアップはただ作成されるだけでなく、自動的にテストされます",
+          "1 ～ 3 コピーだけでなく、数か月分の履歴を保存する",
+          "クロスリージョン保護機能を内蔵"
+        ],
+        "description": "バックアップは機能します。 私たちはそれらを検証します。",
+        "title": "災害復旧"
+      },
+      {
+        "benefits": [
+          "ランサムウェアがアクセスできない不変バックアップ",
+          "すべての VM は検証済みのクリーンな状態でバックアップされます",
+          "リスクのない侵入テスト環境"
+        ],
+        "description": "ランサムウェアは、到達できないものを暗号化できません。",
+        "title": "サイバーセキュリティ保護"
+      },
+      {
+        "benefits": [
+          "あらゆる OS、VM、またはクラウド プロバイダーと連携",
+          "PostgreSQL の安全なアップグレードとスキーマ変更",
+          "ハードウェアを購入する前に GPU ワークロードをテストする"
+        ],
+        "description": "コミットする前に移行をテストします。",
+        "title": "開発の加速"
+      }
+    ],
+    "subtitle": "インフラストラクチャ チームを夜間も眠れなくさせる 3 つの重大な問題。",
+    "title": "私たちが解決するもの"
+  }
+}

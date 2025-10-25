@@ -1,0 +1,360 @@
+{
+  "common": {
+    "aria": {
+      "closeImageModal": "Görüntü modelini kapat",
+      "mainNavigation": "Ana gezinme",
+      "nextImage": "Sonraki resim",
+      "previousImage": "Önceki resim",
+      "resetZoom": "Yakınlaştırmayı sıfırla",
+      "statusMessage": "Durum mesajı",
+      "zoomIn": "Yakınlaştır",
+      "zoomOut": "Uzaklaştır"
+    },
+    "buttons": {
+      "close": "Kapalı",
+      "contactSupport": "Destek Ekibiyle İletişime Geçin",
+      "goToHomepage": "Ana Sayfaya Git",
+      "learnMore": "Daha fazla bilgi edin",
+      "requestEarlyAccess": "Erken Erişim Talebi",
+      "sendMessage": "Mesaj Gönder"
+    },
+    "logoAlt": "Rediacc - Altyapı Otomasyon Platformu",
+    "search": {
+      "closeModal": "Aramayı kapat",
+      "keyboardShortcut": "Aramak için ⌘K",
+      "navigate": "Gezin",
+      "noResults": "Sonuç bulunamadı",
+      "placeholder": "Belgeleri, çözümleri, özellikleri arayın...",
+      "searching": "Arama...",
+      "select": "Seçme",
+      "suggestions": {
+        "browseSolutions": "Çözümler sayfamıza göz atıyorsunuz",
+        "checkSpelling": "Yazımınızı kontrol etme",
+        "contactSupport": "Destek ekibimizle iletişime geçme",
+        "differentKeywords": "Farklı anahtar kelimeler veya daha kısa terimler",
+        "title": "Denemek:"
+      }
+    },
+    "siteName": "Rediacc",
+    "skipNavigation": {
+      "skipToFooter": "Alt bilgiye atla",
+      "skipToMainContent": "Ana içeriğe atla",
+      "skipToNavigation": "Navigasyona atla"
+    }
+  },
+  "earlyAccess": {
+    "benefits": [
+      "Rediacc platformuna öncelikli erişim",
+      "Özellik geliştirmede doğrudan girdi",
+      "Erken benimseyenlere özel fiyatlandırma",
+      "Özel uygulama desteği"
+    ],
+    "form": {
+      "fields": {
+        "company": {
+          "autoComplete": "organizasyon",
+          "label": "Şirket / Kuruluş *"
+        },
+        "email": {
+          "autoComplete": "e-posta",
+          "label": "E-posta Adresi *"
+        },
+        "message": {
+          "label": "Ek Bilgiler",
+          "placeholder": "Altyapı sorunlarınız veya özel gereksinimleriniz hakkında bize bilgi verin..."
+        },
+        "name": {
+          "autoComplete": "isim",
+          "label": "Ad Soyad *"
+        },
+        "role": {
+          "autoComplete": "organizasyon başlığı",
+          "label": "Rol / Unvan"
+        },
+        "useCase": {
+          "label": "Birincil Kullanım Durumu",
+          "options": {
+            "aiSafeOperations": "Siber Güvenlik Koruması",
+            "developmentAcceleration": "Geliştirme Hızlandırma",
+            "disasterRecovery": "Felaket Kurtarma",
+            "multiple": "Çoklu Kullanım Durumları",
+            "other": "Diğer",
+            "placeholder": "Birincil ilgi alanınızı seçin"
+          }
+        }
+      },
+      "submit": "Erken Erişim Talebi"
+    },
+    "notice": {
+      "description": "Gönder'e tıklamak, bilgilerinizi içeren e-posta istemcinizi açacaktır. Bu işe yaramazsa, bize doğrudan şu adresten e-posta gönderebilirsiniz:",
+      "emailLabel": "veya bu e-postayı kopyalayın",
+      "title": "Nasıl Gönderilir"
+    },
+    "subtitle": "Erken erişim programımıza katılın ve doğrulanmış olağanüstü durum kurtarma, fidye yazılımı koruması ve altyapı bağımsızlığından yararlanın.",
+    "title": "Erken Erişim Alın"
+  },
+  "footer": {
+    "columns": {
+      "company": "Şirket",
+      "legal": "Yasal",
+      "product": "Ürün",
+      "support": "Destek"
+    },
+    "companyLinks": {
+      "aboutUs": "Hakkımızda",
+      "contact": "Temas etmek"
+    },
+    "copyright": "{{year}} Rediacc. Her hakkı saklıdır.",
+    "legalLinks": {
+      "privacyPolicy": "Gizlilik Politikası",
+      "termsOfUse": "Kullanım Koşulları"
+    },
+    "links": {
+      "contactSupport": "Destek Ekibiyle İletişime Geçin",
+      "returnToHome": "Ana Sayfaya Dön"
+    },
+    "productLinks": {
+      "overview": "Genel Bakış",
+      "solutions": "Çözümler"
+    },
+    "supportLinks": {
+      "contactSupport": "Destek Ekibiyle İletişime Geçin",
+      "helpCenter": "Yardım Merkezi"
+    },
+    "tagline": "Yapay Zeka Odaklı Operasyonlar için Altyapı Otomasyon Platformu"
+  },
+  "hero": {
+    "cta": {
+      "contactUs": "Bize Ulaşın",
+      "learnMore": "Daha fazla bilgi edin"
+    },
+    "subtitle": "Doğrulanmış olağanüstü durum kurtarma. Fidye yazılımı koruması. Sıfır satıcı bağımlılığı.",
+    "title": "Altyapı",
+    "titleHighlight": "Sadece Çalışıyor"
+  },
+  "layout": {
+    "meta": {
+      "author": "Rediacc",
+      "defaultDescription": "Hızlandırılmış geliştirme operasyonları için tasarlanmış Altyapı Otomasyon Platformu. Anında geliştirme ortamlarına ve yeni nesil olağanüstü durum kurtarmaya erken erişim elde edin.",
+      "defaultKeywords": "altyapı otomasyonu, yapay zeka işlemleri, felaket kurtarma, geliştirme ortamları, Model Bağlam Protokolü, DevOps, CI/CD",
+      "locale": "ve_US",
+      "siteName": "Rediacc",
+      "twitter": {
+        "creator": "@rediacc",
+        "site": "@rediacc"
+      }
+    }
+  },
+  "navigation": {
+    "blog": "Blog",
+    "contact": "Temas etmek",
+    "docs": "Dokümanlar",
+    "home": "Ev",
+    "login": "Giriş yapmak",
+    "search": "Aramak",
+    "solutions": {
+      "cybersecurity": "Siber güvenlik",
+      "development": "Gelişim",
+      "disasterRecovery": "Felaket Kurtarma"
+    },
+    "toggleMenu": "Menüyü değiştir"
+  },
+  "pages": {
+    "blog": {
+      "allArticles": "Tüm Makaleler",
+      "backToBlog": "Blog'a geri dön",
+      "byAuthor": "{{author}} tarafından",
+      "category": "Kategori",
+      "featured": "Öne Çıkan Makaleler",
+      "meta": {
+        "description": "Dağıtılmış görev yürütme, altyapı otomasyonu ve DevOps'un en iyi uygulamalarına ilişkin öngörüleri, kılavuzları ve güncellemeleri okuyun.",
+        "keywords": "altyapı otomasyon blogu, DevOps kılavuzları, dağıtılmış sistemler, görev yürütme, bulut altyapısı",
+        "title": "Blog | Rediacc - Altyapı Otomasyonu İçgörüleri"
+      },
+      "published": "Yayınlandı",
+      "readMore": "Devamını oku",
+      "relatedArticles": "İlgili Makaleler",
+      "sharingIs": "Paylaşmak önemser",
+      "subtitle": "Dağıtılmış görev yürütmeyle ilgili bilgiler, kılavuzlar ve güncellemeler",
+      "title": "Blog"
+    },
+    "contact": {
+      "breadcrumb": {
+        "contact": "Temas etmek",
+        "home": "Ev"
+      },
+      "form": {
+        "fields": {
+          "email": {
+            "label": "E-posta *"
+          },
+          "message": {
+            "label": "Mesaj *",
+            "placeholder": "Bize sorunuzdan bahsedin..."
+          },
+          "name": {
+            "label": "İsim *"
+          },
+          "subject": {
+            "label": "Ders *",
+            "options": {
+              "earlyAccess": "Erken Erişim Programı",
+              "general": "Genel Sorgulama",
+              "other": "Diğer",
+              "partnership": "Ortaklık Fırsatları",
+              "placeholder": "Bir konu seçin",
+              "technical": "Teknik Sorular"
+            }
+          }
+        },
+        "submit": "Mesaj Gönder"
+      },
+      "hero": {
+        "subtitle": "Altyapı operasyonlarınızda devrim yaratmaya hazır mısınız? Ekibimizle iletişime geçin.",
+        "title": "Bize Ulaşın"
+      },
+      "info": {
+        "description": "İster erken erişimle ilgileniyor olun, ister platformumuz hakkında sorularınız olsun, ister ortaklık fırsatlarını keşfetmek istiyor olun, sizden haber almak isteriz.",
+        "methods": {
+          "earlyAccess": {
+            "description": "Rediacc'ı ilk deneyimleyenlerden biri olmak ister misiniz?",
+            "link": "Erken erişim isteyin",
+            "title": "Erken Erişim Programı"
+          },
+          "general": {
+            "email": "iletişim@rediacc.com",
+            "title": "Genel Sorular"
+          },
+          "technicalSupport": {
+            "description": "Mevcut kullanıcılar ve platformumuzla ilgili teknik sorular için lütfen doğrudan teknik destek ekibimizle iletişime geçin.",
+            "title": "Teknik Destek"
+          }
+        },
+        "title": "İletişime Geçin"
+      },
+      "meta": {
+        "description": "Erken erişim, teknik destek, ortaklık fırsatları ve altyapı otomasyon platformumuza ilişkin sorularınız için Rediacc ekibiyle iletişime geçin.",
+        "keywords": "Rediacc ile iletişime geçin, altyapı otomasyon desteği, erken erişim programı, teknik destek, ortaklık fırsatları, DevOps danışmanlığı",
+        "title": "Rediacc'a başvurun | Altyapı Otomasyon Platformu Desteği"
+      },
+      "notice": {
+        "description": "Gönder'e tıkladığınızda mesajınızı içeren e-posta istemciniz açılacaktır. Bu işe yaramazsa, bize doğrudan şu adresten e-posta gönderebilirsiniz:",
+        "emailLabel": "veya bu e-postayı kopyalayın",
+        "title": "Nasıl Gönderilir"
+      }
+    },
+    "docs": {
+      "allDocumentation": "Tüm Belgeler",
+      "backToDocs": "Dokümanlar'a dön",
+      "cliReference": "CLI Referansı",
+      "cliReferenceDesc": "Tüm komut satırı arayüzü komutları ve seçenekleri için eksiksiz referans.",
+      "gettingStarted": "Başlarken",
+      "gettingStartedDesc": "Rediacc'ta yeni misiniz? Temel bilgilerle başlayın ve temel kavramları öğrenin.",
+      "meta": {
+        "description": "Dağıtılmış görev yürütmeye yönelik kapsamlı belgelerimiz, kılavuzlarımız ve API referansımızla Rediacc'ı nasıl kullanacağınızı öğrenin.",
+        "keywords": "dokümantasyon, API referansı, kılavuzlar, altyapı otomasyonu, CLI referansı, kuyruk sistemi",
+        "title": "Dokümantasyon | Rediacc - Altyapı Otomasyon Platformu"
+      },
+      "queueSystem": "Kuyruk Sistemi",
+      "queueSystemDesc": "Görevlerin makineler arasında nasıl yönetildiğini ve yürütüldüğünü anlayın.",
+      "subtitle": "Rediacc'ı nasıl kullanacağınızı ve dağıtılmış görev yürütmeyi nasıl kullanacağınızı öğrenin",
+      "tableOfContents": "Bu sayfada",
+      "title": "Dokümantasyon",
+      "welcome": "Rediacc Belgelerine Hoş Geldiniz",
+      "welcomeDescription": "Rediacc güçlü bir dağıtılmış görev yürütme sistemidir. İster yeni başlıyor olun ister gelişmiş özelliklerde uzmanlaşmak istiyor olun, ihtiyacınız olan her şeyi burada bulacaksınız."
+    },
+    "home": {
+      "imageModal": {
+        "indicator": "{{güncel}} / {{toplam}}"
+      },
+      "meta": {
+        "description": "Rediacc'ın altyapı otomasyonu ile geliştirmeyi dönüştürün. Anında ortamlar, olağanüstü durum kurtarma ve yapay zeka açısından güvenli operasyonlar elde edin.",
+        "keywords": "altyapı otomasyonu, geliştirme ortamları, olağanüstü durum kurtarma, DevOps otomasyonu, CI/CD hattı, bulut altyapısı, geliştirme işlemleri, Model Bağlam Protokolü, yapay zeka güvenli altyapı",
+        "title": "Rediacc - Altyapı Otomasyon Platformu"
+      }
+    },
+    "notFound": {
+      "actions": {
+        "contactSupport": "Destek Ekibiyle İletişime Geçin",
+        "homepage": "Ana Sayfaya Git"
+      },
+      "breadcrumb": {
+        "home": "Ev",
+        "notFound": "404 - Sayfa Bulunamadı"
+      },
+      "description": "Üzgünüz, aradığınız sayfa mevcut değil veya taşınmış. Güncel olmayan bir bağlantıyı izlediyseniz veya URL'yi yanlış yazdıysanız bu durum meydana gelebilir.",
+      "help": {
+        "description": "Bunun bir hata olduğunu düşünüyorsanız veya burada içerik bulmayı bekliyorsanız lütfen destek ekibimizle iletişime geçin. Aradığınızı bulmanıza yardımcı olmak için buradayız.",
+        "link": "destek ekibimizle iletişime geçin",
+        "title": "Yardıma mı ihtiyacınız var?"
+      },
+      "meta": {
+        "description": "Aradığınız sayfa bulunamadı. Altyapı otomasyon platformumuza göz atın veya yardım için bizimle iletişime geçin.",
+        "keywords": "404, sayfa bulunamadı, altyapı otomasyonu, Rediacc",
+        "title": "404 - Sayfa Bulunamadı | Rediacc"
+      },
+      "suggestions": {
+        "items": [
+          "Herhangi bir yazım hatası için URL'yi kontrol edin",
+          "Ana sayfaya geri dön",
+          "Altyapı otomasyon çözümlerimiz hakkında bilgi edinin",
+          "İletişim sayfamızdan iletişime geçin",
+          "Platformumuza erken erişim talebinde bulunun"
+        ],
+        "links": {
+          "contact": "iletişim sayfası",
+          "earlyAccess": "erken erişim",
+          "homepage": "ana sayfa",
+          "solutions": "altyapı otomasyon çözümleri"
+        },
+        "title": "Ne yapabilirsiniz:"
+      },
+      "title": "Sayfa Bulunamadı"
+    }
+  },
+  "problem": {
+    "reality": {
+      "imageAlt": "Geleneksel altyapı iş akışı zorluklarını gösteren diyagram: Ortam tedariği için bekleyen hayal kırıklığına uğramış geliştiriciler, daha hızlı dağıtım talep eden paydaşlar ve yavaş korumalı alan güncellemeleri nedeniyle tehlikeli üretim testlerine başvuran ekipler",
+      "title": "Gerçek: Sinirli Ekipler, Tehlikeli Geçici Çözümler"
+    },
+    "solution": {
+      "imageAlt": "Rediacc platform çözüm şeması: otomatik altyapı tedariği, anında üretim benzeri ortam klonları, kolaylaştırılmış geliştirici iş akışları ve Model Bağlam Protokolü entegrasyonuyla yapay zeka güvenli işlemler",
+      "title": "Çözüm: Rediacc Platformu"
+    },
+    "subtitle": "Üretim ortamlarında terabaytlarca veri bulunurken korumalı alan ortamları yalnızca aylık olarak senkronize edildiğinde, ekipler tehlikeli geçici çözümlere yol açan imkansız seçimlerle karşı karşıya kalır.",
+    "title": "Hız Uyuşmazlığı Krizi"
+  },
+  "solutions": {
+    "items": [
+      {
+        "benefits": [
+          "Yedeklemeler yalnızca alınmaz, otomatik olarak test edilir",
+          "Yalnızca 1-3 kopyayı değil, aylarca geçmişi saklayın",
+          "Yerleşik bölgeler arası koruma"
+        ],
+        "description": "Yedeklemeleriniz çalışıyor. Bunları doğruluyoruz.",
+        "title": "Felaket Kurtarma"
+      },
+      {
+        "benefits": [
+          "Fidye yazılımının dokunamayacağı değişmez yedeklemeler",
+          "Her VM, doğrulanmış temiz durumla yedeklenir",
+          "Risksiz sızma testi ortamları"
+        ],
+        "description": "Fidye yazılımı ulaşamadığı şeyi şifreleyemez.",
+        "title": "Siber Güvenlik Koruması"
+      },
+      {
+        "benefits": [
+          "Herhangi bir işletim sistemi, sanal makine veya bulut sağlayıcıyla çalışır",
+          "Güvenli PostgreSQL yükseltmeleri ve şema değişiklikleri",
+          "Donanım satın almadan önce GPU iş yüklerini test edin"
+        ],
+        "description": "Taahhüt etmeden önce geçişleri test edin.",
+        "title": "Geliştirme Hızlandırma"
+      }
+    ],
+    "subtitle": "Altyapı ekiplerini geceleri uykusuz bırakan üç kritik sorun.",
+    "title": "Neyi Çözüyoruz"
+  }
+}

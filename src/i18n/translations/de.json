@@ -1,0 +1,360 @@
+{
+  "common": {
+    "aria": {
+      "closeImageModal": "Bildmodal schließen",
+      "mainNavigation": "Hauptnavigation",
+      "nextImage": "Nächstes Bild",
+      "previousImage": "Vorheriges Bild",
+      "resetZoom": "Zoom zurücksetzen",
+      "statusMessage": "Statusmeldung",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Herauszoomen"
+    },
+    "buttons": {
+      "close": "Schließen",
+      "contactSupport": "Kontaktieren Sie den Support",
+      "goToHomepage": "Gehen Sie zur Startseite",
+      "learnMore": "Erfahren Sie mehr",
+      "requestEarlyAccess": "Fordern Sie Early Access an",
+      "sendMessage": "Nachricht senden"
+    },
+    "logoAlt": "Rediacc – Infrastrukturautomatisierungsplattform",
+    "search": {
+      "closeModal": "Suche schließen",
+      "keyboardShortcut": "⌘K zum Suchen",
+      "navigate": "Navigieren",
+      "noResults": "Keine Ergebnisse gefunden",
+      "placeholder": "Durchsuchen Sie Dokumentation, Lösungen, Funktionen ...",
+      "searching": "Suche...",
+      "select": "Wählen",
+      "suggestions": {
+        "browseSolutions": "Durchsuchen Sie unsere Lösungsseite",
+        "checkSpelling": "Überprüfen Sie Ihre Rechtschreibung",
+        "contactSupport": "Kontaktieren Sie unser Support-Team",
+        "differentKeywords": "Andere Schlüsselwörter oder kürzere Begriffe",
+        "title": "Versuchen:"
+      }
+    },
+    "siteName": "Rediacc",
+    "skipNavigation": {
+      "skipToFooter": "Zur Fußzeile springen",
+      "skipToMainContent": "Zum Hauptinhalt springen",
+      "skipToNavigation": "Zur Navigation springen"
+    }
+  },
+  "earlyAccess": {
+    "benefits": [
+      "Vorrangiger Zugriff auf die Rediacc-Plattform",
+      "Direkter Input zur Feature-Entwicklung",
+      "Exklusive Early-Adopter-Preise",
+      "Dedizierte Implementierungsunterstützung"
+    ],
+    "form": {
+      "fields": {
+        "company": {
+          "autoComplete": "Organisation",
+          "label": "Firma / Organisation *"
+        },
+        "email": {
+          "autoComplete": "E-Mail",
+          "label": "E-Mail-Adresse *"
+        },
+        "message": {
+          "label": "Weitere Informationen",
+          "placeholder": "Erzählen Sie uns von Ihren Infrastrukturherausforderungen oder spezifischen Anforderungen ..."
+        },
+        "name": {
+          "autoComplete": "Name",
+          "label": "Vollständiger Name *"
+        },
+        "role": {
+          "autoComplete": "Organisationstitel",
+          "label": "Rolle/Titel"
+        },
+        "useCase": {
+          "label": "Primärer Anwendungsfall",
+          "options": {
+            "aiSafeOperations": "Cybersicherheitsschutz",
+            "developmentAcceleration": "Entwicklungsbeschleunigung",
+            "disasterRecovery": "Notfallwiederherstellung",
+            "multiple": "Mehrere Anwendungsfälle",
+            "other": "Andere",
+            "placeholder": "Wählen Sie Ihr Hauptinteresse aus"
+          }
+        }
+      },
+      "submit": "Fordern Sie Early Access an"
+    },
+    "notice": {
+      "description": "Wenn Sie auf „Senden“ klicken, wird Ihr E-Mail-Client mit Ihren Informationen geöffnet. Wenn dies nicht funktioniert, können Sie uns direkt eine E-Mail an senden",
+      "emailLabel": "oder kopieren Sie diese E-Mail",
+      "title": "So reichen Sie ein"
+    },
+    "subtitle": "Nehmen Sie an unserem Early-Access-Programm teil und erhalten Sie verifizierte Disaster Recovery, Ransomware-Schutz und Infrastrukturunabhängigkeit.",
+    "title": "Erhalten Sie Early Access"
+  },
+  "footer": {
+    "columns": {
+      "company": "Unternehmen",
+      "legal": "Legal",
+      "product": "Produkt",
+      "support": "Unterstützung"
+    },
+    "companyLinks": {
+      "aboutUs": "Über uns",
+      "contact": "Kontakt"
+    },
+    "copyright": "{{year}} Rediacc. Alle Rechte vorbehalten.",
+    "legalLinks": {
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "termsOfUse": "Nutzungsbedingungen"
+    },
+    "links": {
+      "contactSupport": "Kontaktieren Sie den Support",
+      "returnToHome": "Zurück nach Hause"
+    },
+    "productLinks": {
+      "overview": "Überblick",
+      "solutions": "Lösungen"
+    },
+    "supportLinks": {
+      "contactSupport": "Kontaktieren Sie den Support",
+      "helpCenter": "Hilfecenter"
+    },
+    "tagline": "Infrastrukturautomatisierungsplattform für KI-gesteuerte Abläufe"
+  },
+  "hero": {
+    "cta": {
+      "contactUs": "Kontaktieren Sie uns",
+      "learnMore": "Erfahren Sie mehr"
+    },
+    "subtitle": "Verifizierte Notfallwiederherstellung. Ransomware-Schutz. Keine Lieferantenbindung.",
+    "title": "Infrastruktur Das",
+    "titleHighlight": "Funktioniert einfach"
+  },
+  "layout": {
+    "meta": {
+      "author": "Rediacc",
+      "defaultDescription": "Infrastrukturautomatisierungsplattform für beschleunigte Entwicklungsvorgänge. Erhalten Sie frühzeitig Zugriff auf sofortige Entwicklungsumgebungen und Disaster Recovery der nächsten Generation.",
+      "defaultKeywords": "Infrastrukturautomatisierung, KI-Betrieb, Disaster Recovery, Entwicklungsumgebungen, Model Context Protocol, DevOps, CI/CD",
+      "locale": "und_USA",
+      "siteName": "Rediacc",
+      "twitter": {
+        "creator": "@rediacc",
+        "site": "@rediacc"
+      }
+    }
+  },
+  "navigation": {
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "docs": "Dokumente",
+    "home": "Heim",
+    "login": "Einloggen",
+    "search": "Suchen",
+    "solutions": {
+      "cybersecurity": "Cybersicherheit",
+      "development": "Entwicklung",
+      "disasterRecovery": "Notfallwiederherstellung"
+    },
+    "toggleMenu": "Menü umschalten"
+  },
+  "pages": {
+    "blog": {
+      "allArticles": "Alle Artikel",
+      "backToBlog": "Zurück zum Blog",
+      "byAuthor": "Von {{author}}",
+      "category": "Kategorie",
+      "featured": "Ausgewählte Artikel",
+      "meta": {
+        "description": "Lesen Sie Einblicke, Leitfäden und Updates zur verteilten Aufgabenausführung, Infrastrukturautomatisierung und DevOps-Best Practices.",
+        "keywords": "Blog zur Infrastrukturautomatisierung, DevOps-Anleitungen, verteilte Systeme, Aufgabenausführung, Cloud-Infrastruktur",
+        "title": "Blog | Rediacc – Einblicke in die Infrastrukturautomatisierung"
+      },
+      "published": "Veröffentlicht",
+      "readMore": "Mehr lesen",
+      "relatedArticles": "Verwandte Artikel",
+      "sharingIs": "Teilen ist wichtig",
+      "subtitle": "Einblicke, Anleitungen und Updates zur verteilten Aufgabenausführung",
+      "title": "Blog"
+    },
+    "contact": {
+      "breadcrumb": {
+        "contact": "Kontakt",
+        "home": "Heim"
+      },
+      "form": {
+        "fields": {
+          "email": {
+            "label": "E-Mail *"
+          },
+          "message": {
+            "label": "Nachricht *",
+            "placeholder": "Erzählen Sie uns von Ihrer Anfrage..."
+          },
+          "name": {
+            "label": "Name *"
+          },
+          "subject": {
+            "label": "Thema *",
+            "options": {
+              "earlyAccess": "Early-Access-Programm",
+              "general": "Allgemeine Anfrage",
+              "other": "Andere",
+              "partnership": "Partnerschaftsmöglichkeiten",
+              "placeholder": "Wählen Sie ein Thema aus",
+              "technical": "Technische Fragen"
+            }
+          }
+        },
+        "submit": "Nachricht senden"
+      },
+      "hero": {
+        "subtitle": "Sind Sie bereit, Ihren Infrastrukturbetrieb zu revolutionieren? Nehmen Sie Kontakt mit unserem Team auf.",
+        "title": "Kontaktieren Sie uns"
+      },
+      "info": {
+        "description": "Egal, ob Sie an einem frühen Zugang interessiert sind, Fragen zu unserer Plattform haben oder Möglichkeiten für eine Partnerschaft erkunden möchten, wir würden uns freuen, von Ihnen zu hören.",
+        "methods": {
+          "earlyAccess": {
+            "description": "Möchten Sie zu den Ersten gehören, die Rediacc erleben?",
+            "link": "Fordern Sie einen frühen Zugang an",
+            "title": "Early-Access-Programm"
+          },
+          "general": {
+            "email": "contact@rediacc.com",
+            "title": "Allgemeine Anfragen"
+          },
+          "technicalSupport": {
+            "description": "Für bestehende Benutzer und technische Fragen zu unserer Plattform wenden Sie sich bitte direkt an unser technisches Support-Team.",
+            "title": "Technische Unterstützung"
+          }
+        },
+        "title": "Nehmen Sie Kontakt auf"
+      },
+      "meta": {
+        "description": "Kontaktieren Sie das Rediacc-Team für frühen Zugriff, technischen Support, Partnerschaftsmöglichkeiten und Fragen zu unserer Infrastrukturautomatisierungsplattform.",
+        "keywords": "Kontaktieren Sie Rediacc, Unterstützung bei der Infrastrukturautomatisierung, Early-Access-Programm, technischer Support, Partnerschaftsmöglichkeiten, DevOps-Beratung",
+        "title": "Kontaktieren Sie Rediacc | Unterstützung der Infrastrukturautomatisierungsplattform"
+      },
+      "notice": {
+        "description": "Wenn Sie auf „Senden“ klicken, wird Ihr E-Mail-Client mit Ihrer Nachricht geöffnet. Wenn dies nicht funktioniert, können Sie uns direkt eine E-Mail an senden",
+        "emailLabel": "oder kopieren Sie diese E-Mail",
+        "title": "So reichen Sie ein"
+      }
+    },
+    "docs": {
+      "allDocumentation": "Sämtliche Dokumentation",
+      "backToDocs": "Zurück zu Docs",
+      "cliReference": "CLI-Referenz",
+      "cliReferenceDesc": "Vollständige Referenz für alle Befehle und Optionen der Befehlszeilenschnittstelle.",
+      "gettingStarted": "Erste Schritte",
+      "gettingStartedDesc": "Neu bei Rediacc? Beginnen Sie mit den Grundlagen und lernen Sie grundlegende Konzepte.",
+      "meta": {
+        "description": "Erfahren Sie mit unserer umfassenden Dokumentation, Anleitungen und API-Referenz für die verteilte Aufgabenausführung, wie Sie Rediacc verwenden.",
+        "keywords": "Dokumentation, API-Referenz, Leitfäden, Infrastrukturautomatisierung, CLI-Referenz, Warteschlangensystem",
+        "title": "Dokumentation | Rediacc – Infrastrukturautomatisierungsplattform"
+      },
+      "queueSystem": "Warteschlangensystem",
+      "queueSystemDesc": "Verstehen Sie, wie Aufgaben maschinenübergreifend verwaltet und ausgeführt werden.",
+      "subtitle": "Erfahren Sie, wie Sie Rediacc verwenden und die verteilte Aufgabenausführung meistern",
+      "tableOfContents": "Auf dieser Seite",
+      "title": "Dokumentation",
+      "welcome": "Willkommen bei der Rediacc-Dokumentation",
+      "welcomeDescription": "Rediacc ist ein leistungsstarkes System zur verteilten Aufgabenausführung. Egal, ob Sie gerade erst anfangen oder erweiterte Funktionen beherrschen möchten, hier finden Sie alles, was Sie brauchen."
+    },
+    "home": {
+      "imageModal": {
+        "indicator": "{{current}} / {{total}}"
+      },
+      "meta": {
+        "description": "Transformieren Sie die Entwicklung mit der Infrastrukturautomatisierung von Rediacc. Erhalten Sie sofortige Umgebungen, Notfallwiederherstellung und KI-sichere Abläufe.",
+        "keywords": "Infrastrukturautomatisierung, Entwicklungsumgebungen, Disaster Recovery, DevOps-Automatisierung, CI/CD-Pipeline, Cloud-Infrastruktur, Entwicklungsbetrieb, Model Context Protocol, KI-sichere Infrastruktur",
+        "title": "Rediacc – Infrastrukturautomatisierungsplattform"
+      }
+    },
+    "notFound": {
+      "actions": {
+        "contactSupport": "Kontaktieren Sie den Support",
+        "homepage": "Gehen Sie zur Startseite"
+      },
+      "breadcrumb": {
+        "home": "Heim",
+        "notFound": "404 – Seite nicht gefunden"
+      },
+      "description": "Leider existiert die gesuchte Seite nicht oder wurde verschoben. Dies kann passieren, wenn Sie einem veralteten Link gefolgt sind oder die URL falsch eingegeben haben.",
+      "help": {
+        "description": "Wenn Sie glauben, dass es sich hierbei um einen Fehler handelt oder Sie erwartet haben, hier Inhalte zu finden, wenden Sie sich bitte an unser Support-Team. Wir sind hier, um Ihnen zu helfen, das zu finden, was Sie suchen.",
+        "link": "Kontaktieren Sie unser Support-Team",
+        "title": "Brauchen Sie Hilfe?"
+      },
+      "meta": {
+        "description": "Die gesuchte Seite konnte nicht gefunden werden. Durchsuchen Sie unsere Infrastrukturautomatisierungsplattform oder kontaktieren Sie uns für Unterstützung.",
+        "keywords": "404, Seite nicht gefunden, Infrastrukturautomatisierung, Rediacc",
+        "title": "404 – Seite nicht gefunden | Rediacc"
+      },
+      "suggestions": {
+        "items": [
+          "Überprüfen Sie die URL auf Tippfehler",
+          "Gehen Sie zurück zur Homepage",
+          "Erfahren Sie mehr über unsere Lösungen zur Infrastrukturautomatisierung",
+          "Kontaktieren Sie uns über unsere Kontaktseite",
+          "Fordern Sie frühzeitig Zugang zu unserer Plattform an"
+        ],
+        "links": {
+          "contact": "Kontaktseite",
+          "earlyAccess": "früher Zugang",
+          "homepage": "Homepage",
+          "solutions": "Lösungen zur Infrastrukturautomatisierung"
+        },
+        "title": "Was Sie tun können:"
+      },
+      "title": "Seite nicht gefunden"
+    }
+  },
+  "problem": {
+    "reality": {
+      "imageAlt": "Diagramm, das die Herausforderungen herkömmlicher Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
+      "title": "Die Realität: Frustrierte Teams, gefährliche Workarounds"
+    },
+    "solution": {
+      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Abläufe mit Model Context Protocol-Integration",
+      "title": "Die Lösung: Rediacc-Plattform"
+    },
+    "subtitle": "Wenn Produktionsumgebungen über Terabytes an Daten verfügen, Sandbox-Umgebungen jedoch nur monatlich synchronisiert werden, stehen Teams vor unmöglichen Entscheidungen, die zu gefährlichen Problemumgehungen führen.",
+    "title": "Die Speed-Mismatch-Krise"
+  },
+  "solutions": {
+    "items": [
+      {
+        "benefits": [
+          "Backups werden automatisch getestet, nicht nur erstellt",
+          "Bewahren Sie die Geschichte über Monate auf, nicht nur 1-3 Kopien",
+          "Integrierter regionsübergreifender Schutz"
+        ],
+        "description": "Ihre Backups funktionieren. Wir verifizieren sie.",
+        "title": "Notfallwiederherstellung"
+      },
+      {
+        "benefits": [
+          "Unveränderliche Backups, die Ransomware nicht angreifen kann",
+          "Jede VM wird mit verifiziertem, sauberem Zustand gesichert",
+          "Risikofreie Penetrationstestumgebungen"
+        ],
+        "description": "Ransomware kann nicht verschlüsseln, was sie nicht erreichen kann.",
+        "title": "Cybersicherheitsschutz"
+      },
+      {
+        "benefits": [
+          "Funktioniert mit jedem Betriebssystem, jeder VM oder jedem Cloud-Anbieter",
+          "Sichere PostgreSQL-Upgrades und Schemaänderungen",
+          "Testen Sie GPU-Workloads, bevor Sie Hardware kaufen"
+        ],
+        "description": "Testen Sie Migrationen, bevor Sie sie festlegen.",
+        "title": "Entwicklungsbeschleunigung"
+      }
+    ],
+    "subtitle": "Drei kritische Probleme, die Infrastrukturteams schlaflose Nächte bereiten.",
+    "title": "Was wir lösen"
+  }
+}

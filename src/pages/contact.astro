@@ -1,15 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Breadcrumb from '../components/Breadcrumb.astro';
+import GetInTouch from '../components/GetInTouch.astro';
 import { createTranslator } from '../i18n/utils';
 import { CONTACT_EMAIL } from '../config/constants';
 
 const { t } = createTranslator();
-
-const breadcrumbItems = [
-  { name: t('pages.contact.breadcrumb.home'), url: '/' },
-  { name: t('pages.contact.breadcrumb.contact'), url: '/contact' }
-];
 ---
 
 <BaseLayout
@@ -27,10 +22,6 @@ const breadcrumbItems = [
     }
   }}
 >
-  <div class="container">
-    <Breadcrumb items={breadcrumbItems} />
-  </div>
-
   <section class="hero">
     <div class="hero-container">
       <div class="hero-content">
@@ -58,14 +49,6 @@ const breadcrumbItems = [
             </div>
 
             <div class="contact-method">
-              <h3>{t('pages.contact.info.methods.earlyAccess.title')}</h3>
-              <p>
-                {t('pages.contact.info.methods.earlyAccess.description')}
-                <a href="#early-access">{t('pages.contact.info.methods.earlyAccess.link')}</a> or reach out directly.
-              </p>
-            </div>
-
-            <div class="contact-method">
               <h3>{t('pages.contact.info.methods.technicalSupport.title')}</h3>
               <p>
                 {t('pages.contact.info.methods.technicalSupport.description')}
@@ -75,18 +58,10 @@ const breadcrumbItems = [
         </div>
 
         <div class="contact-form-section">
-          <div class="form-notice">
-            <div class="form-notice-icon">ℹ️</div>
-            <div class="form-notice-content">
-              <h3 class="form-notice-title">{t('pages.contact.notice.title')}</h3>
-              <p class="form-notice-text">
-                {t('pages.contact.notice.description')}{' '}
-                <a href={`mailto:${CONTACT_EMAIL}`} class="form-notice-email">
-                  {CONTACT_EMAIL}
-                </a>
-              </p>
-            </div>
-          </div>
+          <GetInTouch
+            title={t('pages.contact.notice.title')}
+            description={t('pages.contact.notice.description')}
+          />
           <form
             class="contact-form"
             method="POST"
@@ -119,7 +94,6 @@ const breadcrumbItems = [
               <label for="contact-subject" class="form-label">{t('pages.contact.form.fields.subject.label')}</label>
               <select id="contact-subject" name="subject" class="form-select" required>
                 <option value="">{t('pages.contact.form.fields.subject.options.placeholder')}</option>
-                <option value="early-access">{t('pages.contact.form.fields.subject.options.earlyAccess')}</option>
                 <option value="partnership">{t('pages.contact.form.fields.subject.options.partnership')}</option>
                 <option value="technical">{t('pages.contact.form.fields.subject.options.technical')}</option>
                 <option value="general">{t('pages.contact.form.fields.subject.options.general')}</option>
