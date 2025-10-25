@@ -1,30 +1,62 @@
 import React from 'react';
 import { useTranslation } from '../i18n/react';
+import type { Language } from '../i18n/types';
 
 interface SolutionCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
   benefits: string[];
+  href?: string;
 }
 
-const SolutionCard: React.FC<SolutionCardProps> = ({ icon, title, description, benefits }) => (
-  <div className="solution-card">
-    <div className="solution-icon">
-      {icon}
-    </div>
-    <h3 className="solution-title">{title}</h3>
-    <p className="solution-description">{description}</p>
-    <ul className="solution-benefits">
-      {benefits.map((benefit, index) => (
-        <li key={index}>{benefit}</li>
-      ))}
-    </ul>
-  </div>
-);
+const SolutionCard: React.FC<SolutionCardProps> = ({ icon, title, description, benefits, href }) => {
+  const CardContent = (
+    <>
+      <div className="solution-icon">
+        {icon}
+      </div>
+      <h3 className="solution-title">{title}</h3>
+      <p className="solution-description">{description}</p>
+      <ul className="solution-benefits">
+        {benefits.map((benefit, index) => (
+          <li key={index}>{benefit}</li>
+        ))}
+      </ul>
+      {href && (
+        <div className="solution-card-footer">
+          <span className="learn-more-link">
+            Learn More
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 12l4-4-4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </span>
+        </div>
+      )}
+    </>
+  );
 
-const Solutions: React.FC = () => {
-  const { t, to } = useTranslation();
+  if (href) {
+    return (
+      <a href={href} className="solution-card solution-card-link">
+        {CardContent}
+      </a>
+    );
+  }
+
+  return (
+    <div className="solution-card">
+      {CardContent}
+    </div>
+  );
+};
+
+interface SolutionsProps {
+  lang?: Language;
+}
+
+const Solutions: React.FC<SolutionsProps> = ({ lang = 'en' }) => {
+  const { t, to } = useTranslation(lang);
   const solutionsData = to('solutions.items');
 
   const solutions = [
@@ -42,7 +74,8 @@ const Solutions: React.FC = () => {
       ),
       title: solutionsData[0]?.title || '',
       description: solutionsData[0]?.description || '',
-      benefits: solutionsData[0]?.benefits || []
+      benefits: solutionsData[0]?.benefits || [],
+      href: `/${lang}/solutions/disaster-recovery`
     },
     {
       icon: (
@@ -90,6 +123,7 @@ const Solutions: React.FC = () => {
               title={solution.title}
               description={solution.description}
               benefits={solution.benefits}
+              href={solution.href}
             />
           ))}
         </div>

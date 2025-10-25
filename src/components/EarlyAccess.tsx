@@ -23,18 +23,6 @@ const EarlyAccess: React.FC = () => {
             </ul>
           </div>
           <div className="early-access-form">
-            <div className="form-notice">
-              <div className="form-notice-icon">ℹ️</div>
-              <div className="form-notice-content">
-                <h3 className="form-notice-title">{t('earlyAccess.notice.title')}</h3>
-                <p className="form-notice-text">
-                  {t('earlyAccess.notice.description')}{' '}
-                  <a href={`mailto:${CONTACT_EMAIL}`} className="form-notice-email">
-                    {CONTACT_EMAIL}
-                  </a>
-                </p>
-              </div>
-            </div>
             <form
               name="early-access"
               method="POST"

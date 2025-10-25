@@ -1,8 +1,13 @@
 import React from 'react';
 import { useTranslation } from '../i18n/react';
+import type { Language } from '../i18n/types';
 
-const Hero: React.FC = () => {
-  const { t } = useTranslation();
+interface HeroProps {
+  lang?: Language;
+}
+
+const Hero: React.FC<HeroProps> = ({ lang = 'en' }) => {
+  const { t } = useTranslation(lang);
 
   return (
     <section className="hero" id="hero">
@@ -16,8 +21,8 @@ const Hero: React.FC = () => {
             {t('hero.subtitle')}
           </p>
           <div className="hero-cta">
-            <a href="#early-access" className="btn btn-primary">{t('hero.cta.earlyAccess')}</a>
-            <a href="#problem" className="btn btn-secondary">{t('hero.cta.learnMore')}</a>
+            <a href={`/${lang}/contact`} className="btn btn-primary">{t('hero.cta.contactUs')}</a>
+            <a href="#solutions" className="btn btn-secondary">{t('hero.cta.learnMore')}</a>
           </div>
         </div>
       </div>

@@ -3,8 +3,8 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import StructuredData from '../components/StructuredData.astro';
 import { createTranslator } from '../i18n/utils';
-
-const { t } = createTranslator();
+import { getLanguageFromPath, SUPPORTED_LANGUAGES } from '../i18n/language-utils';
+import type { Language } from '../i18n/types';
 
 export interface Props {
   title: string;
@@ -18,33 +18,44 @@ export interface Props {
   structuredData?: any;
   robots?: string;
   canonical?: string;
+  lang?: Language;
 }
 
 const {
   title,
-  description = t('layout.meta.defaultDescription'),
-  keywords = t('layout.meta.defaultKeywords'),
+  description,
+  keywords,
   ogTitle = title,
-  ogDescription = description,
+  ogDescription,
   ogImage = `${Astro.site}favicon.svg`,
   ogType = "website",
   structuredDataType = "organization",
   structuredData = {},
   robots = "index, follow",
-  canonical
+  canonical,
+  lang
 } = Astro.props;
 
+// Detect language from URL or use provided lang prop
+const currentLang = lang || getLanguageFromPath(Astro.url.pathname);
+const { t } = createTranslator(currentLang);
+
+// Set descriptions with fallback to defaults
+const finalDescription = description || t('layout.meta.defaultDescription');
+const finalKeywords = keywords || t('layout.meta.defaultKeywords');
+const finalOgDescription = ogDescription || finalDescription;
+
 const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site);
-const isHomePage = Astro.url.pathname === '/';
+const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${currentLang}/`;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang={currentLang}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content={description}>
-    <meta name="keywords" content={keywords}>
+    <meta name="description" content={finalDescription}>
+    <meta name="keywords" content={finalKeywords}>
     <meta name="author" content={t('layout.meta.author')}>
     <meta name="robots" content={robots}>
     <meta name="theme-color" content="#667eea">
@@ -58,11 +69,11 @@ const isHomePage = Astro.url.pathname === '/';
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType}>
     <meta property="og:title" content={ogTitle}>
-    <meta property="og:description" content={ogDescription}>
+    <meta property="og:description" content={finalOgDescription}>
     <meta property="og:image" content={ogImage}>
     <meta property="og:url" content={canonicalURL}>
     <meta property="og:site_name" content={t('layout.meta.siteName')}>
-    <meta property="og:locale" content={t('layout.meta.locale')}>
+    <meta property="og:locale" content={currentLang === 'es' ? 'es_ES' : 'en_US'}>
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
@@ -74,6 +85,21 @@ const isHomePage = Astro.url.pathname === '/';
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL}>
+
+    <!-- Alternate Language Links (hreflang) -->
+    {SUPPORTED_LANGUAGES.map((lang) => {
+      const langPath = lang === 'en' ? Astro.url.pathname : Astro.url.pathname.replace(/^\/[a-z]{2}/, `/${lang}`);
+      if (!langPath.startsWith('/')) {
+        return null;
+      }
+      return (
+        <link rel="alternate" hreflang={lang} href={new URL(langPath, Astro.site).toString()} />
+      );
+    })}
+    <!-- Default language fallback to English -->
+    {Astro.url.pathname.match(/^\/es/) && (
+      <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname.replace(/^\/es/, '/en'), Astro.site).toString()} />
+    )}
 
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -112,6 +138,7 @@ const isHomePage = Astro.url.pathname === '/';
 
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/responsive.css">
+    <link rel="stylesheet" href="/styles/search-modal.css">
 
     <!-- Skip Navigation Styles -->
     <style>
@@ -150,27 +177,20 @@ const isHomePage = Astro.url.pathname === '/';
     <style>
       /* Critical CSS Variables */
       :root {
-        --primary-color: #556b2f;
-        --primary-hover: #4c6029;
-        --text-primary: #1e293b;
-        --text-secondary: #64748b;
-        --background: #ffffff;
-        --background-alt: #f8fafc;
-        --border-color: #e2e8f0;
-        --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+        --color-bg: #F7F7F8;
+        --color-bg-alt: #FFFFFF;
+        --color-text: #1A1A1A;
+        --color-text-secondary: #6E6E73;
+        --color-border: #D2D2D7;
+        --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
         --font-size-base: 1rem;
-        --font-size-lg: 1.125rem;
-        --font-size-xl: 1.25rem;
-        --font-size-2xl: 1.5rem;
-        --font-size-3xl: 1.875rem;
-        --font-size-4xl: 2.25rem;
-        --space-2: 0.5rem;
+        --font-size-4xl: 3rem;
         --space-4: 1rem;
-        --space-8: 2rem;
-        --space-16: 4rem;
+        --space-6: 1.5rem;
         --space-20: 5rem;
+        --space-24: 6rem;
         --max-width: 1200px;
-        --border-radius: 0.5rem;
+        --nav-height: 3.5rem;
       }
 
       /* Critical Base Styles */
@@ -184,8 +204,8 @@ const isHomePage = Astro.url.pathname === '/';
         font-family: var(--font-family);
         font-size: var(--font-size-base);
         line-height: 1.6;
-        color: var(--text-primary);
-        background-color: var(--background);
+        color: var(--color-text);
+        background-color: var(--color-bg-alt);
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -204,9 +224,7 @@ const isHomePage = Astro.url.pathname === '/';
         top: 0;
         left: 0;
         right: 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-bottom: 1px solid var(--border-color);
+        background-color: var(--color-bg-alt);
         z-index: 100;
       }
 
@@ -217,37 +235,42 @@ const isHomePage = Astro.url.pathname === '/';
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 4rem;
+        height: var(--nav-height);
       }
 
       .nav-brand .logo {
-        height: 2rem;
+        height: 1.5rem;
         width: auto;
+      }
+
+      /* Main Content */
+      main {
+        padding-top: var(--nav-height);
       }
 
       /* Critical Hero Styles */
       .hero {
-        padding: var(--space-20) 0 var(--space-16);
-        background: linear-gradient(135deg, var(--background) 0%, var(--background-alt) 100%);
-        margin-top: 4rem;
+        padding: var(--space-24) 0 var(--space-20);
+        background-color: var(--color-bg-alt);
       }
 
       .hero-container {
-        max-width: var(--max-width);
+        max-width: 800px;
         margin: 0 auto;
         padding: 0 var(--space-4);
+        text-align: center;
       }
 
       .hero-title {
         font-size: var(--font-size-4xl);
-        font-weight: 800;
+        font-weight: 600;
         line-height: 1.1;
-        color: var(--text-primary);
-        margin-bottom: var(--space-4);
+        color: var(--color-text);
+        margin-bottom: var(--space-6);
       }
 
       .hero-highlight {
-        color: var(--primary-color);
+        color: var(--color-text);
       }
     </style>
 </head>
@@ -265,5 +288,6 @@ const isHomePage = Astro.url.pathname === '/';
     </main>
     <Footer client:load />
     <script src="/scripts/main.js" is:inline></script>
+    <script src="/scripts/search-hotkey.js" is:inline></script>
 </body>
 </html>
