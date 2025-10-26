@@ -370,11 +370,11 @@
   },
   {
     "id": "search-41",
-    "content": "Development",
-    "excerpt": "Development",
+    "content": "System Portability",
+    "excerpt": "System Portability",
     "category": "Navigation",
     "page": "/",
-    "path": "navigation.solutions.development",
+    "path": "navigation.solutions.systemPortability",
     "priority": 3
   },
   {
@@ -550,8 +550,8 @@
   },
   {
     "id": "search-61",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Get a Demo",
+    "excerpt": "Get a Demo",
     "category": "Hero",
     "page": "/",
     "path": "hero.cta.contactUs",
@@ -1054,8 +1054,8 @@
   },
   {
     "id": "search-117",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Get Started",
+    "excerpt": "Get Started",
     "category": "Early Access",
     "page": "/",
     "path": "earlyAccess.form.submit",
@@ -1315,8 +1315,8 @@
   },
   {
     "id": "search-146",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Get Started",
+    "excerpt": "Get Started",
     "category": "Contact",
     "page": "/contact",
     "path": "pages.contact.form.submit",
@@ -2197,8 +2197,8 @@
   },
   {
     "id": "search-244",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Build Your Recovery Plan",
+    "excerpt": "Build Your Recovery Plan",
     "category": "Pages",
     "page": "/",
     "path": "pages.solutions.disasterRecovery.cta.button",
@@ -2674,8 +2674,8 @@
   },
   {
     "id": "search-297",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Explore Migration Path",
+    "excerpt": "Explore Migration Path",
     "category": "Pages",
     "page": "/",
     "path": "pages.solutions.systemPortability.cta.button",
@@ -3151,8 +3151,8 @@
   },
   {
     "id": "search-350",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Protect Your Systems",
+    "excerpt": "Protect Your Systems",
     "category": "Pages",
     "page": "/",
     "path": "pages.solutions.threatResponse.cta.button",
@@ -3628,8 +3628,8 @@
   },
   {
     "id": "search-403",
-    "content": "Apply",
-    "excerpt": "Apply",
+    "content": "Audit Your Security",
+    "excerpt": "Audit Your Security",
     "category": "Pages",
     "page": "/",
     "path": "pages.solutions.dataSecurity.cta.button",
@@ -5747,8 +5747,8 @@
   },
   {
     "id": "search-615",
-    "content": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et de bonnes pratiques. Découvrez comment optimiser votre flux de travail avec Rediacc.",
-    "excerpt": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et de bonnes pratiques. Découvrez comment optimiser votre flux de...",
+    "content": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et les meilleures pratiques. Découvrez comment optimiser votre flux de travail avec Rediacc.",
+    "excerpt": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et les meilleures pratiques. Découvrez comment optimiser votre flu...",
     "category": "Blog",
     "page": "/fr/blog/distributed-task-management-best-practices",
     "path": "blog.distributed-task-management-best-practices.content",
