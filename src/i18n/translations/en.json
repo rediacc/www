@@ -90,7 +90,7 @@
   "hero": {
     "title": "Infrastructure That",
     "titleHighlight": " Survives. Every Time.",
-    "subtitle": "October 20, 2025: AWS went down. Coinbase, Fortnite, Signal, Zoom—all offline 15 hours. Organizations with multi-cloud infrastructure stayed online. Are you ready?",
+    "subtitle": "Survive cloud outages. Deploy anywhere. Fail over fast.",
     "cta": {
       "contactUs": "Get a Demo",
       "learnMore": "Learn More"
@@ -132,7 +132,7 @@
       },
       {
         "title": "Verified Backups",
-        "description": "Verified recovery. Not just claims. Full history.",
+        "description": "Verified recovery guaranteed. Tested backups. Complete history.",
         "benefits": [
           "Automatic verification",
           "30-90 day retention",
@@ -141,7 +141,7 @@
       },
       {
         "title": "Encryption Control",
-        "description": "Military-grade encryption. Complete audit trails.",
+        "description": "Everything encrypted. Everything audited. Complete control.",
         "benefits": [
           "Encryption you control",
           "Full audit trail",
@@ -462,7 +462,7 @@
         },
         "hero": {
           "title": "Move Your Systems Anywhere, Securely",
-          "subtitle": "Complete system in one file. Military-grade encryption. Works everywhere on first try."
+          "subtitle": "One portable file. Military-grade security. Deploy anywhere."
         },
         "problems": {
           "vendorLockIn": {
@@ -654,7 +654,7 @@
         },
         "hero": {
           "title": "Encrypt Everything. Control Everything. Complete Zero-Knowledge.",
-          "subtitle": "Per-repo encryption only you can unlock. Master password for operations. Your data, your control."
+          "subtitle": "Encrypt everything. Audit everything. Control everything."
         },
         "problems": {
           "physicalTheft": {
