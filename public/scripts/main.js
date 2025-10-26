@@ -41,6 +41,8 @@ function initSmoothScrolling() {
 // Form validation
 function initFormValidation() {
     const form = document.querySelector('.form');
+    if (!form) return; // Skip if no form exists on the page
+
     const inputs = form.querySelectorAll('.form-input, .form-select, .form-textarea');
 
     // Real-time validation
@@ -301,6 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Form enhancement for better UX
 function initFormEnhancements() {
     const form = document.querySelector('.form');
+    if (!form) return; // Skip if no form exists on the page
 
     // Auto-format phone numbers (if added later)
     const phoneInputs = form.querySelectorAll('input[type="tel"]');
@@ -347,13 +350,15 @@ function initAccessibilityFeatures() {
 
     // Announce form errors to screen readers
     const form = document.querySelector('.form');
-    const errorAnnouncer = document.createElement('div');
-    errorAnnouncer.setAttribute('aria-live', 'polite');
-    errorAnnouncer.setAttribute('aria-atomic', 'true');
-    errorAnnouncer.className = 'sr-only';
-    errorAnnouncer.id = 'error-announcer';
+    if (form) {
+        const errorAnnouncer = document.createElement('div');
+        errorAnnouncer.setAttribute('aria-live', 'polite');
+        errorAnnouncer.setAttribute('aria-atomic', 'true');
+        errorAnnouncer.className = 'sr-only';
+        errorAnnouncer.id = 'error-announcer';
 
-    form.appendChild(errorAnnouncer);
+        form.appendChild(errorAnnouncer);
+    }
 }
 
 // Initialize accessibility features
@@ -457,7 +462,7 @@ function initImageModal() {
                     zoomOut();
                 }
             }
-        });
+        }, { passive: false }); // Explicitly non-passive because we call preventDefault()
 
         // Drag functionality for zoomed images
         imageContainer.addEventListener('mousedown', startDrag);
@@ -465,8 +470,8 @@ function initImageModal() {
         document.addEventListener('mouseup', endDrag);
 
         // Touch support for mobile
-        imageContainer.addEventListener('touchstart', startTouchDrag);
-        imageContainer.addEventListener('touchmove', touchDrag);
+        imageContainer.addEventListener('touchstart', startTouchDrag, { passive: false });
+        imageContainer.addEventListener('touchmove', touchDrag, { passive: false });
         imageContainer.addEventListener('touchend', endDrag);
     }
 }

@@ -1,0 +1,32 @@
+---
+export interface Props {
+  title: string;
+  subtitle: string;
+  videoSrc?: string;
+}
+
+const { title, subtitle, videoSrc = '/videos/demo.mp4' } = Astro.props;
+---
+
+<section class="hero-video-section">
+  <div class="container">
+    <div class="hero-video-content">
+      <div class="hero-text">
+        <h1 class="hero-title">{title}</h1>
+        <p class="hero-subtitle">{subtitle}</p>
+      </div>
+      <div class="video-container-inline">
+        <div class="video-wrapper-inline">
+          <video
+            className="video-element"
+            controls
+            preload="metadata"
+          >
+            <source src={videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

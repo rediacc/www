@@ -15,6 +15,9 @@ export async function getStaticPaths() {
 
 const { lang } = Astro.params as { lang: Language };
 const { t } = createTranslator(lang);
+
+// Get interest parameter from URL if present
+const interest = Astro.url.searchParams.get('interest') || '';
 ---
 
 <BaseLayout
@@ -93,11 +96,12 @@ const { t } = createTranslator(lang);
             <div class="form-group">
               <label for="contact-subject" class="form-label">{t('pages.contact.form.fields.subject.label')}</label>
               <select id="contact-subject" name="subject" class="form-select" required>
-                <option value="">{t('pages.contact.form.fields.subject.options.placeholder')}</option>
-                <option value="partnership">{t('pages.contact.form.fields.subject.options.partnership')}</option>
-                <option value="technical">{t('pages.contact.form.fields.subject.options.technical')}</option>
-                <option value="general">{t('pages.contact.form.fields.subject.options.general')}</option>
-                <option value="other">{t('pages.contact.form.fields.subject.options.other')}</option>
+                <option value="" selected={!interest}>{t('pages.contact.form.fields.subject.options.placeholder')}</option>
+                <option value="earlyAccess" selected={interest === 'disaster-recovery'}>{t('pages.contact.form.fields.subject.options.earlyAccess')}</option>
+                <option value="partnership" selected={interest === 'partnership'}>{t('pages.contact.form.fields.subject.options.partnership')}</option>
+                <option value="technical" selected={interest === 'threat-response' || interest === 'system-portability' || interest === 'data-security'}>{t('pages.contact.form.fields.subject.options.technical')}</option>
+                <option value="general" selected={interest === 'general'}>{t('pages.contact.form.fields.subject.options.general')}</option>
+                <option value="other" selected={interest === 'other'}>{t('pages.contact.form.fields.subject.options.other')}</option>
               </select>
             </div>
 

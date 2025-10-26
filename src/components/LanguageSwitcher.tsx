@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SUPPORTED_LANGUAGES, getLanguageName, getLanguageFlag } from '../i18n/language-utils';
 import type { Language } from '../i18n/types';
+import '../styles/language-switcher.css';
 
 interface LanguageSwitcherProps {
   currentLang: Language;
@@ -43,7 +44,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
           <span className="language-flag">{getLanguageFlag(currentLang)}</span>
           <span className="language-name">{getLanguageName(currentLang)}</span>
           <svg
-            className={`chevron ${isOpen ? 'open' : ''}`}
+            className={`language-chevron ${isOpen ? 'open' : ''}`}
             width="16"
             height="16"
             viewBox="0 0 24 24"
@@ -56,7 +57,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         </button>
 
         {isOpen && (
-          <div className="language-menu">
+          <div className="language-menu top">
             {availableLanguages.map(({ lang, url }) => (
               <a
                 key={lang}
@@ -98,103 +99,10 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
           margin-top: 0.125rem;
         }
 
-        .language-selector {
-          position: relative;
-          display: inline-block;
-          width: fit-content;
-        }
-
-        .language-trigger {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.5rem 1rem;
-          background-color: #f5f5f5;
-          border: 1px solid #e0e0e0;
-          border-radius: 6px;
-          color: #333;
-          font-size: 0.9rem;
-          font-weight: 500;
-          cursor: pointer;
-          transition: background-color 0.2s, border-color 0.2s;
-        }
-
-        .language-trigger:hover {
-          background-color: #eeeeee;
-          border-color: #d0d0d0;
-        }
-
-        .language-flag {
-          font-size: 1rem;
-        }
-
-        .chevron {
-          transition: transform 0.2s;
-        }
-
-        .chevron.open {
-          transform: rotate(180deg);
-        }
-
-        .language-menu {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          margin-top: 0.25rem;
-          background-color: white;
-          border: 1px solid #e0e0e0;
-          border-radius: 6px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-          overflow: hidden;
-          z-index: 1000;
-          min-width: 160px;
-        }
-
-        .language-option {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 0.75rem 1rem;
-          color: #333;
-          text-decoration: none;
-          font-size: 0.9rem;
-          transition: background-color 0.2s;
-        }
-
-        .language-option:hover {
-          background-color: #f5f5f5;
-        }
-
-        .language-option.active {
-          background-color: #e8f0ff;
-          color: #0066cc;
-          font-weight: 500;
-        }
-
-        .language-option .flag {
-          font-size: 1rem;
-        }
-
-        .language-option .checkmark {
-          margin-left: auto;
-          color: #0066cc;
-          font-weight: bold;
-        }
-
         @media (max-width: 768px) {
           .translation-notice {
             font-size: 0.8rem;
             padding: 0.6rem 0.75rem;
-          }
-
-          .language-trigger {
-            padding: 0.4rem 0.75rem;
-            font-size: 0.85rem;
-          }
-
-          .language-option {
-            padding: 0.6rem 0.75rem;
-            font-size: 0.85rem;
           }
         }
       `}</style>

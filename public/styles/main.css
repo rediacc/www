@@ -14,10 +14,10 @@
     --color-border: #D2D2D7;
     --color-hover: #F5F5F7;
 
-    /* Brand Red Palette */
-    --color-red-primary: #dc4233;
-    --color-red-secondary: #bd3228;
-    --color-red-dark: #9e2b22;
+    /* Brand Olive Green Palette */
+    --color-red-primary: #556b2f;
+    --color-red-secondary: #4c6029;
+    --color-red-dark: #3d5217;
 
     /* Typography */
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -46,6 +46,20 @@
     /* Layout */
     --max-width: 1200px;
     --nav-height: 3.5rem;
+
+    /* Section Layouts */
+    --section-min-height: 100vh;
+    --section-padding: 80px 0;
+    --section-max-width: 1200px;
+
+    /* Box Styles */
+    --box-padding: 40px;
+    --box-border-radius: 15px;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    /* Grid Patterns */
+    --grid-gap: 40px;
+    --grid-gap-lg: 60px;
 }
 
 html {
@@ -74,7 +88,20 @@ body {
 
 /* Main Content */
 main {
-    padding-top: var(--nav-height);
+    padding-top: 0;
+}
+
+/* Screen Reader Only - Hide visually but keep accessible */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /* ===== NAVIGATION ===== */
@@ -85,6 +112,20 @@ main {
     right: 0;
     background-color: var(--color-bg-alt);
     z-index: 100;
+    transform: translateY(0);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav.nav-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav.nav-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .nav-container {
@@ -249,6 +290,11 @@ body.sidebar-active {
     padding: var(--space-24) 0;
 }
 
+.hero-dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+}
+
 .hero-container {
     max-width: 900px;
     margin: 0 auto;
@@ -257,23 +303,35 @@ body.sidebar-active {
 }
 
 .hero-title {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 1.1;
     margin-bottom: var(--space-8);
     color: var(--color-text);
 }
 
+.hero-dark .hero-title {
+    color: white;
+}
+
 .hero-highlight {
     color: var(--color-text);
 }
 
+.hero-dark .hero-highlight {
+    color: white;
+}
+
 .hero-subtitle {
-    font-size: var(--font-size-2xl);
+    font-size: 1.25rem;
     color: var(--color-text-secondary);
     max-width: 700px;
     margin: 0 auto var(--space-12);
     line-height: 1.5;
+}
+
+.hero-dark .hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-cta {
@@ -329,31 +387,41 @@ body.sidebar-active {
     color: var(--color-text);
 }
 
+.hero-dark .btn-secondary {
+    color: white;
+    border: 2px solid white;
+}
+
+.hero-dark .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+
 /* ===== SECTIONS ===== */
 .problem,
 .solutions,
 .early-access {
-    padding: var(--space-24) 0;
+    padding: var(--space-8) 0;
     background-color: var(--color-bg-alt);
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--space-24);
+    margin-bottom: var(--space-12);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: var(--space-6);
     color: var(--color-text);
 }
 
 .section-subtitle {
-    font-size: var(--font-size-xl);
+    font-size: 1.125rem;
     color: var(--color-text-secondary);
     max-width: 800px;
     margin: 0 auto;
@@ -393,42 +461,53 @@ body.sidebar-active {
 
 /* ===== SOLUTIONS SECTION ===== */
 .solutions-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-24);
-    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 var(--space-8);
 }
 
 .solution-card {
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: var(--space-24);
-    background-color: transparent;
+    padding: var(--space-8);
+    background-color: white;
     text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.solution-card-number {
+    display: none;
 }
 
 .solution-icon {
-    color: var(--color-text);
-    margin-bottom: var(--space-8);
-    transform: scale(1.5);
+    display: none;
 }
 
 .solution-title {
-    font-size: 3rem;
+    font-size: 1.125rem;
     font-weight: 600;
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-2);
     color: var(--color-text);
+    min-height: 45px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .solution-description {
-    font-size: var(--font-size-xl);
+    font-size: 1rem;
     color: var(--color-text-secondary);
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-4);
     max-width: 600px;
 }
 
@@ -439,23 +518,21 @@ body.sidebar-active {
 }
 
 .solution-benefits li {
-    font-size: var(--font-size-lg);
+    font-size: 0.9375rem;
     color: var(--color-text);
-    padding: var(--space-3) 0;
+    padding: var(--space-1) 0;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.5;
 }
 
 .solution-card-link {
     text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid transparent;
 }
 
 .solution-card-link:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-color: var(--color-border);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-red-primary);
 }
 
 .solution-card-footer {
@@ -781,4 +858,110 @@ body.sidebar-active {
 .modal-image {
     max-width: 100%;
     height: auto;
+}
+
+/* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+
+/* Gradient Utilities */
+.gradient-dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.gradient-dark-alt {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1f1f1f 100%);
+}
+
+.gradient-primary {
+    background: linear-gradient(135deg, var(--color-red-primary) 0%, var(--color-red-secondary) 100%);
+}
+
+.gradient-primary-hover {
+    background: linear-gradient(135deg, var(--color-red-secondary) 0%, var(--color-red-dark) 100%);
+}
+
+/* Grid Utilities */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--grid-gap);
+}
+
+.grid-2-col-lg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--grid-gap-lg);
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.375rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .solution-title {
+        font-size: 1.375rem;
+        min-height: 48px;
+    }
+
+    .solution-description {
+        font-size: 1.125rem;
+    }
+
+    .solution-card {
+        padding: var(--space-12);
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 3.25rem;
+    }
+
+    .solution-title {
+        font-size: 1.5rem;
+        min-height: 50px;
+    }
+
+    .solution-card {
+        padding: var(--space-12);
+    }
+}
+
+@media (max-width: 968px) {
+    .grid-2-col,
+    .grid-2-col-lg {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-16);
+        padding: 0 var(--space-4);
+    }
+
+    .solution-card {
+        padding: var(--space-12);
+    }
 }

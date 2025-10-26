@@ -21,8 +21,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
   const navItems = [
     { href: `/${currentLang}/`, label: t('navigation.home') },
     { href: `/${currentLang}/solutions/disaster-recovery`, label: t('navigation.solutions.disasterRecovery') },
-    { href: `/${currentLang}/#solutions`, label: t('navigation.solutions.cybersecurity') },
-    { href: `/${currentLang}/#solutions`, label: t('navigation.solutions.development') },
+    { href: `/${currentLang}/solutions/threat-response`, label: t('navigation.solutions.threatResponse') },
+    { href: `/${currentLang}/solutions/data-security`, label: t('navigation.solutions.dataSecurity') },
+    { href: `/${currentLang}/solutions/system-portability`, label: t('navigation.solutions.systemPortability') },
     { href: `/${currentLang}/blog`, label: t('navigation.blog') },
     { href: `/${currentLang}/docs`, label: t('navigation.docs') },
     { href: `/${currentLang}/contact`, label: t('navigation.contact') },
