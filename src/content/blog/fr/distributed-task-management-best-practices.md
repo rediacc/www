@@ -9,7 +9,7 @@ featured: true
 language: fr
 ---
 
-La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et de bonnes pratiques. Découvrez comment optimiser votre flux de travail avec Rediacc.
+La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et les meilleures pratiques. Découvrez comment optimiser votre flux de travail avec Rediacc.
 
 ## Gestion des priorités
 

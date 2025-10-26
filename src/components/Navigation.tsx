@@ -9,12 +9,28 @@ const Navigation: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState<Language>('en');
+  const [isVisible, setIsVisible] = useState(false);
   const { t } = useTranslation(currentLang);
 
   // Get current language from URL
   useEffect(() => {
     const lang = getLanguageFromPath(window.location.pathname);
     setCurrentLang(lang);
+  }, []);
+
+  // Handle scroll to show/hide navigation
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      setIsVisible(scrollTop > 0);
+    };
+
+    // Set initial state
+    handleScroll();
+
+    // Listen to scroll events
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const toggleSidebar = () => {
@@ -48,7 +64,7 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <nav id="navigation" className="nav" role="navigation" aria-label={t('common.aria.mainNavigation')}>
+      <nav id="navigation" className={`nav ${isVisible ? 'nav-visible' : 'nav-hidden'}`} role="navigation" aria-label={t('common.aria.mainNavigation')}>
         <div className="nav-container">
           <button
             className="hamburger-btn"

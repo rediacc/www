@@ -10,7 +10,7 @@ const Hero: React.FC<HeroProps> = ({ lang = 'en' }) => {
   const { t } = useTranslation(lang);
 
   return (
-    <section className="hero" id="hero">
+    <section className="hero hero-dark" id="hero">
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">

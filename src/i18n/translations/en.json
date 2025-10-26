@@ -52,8 +52,9 @@
     "login": "Log in",
     "solutions": {
       "disasterRecovery": "Disaster Recovery",
-      "cybersecurity": "Cybersecurity",
-      "development": "Development"
+      "threatResponse": "Threat Response",
+      "dataSecurity": "Data Security",
+      "systemPortability": "System Portability"
     }
   },
   "footer": {
@@ -88,10 +89,10 @@
   },
   "hero": {
     "title": "Infrastructure That",
-    "titleHighlight": " Just Works",
-    "subtitle": "Verified disaster recovery. Ransomware protection. Zero vendor lock-in.",
+    "titleHighlight": " Survives. Every Time.",
+    "subtitle": "October 20, 2025: AWS went down. Coinbase, Fortnite, Signal, Zoom—all offline 15 hours. Organizations with multi-cloud infrastructure stayed online. Are you ready?",
     "cta": {
-      "contactUs": "Apply",
+      "contactUs": "Get a Demo",
       "learnMore": "Learn More"
     }
   },
@@ -108,34 +109,43 @@
     }
   },
   "solutions": {
-    "title": "What We Solve",
-    "subtitle": "Three critical problems that keep infrastructure teams up at night.",
+    "title": "How We Ensure Business Continuity",
+    "subtitle": "Four integrated solutions for rapid response when infrastructure fails or threats strike.",
     "items": [
       {
-        "title": "Disaster Recovery",
-        "description": "Your backups work. We verify them.",
+        "title": "Ransomware Survival",
+        "description": "Recovery speed saves lives. Immutable backups. Rapid response.",
         "benefits": [
-          "Backups tested automatically, not just taken",
-          "Keep months of history, not just 1-3 copies",
-          "Cross-region protection built-in"
+          "Immutable backups survive attacks",
+          "Recover in minutes, not hours or days",
+          "Risk-free OS testing"
         ]
       },
       {
-        "title": "Cybersecurity Protection",
-        "description": "Ransomware can't encrypt what it can't reach.",
+        "title": "Multi-Cloud Always",
+        "description": "Single-cloud is dangerous. Deploy anywhere. Fail over fast.",
         "benefits": [
-          "Immutable backups ransomware cannot touch",
-          "Every VM backed up with verified clean state",
-          "Risk-free penetration testing environments"
+          "Survive AWS outages",
+          "Zero vendor lock-in",
+          "Tested failover ready"
         ]
       },
       {
-        "title": "Development Acceleration",
-        "description": "Test migrations before committing.",
+        "title": "Verified Backups",
+        "description": "Verified recovery. Not just claims. Full history.",
         "benefits": [
-          "Works with any OS, VM, or cloud provider",
-          "Safe PostgreSQL upgrades and schema changes",
-          "Test GPU workloads before buying hardware"
+          "Automatic verification",
+          "30-90 day retention",
+          "Recover in minutes"
+        ]
+      },
+      {
+        "title": "Encryption Control",
+        "description": "Military-grade encryption. Complete audit trails.",
+        "benefits": [
+          "Encryption you control",
+          "Full audit trail",
+          "Migration-safe"
         ]
       }
     ]
@@ -188,7 +198,7 @@
           "placeholder": "Tell us about your needs..."
         }
       },
-      "submit": "Apply"
+      "submit": "Get Started"
     }
   },
   "pages": {
@@ -264,7 +274,7 @@
             "placeholder": "Tell us about your needs..."
           }
         },
-        "submit": "Apply"
+        "submit": "Get Started"
       }
     },
     "blog": {
@@ -360,75 +370,80 @@
         },
         "problems": {
           "unverified": {
-            "title": "Your Backups Are Untested",
-            "subtitle": "Hope is not a strategy. Verify every backup automatically.",
+            "title": "Untested Backup Systems",
+            "subtitle": "Trust but verify <small class='subtitle-attribution'>— Russian proverb/Reagan (1987)</small>",
             "problem": {
-              "description": "Most organizations take backups religiously but never test if they actually work. When disaster strikes, they discover their backups are corrupted or incomplete.",
-              "story": "We were backing up our Proxmox server regularly. One day we needed it, and when we tried to restore from backup, we couldn't because of data corruption. The problem was actually with the disk we were backing up to. Because we never tested it, we lost the entire system.",
+              "description": "Having backups and having working backups are two completely different things. Most organizations never test restores until disaster strikes—then discover their backups are corrupted, incomplete, or infected. By the time you need them, it's already too late to fix them.",
+              "story": "Baltimore's city systems were hit by ransomware in May 2019. <a href='https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Officials couldn't confirm backups were tested or viable. <a href='https://krebsonsecurity.com/2019/06/report-no-eternal-blue-exploit-found-in-baltimore-city-ransomware/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Recent backups infected. Older ones never tested. Recovery cost: $18 million.",
               "additionalPoints": [
-                "Backup failures often go unnoticed until it's too late",
-                "Disk failures, network issues, or configuration errors can silently corrupt backups",
-                "Manual testing is time-consuming and rarely done consistently"
+                "Ransomware infects systems weeks before encrypting your data",
+                "Backup systems report success despite corrupted backup files",
+                "Manual restore testing takes hours nobody does regularly",
+                "Only sixty-three percent successfully restore despite having backups",
+                "Untested backups fail exactly when you need them"
               ]
             },
             "solution": {
-              "title": "Automated Backup Verification",
-              "description": "Every backup is automatically verified by actually restoring and testing it. You get instant alerts if anything fails, not when you desperately need the backup.",
+              "title": "Automatic Backup Verification",
+              "description": "Rediacc doesn't just create backups—it verifies them by testing actual restoration. Every backup is proven to work before you need it in an emergency.",
               "benefits": [
-                "Automatic verification of every backup taken",
-                "Real restoration tests, not just checksum validation",
-                "Instant alerts when backups fail verification",
-                "Portable backups that work across different hardware",
-                "Peace of mind knowing your backups actually work"
+                "Automatic verification by testing real restore operations daily",
+                "Know immediately if backups are corrupted or incomplete",
+                "Access clean tested backups from before any infection",
+                "No manual testing required automatic validation runs continuously",
+                "Every backup proven working before you need it"
               ]
             }
           },
           "limitedHistory": {
-            "title": "Your Data History Is Too Short",
-            "subtitle": "Store months of backup history without the storage nightmare.",
+            "title": "Short Backup History",
+            "subtitle": "The early bird catches the worm <small class='subtitle-attribution'>— William Camden (1636)</small>",
             "problem": {
-              "description": "Traditional backup systems keep only a handful of full backups due to storage costs and complexity. Data that existed months ago can be permanently lost.",
+              "description": "Short retention periods save storage space but create vulnerability. When you need data from before the infection—it's already been overwritten. Traditional systems can't afford long retention due to massive storage costs.",
+              "story": "Ransomware dwell time dropped to less than one day. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Attackers deliberately wait for infected backups to overwrite clean ones. Organizations with 7-14 day retention discover all backups contain malware. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",
               "additionalPoints": [
-                "Old backups are overwritten to save space",
-                "Finding data from several months ago becomes impossible",
-                "Differential and incremental strategies are complex and confusing",
-                "Storage costs limit retention periods"
+                "Attackers deliberately wait for clean backups to expire",
+                "Traditional seven to fourteen day retention leaves vulnerabilities",
+                "Each full backup consumes massive storage limiting retention",
+                "Compliance requirements often demand months of history",
+                "Storage costs force choice between history and budget"
               ]
             },
             "solution": {
-              "title": "Unlimited Retention with Incremental Efficiency",
-              "description": "Keep months or even years of backup history without the storage explosion. Our incremental deduplication means you only store what changed.",
+              "title": "Extended History Retention",
+              "description": "Rediacc's incremental deduplication lets you keep 30, 60, 90+ days of backup history without storage explosion. Only changes are stored—not duplicate data.",
               "benefits": [
-                "Store months of backup history efficiently",
-                "Recover data from any point in time",
-                "Incremental deduplication reduces storage by 90%+",
-                "Simple retention policies without complex differential/incremental setups",
-                "Cost-effective long-term archival"
+                "Store months of backup history efficiently with deduplication",
+                "Access clean backups from before any infection",
+                "Incremental deduplication saves over ninety percent of storage",
+                "Meet compliance requirements cost effectively with long retention",
+                "Attackers can't wait out your retention period"
               ]
             }
           },
           "slowBackups": {
-            "title": "Your Backups Take Forever",
-            "subtitle": "Incremental speed with full backup reliability. No compromises.",
+            "title": "Slow Recovery Times",
+            "subtitle": "Make good use of five before five <small class='subtitle-attribution'>— Prophet Muhammad, Sunan Ibn Majah (4240)</small>",
             "problem": {
-              "description": "Backing up large datasets remotely is often impossible or takes days. Systems fall behind, and backups never catch up with production changes.",
-              "story": "At one organization we worked with, backing up the current system took 2 weeks, while processing new daily data took 2 days. The backup system slowed everything down, and because traditional backup methods required full copies each time, we had to overwrite old backups due to insufficient storage capacity.",
+              "description": "Traditional full backups mean slow full restores. Organizations with modern recovery systems get back online in hours. Those with traditional backups? Days of downtime, cancelled services, and lost revenue.",
+              "story": "WannaCry hit NHS in May 2017, locking hospital systems nationwide. <a href='https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Some trusts recovered in hours. <a href='https://www.bridgeheadsoftware.com/2017/07/wannacry-nhs-attack-lessons-backup-data-recovery-strategies/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Others took days. Over 19,000 appointments cancelled. Recovery time: hours versus days of chaos.",
               "additionalPoints": [
-                "Large datasets take days or weeks to backup remotely",
-                "Backup processes can slow down production systems",
-                "Systems fall perpetually behind as new data comes in faster than backups complete",
-                "Network bandwidth becomes a major bottleneck"
+                "Same ransomware attack produces drastically different recovery times",
+                "Traditional full restores mean days of downtime cancelled services",
+                "Modern incremental recovery back online in minutes",
+                "Healthcare cannot wait days patients need care now",
+                "Every downtime hour multiplies operational and financial damage"
               ]
             },
             "solution": {
-              "title": "Incremental Speed, Full Backup Reliability",
-              "description": "After the first full backup, only changes are transferred. Large datasets stay in sync without the bandwidth nightmare.",
+              "title": "Rapid Recovery Process",
+              "description": "Rediacc's incremental architecture enables rapid recovery. Restore only what changed, not entire systems. Get critical operations back online in minutes while others are still recovering.",
               "benefits": [
-                "Initial full backup, then only changes are synced",
-                "Backups complete in minutes instead of days",
-                "Minimal impact on production systems",
-                "Efficient use of network bandwidth",
-                "Always up-to-date without falling behind"
+                "Recover in minutes instead of days of downtime",
+                "Incremental restoration transfers only the changed data portions",
+                "Critical systems online while competitors stay down",
+                "Minimize revenue loss and service disruption with speed",
+                "Be the organization that recovers fast every time"
               ]
             }
           }
@@ -436,7 +451,295 @@
         "cta": {
           "title": "Ready to Trust Your Backups?",
           "subtitle": "Limited spots available.",
-          "button": "Apply"
+          "button": "Build Your Recovery Plan"
+        }
+      },
+      "systemPortability": {
+        "meta": {
+          "title": "Universal System Portability | Move Your Infrastructure Anywhere Securely",
+          "description": "Break free from vendor lock-in. Complete system in one portable file, military-grade encryption, and zero-configuration deployment across any infrastructure.",
+          "keywords": "system portability, vendor lock-in, infrastructure mobility, cloud migration, multi-cloud, system encryption, data security, deployment automation"
+        },
+        "hero": {
+          "title": "Move Your Systems Anywhere, Securely",
+          "subtitle": "Complete system in one file. Military-grade encryption. Works everywhere on first try."
+        },
+        "problems": {
+          "vendorLockIn": {
+            "title": "Vendor Lock-In Trap",
+            "subtitle": "Don't put all your eggs in one basket <small class='subtitle-attribution'>— Cervantes (1605) / Carnegie (1885)</small>",
+            "problem": {
+              "description": "You built on one cloud provider. When they fail, you fail with them. No backup. No failover. No choice. Vendor lock-in isn't just expensive—it's a single point of failure that takes down your entire operation.",
+              "story": "October 20, 2025. AWS US-EAST-1 DNS failure lasted 15 hours. <a href='https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Coinbase, Fortnite, Signal, Zoom—offline. AWS-locked organizations had zero options. Multi-region architectures failed over automatically. <a href='https://ine.com/blog/aws-october-2025-outage-multi-region-and-cloud-lessons-learned' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Single-cloud is single point of failure.",
+              "additionalPoints": [
+                "October twenty outage lasted fifteen hours globally",
+                "Regional outages mean production backup fail simultaneously",
+                "Multi region organizations stayed online single cloud",
+                "When cloud providers fail need alternative running",
+                "Vendor lock in eliminates failover options needed"
+              ]
+            },
+            "solution": {
+              "title": "True Multi-Cloud Redundancy",
+              "description": "Rediacc packages your complete system into single portable repository. Deploy on AWS, Azure, Google Cloud, or bare metal—without changes. When one provider fails, you're already running elsewhere. Failover takes minutes, not hours. Infrastructure never hostage to one provider's uptime.",
+              "benefits": [
+                "Deploy anywhere survive failures running multiple clouds",
+                "When cloud providers fail already running alternatives",
+                "Failover between providers in minutes tested validated",
+                "True multi cloud without separate infrastructure versions",
+                "Test failover before you need it works"
+              ]
+            }
+          },
+          "testingVendorSwitch": {
+            "title": "Untested Failover Plans",
+            "subtitle": "Practice makes perfect <small class='subtitle-attribution'>— Classical tradition (1500s+)</small>",
+            "problem": {
+              "description": "Single-cloud is risky. You want testing failover before disaster strikes. But testing means duplicate infrastructure mirroring production exactly, keeping sync over weeks. Most companies never test disaster recovery because risk and effort aren't worth it—until outage proves they should have.",
+              "story": "Only 7% of companies never test disaster recovery plans. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Yet 46% test only annually. <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Why: lack of time, resources, complexity. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Testing doubles costs. Provider outage proves they should have tested.",
+              "additionalPoints": [
+                "Seven percent of companies never test disaster recovery",
+                "Only forty six percent test annually outdated",
+                "Parallel infrastructure testing doubles costs during validation",
+                "Lack of time resources prevent regular testing",
+                "Untested failover plans fail when you need"
+              ]
+            },
+            "solution": {
+              "title": "Risk-Free Failover Testing",
+              "description": "Rediacc snapshots your exact production environment state. Deploy that snapshot on Azure or GCP with real configuration and data patterns. Test failover performance and validate disaster recovery without touching production. Only commit when proven working. Zero downtime. Zero risk.",
+              "benefits": [
+                "Validate disaster recovery with actual production architecture",
+                "Complete failover testing in weeks instead of months",
+                "Test with confidence zero impact to production",
+                "Benchmark failover speed before you need it",
+                "Know your backup plan works before disaster"
+              ]
+            }
+          },
+          "deployment": {
+            "title": "File Permission Conflicts",
+            "subtitle": "Haste is from the devil; deliberation is from Allah <small class='subtitle-attribution'>— Prophet Muhammad, Musnad Abu Ya'la (4256)</small>",
+            "problem": {
+              "description": "When moving files between Linux systems, file ownership becomes a nightmare. User 'appuser' is UID 1000 on Server A but 1005 on Server B. Applications can't access files because numeric UIDs don't match, requiring manual permission fixes every time.",
+              "story": "Docker containers face this constantly when moving between systems. <a href='https://www.joyfulbikeshedding.com/blog/2021-03-15-docker-and-the-host-filesystem-owner-matching-problem.html' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Linux uses numeric UIDs. Different systems assign different values, causing permission failures. <a href='https://stackoverflow.com/questions/51188997/docker-uid-gid-mapping-changes-on-different-host' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Minutes become hours of chown operations and debugging.",
+              "additionalPoints": [
+                "User IDs vary between different systems and distributions",
+                "Files owned by one user belong wrong elsewhere",
+                "Manual ownership operations required after every migration",
+                "Database files with wrong ownership will not start",
+                "Container applications fail due to permission mismatches"
+              ]
+            },
+            "solution": {
+              "title": "Automatic Ownership Resolution",
+              "description": "Rediacc handles user ownership at the filesystem level. When you migrate a repository to a new system, file ownership automatically works regardless of different user IDs. Team SSH keys centrally managed—developers connect automatically without sharing credentials.",
+              "benefits": [
+                "File ownership works across systems different IDs",
+                "No manual permission fixes after migration operations",
+                "Team SSH keys centrally managed no sharing",
+                "Databases and applications start immediately new systems",
+                "Move between Ubuntu Debian CentOS permissions work"
+              ]
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready for True System Portability?",
+          "subtitle": "One portable file. Military-grade security. Limited spots available.",
+          "button": "Explore Migration Path"
+        }
+      },
+      "threatResponse": {
+        "meta": {
+          "title": "Ransomware & Cyber Resilience Solutions | Threats Move Fast",
+          "description": "Survive ransomware attacks with immutable backups, rapid recovery, and infrastructure portability. Evacuate compromised systems in minutes.",
+          "keywords": "ransomware protection, cyber resilience, immutable backups, rapid recovery, business continuity, infrastructure evacuation, disaster recovery"
+        },
+        "hero": {
+          "title": "Threats Move Fast. You Should Too.",
+          "subtitle": "Immutable backups. Minutes to recovery. Infrastructure evacuation across clouds."
+        },
+        "problems": {
+          "ransomwareBackups": {
+            "title": "Ransomware Targets Backups",
+            "subtitle": "Tie your camel and trust in Allah <small class='subtitle-attribution'>— Prophet Muhammad, Sunan at-Tirmidhi (2517)</small>",
+            "problem": {
+              "description": "Ransomware attackers target backup infrastructure—deleting or overwriting copies to eliminate recovery. Backups in the same cloud account with shared credentials let attackers delete months of history. Even immutable backups fail with admin access. Clean backups vanish before you realize.",
+              "story": "A 2024 Sophos study found 94% of ransomware victims had backups targeted, with 57% succeeding. <a href='https://www.techrepublic.com/article/ransomware-attackers-target-backups/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> When backups are compromised, median recovery costs reach $3 million—eight times higher. <a href='https://news.sophos.com/en-us/2024/03/26/the-impact-of-compromised-backups-on-ransomware-outcomes/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",
+              "additionalPoints": [
+                "Ninety-four percent of ransomware attacks target backup infrastructure",
+                "Attackers wait weeks ensuring clean backups get overwritten",
+                "Immutable backups fail when attackers have admin credentials",
+                "Backup deletion eliminates recovery paths even after ransom",
+                "Encrypted provider backups mean providers cannot help restore"
+              ]
+            },
+            "solution": {
+              "title": "Immutable Backup Protection",
+              "description": "Rediacc stores encrypted backup copies immutable at storage level, not administratively. Even if attackers compromise infrastructure tokens or admin credentials, they can only read encrypted data—cannot modify, delete, or overwrite versions. Snapshots encrypted with your password remain worthless to attackers.",
+              "benefits": [
+                "Encrypted backups survive even complete credential compromise",
+                "Token immutability prevents deletion with admin access",
+                "Previous versions remain intact and encrypted indefinitely",
+                "Recovery possible after complete infrastructure compromise",
+                "No ransom payment needed backups remain your control"
+              ]
+            }
+          },
+          "infrastructureBlackBox": {
+            "title": "Infrastructure Black Box",
+            "subtitle": "You can't see the forest for the trees <small class='subtitle-attribution'>— John Heywood (1546)</small>",
+            "problem": {
+              "description": "Legacy systems accumulate undocumented SSH keys from contractors or attackers. Backups capture everything—garbage files, forgotten services, potential trojans. Attackers with persistence get backed up too. Migrations perpetuate unknown risks. Nobody knows what's in backups or what activates when restored.",
+              "story": "A financial firm discovered 47 undocumented SSH keys in production databases, including keys from vendors who'd left years prior. <a href='https://www.appviewx.com/blogs/ssh-key-sprawl-causes-and-consequences/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Ransomware recovery was delayed 2 weeks during forensic SSH key audit. <a href='https://www.encryptionconsulting.com/ssh-key-sprawl/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",
+              "additionalPoints": [
+                "Organizations cannot account for all production SSH keys",
+                "Backup systems capture threats forgotten services potential trojans",
+                "Infrastructure migrations perpetuate accumulated risk forward",
+                "Legacy systems have unknown configurations affecting disaster recovery",
+                "Unknown access enables ransomware to re-infiltrate after recovery"
+              ]
+            },
+            "solution": {
+              "title": "Fresh Verified Infrastructure",
+              "description": "Rediacc enables complete system reconstruction on fresh infrastructure with verified essential components. You migrate intentionally selected system data and configurations, not 'everything'. SSH keys centrally managed and audited. Result: clean infrastructure with full visibility. No security debt. No hidden access.",
+              "benefits": [
+                "Migrate only verified essential system components",
+                "Eliminate accumulated security debt and legacy complexity",
+                "Centralized SSH key management replaces key sprawl",
+                "Complete auditability of production and backup systems",
+                "Fresh deployment provides clean slate without hidden threats"
+              ]
+            }
+          },
+          "osVulnerability": {
+            "title": "OS Update Delays",
+            "subtitle": "In every hardship lies ease <small class='subtitle-attribution'>— Surah Al-Inshirah 94:5</small>",
+            "problem": {
+              "description": "Critical OS vulnerability discovered. Patches only for newer versions you're not running. Migration requires weeks of testing. Can't test against production without risking data. Rolling back means full restoration. You stay vulnerable hoping attackers don't exploit before migration completes.",
+              "story": "Log4Shell (December 2021) forced brutal choices. <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Companies spent 2-3 weeks validating OS migration. Only 45% patched within 11 days. Some remained vulnerable 4+ weeks during testing. <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",
+              "additionalPoints": [
+                "Critical vulnerabilities in your OS have no patches",
+                "Full OS migrations require weeks of testing validation",
+                "Cannot test migration safely without production workload",
+                "Rolling back failed migrations means complete data restoration",
+                "Security vulnerability windows stay open for weeks"
+              ]
+            },
+            "solution": {
+              "title": "Risk-Free OS Testing",
+              "description": "Rediacc enables rapid, risk-free OS migration testing. Deploy infrastructure to a new OS and verify everything works with actual production workload. If issues appear, revert instantly—no data loss, no recovery. Once verified safe, commit permanently. Vulnerability windows close in minutes.",
+              "benefits": [
+                "Test new OS against actual production workload",
+                "Verify compatibility without risking your actual systems",
+                "Revert to previous OS instantly zero downtime",
+                "Migrate between Ubuntu Debian CentOS AlmaLinux in minutes",
+                "Close security vulnerability windows in minutes not weeks"
+              ]
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready for Cyber Resilience?",
+          "subtitle": "Survive threats faster. Immutable. Portable. In your control.",
+          "button": "Protect Your Systems"
+        }
+      },
+      "dataSecurity": {
+        "meta": {
+          "title": "Data Security & Compliance | Encrypted Infrastructure With Audit Trails",
+          "description": "Zero-knowledge encryption for complete infrastructure protection. Built with compliance requirements in mind. Survive physical theft, maintain audit trails, migrate safely.",
+          "keywords": "data security, encryption, compliance, infrastructure encryption, audit trails, zero-knowledge"
+        },
+        "hero": {
+          "title": "Encrypt Everything. Control Everything. Complete Zero-Knowledge.",
+          "subtitle": "Per-repo encryption only you can unlock. Master password for operations. Your data, your control."
+        },
+        "problems": {
+          "physicalTheft": {
+            "title": "Physical Access Theft",
+            "subtitle": "Locks keep honest people honest <small class='subtitle-attribution'>— Folk saying (1912)</small>",
+            "problem": {
+              "description": "Someone steals your server, backup drive, or old hardware. OS passwords provide zero protection against physical access—they boot from USB, bypass authentication, mount disks, copy everything. Customer data, credentials, databases—all gone. Data centers experience theft regularly. Decommissioning creates exposure.",
+              "story": "Morgan Stanley hired movers to decommission data centers in 2016. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Hard drives with 15 million customer records were auctioned online—unencrypted. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> $35 million in fines. Most devices never recovered.",
+              "additionalPoints": [
+                "Stolen servers remain compromised if encryption is incomplete",
+                "Decommissioning procedures often skip encryption steps entirely",
+                "File deletion doesn't erase data just removes entries",
+                "Database backups frequently stored unencrypted in secure locations",
+                "Compliance explicitly requires encryption at rest for data"
+              ]
+            },
+            "solution": {
+              "title": "Complete Zero-Knowledge Encryption",
+              "description": "Each repository encrypted with its own password. Every file, container, configuration, database, and backup protected. Only you hold the per-repo encryption key. Stolen hardware = worthless encrypted blobs.",
+              "benefits": [
+                "True zero knowledge per repo encryption you control",
+                "Military grade encryption on complete infrastructure and backups",
+                "Physical theft becomes worthless encrypted data has no value",
+                "Provable encryption from deployment through decommissioning and disposal",
+                "Built with compliance requirements in mind from start"
+              ]
+            }
+          },
+          "auditTrail": {
+            "title": "Missing Audit Trails",
+            "subtitle": "You can't manage what you can't measure <small class='subtitle-attribution'>— Peter Drucker</small>",
+            "problem": {
+              "description": "Infrastructure migrations happen in stages. Legacy systems left during transitions fall off audit radar. When auditors ask 'What's in production?' and 'Who accessed what?', you can't answer for systems thought decommissioned. Incomplete migrations create blind spots—systems holding data, vulnerable, unmonitored.",
+              "story": "Oracle Health inherited legacy Cerner servers from a 2022 acquisition. In January 2025, attackers breached an unmigrated system. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Undetected for a month—no longer monitored. 262,831 patient records stolen. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> The breach happened on unaudited infrastructure.",
+              "additionalPoints": [
+                "Legacy systems from acquisitions remain for years unmigrated",
+                "Systems in transition fall off active audit monitoring",
+                "Incomplete migrations create audit blindness data still exposed",
+                "Breaches on decommissioned systems take weeks to detect",
+                "No audit trail means no proof what happened"
+              ]
+            },
+            "solution": {
+              "title": "Complete Audit Compliance",
+              "description": "Every operation logged: who deployed, who accessed what, when changes were made. Complete visibility into your infrastructure. Audit team gets exact timestamps and authenticated access proof. Per-repo encryption stays separate from operational controls—data stays encrypted while audit trail proves access.",
+              "benefits": [
+                "Complete audit trail every operation logged and traceable",
+                "Full visibility auditors see what's protected who accessed",
+                "Access control proof who did what when why",
+                "Audit ready documentation comprehensive logs for compliance reviews",
+                "Transparent operations without exposing encrypted data to auditors"
+              ]
+            }
+          },
+          "migrationExposure": {
+            "title": "Migration Security Gaps",
+            "subtitle": "The best deeds are consistent, even if small <small class='subtitle-attribution'>— Prophet Muhammad, Sunan Ibn Majah (4240)</small>",
+            "problem": {
+              "description": "Infrastructure migrations require temporary security relaxation. Contractors disable firewalls to 'speed up the process.' Encryption bypassed for performance. Temporary windows become permanent attack vectors. Protected data gets exposed for hours or days. Attackers target migration windows when security controls weaken.",
+              "story": "Keepnet Labs hired a contractor to migrate its database in March 2020. Contractor disabled firewall for 10 minutes. <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 5 billion records indexed. Database exposed 24 hours. <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> A cybersecurity firm's migration exposed billions.",
+              "additionalPoints": [
+                "Contractors disable security controls to expedite migration processes",
+                "Ten minute security window becomes twenty four hours",
+                "Search engines index unprotected systems during migration windows",
+                "Temporary security disabling can become permanent if forgotten",
+                "Migration windows create opportunities attackers actively exploit today"
+              ]
+            },
+            "solution": {
+              "title": "Encrypted Migration Process",
+              "description": "Infrastructure stays encrypted throughout migration. Encrypted snapshot at source, encrypted transport, encrypted deployment at destination. No decryption windows. No unencrypted staging copies. Per-repo encryption active from start to finish.",
+              "benefits": [
+                "Encrypt throughout migration data protected source to destination",
+                "No unencrypted staging encrypted snapshots stay encrypted transit",
+                "Safe rollback encrypted backups remain intact and usable",
+                "Vendor agnostic same encryption on all cloud providers",
+                "Zero downtime possible encrypted snapshots enable parallel migration"
+              ]
+            }
+          }
+        },
+        "cta": {
+          "title": "Ready for True Data Protection?",
+          "subtitle": "Zero-knowledge encryption. Complete audit trail. Built with compliance in mind.",
+          "button": "Audit Your Security"
         }
       }
     }

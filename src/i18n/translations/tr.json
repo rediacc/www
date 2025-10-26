@@ -15,8 +15,8 @@
       "contactSupport": "Destek Ekibiyle İletişime Geçin",
       "goToHomepage": "Ana Sayfaya Git",
       "learnMore": "Daha fazla bilgi edin",
-      "requestEarlyAccess": "Erken Erişim Talebi",
-      "sendMessage": "Mesaj Gönder"
+      "requestEarlyAccess": "Uygula",
+      "sendMessage": "Uygula"
     },
     "logoAlt": "Rediacc - Altyapı Otomasyon Platformu",
     "search": {
@@ -44,53 +44,53 @@
   },
   "earlyAccess": {
     "benefits": [
-      "Rediacc platformuna öncelikli erişim",
-      "Özellik geliştirmede doğrudan girdi",
-      "Erken benimseyenlere özel fiyatlandırma",
-      "Özel uygulama desteği"
+      "Ekibimizle doğrudan çalışın",
+      "Ürünü şekillendirin",
+      "Öncelikli destek",
+      "Yeni özelliklere erken erişim"
     ],
     "form": {
       "fields": {
         "company": {
           "autoComplete": "organizasyon",
-          "label": "Şirket / Kuruluş *"
+          "label": "Şirket *"
         },
         "email": {
           "autoComplete": "e-posta",
-          "label": "E-posta Adresi *"
+          "label": "E-posta *"
         },
         "message": {
-          "label": "Ek Bilgiler",
-          "placeholder": "Altyapı sorunlarınız veya özel gereksinimleriniz hakkında bize bilgi verin..."
+          "label": "Mesaj",
+          "placeholder": "Bize ihtiyaçlarınızı anlatın..."
         },
         "name": {
           "autoComplete": "isim",
-          "label": "Ad Soyad *"
+          "label": "İsim *"
         },
         "role": {
           "autoComplete": "organizasyon başlığı",
-          "label": "Rol / Unvan"
+          "label": "Rol"
         },
         "useCase": {
-          "label": "Birincil Kullanım Durumu",
+          "label": "Birincil ilgi",
           "options": {
-            "aiSafeOperations": "Siber Güvenlik Koruması",
-            "developmentAcceleration": "Geliştirme Hızlandırma",
+            "aiSafeOperations": "Siber güvenlik",
+            "developmentAcceleration": "Gelişim",
             "disasterRecovery": "Felaket Kurtarma",
-            "multiple": "Çoklu Kullanım Durumları",
+            "multiple": "Çoklu",
             "other": "Diğer",
-            "placeholder": "Birincil ilgi alanınızı seçin"
+            "placeholder": "Birini seçin"
           }
         }
       },
-      "submit": "Erken Erişim Talebi"
+      "submit": "Uygula"
     },
     "notice": {
-      "description": "Gönder'e tıklamak, bilgilerinizi içeren e-posta istemcinizi açacaktır. Bu işe yaramazsa, bize doğrudan şu adresten e-posta gönderebilirsiniz:",
-      "emailLabel": "veya bu e-postayı kopyalayın",
+      "description": "E-postanızı açmak için gönder'i tıklayın. 48 saat içinde yanıt vereceğiz.",
+      "emailLabel": "iletişim@rediacc.com",
       "title": "Nasıl Gönderilir"
     },
-    "subtitle": "Erken erişim programımıza katılın ve doğrulanmış olağanüstü durum kurtarma, fidye yazılımı koruması ve altyapı bağımsızlığından yararlanın.",
+    "subtitle": "Sınırlı sayıda yer mevcuttur.",
     "title": "Erken Erişim Alın"
   },
   "footer": {
@@ -125,12 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Bize Ulaşın",
+      "contactUs": "Uygula",
       "learnMore": "Daha fazla bilgi edin"
     },
-    "subtitle": "Doğrulanmış olağanüstü durum kurtarma. Fidye yazılımı koruması. Sıfır satıcı bağımlılığı.",
+    "subtitle": "20 Ekim 2025: AWS çöktü. Coinbase, Fortnite, Signal, Zoom; hepsi 15 saat boyunca çevrimdışı. Çoklu bulut altyapısına sahip kuruluşlar çevrimiçi kaldı. Hazır mısın?",
     "title": "Altyapı",
-    "titleHighlight": "Sadece Çalışıyor"
+    "titleHighlight": "Hayatta kaldı. Her zaman."
   },
   "layout": {
     "meta": {
@@ -153,9 +153,10 @@
     "login": "Giriş yapmak",
     "search": "Aramak",
     "solutions": {
-      "cybersecurity": "Siber güvenlik",
-      "development": "Gelişim",
-      "disasterRecovery": "Felaket Kurtarma"
+      "dataSecurity": "Veri Güvenliği",
+      "systemPortability": "Sistem Taşınabilirliği",
+      "disasterRecovery": "Felaket Kurtarma",
+      "threatResponse": "Tehdit Yanıtı"
     },
     "toggleMenu": "Menüyü değiştir"
   },
@@ -180,7 +181,7 @@
     },
     "contact": {
       "breadcrumb": {
-        "contact": "Temas etmek",
+        "contact": "Uygula",
         "home": "Ev"
       },
       "form": {
@@ -190,56 +191,56 @@
           },
           "message": {
             "label": "Mesaj *",
-            "placeholder": "Bize sorunuzdan bahsedin..."
+            "placeholder": "Bize ihtiyaçlarınızı anlatın..."
           },
           "name": {
             "label": "İsim *"
           },
           "subject": {
-            "label": "Ders *",
+            "label": "İlgileniyorum *",
             "options": {
-              "earlyAccess": "Erken Erişim Programı",
-              "general": "Genel Sorgulama",
+              "earlyAccess": "Felaket Kurtarma",
+              "general": "Genel",
               "other": "Diğer",
-              "partnership": "Ortaklık Fırsatları",
-              "placeholder": "Bir konu seçin",
-              "technical": "Teknik Sorular"
+              "partnership": "ortaklık",
+              "placeholder": "Birini seçin",
+              "technical": "Teknik Soru"
             }
           }
         },
-        "submit": "Mesaj Gönder"
+        "submit": "Uygula"
       },
       "hero": {
-        "subtitle": "Altyapı operasyonlarınızda devrim yaratmaya hazır mısınız? Ekibimizle iletişime geçin.",
-        "title": "Bize Ulaşın"
+        "subtitle": "Formu doldurun, 48 saat içinde sizinle iletişime geçeceğiz.",
+        "title": "Aşağıya Uygula"
       },
       "info": {
-        "description": "İster erken erişimle ilgileniyor olun, ister platformumuz hakkında sorularınız olsun, ister ortaklık fırsatlarını keşfetmek istiyor olun, sizden haber almak isteriz.",
+        "description": "Doğrudan ekibimizle çalışın. Yedeklemelerinizin çalıştığını bilin.",
         "methods": {
           "earlyAccess": {
-            "description": "Rediacc'ı ilk deneyimleyenlerden biri olmak ister misiniz?",
-            "link": "Erken erişim isteyin",
-            "title": "Erken Erişim Programı"
+            "description": "Sınırlı noktalar. Öncelikli destek.",
+            "link": "Daha fazla bilgi edin",
+            "title": "Erken Erişim"
           },
           "general": {
             "email": "iletişim@rediacc.com",
-            "title": "Genel Sorular"
+            "title": "Sorunuz mu var?"
           },
           "technicalSupport": {
-            "description": "Mevcut kullanıcılar ve platformumuzla ilgili teknik sorular için lütfen doğrudan teknik destek ekibimizle iletişime geçin.",
-            "title": "Teknik Destek"
+            "description": "Destek ekibinizle doğrudan iletişime geçin.",
+            "title": "Mevcut Müşteriler"
           }
         },
-        "title": "İletişime Geçin"
+        "title": "Ne Alırsınız"
       },
       "meta": {
-        "description": "Erken erişim, teknik destek, ortaklık fırsatları ve altyapı otomasyon platformumuza ilişkin sorularınız için Rediacc ekibiyle iletişime geçin.",
-        "keywords": "Rediacc ile iletişime geçin, altyapı otomasyon desteği, erken erişim programı, teknik destek, ortaklık fırsatları, DevOps danışmanlığı",
-        "title": "Rediacc'a başvurun | Altyapı Otomasyon Platformu Desteği"
+        "description": "Sınırlı sayıda yer mevcuttur.",
+        "keywords": "Rediacc erken erişim, felaket kurtarma platformu, doğrulanmış yedeklemeler",
+        "title": "Uygula | Rediacc"
       },
       "notice": {
-        "description": "Gönder'e tıkladığınızda mesajınızı içeren e-posta istemciniz açılacaktır. Bu işe yaramazsa, bize doğrudan şu adresten e-posta gönderebilirsiniz:",
-        "emailLabel": "veya bu e-postayı kopyalayın",
+        "description": "E-postanızı açmak için gönder'i tıklayın. Sorunuz mu var? E-posta",
+        "emailLabel": "iletişim@rediacc.com",
         "title": "Nasıl Gönderilir"
       }
     },
@@ -310,6 +311,396 @@
         "title": "Ne yapabilirsiniz:"
       },
       "title": "Sayfa Bulunamadı"
+    },
+    "solutions": {
+      "dataSecurity": {
+        "cta": {
+          "button": "Uygula",
+          "subtitle": "Sıfır bilgi şifrelemesi. Denetim izini tamamlayın. Uyumluluk göz önünde bulundurularak oluşturulmuştur.",
+          "title": "Gerçek Veri Korumaya Hazır mısınız?"
+        },
+        "hero": {
+          "subtitle": "Repo başına şifrelemenin kilidini yalnızca siz açabilirsiniz. İşlemler için ana şifre. Sizin verileriniz, sizin kontrolünüz.",
+          "title": "Her Şeyi Şifreleyin. Herşeyi Kontrol Edin. Sıfır Bilgiyi tamamlayın."
+        },
+        "meta": {
+          "description": "Tam altyapı koruması için sıfır bilgi şifrelemesi. Uyumluluk gereklilikleri göz önünde bulundurularak oluşturulmuştur. Fiziksel hırsızlıktan kurtulun, denetim izlerini koruyun, güvenli bir şekilde geçiş yapın.",
+          "keywords": "veri güvenliği, şifreleme, uyumluluk, altyapı şifrelemesi, denetim izleri, sıfır bilgi",
+          "title": "Veri Güvenliği ve Uyumluluğu | Denetim Yollarına Sahip Şifreli Altyapı"
+        },
+        "problems": {
+          "auditTrail": {
+            "problem": {
+              "additionalPoints": [
+                "Satın almalardan kaynaklanan eski sistemler yıllarca taşınmadan kalır",
+                "Geçiş halindeki sistemler aktif denetim izlemenin dışında kalıyor",
+                "Tamamlanmamış geçişler, denetim körlüğü verilerinin hâlâ açığa çıkmasına neden oluyor",
+                "Hizmet dışı bırakılan sistemlerdeki ihlallerin tespit edilmesi haftalar alır",
+                "Denetim izi olmaması, ne olduğuna dair kanıtın olmaması anlamına gelir"
+              ],
+              "description": "Altyapı geçişleri aşamalı olarak gerçekleşir. Geçişler sırasında kalan eski sistemler denetim radarından çıkar. Denetçiler 'Üretimde neler var?' diye sorduğunda ve 'Kim neye erişti?' gibi soruların yanıtını, kullanımdan kaldırıldığı düşünülen sistemler için veremezsiniz. Tamamlanmamış geçişler, verileri tutan, savunmasız ve izlenmeyen kör noktalar oluşturur.",
+              "story": "Oracle Health, 2022'de satın alınan eski Cerner sunucularını devraldı. Ocak 2025'te saldırganlar taşınmamış bir sistemi ihlal etti. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Bir ay boyunca tespit edilmedi; artık izlenmiyor. 262.831 hasta kaydı çalındı. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises- Patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> İhlal, denetlenmeyen altyapıda meydana geldi."
+            },
+            "solution": {
+              "benefits": [
+                "Günlüğe kaydedilen ve izlenebilir her işlemin eksiksiz denetim takibi",
+                "Tam görünürlük denetçileri neyin korunduğunu, kimin eriştiğini görür",
+                "Erişim kontrolü kanıtı kimin neyi, ne zaman, neden yaptığını",
+                "Uyumluluk incelemeleri için denetime hazır belgeler kapsamlı günlükler",
+                "Şifrelenmiş verileri denetçilere ifşa etmeden şeffaf işlemler"
+              ],
+              "description": "Her işlem günlüğe kaydedildi: Kim konuşlandırdı, kim neye erişti, ne zaman değişiklik yapıldı? Altyapınıza yönelik tam görünürlük. Denetim ekibi kesin zaman damgalarını ve kimliği doğrulanmış erişim kanıtını alır. Depo başına şifreleme, operasyonel kontrollerden ayrı kalır; denetim takibi erişimi kanıtlarken veriler şifreli kalır.",
+              "title": "Tam Denetim Uyumluluğu"
+            },
+            "subtitle": "Ölçemediğiniz şeyi yönetemezsiniz <small class='subtitle-attribution'>— Peter Drucker</small>",
+            "title": "Eksik Denetim Yolları"
+          },
+          "migrationExposure": {
+            "problem": {
+              "additionalPoints": [
+                "Yükleniciler geçiş süreçlerini hızlandırmak için güvenlik kontrollerini devre dışı bırakır",
+                "On dakikalık güvenlik süresi yirmi dört saate dönüştü",
+                "Arama motorları, geçiş pencereleri sırasında korumasız sistemleri dizine ekler",
+                "Güvenliğin geçici olarak devre dışı bırakılması, unutulması halinde kalıcı hale gelebilir",
+                "Geçiş pencereleri, saldırganların bugün aktif olarak yararlandığı fırsatlar yaratıyor"
+              ],
+              "description": "Altyapı geçişleri geçici güvenlik gevşemesi gerektirir. Yükleniciler 'süreci hızlandırmak' için güvenlik duvarlarını devre dışı bırakır. Performans nedeniyle şifreleme atlandı. Geçici pencereler kalıcı saldırı vektörlerine dönüşür. Korunan veriler saatlerce veya günlerce açığa çıkar. Saldırganlar, güvenlik kontrolleri zayıfladığında geçiş pencerelerini hedef alır.",
+              "story": "Keepnet Labs, Mart 2020'de veritabanını taşıması için bir yüklenici kiraladı. Yüklenici, güvenlik duvarını 10 dakika süreyle devre dışı bıraktı. <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 5 milyar kayıt dizine eklendi. Veritabanı 24 saat boyunca kullanıma sunuldu. <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Bir siber güvenlik firmasının geçişi milyarlarca doları açığa çıkardı."
+            },
+            "solution": {
+              "benefits": [
+                "Veri korumalı kaynaktan hedefe geçiş boyunca şifreleyin",
+                "Şifrelenmemiş aşamalandırma şifreli anlık görüntülerin hiçbiri şifrelenmiş aktarım olarak kalmaz",
+                "Güvenli geri alma şifreli yedeklemeler bozulmadan ve kullanılabilir durumda kalır",
+                "Tüm bulut sağlayıcılarında satıcıdan bağımsız aynı şifreleme",
+                "Sıfır kesinti süresi mümkün olan şifrelenmiş anlık görüntüler paralel geçişi mümkün kılar"
+              ],
+              "description": "Altyapı geçiş boyunca şifreli kalır. Kaynakta şifrelenmiş anlık görüntü, şifrelenmiş aktarım, hedefte şifrelenmiş dağıtım. Şifre çözme penceresi yok. Şifrelenmemiş hazırlama kopyası yok. Repo başına şifreleme baştan sona etkindir.",
+              "title": "Şifreli Geçiş Süreci"
+            },
+            "subtitle": "En iyi ameller, küçük olsa bile tutarlıdır <small class='subtitle-attribution'>— Hz. Muhammed, Sunan İbni Mace (4240)</small>",
+            "title": "Taşıma Güvenliği Açıkları"
+          },
+          "physicalTheft": {
+            "problem": {
+              "additionalPoints": [
+                "Şifreleme eksikse çalınan sunucuların güvenliği ihlal edilmiş durumda kalır",
+                "Hizmetten çıkarma prosedürleri genellikle şifreleme adımlarını tamamen atlar",
+                "Dosya silme verileri silmez, yalnızca girişleri kaldırır",
+                "Veritabanı yedekleri sıklıkla güvenli konumlarda şifrelenmeden depolanır",
+                "Uyumluluk açıkça veriler için kullanımda olmayan şifrelemeyi gerektirir"
+              ],
+              "description": "Birisi sunucunuzu, yedek sürücünüzü veya eski donanımınızı çalıyor. İşletim sistemi şifreleri fiziksel erişime karşı sıfır koruma sağlar; USB'den önyükleme yapar, kimlik doğrulamayı atlar, diskleri bağlar, her şeyi kopyalar. Müşteri verileri, kimlik bilgileri, veritabanları; hepsi gitti. Veri merkezlerinde düzenli olarak hırsızlık yaşanıyor. Hizmetten çıkarma, açığa çıkma yaratır.",
+              "story": "Morgan Stanley, 2016 yılında veri merkezlerini hizmet dışı bırakmak için nakliyeciler kiraladı. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 15 milyon müşteri kaydına sahip sabit diskler açık artırmaya çıkarıldı çevrimiçi - şifrelenmemiş. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 35 milyon dolar para cezası. Çoğu cihaz asla kurtarılmadı."
+            },
+            "solution": {
+              "benefits": [
+                "Kontrol ettiğiniz repo şifrelemesi başına gerçek sıfır bilgi",
+                "Eksiksiz altyapı ve yedeklemelerde askeri düzeyde şifreleme",
+                "Fiziksel hırsızlık değersizleşiyor Şifrelenmiş verilerin hiçbir değeri yok",
+                "Dağıtımdan hizmetten çıkarma ve imhaya kadar kanıtlanabilir şifreleme",
+                "Başlangıçtan itibaren uyumluluk gereksinimleri göz önünde bulundurularak oluşturuldu"
+              ],
+              "description": "Her depo kendi şifresiyle şifrelenir. Her dosya, kapsayıcı, yapılandırma, veritabanı ve yedekleme korunur. Repo başına şifreleme anahtarını yalnızca siz tutuyorsunuz. Çalınan donanım = değersiz şifrelenmiş lekeler.",
+              "title": "Sıfır Bilgi Şifrelemesini Tamamlayın"
+            },
+            "subtitle": "Kilitler dürüst insanları dürüst tutar <sma class='subtitle-attribution'>— Halk deyişi (1912)</small>",
+            "title": "Fiziksel Erişim Hırsızlığı"
+          }
+        }
+      },
+      "disasterRecovery": {
+        "cta": {
+          "button": "Uygula",
+          "subtitle": "Sınırlı sayıda yer mevcuttur.",
+          "title": "Yedeklemelerinize Güvenmeye Hazır mısınız?"
+        },
+        "hero": {
+          "subtitle": "Doğrulanmış yedeklemeler. Sınırsız geçmiş. Artan hız.",
+          "title": "Felaket Kurtarma Doğru Yapıldı"
+        },
+        "meta": {
+          "description": "Yedeklemelerinizin işe yarayacağını ummayı bırakın ve işe yaradığını bilin. Rediacc, otomatik yedekleme doğrulaması, sınırsız saklama ve artan yedekleme verimliliği sağlar.",
+          "keywords": "felaket kurtarma, yedekleme doğrulama, artımlı yedeklemeler, veri koruma, yedekleme testi, iş sürekliliği",
+          "title": "Felaket Kurtarma Çözümleri | Gerçekten Çalışan Doğrulanmış Yedeklemeler"
+        },
+        "problems": {
+          "limitedHistory": {
+            "problem": {
+              "additionalPoints": [
+                "Saldırganlar bilinçli olarak temiz yedeklemelerin süresinin dolmasını bekler",
+                "Geleneksel yedi ila on dört günlük saklama, güvenlik açıkları bırakır",
+                "Her tam yedekleme, çok büyük depolama alanı tüketir ve saklamayı sınırlandırır",
+                "Uyumluluk gereklilikleri genellikle aylarca süren bir geçmiş gerektirir",
+                "Depolama maliyetleri geçmiş ve bütçe arasında seçim yapmaya zorluyor"
+              ],
+              "description": "Kısa saklama süreleri depolama alanından tasarruf sağlar ancak güvenlik açığı yaratır. Bulaşma öncesindeki verilere ihtiyacınız olduğunda bunların üzerine zaten yazılmıştır. Geleneksel sistemler, büyük depolama maliyetleri nedeniyle uzun süreli saklamayı karşılayamaz.",
+              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını kasıtlı olarak bekler. 7-14 gün saklama süresine sahip kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Tekilleştirme ile aylarca süren yedekleme geçmişini verimli bir şekilde saklayın",
+                "Herhangi bir enfeksiyon öncesinde temiz yedeklemelere erişin",
+                "Artımlı veri tekilleştirme depolama alanından yüzde doksanın üzerinde tasarruf sağlar",
+                "Uzun süre elde tutma özelliğiyle uyumluluk gereksinimlerini uygun maliyetle karşılayın",
+                "Saldırganlar saklama sürenizin bitmesini bekleyemez"
+              ],
+              "description": "Rediacc'ın artımlı tekilleştirme özelliği, depolama patlaması olmadan 30, 60, 90+ günlük yedekleme geçmişini saklamanıza olanak tanır. Yalnızca değişiklikler depolanır; yinelenen veriler depolanmaz.",
+              "title": "Uzatılmış Geçmiş Saklama"
+            },
+            "subtitle": "Erken kalkan kuş solucanı yakalar <small class='subtitle-attribution'>— William Camden (1636)</small>",
+            "title": "Kısa Yedekleme Geçmişi"
+          },
+          "slowBackups": {
+            "problem": {
+              "additionalPoints": [
+                "Aynı fidye yazılımı saldırısı, büyük ölçüde farklı kurtarma sürelerine neden olur",
+                "Geleneksel tam geri yüklemeler, günlerin kapalı kaldığı hizmetlerin iptal edilmesi anlamına gelir",
+                "Modern artımlı kurtarma birkaç dakika içinde tekrar çevrimiçi olur",
+                "Sağlık hizmetleri hastaların bakıma ihtiyaç duyduğu günleri bekleyemez",
+                "Her arıza süresi, operasyonel ve mali zararı katlıyor"
+              ],
+              "description": "Geleneksel tam yedeklemeler yavaş tam geri yükleme anlamına gelir. Modern kurtarma sistemlerine sahip kuruluşlar birkaç saat içinde tekrar çevrimiçi olur. Geleneksel yedeklemeye sahip olanlar mı? Günlerce kesinti, iptal edilen hizmetler ve gelir kaybı.",
+              "story": "WannaCry, Mayıs 2017'de NHS'yi vurarak ülke çapındaki hastane sistemlerini kilitledi. <a href='https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Bazı güvenler saatler içinde kurtarıldı. <a href='https://www.bridgeheadsoftware.com/2017/07/wannacry-nhs-attack-lessons-backup-data-recovery-strategies/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Diğerleri günler sürdü. 19.000'den fazla randevu iptal edildi. İyileşme süresi: saatlere karşı kaos dolu günler."
+            },
+            "solution": {
+              "benefits": [
+                "Günlerce kesinti yerine dakikalar içinde kurtarma",
+                "Artımlı geri yükleme yalnızca değiştirilen veri bölümlerini aktarır",
+                "Rakipler kapalıyken kritik sistemler çevrimiçi",
+                "Hızla gelir kaybını ve hizmet kesintisini en aza indirin",
+                "Her seferinde hızla toparlanan organizasyon olun"
+              ],
+              "description": "Rediacc'ın artımlı mimarisi hızlı kurtarmaya olanak tanır. Sistemin tamamını değil, yalnızca değişenleri geri yükleyin. Diğerleri hâlâ iyileşirken, kritik operasyonlarınızı dakikalar içinde tekrar çevrimiçi hale getirin.",
+              "title": "Hızlı İyileşme Süreci"
+            },
+            "subtitle": "Beşten önce beşi iyi kullanın <sma class='subtitle-attribution'>— Peygamber Muhammed, Sunan İbni Mace (4240)</small>",
+            "title": "Yavaş İyileşme Süreleri"
+          },
+          "unverified": {
+            "problem": {
+              "additionalPoints": [
+                "Fidye yazılımı, verilerinizi şifrelemeden haftalar önce sistemlere bulaşıyor",
+                "Yedekleme sistemleri, bozuk yedekleme dosyalarına rağmen başarılı olduğunu bildiriyor",
+                "Manuel geri yükleme testi kimsenin düzenli olarak yapmadığı saatler alır",
+                "Yedeklemelere rağmen yalnızca yüzde altmış üçü başarıyla geri yükleniyor",
+                "Test edilmemiş yedeklemeler tam ihtiyacınız olduğu anda başarısız olur"
+              ],
+              "description": "Yedeklere sahip olmak ve çalışan yedeklere sahip olmak tamamen farklı iki şeydir. Çoğu kuruluş, bir felaket gerçekleşene kadar geri yüklemeleri asla test etmez; daha sonra yedeklemelerinin bozuk, eksik veya virüslü olduğunu keşfeder. Onlara ihtiyaç duyduğunuzda, onları düzeltmek için zaten çok geçtir.",
+              "story": "Baltimore'un şehir sistemleri Mayıs 2019'da fidye yazılımının saldırısına uğradı. <a href='https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Yetkililer, yedeklemelerin test edildiğini veya geçerli olduğunu doğrulayamadı. <a href='https://krebsonsecurity.com/2019/06/report-no-eternal-blue-exploit-found-in-baltimore-city-ransomware/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> En son yedeklere virüs bulaştı. Daha yaşlı olanlar hiç test edilmedi. Kurtarma maliyeti: 18 milyon dolar."
+            },
+            "solution": {
+              "benefits": [
+                "Gerçek geri yükleme işlemlerini günlük olarak test ederek otomatik doğrulama",
+                "Yedeklemelerin bozuk veya eksik olup olmadığını hemen öğrenin",
+                "Herhangi bir enfeksiyon öncesinde temiz, test edilmiş yedeklemelere erişin",
+                "Manuel test gerektirmez Otomatik doğrulama sürekli olarak çalışır",
+                "İhtiyacınız olmadan önce çalıştığı kanıtlanmış her yedekleme"
+              ],
+              "description": "Rediacc yalnızca yedeklemeler oluşturmaz; gerçek geri yüklemeyi test ederek bunları doğrular. Acil bir durumda ihtiyaç duymadan önce her yedeklemenin çalıştığı kanıtlanmıştır.",
+              "title": "Otomatik Yedekleme Doğrulaması"
+            },
+            "subtitle": "Güvenin ama doğrulayın <small class='subtitle-attribution'>— Rus atasözü/Reagan (1987)</small>",
+            "title": "Test Edilmemiş Yedekleme Sistemleri"
+          }
+        },
+        "video": {
+          "subtitle": "Rediacc'ın yedeklemelerinizi nasıl otomatik olarak doğruladığını ve artan verimlilikle sınırsız geçmişi nasıl tuttuğunu izleyin.",
+          "title": "Olağanüstü Durum Kurtarmayı İş Başında Görün"
+        }
+      },
+      "systemPortability": {
+        "cta": {
+          "button": "Uygula",
+          "subtitle": "Tek bir taşınabilir dosya. Askeri düzeyde güvenlik. Sınırlı sayıda yer mevcuttur.",
+          "title": "Gerçek Sistem Taşınabilirliğine Hazır mısınız?"
+        },
+        "hero": {
+          "subtitle": "Sistemi tek dosyada tamamlayın. Askeri düzeyde şifreleme. İlk denemede her yerde çalışır.",
+          "title": "Sistemlerinizi Her Yere Güvenle Taşıyın"
+        },
+        "meta": {
+          "description": "Satıcı bağımlılığından kurtulun. Tek bir taşınabilir dosyada eksiksiz sistem, askeri düzeyde şifreleme ve herhangi bir altyapıda sıfır yapılandırma dağıtımı.",
+          "keywords": "sistem taşınabilirliği, satıcıya bağımlılık, altyapı mobilitesi, buluta geçiş, çoklu bulut, sistem şifreleme, veri güvenliği, dağıtım otomasyonu",
+          "title": "Evrensel Sistem Taşınabilirliği | Altyapınızı Her Yere Güvenle Taşıyın"
+        },
+        "problems": {
+          "deployment": {
+            "problem": {
+              "additionalPoints": [
+                "Kullanıcı kimlikleri farklı sistemler ve dağıtımlar arasında değişiklik gösterir",
+                "Bir kullanıcıya ait dosyalar başka bir yere ait değil",
+                "Her geçişten sonra manuel sahiplik işlemleri yapılması gerekir",
+                "Yanlış sahipliğe sahip veritabanı dosyaları başlamayacak",
+                "İzin uyuşmazlıkları nedeniyle kapsayıcı uygulamaları başarısız oluyor"
+              ],
+              "description": "Dosyaları Linux sistemleri arasında taşırken dosya sahipliği bir kabusa dönüşür. Kullanıcı 'appuser', Sunucu A'da 1000, ancak Sunucu B'de 1005'tir. Sayısal UID'ler eşleşmediğinden uygulamalar dosyalara erişemez ve her seferinde manuel izin düzeltmeleri gerektirir.",
+              "story": "Docker konteynerleri, sistemler arasında hareket ederken sürekli olarak bu durumla karşı karşıya kalır. <a href='https://www.joyfulbikeshedding.com/blog/2021-03-15-docker-and-the-host-filesystem-owner-matching-problem.html' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Linux sayısal UID'ler kullanır. Farklı sistemler farklı değerler atayarak izin hatalarına neden olur. <a href='https://stackoverflow.com/questions/51188997/docker-uid-gid-mapping-changes-on- Different-host' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Dakikalar, saatler süren chown işlemlerine ve hata ayıklamaya dönüşür."
+            },
+            "solution": {
+              "benefits": [
+                "Dosya sahipliği farklı kimliklerdeki sistemlerde çalışır",
+                "Geçiş işlemlerinden sonra manuel izin düzeltmesi yok",
+                "Ekip SSH anahtarları paylaşım olmadan merkezi olarak yönetildi",
+                "Veritabanları ve uygulamalar yeni sistemleri hemen başlatır",
+                "Ubuntu Debian CentOS izinleri arasında geçiş çalışması"
+              ],
+              "description": "Rediacc, kullanıcı sahipliğini dosya sistemi düzeyinde yönetir. Bir veri havuzunu yeni bir sisteme taşıdığınızda, dosya sahipliği farklı kullanıcı kimliklerinden bağımsız olarak otomatik olarak çalışır. Ekip SSH anahtarları merkezi olarak yönetilir; geliştiriciler, kimlik bilgilerini paylaşmadan otomatik olarak bağlanır.",
+              "title": "Otomatik Sahiplik Çözümü"
+            },
+            "subtitle": "Acele etmek şeytandandır; düşünce Allah'tandır <small class='subtitle-attribution'>— Hz. Muhammed, Müsned Ebu Ya'la (4256)</small>",
+            "title": "Dosya İzin Çakışmaları"
+          },
+          "testingVendorSwitch": {
+            "problem": {
+              "additionalPoints": [
+                "Şirketlerin yüzde yedisi hiçbir zaman felaket kurtarmayı test etmiyor",
+                "Yıllık testlerin yalnızca yüzde kırk altısı güncelliğini yitiriyor",
+                "Paralel altyapı testleri doğrulama sırasında maliyetleri iki katına çıkarır",
+                "Zaman kaynaklarının eksikliği düzenli testleri engelliyor",
+                "Test edilmemiş yük devretme planları ihtiyacınız olduğunda başarısız olur"
+              ],
+              "description": "Tek bulut risklidir. Felaket meydana gelmeden önce yük devretmeyi test etmek istiyorsunuz. Ancak test yapmak, üretimi tam olarak yansıtan altyapının kopyalanması ve senkronizasyonun haftalar boyunca sürdürülmesi anlamına gelir. Çoğu şirket felaketten kurtarmayı hiçbir zaman test etmez çünkü risk ve çaba buna değmez; ta ki kesintiler değmesi gerektiğini kanıtlayana kadar.",
+              "story": "Şirketlerin yalnızca %7'si felaket kurtarma planlarını asla test etmiyor. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Ancak yalnızca yıllık %46 test yapılıyor. <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Neden: zaman, kaynak eksikliği, karmaşıklık. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Test yapmak maliyetleri iki katına çıkarır. Sağlayıcının kesintisi, test etmeleri gerektiğini kanıtlıyor."
+            },
+            "solution": {
+              "benefits": [
+                "Felaket kurtarmayı gerçek üretim mimarisiyle doğrulayın",
+                "Yük devretme testini aylar yerine haftalar içinde tamamlayın",
+                "Üretime sıfır etkiyi güvenle test edin",
+                "İhtiyaç duymadan önce yük devretme hızını karşılaştırın",
+                "Yedekleme planınızın felaketten önce işe yaradığını bilin"
+              ],
+              "description": "Rediacc, üretim ortamınızın tam durumunu anlık olarak kaydeder. Bu anlık görüntüyü gerçek yapılandırma ve veri modelleriyle Azure veya GCP'de dağıtın. Yük devretme performansını test edin ve üretime dokunmadan olağanüstü durum kurtarmayı doğrulayın. Yalnızca çalıştığı kanıtlandığında taahhütte bulunun. Sıfır aksama süresi. Sıfır risk.",
+              "title": "Risksiz Yük Devretme Testi"
+            },
+            "subtitle": "Alıştırma mükemmelleştirir <sma class='subtitle-attribution'>— Klasik gelenek (1500'ler+)</small>",
+            "title": "Test Edilmemiş Yük Devretme Planları"
+          },
+          "vendorLockIn": {
+            "problem": {
+              "additionalPoints": [
+                "Yirmi Ekim kesintisi dünya çapında on beş saat sürdü",
+                "Bölgesel kesintiler, üretim yedeklemesinin aynı anda başarısız olması anlamına geliyor",
+                "Çok bölgeli kuruluşlar tek bulutta çevrimiçi kaldı",
+                "Bulut sağlayıcıları başarısız olduğunda alternatif çalışmaya ihtiyaç duyarlar",
+                "Satıcı kilitlemesi gereken yük devretme seçeneklerini ortadan kaldırır"
+              ],
+              "description": "Tek bir bulut sağlayıcısı üzerine inşa ettiniz. Onlar başarısız olduğunda sen de onlarla birlikte başarısız olursun. Yedekleme yok. Yük devretme yok. Başka seçenek yok. Satıcıya bağlı kalmak yalnızca pahalı değildir; aynı zamanda tüm operasyonunuzu sekteye uğratan tek bir arıza noktasıdır.",
+              "story": "20 Ekim 2025. AWS US-EAST-1 DNS hatası 15 saat sürdü. <a href='https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Coinbase, Fortnite, Signal, Zoom—çevrimdışı. AWS'ye kilitlenen kuruluşların sıfır seçeneği vardı. Çok bölgeli mimariler otomatik olarak devredilir. <a href='https://ine.com/blog/aws-october-2025-outage-multi-region-and-cloud-lessons-learned' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Tek bulut, tek hata noktasıdır."
+            },
+            "solution": {
+              "benefits": [
+                "Birden fazla bulut çalıştıran arızalardan kurtulduğunuz her yerde konuşlandırın",
+                "Bulut sağlayıcıları başarısız olduğunda alternatifleri zaten çalıştırıyorlar",
+                "Sağlayıcılar arasında yük devretme işlemi birkaç dakika içinde test edildi ve doğrulandı",
+                "Ayrı altyapı sürümleri olmayan gerçek çoklu bulut",
+                "İhtiyaç duymadan önce yük devretmeyi test edin, işe yarıyor"
+              ],
+              "description": "Rediacc, tüm sisteminizi tek bir taşınabilir depoda paketler. Değişiklik yapmadan AWS, Azure, Google Cloud veya yalın donanım üzerinde dağıtın. Bir sağlayıcı başarısız olduğunda, zaten başka bir yere koşuyorsunuz demektir. Yük devretme saatler değil dakikalar alır. Altyapı hiçbir zaman tek bir sağlayıcının çalışma süresine bağlı kalmaz.",
+              "title": "Gerçek Çoklu Bulut Yedekliliği"
+            },
+            "subtitle": "Tüm yumurtalarınızı tek sepete koymayın <small class='subtitle-attribution'>— Cervantes (1605) / Carnegie (1885)</small>",
+            "title": "Satıcı Kilitleme Tuzağı"
+          }
+        }
+      },
+      "threatResponse": {
+        "cta": {
+          "button": "Uygula",
+          "subtitle": "Tehditlerden daha hızlı kurtulun. Değişmez. Taşınabilir. Senin kontrolünde.",
+          "title": "Siber Dayanıklılığa Hazır mısınız?"
+        },
+        "hero": {
+          "subtitle": "Değişmez yedeklemeler. İyileşmeye dakikalar kaldı. Bulutlar arasında altyapı tahliyesi.",
+          "title": "Tehditler Hızlı Hareket Ediyor. Sen de yapmalısın."
+        },
+        "meta": {
+          "description": "Değişmez yedeklemeler, hızlı kurtarma ve altyapı taşınabilirliği ile fidye yazılımı saldırılarından kurtulun. Tehlike altındaki sistemleri dakikalar içinde tahliye edin.",
+          "keywords": "fidye yazılımı koruması, siber dayanıklılık, değişmez yedeklemeler, hızlı kurtarma, iş sürekliliği, altyapı tahliyesi, felaket kurtarma",
+          "title": "Fidye Yazılımı ve Siber Dayanıklılık Çözümleri | Tehditler Hızla İlerliyor"
+        },
+        "problems": {
+          "infrastructureBlackBox": {
+            "problem": {
+              "additionalPoints": [
+                "Kuruluşlar tüm üretim SSH anahtarlarını hesaba katamaz",
+                "Yedekleme sistemleri, tehditleri, unutulmuş hizmetleri, potansiyel truva atlarını yakalar",
+                "Altyapı geçişleri birikmiş riski ileriye doğru sürdürür",
+                "Eski sistemler olağanüstü durum kurtarmayı etkileyen bilinmeyen yapılandırmalara sahiptir",
+                "Bilinmeyen erişim, fidye yazılımının kurtarıldıktan sonra yeniden sızmasına olanak tanır"
+              ],
+              "description": "Eski sistemler, yüklenicilerden veya saldırganlardan gelen belgelenmemiş SSH anahtarlarını biriktirir. Yedeklemeler her şeyi (çöp dosyalar, unutulmuş hizmetler, potansiyel truva atları) yakalar. Israrlı saldırganlar da yedeklenir. Göçler bilinmeyen riskleri devam ettiriyor. Yedeklemelerde ne olduğunu veya geri yüklendiğinde neyin etkinleştirildiğini kimse bilmiyor.",
+              "story": "Bir finans firması, üretim veritabanlarında, yıllar önce ayrılan satıcıların anahtarları da dahil olmak üzere 47 belgelenmemiş SSH anahtarı keşfetti. <a href='https://www.appviewx.com/blogs/ssh-key-sprawl-causes-and-consequences/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Fidye yazılımı kurtarma, adli SSH anahtar denetimi sırasında 2 hafta gecikti. <a href='https://www.encryptionconsulting.com/ssh-key-sprawl/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Yalnızca doğrulanmış temel sistem bileşenlerini taşıyın",
+                "Birikmiş güvenlik borcunu ve eski karmaşıklığı ortadan kaldırın",
+                "Merkezi SSH anahtar yönetimi, anahtar yayılımının yerini alıyor",
+                "Üretim ve yedekleme sistemlerinin tam denetlenebilirliği",
+                "Yeni dağıtım, gizli tehditler olmadan temiz bir sayfa sunar"
+              ],
+              "description": "Rediacc, doğrulanmış temel bileşenlerle yeni altyapı üzerinde komple sistem yeniden yapılandırmasına olanak tanır. 'Her şeyi' değil, kasıtlı olarak seçilen sistem verilerini ve yapılandırmalarını taşırsınız. SSH anahtarları merkezi olarak yönetilir ve denetlenir. Sonuç: Tam görünürlükle temiz altyapı. Güvenlik borcu yok. Gizli erişim yok.",
+              "title": "Yeni Doğrulanmış Altyapı"
+            },
+            "subtitle": "Ağaçlardan ormanı göremezsiniz <small class='subtitle-attribution'>— John Heywood (1546)</small>",
+            "title": "Altyapı Kara Kutusu"
+          },
+          "osVulnerability": {
+            "problem": {
+              "additionalPoints": [
+                "İşletim sisteminizdeki kritik güvenlik açıklarına yama yok",
+                "Tam işletim sistemi geçişleri haftalarca test doğrulaması gerektirir",
+                "Üretim iş yükü olmadan geçiş güvenli bir şekilde test edilemiyor",
+                "Başarısız geçişlerin geri alınması, verilerin tamamen geri yüklenmesi anlamına gelir",
+                "Güvenlik açığı pencereleri haftalarca açık kalıyor"
+              ],
+              "description": "Kritik işletim sistemi güvenlik açığı keşfedildi. Yalnızca çalıştırmadığınız daha yeni sürümler için yamalar. Geçiş, haftalarca süren test gerektirir. Verileri riske atmadan üretime karşı test yapılamaz. Geri alma, tam restorasyon anlamına gelir. Geçiş tamamlanmadan saldırganların istismar etmemesini umarak savunmasız kalırsınız.",
+              "story": "Log4Shell (Aralık 2021) acımasız seçimleri zorunlu kıldı. <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Şirketler işletim sistemi geçişini doğrulamak için 2-3 hafta harcadı. Yalnızca %45'i 11 gün içinde yama yaptı. Bazıları test sırasında 4+ hafta boyunca savunmasız kaldı. <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analiz-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Yeni işletim sistemini gerçek üretim iş yüküne göre test edin",
+                "Gerçek sistemlerinizi riske atmadan uyumluluğu doğrulayın",
+                "Önceki işletim sistemine anında sıfır kesinti süresine geri dönün",
+                "Ubuntu Debian CentOS AlmaLinux arasında dakikalar içinde geçiş yapın",
+                "Güvenlik açığı pencerelerini haftalar değil dakikalar içinde kapatın"
+              ],
+              "description": "Rediacc hızlı, risksiz işletim sistemi geçiş testlerine olanak tanır. Altyapıyı yeni bir işletim sistemine dağıtın ve her şeyin gerçek üretim iş yüküyle çalıştığını doğrulayın. Sorun ortaya çıkarsa anında geri dönün; veri kaybı yok, kurtarma yok. Güvenli olduğu doğrulandıktan sonra kalıcı olarak taahhütte bulunun. Güvenlik açığı pencereleri birkaç dakika içinde kapanır.",
+              "title": "Risksiz İşletim Sistemi Testi"
+            },
+            "subtitle": "Her zorluğun yanında kolaylık vardır <sma class='subtitle-attribution'>— İnşirah Suresi 94:5</small>",
+            "title": "İşletim Sistemi Güncelleme Gecikmeleri"
+          },
+          "ransomwareBackups": {
+            "problem": {
+              "additionalPoints": [
+                "Fidye yazılımı saldırılarının yüzde doksan dördü yedekleme altyapısını hedef alıyor",
+                "Saldırganlar temiz yedeklerin üzerine yazılmasını sağlamak için haftalarca bekler",
+                "Saldırganların yönetici kimlik bilgileri olduğunda değişmez yedeklemeler başarısız olur",
+                "Yedeklemeyi silme, fidye sonrasında bile kurtarma yollarını ortadan kaldırır",
+                "Şifrelenmiş sağlayıcı yedeklemeleri, sağlayıcıların geri yüklemeye yardımcı olamayacağı anlamına gelir"
+              ],
+              "description": "Fidye yazılımı saldırganları, kurtarmayı ortadan kaldırmak için kopyaları silerek veya üzerine yazarak yedekleme altyapısını hedefler. Paylaşılan kimlik bilgileriyle aynı bulut hesabındaki yedeklemeler, saldırganların aylarca süren geçmişi silmesine olanak tanır. Değişmez yedeklemeler bile yönetici erişimiyle başarısız olur. Temiz yedeklemeler siz farkına varmadan kaybolur.",
+              "story": "2024 yılında yapılan bir Sophos araştırması, fidye yazılımı kurbanlarının %94'ünün yedeklemeleri hedeflediğini ve %57'sinin başarılı olduğunu ortaya çıkardı. <a href='https://www.techrepublic.com/article/ransomware-attackers-target-backups/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Yedeklemelerin güvenliği ihlal edildiğinde, ortalama kurtarma maliyetleri 3 milyon dolara ulaşıyor; bu da sekiz kat daha fazla. <a href='https://news.sophos.com/en-us/2024/03/26/the-impact-of-compromised-backups-on-ransomware-outcomes/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Şifrelenmiş yedeklemeler, kimlik bilgilerinin tamamen tehlikeye atılması durumunda bile hayatta kalır",
+                "Belirtecin değişmezliği, yönetici erişimiyle silinmeyi önler",
+                "Önceki sürümler bozulmadan kalır ve süresiz olarak şifrelenir",
+                "Altyapının tamamen tehlikeye atılmasından sonra kurtarma mümkün",
+                "Fidye ödemesine gerek yok, yedeklemeler sizin kontrolünüz altında"
+              ],
+              "description": "Rediacc, şifrelenmiş yedek kopyaları yönetimsel olarak değil, depolama düzeyinde değiştirilemez şekilde saklar. Saldırganlar altyapı belirteçlerini veya yönetici kimlik bilgilerini tehlikeye atsa bile yalnızca şifrelenmiş verileri okuyabilir; sürümleri değiştiremez, silemez veya üzerine yazamaz. Parolanızla şifrelenen anlık görüntüler, saldırganlar için değersiz kalır.",
+              "title": "Değişmez Yedekleme Koruması"
+            },
+            "subtitle": "Devenizi bağlayın ve Allah'a güvenin <small class='subtitle-attribution'>— Peygamber Muhammed, Sünen et-Tirmizi (2517)</small>",
+            "title": "Fidye Yazılımı Yedeklemeleri Hedefliyor"
+          }
+        }
+      }
     }
   },
   "problem": {
@@ -328,33 +719,42 @@
     "items": [
       {
         "benefits": [
-          "Yedeklemeler yalnızca alınmaz, otomatik olarak test edilir",
-          "Yalnızca 1-3 kopyayı değil, aylarca geçmişi saklayın",
-          "Yerleşik bölgeler arası koruma"
+          "Değişmez yedeklemeler saldırılardan kurtulur",
+          "Saatler veya günler değil, dakikalar içinde iyileşin",
+          "Risksiz işletim sistemi testi"
         ],
-        "description": "Yedeklemeleriniz çalışıyor. Bunları doğruluyoruz.",
-        "title": "Felaket Kurtarma"
+        "description": "İyileşme hızı hayat kurtarır. Değişmez yedeklemeler. Hızlı yanıt.",
+        "title": "Fidye Yazılımından Kurtulma"
       },
       {
         "benefits": [
-          "Fidye yazılımının dokunamayacağı değişmez yedeklemeler",
-          "Her VM, doğrulanmış temiz durumla yedeklenir",
-          "Risksiz sızma testi ortamları"
+          "AWS kesintilerinden kurtulun",
+          "Sıfır satıcı bağımlılığı",
+          "Test edilmiş yük devretmeye hazır"
         ],
-        "description": "Fidye yazılımı ulaşamadığı şeyi şifreleyemez.",
-        "title": "Siber Güvenlik Koruması"
+        "description": "Tek bulut tehlikelidir. İstediğiniz yere konuşlandırın. Hızlı bir şekilde başarısız olun.",
+        "title": "Her Zaman Çoklu Bulut"
       },
       {
         "benefits": [
-          "Herhangi bir işletim sistemi, sanal makine veya bulut sağlayıcıyla çalışır",
-          "Güvenli PostgreSQL yükseltmeleri ve şema değişiklikleri",
-          "Donanım satın almadan önce GPU iş yüklerini test edin"
+          "Otomatik doğrulama",
+          "30-90 gün saklama",
+          "Dakikalar içinde kurtarın"
         ],
-        "description": "Taahhüt etmeden önce geçişleri test edin.",
-        "title": "Geliştirme Hızlandırma"
+        "description": "Doğrulanmış kurtarma. Sadece iddialar değil. Tam tarih.",
+        "title": "Doğrulanmış Yedeklemeler"
+      },
+      {
+        "benefits": [
+          "Kontrol ettiğiniz şifreleme",
+          "Tam denetim izi",
+          "Taşıma açısından güvenli"
+        ],
+        "description": "Askeri düzeyde şifreleme. Denetim izlerini tamamlayın.",
+        "title": "Şifreleme Kontrolü"
       }
     ],
-    "subtitle": "Altyapı ekiplerini geceleri uykusuz bırakan üç kritik sorun.",
-    "title": "Neyi Çözüyoruz"
+    "subtitle": "Altyapı arızalandığında veya tehditler ortaya çıktığında hızlı müdahale için dört entegre çözüm.",
+    "title": "İş Sürekliliğini Nasıl Sağlıyoruz?"
   }
 }

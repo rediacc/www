@@ -32,7 +32,7 @@ PENDING → ASSIGNED → PROCESSING → COMPLETED/FAILED/CANCELLED
 | 物业 | 类型 | 描述 |
  |----------|------|-------------|
  | `任务ID` | UUID | 唯一的任务标识符 |
- | `状态` | 枚举 | 当前执行状态 |
+ | `状态` | 枚举 | 当前执行状态|
  | `优先` | 1-5 | 1-5 执行优先级（1 最高）|
  | `重试次数` | 数量 | 剩余重试次数 |
  | `vaultData` | 对象| 加密任务配置|
@@ -168,6 +168,6 @@ Vault 数据由系统自动加密/解密。
 1.任务错误信息
  2. 机器日志
  3.Vault数据完整性
- 4.SSH连接
+ 4.SSH 连接
 
 了解更多信息[最佳实践](/blog/distributed-task-management-best-practices)。

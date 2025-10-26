@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from '../i18n/react';
 import { SUPPORTED_LANGUAGES, getLanguageFromPath, getLanguageName, getLanguageFlag } from '../i18n/language-utils';
 import type { Language } from '../i18n/types';
+import '../styles/language-switcher.css';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -36,120 +37,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <>
-      <style jsx>{`
-        .language-selector-footer {
-          position: relative;
-          display: inline-block;
-        }
-
-        .language-trigger-footer {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.5rem 0.75rem;
-          background: transparent;
-          border: 1px solid rgba(0, 0, 0, 0.1);
-          border-radius: 6px;
-          color: #666;
-          font-size: 0.875rem;
-          font-weight: 500;
-          cursor: pointer;
-          transition: all 0.2s ease;
-          font-family: inherit;
-        }
-
-        .language-trigger-footer:hover {
-          background-color: rgba(0, 0, 0, 0.02);
-          border-color: rgba(0, 0, 0, 0.2);
-          color: #333;
-        }
-
-        .language-trigger-footer:active {
-          background-color: rgba(0, 0, 0, 0.05);
-        }
-
-        .language-flag {
-          font-size: 1rem;
-          line-height: 1;
-        }
-
-        .chevron {
-          transition: transform 0.2s ease;
-        }
-
-        .chevron.open {
-          transform: rotate(180deg);
-        }
-
-        .language-menu-footer {
-          position: absolute;
-          bottom: 100%;
-          right: 0;
-          margin-bottom: 0.5rem;
-          background-color: white;
-          border: 1px solid rgba(0, 0, 0, 0.1);
-          border-radius: 8px;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-          overflow: hidden;
-          z-index: 1000;
-          min-width: 150px;
-        }
-
-        .language-option-footer {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          padding: 0.75rem 1rem;
-          width: 100%;
-          background: transparent;
-          border: none;
-          color: #666;
-          text-align: left;
-          font-size: 0.875rem;
-          cursor: pointer;
-          transition: background-color 0.15s ease;
-          font-family: inherit;
-        }
-
-        .language-option-footer:hover {
-          background-color: #f8f8f8;
-        }
-
-        .language-option-footer.active {
-          background-color: #f0f0f0;
-          color: #0066cc;
-          font-weight: 600;
-        }
-
-        .language-option-footer .flag {
-          font-size: 1rem;
-          line-height: 1;
-        }
-
-        .language-option-footer .checkmark {
-          margin-left: auto;
-          color: #0066cc;
-          font-weight: 700;
-        }
-
-        @media (max-width: 768px) {
-          .language-trigger-footer {
-            padding: 0.4rem 0.6rem;
-            font-size: 0.8rem;
-          }
-
-          .language-option-footer {
-            padding: 0.6rem 0.8rem;
-            font-size: 0.8rem;
-          }
-
-          .language-menu-footer {
-            min-width: 140px;
-          }
-        }
-      `}</style>
-      <footer id="footer" className="footer" role="contentinfo">
+    <footer id="footer" className="footer" role="contentinfo">
         <div className="footer-container">
           <div className="footer-columns">
             {/* Navigation Column */}
@@ -215,9 +103,9 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div className="footer-bottom-right">
-            <div className="language-selector-footer" ref={dropdownRef}>
+            <div className="language-selector" ref={dropdownRef}>
               <button
-                className="language-trigger-footer"
+                className="language-trigger"
                 onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                 aria-label="Select language"
                 aria-expanded={isLangDropdownOpen}
@@ -225,7 +113,7 @@ const Footer: React.FC = () => {
                 <span className="language-flag">{getLanguageFlag(currentLang)}</span>
                 <span className="language-name">{getLanguageName(currentLang)}</span>
                 <svg
-                  className={`chevron ${isLangDropdownOpen ? 'open' : ''}`}
+                  className={`language-chevron ${isLangDropdownOpen ? 'open' : ''}`}
                   width="14"
                   height="14"
                   viewBox="0 0 24 24"
@@ -238,11 +126,11 @@ const Footer: React.FC = () => {
               </button>
 
               {isLangDropdownOpen && (
-                <div className="language-menu-footer">
+                <div className="language-menu bottom">
                   {SUPPORTED_LANGUAGES.map((lang) => (
                     <button
                       key={lang}
-                      className={`language-option-footer ${lang === currentLang ? 'active' : ''}`}
+                      className={`language-option ${lang === currentLang ? 'active' : ''}`}
                       onClick={() => {
                         handleLanguageChange(lang);
                         setIsLangDropdownOpen(false);
@@ -260,7 +148,6 @@ const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
-    </>
   );
 };
 

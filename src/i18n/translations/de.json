@@ -15,8 +15,8 @@
       "contactSupport": "Kontaktieren Sie den Support",
       "goToHomepage": "Gehen Sie zur Startseite",
       "learnMore": "Erfahren Sie mehr",
-      "requestEarlyAccess": "Fordern Sie Early Access an",
-      "sendMessage": "Nachricht senden"
+      "requestEarlyAccess": "Anwenden",
+      "sendMessage": "Anwenden"
     },
     "logoAlt": "Rediacc – Infrastrukturautomatisierungsplattform",
     "search": {
@@ -44,53 +44,53 @@
   },
   "earlyAccess": {
     "benefits": [
-      "Vorrangiger Zugriff auf die Rediacc-Plattform",
-      "Direkter Input zur Feature-Entwicklung",
-      "Exklusive Early-Adopter-Preise",
-      "Dedizierte Implementierungsunterstützung"
+      "Arbeiten Sie direkt mit unserem Team zusammen",
+      "Formen Sie das Produkt",
+      "Vorrangiger Support",
+      "Frühzeitiger Zugriff auf neue Funktionen"
     ],
     "form": {
       "fields": {
         "company": {
           "autoComplete": "Organisation",
-          "label": "Firma / Organisation *"
+          "label": "Unternehmen *"
         },
         "email": {
           "autoComplete": "E-Mail",
-          "label": "E-Mail-Adresse *"
+          "label": "E-Mail *"
         },
         "message": {
-          "label": "Weitere Informationen",
-          "placeholder": "Erzählen Sie uns von Ihren Infrastrukturherausforderungen oder spezifischen Anforderungen ..."
+          "label": "Nachricht",
+          "placeholder": "Erzählen Sie uns von Ihren Bedürfnissen..."
         },
         "name": {
           "autoComplete": "Name",
-          "label": "Vollständiger Name *"
+          "label": "Name *"
         },
         "role": {
           "autoComplete": "Organisationstitel",
-          "label": "Rolle/Titel"
+          "label": "Rolle"
         },
         "useCase": {
-          "label": "Primärer Anwendungsfall",
+          "label": "Hauptinteresse",
           "options": {
-            "aiSafeOperations": "Cybersicherheitsschutz",
-            "developmentAcceleration": "Entwicklungsbeschleunigung",
+            "aiSafeOperations": "Cybersicherheit",
+            "developmentAcceleration": "Entwicklung",
             "disasterRecovery": "Notfallwiederherstellung",
-            "multiple": "Mehrere Anwendungsfälle",
+            "multiple": "Mehrere",
             "other": "Andere",
-            "placeholder": "Wählen Sie Ihr Hauptinteresse aus"
+            "placeholder": "Wählen Sie eine aus"
           }
         }
       },
-      "submit": "Fordern Sie Early Access an"
+      "submit": "Anwenden"
     },
     "notice": {
-      "description": "Wenn Sie auf „Senden“ klicken, wird Ihr E-Mail-Client mit Ihren Informationen geöffnet. Wenn dies nicht funktioniert, können Sie uns direkt eine E-Mail an senden",
-      "emailLabel": "oder kopieren Sie diese E-Mail",
+      "description": "Klicken Sie auf „Senden“, um Ihre E-Mail zu öffnen. Wir antworten innerhalb von 48 Stunden.",
+      "emailLabel": "contact@rediacc.com",
       "title": "So reichen Sie ein"
     },
-    "subtitle": "Nehmen Sie an unserem Early-Access-Programm teil und erhalten Sie verifizierte Disaster Recovery, Ransomware-Schutz und Infrastrukturunabhängigkeit.",
+    "subtitle": "Begrenzte Plätze verfügbar.",
     "title": "Erhalten Sie Early Access"
   },
   "footer": {
@@ -125,12 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Kontaktieren Sie uns",
+      "contactUs": "Anwenden",
       "learnMore": "Erfahren Sie mehr"
     },
-    "subtitle": "Verifizierte Notfallwiederherstellung. Ransomware-Schutz. Keine Lieferantenbindung.",
+    "subtitle": "20. Oktober 2025: AWS ist ausgefallen. Coinbase, Fortnite, Signal, Zoom – alle 15 Stunden offline. Organisationen mit Multi-Cloud-Infrastruktur blieben online. Sind Sie bereit?",
     "title": "Infrastruktur Das",
-    "titleHighlight": "Funktioniert einfach"
+    "titleHighlight": "Überlebt. Jedes Mal."
   },
   "layout": {
     "meta": {
@@ -153,9 +153,10 @@
     "login": "Einloggen",
     "search": "Suchen",
     "solutions": {
-      "cybersecurity": "Cybersicherheit",
-      "development": "Entwicklung",
-      "disasterRecovery": "Notfallwiederherstellung"
+      "dataSecurity": "Datensicherheit",
+      "systemPortability": "Systemportabilität",
+      "disasterRecovery": "Notfallwiederherstellung",
+      "threatResponse": "Bedrohungsreaktion"
     },
     "toggleMenu": "Menü umschalten"
   },
@@ -180,7 +181,7 @@
     },
     "contact": {
       "breadcrumb": {
-        "contact": "Kontakt",
+        "contact": "Anwenden",
         "home": "Heim"
       },
       "form": {
@@ -190,56 +191,56 @@
           },
           "message": {
             "label": "Nachricht *",
-            "placeholder": "Erzählen Sie uns von Ihrer Anfrage..."
+            "placeholder": "Erzählen Sie uns von Ihren Bedürfnissen..."
           },
           "name": {
             "label": "Name *"
           },
           "subject": {
-            "label": "Thema *",
+            "label": "Ich interessiere mich für *",
             "options": {
-              "earlyAccess": "Early-Access-Programm",
-              "general": "Allgemeine Anfrage",
+              "earlyAccess": "Notfallwiederherstellung",
+              "general": "Allgemein",
               "other": "Andere",
-              "partnership": "Partnerschaftsmöglichkeiten",
-              "placeholder": "Wählen Sie ein Thema aus",
-              "technical": "Technische Fragen"
+              "partnership": "Partnerschaft",
+              "placeholder": "Wählen Sie eine aus",
+              "technical": "Technische Frage"
             }
           }
         },
-        "submit": "Nachricht senden"
+        "submit": "Anwenden"
       },
       "hero": {
-        "subtitle": "Sind Sie bereit, Ihren Infrastrukturbetrieb zu revolutionieren? Nehmen Sie Kontakt mit unserem Team auf.",
-        "title": "Kontaktieren Sie uns"
+        "subtitle": "Füllen Sie das Formular aus und wir werden uns innerhalb von 48 Stunden bei Ihnen melden.",
+        "title": "Bewerben Sie sich unten"
       },
       "info": {
-        "description": "Egal, ob Sie an einem frühen Zugang interessiert sind, Fragen zu unserer Plattform haben oder Möglichkeiten für eine Partnerschaft erkunden möchten, wir würden uns freuen, von Ihnen zu hören.",
+        "description": "Arbeiten Sie direkt mit unserem Team zusammen. Wissen Sie, dass Ihre Backups funktionieren.",
         "methods": {
           "earlyAccess": {
-            "description": "Möchten Sie zu den Ersten gehören, die Rediacc erleben?",
-            "link": "Fordern Sie einen frühen Zugang an",
-            "title": "Early-Access-Programm"
+            "description": "Begrenzte Plätze. Vorrangiger Support.",
+            "link": "Erfahren Sie mehr",
+            "title": "Früher Zugriff"
           },
           "general": {
             "email": "contact@rediacc.com",
-            "title": "Allgemeine Anfragen"
+            "title": "Fragen?"
           },
           "technicalSupport": {
-            "description": "Für bestehende Benutzer und technische Fragen zu unserer Plattform wenden Sie sich bitte direkt an unser technisches Support-Team.",
-            "title": "Technische Unterstützung"
+            "description": "Kontaktieren Sie direkt Ihr Support-Team.",
+            "title": "Bestehende Kunden"
           }
         },
-        "title": "Nehmen Sie Kontakt auf"
+        "title": "Was Sie bekommen"
       },
       "meta": {
-        "description": "Kontaktieren Sie das Rediacc-Team für frühen Zugriff, technischen Support, Partnerschaftsmöglichkeiten und Fragen zu unserer Infrastrukturautomatisierungsplattform.",
-        "keywords": "Kontaktieren Sie Rediacc, Unterstützung bei der Infrastrukturautomatisierung, Early-Access-Programm, technischer Support, Partnerschaftsmöglichkeiten, DevOps-Beratung",
-        "title": "Kontaktieren Sie Rediacc | Unterstützung der Infrastrukturautomatisierungsplattform"
+        "description": "Begrenzte Plätze verfügbar.",
+        "keywords": "Früher Rediacc-Zugriff, Disaster-Recovery-Plattform, verifizierte Backups",
+        "title": "Bewerben | Rediacc"
       },
       "notice": {
-        "description": "Wenn Sie auf „Senden“ klicken, wird Ihr E-Mail-Client mit Ihrer Nachricht geöffnet. Wenn dies nicht funktioniert, können Sie uns direkt eine E-Mail an senden",
-        "emailLabel": "oder kopieren Sie diese E-Mail",
+        "description": "Klicken Sie auf „Senden“, um Ihre E-Mail zu öffnen. Fragen? E-Mail",
+        "emailLabel": "contact@rediacc.com",
         "title": "So reichen Sie ein"
       }
     },
@@ -310,15 +311,405 @@
         "title": "Was Sie tun können:"
       },
       "title": "Seite nicht gefunden"
+    },
+    "solutions": {
+      "dataSecurity": {
+        "cta": {
+          "button": "Anwenden",
+          "subtitle": "Wissensfreie Verschlüsselung. Vollständiger Audit-Trail. Bei der Entwicklung wurde auf Compliance geachtet.",
+          "title": "Bereit für echten Datenschutz?"
+        },
+        "hero": {
+          "subtitle": "Nur Sie können die Per-Repo-Verschlüsselung entsperren. Master-Passwort für den Betrieb. Ihre Daten, Ihre Kontrolle.",
+          "title": "Alles verschlüsseln. Kontrollieren Sie alles. Vollständiges Zero-Knowledge."
+        },
+        "meta": {
+          "description": "Wissensfreie Verschlüsselung für vollständigen Schutz der Infrastruktur. Entwickelt unter Berücksichtigung der Compliance-Anforderungen. Überstehen Sie physischen Diebstahl, pflegen Sie Prüfprotokolle und migrieren Sie sicher.",
+          "keywords": "Datensicherheit, Verschlüsselung, Compliance, Infrastrukturverschlüsselung, Prüfpfade, Zero-Knowledge",
+          "title": "Datensicherheit und Compliance | Verschlüsselte Infrastruktur mit Audit Trails"
+        },
+        "problems": {
+          "auditTrail": {
+            "problem": {
+              "additionalPoints": [
+                "Altsysteme aus Übernahmen bleiben über Jahre hinweg unmigriert",
+                "Systeme im Übergang fallen von der aktiven Audit-Überwachung ab",
+                "Unvollständige Migrationen führen zu Audit-Blindheit, Daten bleiben weiterhin offengelegt",
+                "Es dauert Wochen, bis Verstöße in stillgelegten Systemen entdeckt werden",
+                "Kein Audit-Trail bedeutet, dass es keinen Beweis dafür gibt, was passiert ist"
+              ],
+              "description": "Infrastrukturmigrationen erfolgen in Etappen. Legacy-Systeme, die während der Umstellung zurückbleiben, fallen aus dem Audit-Radar. Wenn Prüfer fragen: „Was ist in Produktion?“ und „Wer hat auf was zugegriffen?“ können Sie nicht für Systeme beantworten, die als stillgelegt gelten. Unvollständige Migrationen schaffen blinde Flecken – Systeme, die Daten enthalten, anfällig und nicht überwacht werden.",
+              "story": "Oracle Health hat die alten Cerner-Server aus einer Übernahme im Jahr 2022 übernommen. Im Januar 2025 drangen Angreifer in ein nicht migriertes System ein. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Einen Monat lang unentdeckt – nicht mehr überwacht. 262.831 Patientenakten gestohlen. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Der Verstoß ereignete sich in einer ungeprüften Infrastruktur."
+            },
+            "solution": {
+              "benefits": [
+                "Vollständiger Audit-Trail, jeder Vorgang wird protokolliert und ist rückverfolgbar",
+                "Prüfer mit vollständiger Transparenz sehen, was geschützt ist und wer darauf zugegriffen hat",
+                "Zugangskontrollnachweis, wer was wann und warum getan hat",
+                "Auditbereite Dokumentation, umfassende Protokolle für Compliance-Überprüfungen",
+                "Transparente Abläufe, ohne verschlüsselte Daten den Prüfern preiszugeben"
+              ],
+              "description": "Jeder Vorgang wird protokolliert: Wer hat die Daten bereitgestellt, wer hat auf was zugegriffen und wann wurden Änderungen vorgenommen? Vollständige Transparenz Ihrer Infrastruktur. Das Prüfteam erhält genaue Zeitstempel und authentifizierte Zugriffsnachweise. Die Per-Repo-Verschlüsselung bleibt von den Betriebskontrollen getrennt – die Daten bleiben verschlüsselt, während der Prüfpfad den Zugriff nachweist.",
+              "title": "Vollständige Audit-Compliance"
+            },
+            "subtitle": "Sie können nicht verwalten, was Sie nicht messen können <small class='subtitle-attribution'>– Peter Drucker</small>",
+            "title": "Fehlende Audit Trails"
+          },
+          "migrationExposure": {
+            "problem": {
+              "additionalPoints": [
+                "Auftragnehmer deaktivieren Sicherheitskontrollen, um Migrationsprozesse zu beschleunigen",
+                "Aus einem zehnminütigen Sicherheitsfenster werden vierundzwanzig Stunden",
+                "Suchmaschinen indizieren ungeschützte Systeme während der Migrationsfenster",
+                "Eine vorübergehende Sicherheitsdeaktivierung kann dauerhaft werden, wenn sie vergessen wird",
+                "Migrationsfenster bieten Möglichkeiten, die Angreifer heute aktiv ausnutzen"
+              ],
+              "description": "Infrastrukturmigrationen erfordern vorübergehende Sicherheitslockerungen. Auftragnehmer deaktivieren Firewalls, um „den Prozess zu beschleunigen“. Aus Leistungsgründen wurde die Verschlüsselung umgangen. Temporäre Fenster werden zu permanenten Angriffsvektoren. Geschützte Daten bleiben stunden- oder tagelang offengelegt. Angreifer zielen auf Migrationsfenster ab, wenn die Sicherheitskontrollen schwächer werden.",
+              "story": "Keepnet Labs beauftragte im März 2020 einen Auftragnehmer mit der Migration seiner Datenbank. Der Auftragnehmer deaktivierte die Firewall für 10 Minuten. <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 5 Milliarden Datensätze indiziert. Datenbank 24 Stunden lang verfügbar. <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Die Migration eines Cybersicherheitsunternehmens hat Milliarden offengelegt."
+            },
+            "solution": {
+              "benefits": [
+                "Verschlüsseln Sie die Daten während der gesamten Migration von der geschützten Quelle zum Ziel",
+                "Kein unverschlüsseltes Staging, verschlüsselte Snapshots bleiben verschlüsselte Übertragung",
+                "Durch sicheres Rollback verschlüsselte Backups bleiben intakt und nutzbar",
+                "Herstellerunabhängige gleiche Verschlüsselung bei allen Cloud-Anbietern",
+                "Keine Ausfallzeiten möglich, verschlüsselte Snapshots ermöglichen eine parallele Migration"
+              ],
+              "description": "Die Infrastruktur bleibt während der gesamten Migration verschlüsselt. Verschlüsselter Snapshot an der Quelle, verschlüsselter Transport, verschlüsselte Bereitstellung am Ziel. Keine Entschlüsselungsfenster. Keine unverschlüsselten Staging-Kopien. Per-Repo-Verschlüsselung von Anfang bis Ende aktiv.",
+              "title": "Verschlüsselter Migrationsprozess"
+            },
+            "subtitle": "Die besten Taten sind beständig, auch wenn sie klein sind <small class='subtitle-attribution'> – Prophet Muhammad, Sunan Ibn Majah (4240)</small>",
+            "title": "Sicherheitslücken bei der Migration"
+          },
+          "physicalTheft": {
+            "problem": {
+              "additionalPoints": [
+                "Gestohlene Server bleiben gefährdet, wenn die Verschlüsselung unvollständig ist",
+                "Bei Stilllegungsverfahren werden Verschlüsselungsschritte häufig vollständig übersprungen",
+                "Durch das Löschen von Dateien werden keine Daten gelöscht, sondern nur Einträge",
+                "Datenbanksicherungen werden häufig unverschlüsselt an sicheren Orten gespeichert",
+                "Compliance erfordert ausdrücklich die Verschlüsselung ruhender Daten"
+              ],
+              "description": "Jemand stiehlt Ihren Server, Ihr Backup-Laufwerk oder Ihre alte Hardware. Betriebssystemkennwörter bieten keinerlei Schutz vor physischem Zugriff – sie booten von USB, umgehen die Authentifizierung, mounten Festplatten und kopieren alles. Kundendaten, Anmeldeinformationen, Datenbanken – alles weg. In Rechenzentren kommt es regelmäßig zu Diebstählen. Die Stilllegung schafft Aufsehen.",
+              "story": "Morgan Stanley beauftragte 2016 Umzugsunternehmen mit der Stilllegung von Rechenzentren. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Festplatten mit 15 Millionen Kundendatensätzen wurden versteigert online – unverschlüsselt. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Bußgelder in Höhe von 35 Millionen US-Dollar. Die meisten Geräte wurden nie wiederhergestellt."
+            },
+            "solution": {
+              "benefits": [
+                "Echte Zero-Knowledge-Pro-Repo-Verschlüsselung, die Sie kontrollieren",
+                "Verschlüsselung nach Militärstandard für die gesamte Infrastruktur und Backups",
+                "Physischer Diebstahl wird wertlos. Verschlüsselte Daten haben keinen Wert",
+                "Nachweisbare Verschlüsselung vom Einsatz bis zur Stilllegung und Entsorgung",
+                "Von Anfang an unter Berücksichtigung der Compliance-Anforderungen entwickelt"
+              ],
+              "description": "Jedes Repository ist mit einem eigenen Passwort verschlüsselt. Jede Datei, jeder Container, jede Konfiguration, jede Datenbank und jedes Backup ist geschützt. Nur Sie besitzen den Pro-Repo-Verschlüsselungsschlüssel. Gestohlene Hardware = wertlose verschlüsselte Blobs.",
+              "title": "Vollständige Zero-Knowledge-Verschlüsselung"
+            },
+            "subtitle": "Schlösser halten ehrliche Menschen ehrlich <small class='subtitle-attribution'> – Volksspruch (1912)</small>",
+            "title": "Diebstahl von physischem Zugang"
+          }
+        }
+      },
+      "disasterRecovery": {
+        "cta": {
+          "button": "Anwenden",
+          "subtitle": "Begrenzte Plätze verfügbar.",
+          "title": "Sind Sie bereit, Ihren Backups zu vertrauen?"
+        },
+        "hero": {
+          "subtitle": "Verifizierte Backups. Unbegrenzte Geschichte. Inkrementelle Geschwindigkeit.",
+          "title": "Disaster Recovery richtig gemacht"
+        },
+        "meta": {
+          "description": "Hören Sie auf zu hoffen, dass Ihre Backups funktionieren, und seien Sie sich bewusst, dass sie funktionieren. Rediacc bietet automatische Backup-Verifizierung, unbegrenzte Aufbewahrung und inkrementelle Backup-Effizienz.",
+          "keywords": "Notfallwiederherstellung, Backup-Verifizierung, inkrementelle Backups, Datenschutz, Backup-Tests, Geschäftskontinuität",
+          "title": "Lösungen zur Notfallwiederherstellung | Verifizierte Backups, die tatsächlich funktionieren"
+        },
+        "problems": {
+          "limitedHistory": {
+            "problem": {
+              "additionalPoints": [
+                "Angreifer warten bewusst darauf, dass saubere Backups ablaufen",
+                "Die herkömmliche Aufbewahrung von sieben bis vierzehn Tagen birgt Schwachstellen",
+                "Jedes vollständige Backup verbraucht enorm viel Speicherplatz und schränkt die Aufbewahrung ein",
+                "Compliance-Anforderungen erfordern oft eine monatelange Vorgeschichte",
+                "Die Lagerkosten zwingen zur Wahl zwischen Historie und Budget"
+              ],
+              "description": "Kurze Aufbewahrungsfristen sparen Speicherplatz, schaffen aber auch Schwachstellen. Wenn Sie Daten von vor der Infektion benötigen, wurden diese bereits überschrieben. Herkömmliche Systeme können sich aufgrund der enormen Speicherkosten keine lange Aufbewahrung leisten.",
+              "story": "Die Verweildauer der Ransomware sank auf weniger als einen Tag. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Angreifer warten absichtlich darauf, dass infizierte Backups saubere Backups überschreiben. Organisationen mit einer Aufbewahrungsfrist von 7 bis 14 Tagen stellen fest, dass alle Backups Malware enthalten. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Speichern Sie den Backup-Verlauf über Monate effizient mit Deduplizierung",
+                "Greifen Sie auf saubere Backups vor einer Infektion zu",
+                "Durch die inkrementelle Deduplizierung werden über neunzig Prozent Speicherplatz eingespart",
+                "Erfüllen Sie Compliance-Anforderungen kostengünstig und mit langer Aufbewahrung",
+                "Angreifer können Ihren Aufbewahrungszeitraum nicht abwarten"
+              ],
+              "description": "Mit der inkrementellen Deduplizierung von Rediacc können Sie 30, 60, 90+ Tage Backup-Verlauf ohne Speicherexplosion aufbewahren. Es werden nur Änderungen gespeichert, keine doppelten Daten.",
+              "title": "Erweiterte Aufbewahrung des Verlaufs"
+            },
+            "subtitle": "Der frühe Vogel fängt den Wurm <small class='subtitle-attribution'>– William Camden (1636)</small>",
+            "title": "Kurzer Backup-Verlauf"
+          },
+          "slowBackups": {
+            "problem": {
+              "additionalPoints": [
+                "Derselbe Ransomware-Angriff führt zu drastisch unterschiedlichen Wiederherstellungszeiten",
+                "Herkömmliche vollständige Wiederherstellungen bedeuten tagelange Ausfallzeiten für den Ausfall von Diensten",
+                "Moderne inkrementelle Wiederherstellung innerhalb von Minuten wieder online",
+                "Das Gesundheitswesen kann nicht darauf warten, dass Patienten jetzt Pflege benötigen",
+                "Jede Ausfallstunde vervielfacht den betrieblichen und finanziellen Schaden"
+              ],
+              "description": "Herkömmliche vollständige Backups bedeuten langsame vollständige Wiederherstellungen. Organisationen mit modernen Wiederherstellungssystemen sind innerhalb weniger Stunden wieder online. Diejenigen mit herkömmlichen Backups? Tagelange Ausfallzeiten, stornierte Dienste und entgangene Einnahmen.",
+              "story": "WannaCry kam im Mai 2017 auf den NHS und sperrte landesweit Krankenhaussysteme. <a href='https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Einige Vertrauensstellungen wurden innerhalb von Stunden wiederhergestellt. <a href='https://www.bridgeheadsoftware.com/2017/07/wannacry-nhs-attack-lessons-backup-data-recovery-strategies/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Andere brauchten Tage. Über 19.000 Termine abgesagt. Erholungszeit: Stunden statt Tage voller Chaos."
+            },
+            "solution": {
+              "benefits": [
+                "Wiederherstellen innerhalb von Minuten statt tagelanger Ausfallzeiten",
+                "Bei der inkrementellen Wiederherstellung werden nur die geänderten Datenteile übertragen",
+                "Kritische Systeme sind online, während die Konkurrenz offline bleibt",
+                "Minimieren Sie Umsatzverluste und Serviceunterbrechungen schnell",
+                "Seien Sie die Organisation, die sich jedes Mal schnell erholt"
+              ],
+              "description": "Die inkrementelle Architektur von Rediacc ermöglicht eine schnelle Wiederherstellung. Stellen Sie nur das wieder her, was sich geändert hat, nicht ganze Systeme. Bringen Sie wichtige Vorgänge in wenigen Minuten wieder in Betrieb, während andere sich noch in der Wiederherstellung befinden.",
+              "title": "Schneller Genesungsprozess"
+            },
+            "subtitle": "Machen Sie guten Gebrauch von fünf vor fünf <small class='subtitle-attribution'> – Prophet Muhammad, Sunan Ibn Majah (4240)</small>",
+            "title": "Langsame Erholungszeiten"
+          },
+          "unverified": {
+            "problem": {
+              "additionalPoints": [
+                "Ransomware infiziert Systeme Wochen vor der Verschlüsselung Ihrer Daten",
+                "Backup-Systeme melden trotz beschädigter Backup-Dateien Erfolg",
+                "Manuelle Wiederherstellungstests dauern Stunden, was niemand regelmäßig durchführt",
+                "Trotz Backups konnten nur 63 % der Fälle die Wiederherstellung erfolgreich durchführen",
+                "Ungetestete Backups schlagen genau dann fehl, wenn Sie sie brauchen"
+              ],
+              "description": "Backups zu haben und funktionierende Backups zu haben, sind zwei völlig verschiedene Dinge. Die meisten Unternehmen testen Wiederherstellungen erst dann, wenn eine Katastrophe eintritt – und stellen dann fest, dass ihre Backups beschädigt, unvollständig oder infiziert sind. Wenn Sie sie brauchen, ist es bereits zu spät, sie zu reparieren.",
+              "story": "Die Stadtsysteme von Baltimore wurden im Mai 2019 von Ransomware heimgesucht. <a href='https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Beamte konnten nicht bestätigen, dass Backups getestet oder brauchbar waren. <a href='https://krebsonsecurity.com/2019/06/report-no-eternal-blue-exploit-found-in-baltimore-city-ransomware/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Aktuelle Backups infiziert. Ältere wurden nie getestet. Wiederherstellungskosten: 18 Millionen US-Dollar."
+            },
+            "solution": {
+              "benefits": [
+                "Automatische Überprüfung durch tägliches Testen realer Wiederherstellungsvorgänge",
+                "Erfahren Sie sofort, ob Backups beschädigt oder unvollständig sind",
+                "Greifen Sie auf sauber getestete Backups vor einer Infektion zu",
+                "Es sind keine manuellen Tests erforderlich, die automatische Validierung läuft kontinuierlich",
+                "Jedes Backup funktioniert bereits, bevor Sie es benötigen"
+              ],
+              "description": "Rediacc erstellt nicht nur Backups, sondern überprüft diese auch, indem es die tatsächliche Wiederherstellung testet. Jedes Backup funktioniert nachweislich, bevor Sie es im Notfall benötigen.",
+              "title": "Automatische Backup-Verifizierung"
+            },
+            "subtitle": "Vertraue, aber überprüfe <small class='subtitle-attribution'> – Russisches Sprichwort/Reagan (1987)</small>",
+            "title": "Ungetestete Backup-Systeme"
+          }
+        },
+        "video": {
+          "subtitle": "Sehen Sie, wie Rediacc Ihre Backups automatisch überprüft und den unbegrenzten Verlauf mit inkrementeller Effizienz speichert.",
+          "title": "Sehen Sie sich Disaster Recovery in Aktion an"
+        }
+      },
+      "systemPortability": {
+        "cta": {
+          "button": "Anwenden",
+          "subtitle": "Eine tragbare Datei. Sicherheit auf Militärniveau. Begrenzte Plätze verfügbar.",
+          "title": "Bereit für echte Systemportabilität?"
+        },
+        "hero": {
+          "subtitle": "Komplettes System in einer Datei. Verschlüsselung auf Militärniveau. Funktioniert überall beim ersten Versuch.",
+          "title": "Bewegen Sie Ihre Systeme sicher überall hin"
+        },
+        "meta": {
+          "description": "Befreien Sie sich von der Lieferantenbindung. Komplettes System in einer tragbaren Datei, Verschlüsselung auf Militärniveau und konfigurationsfreie Bereitstellung in jeder Infrastruktur.",
+          "keywords": "Systemportabilität, Anbieterbindung, Infrastrukturmobilität, Cloud-Migration, Multi-Cloud, Systemverschlüsselung, Datensicherheit, Bereitstellungsautomatisierung",
+          "title": "Universelle Systemportabilität | Verschieben Sie Ihre Infrastruktur sicher überall hin"
+        },
+        "problems": {
+          "deployment": {
+            "problem": {
+              "additionalPoints": [
+                "Benutzer-IDs variieren zwischen verschiedenen Systemen und Distributionen",
+                "Dateien, die einem Benutzer gehören, gehören fälschlicherweise woanders hin",
+                "Nach jeder Migration sind manuelle Eigentumsvorgänge erforderlich",
+                "Datenbankdateien mit falschem Besitzer werden nicht gestartet",
+                "Containeranwendungen schlagen aufgrund von Berechtigungskonflikten fehl"
+              ],
+              "description": "Beim Verschieben von Dateien zwischen Linux-Systemen wird der Dateibesitz zum Albtraum. Der Benutzer „appuser“ hat die UID 1000 auf Server A, aber 1005 auf Server B. Anwendungen können nicht auf Dateien zugreifen, da die numerischen UIDs nicht übereinstimmen, sodass jedes Mal manuelle Korrekturen der Berechtigungen erforderlich sind.",
+              "story": "Docker-Container sind beim Wechsel zwischen Systemen ständig damit konfrontiert. <a href='https://www.joyfulbikeshedding.com/blog/2021-03-15-docker-and-the-host-filesystem-owner-matching-problem.html' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Linux verwendet numerische UIDs. Verschiedene Systeme weisen unterschiedliche Werte zu, was zu Berechtigungsfehlern führt. <a href='https://stackoverflow.com/questions/51188997/docker-uid-gid-mapping-changes-on-different-host' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Aus Minuten werden Stunden voller Chown-Operationen und Debugging."
+            },
+            "solution": {
+              "benefits": [
+                "Der Dateibesitz funktioniert systemübergreifend mit unterschiedlichen IDs",
+                "Keine manuellen Berechtigungskorrekturen nach Migrationsvorgängen",
+                "Team-SSH-Schlüssel zentral verwaltet, keine gemeinsame Nutzung",
+                "Datenbanken und Anwendungen starten sofort neue Systeme",
+                "Der Wechsel zwischen Ubuntu-Debian-CentOS-Berechtigungen funktioniert"
+              ],
+              "description": "Rediacc verwaltet den Benutzerbesitz auf Dateisystemebene. Wenn Sie ein Repository auf ein neues System migrieren, funktioniert der Dateieigentum automatisch unabhängig von unterschiedlichen Benutzer-IDs. Zentral verwaltete Team-SSH-Schlüssel – Entwickler stellen automatisch eine Verbindung her, ohne Anmeldeinformationen weiterzugeben.",
+              "title": "Automatische Eigentumsauflösung"
+            },
+            "subtitle": "Eile kommt vom Teufel; Die Überlegung stammt von Allah <small class='subtitle-attribution'> – Prophet Muhammad, Musnad Abu Ya'la (4256)</small>",
+            "title": "Dateiberechtigungskonflikte"
+          },
+          "testingVendorSwitch": {
+            "problem": {
+              "additionalPoints": [
+                "Sieben Prozent der Unternehmen testen die Notfallwiederherstellung nie",
+                "Nur 46 Prozent der Tests pro Jahr sind veraltet",
+                "Parallele Infrastrukturtests verdoppeln die Kosten während der Validierung",
+                "Mangelnde Zeitressourcen verhindern regelmäßige Tests",
+                "Ungetestete Failover-Pläne schlagen bei Bedarf fehl"
+              ],
+              "description": "Eine Single-Cloud ist riskant. Sie möchten das Failover testen, bevor eine Katastrophe eintritt. Beim Testen ist jedoch eine doppelte Infrastruktur erforderlich, die die Produktion exakt widerspiegelt und über Wochen hinweg synchronisiert bleibt. Die meisten Unternehmen testen die Notfallwiederherstellung nie, weil sich Risiko und Aufwand nicht lohnen – bis ein Ausfall beweist, dass dies der Fall sein sollte.",
+              "story": "Nur 7 % der Unternehmen testen niemals Disaster-Recovery-Pläne. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Doch 46 % testen nur jährlich. <a href='https://dbvisit.com/blog/ five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Warum: Mangel an Zeit, Ressourcen, Komplexität. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Tests verdoppeln die Kosten. Der Ausfall des Anbieters beweist, dass er hätte testen sollen."
+            },
+            "solution": {
+              "benefits": [
+                "Validieren Sie die Notfallwiederherstellung mit der tatsächlichen Produktionsarchitektur",
+                "Komplette Failover-Tests in Wochen statt Monaten",
+                "Testen Sie mit Zuversicht, ohne Auswirkungen auf die Produktion",
+                "Benchmarken Sie die Failover-Geschwindigkeit, bevor Sie sie benötigen",
+                "Stellen Sie sicher, dass Ihr Backup-Plan funktioniert, bevor es zu einer Katastrophe kommt"
+              ],
+              "description": "Rediacc erstellt einen Snapshot Ihres genauen Produktionsumgebungsstatus. Stellen Sie diesen Snapshot auf Azure oder GCP mit echten Konfigurations- und Datenmustern bereit. Testen Sie die Failover-Leistung und validieren Sie die Notfallwiederherstellung, ohne die Produktion zu beeinträchtigen. Führen Sie eine Verpflichtung nur dann durch, wenn nachgewiesen wurde, dass sie funktioniert. Keine Ausfallzeiten. Null Risiko.",
+              "title": "Risikofreie Failover-Tests"
+            },
+            "subtitle": "Übung macht den Meister <small class='subtitle-attribution'> – Klassische Tradition (1500+)</small>",
+            "title": "Ungetestete Failover-Pläne"
+          },
+          "vendorLockIn": {
+            "problem": {
+              "additionalPoints": [
+                "Der Ausfall am 22. Oktober dauerte weltweit fünfzehn Stunden",
+                "Regionale Ausfälle führen dazu, dass die Produktionssicherung gleichzeitig ausfällt",
+                "Organisationen mit mehreren Regionen blieben online in einer einzigen Cloud",
+                "Wenn Cloud-Anbieter ausfallen, benötigen sie einen alternativen Betrieb",
+                "Durch die Anbieterbindung entfallen die erforderlichen Failover-Optionen"
+              ],
+              "description": "Sie haben auf einen Cloud-Anbieter gesetzt. Wenn sie scheitern, scheitern Sie mit ihnen. Keine Sicherung. Kein Failover. Keine Wahl. Die Bindung an einen Anbieter ist nicht nur teuer, sondern auch ein Single Point of Failure, der Ihren gesamten Betrieb lahmlegt.",
+              "story": "20. Oktober 2025. Der DNS-Fehler von AWS US-EAST-1 dauerte 15 Stunden. <a href='https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Coinbase, Fortnite, Signal, Zoom – offline. AWS-gesperrte Organisationen hatten keine Optionen. Bei Architekturen mit mehreren Regionen erfolgt automatisch ein Failover. <a href='https://ine.com/blog/aws-october-2025-outage-multi-region-and-cloud-lessons-learned' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Eine einzelne Cloud ist ein einzelner Fehlerpunkt."
+            },
+            "solution": {
+              "benefits": [
+                "Stellen Sie es überall bereit und überstehen Sie Ausfälle beim Betrieb mehrerer Clouds",
+                "Wenn Cloud-Anbieter scheitern, gibt es bereits laufende Alternativen",
+                "Failover zwischen Anbietern in Minuten getestet und validiert",
+                "Echte Multi-Cloud ohne separate Infrastrukturversionen",
+                "Testen Sie das Failover, bevor es funktioniert"
+              ],
+              "description": "Rediacc verpackt Ihr komplettes System in einem einzigen tragbaren Repository. Bereitstellung auf AWS, Azure, Google Cloud oder Bare Metal – ohne Änderungen. Wenn ein Anbieter ausfällt, sind Sie bereits woanders unterwegs. Ein Failover dauert Minuten, nicht Stunden. Die Infrastruktur wird niemals von der Betriebszeit eines Anbieters beeinträchtigt.",
+              "title": "Echte Multi-Cloud-Redundanz"
+            },
+            "subtitle": "Legen Sie nicht alles auf eine Karte <small class='subtitle-attribution'>– Cervantes (1605) / Carnegie (1885)</small>",
+            "title": "Vendor Lock-In-Falle"
+          }
+        }
+      },
+      "threatResponse": {
+        "cta": {
+          "button": "Anwenden",
+          "subtitle": "Überstehen Sie Bedrohungen schneller. Unveränderlich. Tragbar. Unter Ihrer Kontrolle.",
+          "title": "Bereit für Cyber-Resilienz?"
+        },
+        "hero": {
+          "subtitle": "Unveränderliche Backups. Minuten bis zur Genesung. Evakuierung der Infrastruktur über Wolken hinweg.",
+          "title": "Bedrohungen breiten sich schnell aus. Das sollten Sie auch."
+        },
+        "meta": {
+          "description": "Überstehen Sie Ransomware-Angriffe mit unveränderlichen Backups, schneller Wiederherstellung und Infrastrukturportabilität. Evakuieren Sie kompromittierte Systeme in wenigen Minuten.",
+          "keywords": "Ransomware-Schutz, Cyber-Resilienz, unveränderliche Backups, schnelle Wiederherstellung, Geschäftskontinuität, Evakuierung der Infrastruktur, Notfallwiederherstellung",
+          "title": "Ransomware- und Cyber-Resilienz-Lösungen | Bedrohungen breiten sich schnell aus"
+        },
+        "problems": {
+          "infrastructureBlackBox": {
+            "problem": {
+              "additionalPoints": [
+                "Organisationen können nicht alle Produktions-SSH-Schlüssel berücksichtigen",
+                "Backup-Systeme erfassen Bedrohungen, vergessene Dienste und potenzielle Trojaner",
+                "Infrastrukturmigrationen setzen das angesammelte Risiko fort",
+                "Legacy-Systeme weisen unbekannte Konfigurationen auf, die sich auf die Notfallwiederherstellung auswirken",
+                "Durch unbekannten Zugriff kann Ransomware nach der Wiederherstellung erneut eindringen"
+              ],
+              "description": "Legacy-Systeme sammeln undokumentierte SSH-Schlüssel von Auftragnehmern oder Angreifern. Backups erfassen alles – Mülldateien, vergessene Dienste, potenzielle Trojaner. Auch hartnäckige Angreifer werden gesichert. Migrationen verewigen unbekannte Risiken. Niemand weiß, was in Backups enthalten ist oder was bei der Wiederherstellung aktiviert wird.",
+              "story": "Ein Finanzunternehmen entdeckte 47 undokumentierte SSH-Schlüssel in Produktionsdatenbanken, darunter Schlüssel von Anbietern, die das Unternehmen vor Jahren verlassen hatten. <a href='https://www.appviewx.com/blogs/ssh-key-sprawl-causes-and-consequences/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Die Ransomware-Wiederherstellung verzögerte sich während der forensischen SSH-Schlüsselprüfung um 2 Wochen. <a href='https://www.encryptionconsulting.com/ssh-key-sprawl/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Migrieren Sie nur verifizierte wesentliche Systemkomponenten",
+                "Beseitigen Sie angesammelte Sicherheitsschulden und die Komplexität der Altlasten",
+                "Die zentralisierte SSH-Schlüsselverwaltung ersetzt die Schlüsselwucherung",
+                "Vollständige Überprüfbarkeit der Produktions- und Backup-Systeme",
+                "Eine neue Bereitstellung sorgt für einen sauberen Zustand ohne versteckte Bedrohungen"
+              ],
+              "description": "Rediacc ermöglicht eine vollständige Systemrekonstruktion auf einer neuen Infrastruktur mit verifizierten wesentlichen Komponenten. Sie migrieren bewusst ausgewählte Systemdaten und -konfigurationen, nicht „alles“. SSH-Schlüssel zentral verwaltet und geprüft. Ergebnis: saubere Infrastruktur mit voller Transparenz. Keine Sicherheitsschulden. Kein versteckter Zugang.",
+              "title": "Frisch verifizierte Infrastruktur"
+            },
+            "subtitle": "Man sieht den Wald vor lauter Bäumen nicht <small class='subtitle-attribution'>– John Heywood (1546)</small>",
+            "title": "Infrastruktur-Blackbox"
+          },
+          "osVulnerability": {
+            "problem": {
+              "additionalPoints": [
+                "Für kritische Schwachstellen in Ihrem Betriebssystem gibt es keine Patches",
+                "Vollständige Betriebssystemmigrationen erfordern eine wochenlange Testvalidierung",
+                "Ohne Produktionsauslastung kann die Migration nicht sicher getestet werden",
+                "Ein Rollback fehlgeschlagener Migrationen bedeutet eine vollständige Datenwiederherstellung",
+                "Fenster zu Sicherheitslücken bleiben wochenlang geöffnet"
+              ],
+              "description": "Kritische Sicherheitslücke im Betriebssystem entdeckt. Patches nur für neuere Versionen, die Sie nicht ausführen. Die Migration erfordert wochenlange Tests. Ein Test gegen die Produktion ist nicht möglich, ohne die Daten zu gefährden. Ein Rollback bedeutet eine vollständige Wiederherstellung. Sie bleiben angreifbar und hoffen, dass Angreifer nicht ausnutzen, bevor die Migration abgeschlossen ist.",
+              "story": "Log4Shell (Dezember 2021) erzwang brutale Entscheidungen. <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Unternehmen verbrachten zwei bis drei Wochen mit der Validierung der Betriebssystemmigration. Nur 45 % wurden innerhalb von 11 Tagen gepatcht. Einige blieben während des Tests mehr als vier Wochen lang anfällig. <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Testen Sie das neue Betriebssystem anhand der tatsächlichen Produktionsauslastung",
+                "Überprüfen Sie die Kompatibilität, ohne Ihre tatsächlichen Systeme zu gefährden",
+                "Kehren Sie sofort zum vorherigen Betriebssystem zurück, ohne Ausfallzeiten",
+                "Migrieren Sie zwischen Ubuntu Debian CentOS AlmaLinux in wenigen Minuten",
+                "Schließen Sie Sicherheitslückenfenster in Minuten statt Wochen"
+              ],
+              "description": "Rediacc ermöglicht schnelle, risikofreie Tests der Betriebssystemmigration. Stellen Sie die Infrastruktur auf einem neuen Betriebssystem bereit und überprüfen Sie, ob alles mit der tatsächlichen Produktionsauslastung funktioniert. Wenn Probleme auftreten, können Sie die Lösung sofort wiederherstellen – kein Datenverlust, keine Wiederherstellung. Sobald die Sicherheit überprüft wurde, verpflichten Sie sich dauerhaft. Schwachstellenfenster schließen sich innerhalb von Minuten.",
+              "title": "Risikofreies Testen des Betriebssystems"
+            },
+            "subtitle": "In jeder Not liegt Leichtigkeit <small class='subtitle-attribution'> – Sure Al-Inshirah 94:5</small>",
+            "title": "Verzögerungen bei Betriebssystemaktualisierungen"
+          },
+          "ransomwareBackups": {
+            "problem": {
+              "additionalPoints": [
+                "94 Prozent der Ransomware-Angriffe zielen auf die Backup-Infrastruktur ab",
+                "Angreifer warten wochenlang darauf, sicherzustellen, dass saubere Backups überschrieben werden",
+                "Unveränderliche Backups schlagen fehl, wenn Angreifer über Administratoranmeldeinformationen verfügen",
+                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldzahlung",
+                "Verschlüsselte Anbieter-Backups bedeuten, dass Anbieter bei der Wiederherstellung nicht helfen können"
+              ],
+              "description": "Ransomware-Angreifer zielen auf die Backup-Infrastruktur ab und löschen oder überschreiben Kopien, um eine Wiederherstellung zu verhindern. Backups im selben Cloud-Konto mit gemeinsamen Anmeldeinformationen ermöglichen es Angreifern, den Verlauf von Monaten zu löschen. Selbst unveränderliche Backups schlagen bei Administratorzugriff fehl. Saubere Backups verschwinden, bevor Sie es merken.",
+              "story": "Eine Sophos-Studie aus dem Jahr 2024 ergab, dass 94 % der Ransomware-Opfer Backups anvisierten, wobei 57 % erfolgreich waren. <a href='https://www.techrepublic.com/article/ransomware-attackers-target-backups/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Wenn Backups kompromittiert werden, belaufen sich die durchschnittlichen Wiederherstellungskosten auf 3 Millionen US-Dollar – achtmal höher. <a href='https://news.sophos.com/en-us/2024/03/26/the-impact-of-compromised-backups-on-ransomware-outcomes/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "Verschlüsselte Backups überstehen sogar eine vollständige Gefährdung der Anmeldedaten",
+                "Die Unveränderlichkeit des Tokens verhindert das Löschen mit Administratorzugriff",
+                "Frühere Versionen bleiben auf unbestimmte Zeit intakt und verschlüsselt",
+                "Wiederherstellung nach vollständiger Kompromittierung der Infrastruktur möglich",
+                "Es ist keine Lösegeldzahlung erforderlich, die Backups verbleiben in Ihrer Kontrolle"
+              ],
+              "description": "Rediacc speichert verschlüsselte Sicherungskopien unveränderlich auf Speicherebene, nicht administrativ. Selbst wenn Angreifer Infrastruktur-Tokens oder Administratoranmeldeinformationen kompromittieren, können sie nur verschlüsselte Daten lesen – Versionen nicht ändern, löschen oder überschreiben. Mit Ihrem Passwort verschlüsselte Snapshots bleiben für Angreifer wertlos.",
+              "title": "Unveränderlicher Backup-Schutz"
+            },
+            "subtitle": "Binden Sie Ihr Kamel an und vertrauen Sie auf Allah <small class='subtitle-attribution'> – Prophet Muhammad, Sunan at-Tirmidhi (2517)</small>",
+            "title": "Ransomware zielt auf Backups ab"
+          }
+        }
+      }
     }
   },
   "problem": {
     "reality": {
-      "imageAlt": "Diagramm, das die Herausforderungen herkömmlicher Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
+      "imageAlt": "Diagramm, das die Herausforderungen traditioneller Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
       "title": "Die Realität: Frustrierte Teams, gefährliche Workarounds"
     },
     "solution": {
-      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Abläufe mit Model Context Protocol-Integration",
+      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Vorgänge mit Model Context Protocol-Integration",
       "title": "Die Lösung: Rediacc-Plattform"
     },
     "subtitle": "Wenn Produktionsumgebungen über Terabytes an Daten verfügen, Sandbox-Umgebungen jedoch nur monatlich synchronisiert werden, stehen Teams vor unmöglichen Entscheidungen, die zu gefährlichen Problemumgehungen führen.",
@@ -328,33 +719,42 @@
     "items": [
       {
         "benefits": [
-          "Backups werden automatisch getestet, nicht nur erstellt",
-          "Bewahren Sie die Geschichte über Monate auf, nicht nur 1-3 Kopien",
-          "Integrierter regionsübergreifender Schutz"
+          "Unveränderliche Backups überstehen Angriffe",
+          "Wiederherstellen in Minuten, nicht in Stunden oder Tagen",
+          "Risikofreies Testen des Betriebssystems"
         ],
-        "description": "Ihre Backups funktionieren. Wir verifizieren sie.",
-        "title": "Notfallwiederherstellung"
+        "description": "Wiederherstellungsgeschwindigkeit rettet Leben. Unveränderliche Backups. Schnelle Reaktion.",
+        "title": "Ransomware-Überleben"
       },
       {
         "benefits": [
-          "Unveränderliche Backups, die Ransomware nicht angreifen kann",
-          "Jede VM wird mit verifiziertem, sauberem Zustand gesichert",
-          "Risikofreie Penetrationstestumgebungen"
+          "Überstehen Sie AWS-Ausfälle",
+          "Keine Lieferantenbindung",
+          "Getestete Failover-Bereitschaft"
         ],
-        "description": "Ransomware kann nicht verschlüsseln, was sie nicht erreichen kann.",
-        "title": "Cybersicherheitsschutz"
+        "description": "Single-Cloud ist gefährlich. Überall einsetzbar. Schnelles Failover.",
+        "title": "Immer Multi-Cloud"
       },
       {
         "benefits": [
-          "Funktioniert mit jedem Betriebssystem, jeder VM oder jedem Cloud-Anbieter",
-          "Sichere PostgreSQL-Upgrades und Schemaänderungen",
-          "Testen Sie GPU-Workloads, bevor Sie Hardware kaufen"
+          "Automatische Überprüfung",
+          "30–90 Tage Aufbewahrung",
+          "Erholen Sie sich in wenigen Minuten"
         ],
-        "description": "Testen Sie Migrationen, bevor Sie sie festlegen.",
-        "title": "Entwicklungsbeschleunigung"
+        "description": "Verifizierte Wiederherstellung. Nicht nur Behauptungen. Vollständige Geschichte.",
+        "title": "Verifizierte Backups"
+      },
+      {
+        "benefits": [
+          "Verschlüsselung, die Sie kontrollieren",
+          "Vollständiger Prüfpfad",
+          "Migrationssicher"
+        ],
+        "description": "Verschlüsselung auf Militärniveau. Vollständige Audit-Trails.",
+        "title": "Verschlüsselungskontrolle"
       }
     ],
-    "subtitle": "Drei kritische Probleme, die Infrastrukturteams schlaflose Nächte bereiten.",
-    "title": "Was wir lösen"
+    "subtitle": "Vier integrierte Lösungen für schnelle Reaktion bei Infrastrukturausfällen oder Bedrohungen.",
+    "title": "Wie wir die Geschäftskontinuität sicherstellen"
   }
 }

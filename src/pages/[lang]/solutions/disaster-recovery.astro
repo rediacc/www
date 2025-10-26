@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ProblemSolutionSection from '../../../components/ProblemSolutionSection';
+import SolutionHero from '../../../components/SolutionHero.astro';
+import SolutionCTA from '../../../components/SolutionCTA.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
-import { Image } from 'astro:assets';
 import ctaImage from '../../../assets/images/rediacc_resources_repos.png';
+import '../../../styles/solution-page.css';
 
 export async function getStaticPaths() {
   return SUPPORTED_LANGUAGES.map((lang) => ({
@@ -28,29 +30,10 @@ const drContent = to('pages.solutions.disasterRecovery');
   keywords={t('pages.solutions.disasterRecovery.meta.keywords')}
   ogType="website"
 >
-  <!-- Hero + Video Section -->
-  <section class="hero-video-section">
-    <div class="container">
-      <div class="hero-video-content">
-        <div class="hero-text">
-          <h1 class="hero-title">{drContent.hero.title}</h1>
-          <p class="hero-subtitle">{drContent.hero.subtitle}</p>
-        </div>
-        <div class="video-container-inline">
-          <div class="video-wrapper-inline">
-            <video
-              className="video-element"
-              controls
-              preload="metadata"
-            >
-              <source src="/videos/demo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SolutionHero
+    title={drContent.hero.title}
+    subtitle={drContent.hero.subtitle}
+  />
 
   <!-- Problem-Solution Section 1: Unverified Backups -->
   <ProblemSolutionSection
@@ -71,8 +54,9 @@ const drContent = to('pages.solutions.disasterRecovery');
     variant="light"
     cta={{
       text: drContent.cta.button,
-      href: `/${lang}/contact`
+      href: `/${lang}/contact?interest=disaster-recovery`
     }}
+    pageSlug="disaster-recovery"
   />
 
   <!-- Problem-Solution Section 2: Limited Backup History -->
@@ -83,6 +67,7 @@ const drContent = to('pages.solutions.disasterRecovery');
     subtitle={drContent.problems.limitedHistory.subtitle}
     problem={{
       description: drContent.problems.limitedHistory.problem.description,
+      story: drContent.problems.limitedHistory.problem.story,
       additionalPoints: drContent.problems.limitedHistory.problem.additionalPoints
     }}
     solution={{
@@ -93,8 +78,9 @@ const drContent = to('pages.solutions.disasterRecovery');
     variant="dark"
     cta={{
       text: drContent.cta.button,
-      href: `/${lang}/contact`
+      href: `/${lang}/contact?interest=disaster-recovery`
     }}
+    pageSlug="disaster-recovery"
   />
 
   <!-- Problem-Solution Section 3: Time-Consuming Traditional Methods -->
@@ -116,431 +102,18 @@ const drContent = to('pages.solutions.disasterRecovery');
     variant="light"
     cta={{
       text: drContent.cta.button,
-      href: `/${lang}/contact`
+      href: `/${lang}/contact?interest=disaster-recovery`
     }}
+    pageSlug="disaster-recovery"
   />
 
-  <!-- CTA Section -->
-  <section class="solution-cta">
-    <div class="container">
-      <div class="cta-grid">
-        <div class="cta-image">
-          <Image
-            src={ctaImage}
-            alt="Rediacc backup resources and repositories"
-            loading="lazy"
-            quality={90}
-          />
-        </div>
-        <div class="cta-content">
-          <h2 class="cta-title">{drContent.cta.title}</h2>
-          <p class="cta-subtitle">{drContent.cta.subtitle}</p>
-          <a href={`/${lang}/contact`} class="btn btn-primary btn-large">
-            {drContent.cta.button}
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <SolutionCTA
+    title={drContent.cta.title}
+    subtitle={drContent.cta.subtitle}
+    buttonText={drContent.cta.button}
+    buttonHref={`/${lang}/contact?interest=disaster-recovery`}
+    imageSrc={ctaImage}
+    imageAlt="Rediacc backup resources and repositories"
+    lang={lang}
+  />
 </BaseLayout>
-
-<style>
-  .hero-video-section {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: white;
-  }
-
-  .hero-video-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
-
-  .hero-text {
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 16px;
-    color: white;
-  }
-
-  .hero-subtitle {
-    font-size: 21px;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  .video-container-inline {
-    width: 100%;
-  }
-
-  .video-wrapper-inline {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    background-color: #000;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .video-wrapper-inline video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-  }
-
-  :global(.problem-solution-section) {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 80px 0;
-  }
-
-  :global(.problem-solution-section > .container) {
-    width: 100%;
-  }
-
-  :global(.problem-solution-section.light) {
-    background: #f8f9fa;
-  }
-
-  :global(.problem-solution-section.dark) {
-    background: #1a1a1a;
-    color: white;
-  }
-
-  :global(.section-number) {
-    text-align: center;
-    margin-bottom: 24px;
-  }
-
-  :global(.number-badge) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(135deg, var(--color-red-primary) 0%, var(--color-red-secondary) 100%);
-    color: white;
-    border-radius: 50%;
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  :global(.section-main-title) {
-    font-size: 41px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 16px;
-    line-height: 1.3;
-  }
-
-  :global(.section-subtitle) {
-    font-size: 21px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 48px;
-    line-height: 1.5;
-    color: var(--color-text-secondary);
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  :global(.problem-solution-section.dark .section-main-title) {
-    color: white;
-  }
-
-  :global(.problem-solution-section.dark .section-subtitle) {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  :global(.problem-solution-grid) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  :global(.problem-box),
-  :global(.solution-box) {
-    background: white;
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  :global(.problem-solution-section.dark .problem-box),
-  :global(.problem-solution-section.dark .solution-box) {
-    background: linear-gradient(135deg, #2d2d2d 0%, #1f1f1f 100%);
-    color: white;
-  }
-
-  :global(.problem-box) {
-    border-left: 4px solid var(--color-red-primary);
-  }
-
-  :global(.solution-box) {
-    border-left: 4px solid #27ae60;
-  }
-
-  :global(.box-header) {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 24px;
-  }
-
-  :global(.box-header svg) {
-    color: var(--color-red-primary);
-    flex-shrink: 0;
-  }
-
-  :global(.solution-box .box-header svg) {
-    color: #27ae60;
-  }
-
-  :global(.box-title) {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0;
-  }
-
-  :global(.problem-description),
-  :global(.solution-description) {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 24px;
-    color: #555;
-  }
-
-  :global(.problem-solution-section.dark .problem-description),
-  :global(.problem-solution-section.dark .solution-description) {
-    color: rgba(255, 255, 255, 0.85);
-  }
-
-  :global(.story-box) {
-    background: #fff3cd;
-    border-left: 3px solid #ffc107;
-    padding: 20px;
-    margin: 24px 0;
-    border-radius: 8px;
-  }
-
-  :global(.problem-solution-section.dark .story-box) {
-    background: rgba(255, 193, 7, 0.1);
-    border-left-color: #ffc107;
-  }
-
-  :global(.story-label) {
-    font-weight: 700;
-    color: #856404;
-    margin-bottom: 8px;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
-  :global(.problem-solution-section.dark .story-label) {
-    color: #ffc107;
-  }
-
-  :global(.story-text) {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #856404;
-    margin: 0;
-    font-style: italic;
-  }
-
-  :global(.problem-solution-section.dark .story-text) {
-    color: rgba(255, 193, 7, 0.9);
-  }
-
-  :global(.additional-points) {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0 0 0;
-  }
-
-  :global(.additional-points li) {
-    padding: 12px 0 12px 32px;
-    position: relative;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-  }
-
-  :global(.problem-solution-section.dark .additional-points li) {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  :global(.additional-points li::before) {
-    content: "•";
-    position: absolute;
-    left: 12px;
-    color: var(--color-red-primary);
-    font-size: 20px;
-    font-weight: 700;
-  }
-
-  :global(.solution-benefits) {
-    list-style: none;
-    padding: 0;
-    margin: 24px 0 0 0;
-  }
-
-  :global(.solution-benefits li) {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 12px 0;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-    text-align: left;
-  }
-
-  :global(.solution-benefits li span) {
-    flex: 1;
-    text-align: left;
-  }
-
-  :global(.problem-solution-section.dark .solution-benefits li) {
-    color: rgba(255, 255, 255, 0.85);
-  }
-
-  :global(.solution-benefits li svg) {
-    color: #27ae60;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-
-  :global(.section-cta) {
-    text-align: center;
-    margin-top: 48px;
-    padding-top: 48px;
-    border-top: 1px solid var(--color-border);
-  }
-
-  :global(.problem-solution-section.dark .section-cta) {
-    border-top-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .solution-cta {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 0;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  }
-
-  .cta-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .cta-image {
-    width: 100%;
-  }
-
-  .cta-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .cta-content {
-    text-align: left;
-  }
-
-  .cta-title {
-    font-size: 41px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 16px;
-  }
-
-  .cta-subtitle {
-    font-size: 21px;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 32px;
-  }
-
-  .btn-large {
-    font-size: 18px;
-    padding: 16px 48px;
-  }
-
-  @media (max-width: 968px) {
-    :global(.problem-solution-grid) {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-
-    .hero-title,
-    .cta-title,
-    :global(.section-main-title) {
-      font-size: 32px;
-    }
-
-    .hero-subtitle,
-    .cta-subtitle {
-      font-size: 18px;
-    }
-
-    :global(.box-title) {
-      font-size: 24px;
-    }
-
-    /* On mobile, use min-height: auto to prevent too much whitespace */
-    .hero-video-section,
-    .solution-cta,
-    :global(.problem-solution-section) {
-      min-height: auto;
-    }
-
-    .hero-title {
-      font-size: 36px;
-    }
-
-    .hero-subtitle {
-      font-size: 18px;
-    }
-
-    .hero-video-content {
-      gap: 32px;
-    }
-
-    .cta-grid {
-      grid-template-columns: 1fr;
-      gap: 40px;
-    }
-
-    .cta-content {
-      text-align: center;
-    }
-  }
-</style>

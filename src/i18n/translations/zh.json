@@ -6,7 +6,7 @@
       "nextImage": "下一张图片",
       "previousImage": "上一张图片",
       "resetZoom": "重置变焦",
-      "statusMessage": "状态消息",
+      "statusMessage": "状态信息",
       "zoomIn": "放大",
       "zoomOut": "缩小"
     },
@@ -15,8 +15,8 @@
       "contactSupport": "联系支持人员",
       "goToHomepage": "前往主页",
       "learnMore": "了解更多",
-      "requestEarlyAccess": "请求抢先体验",
-      "sendMessage": "发送消息"
+      "requestEarlyAccess": "申请",
+      "sendMessage": "申请"
     },
     "logoAlt": "Rediacc - 基础设施自动化平台",
     "search": {
@@ -44,53 +44,53 @@
   },
   "earlyAccess": {
     "benefits": [
-      "优先接入Rediacc平台",
-      "直接输入功能开发",
-      "独家早期采用者定价",
-      "专门的实施支持"
+      "直接与我们的团队合作",
+      "塑造产品",
+      "优先支持",
+      "抢先体验新功能"
     ],
     "form": {
       "fields": {
         "company": {
           "autoComplete": "组织",
-          "label": "公司/组织 *"
+          "label": "公司 *"
         },
         "email": {
           "autoComplete": "电子邮件",
-          "label": "电子邮件地址 *"
+          "label": "电子邮件 *"
         },
         "message": {
-          "label": "附加信息",
-          "placeholder": "告诉我们您的基础设施挑战或具体要求..."
+          "label": "信息",
+          "placeholder": "告诉我们您的需求..."
         },
         "name": {
           "autoComplete": "姓名",
-          "label": "全名 *"
+          "label": "姓名 *"
         },
         "role": {
           "autoComplete": "组织名称",
-          "label": "角色/头衔"
+          "label": "角色"
         },
         "useCase": {
-          "label": "主要用例",
+          "label": "主要兴趣",
           "options": {
-            "aiSafeOperations": "网络安全防护",
-            "developmentAcceleration": "发展加速",
+            "aiSafeOperations": "网络安全",
+            "developmentAcceleration": "发展",
             "disasterRecovery": "灾难恢复",
-            "multiple": "多种用例",
+            "multiple": "多种的",
             "other": "其他",
-            "placeholder": "选择您的主要兴趣"
+            "placeholder": "选择一项"
           }
         }
       },
-      "submit": "请求抢先体验"
+      "submit": "申请"
     },
     "notice": {
-      "description": "单击“提交”将打开包含您的信息的电子邮件客户端。 如果这不起作用，您可以直接给我们发电子邮件：",
-      "emailLabel": "或复制此电子邮件",
+      "description": "单击提交以打开您的电子邮件。 我们将在 48 小时内回复。",
+      "emailLabel": "contact@rediacc.com",
       "title": "如何提交"
     },
-    "subtitle": "加入我们的抢先体验计划，获得经过验证的灾难恢复、勒索软件防护和基础设施独立性。",
+    "subtitle": "名额有限。",
     "title": "抢先体验"
   },
   "footer": {
@@ -125,12 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "联系我们",
+      "contactUs": "申请",
       "learnMore": "了解更多"
     },
-    "subtitle": "已验证灾难恢复。 勒索软件保护。 零供应商锁定。",
+    "subtitle": "2025 年 10 月 20 日：AWS 宕机。 Coinbase、Fortnite、Signal、Zoom——全部离线 15 小时。 拥有多云基础设施的组织保持在线状态。 你准备好了吗？",
     "title": "基础设施",
-    "titleHighlight": "正常工作"
+    "titleHighlight": "幸存下来。 每次。"
   },
   "layout": {
     "meta": {
@@ -153,9 +153,10 @@
     "login": "登录",
     "search": "搜索",
     "solutions": {
-      "cybersecurity": "网络安全",
-      "development": "发展",
-      "disasterRecovery": "灾难恢复"
+      "dataSecurity": "数据安全",
+      "systemPortability": "系统可移植性",
+      "disasterRecovery": "灾难恢复",
+      "threatResponse": "威胁响应"
     },
     "toggleMenu": "切换菜单"
   },
@@ -180,7 +181,7 @@
     },
     "contact": {
       "breadcrumb": {
-        "contact": "接触",
+        "contact": "申请",
         "home": "家"
       },
       "form": {
@@ -190,56 +191,56 @@
           },
           "message": {
             "label": "信息 *",
-            "placeholder": "告诉我们您的询问..."
+            "placeholder": "告诉我们您的需求..."
           },
           "name": {
             "label": "姓名 *"
           },
           "subject": {
-            "label": "主题 *",
+            "label": "我感兴趣 *",
             "options": {
-              "earlyAccess": "抢先体验计划",
-              "general": "一般查询",
+              "earlyAccess": "灾难恢复",
+              "general": "一般的",
               "other": "其他",
-              "partnership": "合作机会",
-              "placeholder": "选择一个主题",
+              "partnership": "合伙",
+              "placeholder": "选择一项",
               "technical": "技术问题"
             }
           }
         },
-        "submit": "发送消息"
+        "submit": "申请"
       },
       "hero": {
-        "subtitle": "准备好彻底改变您的基础设施运营了吗？ 与我们的团队联系。",
-        "title": "联系我们"
+        "subtitle": "填写表格，我们将在 48 小时内与您联系。",
+        "title": "在下面申请"
       },
       "info": {
-        "description": "无论您是对抢先体验感兴趣、对我们的平台有疑问还是想探索合作机会，我们都乐意听取您的意见。",
+        "description": "直接与我们的团队合作。 了解您的备份工作。",
         "methods": {
           "earlyAccess": {
-            "description": "有兴趣成为第一批体验 Rediacc 的人吗？",
-            "link": "请求提前访问",
-            "title": "抢先体验计划"
+            "description": "名额有限。 优先支持。",
+            "link": "了解更多",
+            "title": "抢先体验"
           },
           "general": {
             "email": "contact@rediacc.com",
-            "title": "一般查询"
+            "title": "问题？"
           },
           "technicalSupport": {
-            "description": "对于现有用户以及有关我们平台的技术问题，请直接联系我们的技术支持团队。",
-            "title": "技术支援"
+            "description": "直接联系您的支持团队。",
+            "title": "现有客户"
           }
         },
-        "title": "联系我们"
+        "title": "你得到什么"
       },
       "meta": {
-        "description": "与 Rediacc 团队联系，获取抢先体验、技术支持、合作机会以及有关我们的基础设施自动化平台的问题。",
-        "keywords": "联系 Rediacc、基础设施自动化支持、早期访问计划、技术支持、合作机会、DevOps 咨询",
-        "title": "联系瑞迪亚克 | 基础设施自动化平台支持"
+        "description": "名额有限。",
+        "keywords": "Rediacc 早期访问、灾难恢复平台、经过验证的备份",
+        "title": "申请 | 雷迪亚克"
       },
       "notice": {
-        "description": "单击“提交”将打开包含您的消息的电子邮件客户端。 如果这不起作用，您可以直接给我们发电子邮件：",
-        "emailLabel": "或复制此电子邮件",
+        "description": "单击提交以打开您的电子邮件。 问题？ 电子邮件",
+        "emailLabel": "contact@rediacc.com",
         "title": "如何提交"
       }
     },
@@ -310,6 +311,396 @@
         "title": "你可以做什么："
       },
       "title": "找不到页面"
+    },
+    "solutions": {
+      "dataSecurity": {
+        "cta": {
+          "button": "申请",
+          "subtitle": "零知识加密。 完整的审计跟踪。 构建时牢记合规性。",
+          "title": "准备好真正的数据保护了吗？"
+        },
+        "hero": {
+          "subtitle": "每个存储库加密只有您可以解锁。 操作主密码。 您的数据，您的控制。",
+          "title": "加密一切。 控制一切。 完全零知识。"
+        },
+        "meta": {
+          "description": "用于完整基础设施保护的零知识加密。 构建时考虑到合规性要求。 避免物理盗窃、维护审计跟踪、安全迁移。",
+          "keywords": "数据安全、加密、合规性、基础设施加密、审计跟踪、零知识",
+          "title": "数据安全与合规性 | 具有审计追踪功能的加密基础设施"
+        },
+        "problems": {
+          "auditTrail": {
+            "problem": {
+              "additionalPoints": [
+                "收购后的遗留系统多年未迁移",
+                "转型中的系统失去主动审计监控",
+                "不完整的迁移导致审计盲目性数据仍然暴露",
+                "已退役系统的违规行为需要数周时间才能发现",
+                "没有审计追踪意味着无法证明发生了什么"
+              ],
+              "description": "基础设施迁移分阶段进行。 过渡期间留下的遗留系统脱离了审计雷达。 当审核员询问“生产了什么？”时 和“谁访问了什么？”，您无法回答认为已退役的系统。 不完整的迁移会产生盲点——保存数据的系统容易受到攻击且不受监控。",
+              "story": "Oracle Health 继承了 2022 年收购的旧 Cerner 服务器。 2025 年 1 月，攻击者破坏了一个未迁移的系统。 <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 一个月未检测到 — 不再监控。 262,831 份患者记录被盗。 <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patent-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 该漏洞发生在未经审计的基础设施上。"
+            },
+            "solution": {
+              "benefits": [
+                "完整的审计跟踪记录每项操作并可追溯",
+                "全面可见性审核员可以查看哪些内容受到保护，哪些人访问过",
+                "访问控制证明谁做了什么、何时为什么",
+                "审计就绪文档综合日志以进行合规性审查",
+                "透明操作，无需将加密数据暴露给审计人员"
+              ],
+              "description": "记录每个操作：谁部署、谁访问什么、何时进行更改。 全面了解您的基础设施。 审计团队获得准确的时间戳和经过身份验证的访问证明。 每个存储库的加密与操作控制保持独立——数据保持加密状态，同时审计跟踪证明访问权限。",
+              "title": "完整的审计合规性"
+            },
+            "subtitle": "你无法管理无法衡量的东西 <small class='subtitle-attribution'>— Peter Drucker</small>",
+            "title": "缺少审计追踪"
+          },
+          "migrationExposure": {
+            "problem": {
+              "additionalPoints": [
+                "承包商禁用安全控制以加快迁移过程",
+                "十分钟的安全窗口变成二十四小时",
+                "搜索引擎在迁移窗口期间索引未受保护的系统",
+                "如果忘记，临时安全禁用可能会变成永久性的",
+                "迁移窗口为攻击者今天积极利用创造了机会"
+              ],
+              "description": "基础设施迁移需要暂时放松安全性。 承包商禁用防火墙以“加快进程”。 为了提高性能而绕过加密。 临时窗口成为永久的攻击媒介。 受保护的数据会暴露数小时或数天。 当安全控制减弱时，攻击者就会瞄准迁移窗口。",
+              "story": "Keepnet Labs 于 2020 年 3 月聘请了承包商来迁移其数据库。承包商禁用了防火墙 10 分钟。 <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 已对 50 亿条记录建立索引。 数据库24小时暴露。 <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 一家网络安全公司的迁移暴露了数十亿美元的风险。"
+            },
+            "solution": {
+              "benefits": [
+                "在受保护的数据源到目标的整个迁移过程中进行加密",
+                "没有未加密的暂存加密快照保持加密传输",
+                "安全回滚加密备份保持完整且可用",
+                "所有云提供商均采用与供应商无关的相同加密",
+                "零停机可能加密快照支持并行迁移"
+              ],
+              "description": "基础设施在整个迁移过程中保持加密状态。 源端加密快照、加密传输、目的地加密部署。 没有解密窗口。 没有未加密的暂存副本。 每个存储库加密从开始到结束都处于活动状态。",
+              "title": "加密迁移过程"
+            },
+            "subtitle": "最好的行为是一致的，即使很小<small class='subtitle-attribution'>—先知穆罕默德，苏南·伊本·马贾 (4240)</small>",
+            "title": "迁移安全漏洞"
+          },
+          "physicalTheft": {
+            "problem": {
+              "additionalPoints": [
+                "如果加密不完整，被盗的服务器仍然会受到威胁",
+                "退役过程通常完全跳过加密步骤",
+                "文件删除不会删除数据，只是删除条目",
+                "数据库备份经常以未加密的方式存储在安全位置",
+                "合规性明确要求对数据进行静态加密"
+              ],
+              "description": "有人窃取了您的服务器、备份驱动器或旧硬件。 操作系统密码提供针对物理访问的零保护——它们从 USB 启动、绕过身份验证、安装磁盘、复制所有内容。 客户数据、凭证、数据库——全部消失了。 数据中心经常遭遇盗窃。 退役会造成暴露。",
+              "story": "摩根士丹利 (Morgan Stanley) 于 2016 年聘请搬运工来停用数据中心。<a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 包含 1,500 万条客户记录的硬盘被拍卖 在线——未加密。 <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 罚款 3500 万美元。 大多数设备从未恢复。"
+            },
+            "solution": {
+              "benefits": [
+                "您控制的每个存储库加密真正的零知识",
+                "完整基础设施和备份的军用级加密",
+                "物理盗窃变得毫无价值加密数据没有价值",
+                "从部署到退役和处置的可证明加密",
+                "从一开始就考虑到合规性要求"
+              ],
+              "description": "每个存储库都使用自己的密码进行加密。 每个文件、容器、配置、数据库和备份都受到保护。 只有您持有每个存储库的加密密钥。 被盗的硬件=毫无价值的加密blob。",
+              "title": "完整的零知识加密"
+            },
+            "subtitle": "锁让诚实的人诚实<small class='subtitle-attribution'>——民间谚语（1912）</small>",
+            "title": "物理访问盗窃"
+          }
+        }
+      },
+      "disasterRecovery": {
+        "cta": {
+          "button": "申请",
+          "subtitle": "名额有限。",
+          "title": "准备好信任您的备份了吗？"
+        },
+        "hero": {
+          "subtitle": "已验证的备份。 无限的历史。 增量速度。",
+          "title": "正确完成灾难恢复"
+        },
+        "meta": {
+          "description": "不要再寄希望于你的备份能够发挥作用，并且知道它们确实有效。 Rediacc 提供自动备份验证、无限保留和增量备份效率。",
+          "keywords": "灾难恢复、备份验证、增量备份、数据保护、备份测试、业务连续性",
+          "title": "灾难恢复解决方案| 经过验证的备份确实有效"
+        },
+        "problems": {
+          "limitedHistory": {
+            "problem": {
+              "additionalPoints": [
+                "攻击者故意等待干净的备份过期",
+                "传统的七到十四天的保留会留下漏洞",
+                "每个完整备份都会消耗大量存储空间，限制保留",
+                "合规性要求通常需要数月的历史记录",
+                "存储成本迫使我们在历史和预算之间做出选择"
+              ],
+              "description": "较短的保留期可以节省存储空间，但会产生漏洞。 当您需要感染之前的数据时，它已经被覆盖了。 由于巨大的存储成本，传统系统无法承受长期保留。",
+              "story": "勒索软件的停留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 保留 7-14 天的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "通过重复数据删除有效存储数月的备份历史记录",
+                "在任何感染之前访问干净的备份",
+                "增量重复数据删除可节省 90% 以上的存储空间",
+                "经济高效地满足合规性要求并保持长期保留",
+                "攻击者无法等待您的保留期结束"
+              ],
+              "description": "Rediacc 的增量重复数据删除功能可让您保留 30 天、60 天、90 天以上的备份历史记录，而不会造成存储爆炸。 仅存储更改，而不存储重复数据。",
+              "title": "延长历史记录保留"
+            },
+            "subtitle": "早起的鸟儿有虫吃<small class='subtitle-attribution'>— William Camden (1636)</small>",
+            "title": "简短的备份历史记录"
+          },
+          "slowBackups": {
+            "problem": {
+              "additionalPoints": [
+                "相同的勒索软件攻击产生截然不同的恢复时间",
+                "传统的完全恢复意味着取消服务的停机天数",
+                "现代增量恢复在几分钟内恢复在线",
+                "医疗保健不能等待患者现在需要护理的日子",
+                "每停机一小时都会造成运营和财务损失成倍增加"
+              ],
+              "description": "传统的完整备份意味着完整恢复速度很慢。 拥有现代恢复系统的组织可以在数小时内恢复在线。 那些有传统备份的人？ 数天的停机、服务取消和收入损失。",
+              "story": "WannaCry 于 2017 年 5 月袭击了 NHS，锁定了全国的医院系统。 <a href='https://www.nao.org.uk/reports/investigation-wannacry-cyber-attack-and-the-nhs/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 一些信任在数小时内恢复。 <a href='https://www.bridgeheadsoftware.com/2017/07/wannacry-nhs-attack-lessons-backup-data-recovery-strategies/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 其他人花了几天时间。 超过 19,000 个预约被取消。 恢复时间：混乱的数小时与数天。"
+            },
+            "solution": {
+              "benefits": [
+                "只需几分钟即可恢复，无需停机数天",
+                "增量恢复仅传输更改的数据部分",
+                "关键系统在线，而竞争对手则保持沉默",
+                "快速最大限度地减少收入损失和服务中断",
+                "成为每次都能快速恢复的组织"
+              ],
+              "description": "Rediacc 的增量架构可实现快速恢复。 仅恢复更改的内容，而不是整个系统。 让关键操作在几分钟内恢复在线，而其他操作仍在恢复中。",
+              "title": "快速恢复过程"
+            },
+            "subtitle": "善用五前五<small class='subtitle-attribution'>—先知穆罕默德，苏南·伊本·马贾 (4240)</small>",
+            "title": "恢复时间慢"
+          },
+          "unverified": {
+            "problem": {
+              "additionalPoints": [
+                "勒索软件会在加密数据前几周感染系统",
+                "尽管备份文件已损坏，备份系统仍报告成功",
+                "手动恢复测试需要几个小时，没有人经常这样做",
+                "尽管有备份，但只有 63% 的人成功恢复",
+                "未经测试的备份在您需要时会失败"
+              ],
+              "description": "拥有备份和拥有工作备份是完全不同的两件事。 大多数组织从不测试恢复，直到灾难发生，然后发现他们的备份已损坏、不完整或被感染。 当您需要它们时，修复它们已经太晚了。",
+              "story": "巴尔的摩的城市系统于 2019 年 5 月遭到勒索软件攻击。<a href='https://en.wikipedia.org/wiki/2019_Baltimore_ransomware_attack' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 官员无法确认备份是否经过测试或可行。 <a href='https://krebsonsecurity.com/2019/06/report-no-eternal-blue-exploit-found-in-baltimore-city-ransomware/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 最近的备份受到感染。 老的从来没有测试过。 恢复成本：1800万美元。"
+            },
+            "solution": {
+              "benefits": [
+                "通过每天测试真实的恢复操作来自动验证",
+                "立即知道备份是否损坏或不完整",
+                "在任何感染之前访问经过干净测试的备份",
+                "无需手动测试，自动验证持续运行",
+                "每个备份在您需要之前都已被证明有效"
+              ],
+              "description": "Rediacc 不仅仅创建备份，它还通过测试实际恢复来验证备份。 事实证明，在您遇到紧急情况需要备份之前，每个备份都可以发挥作用。",
+              "title": "自动备份验证"
+            },
+            "subtitle": "信任但验证<small class='subtitle-attribution'>—俄罗斯谚语/里根 (1987)</small>",
+            "title": "未经测试的备份系统"
+          }
+        },
+        "video": {
+          "subtitle": "观看 Rediacc 如何自动验证您的备份并以更高的效率保留无限的历史记录。",
+          "title": "查看灾难恢复的实际应用"
+        }
+      },
+      "systemPortability": {
+        "cta": {
+          "button": "申请",
+          "subtitle": "一份便携式文件。 军用级安全性。 名额有限。",
+          "title": "准备好实现真正的系统可移植性了吗？"
+        },
+        "hero": {
+          "subtitle": "完整的系统在一个文件中。 军用级加密。 第一次尝试就可以在任何地方工作。",
+          "title": "安全地将您的系统移动到任何地方"
+        },
+        "meta": {
+          "description": "摆脱供应商锁定。 一个便携式文件中的完整系统、军用级加密以及跨任何基础设施的零配置部署。",
+          "keywords": "系统可移植性、供应商锁定、基础设施移动性、云迁移、多云、系统加密、数据安全、部署自动化",
+          "title": "通用系统可移植性| 将您的基础设施安全地移动到任何地方"
+        },
+        "problems": {
+          "deployment": {
+            "problem": {
+              "additionalPoints": [
+                "不同系统和发行版之间的用户 ID 有所不同",
+                "一个用户拥有的文件在其他地方不正确",
+                "每次迁移后都需要手动进行所有权操作",
+                "所有权错误的数据库文件将无法启动",
+                "容器应用因权限不匹配而失败"
+              ],
+              "description": "在 Linux 系统之间移动文件时，文件所有权成为一场噩梦。 用户“appuser”在服务器 A 上的 UID 为 1000，但在服务器 B 上的 UID 为 1005。应用程序无法访问文件，因为数字 UID 不匹配，每次都需要手动修复权限。",
+              "story": "Docker 容器在系统之间移动时经常面临这个问题。 <a href='https://www.joyfulbikeshedding.com/blog/2021-03-15-docker-and-the-host-filesystem-owner-matching-problem.html' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> Linux 使用数字 UID。 不同的系统分配的值不同，导致权限失败。 <a href='https://stackoverflow.com/questions/51188997/docker-uid-gid-mapping-changes-on- Different-host' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 分钟变​​成了 chown 操作和调试的几个小时。"
+            },
+            "solution": {
+              "benefits": [
+                "文件所有权适用于不同系统的不同 ID",
+                "迁移操作后没有手动权限修复",
+                "团队 SSH 密钥集中管理，不共享",
+                "数据库和应用程序立即启动新系统",
+                "在 Ubuntu Debian CentOS 权限之间移动工作"
+              ],
+              "description": "Rediacc 在文件系统级别处理用户所有权。 当您将存储库迁移到新系统时，无论用户 ID 不同，文件所有权都会自动生效。 团队 SSH 密钥集中管理——开发人员自动连接，无需共享凭据。",
+              "title": "自动所有权解析"
+            },
+            "subtitle": "急速来自魔鬼； 深思熟虑来自阿拉 <small class='subtitle-attribution'>— 先知穆罕默德，Musnad Abu Ya'la (4256)</small>",
+            "title": "文件权限冲突"
+          },
+          "testingVendorSwitch": {
+            "problem": {
+              "additionalPoints": [
+                "百分之七的公司从未测试过灾难恢复",
+                "每年只有百分之四十六的测试过时",
+                "并行基础设施测试使验证期间的成本加倍",
+                "缺乏时间资源阻碍定期测试",
+                "未经测试的故障转移计划在您需要时会失败"
+              ],
+              "description": "单一云是有风险的。 您希望在灾难发生之前测试故障转移。 但测试意味着复制基础设施来准确镜像生产，并在数周内保持同步。 大多数公司从不测试灾难恢复，因为风险和精力不值得——直到中断证明他们应该这样做。",
+              "story": "只有 7% 的公司从不测试灾难恢复计划。 <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 然而，46% 的人每年只进行一次测试。 <a href='https://dbvisit.com/blog/ Five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 原因：缺乏时间、资源、复杂性。 <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='itation'>[3]</a> 测试成本会增加一倍。 提供商中断证明他们应该进行测试。"
+            },
+            "solution": {
+              "benefits": [
+                "使用实际生产架构验证灾难恢复",
+                "在几周而不是几个月内完成故障转移测试",
+                "充满信心地进行测试，对生产零影响",
+                "在需要之前对故障转移速度进行基准测试",
+                "了解您的备份计划在灾难发生前是否有效"
+              ],
+              "description": "Rediacc 会快照您的确切生产环境状态。 使用真实配置和数据模式在 Azure 或 GCP 上部署该快照。 在不影响生产的情况下测试故障转移性能并验证灾难恢复。 仅在证明有效时才提交。 零停机时间。 零风险。",
+              "title": "无风险的故障转移测试"
+            },
+            "subtitle": "熟能生巧<small class='subtitle-attribution'>—古典传统（1500+）</small>",
+            "title": "未经测试的故障转移计划"
+          },
+          "vendorLockIn": {
+            "problem": {
+              "additionalPoints": [
+                "10 月 20 日全球停电持续十五个小时",
+                "区域中断意味着生产备份同时失败",
+                "多区域组织保持在线单一云",
+                "当云提供商失败时需要替代运行",
+                "供应商锁定消除了所需的故障转移选项"
+              ],
+              "description": "您建立在一个云提供商之上。 当他们失败时，你也会和他们一起失败。 没有备份。 无故障转移。 别无选择。 供应商锁定不仅成本高昂，而且单点故障也会导致整个运营瘫痪。",
+              "story": "2025 年 10 月 20 日。AWS US-EAST-1 DNS 故障持续 15 小时。 <a href='https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> Coinbase、Fortnite、Signal、Zoom — 离线。 AWS 锁定的组织的选择为零。 多区域架构自动进行故障转移。 <a href='https://ine.com/blog/aws-october-2025-outage-multi-region-and-cloud-lessons-learned' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 单云是单点故障。"
+            },
+            "solution": {
+              "benefits": [
+                "部署在任何地方，在运行多个云时不会出现故障",
+                "当云提供商失败时，已经在运行替代方案",
+                "经过测试和验证，几分钟内即可在提供商之间进行故障转移",
+                "真正的多云，无需单独的基础设施版本",
+                "在需要故障转移工作之前对其进行测试"
+              ],
+              "description": "Rediacc 将您的完整系统打包到单个便携式存储库中。 在 AWS、Azure、Google Cloud 或裸机上部署，无需进行任何更改。 当一个提供商失败时，您已经在其他地方运行了。 故障转移需要几分钟，而不是几小时。 基础设施永远不会受制于某一提供商的正常运行时间。",
+              "title": "真正的多云冗余"
+            },
+            "subtitle": "不要把所有鸡蛋放在同一个篮子里<small class='subtitle-attribution'>—塞万提斯 (1605) / 卡内基 (1885)</small>",
+            "title": "供应商锁定陷阱"
+          }
+        }
+      },
+      "threatResponse": {
+        "cta": {
+          "button": "申请",
+          "subtitle": "更快地应对威胁。 不变的。 便携的。 在你的掌控之中。",
+          "title": "准备好网络弹性了吗？"
+        },
+        "hero": {
+          "subtitle": "不可变的备份。 分钟即可恢复。 跨云基础设施疏散。",
+          "title": "威胁瞬息万变。 你也应该这样做。"
+        },
+        "meta": {
+          "description": "通过不可变的备份、快速恢复和基础设施可移植性抵御勒索软件攻击。 在几分钟内撤离受感染的系统。",
+          "keywords": "勒索软件防护、网络弹性、不可变备份、快速恢复、业务连续性、基础设施疏散、灾难恢复",
+          "title": "勒索软件和网络弹性解决方案 | 威胁快速移动"
+        },
+        "problems": {
+          "infrastructureBlackBox": {
+            "problem": {
+              "additionalPoints": [
+                "组织无法解释所有生产 SSH 密钥",
+                "备份系统捕获威胁、遗忘服务、潜在木马",
+                "基础设施迁移使累积的风险永久化",
+                "遗留系统具有影响灾难恢复的未知配置",
+                "未知访问使勒索软件在恢复后重新渗透"
+              ],
+              "description": "遗留系统会积累来自承包商或攻击者的未记录的 SSH 密钥。 备份捕获一切——垃圾文件、被遗忘的服务、潜在的木马。 坚持不懈的攻击者也会得到支持。 移民使未知的风险长期存在。 没有人知道备份中有什么或者恢复后会激活什么。",
+              "story": "一家金融公司在生产数据库中发现了 47 个未记录的 SSH 密钥，其中包括来自几年前离开的供应商的密钥。 <a href='https://www.appviewx.com/blogs/ssh-key-sprawl-causes-and-consequences/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 在取证 SSH 密钥审核期间，勒索软件恢复延迟了 2 周。 <a href='https://www.cryptionconsulting.com/ssh-key-sprawl/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "仅迁移经过验证的基本系统组件",
+                "消除累积的安全债务和遗留的复杂性",
+                "集中式 SSH 密钥管理取代密钥蔓延",
+                "生产和备份系统的完整可审计性",
+                "全新部署提供干净的状态，没有隐藏的威胁"
+              ],
+              "description": "Rediacc 能够在新的基础设施上使用经过验证的基本组件进行完整的系统重建。 您迁移有意选择的系统数据和配置，而不是“所有内容”。 SSH 密钥集中管理和审核。 结果：基础设施干净且具有完全可见性。 无担保债务。 没有隐藏访问。",
+              "title": "新的经过验证的基础设施"
+            },
+            "subtitle": "只见树木，不见森林<small class='subtitle-attribution'>— 约翰·海伍德 (1546)</small>",
+            "title": "基础设施黑匣子"
+          },
+          "osVulnerability": {
+            "problem": {
+              "additionalPoints": [
+                "操作系统中的严重漏洞没有补丁",
+                "完整的操作系统迁移需要数周的测试验证",
+                "在没有生产工作负载的情况下无法安全地测试迁移",
+                "回滚失败的迁移意味着完整的数据恢复",
+                "安全漏洞窗口将持续数周"
+              ],
+              "description": "发现关键操作系统漏洞。 仅针对您未运行的较新版本提供补丁。 迁移需要数周的测试。 无法在不冒数据风险的情况下对生产进行测试。 回滚意味着全面恢复。 您仍然容易受到攻击，希望攻击者不会在迁移完成之前利用它。",
+              "story": "Log4Shell（2021 年 12 月）迫使我们做出残酷的选择。 <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 公司花了 2-3 周的时间来验证操作系统迁移。 只有 45% 在 11 天内修补。 有些人在测试期间 4 周以上仍然脆弱。 <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "根据实际生产工作负载测试新操作系统",
+                "验证兼容性，而不会给您的实际系统带来风险",
+                "立即恢复到以前的操作系统零停机时间",
+                "只需几分钟即可在 Ubuntu Debian CentOS AlmaLinux 之间迁移",
+                "在几分钟而不是几周内关闭安全漏洞窗口"
+              ],
+              "description": "Rediacc 可实现快速、无风险的操作系统迁移测试。 将基础架构部署到新操作系统并验证一切是否适用于实际生产工作负载。 如果出现问题，立即恢复——不会丢失数据，也不会恢复。 一旦验证安全，永久提交。 漏洞窗口将在几分钟内关闭。",
+              "title": "无风险操作系统测试"
+            },
+            "subtitle": "一切困难中都有轻松<small class='subtitle-attribution'>— Surah Al-Inshirah 94:5</small>",
+            "title": "操作系统更新延迟"
+          },
+          "ransomwareBackups": {
+            "problem": {
+              "additionalPoints": [
+                "94% 的勒索软件攻击以备份基础设施为目标",
+                "攻击者等待数周以确保干净的备份被覆盖",
+                "当攻击者拥有管理员凭据时，不可变备份会失败",
+                "即使在勒索之后，备份删除也消除了恢复路径",
+                "加密的提供商备份意味着提供商无法帮助恢复"
+              ],
+              "description": "勒索软件攻击者以备份基础设施为目标——删除或覆盖副本以消除恢复。 使用共享凭据在同一云帐户中进行备份可以让攻击者删除数月的历史记录。 即使是不可变的备份也会因管理员访问而失败。 干净的备份在您意识到之前就消失了。",
+              "story": "Sophos 2024 年的一项研究发现，94% 的勒索软件受害者都有备份目标，其中 57% 成功。 <a href='https://www.techrepublic.com/article/ransomware-attackers-target-backups/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 当备份遭到破坏时，恢复成本中位数将达到 300 万美元，高达八倍。 <a href='https://news.sophos.com/en-us/2024/03/26/the-impact-of-compromished-backups-on-ransomware-outcomes/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+            },
+            "solution": {
+              "benefits": [
+                "即使凭证完全泄露，加密备份也能幸存",
+                "令牌不变性防止管理员访问权限删除",
+                "以前的版本保持完整并无限期加密",
+                "基础设施完全受损后可以恢复",
+                "无需支付赎金，备份仍由您掌控"
+              ],
+              "description": "Rediacc 在存储级别（而非管理级别）存储不可变的加密备份副本。 即使攻击者破坏了基础设施令牌或管理凭据，他们也只能读取加密数据，无法修改、删除或覆盖版本。 使用密码加密的快照对于攻击者来说仍然毫无价值。",
+              "title": "不可变的备份保护"
+            },
+            "subtitle": "拴好你的骆驼并信任真主<small class='subtitle-attribution'>—先知穆罕默德，苏南·提尔米济 (2517)</small>",
+            "title": "勒索软件针对备份"
+          }
+        }
+      }
     }
   },
   "problem": {
@@ -328,33 +719,42 @@
     "items": [
       {
         "benefits": [
-          "自动测试备份，而不仅仅是进行备份",
-          "保留数月的历史记录，而不仅仅是 1-3 份副本",
-          "内置跨区域保护"
+          "不可变的备份能够抵御攻击",
+          "在几分钟内恢复，而不是几小时或几天",
+          "无风险操作系统测试"
         ],
-        "description": "您的备份有效。 我们验证它们。",
-        "title": "灾难恢复"
+        "description": "恢复速度可以挽救生命。 不可变的备份。 快速反应。",
+        "title": "勒索软件生存"
       },
       {
         "benefits": [
-          "不可变的备份勒索软件无法触及",
-          "每个虚拟机都以经过验证的干净状态进行备份",
-          "无风险的渗透测试环境"
+          "应对 AWS 中断",
+          "零供应商锁定",
+          "已测试故障转移就绪"
         ],
-        "description": "勒索软件无法加密它无法到达的内容。",
-        "title": "网络安全防护"
+        "description": "单一云是危险的。 部署在任何地方。 快速故障转移。",
+        "title": "多云始终"
       },
       {
         "benefits": [
-          "可与任何操作系统、虚拟机或云提供商配合使用",
-          "安全的 PostgreSQL 升级和架构更改",
-          "在购买硬件之前测试 GPU 工作负载"
+          "自动验证",
+          "保留 30-90 天",
+          "几分钟内恢复"
         ],
-        "description": "在提交之前测试迁移。",
-        "title": "发展加速"
+        "description": "已验证恢复。 不仅仅是索赔。 完整的历史。",
+        "title": "已验证的备份"
+      },
+      {
+        "benefits": [
+          "您控制的加密",
+          "完整的审计追踪",
+          "迁移安全"
+        ],
+        "description": "军用级加密。 完整的审计跟踪。",
+        "title": "加密控制"
       }
     ],
-    "subtitle": "让基础设施团队彻夜难眠的三个关键问题。",
-    "title": "我们解决什么"
+    "subtitle": "四种集成解决方案可在基础设施故障或威胁袭来时快速响应。",
+    "title": "我们如何确保业务连续性"
   }
 }
