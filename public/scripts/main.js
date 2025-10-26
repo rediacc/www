@@ -199,6 +199,8 @@ function initMessageOverlay() {
     const overlay = document.getElementById('message-overlay');
     const closeButton = document.getElementById('message-close');
 
+    if (!overlay || !closeButton) return; // Skip if no message overlay exists on the page
+
     closeButton.addEventListener('click', hideMessage);
 
     // Close on escape key
@@ -418,6 +420,7 @@ function initImageModal() {
     const imageContainer = document.querySelector('.image-container');
     const modalImage = document.getElementById('modal-image');
 
+    if (!modal || !imageContainer || !modalImage) return; // Skip if no image modal exists on the page
 
     // Keyboard controls
     document.addEventListener('keydown', function(e) {
