@@ -615,7 +615,7 @@
           },
           "osVulnerability": {
             "title": "OS Update Delays",
-            "subtitle": "In every hardship lies ease <small class='subtitle-attribution'>— Surah Al-Inshirah 94:5</small>",
+            "subtitle": "In every hardship lies ease <small class='subtitle-attribution'>— Al-Inshirah 94:5</small>",
             "problem": {
               "description": "Critical OS vulnerability discovered. Patches only for newer versions you're not running. Migration requires weeks of testing. Can't test against production without risking data. Rolling back means full restoration. You stay vulnerable hoping attackers don't exploit before migration completes.",
               "story": "Log4Shell (December 2021) forced brutal choices. <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Companies spent 2-3 weeks validating OS migration. Only 45% patched within 11 days. Some remained vulnerable 4+ weeks during testing. <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",

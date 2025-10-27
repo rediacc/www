@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ProblemSolutionSection from '../../../components/ProblemSolutionSection';
 import SolutionHero from '../../../components/SolutionHero.astro';
+import SolutionImage from '../../../components/SolutionImage.astro';
 import SolutionCTA from '../../../components/SolutionCTA.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
@@ -33,6 +34,8 @@ const spContent = to('pages.solutions.systemPortability');
   <SolutionHero
     title={spContent.hero.title}
     subtitle={spContent.hero.subtitle}
+    heroImage="/assets/images/system-portability-hero.png"
+    heroImageAlt="Infrastructure box moving seamlessly between AWS, Azure, and Google Cloud platforms"
   />
 
   <!-- Problem-Solution Section 1: Vendor Lock-in -->
@@ -106,6 +109,13 @@ const spContent = to('pages.solutions.systemPortability');
     pageSlug="system-portability"
   />
 
+  <!-- Bottom Image Section -->
+  <SolutionImage
+    imageSrc="/assets/images/system-portability-bottom.png"
+    imageAlt="World map showing tested failover paths between AWS, Azure, and Google Cloud with verification checkmarks"
+    variant="light"
+  />
+
   <SolutionCTA
     title={spContent.cta.title}
     subtitle={spContent.cta.subtitle}
@@ -114,4 +124,6 @@ const spContent = to('pages.solutions.systemPortability');
     imageAlt="Rediacc portable system repositories"
     lang={lang}
   />
+
 </BaseLayout>
+
