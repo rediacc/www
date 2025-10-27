@@ -8,8 +8,6 @@ import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
 import ctaImage from '../../../assets/images/rediacc_resources_repos.png';
-import dataSecurityHero from '../../../assets/images/data-security-hero.png';
-import dataSecurityBottom from '../../../assets/images/data-security-bottom.png';
 import '../../../styles/solution-page.css';
 
 export async function getStaticPaths() {
@@ -36,7 +34,7 @@ const dsContent = to('pages.solutions.dataSecurity');
   <SolutionHero
     title={dsContent.hero.title}
     subtitle={dsContent.hero.subtitle}
-    heroImage={dataSecurityHero.src}
+    heroImage="/assets/images/data-security-hero.png"
     heroImageAlt="Encrypted data pipeline with locked packets flowing through transparent infrastructure"
   />
 
@@ -114,7 +112,7 @@ const dsContent = to('pages.solutions.dataSecurity');
 
   <!-- Bottom Image Section -->
   <SolutionImage
-    imageSrc={dataSecurityBottom.src}
+    imageSrc="/assets/images/data-security-bottom.png"
     imageAlt="Compliance dashboard showing migration status, audit trail, and encryption verification with SOC 2, ISO 27001, and GDPR badges"
     variant="light"
   />
