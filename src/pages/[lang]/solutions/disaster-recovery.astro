@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ProblemSolutionSection from '../../../components/ProblemSolutionSection';
 import SolutionHero from '../../../components/SolutionHero.astro';
+import SolutionImage from '../../../components/SolutionImage.astro';
 import SolutionCTA from '../../../components/SolutionCTA.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
@@ -33,6 +34,8 @@ const drContent = to('pages.solutions.disasterRecovery');
   <SolutionHero
     title={drContent.hero.title}
     subtitle={drContent.hero.subtitle}
+    heroImage="/assets/images/disaster-recovery-hero.png"
+    heroImageAlt="Verified backup layers with checkmarks showing tested backups"
   />
 
   <!-- Problem-Solution Section 1: Unverified Backups -->
@@ -107,6 +110,13 @@ const drContent = to('pages.solutions.disasterRecovery');
     pageSlug="disaster-recovery"
   />
 
+  <!-- Bottom Image Section -->
+  <SolutionImage
+    imageSrc="/assets/images/disaster-recovery-bottom.png"
+    imageAlt="Backup monitoring dashboard with 30, 60, 90 day retention timelines showing 100% verification"
+    variant="dark"
+  />
+
   <SolutionCTA
     title={drContent.cta.title}
     subtitle={drContent.cta.subtitle}
@@ -116,4 +126,6 @@ const drContent = to('pages.solutions.disasterRecovery');
     imageAlt="Rediacc backup resources and repositories"
     lang={lang}
   />
+
 </BaseLayout>
+

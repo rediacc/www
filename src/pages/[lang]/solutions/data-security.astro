@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import ProblemSolutionSection from '../../../components/ProblemSolutionSection';
 import SolutionHero from '../../../components/SolutionHero.astro';
+import SolutionImage from '../../../components/SolutionImage.astro';
 import SolutionCTA from '../../../components/SolutionCTA.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
@@ -33,6 +34,8 @@ const dsContent = to('pages.solutions.dataSecurity');
   <SolutionHero
     title={dsContent.hero.title}
     subtitle={dsContent.hero.subtitle}
+    heroImage="/assets/images/data-security-hero.png"
+    heroImageAlt="Encrypted data pipeline with locked packets flowing through transparent infrastructure"
   />
 
   <!-- Problem-Solution Section 1: Physical Data Theft -->
@@ -107,6 +110,13 @@ const dsContent = to('pages.solutions.dataSecurity');
     pageSlug="data-security"
   />
 
+  <!-- Bottom Image Section -->
+  <SolutionImage
+    imageSrc="/assets/images/data-security-bottom.png"
+    imageAlt="Compliance dashboard showing migration status, audit trail, and encryption verification with SOC 2, ISO 27001, and GDPR badges"
+    variant="light"
+  />
+
   <SolutionCTA
     title={dsContent.cta.title}
     subtitle={dsContent.cta.subtitle}
@@ -115,4 +125,6 @@ const dsContent = to('pages.solutions.dataSecurity');
     imageAlt="Rediacc data security and compliance"
     lang={lang}
   />
+
 </BaseLayout>
+
