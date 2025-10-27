@@ -8,6 +8,8 @@ import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
 import ctaImage from '../../../assets/images/rediacc_resources_repos.png';
+import threatResponseHero from '../../../assets/images/threat-response-hero.png';
+import threatResponseBottom from '../../../assets/images/threat-response-bottom.png';
 import '../../../styles/solution-page.css';
 
 export async function getStaticPaths() {
@@ -34,7 +36,7 @@ const trContent = to('pages.solutions.threatResponse');
   <SolutionHero
     title={trContent.hero.title}
     subtitle={trContent.hero.subtitle}
-    heroImage="/assets/images/threat-response-hero.png"
+    heroImage={threatResponseHero.src}
     heroImageAlt="Impenetrable vault with glowing locked chains representing immutable ransomware protection"
   />
 
@@ -112,7 +114,7 @@ const trContent = to('pages.solutions.threatResponse');
 
   <!-- Bottom Image Section -->
   <SolutionImage
-    imageSrc="/assets/images/threat-response-bottom.png"
+    imageSrc={threatResponseBottom.src}
     imageAlt="Side-by-side comparison showing manual vs automated ransomware recovery timelines"
     variant="dark"
   />
