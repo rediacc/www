@@ -25,18 +25,87 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
+      // Default values (will be overridden by serialize function)
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
-      customPages: [
-        'https://www.rediacc.com/',
-        'https://www.rediacc.com/contact',
-        // Language-aware pages
-        'https://www.rediacc.com/en/blog',
-        'https://www.rediacc.com/en/docs',
-        'https://www.rediacc.com/es/blog',
-        'https://www.rediacc.com/es/docs'
-      ]
+
+      // Internationalization support
+      i18n: {
+        defaultLocale: 'en',
+        locales: {
+          en: 'en',
+          de: 'de-DE',
+          es: 'es-ES',
+          fr: 'fr-FR',
+          ja: 'ja-JP',
+          ar: 'ar',
+          ru: 'ru-RU',
+          tr: 'tr-TR',
+          zh: 'zh-CN'
+        }
+      },
+
+      // Optimize XML file size by excluding unused namespaces
+      namespaces: {
+        news: false,  // Not a news site
+        video: false, // No video content
+        image: true,  // Keep for images
+        xhtml: true   // Keep for hreflang (i18n)
+      },
+
+      // Per-page customization for priority and changefreq
+      serialize: (item) => {
+        const url = item.url;
+
+        // Homepage - highest priority
+        if (url.match(/\/(en|de|es|fr|ja|ar|ru|tr|zh)\/?$/)) {
+          item.priority = 1.0;
+          item.changefreq = 'weekly';
+        }
+        // Root homepage
+        else if (url === 'https://www.rediacc.com/') {
+          item.priority = 1.0;
+          item.changefreq = 'weekly';
+        }
+        // Solutions pages - high priority
+        else if (url.includes('/solutions/')) {
+          item.priority = 0.9;
+          item.changefreq = 'monthly';
+        }
+        // Blog listing pages - high priority, frequent updates
+        else if (url.match(/\/blog\/?$/)) {
+          item.priority = 0.8;
+          item.changefreq = 'daily';
+        }
+        // Docs listing pages - high priority
+        else if (url.match(/\/docs\/?$/)) {
+          item.priority = 0.8;
+          item.changefreq = 'weekly';
+        }
+        // Individual blog posts - medium-high priority, frequent updates
+        else if (url.includes('/blog/') && !url.endsWith('/blog/')) {
+          item.priority = 0.7;
+          item.changefreq = 'daily';
+        }
+        // Individual doc pages - medium-high priority
+        else if (url.includes('/docs/') && !url.endsWith('/docs/')) {
+          item.priority = 0.7;
+          item.changefreq = 'weekly';
+        }
+        // Contact page - medium priority
+        else if (url.includes('/contact')) {
+          item.priority = 0.6;
+          item.changefreq = 'monthly';
+        }
+        // Other pages - lower priority
+        else {
+          item.priority = 0.5;
+          item.changefreq = 'monthly';
+        }
+
+        return item;
+      }
     }),
     searchIndexIntegration
   ],

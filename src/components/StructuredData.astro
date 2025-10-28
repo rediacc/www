@@ -2,7 +2,7 @@
 import { CONTACT_EMAIL } from '../config/constants';
 
 export interface Props {
-  type?: 'organization' | 'website' | 'service' | 'breadcrumb' | 'sitenavigation';
+  type?: 'organization' | 'website' | 'service' | 'breadcrumb' | 'sitenavigation' | 'blogposting';
   data?: any;
 }
 
@@ -112,6 +112,49 @@ const getStructuredData = (type: string, customData: any = {}) => {
             url: `${baseUrl}/contact`
           }
         ]
+      };
+
+    case 'blogposting':
+      return {
+        ...commonData,
+        '@type': 'BlogPosting',
+        headline: customData.title,
+        description: customData.description,
+        author: {
+          '@type': 'Person',
+          name: customData.author
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Rediacc',
+          url: baseUrl,
+          logo: {
+            '@type': 'ImageObject',
+            url: `${baseUrl}/favicon.svg`
+          }
+        },
+        datePublished: customData.publishedDate,
+        dateModified: customData.updatedDate || customData.publishedDate,
+        image: customData.image ? {
+          '@type': 'ImageObject',
+          url: customData.image,
+          width: 1200,
+          height: 630
+        } : {
+          '@type': 'ImageObject',
+          url: `${baseUrl}/favicon.svg`,
+          width: 512,
+          height: 512
+        },
+        url: customData.url || baseUrl,
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': customData.url || baseUrl
+        },
+        inLanguage: customData.language || 'en',
+        keywords: customData.tags ? customData.tags.join(', ') : '',
+        articleSection: customData.category,
+        ...customData.additionalData
       };
 
     default:

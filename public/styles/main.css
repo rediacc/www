@@ -496,12 +496,10 @@ body.sidebar-active {
     color: var(--color-text);
     min-height: 45px;
     line-height: 1.4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: block;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
 }
 
 .solution-description {

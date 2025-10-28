@@ -25,8 +25,8 @@ const { t } = createTranslator(lang);
   ogType="website"
   structuredDataType="organization"
 >
-  <Hero client:load lang={lang} />
-  <Solutions client:load lang={lang} />
+  <Hero client:idle lang={lang} />
+  <Solutions client:visible lang={lang} />
 
   <!-- Success/Error Messages -->
   <div class="message-overlay" id="message-overlay" role="dialog" aria-hidden="true">
