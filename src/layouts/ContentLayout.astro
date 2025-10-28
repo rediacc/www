@@ -1,8 +1,10 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import LanguageSwitcher from '../components/LanguageSwitcher';
+import Breadcrumb from '../components/Breadcrumb.astro';
 import type { CollectionEntry } from 'astro:content';
 import type { Language } from '../i18n/types';
+import { createTranslator } from '../i18n/utils';
 
 interface Props {
   frontmatter: {
@@ -22,6 +24,41 @@ interface Props {
 }
 
 const { frontmatter, url, currentLang, availableLanguages = [], showFallbackNotice = false, collection } = Astro.props;
+
+// Determine if this is a blog post or doc
+const isBlogPost = url.includes('/blog/');
+const isDoc = url.includes('/docs/');
+
+// Generate breadcrumbs
+const { t } = createTranslator(currentLang || 'en');
+const breadcrumbItems = [];
+
+if (currentLang) {
+  // Add Home
+  breadcrumbItems.push({
+    name: t('navigation.home'),
+    url: `/${currentLang}/`
+  });
+
+  // Add collection level (Blog or Docs)
+  if (isBlogPost) {
+    breadcrumbItems.push({
+      name: t('navigation.blog'),
+      url: `/${currentLang}/blog/`
+    });
+  } else if (isDoc) {
+    breadcrumbItems.push({
+      name: t('navigation.docs'),
+      url: `/${currentLang}/docs/`
+    });
+  }
+
+  // Add current page
+  breadcrumbItems.push({
+    name: frontmatter.title,
+    url: url
+  });
+}
 
 // Generate table of contents from headings
 function generateTOC(content: string) {
@@ -44,17 +81,24 @@ function generateTOC(content: string) {
 }
 
 const toc = frontmatter.toc !== false ? generateTOC(await Astro.slots.render('default')) : [];
-
-// Determine if this is a blog post or doc
-const isBlogPost = url.includes('/blog/');
 ---
 
-<BaseLayout>
+<BaseLayout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  lang={currentLang}
+>
+  <Fragment slot="head">
+    <slot name="head" />
+  </Fragment>
   <article class="content-article">
+    {breadcrumbItems.length > 0 && (
+      <Breadcrumb items={breadcrumbItems} />
+    )}
     <header class="article-header">
       {currentLang && availableLanguages.length > 0 && (
         <LanguageSwitcher
-          client:load
+          client:visible
           currentLang={currentLang}
           availableLanguages={availableLanguages}
           showFallbackNotice={showFallbackNotice}

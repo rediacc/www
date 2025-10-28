@@ -3,8 +3,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import StructuredData from '../components/StructuredData.astro';
 import { createTranslator } from '../i18n/utils';
-import { getLanguageFromPath, SUPPORTED_LANGUAGES } from '../i18n/language-utils';
+import { getLanguageFromPath, getPathWithoutLanguage, SUPPORTED_LANGUAGES } from '../i18n/language-utils';
 import type { Language } from '../i18n/types';
+import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
   title: string;
@@ -40,6 +41,19 @@ const {
 const currentLang = lang || getLanguageFromPath(Astro.url.pathname);
 const { t } = createTranslator(currentLang);
 
+// Locale mapping for Open Graph and hreflang
+const LOCALE_MAPPING: Record<Language, string> = {
+  en: 'en_US',
+  de: 'de_DE',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  ja: 'ja_JP',
+  ar: 'ar_SA',
+  ru: 'ru_RU',
+  tr: 'tr_TR',
+  zh: 'zh_CN'
+};
+
 // Set descriptions with fallback to defaults
 const finalDescription = description || t('layout.meta.defaultDescription');
 const finalKeywords = keywords || t('layout.meta.defaultKeywords');
@@ -47,6 +61,9 @@ const finalOgDescription = ogDescription || finalDescription;
 
 const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site);
 const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${currentLang}/`;
+
+// Get path without language prefix for generating alternate language links
+const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
 ---
 
 <!DOCTYPE html>
@@ -71,9 +88,11 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${curr
     <meta property="og:title" content={ogTitle}>
     <meta property="og:description" content={finalOgDescription}>
     <meta property="og:image" content={ogImage}>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content={canonicalURL}>
     <meta property="og:site_name" content={t('layout.meta.siteName')}>
-    <meta property="og:locale" content={currentLang === 'es' ? 'es_ES' : 'en_US'}>
+    <meta property="og:locale" content={LOCALE_MAPPING[currentLang]}>
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
@@ -86,20 +105,20 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${curr
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL}>
 
+    <!-- RSS Feed Autodiscovery -->
+    <link rel="alternate" type="application/rss+xml" title={`Rediacc Blog - ${currentLang.toUpperCase()}`} href={`/${currentLang}/rss.xml`} />
+
     <!-- Alternate Language Links (hreflang) -->
     {SUPPORTED_LANGUAGES.map((lang) => {
-      const langPath = lang === 'en' ? Astro.url.pathname : Astro.url.pathname.replace(/^\/[a-z]{2}/, `/${lang}`);
-      if (!langPath.startsWith('/')) {
-        return null;
-      }
+      // Generate proper language-specific URLs for all languages
+      const langPath = lang === 'en' ? pathWithoutLang : `/${lang}${pathWithoutLang}`;
+      const fullUrl = new URL(langPath, Astro.site).toString();
       return (
-        <link rel="alternate" hreflang={lang} href={new URL(langPath, Astro.site).toString()} />
+        <link rel="alternate" hreflang={lang} href={fullUrl} />
       );
     })}
-    <!-- Default language fallback to English -->
-    {Astro.url.pathname.match(/^\/es/) && (
-      <link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname.replace(/^\/es/, '/en'), Astro.site).toString()} />
-    )}
+    <!-- Default language fallback (always English) -->
+    <link rel="alternate" hreflang="x-default" href={new URL(pathWithoutLang, Astro.site).toString()} />
 
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -123,6 +142,9 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${curr
     {isHomePage && <StructuredData type="website" />}
     {isHomePage && <StructuredData type="service" />}
     {isHomePage && <StructuredData type="sitenavigation" />}
+
+    <!-- View Transitions for smooth navigation -->
+    <ViewTransitions />
 
     <!-- Custom head content from pages -->
     <slot name="head" />
@@ -282,11 +304,11 @@ const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${curr
       <a href="#footer" class="skip-nav-link">{t('common.skipNavigation.skipToFooter')}</a>
     </div>
 
-    <Navigation currentPath={Astro.url.pathname} client:load />
+    <Navigation currentPath={Astro.url.pathname} client:idle />
     <main id="main-content">
         <slot />
     </main>
-    <Footer client:load />
+    <Footer client:visible />
     <script src="/scripts/main.js" is:inline></script>
     <script src="/scripts/search-hotkey.js" is:inline></script>
 </body>
