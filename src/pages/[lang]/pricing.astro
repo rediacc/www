@@ -366,38 +366,19 @@ const serviceTypes = [
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="faq-section section-light">
-      <FAQSection faqs={[
-        {
-          question: 'Can I upgrade or downgrade my plan?',
-          answer: 'Yes, you can change your plan at any time. Upgrades take effect immediately, and downgrades will apply at the start of your next billing cycle.'
-        },
-        {
-          question: 'What payment methods do you accept?',
-          answer: 'We accept all major credit cards (Visa, MasterCard, American Express) and support invoice-based billing for annual Enterprise plans.'
-        },
-        {
-          question: 'Is there a free trial available?',
-          answer: 'Our Community plan is free forever. For business plans, contact our sales team to discuss trial options.'
-        },
-        {
-          question: "What's included in support?",
-          answer: 'Community plans include community support. Business plans include priority email support, and Premium/Elite plans include 24/7 phone support and dedicated account managers.'
-        }
-      ]} />
-    </section>
+    <FAQSection lang={lang} />
 
     <!-- CTA Section -->
     <section id="get-started" class="pricing-cta section-dark">
       <div class="container">
-        <h2>Ready to Get Started?</h2>
-        <p>Join teams protecting their infrastructure with Rediacc</p>
+        <h2>{t('pages.pricing.finalCta.heading')}</h2>
+        <p>{t('pages.pricing.finalCta.description')}</p>
         <div class="cta-actions">
           <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
-            Start Free
+            {t('pages.pricing.finalCta.buttons.startFree')}
           </a>
           <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">
-            Talk to Sales
+            {t('pages.pricing.finalCta.buttons.talkToSales')}
           </a>
         </div>
       </div>

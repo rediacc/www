@@ -343,6 +343,245 @@
       "hero": {
         "title": "Simple, Transparent Pricing",
         "subtitle": "Choose the right plan for your business. No hidden fees, no surprises."
+      },
+      "toggleButtons": {
+        "individuals": "For Individuals",
+        "businesses": "For Businesses"
+      },
+      "plans": {
+        "community": {
+          "name": "Community",
+          "description": "Perfect for personal projects and testing",
+          "features": [
+            "Unlimited Users & Teams",
+            "Unlimited Regions & Storage",
+            "Unlimited Bridges",
+            "2 Hour Job Timeout",
+            "2 Active Jobs",
+            "1 Reserved Job",
+            "5 Machines",
+            "10 Repositories",
+            "10 GB Max Repo Size",
+            "7 Day Audit Logs"
+          ]
+        },
+        "advanced": {
+          "name": "Advanced",
+          "description": "For growing teams and production workloads",
+          "features": [
+            "24 Hour Job Timeout",
+            "5 Active Jobs",
+            "2 Reserved Jobs",
+            "20 Machines",
+            "50 Repositories",
+            "50 GB Max Repo Size",
+            "14 Day Audit Logs",
+            "Priority Support"
+          ]
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "For established teams with critical infrastructure",
+          "features": [
+            "72 Hour Job Timeout",
+            "7 Active Jobs",
+            "3 Reserved Jobs",
+            "100 Machines",
+            "250 Repositories",
+            "250 GB Max Repo Size",
+            "30 Day Audit Logs",
+            "24/7 Support"
+          ]
+        },
+        "elite": {
+          "name": "Elite",
+          "description": "For enterprises with custom requirements",
+          "priceNote": "*Starting at",
+          "features": [
+            "96+ Hour Job Timeout",
+            "10+ Active Jobs",
+            "5+ Reserved Jobs",
+            "400+ Machines",
+            "1000+ Repositories",
+            "1TB+ Max Repo Size",
+            "90+ Day Audit Logs",
+            "Dedicated Account Manager"
+          ]
+        }
+      },
+      "enterpriseCta": {
+        "heading": "Need a Custom Enterprise Solution?",
+        "description": "Get tailored infrastructure protection for your organization",
+        "button": "Contact Sales"
+      },
+      "professionalServices": {
+        "header": {
+          "title": "Professional Service Packages",
+          "subtitle": "Get expert help when you need it most",
+          "badge": "Fast-track your success with professional assistance",
+          "eligibility": "Eligibility: Professional services are available for Advanced, Premium, and Elite plan customers only."
+        },
+        "packages": {
+          "standard": {
+            "name": "Standard",
+            "turnaround": "3-5 Business Days",
+            "description": "Standard turnaround time for planned projects",
+            "benefits": [
+              "Standard turnaround time",
+              "Business hours support",
+              "Best value for planned projects"
+            ]
+          },
+          "priority": {
+            "name": "Priority",
+            "turnaround": "24-48 Hours",
+            "description": "Fast-track your project with priority execution",
+            "benefits": [
+              "Fast-track execution",
+              "Extended hours support",
+              "Ideal for urgent needs"
+            ]
+          },
+          "emergency": {
+            "name": "Emergency",
+            "turnaround": "Same Day",
+            "description": "Immediate response for critical situations",
+            "benefits": [
+              "Immediate response",
+              "24/7 dedicated team",
+              "Critical situations only"
+            ]
+          }
+        },
+        "pricingFactors": {
+          "heading": "Understanding Professional Service Pricing",
+          "intro": "Final project costs are determined by:",
+          "factors": [
+            {
+              "title": "Scope Complexity",
+              "description": "Number of systems, integrations, and dependencies involved"
+            },
+            {
+              "title": "Customization Level",
+              "description": "Off-the-shelf solutions vs. custom development requirements"
+            },
+            {
+              "title": "Team Size",
+              "description": "Single expert vs. full dedicated team of specialists"
+            }
+          ],
+          "note": "Example: A standard infrastructure scaling across 3 systems with moderate customization typically ranges from $9,999-$15,999"
+        },
+        "serviceTypes": {
+          "heading": "Available Services",
+          "intro": "Click any service to see turnaround times for each package tier",
+          "badgeLabels": {
+            "standard": "Standard",
+            "priority": "Priority",
+            "emergency": "Emergency"
+          },
+          "services": [
+            {
+              "name": "Data Migration",
+              "standard": "Complete end-to-end migration with full validation",
+              "priority": "Rapid migration pipeline setup + core data transferred within 48h",
+              "emergency": "Immediate assessment + critical systems online same-day + full migration begins"
+            },
+            {
+              "name": "Ransomware Recovery",
+              "standard": "Complete recovery with forensics and hardening",
+              "priority": "Rapid threat assessment + core operations restored within 48h",
+              "emergency": "Immediate containment + critical systems restored same-day + full recovery begins"
+            },
+            {
+              "name": "Security Assessment",
+              "standard": "Full security audit with implementation roadmap",
+              "priority": "Comprehensive vulnerability assessment + remediation plan within 48h",
+              "emergency": "Critical vulnerability scan + high-risk patches deployed same-day + full audit begins"
+            },
+            {
+              "name": "Infrastructure Scaling",
+              "standard": "Complete infrastructure redesign with optimization",
+              "priority": "Rapid capacity increase + monitoring setup within 48h",
+              "emergency": "Critical resources provisioned same-day + auto-scaling configured + full plan begins"
+            },
+            {
+              "name": "Team Training",
+              "standard": "Comprehensive multi-day training program",
+              "priority": "Intensive hands-on workshop + key workflows covered within 2 days",
+              "emergency": "Critical procedures briefing same-day + incident response prep + full program begins"
+            },
+            {
+              "name": "Performance Optimization",
+              "standard": "Deep analysis with comprehensive performance tuning",
+              "priority": "Quick profiling + high-impact optimizations deployed within 48h",
+              "emergency": "Critical bottleneck identified + immediate hotfix deployed same-day + full optimization begins"
+            },
+            {
+              "name": "Custom Integration",
+              "standard": "Complete integration with testing and documentation",
+              "priority": "Core integration functional + essential features live within 48h",
+              "emergency": "Critical connection established same-day + basic data flow working + full dev begins"
+            }
+          ]
+        },
+        "benefits": {
+          "heading": "Why Professional Services?",
+          "statistics": [
+            "The average cost of a ransomware attack is $4.62 million (IBM Security, 2023)",
+            "The average downtime cost is $5,600 per minute for enterprises"
+          ],
+          "description": "Our professional services ensure you're never alone when facing critical infrastructure challenges.",
+          "items": [
+            "Dedicated team of experts assigned to your project",
+            "Guaranteed response times with SLA",
+            "Switch between service tiers as needed",
+            "24/7 emergency hotline for Emergency tier"
+          ]
+        },
+        "cta": {
+          "heading": "Need Professional Assistance?",
+          "description": "Our experts are ready to help you succeed",
+          "button": "Schedule Consultation"
+        }
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "Can I upgrade or downgrade my plan?",
+            "answer": "Yes, you can change your plan at any time. Upgrades take effect immediately, and downgrades will apply at the start of your next billing cycle."
+          },
+          {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept all major credit cards (Visa, MasterCard, American Express) and support invoice-based billing for annual Enterprise plans."
+          },
+          {
+            "question": "Is there a free trial available?",
+            "answer": "Our Community plan is free forever. For business plans, contact our sales team to discuss trial options."
+          },
+          {
+            "question": "What's included in support?",
+            "answer": "Community plans include community support. Business plans include priority email support, and Premium/Elite plans include 24/7 phone support and dedicated account managers."
+          }
+        ]
+      },
+      "finalCta": {
+        "heading": "Ready to Get Started?",
+        "description": "Join teams protecting their infrastructure with Rediacc",
+        "buttons": {
+          "startFree": "Start Free",
+          "talkToSales": "Talk to Sales"
+        }
+      },
+      "ui": {
+        "popular": "Most popular",
+        "whatsIncluded": "What's included:",
+        "getStarted": "Get Started",
+        "learnMore": "Learn More",
+        "contactSales": "Contact Sales",
+        "startingAt": "*Starting at",
+        "keyBenefits": "Key Benefits"
       }
     },
     "blog": {

@@ -79,7 +79,7 @@
             "disasterRecovery": "Felaket Kurtarma",
             "multiple": "Çoklu",
             "other": "Diğer",
-            "placeholder": "Birini seçin"
+            "placeholder": "Birini seç"
           }
         }
       },
@@ -209,7 +209,7 @@
               "general": "Genel",
               "other": "Diğer",
               "partnership": "ortaklık",
-              "placeholder": "Birini seç",
+              "placeholder": "Birini seçin",
               "technical": "Teknik Soru"
             }
           }
@@ -319,6 +319,40 @@
       "title": "Sayfa Bulunamadı"
     },
     "pricing": {
+      "enterpriseCta": {
+        "button": "Satış Ekibiyle İletişime Geçin",
+        "description": "Kuruluşunuza özel altyapı koruması elde edin",
+        "heading": "Özel Bir Kurumsal Çözüme mi ihtiyacınız var?"
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          {
+            "answer": "Evet, planınızı istediğiniz zaman değiştirebilirsiniz. Yükseltmeler hemen geçerli olur ve düşürmeler bir sonraki faturalandırma döngünüzün başlangıcında geçerli olur.",
+            "question": "Planımı yükseltebilir veya düşürebilir miyim?"
+          },
+          {
+            "answer": "Tüm önemli kredi kartlarını (Visa, MasterCard, American Express) kabul ediyoruz ve yıllık Kurumsal planlar için faturaya dayalı faturalandırmayı destekliyoruz.",
+            "question": "Hangi ödeme yöntemlerini kabul ediyorsunuz?"
+          },
+          {
+            "answer": "Topluluk planımız sonsuza kadar ücretsizdir. İş planları için deneme seçeneklerini görüşmek üzere satış ekibimizle iletişime geçin.",
+            "question": "Ücretsiz deneme mevcut mu?"
+          },
+          {
+            "answer": "Topluluk planları topluluk desteğini içerir. İş planları öncelikli e-posta desteğini içerir ve Premium/Elit planlar 7/24 telefon desteğini ve özel hesap yöneticilerini içerir.",
+            "question": "Desteğe neler dahildir?"
+          }
+        ]
+      },
+      "finalCta": {
+        "buttons": {
+          "startFree": "Ücretsiz Başla",
+          "talkToSales": "Satışla Konuşun"
+        },
+        "description": "Rediacc ile altyapılarını koruyan ekiplere katılın",
+        "heading": "Başlamaya Hazır mısınız?"
+      },
       "hero": {
         "subtitle": "İşletmeniz için doğru planı seçin. Gizli ücret yok, sürpriz yok.",
         "title": "Basit, Şeffaf Fiyatlandırma"
@@ -327,6 +361,211 @@
         "description": "İşletmeniz için doğru planı seçin. Ücretsiz topluluk erişiminden kurumsal düzeyde korumaya kadar. Gizli ücret yok.",
         "keywords": "fiyatlandırma, altyapı otomasyonu, felaket kurtarma fiyatlandırması, yedekleme fiyatlandırması, iş sürekliliği planları",
         "title": "Fiyatlandırma | Basit, Şeffaf Altyapı Koruması"
+      },
+      "plans": {
+        "advanced": {
+          "description": "Büyüyen ekipler ve üretim iş yükleri için",
+          "features": [
+            "24 Saatlik İş Zaman Aşımı",
+            "5 Aktif İş",
+            "2 Rezerve İş İlanı",
+            "20 Makine",
+            "50 Depo",
+            "50 GB Maksimum Repo Boyutu",
+            "14 Günlük Denetim Günlükleri",
+            "Öncelikli Destek"
+          ],
+          "name": "Gelişmiş"
+        },
+        "community": {
+          "description": "Kişisel projeler ve testler için mükemmel",
+          "features": [
+            "Sınırsız Kullanıcı ve Ekip",
+            "Sınırsız Bölge ve Depolama",
+            "Sınırsız Köprü",
+            "2 Saatlik İş Zaman Aşımı",
+            "2 Aktif İş",
+            "1 Rezerve İş",
+            "5 Makine",
+            "10 Depo",
+            "10 GB Maksimum Repo Boyutu",
+            "7 Günlük Denetim Günlükleri"
+          ],
+          "name": "Toplum"
+        },
+        "elite": {
+          "description": "Özel gereksinimleri olan işletmeler için",
+          "features": [
+            "96+ Saat İş Zaman Aşımı",
+            "10+ Aktif İş",
+            "5+ Rezerve İş",
+            "400+ Makine",
+            "1000+ Depo",
+            "1TB+ Maksimum Repo Boyutu",
+            "90+ Günlük Denetim Günlükleri",
+            "Özel Hesap Yöneticisi"
+          ],
+          "name": "Elit",
+          "priceNote": "*Başlangıç ​​tarihi:"
+        },
+        "premium": {
+          "description": "Kritik altyapıya sahip yerleşik ekipler için",
+          "features": [
+            "72 Saatlik İş Zaman Aşımı",
+            "7 Aktif İş",
+            "3 Rezerve İş",
+            "100 Makine",
+            "250 Depo",
+            "250 GB Maksimum Repo Boyutu",
+            "30 Günlük Denetim Günlükleri",
+            "7/24 Destek"
+          ],
+          "name": "prim"
+        }
+      },
+      "professionalServices": {
+        "benefits": {
+          "description": "Profesyonel hizmetlerimiz, kritik altyapı sorunlarıyla karşılaştığınızda asla yalnız kalmamanızı sağlar.",
+          "heading": "Neden Profesyonel Hizmetler?",
+          "items": [
+            "Projenize atanan uzmanlardan oluşan özel ekip",
+            "SLA ile garantili yanıt süreleri",
+            "Gerektiğinde hizmet katmanları arasında geçiş yapın",
+            "Acil durum kademesi için 7/24 acil yardım hattı"
+          ],
+          "statistics": [
+            "Bir fidye yazılımı saldırısının ortalama maliyeti 4,62 milyon ABD dolarıdır (IBM Security, 2023)",
+            "İşletmeler için ortalama kesinti maliyeti dakika başına 5.600 ABD dolarıdır"
+          ]
+        },
+        "cta": {
+          "button": "Planlama Danışmanlığı",
+          "description": "Uzmanlarımız başarılı olmanıza yardımcı olmaya hazır",
+          "heading": "Profesyonel Yardıma mı ihtiyacınız var?"
+        },
+        "header": {
+          "badge": "Başarınızı profesyonel yardımla hızlandırın",
+          "eligibility": "Uygunluk: Profesyonel hizmetler yalnızca Gelişmiş, Premium ve Elit plan müşterileri için mevcuttur.",
+          "subtitle": "En çok ihtiyaç duyduğunuz anda uzman yardımı alın",
+          "title": "Profesyonel Hizmet Paketleri"
+        },
+        "packages": {
+          "emergency": {
+            "benefits": [
+              "Anında yanıt",
+              "7/24 özel ekip",
+              "Yalnızca kritik durumlar"
+            ],
+            "description": "Kritik durumlara anında müdahale",
+            "name": "Acil durum",
+            "turnaround": "Aynı Gün"
+          },
+          "priority": {
+            "benefits": [
+              "Hızlı yürütme",
+              "Uzatılmış çalışma saatleri desteği",
+              "Acil ihtiyaçlar için ideal"
+            ],
+            "description": "Öncelikli yürütmeyle projenizi hızlandırın",
+            "name": "Öncelik",
+            "turnaround": "24-48 Saat"
+          },
+          "standard": {
+            "benefits": [
+              "Standart geri dönüş süresi",
+              "Çalışma saatleri desteği",
+              "Planlanan projeler için en iyi değer"
+            ],
+            "description": "Planlanan projeler için standart geri dönüş süresi",
+            "name": "Standart",
+            "turnaround": "3-5 İş Günü"
+          }
+        },
+        "pricingFactors": {
+          "factors": [
+            {
+              "description": "İlgili sistem, entegrasyon ve bağımlılıkların sayısı",
+              "title": "Kapsam Karmaşıklığı"
+            },
+            {
+              "description": "Kullanıma hazır çözümler ve özel geliştirme gereksinimleri",
+              "title": "Özelleştirme Düzeyi"
+            },
+            {
+              "description": "Tek uzman ve tam adanmış uzman ekibi",
+              "title": "Takım Boyutu"
+            }
+          ],
+          "heading": "Profesyonel Hizmet Fiyatlandırmasını Anlamak",
+          "intro": "Nihai proje maliyetleri şu şekilde belirlenir:",
+          "note": "Örnek: Orta düzeyde özelleştirme ile 3 sistem genelinde standart bir altyapı ölçeklendirmesi genellikle 9.999 ABD Doları ile 15.999 ABD Doları arasında değişir"
+        },
+        "serviceTypes": {
+          "badgeLabels": {
+            "emergency": "Acil durum",
+            "priority": "Öncelik",
+            "standard": "Standart"
+          },
+          "heading": "Mevcut Hizmetler",
+          "intro": "Her paket katmanına ilişkin geri dönüş sürelerini görmek için herhangi bir hizmeti tıklayın",
+          "services": [
+            {
+              "emergency": "Anında değerlendirme + kritik sistemler aynı gün çevrimiçi + tam geçiş başlıyor",
+              "name": "Veri Taşıma",
+              "priority": "Hızlı geçiş hattı kurulumu + 48 saat içinde aktarılan temel veriler",
+              "standard": "Tam doğrulamayla uçtan uca geçişi tamamlayın"
+            },
+            {
+              "emergency": "Derhal kontrol altına alma + kritik sistemler aynı gün içinde onarılır + tam kurtarma başlar",
+              "name": "Fidye Yazılımı Kurtarma",
+              "priority": "Hızlı tehdit değerlendirmesi + temel operasyonlar 48 saat içinde geri yüklendi",
+              "standard": "Adli tıp ve sertleştirmeyle tam iyileşme"
+            },
+            {
+              "emergency": "Kritik güvenlik açığı taraması + yüksek riskli yamalar aynı gün dağıtılır + tam denetim başlar",
+              "name": "Güvenlik Değerlendirmesi",
+              "priority": "Kapsamlı güvenlik açığı değerlendirmesi + 48 saat içinde iyileştirme planı",
+              "standard": "Uygulama yol haritasıyla birlikte tam güvenlik denetimi"
+            },
+            {
+              "emergency": "Kritik kaynaklar aynı gün sağlandı + otomatik ölçeklendirme yapılandırıldı + tam plan başlıyor",
+              "name": "Altyapı Ölçeklendirmesi",
+              "priority": "Hızlı kapasite artışı + 48 saat içinde izleme kurulumu",
+              "standard": "Optimizasyonla komple altyapı yeniden tasarımı"
+            },
+            {
+              "emergency": "Aynı gün içinde kritik prosedürler brifingi + olay müdahale hazırlığı + tam program başlıyor",
+              "name": "Takım Eğitimi",
+              "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde tamamlanan önemli iş akışları",
+              "standard": "Kapsamlı, çok günlük eğitim programı"
+            },
+            {
+              "emergency": "Kritik darboğaz belirlendi + aynı gün anında düzeltme uygulandı + tam optimizasyon başlıyor",
+              "name": "Performans Optimizasyonu",
+              "priority": "Hızlı profil oluşturma + 48 saat içinde devreye alınan yüksek etkili optimizasyonlar",
+              "standard": "Kapsamlı performans ayarıyla derin analiz"
+            },
+            {
+              "emergency": "Kritik bağlantı aynı gün kuruldu + temel veri akışı çalışıyor + tam geliştirme başlıyor",
+              "name": "Özel Entegrasyon",
+              "priority": "Temel entegrasyon fonksiyonel + temel özellikler 48 saat içinde yayınlanır",
+              "standard": "Test ve dokümantasyonla tam entegrasyon"
+            }
+          ]
+        }
+      },
+      "toggleButtons": {
+        "businesses": "İşletmeler için",
+        "individuals": "Bireyler için"
+      },
+      "ui": {
+        "contactSales": "Satış Ekibiyle İletişime Geçin",
+        "getStarted": "Başlayın",
+        "keyBenefits": "Temel Faydalar",
+        "learnMore": "Daha fazla bilgi edin",
+        "popular": "En popüler",
+        "startingAt": "*Başlangıç ​​tarihi:",
+        "whatsIncluded": "Neler dahil:"
       }
     },
     "solutions": {
@@ -757,7 +996,7 @@
         },
         "title": "Hikayemiz",
         "turningPoint": {
-          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolaylıkla yedekleyebileceğim ve nereye taşırsam taşıyım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
+          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolayca yedekleyebileceğim ve nereye taşırsam taşıayım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
           "paragraph2": "2021 yılında Docker'ı NetworkChuck'ın videosu aracılığıyla keşfettim. Neyin mümkün olduğu karşısında şok oldum. Keşke bu teknolojiyi daha önce bilseydim; her şeyi değiştirebilirdi.",
           "paragraph3": "Ancak Docker tek başına tüm sorunlarımı çözmedi. Konteyner dosyalarını sistemler arasında taşımak zordu. Dosya sahipliği uyumluluk sorunlarıyla karşılaştım ve veri boyutu büyüdükçe aktarımlar daha uzun sürdü. En önemlisi, geçiş bitene kadar hizmetleri çevrimdışı tutmak zorunda kaldım ve Docker minimum güvenlik özellikleri sundu.",
           "title": "Dönüm Noktası"
