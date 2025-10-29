@@ -72,10 +72,12 @@
     },
     "productLinks": {
       "solutions": "Solutions",
-      "overview": "Overview"
+      "overview": "Overview",
+      "pricing": "Pricing"
     },
     "companyLinks": {
       "aboutUs": "About Us",
+      "team": "Team",
       "contact": "Contact"
     },
     "supportLinks": {
@@ -92,8 +94,12 @@
     "titleHighlight": " Survives. Every Time.",
     "subtitle": "Survive cloud outages. Deploy anywhere. Fail over fast.",
     "cta": {
-      "contactUs": "Get a Demo",
-      "learnMore": "Learn More"
+      "contactUs": "Start Free",
+      "learnMore": "Learn More",
+      "bookDemo": "Book Demo",
+      "freeBadge": "FREE FOREVER • No credit card",
+      "benefits": "5 machines • Unlimited teams • $0",
+      "seeDetails": "See full details"
     }
   },
   "problem": {
@@ -135,7 +141,7 @@
         "description": "Verified recovery guaranteed. Tested backups. Complete history.",
         "benefits": [
           "Automatic verification",
-          "30-90 day retention",
+          "Extended retention",
           "Recover in minutes"
         ]
       },
@@ -277,6 +283,68 @@
         "submit": "Get Started"
       }
     },
+    "team": {
+      "meta": {
+        "title": "Our Team | Rediacc - Building Infrastructure That Survives",
+        "description": "Meet the team building disaster-proof infrastructure. Engineers dedicated to ensuring your systems survive every challenge.",
+        "keywords": "Rediacc team, infrastructure engineering, disaster recovery experts, system reliability, DevOps team"
+      },
+      "hero": {
+        "title": "The Team Building Infrastructure That Survives",
+        "subtitle": "Engineers dedicated to making disasters impossible for your business."
+      },
+      "team": {
+        "title": "Meet Our Team"
+      },
+      "mission": {
+        "title": "Our Mission: Make Disasters Impossible",
+        "description": "Every 47 days, AI deletes a production database. Every year, 1.71% of drives fail. 75% of ransomware targets backups. We make all these disasters recoverable in 60 seconds.",
+        "belief": "We believe that every company, regardless of size or budget, deserves access to the same powerful infrastructure tools that Fortune 500 companies use. That's why we built Rediacc—to level the playing field and empower businesses to focus on what they do best, while we handle the infrastructure complexity."
+      },
+      "values": {
+        "title": "Our Values"
+      },
+      "story": {
+        "title": "Our Story",
+        "beginning": {
+          "title": "The Beginning",
+          "paragraph1": "In 2018, I left my position as a software engineer to pursue building my own vision. The excitement kept me working 18-hour days, sleeping only 4-5 hours. I poured everything into the project for 5-6 months.",
+          "paragraph2": "Then I unexpectedly lost access to all my development infrastructure. Everything I'd built was suddenly inaccessible. I had no backups, and even if I had, I couldn't afford to replace the on-premises hardware I'd been using.",
+          "paragraph3": "To pay off debts and support my family, I had to return to a salaried job. It took 20 months to regain access to my work. During that time, I drifted far from my dreams, living with uncertainty and mounting financial pressure."
+        },
+        "turningPoint": {
+          "title": "The Turning Point",
+          "paragraph1": "Years later, I kept thinking about what I could do to prevent such a problem from happening again. I needed a tool that would allow me to move my systems to another environment whenever I wanted, activate them whenever needed, back them up easily, and store them securely no matter where I moved them.",
+          "paragraph2": "In 2021, I discovered Docker through NetworkChuck's video. I was shocked by what was possible. I wished I had known about this technology earlier—it could have changed everything.",
+          "paragraph3": "But Docker alone didn't solve all my problems. Moving container files between systems was difficult. I faced file ownership compatibility issues, and as data size grew, transfers took longer. Most critically, I had to keep services offline until migration finished, and Docker offered minimal security features."
+        },
+        "birth": {
+          "title": "Birth of Rediacc",
+          "paragraph1": "It all started with developing a portable filesystem logic. From there, I integrated a backup module. Then came one of the most critical challenges: enabling live system transfers with minimal downtime, regardless of data size. I added unique features based on real needs.",
+          "paragraph2": "This is how Rediacc was born—a product forged through the toughest challenges. Now, it's available to everyone. Use it and don't let anything hold your business back—be ready to survive and accelerate.",
+          "quote": "When I lost access to my infrastructure, I knew what I had to build: a system that makes disasters impossible."
+        }
+      },
+      "cta": {
+        "title": "Join Us on Our Mission",
+        "subtitle": "Whether as a customer, partner, or team member, be part of the infrastructure revolution.",
+        "buttons": {
+          "contact": "Get in Touch",
+          "learnMore": "Learn More"
+        }
+      }
+    },
+    "pricing": {
+      "meta": {
+        "title": "Pricing | Simple, Transparent Infrastructure Protection",
+        "description": "Choose the right plan for your business. From free community access to enterprise-grade protection. No hidden fees.",
+        "keywords": "pricing, infrastructure automation, disaster recovery pricing, backup pricing, business continuity plans"
+      },
+      "hero": {
+        "title": "Simple, Transparent Pricing",
+        "subtitle": "Choose the right plan for your business. No hidden fees, no surprises."
+      }
+    },
     "blog": {
       "meta": {
         "title": "Blog | Rediacc - Infrastructure Automation Insights",
@@ -400,10 +468,10 @@
             "subtitle": "The early bird catches the worm <small class='subtitle-attribution'>— William Camden (1636)</small>",
             "problem": {
               "description": "Short retention periods save storage space but create vulnerability. When you need data from before the infection—it's already been overwritten. Traditional systems can't afford long retention due to massive storage costs.",
-              "story": "Ransomware dwell time dropped to less than one day. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Attackers deliberately wait for infected backups to overwrite clean ones. Organizations with 7-14 day retention discover all backups contain malware. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",
+              "story": "Ransomware dwell time dropped to less than one day. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Attackers deliberately wait for infected backups to overwrite clean ones. Organizations with short retention periods discover all backups contain malware. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>",
               "additionalPoints": [
                 "Attackers deliberately wait for clean backups to expire",
-                "Traditional seven to fourteen day retention leaves vulnerabilities",
+                "Traditional short retention periods leave vulnerabilities",
                 "Each full backup consumes massive storage limiting retention",
                 "Compliance requirements often demand months of history",
                 "Storage costs force choice between history and budget"
@@ -411,7 +479,7 @@
             },
             "solution": {
               "title": "Extended History Retention",
-              "description": "Rediacc's incremental deduplication lets you keep 30, 60, 90+ days of backup history without storage explosion. Only changes are stored—not duplicate data.",
+              "description": "Rediacc's incremental deduplication lets you keep extended backup history without storage explosion. Only changes are stored—not duplicate data.",
               "benefits": [
                 "Store months of backup history efficiently with deduplication",
                 "Access clean backups from before any infection",

@@ -125,8 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Aplicar",
-      "learnMore": "Más información"
+      "contactUs": "Comenzar gratis",
+      "learnMore": "Más información",
+      "bookDemo": "Reservar demostración",
+      "freeBadge": "GRATIS PARA SIEMPRE • Sin tarjeta de crédito",
+      "benefits": "5 máquinas • Equipos ilimitados • $0",
+      "seeDetails": "Ver detalles completos"
     },
     "subtitle": "20 de octubre de 2025: AWS dejó de funcionar. Coinbase, Fortnite, Signal, Zoom: todos sin conexión durante 15 horas. Las organizaciones con infraestructura multinube permanecieron en línea. ¿Estás listo?",
     "title": "Infraestructura que",
@@ -429,13 +433,13 @@
             "problem": {
               "additionalPoints": [
                 "Los atacantes esperan deliberadamente a que caduquen las copias de seguridad limpias",
-                "La retención tradicional de siete a catorce días deja vulnerabilidades",
+                "Los períodos de retención cortos tradicionales dejan vulnerabilidades",
                 "Cada copia de seguridad completa consume almacenamiento masivo, lo que limita la retención.",
                 "Los requisitos de cumplimiento a menudo exigen meses de historia",
                 "Los costos de almacenamiento obligan a elegir entre historial y presupuesto"
               ],
               "description": "Los períodos de retención cortos ahorran espacio de almacenamiento pero crean vulnerabilidad. Cuando necesita datos anteriores a la infección, ya se han sobrescrito. Los sistemas tradicionales no pueden permitirse una retención prolongada debido a los enormes costos de almacenamiento.",
-              "story": "El tiempo de permanencia del ransomware se redujo a menos de un día. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Los atacantes esperan deliberadamente a que las copias de seguridad infectadas sobrescriban las limpias. Las organizaciones con una retención de entre 7 y 14 días descubren que todas las copias de seguridad contienen malware. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "El tiempo de permanencia del ransomware se redujo a menos de un día. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Los atacantes esperan deliberadamente a que las copias de seguridad infectadas sobrescriban las limpias. Las organizaciones con períodos de retención cortos descubren que todas las copias de seguridad contienen malware. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -445,7 +449,7 @@
                 "Cumpla con los requisitos de cumplimiento de manera rentable con una retención prolongada",
                 "Los atacantes no pueden esperar a que pase el período de retención"
               ],
-              "description": "La deduplicación incremental de Rediacc le permite conservar 30, 60 o más de 90 días de historial de respaldo sin una explosión de almacenamiento. Sólo se almacenan los cambios, no los datos duplicados.",
+              "description": "La deduplicación incremental de Rediacc le permite conservar historial de respaldo extendido sin una explosión de almacenamiento. Sólo se almacenan los cambios, no los datos duplicados.",
               "title": "Retención extendida del historial"
             },
             "subtitle": "Al que madruga Dios le ayuda <small class='subtitle-attribution'>—William Camden (1636)</small>",
@@ -738,7 +742,7 @@
       {
         "benefits": [
           "Verificación automática",
-          "Retención de 30 a 90 días",
+          "Retención extendida",
           "Recuperarse en minutos"
         ],
         "description": "Recuperación verificada. No sólo reclamaciones. Historia completa.",

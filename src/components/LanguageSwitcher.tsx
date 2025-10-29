@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { SUPPORTED_LANGUAGES, getLanguageName, getLanguageFlag } from '../i18n/language-utils';
+import { getLanguageName, getLanguageFlag } from '../i18n/language-utils';
 import type { Language } from '../i18n/types';
+import { setLanguageCookie } from '../utils/language-cookie';
 import '../styles/language-switcher.css';
 
 interface LanguageSwitcherProps {
@@ -15,6 +16,11 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
   showFallbackNotice = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Handler to set language cookie when switching languages
+  const handleLanguageSelect = (lang: Language) => {
+    setLanguageCookie(lang);
+  };
 
   // If only one language available, don't show switcher
   if (availableLanguages.length <= 1 && !showFallbackNotice) {
@@ -63,6 +69,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
                 key={lang}
                 href={url}
                 className={`language-option ${lang === currentLang ? 'active' : ''}`}
+                onClick={() => handleLanguageSelect(lang)}
               >
                 <span className="flag">{getLanguageFlag(lang)}</span>
                 <span className="name">{getLanguageName(lang)}</span>

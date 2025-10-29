@@ -151,6 +151,8 @@ const ProblemSolutionSection: React.FC<ProblemSolutionSectionProps> = ({
             <div className="section-cta">
               <a
                 href={cta.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-primary btn-large"
               >
                 {cta.text}

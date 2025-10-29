@@ -125,8 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "適用する",
-      "learnMore": "もっと詳しく知る"
+      "contactUs": "無料で始める",
+      "learnMore": "もっと詳しく知る",
+      "bookDemo": "デモを予約",
+      "freeBadge": "永久無料 • クレジットカード不要",
+      "benefits": "5 台のマシン • 無制限のチーム • $0",
+      "seeDetails": "すべての詳細を表示"
     },
     "subtitle": "2025 年 10 月 20 日: AWS がダウンしました。 Coinbase、Fortnite、Signal、Zoom - すべて 15 時間のオフライン。 マルチクラウド インフラストラクチャを備えた組織はオンラインのままでした。 準備はできたか？",
     "title": "インフラストラクチャ",
@@ -429,13 +433,13 @@
             "problem": {
               "additionalPoints": [
                 "攻撃者はクリーンなバックアップの有効期限が切れるのを意図的に待ちます。",
-                "従来の 7 ～ 14 日間の保存では脆弱性が残ります",
+                "従来の短期保存では脆弱性が残ります",
                 "完全バックアップごとに大量のストレージが消費されるため、保存期間が制限されます",
                 "コンプライアンス要件には、多くの場合、数か月にわたる履歴が必要です",
                 "ストレージコストは歴史と予算の間で選択を迫られます"
               ],
               "description": "保存期間が短いとストレージ容量は節約されますが、脆弱性が生じます。 感染前のデータが必要な場合、そのデータはすでに上書きされています。 従来のシステムでは、膨大なストレージコストが発生するため、長期保存する余裕がありません。",
-              "story": "ランサムウェアの滞留時間は 1 日未満に短縮されました。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 攻撃者は、感染したバックアップがクリーンなバックアップを上書きするのを意図的に待ちます。 7 ～ 14 日間の保存期間を持つ組織は、すべてのバックアップにマルウェアが含まれていることを発見します。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start- Attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "ランサムウェアの滞留時間は 1 日未満に短縮されました。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 攻撃者は、感染したバックアップがクリーンなバックアップを上書きするのを意図的に待ちます。 短期保存期間を持つ組織は、すべてのバックアップにマルウェアが含まれていることを発見します。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start- Attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -445,7 +449,7 @@
                 "長期保存によりコスト効率よくコンプライアンス要件を満たします",
                 "攻撃者は保存期間が過ぎるのを待つことはできません"
               ],
-              "description": "Rediacc の増分重複排除により、ストレージを爆発的に増やすことなく、30、60、90 日以上のバックアップ履歴を保持できます。 変更のみが保存され、重複データは保存されません。",
+              "description": "Rediacc の増分重複排除により、ストレージを爆発的に増やすことなく、拡張されたバックアップ履歴を保持できます。 変更のみが保存され、重複データは保存されません。",
               "title": "拡張された履歴保持"
             },
             "subtitle": "早起きは虫を捕まえる <small class='subtitle-attribution'>— ウィリアム カムデン (1636)</small>",
@@ -738,7 +742,7 @@
       {
         "benefits": [
           "自動検証",
-          "30 ～ 90 日間の保存",
+          "拡張された保存",
           "数分で回復します"
         ],
         "description": "回復を確認しました。 主張だけではありません。 完全な履歴。",

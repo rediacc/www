@@ -7,6 +7,7 @@ import SolutionCTA from '../../../components/SolutionCTA.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
+import { EXTERNAL_LINKS } from '../../../config/constants';
 import ctaImage from '../../../assets/images/rediacc_resources_repos.png';
 import '../../../styles/solution-page.css';
 
@@ -57,7 +58,7 @@ const drContent = to('pages.solutions.disasterRecovery');
     variant="light"
     cta={{
       text: drContent.cta.button,
-      href: `/${lang}/contact?interest=disaster-recovery`
+      href: EXTERNAL_LINKS.SCHEDULE_CONSULTATION
     }}
     pageSlug="disaster-recovery"
   />
@@ -81,7 +82,7 @@ const drContent = to('pages.solutions.disasterRecovery');
     variant="dark"
     cta={{
       text: drContent.cta.button,
-      href: `/${lang}/contact?interest=disaster-recovery`
+      href: EXTERNAL_LINKS.SCHEDULE_CONSULTATION
     }}
     pageSlug="disaster-recovery"
   />
@@ -105,7 +106,7 @@ const drContent = to('pages.solutions.disasterRecovery');
     variant="light"
     cta={{
       text: drContent.cta.button,
-      href: `/${lang}/contact?interest=disaster-recovery`
+      href: EXTERNAL_LINKS.SCHEDULE_CONSULTATION
     }}
     pageSlug="disaster-recovery"
   />
@@ -113,7 +114,7 @@ const drContent = to('pages.solutions.disasterRecovery');
   <!-- Bottom Image Section -->
   <SolutionImage
     imageSrc="/assets/images/disaster-recovery-bottom.png"
-    imageAlt="Backup monitoring dashboard with 30, 60, 90 day retention timelines showing 100% verification"
+    imageAlt="Backup monitoring dashboard with extended retention timelines showing 100% verification"
     variant="dark"
   />
 

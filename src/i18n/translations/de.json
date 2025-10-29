@@ -125,8 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Anwenden",
-      "learnMore": "Erfahren Sie mehr"
+      "contactUs": "Kostenlos starten",
+      "learnMore": "Erfahren Sie mehr",
+      "bookDemo": "Demo buchen",
+      "freeBadge": "FÜR IMMER KOSTENLOS • Keine Kreditkarte",
+      "benefits": "5 Maschinen • Unbegrenzte Teams • 0 $",
+      "seeDetails": "Alle Details anzeigen"
     },
     "subtitle": "20. Oktober 2025: AWS ist ausgefallen. Coinbase, Fortnite, Signal, Zoom – alle 15 Stunden offline. Organisationen mit Multi-Cloud-Infrastruktur blieben online. Sind Sie bereit?",
     "title": "Infrastruktur Das",
@@ -429,13 +433,13 @@
             "problem": {
               "additionalPoints": [
                 "Angreifer warten bewusst darauf, dass saubere Backups ablaufen",
-                "Die herkömmliche Aufbewahrung von sieben bis vierzehn Tagen birgt Schwachstellen",
+                "Traditionelle kurze Aufbewahrungsfristen bergen Schwachstellen",
                 "Jedes vollständige Backup verbraucht enorm viel Speicherplatz und schränkt die Aufbewahrung ein",
                 "Compliance-Anforderungen erfordern oft eine monatelange Vorgeschichte",
                 "Die Lagerkosten zwingen zur Wahl zwischen Historie und Budget"
               ],
               "description": "Kurze Aufbewahrungsfristen sparen Speicherplatz, schaffen aber auch Schwachstellen. Wenn Sie Daten von vor der Infektion benötigen, wurden diese bereits überschrieben. Herkömmliche Systeme können sich aufgrund der enormen Speicherkosten keine lange Aufbewahrung leisten.",
-              "story": "Die Verweildauer der Ransomware sank auf weniger als einen Tag. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Angreifer warten absichtlich darauf, dass infizierte Backups saubere Backups überschreiben. Organisationen mit einer Aufbewahrungsfrist von 7 bis 14 Tagen stellen fest, dass alle Backups Malware enthalten. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Die Verweildauer der Ransomware sank auf weniger als einen Tag. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Angreifer warten absichtlich darauf, dass infizierte Backups saubere Backups überschreiben. Organisationen mit kurzen Aufbewahrungsfristen stellen fest, dass alle Backups Malware enthalten. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -445,7 +449,7 @@
                 "Erfüllen Sie Compliance-Anforderungen kostengünstig und mit langer Aufbewahrung",
                 "Angreifer können Ihren Aufbewahrungszeitraum nicht abwarten"
               ],
-              "description": "Mit der inkrementellen Deduplizierung von Rediacc können Sie 30, 60, 90+ Tage Backup-Verlauf ohne Speicherexplosion aufbewahren. Es werden nur Änderungen gespeichert, keine doppelten Daten.",
+              "description": "Mit der inkrementellen Deduplizierung von Rediacc können Sie erweiterten Backup-Verlauf ohne Speicherexplosion aufbewahren. Es werden nur Änderungen gespeichert, keine doppelten Daten.",
               "title": "Erweiterte Aufbewahrung des Verlaufs"
             },
             "subtitle": "Der frühe Vogel fängt den Wurm <small class='subtitle-attribution'>– William Camden (1636)</small>",
@@ -738,7 +742,7 @@
       {
         "benefits": [
           "Automatische Überprüfung",
-          "30–90 Tage Aufbewahrung",
+          "Erweiterte Aufbewahrung",
           "Erholen Sie sich in wenigen Minuten"
         ],
         "description": "Verifizierte Wiederherstellung. Nicht nur Behauptungen. Vollständige Geschichte.",

@@ -125,8 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Appliquer",
-      "learnMore": "Apprendre encore plus"
+      "contactUs": "Commencer gratuitement",
+      "learnMore": "Apprendre encore plus",
+      "bookDemo": "Réserver une démo",
+      "freeBadge": "GRATUIT POUR TOUJOURS • Aucune carte de crédit",
+      "benefits": "5 machines • Équipes illimitées • 0 $",
+      "seeDetails": "Voir tous les détails"
     },
     "subtitle": "20 octobre 2025 : AWS est tombé en panne. Coinbase, Fortnite, Signal, Zoom, tous hors ligne pendant 15 heures. Les organisations dotées d’une infrastructure multi-cloud sont restées en ligne. Es-tu prêt?",
     "title": "Infrastructure qui",
@@ -429,13 +433,13 @@
             "problem": {
               "additionalPoints": [
                 "Les attaquants attendent délibérément que les sauvegardes propres expirent",
-                "La rétention traditionnelle de sept à quatorze jours laisse des vulnérabilités",
+                "Les périodes de conservation courtes traditionnelles laissent des vulnérabilités",
                 "Chaque sauvegarde complète consomme énormément de stockage, limitant la rétention",
                 "Les exigences de conformité exigent souvent des mois d’historique",
                 "Les coûts de stockage obligent à choisir entre historique et budget"
               ],
               "description": "Des périodes de conservation courtes permettent d'économiser de l'espace de stockage mais créent une vulnérabilité. Lorsque vous avez besoin de données antérieures à l'infection, elles ont déjà été écrasées. Les systèmes traditionnels ne peuvent pas se permettre une longue conservation en raison des coûts de stockage énormes.",
-              "story": "Le temps de séjour des ransomwares est tombé à moins d’un jour. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Les attaquants attendent délibérément que les sauvegardes infectées écrasent les sauvegardes propres. Les organisations bénéficiant d'une conservation de 7 à 14 jours découvrent que toutes les sauvegardes contiennent des logiciels malveillants. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Le temps de séjour des ransomwares est tombé à moins d'un jour. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Les attaquants attendent délibérément que les sauvegardes infectées écrasent les sauvegardes propres. Les organisations avec des périodes de conservation courtes découvrent que toutes les sauvegardes contiennent des logiciels malveillants. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -445,7 +449,7 @@
                 "Répondez aux exigences de conformité de manière rentable grâce à une longue rétention",
                 "Les attaquants ne peuvent pas attendre la fin de votre période de conservation"
               ],
-              "description": "La déduplication incrémentielle de Rediacc vous permet de conserver 30, 60, 90+ jours d'historique de sauvegarde sans explosion du stockage. Seules les modifications sont stockées, pas les données en double.",
+              "description": "La déduplication incrémentielle de Rediacc vous permet de conserver un historique de sauvegarde étendu sans explosion du stockage. Seules les modifications sont stockées, pas les données en double.",
               "title": "Conservation étendue de l’historique"
             },
             "subtitle": "Celui qui se lève tôt attrape le ver <small class='subtitle-attribution'>— William Camden (1636)</small>",
@@ -738,7 +742,7 @@
       {
         "benefits": [
           "Vérification automatique",
-          "Conservation de 30 à 90 jours",
+          "Conservation étendue",
           "Récupérez en quelques minutes"
         ],
         "description": "Récupération vérifiée. Pas seulement des réclamations. Historique complet.",

@@ -125,8 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "申请",
-      "learnMore": "了解更多"
+      "contactUs": "免费开始",
+      "learnMore": "了解更多",
+      "bookDemo": "预订演示",
+      "freeBadge": "永久免费 • 无需信用卡",
+      "benefits": "5 台机器 • 无限团队 • $0",
+      "seeDetails": "查看完整详情"
     },
     "subtitle": "2025 年 10 月 20 日：AWS 宕机。 Coinbase、Fortnite、Signal、Zoom——全部离线 15 小时。 拥有多云基础设施的组织保持在线状态。 你准备好了吗？",
     "title": "基础设施",
@@ -429,13 +433,13 @@
             "problem": {
               "additionalPoints": [
                 "攻击者故意等待干净的备份过期",
-                "传统的七到十四天的保留会留下漏洞",
+                "传统的短保留期会留下漏洞",
                 "每个完整备份都会消耗大量存储空间，限制保留",
                 "合规性要求通常需要数月的历史记录",
                 "存储成本迫使我们在历史和预算之间做出选择"
               ],
               "description": "较短的保留期可以节省存储空间，但会产生漏洞。 当您需要感染之前的数据时，它已经被覆盖了。 由于巨大的存储成本，传统系统无法承受长期保留。",
-              "story": "勒索软件的停留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 保留 7-14 天的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+              "story": "勒索软件的停留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 短保留期的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -445,7 +449,7 @@
                 "经济高效地满足合规性要求并保持长期保留",
                 "攻击者无法等待您的保留期结束"
               ],
-              "description": "Rediacc 的增量重复数据删除功能可让您保留 30 天、60 天、90 天以上的备份历史记录，而不会造成存储爆炸。 仅存储更改，而不存储重复数据。",
+              "description": "Rediacc 的增量重复数据删除功能可让您保留延长的备份历史记录，而不会造成存储爆炸。 仅存储更改，而不存储重复数据。",
               "title": "延长历史记录保留"
             },
             "subtitle": "早起的鸟儿有虫吃<small class='subtitle-attribution'>— William Camden (1636)</small>",
@@ -738,7 +742,7 @@
       {
         "benefits": [
           "自动验证",
-          "保留 30-90 天",
+          "延长保留",
           "几分钟内恢复"
         ],
         "description": "已验证恢复。 不仅仅是索赔。 完整的历史。",

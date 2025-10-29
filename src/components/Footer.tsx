@@ -53,12 +53,14 @@ const Footer: React.FC = () => {
             <h4 className="footer-heading">{t('footer.columns.product')}</h4>
             <a href={`/${currentLang}/#solutions`} className="footer-link">{t('footer.productLinks.solutions')}</a>
             <a href={`/${currentLang}/#problem`} className="footer-link">{t('footer.productLinks.overview')}</a>
+            <a href={`/${currentLang}/pricing`} className="footer-link">{t('footer.productLinks.pricing')}</a>
           </div>
 
           {/* Company Column */}
           <div className="footer-column">
             <h4 className="footer-heading">{t('footer.columns.company')}</h4>
             <a href={`/${currentLang}/contact`} className="footer-link">{t('footer.companyLinks.aboutUs')}</a>
+            <a href={`/${currentLang}/team`} className="footer-link">{t('footer.companyLinks.team')}</a>
             <a href={`/${currentLang}/contact`} className="footer-link">{t('footer.companyLinks.contact')}</a>
           </div>
 
