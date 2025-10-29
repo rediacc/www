@@ -83,7 +83,7 @@
           }
         }
       },
-      "submit": "Anwenden"
+      "submit": "Legen Sie los"
     },
     "notice": {
       "description": "Klicken Sie auf „Senden“, um Ihre E-Mail zu öffnen. Wir antworten innerhalb von 48 Stunden.",
@@ -102,7 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "Über uns",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "team": "Team"
     },
     "copyright": "{{year}} Rediacc. Alle Rechte vorbehalten.",
     "legalLinks": {
@@ -115,6 +116,7 @@
     },
     "productLinks": {
       "overview": "Überblick",
+      "pricing": "Preise",
       "solutions": "Lösungen"
     },
     "supportLinks": {
@@ -125,14 +127,14 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Kostenlos starten",
-      "learnMore": "Erfahren Sie mehr",
-      "bookDemo": "Demo buchen",
-      "freeBadge": "FÜR IMMER KOSTENLOS • Keine Kreditkarte",
       "benefits": "5 Maschinen • Unbegrenzte Teams • 0 $",
-      "seeDetails": "Alle Details anzeigen"
+      "bookDemo": "Buchdemo",
+      "contactUs": "Kostenlos starten",
+      "freeBadge": "FÜR IMMER KOSTENLOS • Keine Kreditkarte",
+      "learnMore": "Erfahren Sie mehr",
+      "seeDetails": "Sehen Sie sich die vollständigen Details an"
     },
-    "subtitle": "20. Oktober 2025: AWS ist ausgefallen. Coinbase, Fortnite, Signal, Zoom – alle 15 Stunden offline. Organisationen mit Multi-Cloud-Infrastruktur blieben online. Sind Sie bereit?",
+    "subtitle": "Überstehen Sie Cloud-Ausfälle. Überall einsetzbar. Schnelles Failover.",
     "title": "Infrastruktur Das",
     "titleHighlight": "Überlebt. Jedes Mal."
   },
@@ -158,8 +160,8 @@
     "search": "Suchen",
     "solutions": {
       "dataSecurity": "Datensicherheit",
-      "systemPortability": "Systemportabilität",
       "disasterRecovery": "Notfallwiederherstellung",
+      "systemPortability": "Systemportabilität",
       "threatResponse": "Bedrohungsreaktion"
     },
     "toggleMenu": "Menü umschalten"
@@ -212,7 +214,7 @@
             }
           }
         },
-        "submit": "Anwenden"
+        "submit": "Legen Sie los"
       },
       "hero": {
         "subtitle": "Füllen Sie das Formular aus und wir werden uns innerhalb von 48 Stunden bei Ihnen melden.",
@@ -316,15 +318,26 @@
       },
       "title": "Seite nicht gefunden"
     },
+    "pricing": {
+      "hero": {
+        "subtitle": "Wählen Sie den richtigen Plan für Ihr Unternehmen. Keine versteckten Gebühren, keine Überraschungen.",
+        "title": "Einfache, transparente Preisgestaltung"
+      },
+      "meta": {
+        "description": "Wählen Sie den richtigen Plan für Ihr Unternehmen. Vom kostenlosen Community-Zugang bis zum Schutz auf Unternehmensniveau. Keine versteckten Gebühren.",
+        "keywords": "Preise, Infrastrukturautomatisierung, Preise für Disaster Recovery, Backup-Preise, Geschäftskontinuitätspläne",
+        "title": "Preise | Einfacher, transparenter Infrastrukturschutz"
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
-          "button": "Anwenden",
+          "button": "Überprüfen Sie Ihre Sicherheit",
           "subtitle": "Wissensfreie Verschlüsselung. Vollständiger Audit-Trail. Bei der Entwicklung wurde auf Compliance geachtet.",
           "title": "Bereit für echten Datenschutz?"
         },
         "hero": {
-          "subtitle": "Nur Sie können die Per-Repo-Verschlüsselung entsperren. Master-Passwort für den Betrieb. Ihre Daten, Ihre Kontrolle.",
+          "subtitle": "Alles verschlüsseln. Überprüfen Sie alles. Kontrolliere alles.",
           "title": "Alles verschlüsseln. Kontrollieren Sie alles. Vollständiges Zero-Knowledge."
         },
         "meta": {
@@ -395,7 +408,7 @@
                 "Compliance erfordert ausdrücklich die Verschlüsselung ruhender Daten"
               ],
               "description": "Jemand stiehlt Ihren Server, Ihr Backup-Laufwerk oder Ihre alte Hardware. Betriebssystemkennwörter bieten keinerlei Schutz vor physischem Zugriff – sie booten von USB, umgehen die Authentifizierung, mounten Festplatten und kopieren alles. Kundendaten, Anmeldeinformationen, Datenbanken – alles weg. In Rechenzentren kommt es regelmäßig zu Diebstählen. Die Stilllegung schafft Aufsehen.",
-              "story": "Morgan Stanley beauftragte 2016 Umzugsunternehmen mit der Stilllegung von Rechenzentren. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Festplatten mit 15 Millionen Kundendatensätzen wurden versteigert online – unverschlüsselt. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Bußgelder in Höhe von 35 Millionen US-Dollar. Die meisten Geräte wurden nie wiederhergestellt."
+              "story": "Morgan Stanley beauftragte 2016 Umzugsunternehmen mit der Stilllegung von Rechenzentren. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Festplatten mit 15 Millionen Kundendatensätzen wurden online versteigert – unverschlüsselt. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Bußgelder in Höhe von 35 Millionen US-Dollar. Die meisten Geräte wurden nie wiederhergestellt."
             },
             "solution": {
               "benefits": [
@@ -415,7 +428,7 @@
       },
       "disasterRecovery": {
         "cta": {
-          "button": "Anwenden",
+          "button": "Erstellen Sie Ihren Wiederherstellungsplan",
           "subtitle": "Begrenzte Plätze verfügbar.",
           "title": "Sind Sie bereit, Ihren Backups zu vertrauen?"
         },
@@ -433,7 +446,7 @@
             "problem": {
               "additionalPoints": [
                 "Angreifer warten bewusst darauf, dass saubere Backups ablaufen",
-                "Traditionelle kurze Aufbewahrungsfristen bergen Schwachstellen",
+                "Herkömmliche kurze Aufbewahrungsfristen bergen Schwachstellen",
                 "Jedes vollständige Backup verbraucht enorm viel Speicherplatz und schränkt die Aufbewahrung ein",
                 "Compliance-Anforderungen erfordern oft eine monatelange Vorgeschichte",
                 "Die Lagerkosten zwingen zur Wahl zwischen Historie und Budget"
@@ -449,7 +462,7 @@
                 "Erfüllen Sie Compliance-Anforderungen kostengünstig und mit langer Aufbewahrung",
                 "Angreifer können Ihren Aufbewahrungszeitraum nicht abwarten"
               ],
-              "description": "Mit der inkrementellen Deduplizierung von Rediacc können Sie erweiterten Backup-Verlauf ohne Speicherexplosion aufbewahren. Es werden nur Änderungen gespeichert, keine doppelten Daten.",
+              "description": "Mit der inkrementellen Deduplizierung von Rediacc können Sie einen erweiterten Backup-Verlauf ohne Speicherexplosion beibehalten. Es werden nur Änderungen gespeichert, keine doppelten Daten.",
               "title": "Erweiterte Aufbewahrung des Verlaufs"
             },
             "subtitle": "Der frühe Vogel fängt den Wurm <small class='subtitle-attribution'>– William Camden (1636)</small>",
@@ -460,7 +473,7 @@
               "additionalPoints": [
                 "Derselbe Ransomware-Angriff führt zu drastisch unterschiedlichen Wiederherstellungszeiten",
                 "Herkömmliche vollständige Wiederherstellungen bedeuten tagelange Ausfallzeiten für den Ausfall von Diensten",
-                "Moderne inkrementelle Wiederherstellung innerhalb von Minuten wieder online",
+                "Moderne inkrementelle Wiederherstellung innerhalb weniger Minuten wieder online",
                 "Das Gesundheitswesen kann nicht darauf warten, dass Patienten jetzt Pflege benötigen",
                 "Jede Ausfallstunde vervielfacht den betrieblichen und finanziellen Schaden"
               ],
@@ -515,12 +528,12 @@
       },
       "systemPortability": {
         "cta": {
-          "button": "Anwenden",
+          "button": "Entdecken Sie den Migrationspfad",
           "subtitle": "Eine tragbare Datei. Sicherheit auf Militärniveau. Begrenzte Plätze verfügbar.",
           "title": "Bereit für echte Systemportabilität?"
         },
         "hero": {
-          "subtitle": "Komplettes System in einer Datei. Verschlüsselung auf Militärniveau. Funktioniert überall beim ersten Versuch.",
+          "subtitle": "Eine tragbare Datei. Sicherheit auf Militärniveau. Überall einsetzbar.",
           "title": "Bewegen Sie Ihre Systeme sicher überall hin"
         },
         "meta": {
@@ -611,7 +624,7 @@
       },
       "threatResponse": {
         "cta": {
-          "button": "Anwenden",
+          "button": "Schützen Sie Ihre Systeme",
           "subtitle": "Überstehen Sie Bedrohungen schneller. Unveränderlich. Tragbar. Unter Ihrer Kontrolle.",
           "title": "Bereit für Cyber-Resilienz?"
         },
@@ -674,7 +687,7 @@
               "description": "Rediacc ermöglicht schnelle, risikofreie Tests der Betriebssystemmigration. Stellen Sie die Infrastruktur auf einem neuen Betriebssystem bereit und überprüfen Sie, ob alles mit der tatsächlichen Produktionsauslastung funktioniert. Wenn Probleme auftreten, können Sie die Lösung sofort wiederherstellen – kein Datenverlust, keine Wiederherstellung. Sobald die Sicherheit überprüft wurde, verpflichten Sie sich dauerhaft. Schwachstellenfenster schließen sich innerhalb von Minuten.",
               "title": "Risikofreies Testen des Betriebssystems"
             },
-            "subtitle": "In jeder Not liegt Leichtigkeit <small class='subtitle-attribution'> – Sure Al-Inshirah 94:5</small>",
+            "subtitle": "In jeder Not liegt Leichtigkeit <small class='subtitle-attribution'> – Al-Inshirah 94:5</small>",
             "title": "Verzögerungen bei Betriebssystemaktualisierungen"
           },
           "ransomwareBackups": {
@@ -683,7 +696,7 @@
                 "94 Prozent der Ransomware-Angriffe zielen auf die Backup-Infrastruktur ab",
                 "Angreifer warten wochenlang darauf, sicherzustellen, dass saubere Backups überschrieben werden",
                 "Unveränderliche Backups schlagen fehl, wenn Angreifer über Administratoranmeldeinformationen verfügen",
-                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldzahlung",
+                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldforderung",
                 "Verschlüsselte Anbieter-Backups bedeuten, dass Anbieter bei der Wiederherstellung nicht helfen können"
               ],
               "description": "Ransomware-Angreifer zielen auf die Backup-Infrastruktur ab und löschen oder überschreiben Kopien, um eine Wiederherstellung zu verhindern. Backups im selben Cloud-Konto mit gemeinsamen Anmeldeinformationen ermöglichen es Angreifern, den Verlauf von Monaten zu löschen. Selbst unveränderliche Backups schlagen bei Administratorzugriff fehl. Saubere Backups verschwinden, bevor Sie es merken.",
@@ -705,15 +718,66 @@
           }
         }
       }
+    },
+    "team": {
+      "cta": {
+        "buttons": {
+          "contact": "Nehmen Sie Kontakt auf",
+          "learnMore": "Erfahren Sie mehr"
+        },
+        "subtitle": "Ob als Kunde, Partner oder Teammitglied – seien Sie Teil der Infrastrukturrevolution.",
+        "title": "Begleiten Sie uns auf unserer Mission"
+      },
+      "hero": {
+        "subtitle": "Ingenieure, die sich dafür einsetzen, Katastrophen für Ihr Unternehmen unmöglich zu machen.",
+        "title": "Die Teambuilding-Infrastruktur, die überlebt"
+      },
+      "meta": {
+        "description": "Lernen Sie die katastrophensichere Teambuilding-Infrastruktur kennen. Ingenieure, die sich dafür einsetzen, dass Ihre Systeme jeder Herausforderung standhalten.",
+        "keywords": "Rediacc-Team, Infrastrukturtechnik, Disaster-Recovery-Experten, Systemzuverlässigkeit, DevOps-Team",
+        "title": "Unser Team | Rediacc – Aufbau einer Infrastruktur, die überlebt"
+      },
+      "mission": {
+        "belief": "Wir glauben, dass jedes Unternehmen, unabhängig von Größe oder Budget, Zugriff auf dieselben leistungsstarken Infrastrukturtools verdient, die Fortune-500-Unternehmen verwenden. Aus diesem Grund haben wir Rediacc entwickelt – um gleiche Wettbewerbsbedingungen zu schaffen und Unternehmen die Möglichkeit zu geben, sich auf das zu konzentrieren, was sie am besten können, während wir die Komplexität der Infrastruktur bewältigen.",
+        "description": "Alle 47 Tage löscht AI eine Produktionsdatenbank. Jedes Jahr fallen 1,71 % der Laufwerke aus. 75 % der Ransomware zielt auf Backups ab. Wir machen alle diese Katastrophen in 60 Sekunden behebbar.",
+        "title": "Unsere Mission: Katastrophen unmöglich machen"
+      },
+      "story": {
+        "beginning": {
+          "paragraph1": "Im Jahr 2018 habe ich meine Position als Softwareentwickler aufgegeben, um meine eigene Vision weiterzuentwickeln. Die Aufregung sorgte dafür, dass ich 18 Stunden am Tag arbeitete und nur 4 bis 5 Stunden schlief. Ich habe 5-6 Monate lang alles in das Projekt gesteckt.",
+          "paragraph2": "Dann verlor ich unerwartet den Zugriff auf meine gesamte Entwicklungsinfrastruktur. Alles, was ich gebaut hatte, war plötzlich unzugänglich. Ich hatte keine Backups und selbst wenn, könnte ich es mir nicht leisten, die von mir verwendete lokale Hardware zu ersetzen.",
+          "paragraph3": "Um meine Schulden zu begleichen und meine Familie zu ernähren, musste ich zu einem bezahlten Job zurückkehren. Es dauerte 20 Monate, bis ich wieder Zugang zu meiner Arbeit bekam. Während dieser Zeit entfernte ich mich weit von meinen Träumen und lebte mit Unsicherheit und zunehmendem finanziellen Druck.",
+          "title": "Der Anfang"
+        },
+        "birth": {
+          "paragraph1": "Alles begann mit der Entwicklung einer portablen Dateisystemlogik. Von dort habe ich ein Backup-Modul integriert. Dann kam eine der größten Herausforderungen: die Ermöglichung von Live-Systemübertragungen mit minimalen Ausfallzeiten, unabhängig von der Datengröße. Ich habe einzigartige Funktionen hinzugefügt, die auf tatsächlichen Bedürfnissen basieren.",
+          "paragraph2": "So wurde Rediacc geboren – ein Produkt, das selbst die härtesten Herausforderungen meistert. Jetzt steht es jedem zur Verfügung. Nutzen Sie es und lassen Sie nicht zu, dass Ihr Unternehmen durch irgendetwas gebremst wird – seien Sie bereit zu überleben und zu beschleunigen.",
+          "quote": "Als ich den Zugang zu meiner Infrastruktur verlor, wusste ich, was ich aufbauen musste: ein System, das Katastrophen unmöglich macht.",
+          "title": "Geburt von Rediacc"
+        },
+        "title": "Unsere Geschichte",
+        "turningPoint": {
+          "paragraph1": "Jahre später dachte ich immer wieder darüber nach, was ich tun könnte, um zu verhindern, dass ein solches Problem erneut auftritt. Ich brauchte ein Tool, mit dem ich meine Systeme jederzeit in eine andere Umgebung verschieben, sie bei Bedarf aktivieren, einfach sichern und sicher speichern kann, egal wohin ich sie verschoben habe.",
+          "paragraph2": "Im Jahr 2021 habe ich Docker durch das Video von NetworkChuck entdeckt. Ich war schockiert darüber, was möglich war. Ich wünschte, ich hätte früher von dieser Technologie gewusst – sie hätte alles verändern können.",
+          "paragraph3": "Aber Docker allein hat nicht alle meine Probleme gelöst. Das Verschieben von Containerdateien zwischen Systemen war schwierig. Ich hatte Probleme mit der Kompatibilität der Dateieigentümer und mit zunehmender Datengröße dauerten die Übertragungen länger. Am kritischsten war, dass ich die Dienste bis zum Abschluss der Migration offline halten musste und Docker nur minimale Sicherheitsfunktionen bot.",
+          "title": "Der Wendepunkt"
+        }
+      },
+      "team": {
+        "title": "Lernen Sie unser Team kennen"
+      },
+      "values": {
+        "title": "Unsere Werte"
+      }
     }
   },
   "problem": {
     "reality": {
-      "imageAlt": "Diagramm, das die Herausforderungen traditioneller Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
+      "imageAlt": "Diagramm, das die Herausforderungen herkömmlicher Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
       "title": "Die Realität: Frustrierte Teams, gefährliche Workarounds"
     },
     "solution": {
-      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Vorgänge mit Model Context Protocol-Integration",
+      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Abläufe mit Model Context Protocol-Integration",
       "title": "Die Lösung: Rediacc-Plattform"
     },
     "subtitle": "Wenn Produktionsumgebungen über Terabytes an Daten verfügen, Sandbox-Umgebungen jedoch nur monatlich synchronisiert werden, stehen Teams vor unmöglichen Entscheidungen, die zu gefährlichen Problemumgehungen führen.",
@@ -745,7 +809,7 @@
           "Erweiterte Aufbewahrung",
           "Erholen Sie sich in wenigen Minuten"
         ],
-        "description": "Verifizierte Wiederherstellung. Nicht nur Behauptungen. Vollständige Geschichte.",
+        "description": "Verifizierte Wiederherstellung garantiert. Getestete Backups. Komplette Geschichte.",
         "title": "Verifizierte Backups"
       },
       {
@@ -754,7 +818,7 @@
           "Vollständiger Prüfpfad",
           "Migrationssicher"
         ],
-        "description": "Verschlüsselung auf Militärniveau. Vollständige Audit-Trails.",
+        "description": "Alles verschlüsselt. Alles geprüft. Vollständige Kontrolle.",
         "title": "Verschlüsselungskontrolle"
       }
     ],

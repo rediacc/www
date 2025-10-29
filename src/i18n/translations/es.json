@@ -83,7 +83,7 @@
           }
         }
       },
-      "submit": "Aplicar"
+      "submit": "Empezar"
     },
     "notice": {
       "description": "Haga clic en enviar para abrir su correo electrónico. Responderemos dentro de las 48 horas.",
@@ -102,7 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "Sobre nosotras",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "team": "Equipo"
     },
     "copyright": "{{año}} Rediacc. Reservados todos los derechos.",
     "legalLinks": {
@@ -115,6 +116,7 @@
     },
     "productLinks": {
       "overview": "Descripción general",
+      "pricing": "Precios",
       "solutions": "Soluciones"
     },
     "supportLinks": {
@@ -125,14 +127,14 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Comenzar gratis",
-      "learnMore": "Más información",
-      "bookDemo": "Reservar demostración",
-      "freeBadge": "GRATIS PARA SIEMPRE • Sin tarjeta de crédito",
       "benefits": "5 máquinas • Equipos ilimitados • $0",
-      "seeDetails": "Ver detalles completos"
+      "bookDemo": "Reservar demostración",
+      "contactUs": "Comience gratis",
+      "freeBadge": "GRATIS PARA SIEMPRE • Sin tarjeta de crédito",
+      "learnMore": "Más información",
+      "seeDetails": "Ver todos los detalles"
     },
-    "subtitle": "20 de octubre de 2025: AWS dejó de funcionar. Coinbase, Fortnite, Signal, Zoom: todos sin conexión durante 15 horas. Las organizaciones con infraestructura multinube permanecieron en línea. ¿Estás listo?",
+    "subtitle": "Sobrevive a las interrupciones en la nube. Implemente en cualquier lugar. Falla rápidamente.",
     "title": "Infraestructura que",
     "titleHighlight": "Sobrevive. Cada vez."
   },
@@ -158,8 +160,8 @@
     "search": "Buscar",
     "solutions": {
       "dataSecurity": "Seguridad de datos",
-      "systemPortability": "Portabilidad del sistema",
       "disasterRecovery": "Recuperación ante desastres",
+      "systemPortability": "Portabilidad del sistema",
       "threatResponse": "Respuesta a amenazas"
     },
     "toggleMenu": "Alternar menú"
@@ -212,7 +214,7 @@
             }
           }
         },
-        "submit": "Aplicar"
+        "submit": "Empezar"
       },
       "hero": {
         "subtitle": "Complete el formulario y nos comunicaremos con usted dentro de las 48 horas.",
@@ -263,7 +265,7 @@
       "queueSystem": "Sistema de cola",
       "queueSystemDesc": "Comprenda cómo se gestionan y ejecutan las tareas en todas las máquinas.",
       "subtitle": "Aprenda a utilizar Rediacc y domine la ejecución de tareas distribuidas",
-      "tableOfContents": "En esta página",
+      "tableOfContents": "En esta pagina",
       "title": "Documentación",
       "welcome": "Bienvenido a la documentación de Rediacc",
       "welcomeDescription": "Rediacc es un potente sistema distribuido de ejecución de tareas. Ya sea que esté comenzando o esté buscando dominar funciones avanzadas, aquí encontrará todo lo que necesita."
@@ -316,15 +318,26 @@
       },
       "title": "Página no encontrada"
     },
+    "pricing": {
+      "hero": {
+        "subtitle": "Elija el plan adecuado para su negocio. Sin cargos ocultos, sin sorpresas.",
+        "title": "Precios simples y transparentes"
+      },
+      "meta": {
+        "description": "Elija el plan adecuado para su negocio. Desde acceso comunitario gratuito hasta protección de nivel empresarial. Sin tarifas ocultas.",
+        "keywords": "precios, automatización de infraestructura, precios de recuperación ante desastres, precios de respaldo, planes de continuidad del negocio",
+        "title": "Precios | Protección de infraestructura simple y transparente"
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
-          "button": "Aplicar",
+          "button": "Audite su seguridad",
           "subtitle": "Cifrado de conocimiento cero. Pista de auditoría completa. Construido pensando en el cumplimiento.",
           "title": "¿Listo para una verdadera protección de datos?"
         },
         "hero": {
-          "subtitle": "El cifrado por repositorio solo usted puede desbloquearlo. Contraseña maestra para operaciones. Tus datos, tu control.",
+          "subtitle": "Cifre todo. Audita todo. Controla todo.",
           "title": "Cifre todo. Controla todo. Completa el conocimiento cero."
         },
         "meta": {
@@ -395,7 +408,7 @@
                 "El cumplimiento exige explícitamente el cifrado en reposo de los datos"
               ],
               "description": "Alguien roba su servidor, unidad de respaldo o hardware antiguo. Las contraseñas del sistema operativo no brindan protección contra el acceso físico: arrancan desde USB, omiten la autenticación, montan discos y copian todo. Datos de clientes, credenciales, bases de datos: todo desapareció. Los centros de datos sufren robos con regularidad. El desmantelamiento crea exposición.",
-              "story": "Morgan Stanley contrató empresas de mudanzas para desmantelar los centros de datos en 2016. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Se subastaron discos duros con 15 millones de registros de clientes en línea: sin cifrar. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> $35 millones en multas. La mayoría de los dispositivos nunca se recuperaron."
+              "story": "Morgan Stanley contrató empresas de mudanzas para desmantelar los centros de datos en 2016. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Se subastaron en línea discos duros con 15 millones de registros de clientes, sin cifrar. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> $35 millones en multas. La mayoría de los dispositivos nunca se recuperaron."
             },
             "solution": {
               "benefits": [
@@ -415,7 +428,7 @@
       },
       "disasterRecovery": {
         "cta": {
-          "button": "Aplicar",
+          "button": "Construya su plan de recuperación",
           "subtitle": "Plazas limitadas disponibles.",
           "title": "¿Listo para confiar en sus copias de seguridad?"
         },
@@ -433,7 +446,7 @@
             "problem": {
               "additionalPoints": [
                 "Los atacantes esperan deliberadamente a que caduquen las copias de seguridad limpias",
-                "Los períodos de retención cortos tradicionales dejan vulnerabilidades",
+                "Los tradicionales períodos de retención cortos dejan vulnerabilidades",
                 "Cada copia de seguridad completa consume almacenamiento masivo, lo que limita la retención.",
                 "Los requisitos de cumplimiento a menudo exigen meses de historia",
                 "Los costos de almacenamiento obligan a elegir entre historial y presupuesto"
@@ -449,7 +462,7 @@
                 "Cumpla con los requisitos de cumplimiento de manera rentable con una retención prolongada",
                 "Los atacantes no pueden esperar a que pase el período de retención"
               ],
-              "description": "La deduplicación incremental de Rediacc le permite conservar historial de respaldo extendido sin una explosión de almacenamiento. Sólo se almacenan los cambios, no los datos duplicados.",
+              "description": "La deduplicación incremental de Rediacc le permite mantener un historial de respaldo extendido sin una explosión del almacenamiento. Sólo se almacenan los cambios, no los datos duplicados.",
               "title": "Retención extendida del historial"
             },
             "subtitle": "Al que madruga Dios le ayuda <small class='subtitle-attribution'>—William Camden (1636)</small>",
@@ -515,12 +528,12 @@
       },
       "systemPortability": {
         "cta": {
-          "button": "Aplicar",
+          "button": "Explorar la ruta de migración",
           "subtitle": "Un archivo portátil. Seguridad de grado militar. Plazas limitadas disponibles.",
           "title": "¿Listo para la verdadera portabilidad del sistema?"
         },
         "hero": {
-          "subtitle": "Sistema completo en un solo archivo. Cifrado de grado militar. Funciona en todas partes al primer intento.",
+          "subtitle": "Un archivo portátil. Seguridad de grado militar. Implemente en cualquier lugar.",
           "title": "Mueva sus sistemas a cualquier lugar, de forma segura"
         },
         "meta": {
@@ -611,7 +624,7 @@
       },
       "threatResponse": {
         "cta": {
-          "button": "Aplicar",
+          "button": "Proteja sus sistemas",
           "subtitle": "Sobrevive a las amenazas más rápido. Inmutable. Portátil. Bajo tu control.",
           "title": "¿Listo para la resiliencia cibernética?"
         },
@@ -674,7 +687,7 @@
               "description": "Rediacc permite realizar pruebas de migración del sistema operativo rápidas y sin riesgos. Implemente la infraestructura en un nuevo sistema operativo y verifique que todo funcione con la carga de trabajo de producción real. Si aparecen problemas, revierta instantáneamente: sin pérdida de datos ni recuperación. Una vez verificado que sea seguro, comprométase permanentemente. Las ventanas de vulnerabilidad se cierran en minutos.",
               "title": "Pruebas de sistema operativo sin riesgos"
             },
-            "subtitle": "En cada dificultad hay facilidad <small class='subtitle-attribution'>— Surah Al-Inshirah 94:5</small>",
+            "subtitle": "En cada dificultad hay facilidad <small class='subtitle-attribution'>—Al-Inshirah 94:5</small>",
             "title": "Retrasos en la actualización del sistema operativo"
           },
           "ransomwareBackups": {
@@ -704,6 +717,57 @@
             "title": "El ransomware apunta a las copias de seguridad"
           }
         }
+      }
+    },
+    "team": {
+      "cta": {
+        "buttons": {
+          "contact": "Ponte en contacto",
+          "learnMore": "Más información"
+        },
+        "subtitle": "Ya sea como cliente, socio o miembro del equipo, sea parte de la revolución de la infraestructura.",
+        "title": "Únete a nosotras en nuestra misión"
+      },
+      "hero": {
+        "subtitle": "Ingenieros dedicados a hacer que los desastres sean imposibles para su negocio.",
+        "title": "La infraestructura de team building que sobrevive"
+      },
+      "meta": {
+        "description": "Conozca al equipo que construye infraestructura a prueba de desastres. Ingenieros dedicados a garantizar que sus sistemas sobrevivan a todos los desafíos.",
+        "keywords": "Equipo Rediacc, ingeniería de infraestructura, expertos en recuperación ante desastres, confiabilidad del sistema, equipo DevOps",
+        "title": "Nuestro equipo | Rediacc - Construyendo infraestructura que sobrevive"
+      },
+      "mission": {
+        "belief": "Creemos que todas las empresas, independientemente de su tamaño o presupuesto, merecen acceso a las mismas potentes herramientas de infraestructura que utilizan las empresas Fortune 500. Es por eso que creamos Rediacc: para nivelar el campo de juego y capacitar a las empresas para que se concentren en lo que mejor saben hacer, mientras nosotros manejamos la complejidad de la infraestructura.",
+        "description": "Cada 47 días, AI elimina una base de datos de producción. Cada año, el 1,71% de las unidades fallan. El 75% del ransomware tiene como objetivo las copias de seguridad. Hacemos que todos estos desastres sean recuperables en 60 segundos.",
+        "title": "Nuestra misión: hacer que los desastres sean imposibles"
+      },
+      "story": {
+        "beginning": {
+          "paragraph1": "En 2018, dejé mi puesto como ingeniero de software para dedicarme a construir mi propia visión. La emoción me mantuvo trabajando 18 horas al día y durmiendo sólo 4 o 5 horas. Puse todo en el proyecto durante 5-6 meses.",
+          "paragraph2": "Luego, inesperadamente, perdí el acceso a toda mi infraestructura de desarrollo. Todo lo que había construido se volvió repentinamente inaccesible. No tenía copias de seguridad y, aunque las tuviera, no podía permitirme reemplazar el hardware local que había estado usando.",
+          "paragraph3": "Para pagar mis deudas y mantener a mi familia, tuve que volver a tener un trabajo asalariado. Me tomó 20 meses recuperar el acceso a mi trabajo. Durante ese tiempo, me alejé de mis sueños y viví con incertidumbre y una presión financiera creciente.",
+          "title": "El comienzo"
+        },
+        "birth": {
+          "paragraph1": "Todo comenzó con el desarrollo de una lógica de sistema de archivos portátil. A partir de ahí, integré un módulo de respaldo. Luego vino uno de los desafíos más críticos: permitir transferencias de sistemas en vivo con un tiempo de inactividad mínimo, independientemente del tamaño de los datos. Agregué características únicas basadas en necesidades reales.",
+          "paragraph2": "Así nació Rediacc: un producto forjado a través de los desafíos más difíciles. Ahora está disponible para todos. Úselo y no permita que nada frene su negocio: prepárese para sobrevivir y acelerar.",
+          "quote": "Cuando perdí el acceso a mi infraestructura, supe lo que tenía que construir: un sistema que hiciera imposibles los desastres.",
+          "title": "Nacimiento de Rediacc"
+        },
+        "title": "Nuestra historia",
+        "turningPoint": {
+          "paragraph1": "Años más tarde, seguí pensando en qué podía hacer para evitar que ese problema volviera a ocurrir. Necesitaba una herramienta que me permitiera mover mis sistemas a otro entorno cuando quisiera, activarlos cuando fuera necesario, realizar copias de seguridad fácilmente y almacenarlos de forma segura sin importar dónde los moviera.",
+          "paragraph2": "En 2021, descubrí Docker a través del vídeo de NetworkChuck. Me sorprendió lo que era posible. Ojalá hubiera sabido acerca de esta tecnología antes; podría haberlo cambiado todo.",
+          "paragraph3": "Pero Docker por sí solo no resolvió todos mis problemas. Mover archivos contenedores entre sistemas era difícil. Enfrenté problemas de compatibilidad con la propiedad de los archivos y, a medida que crecía el tamaño de los datos, las transferencias demoraban más. Lo más importante es que tuve que mantener los servicios fuera de línea hasta que finalizó la migración y Docker ofrecía funciones de seguridad mínimas.",
+          "title": "El punto de inflexión"
+        }
+      },
+      "team": {
+        "title": "Conozca a nuestro equipo"
+      },
+      "values": {
+        "title": "Nuestras Valores"
       }
     }
   },
@@ -745,7 +809,7 @@
           "Retención extendida",
           "Recuperarse en minutos"
         ],
-        "description": "Recuperación verificada. No sólo reclamaciones. Historia completa.",
+        "description": "Recuperación verificada garantizada. Copias de seguridad probadas. Historia completa.",
         "title": "Copias de seguridad verificadas"
       },
       {
@@ -754,7 +818,7 @@
           "Pista de auditoría completa",
           "Migración segura"
         ],
-        "description": "Cifrado de grado militar. Completar pistas de auditoría.",
+        "description": "Todo cifrado. Todo auditado. Control total.",
         "title": "Control de cifrado"
       }
     ],

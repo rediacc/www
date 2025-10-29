@@ -1,43 +1,28 @@
-# Astro Starter Kit: Minimal
+# Rediacc Marketing Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+The official marketing website for Rediacc - a distributed infrastructure protection and task management platform. Features multilingual support, solution pages, documentation, blog, and professional services information.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Tech Stack:** Astro 5, React, TypeScript
 
-## 🚀 Project Structure
+## Development
 
-Inside of your Astro project, you'll see the following folders and files:
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server at `localhost:4321` |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Content
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **Marketing Pages:** Homepage, solutions, pricing, team
+- **Documentation:** User guides and technical docs (multilingual)
+- **Blog:** Articles and announcements (multilingual)
+- **Professional Services:** Service delivery checklists in `/plan/special_services/`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Supported Languages
 
-Any static assets, like images, can be placed in the `public/` directory.
+English, Spanish, German, French, Japanese, Arabic, Russian, Turkish, Chinese
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Part of the Rediacc monorepo. See root README for full system architecture.
