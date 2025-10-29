@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PricingCard from '../../components/PricingCard.astro';
+import ServicePackageCard from '../../components/ServicePackageCard.astro';
 import FAQSection from '../../components/FAQSection.astro';
 import { createTranslator } from '../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../i18n/language-utils';
@@ -55,8 +56,7 @@ const businessPlans = [
       '50 Repositories',
       '50 GB Max Repo Size',
       '14 Day Audit Logs',
-      'Priority Support',
-      'API Access'
+      'Priority Support'
     ]
   },
   {
@@ -74,8 +74,7 @@ const businessPlans = [
       '250 Repositories',
       '250 GB Max Repo Size',
       '30 Day Audit Logs',
-      '24/7 Support',
-      'Advanced Security'
+      '24/7 Support'
     ]
   },
   {
@@ -94,9 +93,92 @@ const businessPlans = [
       '1000+ Repositories',
       '1TB+ Max Repo Size',
       '90+ Day Audit Logs',
-      'Dedicated Account Manager',
-      'Custom SLA'
+      'Dedicated Account Manager'
     ]
+  }
+];
+
+// Service packages data
+const servicePackages = [
+  {
+    id: 'standard',
+    name: 'Standard',
+    price: '$9,999',
+    turnaround: '3-5 Business Days',
+    description: 'Standard turnaround time for planned projects',
+    isPopular: false,
+    icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 11l3 3 5-5"/></svg>'
+  },
+  {
+    id: 'priority',
+    name: 'Priority',
+    price: '$19,999',
+    turnaround: '24-48 Hours',
+    description: 'Fast-track your project with priority execution',
+    isPopular: true,
+    icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>'
+  },
+  {
+    id: 'emergency',
+    name: 'Emergency',
+    price: '$29,999',
+    turnaround: 'Same Day',
+    description: 'Immediate response for critical situations',
+    isPopular: false,
+    icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'
+  }
+];
+
+// Service types with details for each package
+const serviceTypes = [
+  {
+    name: 'Data Migration',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/></svg>',
+    standard: 'Complete end-to-end migration with full validation',
+    priority: 'Rapid migration pipeline setup + core data transferred within 48h',
+    emergency: 'Immediate assessment + critical systems online same-day + full migration begins'
+  },
+  {
+    name: 'Ransomware Recovery',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/></svg>',
+    standard: 'Complete recovery with forensics and hardening',
+    priority: 'Rapid threat assessment + core operations restored within 48h',
+    emergency: 'Immediate containment + critical systems restored same-day + full recovery begins'
+  },
+  {
+    name: 'Security Assessment',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>',
+    standard: 'Full security audit with implementation roadmap',
+    priority: 'Comprehensive vulnerability assessment + remediation plan within 48h',
+    emergency: 'Critical vulnerability scan + high-risk patches deployed same-day + full audit begins'
+  },
+  {
+    name: 'Infrastructure Scaling',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>',
+    standard: 'Complete infrastructure redesign with optimization',
+    priority: 'Rapid capacity increase + monitoring setup within 48h',
+    emergency: 'Critical resources provisioned same-day + auto-scaling configured + full plan begins'
+  },
+  {
+    name: 'Team Training',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>',
+    standard: 'Comprehensive multi-day training program',
+    priority: 'Intensive hands-on workshop + key workflows covered within 2 days',
+    emergency: 'Critical procedures briefing same-day + incident response prep + full program begins'
+  },
+  {
+    name: 'Performance Optimization',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg>',
+    standard: 'Deep analysis with comprehensive performance tuning',
+    priority: 'Quick profiling + high-impact optimizations deployed within 48h',
+    emergency: 'Critical bottleneck identified + immediate hotfix deployed same-day + full optimization begins'
+  },
+  {
+    name: 'Custom Integration',
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
+    standard: 'Complete integration with testing and documentation',
+    priority: 'Core integration functional + essential features live within 48h',
+    emergency: 'Critical connection established same-day + basic data flow working + full dev begins'
   }
 ];
 ---
@@ -173,84 +255,89 @@ const businessPlans = [
           </div>
         </div>
 
-        <div class="services-table-wrapper">
-          <table class="services-table">
-            <thead>
-              <tr>
-                <th class="service-type-header">Service Type</th>
-                <th class="package-header">
-                  <div class="package-info">
-                    <h4>Standard</h4>
-                    <p class="package-speed">3-5 Business Days</p>
-                    <p class="package-price">From $9,999</p>
-                    <p class="package-desc">Standard turnaround time</p>
-                  </div>
-                </th>
-                <th class="package-header popular">
-                  <div class="package-info">
-                    <h4>Priority</h4>
-                    <p class="package-speed">24-48 Hours</p>
-                    <p class="package-price">From $19,999</p>
-                    <p class="package-desc">Fast-track your project</p>
-                  </div>
-                </th>
-                <th class="package-header">
-                  <div class="package-info">
-                    <h4>Emergency</h4>
-                    <p class="package-speed">Same Day</p>
-                    <p class="package-price">From $29,999</p>
-                    <p class="package-desc">Immediate response</p>
-                  </div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="service-name">Data Migration</td>
-                <td>5 business days for up to 100GB</td>
-                <td class="popular">48 hours for any size</td>
-                <td>12 hours guaranteed</td>
-              </tr>
-              <tr>
-                <td class="service-name">Ransomware Recovery</td>
-                <td>3-5 days assessment</td>
-                <td class="popular">24 hours to begin recovery</td>
-                <td>Immediate response team</td>
-              </tr>
-              <tr>
-                <td class="service-name">Security Assessment</td>
-                <td>2 weeks full assessment</td>
-                <td class="popular">5 days expedited</td>
-                <td>24 hours preliminary</td>
-              </tr>
-              <tr>
-                <td class="service-name">Infrastructure Scaling</td>
-                <td>1 week planning + execution</td>
-                <td class="popular">2-3 days rapid scaling</td>
-                <td>Same day emergency scaling</td>
-              </tr>
-              <tr>
-                <td class="service-name">Team Training</td>
-                <td>Schedule within 2 weeks</td>
-                <td class="popular">Schedule within 3 days</td>
-                <td>Next day training session</td>
-              </tr>
-              <tr>
-                <td class="service-name">Performance Optimization</td>
-                <td>1 week analysis + tuning</td>
-                <td class="popular">2 days quick optimization</td>
-                <td>Immediate performance fix</td>
-              </tr>
-              <tr>
-                <td class="service-name">Custom Integration</td>
-                <td>2-3 weeks development</td>
-                <td class="popular">1 week fast-track</td>
-                <td>48 hours critical integration</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Service Package Cards -->
+        <div class="service-packages-grid">
+          {servicePackages.map(pkg => (
+            <ServicePackageCard package={pkg} lang={lang} />
+          ))}
         </div>
 
+        <!-- Pricing Factors -->
+        <div class="pricing-factors">
+          <h3>Understanding Professional Service Pricing</h3>
+          <p class="factors-intro">Final project costs are determined by:</p>
+          <div class="factors-grid">
+            <div class="factor-item">
+              <div class="factor-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"/>
+                </svg>
+              </div>
+              <h4>Scope Complexity</h4>
+              <p>Number of systems, integrations, and dependencies involved</p>
+            </div>
+            <div class="factor-item">
+              <div class="factor-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <h4>Customization Level</h4>
+              <p>Off-the-shelf solutions vs. custom development requirements</p>
+            </div>
+            <div class="factor-item">
+              <div class="factor-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h4>Team Size</h4>
+              <p>Single expert vs. full dedicated team of specialists</p>
+            </div>
+          </div>
+          <p class="factors-note"><strong>Example:</strong> A standard infrastructure scaling across 3 systems with moderate customization typically ranges from $9,999-$15,999</p>
+        </div>
+
+        <!-- Service Types -->
+        <div class="service-types">
+          <h3>Available Services</h3>
+          <p class="service-types-intro">Click any service to see turnaround times for each package tier</p>
+
+          {serviceTypes.map((service, index) => (
+            <details class="service-type-item">
+              <summary>
+                <span class="service-type-icon" set:html={service.icon} />
+                <span class="service-type-name">{service.name}</span>
+                <span class="expand-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </span>
+              </summary>
+              <div class="service-type-details">
+                <div class="service-detail-item">
+                  <div class="detail-badge standard">Standard</div>
+                  <p>{service.standard}</p>
+                </div>
+                <div class="service-detail-item">
+                  <div class="detail-badge priority">Priority</div>
+                  <p>{service.priority}</p>
+                </div>
+                <div class="service-detail-item">
+                  <div class="detail-badge emergency">Emergency</div>
+                  <p>{service.emergency}</p>
+                </div>
+              </div>
+            </details>
+          ))}
+        </div>
+
+        <!-- Benefits -->
         <div class="services-benefits">
           <h4>Why Professional Services?</h4>
           <p><strong>The average cost of a ransomware attack is $4.62 million (IBM Security, 2023)</strong></p>
@@ -264,6 +351,7 @@ const businessPlans = [
           </ul>
         </div>
 
+        <!-- CTA -->
         <div class="services-cta">
           <h4>Need Professional Assistance?</h4>
           <p>Our experts are ready to help you succeed</p>
