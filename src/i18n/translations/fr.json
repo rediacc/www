@@ -83,7 +83,7 @@
           }
         }
       },
-      "submit": "Appliquer"
+      "submit": "Commencer"
     },
     "notice": {
       "description": "Cliquez sur Soumettre pour ouvrir votre e-mail. Nous vous répondrons dans les 48 heures.",
@@ -102,7 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "À propos de nous",
-      "contact": "Contact"
+      "contact": "Contact",
+      "team": "Équipe"
     },
     "copyright": "{{année}} Rediacc. Tous droits réservés.",
     "legalLinks": {
@@ -115,6 +116,7 @@
     },
     "productLinks": {
       "overview": "Aperçu",
+      "pricing": "Tarifs",
       "solutions": "Solutions"
     },
     "supportLinks": {
@@ -125,14 +127,14 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Commencer gratuitement",
-      "learnMore": "Apprendre encore plus",
-      "bookDemo": "Réserver une démo",
-      "freeBadge": "GRATUIT POUR TOUJOURS • Aucune carte de crédit",
       "benefits": "5 machines • Équipes illimitées • 0 $",
+      "bookDemo": "Livre démo",
+      "contactUs": "Commencez gratuitement",
+      "freeBadge": "GRATUIT POUR TOUJOURS • Pas de carte de crédit",
+      "learnMore": "Apprendre encore plus",
       "seeDetails": "Voir tous les détails"
     },
-    "subtitle": "20 octobre 2025 : AWS est tombé en panne. Coinbase, Fortnite, Signal, Zoom, tous hors ligne pendant 15 heures. Les organisations dotées d’une infrastructure multi-cloud sont restées en ligne. Es-tu prêt?",
+    "subtitle": "Survivez aux pannes de cloud. Déployez n'importe où. Basculez rapidement.",
     "title": "Infrastructure qui",
     "titleHighlight": "Survit. À chaque fois."
   },
@@ -158,8 +160,8 @@
     "search": "Recherche",
     "solutions": {
       "dataSecurity": "Sécurité des données",
-      "systemPortability": "Portabilité du système",
       "disasterRecovery": "Reprise après sinistre",
+      "systemPortability": "Portabilité du système",
       "threatResponse": "Réponse aux menaces"
     },
     "toggleMenu": "Changer de menu"
@@ -212,7 +214,7 @@
             }
           }
         },
-        "submit": "Appliquer"
+        "submit": "Commencer"
       },
       "hero": {
         "subtitle": "Remplissez le formulaire et nous vous contacterons dans les 48 heures.",
@@ -316,15 +318,26 @@
       },
       "title": "Page introuvable"
     },
+    "pricing": {
+      "hero": {
+        "subtitle": "Choisissez le plan adapté à votre entreprise. Pas de frais cachés, pas de surprises.",
+        "title": "Tarification simple et transparente"
+      },
+      "meta": {
+        "description": "Choisissez le plan adapté à votre entreprise. De l’accès communautaire gratuit à la protection de niveau entreprise. Pas de frais cachés.",
+        "keywords": "tarification, automatisation des infrastructures, tarification de la reprise après sinistre, tarification des sauvegardes, plans de continuité des activités",
+        "title": "Tarifs | Protection des infrastructures simple et transparente"
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
-          "button": "Appliquer",
+          "button": "Auditez votre sécurité",
           "subtitle": "Cryptage sans connaissance. Piste d’audit complète. Construit dans un souci de conformité.",
           "title": "Prêt pour une véritable protection des données ?"
         },
         "hero": {
-          "subtitle": "Cryptage par dépôt, vous seul pouvez le déverrouiller. Mot de passe principal pour les opérations. Vos données, votre contrôle.",
+          "subtitle": "Chiffrez tout. Auditez tout. Contrôlez tout.",
           "title": "Chiffrez tout. Contrôlez tout. Terminez la connaissance zéro."
         },
         "meta": {
@@ -395,7 +408,7 @@
                 "La conformité exige explicitement le chiffrement au repos des données"
               ],
               "description": "Quelqu'un vole votre serveur, votre disque de sauvegarde ou votre ancien matériel. Les mots de passe du système d'exploitation n'offrent aucune protection contre l'accès physique : ils démarrent à partir d'un port USB, contournent l'authentification, montent des disques et copient tout. Les données clients, les informations d’identification, les bases de données ont disparu. Les centres de données sont régulièrement victimes de vols. Le déclassement crée une exposition.",
-              "story": "Morgan Stanley a embauché des déménageurs pour mettre hors service les centres de données en 2016. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Des disques durs contenant 15 millions de dossiers clients ont été vendus aux enchères. en ligne – non crypté. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 35 millions de dollars d'amende. La plupart des appareils n'ont jamais été récupérés."
+              "story": "Morgan Stanley a embauché des déménageurs pour démanteler les centres de données en 2016. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Des disques durs contenant 15 millions de dossiers clients ont été vendus aux enchères en ligne, non cryptés. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 35 millions de dollars d'amende. La plupart des appareils n'ont jamais été récupérés."
             },
             "solution": {
               "benefits": [
@@ -415,7 +428,7 @@
       },
       "disasterRecovery": {
         "cta": {
-          "button": "Appliquer",
+          "button": "Construisez votre plan de récupération",
           "subtitle": "Places limitées disponibles.",
           "title": "Prêt à faire confiance à vos sauvegardes ?"
         },
@@ -433,13 +446,13 @@
             "problem": {
               "additionalPoints": [
                 "Les attaquants attendent délibérément que les sauvegardes propres expirent",
-                "Les périodes de conservation courtes traditionnelles laissent des vulnérabilités",
+                "Les courtes périodes de conservation traditionnelles laissent des vulnérabilités",
                 "Chaque sauvegarde complète consomme énormément de stockage, limitant la rétention",
                 "Les exigences de conformité exigent souvent des mois d’historique",
                 "Les coûts de stockage obligent à choisir entre historique et budget"
               ],
               "description": "Des périodes de conservation courtes permettent d'économiser de l'espace de stockage mais créent une vulnérabilité. Lorsque vous avez besoin de données antérieures à l'infection, elles ont déjà été écrasées. Les systèmes traditionnels ne peuvent pas se permettre une longue conservation en raison des coûts de stockage énormes.",
-              "story": "Le temps de séjour des ransomwares est tombé à moins d'un jour. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Les attaquants attendent délibérément que les sauvegardes infectées écrasent les sauvegardes propres. Les organisations avec des périodes de conservation courtes découvrent que toutes les sauvegardes contiennent des logiciels malveillants. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Le temps de séjour des ransomwares est tombé à moins d’un jour. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Les attaquants attendent délibérément que les sauvegardes infectées écrasent les sauvegardes propres. Les organisations ayant des périodes de conservation courtes découvrent que toutes les sauvegardes contiennent des logiciels malveillants. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -515,12 +528,12 @@
       },
       "systemPortability": {
         "cta": {
-          "button": "Appliquer",
+          "button": "Explorez le chemin de migration",
           "subtitle": "Un fichier portable. Sécurité de niveau militaire. Places limitées disponibles.",
           "title": "Prêt pour une véritable portabilité du système ?"
         },
         "hero": {
-          "subtitle": "Système complet dans un seul fichier. Cryptage de niveau militaire. Fonctionne partout du premier coup.",
+          "subtitle": "Un fichier portable. Sécurité de niveau militaire. Déployez n'importe où.",
           "title": "Déplacez vos systèmes n'importe où, en toute sécurité"
         },
         "meta": {
@@ -611,7 +624,7 @@
       },
       "threatResponse": {
         "cta": {
-          "button": "Appliquer",
+          "button": "Protégez vos systèmes",
           "subtitle": "Survivez aux menaces plus rapidement. Immuable. Portable. Sous votre contrôle.",
           "title": "Prêt pour la cyber-résilience ?"
         },
@@ -674,7 +687,7 @@
               "description": "Rediacc permet des tests de migration de système d'exploitation rapides et sans risque. Déployez l'infrastructure sur un nouveau système d'exploitation et vérifiez que tout fonctionne avec la charge de travail de production réelle. Si des problèmes apparaissent, annulez instantanément : aucune perte de données, aucune récupération. Une fois vérifié, engagez-vous définitivement. Les fenêtres de vulnérabilité se ferment en quelques minutes.",
               "title": "Tests de système d'exploitation sans risque"
             },
-            "subtitle": "Dans chaque difficulté se trouve la facilité <small class='subtitle-attribution'>— Sourate Al-Inshirah 94 : 5</small>",
+            "subtitle": "Dans chaque difficulté se trouve la facilité <small class='subtitle-attribution'>— Al-Inshirah 94:5</small>",
             "title": "Retards de mise à jour du système d'exploitation"
           },
           "ransomwareBackups": {
@@ -704,6 +717,57 @@
             "title": "Un ransomware cible les sauvegardes"
           }
         }
+      }
+    },
+    "team": {
+      "cta": {
+        "buttons": {
+          "contact": "Entrer en contact",
+          "learnMore": "Apprendre encore plus"
+        },
+        "subtitle": "Que ce soit en tant que client, partenaire ou membre d'une équipe, faites partie de la révolution des infrastructures.",
+        "title": "Rejoignez-nous dans notre mission"
+      },
+      "hero": {
+        "subtitle": "Des ingénieurs dédiés à rendre les catastrophes impossibles pour votre entreprise.",
+        "title": "L'infrastructure de team building qui survit"
+      },
+      "meta": {
+        "description": "Rencontrez l’infrastructure à l’épreuve des catastrophes en matière de team building. Des ingénieurs dédiés à garantir que vos systèmes survivent à tous les défis.",
+        "keywords": "Équipe Rediacc, ingénierie d'infrastructure, experts en reprise après sinistre, fiabilité du système, équipe DevOps",
+        "title": "Notre équipe | Rediacc - Construire une infrastructure qui survit"
+      },
+      "mission": {
+        "belief": "Nous pensons que chaque entreprise, quelle que soit sa taille ou son budget, mérite d'avoir accès aux mêmes outils d'infrastructure puissants que ceux utilisés par les sociétés Fortune 500. C'est pourquoi nous avons créé Rediacc : pour uniformiser les règles du jeu et permettre aux entreprises de se concentrer sur ce qu'elles font le mieux, tout en gérant la complexité de l'infrastructure.",
+        "description": "Tous les 47 jours, AI supprime une base de données de production. Chaque année, 1,71 % des disques tombent en panne. 75 % des ransomwares ciblent les sauvegardes. Nous rendons toutes ces catastrophes récupérables en 60 secondes.",
+        "title": "Notre mission : rendre les catastrophes impossibles"
+      },
+      "story": {
+        "beginning": {
+          "paragraph1": "En 2018, j'ai quitté mon poste d'ingénieur logiciel pour poursuivre la construction de ma propre vision. L'excitation m'a fait travailler 18 heures par jour et ne dormir que 4 à 5 heures. J'ai tout investi dans le projet pendant 5 à 6 mois.",
+          "paragraph2": "Ensuite, j’ai perdu de manière inattendue l’accès à toute mon infrastructure de développement. Tout ce que j'avais construit était soudainement inaccessible. Je n'avais aucune sauvegarde, et même si j'en avais, je ne pourrais pas me permettre de remplacer le matériel sur site que j'utilisais.",
+          "paragraph3": "Pour rembourser mes dettes et subvenir aux besoins de ma famille, j'ai dû reprendre un travail salarié. Il m’a fallu 20 mois pour retrouver l’accès à mon travail. Pendant cette période, je me suis éloigné de mes rêves, vivant dans l’incertitude et sous une pression financière croissante.",
+          "title": "Le début"
+        },
+        "birth": {
+          "paragraph1": "Tout a commencé avec le développement d’une logique de système de fichiers portable. A partir de là, j'ai intégré un module de sauvegarde. Vint ensuite l’un des défis les plus critiques : permettre des transferts de système en direct avec un temps d’arrêt minimal, quelle que soit la taille des données. J'ai ajouté des fonctionnalités uniques basées sur des besoins réels.",
+          "paragraph2": "C'est ainsi qu'est né Rediacc : un produit forgé à travers les défis les plus difficiles. Désormais, il est accessible à tous. Utilisez-le et ne laissez rien freiner votre entreprise : soyez prêt à survivre et à accélérer.",
+          "quote": "Lorsque j’ai perdu l’accès à mon infrastructure, je savais ce que je devais construire : un système qui rende les catastrophes impossibles.",
+          "title": "Naissance de Rediacc"
+        },
+        "title": "Notre histoire",
+        "turningPoint": {
+          "paragraph1": "Des années plus tard, j’ai continué à réfléchir à ce que je pouvais faire pour éviter qu’un tel problème ne se reproduise. J'avais besoin d'un outil qui me permettrait de déplacer mes systèmes vers un autre environnement quand je le souhaitais, de les activer quand j'en avais besoin, de les sauvegarder facilement et de les stocker en toute sécurité, quel que soit l'endroit où je les déplaçais.",
+          "paragraph2": "En 2021, j'ai découvert Docker grâce à la vidéo de NetworkChuck. J'ai été choqué par ce qui était possible. J’aurais aimé connaître cette technologie plus tôt : elle aurait pu tout changer.",
+          "paragraph3": "Mais Docker à lui seul n’a pas résolu tous mes problèmes. Le déplacement de fichiers conteneurs entre les systèmes était difficile. J'ai été confronté à des problèmes de compatibilité de propriété de fichiers et, à mesure que la taille des données augmentait, les transferts prenaient plus de temps. Plus important encore, j'ai dû maintenir les services hors ligne jusqu'à la fin de la migration, et Docker offrait des fonctionnalités de sécurité minimales.",
+          "title": "Le tournant"
+        }
+      },
+      "team": {
+        "title": "Rencontrez notre équipe"
+      },
+      "values": {
+        "title": "Nos valeurs"
       }
     }
   },
@@ -742,10 +806,10 @@
       {
         "benefits": [
           "Vérification automatique",
-          "Conservation étendue",
+          "Rétention prolongée",
           "Récupérez en quelques minutes"
         ],
-        "description": "Récupération vérifiée. Pas seulement des réclamations. Historique complet.",
+        "description": "Récupération vérifiée garantie. Sauvegardes testées. Historique complet.",
         "title": "Sauvegardes vérifiées"
       },
       {
@@ -754,7 +818,7 @@
           "Piste d'audit complète",
           "Migration sécurisée"
         ],
-        "description": "Cryptage de niveau militaire. Pistes d’audit complètes.",
+        "description": "Tout est crypté. Tout est audité. Contrôle total.",
         "title": "Contrôle du cryptage"
       }
     ],

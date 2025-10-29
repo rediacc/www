@@ -83,7 +83,7 @@
           }
         }
       },
-      "submit": "Uygula"
+      "submit": "Başlayın"
     },
     "notice": {
       "description": "E-postanızı açmak için gönder'i tıklayın. 48 saat içinde yanıt vereceğiz.",
@@ -102,7 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "Hakkımızda",
-      "contact": "Temas etmek"
+      "contact": "Temas etmek",
+      "team": "Takım"
     },
     "copyright": "{{year}} Rediacc. Her hakkı saklıdır.",
     "legalLinks": {
@@ -111,10 +112,11 @@
     },
     "links": {
       "contactSupport": "Destek Ekibiyle İletişime Geçin",
-      "returnToHome": "Ana Sayfaya Dön"
+      "returnToHome": "Ana Sayfaya Dönüş"
     },
     "productLinks": {
       "overview": "Genel Bakış",
+      "pricing": "Fiyatlandırma",
       "solutions": "Çözümler"
     },
     "supportLinks": {
@@ -125,14 +127,14 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Ücretsiz Başla",
+      "benefits": "5 makine • Sınırsız ekip • 0 $",
+      "bookDemo": "Kitap Demosu",
+      "contactUs": "Ücretsiz Başlayın",
+      "freeBadge": "KESİNLİKLE ÜCRETSİZ • Kredi kartı yok",
       "learnMore": "Daha fazla bilgi edin",
-      "bookDemo": "Demo Rezervasyonu",
-      "freeBadge": "SONSUZA KADAR ÜCRETSİZ • Kredi kartı gerektirmez",
-      "benefits": "5 makine • Sınırsız ekipler • 0 $",
-      "seeDetails": "Tüm detayları gör"
+      "seeDetails": "Tüm ayrıntıları görün"
     },
-    "subtitle": "20 Ekim 2025: AWS çöktü. Coinbase, Fortnite, Signal, Zoom; hepsi 15 saat boyunca çevrimdışı. Çoklu bulut altyapısına sahip kuruluşlar çevrimiçi kaldı. Hazır mısın?",
+    "subtitle": "Bulut kesintilerinden kurtulun. İstediğiniz yere konuşlandırın. Hızlı bir şekilde başarısız olun.",
     "title": "Altyapı",
     "titleHighlight": "Hayatta kaldı. Her zaman."
   },
@@ -158,8 +160,8 @@
     "search": "Aramak",
     "solutions": {
       "dataSecurity": "Veri Güvenliği",
-      "systemPortability": "Sistem Taşınabilirliği",
       "disasterRecovery": "Felaket Kurtarma",
+      "systemPortability": "Sistem Taşınabilirliği",
       "threatResponse": "Tehdit Yanıtı"
     },
     "toggleMenu": "Menüyü değiştir"
@@ -207,12 +209,12 @@
               "general": "Genel",
               "other": "Diğer",
               "partnership": "ortaklık",
-              "placeholder": "Birini seçin",
+              "placeholder": "Birini seç",
               "technical": "Teknik Soru"
             }
           }
         },
-        "submit": "Uygula"
+        "submit": "Başlayın"
       },
       "hero": {
         "subtitle": "Formu doldurun, 48 saat içinde sizinle iletişime geçeceğiz.",
@@ -316,15 +318,26 @@
       },
       "title": "Sayfa Bulunamadı"
     },
+    "pricing": {
+      "hero": {
+        "subtitle": "İşletmeniz için doğru planı seçin. Gizli ücret yok, sürpriz yok.",
+        "title": "Basit, Şeffaf Fiyatlandırma"
+      },
+      "meta": {
+        "description": "İşletmeniz için doğru planı seçin. Ücretsiz topluluk erişiminden kurumsal düzeyde korumaya kadar. Gizli ücret yok.",
+        "keywords": "fiyatlandırma, altyapı otomasyonu, felaket kurtarma fiyatlandırması, yedekleme fiyatlandırması, iş sürekliliği planları",
+        "title": "Fiyatlandırma | Basit, Şeffaf Altyapı Koruması"
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
-          "button": "Uygula",
+          "button": "Güvenliğinizi Denetleyin",
           "subtitle": "Sıfır bilgi şifrelemesi. Denetim izini tamamlayın. Uyumluluk göz önünde bulundurularak oluşturulmuştur.",
           "title": "Gerçek Veri Korumaya Hazır mısınız?"
         },
         "hero": {
-          "subtitle": "Repo başına şifrelemenin kilidini yalnızca siz açabilirsiniz. İşlemler için ana şifre. Sizin verileriniz, sizin kontrolünüz.",
+          "subtitle": "Her şeyi şifreleyin. Her şeyi denetleyin. Her şeyi kontrol et.",
           "title": "Her Şeyi Şifreleyin. Herşeyi Kontrol Edin. Sıfır Bilgiyi tamamlayın."
         },
         "meta": {
@@ -395,7 +408,7 @@
                 "Uyumluluk açıkça veriler için kullanımda olmayan şifrelemeyi gerektirir"
               ],
               "description": "Birisi sunucunuzu, yedek sürücünüzü veya eski donanımınızı çalıyor. İşletim sistemi şifreleri fiziksel erişime karşı sıfır koruma sağlar; USB'den önyükleme yapar, kimlik doğrulamayı atlar, diskleri bağlar, her şeyi kopyalar. Müşteri verileri, kimlik bilgileri, veritabanları; hepsi gitti. Veri merkezlerinde düzenli olarak hırsızlık yaşanıyor. Hizmetten çıkarma, açığa çıkma yaratır.",
-              "story": "Morgan Stanley, 2016 yılında veri merkezlerini hizmet dışı bırakmak için nakliyeciler kiraladı. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 15 milyon müşteri kaydına sahip sabit diskler açık artırmaya çıkarıldı çevrimiçi - şifrelenmemiş. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 35 milyon dolar para cezası. Çoğu cihaz asla kurtarılmadı."
+              "story": "Morgan Stanley, 2016 yılında veri merkezlerini hizmet dışı bırakmak için nakliyeciler kiraladı. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 15 milyon müşteri kaydına sahip sabit diskler, şifrelenmeden çevrimiçi olarak açık artırmaya çıkarıldı. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 35 milyon dolar para cezası. Çoğu cihaz asla kurtarılmadı."
             },
             "solution": {
               "benefits": [
@@ -415,7 +428,7 @@
       },
       "disasterRecovery": {
         "cta": {
-          "button": "Uygula",
+          "button": "Kurtarma Planınızı Oluşturun",
           "subtitle": "Sınırlı sayıda yer mevcuttur.",
           "title": "Yedeklemelerinize Güvenmeye Hazır mısınız?"
         },
@@ -439,7 +452,7 @@
                 "Depolama maliyetleri geçmiş ve bütçe arasında seçim yapmaya zorluyor"
               ],
               "description": "Kısa saklama süreleri depolama alanından tasarruf sağlar ancak güvenlik açığı yaratır. Bulaşma öncesindeki verilere ihtiyacınız olduğunda bunların üzerine zaten yazılmıştır. Geleneksel sistemler, büyük depolama maliyetleri nedeniyle uzun süreli saklamayı karşılayamaz.",
-              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını kasıtlı olarak bekler. Kısa saklama süresine sahip kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını bilinçli olarak bekler. Saklama süreleri kısa olan kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -449,7 +462,7 @@
                 "Uzun süre elde tutma özelliğiyle uyumluluk gereksinimlerini uygun maliyetle karşılayın",
                 "Saldırganlar saklama sürenizin bitmesini bekleyemez"
               ],
-              "description": "Rediacc'ın artımlı tekilleştirme özelliği, depolama patlaması olmadan uzatılmış yedekleme geçmişini saklamanıza olanak tanır. Yalnızca değişiklikler depolanır; yinelenen veriler depolanmaz.",
+              "description": "Rediacc'ın artımlı tekilleştirme özelliği, depolama alanında patlama olmadan genişletilmiş yedekleme geçmişini korumanıza olanak tanır. Yalnızca değişiklikler depolanır; yinelenen veriler depolanmaz.",
               "title": "Uzatılmış Geçmiş Saklama"
             },
             "subtitle": "Erken kalkan kuş solucanı yakalar <small class='subtitle-attribution'>— William Camden (1636)</small>",
@@ -515,12 +528,12 @@
       },
       "systemPortability": {
         "cta": {
-          "button": "Uygula",
+          "button": "Geçiş Yolunu Keşfedin",
           "subtitle": "Tek bir taşınabilir dosya. Askeri düzeyde güvenlik. Sınırlı sayıda yer mevcuttur.",
           "title": "Gerçek Sistem Taşınabilirliğine Hazır mısınız?"
         },
         "hero": {
-          "subtitle": "Sistemi tek dosyada tamamlayın. Askeri düzeyde şifreleme. İlk denemede her yerde çalışır.",
+          "subtitle": "Tek bir taşınabilir dosya. Askeri düzeyde güvenlik. İstediğiniz yere konuşlandırın.",
           "title": "Sistemlerinizi Her Yere Güvenle Taşıyın"
         },
         "meta": {
@@ -611,7 +624,7 @@
       },
       "threatResponse": {
         "cta": {
-          "button": "Uygula",
+          "button": "Sistemlerinizi Koruyun",
           "subtitle": "Tehditlerden daha hızlı kurtulun. Değişmez. Taşınabilir. Senin kontrolünde.",
           "title": "Siber Dayanıklılığa Hazır mısınız?"
         },
@@ -674,7 +687,7 @@
               "description": "Rediacc hızlı, risksiz işletim sistemi geçiş testlerine olanak tanır. Altyapıyı yeni bir işletim sistemine dağıtın ve her şeyin gerçek üretim iş yüküyle çalıştığını doğrulayın. Sorun ortaya çıkarsa anında geri dönün; veri kaybı yok, kurtarma yok. Güvenli olduğu doğrulandıktan sonra kalıcı olarak taahhütte bulunun. Güvenlik açığı pencereleri birkaç dakika içinde kapanır.",
               "title": "Risksiz İşletim Sistemi Testi"
             },
-            "subtitle": "Her zorluğun yanında kolaylık vardır <sma class='subtitle-attribution'>— İnşirah Suresi 94:5</small>",
+            "subtitle": "Her zorluğun içinde kolaylık vardır <sma class='subtitle-attribution'>— Al-Inshirah 94:5</small>",
             "title": "İşletim Sistemi Güncelleme Gecikmeleri"
           },
           "ransomwareBackups": {
@@ -704,6 +717,57 @@
             "title": "Fidye Yazılımı Yedeklemeleri Hedefliyor"
           }
         }
+      }
+    },
+    "team": {
+      "cta": {
+        "buttons": {
+          "contact": "İletişime Geçin",
+          "learnMore": "Daha fazla bilgi edin"
+        },
+        "subtitle": "İster müşteri, ister ortak, ister ekip üyesi olun, altyapı devriminin bir parçası olun.",
+        "title": "Misyonumuzda Bize Katılın"
+      },
+      "hero": {
+        "subtitle": "İşletmeniz için felaketleri imkansız hale getirmeye adanmış mühendisler.",
+        "title": "Hayatta Kalabilen Ekip Oluşturma Altyapısı"
+      },
+      "meta": {
+        "description": "Afete dayanıklı altyapı oluşturan ekiple tanışın. Sistemlerinizin her türlü zorluğa dayanmasını sağlamaya adanmış mühendisler.",
+        "keywords": "Rediacc ekibi, altyapı mühendisliği, felaket kurtarma uzmanları, sistem güvenilirliği, DevOps ekibi",
+        "title": "Ekibimiz | Rediacc - Ayakta Kalabilen Altyapı Oluşturmak"
+      },
+      "mission": {
+        "belief": "Büyüklüğü veya bütçesi ne olursa olsun her şirketin Fortune 500 şirketlerinin kullandığı güçlü altyapı araçlarına erişimi hak ettiğine inanıyoruz. İşte bu nedenle Rediacc'ı kurduk; biz altyapı karmaşıklığıyla uğraşırken rekabet ortamını eşitlemek ve işletmelerin en iyi yaptıkları işe odaklanmalarını sağlamak için.",
+        "description": "Yapay zeka her 47 günde bir üretim veritabanını siliyor. Her yıl disklerin %1,71'i arızalanıyor. Fidye yazılımlarının %75'i yedeklemeleri hedef alıyor. Tüm bu felaketleri 60 saniyede kurtarılabilir hale getiriyoruz.",
+        "title": "Misyonumuz: Afetleri İmkansız Hale Getirmek"
+      },
+      "story": {
+        "beginning": {
+          "paragraph1": "2018 yılında kendi vizyonumu oluşturmaya devam etmek için yazılım mühendisi olarak görevimden ayrıldım. Heyecan beni günde 18 saat çalışmaya, sadece 4-5 saat uyumaya itiyordu. 5-6 ay boyunca her şeyimi projeye döktüm.",
+          "paragraph2": "Daha sonra beklenmedik bir şekilde tüm geliştirme altyapıma erişimimi kaybettim. Yaptığım her şey bir anda erişilemez hale geldi. Yedeğim yoktu ve olsa bile, kullandığım şirket içi donanımı değiştirmeye gücüm yetmezdi.",
+          "paragraph3": "Borçlarımı ödemek ve ailemi geçindirmek için maaşlı bir işe geri dönmek zorunda kaldım. Çalışmalarıma tekrar erişim kazanmam 20 ay sürdü. Bu süre zarfında hayallerimden uzaklaştım, belirsizlikle ve artan maddi baskıyla yaşadım.",
+          "title": "Başlangıç"
+        },
+        "birth": {
+          "paragraph1": "Her şey taşınabilir bir dosya sistemi mantığı geliştirmekle başladı. Oradan bir yedekleme modülü entegre ettim. Ardından en kritik zorluklardan biri geldi: Veri boyutundan bağımsız olarak minimum kesinti süresiyle canlı sistem aktarımlarının sağlanması. Gerçek ihtiyaçlara dayalı benzersiz özellikler ekledim.",
+          "paragraph2": "Rediacc bu şekilde doğdu; en zorlu zorlukların üstesinden gelen bir ürün. Artık herkesin kullanımına açık. Kullanın ve hiçbir şeyin işinizi engellemesine izin vermeyin; hayatta kalmaya ve hızlanmaya hazır olun.",
+          "quote": "Altyapıma erişimi kaybettiğimde ne inşa etmem gerektiğini biliyordum: felaketleri imkansız hale getiren bir sistem.",
+          "title": "Rediacc'ın Doğuşu"
+        },
+        "title": "Hikayemiz",
+        "turningPoint": {
+          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolaylıkla yedekleyebileceğim ve nereye taşırsam taşıyım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
+          "paragraph2": "2021 yılında Docker'ı NetworkChuck'ın videosu aracılığıyla keşfettim. Neyin mümkün olduğu karşısında şok oldum. Keşke bu teknolojiyi daha önce bilseydim; her şeyi değiştirebilirdi.",
+          "paragraph3": "Ancak Docker tek başına tüm sorunlarımı çözmedi. Konteyner dosyalarını sistemler arasında taşımak zordu. Dosya sahipliği uyumluluk sorunlarıyla karşılaştım ve veri boyutu büyüdükçe aktarımlar daha uzun sürdü. En önemlisi, geçiş bitene kadar hizmetleri çevrimdışı tutmak zorunda kaldım ve Docker minimum güvenlik özellikleri sundu.",
+          "title": "Dönüm Noktası"
+        }
+      },
+      "team": {
+        "title": "Ekibimizle Tanışın"
+      },
+      "values": {
+        "title": "Değerlerimiz"
       }
     }
   },
@@ -745,7 +809,7 @@
           "Uzatılmış saklama",
           "Dakikalar içinde kurtarın"
         ],
-        "description": "Doğrulanmış kurtarma. Sadece iddialar değil. Tam tarih.",
+        "description": "Doğrulanmış kurtarma garantilidir. Yedeklemeler test edildi. Tarihi tamamlayın.",
         "title": "Doğrulanmış Yedeklemeler"
       },
       {
@@ -754,7 +818,7 @@
           "Tam denetim izi",
           "Taşıma açısından güvenli"
         ],
-        "description": "Askeri düzeyde şifreleme. Denetim izlerini tamamlayın.",
+        "description": "Her şey şifrelendi. Her şey denetlendi. Tam kontrol.",
         "title": "Şifreleme Kontrolü"
       }
     ],

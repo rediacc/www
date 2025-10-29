@@ -83,7 +83,7 @@
           }
         }
       },
-      "submit": "適用する"
+      "submit": "始めましょう"
     },
     "notice": {
       "description": "「送信」をクリックして電子メールを開きます。 48時間以内に返信させていただきます。",
@@ -102,7 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "私たちについて",
-      "contact": "接触"
+      "contact": "接触",
+      "team": "チーム"
     },
     "copyright": "{{年}} レディアック。 無断転載を禁じます。",
     "legalLinks": {
@@ -115,24 +116,25 @@
     },
     "productLinks": {
       "overview": "概要",
+      "pricing": "価格設定",
       "solutions": "ソリューション"
     },
     "supportLinks": {
       "contactSupport": "サポートに連絡する",
       "helpCenter": "ヘルプセンター"
     },
-    "tagline": "AI を活用した運用のためのインフラストラクチャ自動化プラットフォーム"
+    "tagline": "AI主導の運用のためのインフラストラクチャ自動化プラットフォーム"
   },
   "hero": {
     "cta": {
-      "contactUs": "無料で始める",
-      "learnMore": "もっと詳しく知る",
-      "bookDemo": "デモを予約",
-      "freeBadge": "永久無料 • クレジットカード不要",
       "benefits": "5 台のマシン • 無制限のチーム • $0",
-      "seeDetails": "すべての詳細を表示"
+      "bookDemo": "デモを予約する",
+      "contactUs": "無料で始める",
+      "freeBadge": "永久無料 • クレジットカード不要",
+      "learnMore": "もっと詳しく知る",
+      "seeDetails": "詳細を見る"
     },
-    "subtitle": "2025 年 10 月 20 日: AWS がダウンしました。 Coinbase、Fortnite、Signal、Zoom - すべて 15 時間のオフライン。 マルチクラウド インフラストラクチャを備えた組織はオンラインのままでした。 準備はできたか？",
+    "subtitle": "クラウドの停止を生き延びます。 どこにでも導入可能。 迅速にフェイルオーバーします。",
     "title": "インフラストラクチャ",
     "titleHighlight": "生き残る。 毎回。"
   },
@@ -158,8 +160,8 @@
     "search": "検索",
     "solutions": {
       "dataSecurity": "データセキュリティ",
-      "systemPortability": "システムの可搬性",
       "disasterRecovery": "災害復旧",
+      "systemPortability": "システムの移植性",
       "threatResponse": "脅威への対応"
     },
     "toggleMenu": "メニューの切り替え"
@@ -212,7 +214,7 @@
             }
           }
         },
-        "submit": "適用する"
+        "submit": "始めましょう"
       },
       "hero": {
         "subtitle": "フォームにご記入いただければ、48 時間以内にご連絡いたします。",
@@ -256,7 +258,7 @@
       "gettingStarted": "はじめる",
       "gettingStartedDesc": "Rediacc を初めてご利用ですか? 基本から始めて、基本的な概念を学びます。",
       "meta": {
-        "description": "分散タスク実行のための包括的なドキュメント、ガイド、API リファレンスで Rediacc の使用方法を学びましょう。",
+        "description": "分散タスク実行のための包括的なドキュメント、ガイド、API リファレンスを使用して、Rediacc の使用方法を学びます。",
         "keywords": "ドキュメント、API リファレンス、ガイド、インフラストラクチャ自動化、CLI リファレンス、キュー システム",
         "title": "ドキュメント | Rediacc - インフラストラクチャ自動化プラットフォーム"
       },
@@ -316,15 +318,26 @@
       },
       "title": "ページが見つかりません"
     },
+    "pricing": {
+      "hero": {
+        "subtitle": "ビジネスに最適なプランをお選びください。 隠れた料金や驚くようなことはありません。",
+        "title": "シンプルで透明性のある価格設定"
+      },
+      "meta": {
+        "description": "ビジネスに最適なプランをお選びください。 無料のコミュニティ アクセスからエンタープライズ グレードの保護まで。 隠れた手数料はありません。",
+        "keywords": "価格設定、インフラストラクチャの自動化、災害復旧の価格設定、バックアップの価格設定、事業継続計画",
+        "title": "価格 | シンプルで透過的なインフラストラクチャ保護"
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
-          "button": "適用する",
+          "button": "セキュリティを監査する",
           "subtitle": "ゼロ知識暗号化。 監査証跡を完了します。 コンプライアンスを念頭に置いて構築されています。",
           "title": "真のデータ保護の準備はできていますか?"
         },
         "hero": {
-          "subtitle": "リポジトリごとの暗号化は、自分だけがロックを解除できます。 操作用のマスターパスワード。 自分のデータ、自分のコントロール。",
+          "subtitle": "すべてを暗号化します。 すべてを監査します。 すべてをコントロールします。",
           "title": "すべてを暗号化します。 すべてをコントロールします。 完全な知識ゼロ。"
         },
         "meta": {
@@ -395,7 +408,7 @@
                 "コンプライアンスでは、保存データの暗号化を明示的に要求します"
               ],
               "description": "誰かがあなたのサーバー、バックアップドライブ、または古いハードウェアを盗みます。 OS パスワードは物理的アクセスに対する保護をまったく提供しません。USB から起動し、認証をバイパスし、ディスクをマウントし、すべてをコピーします。 顧客データ、認証情報、データベースはすべて消えてしまいました。 データセンターでは定期的に盗難が発生します。 廃止措置は危険にさらされます。",
-              "story": "モルガン スタンレーは、2016 年にデータ センターを廃止するために引越し業者を雇いました。<a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 1,500 万件の顧客記録が保存されたハード ドライブがオークションに出品されました オンライン—暗号化されていません。 <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 3,500 万ドルの罰金。 ほとんどのデバイスは回復しませんでした。"
+              "story": "モルガン スタンレーは、2016 年にデータ センターを廃止するために引っ越し業者を雇いました。<a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 1,500 万件の顧客記録が保存されたハード ドライブが、暗号化されていない状態でオンライン オークションに出品されました。 <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 3,500 万ドルの罰金。 ほとんどのデバイスは回復しませんでした。"
             },
             "solution": {
               "benefits": [
@@ -415,7 +428,7 @@
       },
       "disasterRecovery": {
         "cta": {
-          "button": "適用する",
+          "button": "回復計画を立てる",
           "subtitle": "利用できるスポットは限られています。",
           "title": "バックアップを信頼する準備はできていますか?"
         },
@@ -433,13 +446,13 @@
             "problem": {
               "additionalPoints": [
                 "攻撃者はクリーンなバックアップの有効期限が切れるのを意図的に待ちます。",
-                "従来の短期保存では脆弱性が残ります",
+                "従来の短い保存期間では脆弱性が残る",
                 "完全バックアップごとに大量のストレージが消費されるため、保存期間が制限されます",
                 "コンプライアンス要件には、多くの場合、数か月にわたる履歴が必要です",
                 "ストレージコストは歴史と予算の間で選択を迫られます"
               ],
               "description": "保存期間が短いとストレージ容量は節約されますが、脆弱性が生じます。 感染前のデータが必要な場合、そのデータはすでに上書きされています。 従来のシステムでは、膨大なストレージコストが発生するため、長期保存する余裕がありません。",
-              "story": "ランサムウェアの滞留時間は 1 日未満に短縮されました。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 攻撃者は、感染したバックアップがクリーンなバックアップを上書きするのを意図的に待ちます。 短期保存期間を持つ組織は、すべてのバックアップにマルウェアが含まれていることを発見します。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start- Attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "ランサムウェアの滞留時間は 1 日未満に短縮されました。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 攻撃者は、感染したバックアップがクリーンなバックアップを上書きするのを意図的に待ちます。 保持期間が短い組織は、すべてのバックアップにマルウェアが含まれていることを発見します。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start- Attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -449,8 +462,8 @@
                 "長期保存によりコスト効率よくコンプライアンス要件を満たします",
                 "攻撃者は保存期間が過ぎるのを待つことはできません"
               ],
-              "description": "Rediacc の増分重複排除により、ストレージを爆発的に増やすことなく、拡張されたバックアップ履歴を保持できます。 変更のみが保存され、重複データは保存されません。",
-              "title": "拡張された履歴保持"
+              "description": "Rediacc の増分重複排除により、ストレージを爆発的に増やすことなく、拡張されたバックアップ履歴を保存できます。 変更のみが保存され、重複データは保存されません。",
+              "title": "履歴の拡張保存"
             },
             "subtitle": "早起きは虫を捕まえる <small class='subtitle-attribution'>— ウィリアム カムデン (1636)</small>",
             "title": "短いバックアップ履歴"
@@ -465,11 +478,11 @@
                 "ダウンタイムが 1 時間発生するごとに、運用上および財務上の損害が倍増します"
               ],
               "description": "従来の完全バックアップでは、完全復元に時間がかかります。 最新の回復システムを備えた組織は、数時間でオンラインに戻ります。 従来のバックアップをお持ちですか? 数日間のダウンタイム、サービスのキャンセル、収益の損失。",
-              "story": "WannaCry は 2017 年 5 月に NHS を襲い、全国の病院システムをロックしました。 <a href='https://www.nao.org.uk/reports/investigation-wannacry-cyber-攻撃-and-the-nhs/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 一部の信頼は数時間で回復しました。 <a href='https://www.bridgeheadsoftware.com/2017/07/wannacry-nhs- Attack-lessons-backup-data-recovery-strategies/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 他のものは数日かかりました。 1万9000件以上の予約がキャンセルされた。 回復時間: 数時間の混乱と数日。"
+              "story": "WannaCry は 2017 年 5 月に NHS を襲い、全国の病院システムをロックしました。 <a href='https://www.nao.org.uk/reports/investigation-wannacry-cyber-攻撃-and-the-nhs/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 一部の信頼は数時間で回復しました。 <a href='https://www.bridgeheadsoftware.com/2017/07/wannacry-nhs- Attack-lessons-backup-data-recovery-strategies/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 他のものは数日かかりました。 19,000件以上の予約がキャンセルされました。 回復時間: 数時間の混乱と数日の混乱。"
             },
             "solution": {
               "benefits": [
-                "数日間のダウンタイムではなく、数分で回復します",
+                "数日にわたるダウンタイムではなく、数分で回復します",
                 "増分復元では、変更されたデータ部分のみが転送されます。",
                 "競合他社がダウンしている間、重要なシステムはオンラインに",
                 "収益の損失とサービスの中断を迅速に最小限に抑えます",
@@ -478,7 +491,7 @@
               "description": "Rediacc の増分アーキテクチャにより、迅速なリカバリが可能になります。 システム全体ではなく、変更された部分のみを復元します。 他のオペレーションがまだ復旧している間に、重要なオペレーションを数分でオンラインに戻します。",
               "title": "迅速な回復プロセス"
             },
-            "subtitle": "5 つ前の 5 つをうまく活用する <small class='subtitle-attribution'>— 預言者ムハンマド、スナン・イブン・マジャ (4240)</small>",
+            "subtitle": "5 つ前の 5 つを上手に活用する <small class='subtitle-attribution'>— 預言者ムハンマド、スナン・イブン・マジャ (4240)</small>",
             "title": "回復時間が遅い"
           },
           "unverified": {
@@ -515,18 +528,18 @@
       },
       "systemPortability": {
         "cta": {
-          "button": "適用する",
+          "button": "移行パスを探索する",
           "subtitle": "ポータブル ファイル 1 つ。 軍事レベルのセキュリティ。 利用できるスポットは限られています。",
           "title": "真のシステム移植性を実現する準備はできていますか?"
         },
         "hero": {
-          "subtitle": "1 つのファイルでシステムを完成させます。 軍事レベルの暗号化。 最初の試行でどこでも機能します。",
+          "subtitle": "ポータブル ファイル 1 つ。 軍事レベルのセキュリティ。 どこにでも導入可能。",
           "title": "システムをどこにでも安全に移動"
         },
         "meta": {
           "description": "ベンダーロックインから解放されます。 1 つのポータブル ファイル、軍用レベルの暗号化、およびあらゆるインフラストラクチャにわたるゼロ構成の展開で完全なシステムを実現します。",
           "keywords": "システムのポータビリティ、ベンダー ロックイン、インフラストラクチャのモビリティ、クラウド移行、マルチクラウド、システム暗号化、データ セキュリティ、展開の自動化",
-          "title": "ユニバーサルシステムの移植性 | インフラストラクチャをどこにでも安全に移動"
+          "title": "ユニバーサル システムの移植性 | インフラストラクチャをどこにでも安全に移動"
         },
         "problems": {
           "deployment": {
@@ -546,7 +559,7 @@
                 "ファイルの所有権はシステムの異なる ID 間でも機能します",
                 "移行操作後に手動で権限を修正する必要はありません",
                 "チーム SSH キーは共有なしで一元管理される",
-                "データベースとアプリケーションは新しいシステムをすぐに開始します",
+                "データベースとアプリケーションは新しいシステムをすぐに起動します",
                 "Ubuntu Debian CentOS 権限間の移動が機能する"
               ],
               "description": "Rediacc は、ファイルシステム レベルでユーザーの所有権を処理します。 リポジトリを新しいシステムに移行すると、ファイルの所有権は、異なるユーザー ID に関係なく自動的に機能します。 チームの SSH キーは一元管理され、開発者は資格情報を共有せずに自動的に接続します。",
@@ -591,7 +604,7 @@
                 "ベンダーロックインにより、必要なフェイルオーバーオプションが不要になります"
               ],
               "description": "1 つのクラウド プロバイダーを基盤に構築しました。 彼らが失敗すると、あなたも彼らと一緒に失敗します。 バックアップはありません。 フェイルオーバーはありません。 選択の余地はありません。 ベンダー ロックインはコストがかかるだけでなく、運用全体を停止させる単一障害点となります。",
-              "story": "2025 年 10 月 20 日。AWS US-EAST-1 DNS 障害は 15 時間続きました。 <a href='https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Coinbase、Fortnite、Signal、Zoom - オフライン。 AWS に縛られた組織には選択肢がありませんでした。 マルチリージョン アーキテクチャは自動的にフェイルオーバーしました。 <a href='https://ine.com/blog/aws-october-2025-outage-multi-region-and-cloud-lessons-learned' target='_blank' rel='noopener noreferrer' class='quote'>[2]</a> 単一クラウドは単一障害点です。"
+              "story": "2025 年 10 月 20 日。AWS US-EAST-1 DNS 障害は 15 時間続きました。 <a href='https://techcrunch.com/2025/10/21/amazon-dns-outage-breaks-much-of-the-internet/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Coinbase、Fortnite、Signal、Zoom - オフライン。 AWS に縛られた組織には選択肢がありませんでした。 マルチリージョン アーキテクチャは自動的にフェイルオーバーします。 <a href='https://ine.com/blog/aws-october-2025-outage-multi-region-and-cloud-lessons-learned' target='_blank' rel='noopener noreferrer' class='quote'>[2]</a> 単一クラウドは単一障害点です。"
             },
             "solution": {
               "benefits": [
@@ -611,7 +624,7 @@
       },
       "threatResponse": {
         "cta": {
-          "button": "適用する",
+          "button": "システムを保護する",
           "subtitle": "脅威からより早く生き残ります。 不変。 ポータブル。 あなたのコントロールで。",
           "title": "サイバーレジリエンスへの準備はできていますか?"
         },
@@ -621,7 +634,7 @@
         },
         "meta": {
           "description": "不変のバックアップ、迅速なリカバリ、インフラストラクチャの移植性により、ランサムウェア攻撃から生き残ります。 侵害されたシステムを数分で避難させます。",
-          "keywords": "ランサムウェア保護、サイバー回復力、不変バックアップ、迅速な回復、ビジネス継続性、インフラストラクチャの避難、災害復旧",
+          "keywords": "ランサムウェア保護、サイバー復元力、不変バックアップ、迅速な復旧、ビジネス継続性、インフラストラクチャの避難、災害復旧",
           "title": "ランサムウェアおよびサイバーレジリエンス ソリューション | 脅威は急速に変化する"
         },
         "problems": {
@@ -661,7 +674,7 @@
                 "セキュリティ脆弱性の窓は数週間開いたままになる"
               ],
               "description": "OSの重大な脆弱性が発見されました。 実行していない新しいバージョンのみにパッチを適用します。 移行には数週間のテストが必要です。 データを危険にさらさずに本番環境に対してテストすることはできません。 ロールバックとは完全な復元を意味します。 移行が完了する前に攻撃者が悪用しないことを願って、脆弱なままになります。",
-              "story": "Log4Shell (2021 年 12 月) 残酷な選択を強いられました。 <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 企業は OS の移行の検証に 2 ～ 3 週間を費やしました。 11 日以内にパッチが適用されたのは 45% のみでした。 一部はテスト中 4 週間以上脆弱なままでした。 <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Log4Shell (2021 年 12 月) は残酷な選択を強いられました。 <a href='https://nvd.nist.gov/vuln/detail/CVE-2021-44228' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 企業は OS の移行の検証に 2 ～ 3 週間を費やしました。 11 日以内にパッチが適用されたのは 45% のみでした。 一部はテスト中 4 週間以上脆弱なままでした。 <a href='https://www.crowdstrike.com/en-us/blog/log4j2-vulnerability-analysis-and-mitigation-recommendations/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -674,7 +687,7 @@
               "description": "Rediacc により、迅速でリスクのない OS 移行テストが可能になります。 インフラストラクチャを新しい OS にデプロイし、すべてが実際の運用ワークロードで動作することを確認します。 問題が発生した場合は、すぐに元に戻してください。データの損失や回復はありません。 安全であることが確認されたら、永続的にコミットします。 脆弱性のウィンドウは数分で閉じます。",
               "title": "リスクのない OS テスト"
             },
-            "subtitle": "あらゆる困難の中に安らぎがある <small class='subtitle-attribution'>— スーラ アル インシラ 94:5</small>",
+            "subtitle": "あらゆる困難の中に安らぎがある<small class='subtitle-attribution'>— アル・インシラ 94:5</small>",
             "title": "OSアップデートの遅延"
           },
           "ransomwareBackups": {
@@ -704,6 +717,57 @@
             "title": "ランサムウェアのターゲットのバックアップ"
           }
         }
+      }
+    },
+    "team": {
+      "cta": {
+        "buttons": {
+          "contact": "連絡する",
+          "learnMore": "もっと詳しく知る"
+        },
+        "subtitle": "顧客、パートナー、チームメンバーとして、インフラストラクチャ革命に参加してください。",
+        "title": "私たちの使命に参加しましょう"
+      },
+      "hero": {
+        "subtitle": "お客様のビジネスにおける災害を不可能にすることに専念するエンジニア。",
+        "title": "生き残るためのインフラストラクチャを構築するチーム"
+      },
+      "meta": {
+        "description": "災害に強いインフラを構築するチームを紹介します。 エンジニアは、お客様のシステムがあらゆる課題に耐えられるようにすることに専念します。",
+        "keywords": "Rediacc チーム、インフラストラクチャ エンジニアリング、災害復旧専門家、システム信頼性、DevOps チーム",
+        "title": "私たちのチーム | Rediacc - 生き残るインフラの構築"
+      },
+      "mission": {
+        "belief": "私たちは、規模や予算に関係なく、すべての企業はフォーチュン 500 企業が使用しているものと同じ強力なインフラストラクチャ ツールにアクセスする権利があると信じています。 だからこそ、私たちはインフラの複雑さに対処しながら、競争の場を平等にし、企業が最も得意なことに集中できるようにするために Rediacc を構築しました。",
+        "description": "AI は 47 日ごとに実稼働データベースを削除します。 毎年、1.71% のドライブが故障します。 ランサムウェアの 75% はバックアップをターゲットとしています。 私たちはこれらすべての災害を 60 秒以内に回復できるようにします。",
+        "title": "私たちの使命: 災害を不可能にする"
+      },
+      "story": {
+        "beginning": {
+          "paragraph1": "2018 年に私はソフトウェア エンジニアの職を離れ、自分自身のビジョンの構築を追求しました。 興奮のあまり、私は1日18時間働き続け、睡眠時間はわずか4～5時間でした。 5〜6か月間、すべてをプロジェクトに注ぎ込みました。",
+          "paragraph2": "その後、予期せずすべての開発インフラストラクチャにアクセスできなくなりました。 私が構築したものすべてに突然アクセスできなくなりました。 バックアップはありませんでした。バックアップがあったとしても、それまで使用していたオンプレミスのハードウェアを交換する余裕はありませんでした。",
+          "paragraph3": "借金を返済して家族を養うために、私はサラリーマンに戻らなければなりませんでした。 仕事に再びアクセスできるようになるまでに 20 か月かかりました。 その間、私は夢から遠ざかり、不安と増大する経済的プレッシャーを抱えて暮らしていました。",
+          "title": "始まり"
+        },
+        "birth": {
+          "paragraph1": "すべてはポータブル ファイルシステム ロジックの開発から始まりました。 そこから、バックアップ モジュールを統合しました。 次に、最も重要な課題の 1 つが生じました。それは、データ サイズに関係なく、最小限のダウンタイムでライブ システム転送を可能にすることです。 実際のニーズに基づいて独自の機能を追加しました。",
+          "paragraph2": "こうして、最も困難な課題を乗り越えて作られた製品である Rediacc が誕生しました。 今では誰でも利用できるようになりました。 これを使用して、何事にもビジネスを妨げることなく、生き残り、加速する準備を整えてください。",
+          "quote": "インフラにアクセスできなくなったとき、何を構築しなければならないか、それは災害を不可能にするシステムだということがわかりました。",
+          "title": "レディアックの誕生"
+        },
+        "title": "私たちのストーリー",
+        "turningPoint": {
+          "paragraph1": "数年後、私はこのような問題が再び起こらないようにするために何ができるかを考え続けました。 私は、いつでもシステムを別の環境に移動でき、必要なときにいつでもアクティブ化でき、簡単にバックアップでき、どこに移動しても安全に保存できるツールを必要としていました。",
+          "paragraph2": "2021 年に、NetworkChuck のビデオを通じて Docker を知りました。 何が可能なのかということに衝撃を受けました。 このテクノロジーについてもっと早く知っていればよかったと思いました。このテクノロジーによってすべてが変わったかもしれません。",
+          "paragraph3": "しかし、Docker だけですべての問題が解決されたわけではありません。 システム間でコンテナ ファイルを移動するのは困難でした。 ファイルの所有権の互換性の問題に直面し、データ サイズが大きくなるにつれて転送に時間がかかるようになりました。 最も重要なのは、移行が完了するまでサービスをオフラインにしておく必要があり、Docker は最小限のセキュリティ機能を提供していました。",
+          "title": "転換点"
+        }
+      },
+      "team": {
+        "title": "私たちのチームのご紹介"
+      },
+      "values": {
+        "title": "私たちの価値観"
       }
     }
   },
@@ -742,10 +806,10 @@
       {
         "benefits": [
           "自動検証",
-          "拡張された保存",
+          "長期保存",
           "数分で回復します"
         ],
-        "description": "回復を確認しました。 主張だけではありません。 完全な履歴。",
+        "description": "検証済みのリカバリが保証されています。 テスト済みのバックアップ。 完全な履歴。",
         "title": "検証済みのバックアップ"
       },
       {
@@ -754,7 +818,7 @@
           "完全な監査証跡",
           "移行しても安全"
         ],
-        "description": "軍事レベルの暗号化。 監査証跡を完了します。",
+        "description": "すべてが暗号化されています。 すべてが監査されました。 完全なコントロール。",
         "title": "暗号化制御"
       }
     ],

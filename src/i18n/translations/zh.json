@@ -6,7 +6,7 @@
       "nextImage": "下一张图片",
       "previousImage": "上一张图片",
       "resetZoom": "重置变焦",
-      "statusMessage": "状态信息",
+      "statusMessage": "状态消息",
       "zoomIn": "放大",
       "zoomOut": "缩小"
     },
@@ -83,7 +83,7 @@
           }
         }
       },
-      "submit": "申请"
+      "submit": "开始使用"
     },
     "notice": {
       "description": "单击提交以打开您的电子邮件。 我们将在 48 小时内回复。",
@@ -102,7 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "关于我们",
-      "contact": "接触"
+      "contact": "接触",
+      "team": "团队"
     },
     "copyright": "{{year}} 雷迪亚克。 版权所有。",
     "legalLinks": {
@@ -115,6 +116,7 @@
     },
     "productLinks": {
       "overview": "概述",
+      "pricing": "定价",
       "solutions": "解决方案"
     },
     "supportLinks": {
@@ -125,14 +127,14 @@
   },
   "hero": {
     "cta": {
+      "benefits": "5 台机器 • 无限团队 • 0 美元",
+      "bookDemo": "书籍演示",
       "contactUs": "免费开始",
-      "learnMore": "了解更多",
-      "bookDemo": "预订演示",
       "freeBadge": "永久免费 • 无需信用卡",
-      "benefits": "5 台机器 • 无限团队 • $0",
-      "seeDetails": "查看完整详情"
+      "learnMore": "了解更多",
+      "seeDetails": "查看完整详细信息"
     },
-    "subtitle": "2025 年 10 月 20 日：AWS 宕机。 Coinbase、Fortnite、Signal、Zoom——全部离线 15 小时。 拥有多云基础设施的组织保持在线状态。 你准备好了吗？",
+    "subtitle": "避免云中断。 部署在任何地方。 快速故障转移。",
     "title": "基础设施",
     "titleHighlight": "幸存下来。 每次。"
   },
@@ -158,8 +160,8 @@
     "search": "搜索",
     "solutions": {
       "dataSecurity": "数据安全",
-      "systemPortability": "系统可移植性",
       "disasterRecovery": "灾难恢复",
+      "systemPortability": "系统可移植性",
       "threatResponse": "威胁响应"
     },
     "toggleMenu": "切换菜单"
@@ -212,7 +214,7 @@
             }
           }
         },
-        "submit": "申请"
+        "submit": "开始使用"
       },
       "hero": {
         "subtitle": "填写表格，我们将在 48 小时内与您联系。",
@@ -316,15 +318,26 @@
       },
       "title": "找不到页面"
     },
+    "pricing": {
+      "hero": {
+        "subtitle": "选择适合您业务的计划。 没有隐藏费用，没有惊喜。",
+        "title": "简单、透明的定价"
+      },
+      "meta": {
+        "description": "选择适合您业务的计划。 从免费社区访问到企业级保护。 无隐藏费用。",
+        "keywords": "定价、基础设施自动化、灾难恢复定价、备份定价、业务连续性计划",
+        "title": "定价| 简单、透明的基础设施保护"
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
-          "button": "申请",
+          "button": "审核您的安全",
           "subtitle": "零知识加密。 完整的审计跟踪。 构建时牢记合规性。",
           "title": "准备好真正的数据保护了吗？"
         },
         "hero": {
-          "subtitle": "每个存储库加密只有您可以解锁。 操作主密码。 您的数据，您的控制。",
+          "subtitle": "加密一切。 审核一切。 控制一切。",
           "title": "加密一切。 控制一切。 完全零知识。"
         },
         "meta": {
@@ -336,13 +349,13 @@
           "auditTrail": {
             "problem": {
               "additionalPoints": [
-                "收购后的遗留系统多年未迁移",
+                "收购的遗留系统多年来一直未迁移",
                 "转型中的系统失去主动审计监控",
-                "不完整的迁移导致审计盲目性数据仍然暴露",
+                "不完整的迁移造成审计盲目性数据仍然暴露",
                 "已退役系统的违规行为需要数周时间才能发现",
                 "没有审计追踪意味着无法证明发生了什么"
               ],
-              "description": "基础设施迁移分阶段进行。 过渡期间留下的遗留系统脱离了审计雷达。 当审核员询问“生产了什么？”时 和“谁访问了什么？”，您无法回答认为已退役的系统。 不完整的迁移会产生盲点——保存数据的系统容易受到攻击且不受监控。",
+              "description": "基础设施迁移分阶段进行。 过渡期间留下的遗留系统不再受到审计雷达的关注。 当审核员询问“生产了什么？”时 和“谁访问了什么？”，您无法回答认为已退役的系统。 不完整的迁移会产生盲点——保存数据的系统容易受到攻击且不受监控。",
               "story": "Oracle Health 继承了 2022 年收购的旧 Cerner 服务器。 2025 年 1 月，攻击者破坏了一个未迁移的系统。 <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 一个月未检测到 — 不再监控。 262,831 份患者记录被盗。 <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patent-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 该漏洞发生在未经审计的基础设施上。"
             },
             "solution": {
@@ -395,7 +408,7 @@
                 "合规性明确要求对数据进行静态加密"
               ],
               "description": "有人窃取了您的服务器、备份驱动器或旧硬件。 操作系统密码提供针对物理访问的零保护——它们从 USB 启动、绕过身份验证、安装磁盘、复制所有内容。 客户数据、凭证、数据库——全部消失了。 数据中心经常遭遇盗窃。 退役会造成暴露。",
-              "story": "摩根士丹利 (Morgan Stanley) 于 2016 年聘请搬运工来停用数据中心。<a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 包含 1,500 万条客户记录的硬盘被拍卖 在线——未加密。 <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 罚款 3500 万美元。 大多数设备从未恢复。"
+              "story": "摩根士丹利 (Morgan Stanley) 于 2016 年聘请搬运工来停用数据中心。<a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 包含 1500 万条客户记录的硬盘在未加密的情况下在线拍卖。 <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a> 罚款 3500 万美元。 大多数设备从未恢复。"
             },
             "solution": {
               "benefits": [
@@ -415,7 +428,7 @@
       },
       "disasterRecovery": {
         "cta": {
-          "button": "申请",
+          "button": "制定您的恢复计划",
           "subtitle": "名额有限。",
           "title": "准备好信任您的备份了吗？"
         },
@@ -439,7 +452,7 @@
                 "存储成本迫使我们在历史和预算之间做出选择"
               ],
               "description": "较短的保留期可以节省存储空间，但会产生漏洞。 当您需要感染之前的数据时，它已经被覆盖了。 由于巨大的存储成本，传统系统无法承受长期保留。",
-              "story": "勒索软件的停留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 短保留期的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+              "story": "勒索软件的停留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 保留期较短的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -449,7 +462,7 @@
                 "经济高效地满足合规性要求并保持长期保留",
                 "攻击者无法等待您的保留期结束"
               ],
-              "description": "Rediacc 的增量重复数据删除功能可让您保留延长的备份历史记录，而不会造成存储爆炸。 仅存储更改，而不存储重复数据。",
+              "description": "Rediacc 的增量重复数据删除功能可让您保留扩展的备份历史记录，而不会造成存储爆炸。 仅存储更改，而不存储重复数据。",
               "title": "延长历史记录保留"
             },
             "subtitle": "早起的鸟儿有虫吃<small class='subtitle-attribution'>— William Camden (1636)</small>",
@@ -515,12 +528,12 @@
       },
       "systemPortability": {
         "cta": {
-          "button": "申请",
+          "button": "探索迁移路径",
           "subtitle": "一份便携式文件。 军用级安全性。 名额有限。",
           "title": "准备好实现真正的系统可移植性了吗？"
         },
         "hero": {
-          "subtitle": "完整的系统在一个文件中。 军用级加密。 第一次尝试就可以在任何地方工作。",
+          "subtitle": "一份便携式文件。 军用级安全性。 部署在任何地方。",
           "title": "安全地将您的系统移动到任何地方"
         },
         "meta": {
@@ -611,7 +624,7 @@
       },
       "threatResponse": {
         "cta": {
-          "button": "申请",
+          "button": "保护您的系统",
           "subtitle": "更快地应对威胁。 不变的。 便携的。 在你的掌控之中。",
           "title": "准备好网络弹性了吗？"
         },
@@ -674,7 +687,7 @@
               "description": "Rediacc 可实现快速、无风险的操作系统迁移测试。 将基础架构部署到新操作系统并验证一切是否适用于实际生产工作负载。 如果出现问题，立即恢复——不会丢失数据，也不会恢复。 一旦验证安全，永久提交。 漏洞窗口将在几分钟内关闭。",
               "title": "无风险操作系统测试"
             },
-            "subtitle": "一切困难中都有轻松<small class='subtitle-attribution'>— Surah Al-Inshirah 94:5</small>",
+            "subtitle": "一切困难中都有轻松<small class='subtitle-attribution'>— Al-Inshirah 94:5</small>",
             "title": "操作系统更新延迟"
           },
           "ransomwareBackups": {
@@ -683,7 +696,7 @@
                 "94% 的勒索软件攻击以备份基础设施为目标",
                 "攻击者等待数周以确保干净的备份被覆盖",
                 "当攻击者拥有管理员凭据时，不可变备份会失败",
-                "即使在勒索之后，备份删除也消除了恢复路径",
+                "即使在勒索之后，备份删除也会消除恢复路径",
                 "加密的提供商备份意味着提供商无法帮助恢复"
               ],
               "description": "勒索软件攻击者以备份基础设施为目标——删除或覆盖副本以消除恢复。 使用共享凭据在同一云帐户中进行备份可以让攻击者删除数月的历史记录。 即使是不可变的备份也会因管理员访问而失败。 干净的备份在您意识到之前就消失了。",
@@ -704,6 +717,57 @@
             "title": "勒索软件针对备份"
           }
         }
+      }
+    },
+    "team": {
+      "cta": {
+        "buttons": {
+          "contact": "联系我们",
+          "learnMore": "了解更多"
+        },
+        "subtitle": "无论作为客户、合作伙伴还是团队成员，都可以成为基础设施革命的一部分。",
+        "title": "加入我们，履行我们的使命"
+      },
+      "hero": {
+        "subtitle": "工程师致力于让您的企业避免灾难。",
+        "title": "幸存的团队建设基础设施"
+      },
+      "meta": {
+        "description": "认识一下构建防灾基础设施的团队。 工程师致力于确保您的系统能够应对每一个挑战。",
+        "keywords": "Rediacc 团队、基础设施工程、灾难恢复专家、系统可靠性、DevOps 团队",
+        "title": "我们的团队 | Rediacc - 构建生存的基础设施"
+      },
+      "mission": {
+        "belief": "我们相信，每家公司，无论规模或预算如何，都应该获得与财富 500 强公司使用的相同强大的基础设施工具。 这就是我们构建 Rediacc 的原因，旨在提供公平的竞争环境，让企业能够专注于自己最擅长的事情，同时我们处理基础设施的复杂性。",
+        "description": "每 47 天，AI 就会删除一个生产数据库。 每年有 1.71% 的驱动器出现故障。 75% 的勒索软件以备份为目标。 我们让所有这些灾难在 60 秒内恢复。",
+        "title": "我们的使命：让灾难不再发生"
+      },
+      "story": {
+        "beginning": {
+          "paragraph1": "2018 年，我辞去了软件工程师的职位，去追求构建自己的愿景。 兴奋让我每天工作 18 小时，只睡 4-5 小时。 我花了5-6个月的时间把所有的精力都投入到这个项目中。",
+          "paragraph2": "然后我意外地失去了对所有开发基础设施的访问权限。 我建造的一切突然变得无法访问。 我没有备份，即使有，我也无力更换我一直在使用的本地硬件。",
+          "paragraph3": "为了还清债务并养家糊口，我不得不重返带薪工作。 我花了 20 个月才重新获得工作机会。 那段时间，我的生活充满了不确定性，经济压力也越来越大，离我的梦想越来越远。",
+          "title": "开始"
+        },
+        "birth": {
+          "paragraph1": "这一切都始于开发可移植文件系统逻辑。 从那里，我集成了一个备份模块。 接下来是最关键的挑战之一：无论数据大小如何，都能以最短的停机时间实现实时系统传输。 我根据实际需要添加了独特的功能。",
+          "paragraph2": "Rediacc 就是这样诞生的——一款经过最严峻挑战打造的产品。 现在，每个人都可以使用它。 使用它，不要让任何事情阻碍您的业务 - 准备好生存和加速。",
+          "quote": "当我无法访问我的基础设施时，我知道我必须构建什么：一个使灾难不可能发生的系统。",
+          "title": "雷迪亚克的诞生"
+        },
+        "title": "我们的故事",
+        "turningPoint": {
+          "paragraph1": "多年后，我一直在思考我可以做些什么来防止这样的问题再次发生。 我需要一个工具，让我可以随时将系统移动到另一个环境，在需要时激活它们，轻松备份它们，并安全地存储它们，无论我将它们移动到哪里。",
+          "paragraph2": "2021 年，我通过 NetworkChuck 的视频发现了 Docker。 我对这一切的可能性感到震惊。 我希望我早点知道这项技术——它可以改变一切。",
+          "paragraph3": "但仅靠 Docker 并不能解决我所有的问题。 在系统之间移动容器文件很困难。 我面临文件所有权兼容性问题，并且随着数据大小的增加，传输时间更长。 最关键的是，我必须让服务保持离线状态，直到迁移完成，而 Docker 提供的安全功能最少。",
+          "title": "转折点"
+        }
+      },
+      "team": {
+        "title": "认识我们的团队"
+      },
+      "values": {
+        "title": "我们的价值观"
       }
     }
   },
@@ -742,10 +806,10 @@
       {
         "benefits": [
           "自动验证",
-          "延长保留",
+          "延长保留时间",
           "几分钟内恢复"
         ],
-        "description": "已验证恢复。 不仅仅是索赔。 完整的历史。",
+        "description": "已验证恢复保证。 已测试备份。 完整的历史。",
         "title": "已验证的备份"
       },
       {
@@ -754,7 +818,7 @@
           "完整的审计追踪",
           "迁移安全"
         ],
-        "description": "军用级加密。 完整的审计跟踪。",
+        "description": "一切都加密了。 一切都经过审核。 完全控制。",
         "title": "加密控制"
       }
     ],
