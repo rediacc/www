@@ -143,7 +143,7 @@
       "author": "Rediacc",
       "defaultDescription": "Infrastrukturautomatisierungsplattform für beschleunigte Entwicklungsvorgänge. Erhalten Sie frühzeitig Zugriff auf sofortige Entwicklungsumgebungen und Disaster Recovery der nächsten Generation.",
       "defaultKeywords": "Infrastrukturautomatisierung, KI-Betrieb, Disaster Recovery, Entwicklungsumgebungen, Model Context Protocol, DevOps, CI/CD",
-      "locale": "und_USA",
+      "locale": "und_US",
       "siteName": "Rediacc",
       "twitter": {
         "creator": "@rediacc",
@@ -319,6 +319,40 @@
       "title": "Seite nicht gefunden"
     },
     "pricing": {
+      "enterpriseCta": {
+        "button": "Kontaktieren Sie den Vertrieb",
+        "description": "Erhalten Sie maßgeschneiderten Infrastrukturschutz für Ihr Unternehmen",
+        "heading": "Benötigen Sie eine maßgeschneiderte Unternehmenslösung?"
+      },
+      "faq": {
+        "heading": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "answer": "Ja, Sie können Ihren Plan jederzeit ändern. Upgrades werden sofort wirksam und Downgrades gelten zu Beginn Ihres nächsten Abrechnungszeitraums.",
+            "question": "Kann ich meinen Plan upgraden oder downgraden?"
+          },
+          {
+            "answer": "Wir akzeptieren alle gängigen Kreditkarten (Visa, MasterCard, American Express) und unterstützen die rechnungsbasierte Abrechnung für jährliche Enterprise-Pläne.",
+            "question": "Welche Zahlungsmethoden akzeptieren Sie?"
+          },
+          {
+            "answer": "Unser Community-Plan ist für immer kostenlos. Für Geschäftspläne wenden Sie sich bitte an unser Vertriebsteam, um Testoptionen zu besprechen.",
+            "question": "Gibt es eine kostenlose Testversion?"
+          },
+          {
+            "answer": "Community-Pläne beinhalten Community-Unterstützung. Business-Pläne beinhalten vorrangigen E-Mail-Support und Premium/Elite-Pläne umfassen Telefonsupport rund um die Uhr und engagierte Kundenbetreuer.",
+            "question": "Was ist im Support enthalten?"
+          }
+        ]
+      },
+      "finalCta": {
+        "buttons": {
+          "startFree": "Kostenlos starten",
+          "talkToSales": "Sprechen Sie mit dem Vertrieb"
+        },
+        "description": "Schließen Sie sich Teams an, die ihre Infrastruktur mit Rediacc schützen",
+        "heading": "Bereit zum Einstieg?"
+      },
       "hero": {
         "subtitle": "Wählen Sie den richtigen Plan für Ihr Unternehmen. Keine versteckten Gebühren, keine Überraschungen.",
         "title": "Einfache, transparente Preisgestaltung"
@@ -327,6 +361,211 @@
         "description": "Wählen Sie den richtigen Plan für Ihr Unternehmen. Vom kostenlosen Community-Zugang bis zum Schutz auf Unternehmensniveau. Keine versteckten Gebühren.",
         "keywords": "Preise, Infrastrukturautomatisierung, Preise für Disaster Recovery, Backup-Preise, Geschäftskontinuitätspläne",
         "title": "Preise | Einfacher, transparenter Infrastrukturschutz"
+      },
+      "plans": {
+        "advanced": {
+          "description": "Für wachsende Teams und Produktionsauslastungen",
+          "features": [
+            "24-Stunden-Job-Timeout",
+            "5 aktive Jobs",
+            "2 reservierte Jobs",
+            "20 Maschinen",
+            "50 Repositories",
+            "50 GB maximale Repo-Größe",
+            "14-tägige Audit-Protokolle",
+            "Vorrangiger Support"
+          ],
+          "name": "Fortschrittlich"
+        },
+        "community": {
+          "description": "Perfekt für persönliche Projekte und Tests",
+          "features": [
+            "Unbegrenzte Benutzer und Teams",
+            "Unbegrenzte Regionen und Speicherplatz",
+            "Unbegrenzte Brücken",
+            "2-Stunden-Job-Timeout",
+            "2 aktive Jobs",
+            "1 reservierter Job",
+            "5 Maschinen",
+            "10 Repositories",
+            "10 GB maximale Repo-Größe",
+            "7-Tage-Audit-Protokolle"
+          ],
+          "name": "Gemeinschaft"
+        },
+        "elite": {
+          "description": "Für Unternehmen mit individuellen Anforderungen",
+          "features": [
+            "96+ Stunden Job-Timeout",
+            "10+ aktive Jobs",
+            "5+ reservierte Jobs",
+            "Über 400 Maschinen",
+            "Über 1000 Repositories",
+            "1 TB+ maximale Repo-Größe",
+            "Über 90 Tage Audit-Logs",
+            "Dedizierter Account Manager"
+          ],
+          "name": "Elite",
+          "priceNote": "*Beginnt um"
+        },
+        "premium": {
+          "description": "Für etablierte Teams mit kritischer Infrastruktur",
+          "features": [
+            "72-Stunden-Job-Timeout",
+            "7 aktive Jobs",
+            "3 reservierte Jobs",
+            "100 Maschinen",
+            "250 Repositories",
+            "250 GB maximale Repo-Größe",
+            "30-Tage-Audit-Protokolle",
+            "24/7-Support"
+          ],
+          "name": "Prämie"
+        }
+      },
+      "professionalServices": {
+        "benefits": {
+          "description": "Unsere professionellen Dienstleistungen stellen sicher, dass Sie bei kritischen Infrastrukturherausforderungen nie allein sind.",
+          "heading": "Warum professionelle Dienstleistungen?",
+          "items": [
+            "Ein engagiertes Expertenteam wird Ihrem Projekt zugewiesen",
+            "Garantierte Reaktionszeiten mit SLA",
+            "Wechseln Sie nach Bedarf zwischen den Serviceebenen",
+            "24/7-Notfall-Hotline für die Notfallstufe"
+          ],
+          "statistics": [
+            "Die durchschnittlichen Kosten eines Ransomware-Angriffs betragen 4,62 Millionen US-Dollar (IBM Security, 2023).",
+            "Die durchschnittlichen Ausfallkosten betragen für Unternehmen 5.600 US-Dollar pro Minute"
+          ]
+        },
+        "cta": {
+          "button": "Termin für Beratung vereinbaren",
+          "description": "Unsere Experten sind bereit, Ihnen zum Erfolg zu verhelfen",
+          "heading": "Benötigen Sie professionelle Unterstützung?"
+        },
+        "header": {
+          "badge": "Beschleunigen Sie Ihren Erfolg mit professioneller Unterstützung",
+          "eligibility": "Berechtigung: Professionelle Dienste sind nur für Kunden des Advanced-, Premium- und Elite-Plans verfügbar.",
+          "subtitle": "Holen Sie sich kompetente Hilfe, wenn Sie sie am meisten brauchen",
+          "title": "Professionelle Servicepakete"
+        },
+        "packages": {
+          "emergency": {
+            "benefits": [
+              "Sofortige Antwort",
+              "Engagiertes Team rund um die Uhr",
+              "Nur kritische Situationen"
+            ],
+            "description": "Sofortige Reaktion in kritischen Situationen",
+            "name": "Notfall",
+            "turnaround": "Am selben Tag"
+          },
+          "priority": {
+            "benefits": [
+              "Schnelle Ausführung",
+              "Erweiterter Support",
+              "Ideal für dringende Bedürfnisse"
+            ],
+            "description": "Beschleunigen Sie Ihr Projekt mit vorrangiger Ausführung",
+            "name": "Priorität",
+            "turnaround": "24–48 Stunden"
+          },
+          "standard": {
+            "benefits": [
+              "Standardbearbeitungszeit",
+              "Unterstützung während der Geschäftszeiten",
+              "Bestes Preis-Leistungs-Verhältnis für geplante Projekte"
+            ],
+            "description": "Standarddurchlaufzeit für geplante Projekte",
+            "name": "Standard",
+            "turnaround": "3-5 Werktage"
+          }
+        },
+        "pricingFactors": {
+          "factors": [
+            {
+              "description": "Anzahl der beteiligten Systeme, Integrationen und Abhängigkeiten",
+              "title": "Umfangskomplexität"
+            },
+            {
+              "description": "Standardlösungen vs. individuelle Entwicklungsanforderungen",
+              "title": "Anpassungsebene"
+            },
+            {
+              "description": "Einzelner Experte vs. voll engagiertes Spezialistenteam",
+              "title": "Teamgröße"
+            }
+          ],
+          "heading": "Preisgestaltung für professionelle Dienstleistungen verstehen",
+          "intro": "Die endgültigen Projektkosten werden bestimmt durch:",
+          "note": "Beispiel: Die Skalierung einer Standardinfrastruktur auf drei Systeme mit moderater Anpassung liegt typischerweise zwischen 9.999 und 15.999 US-Dollar"
+        },
+        "serviceTypes": {
+          "badgeLabels": {
+            "emergency": "Notfall",
+            "priority": "Priorität",
+            "standard": "Standard"
+          },
+          "heading": "Verfügbare Dienste",
+          "intro": "Klicken Sie auf einen beliebigen Dienst, um die Bearbeitungszeiten für jede Paketstufe anzuzeigen",
+          "services": [
+            {
+              "emergency": "Sofortige Bewertung + kritische Systeme online am selben Tag + vollständige Migration beginnt",
+              "name": "Datenmigration",
+              "priority": "Schnelle Einrichtung der Migrationspipeline + Übertragung der Kerndaten innerhalb von 48 Stunden",
+              "standard": "Vollständige End-to-End-Migration mit vollständiger Validierung"
+            },
+            {
+              "emergency": "Sofortige Eindämmung + Wiederherstellung kritischer Systeme am selben Tag + Beginn der vollständigen Wiederherstellung",
+              "name": "Ransomware-Wiederherstellung",
+              "priority": "Schnelle Bedrohungsanalyse + Wiederherstellung des Kernbetriebs innerhalb von 48 Stunden",
+              "standard": "Vollständige Wiederherstellung mit Forensik und Härtung"
+            },
+            {
+              "emergency": "Kritischer Schwachstellenscan + Hochrisiko-Patches werden noch am selben Tag bereitgestellt + vollständige Prüfung beginnt",
+              "name": "Sicherheitsbewertung",
+              "priority": "Umfassende Schwachstellenbewertung + Sanierungsplan innerhalb von 48 Stunden",
+              "standard": "Vollständiges Sicherheitsaudit mit Implementierungs-Roadmap"
+            },
+            {
+              "emergency": "Kritische Ressourcen werden am selben Tag bereitgestellt + automatische Skalierung konfiguriert + der vollständige Plan beginnt",
+              "name": "Skalierung der Infrastruktur",
+              "priority": "Schnelle Kapazitätssteigerung + Überwachungseinrichtung innerhalb von 48 Stunden",
+              "standard": "Komplette Neugestaltung der Infrastruktur mit Optimierung"
+            },
+            {
+              "emergency": "Einweisung in kritische Verfahren am selben Tag + Vorbereitung der Reaktion auf Vorfälle + Beginn des vollständigen Programms",
+              "name": "Teamtraining",
+              "priority": "Intensiver praktischer Workshop + wichtige Arbeitsabläufe innerhalb von 2 Tagen abgedeckt",
+              "standard": "Umfangreiches mehrtägiges Schulungsprogramm"
+            },
+            {
+              "emergency": "Kritischer Engpass erkannt + sofortiger Hotfix am selben Tag bereitgestellt + vollständige Optimierung beginnt",
+              "name": "Leistungsoptimierung",
+              "priority": "Schnelle Profilerstellung + wirkungsvolle Optimierungen, die innerhalb von 48 Stunden bereitgestellt werden",
+              "standard": "Tiefgreifende Analyse mit umfassender Leistungsoptimierung"
+            },
+            {
+              "emergency": "Kritische Verbindung wird am selben Tag hergestellt + grundlegender Datenfluss funktioniert + vollständige Entwicklung beginnt",
+              "name": "Benutzerdefinierte Integration",
+              "priority": "Kernintegrationsfunktionen und wesentliche Funktionen sind innerhalb von 48 Stunden verfügbar",
+              "standard": "Vollständige Integration mit Tests und Dokumentation"
+            }
+          ]
+        }
+      },
+      "toggleButtons": {
+        "businesses": "Für Unternehmen",
+        "individuals": "Für Einzelpersonen"
+      },
+      "ui": {
+        "contactSales": "Kontaktieren Sie den Vertrieb",
+        "getStarted": "Legen Sie los",
+        "keyBenefits": "Hauptvorteile",
+        "learnMore": "Erfahren Sie mehr",
+        "popular": "Am beliebtesten",
+        "startingAt": "*Beginnt um",
+        "whatsIncluded": "Was ist enthalten:"
       }
     },
     "solutions": {
@@ -696,7 +935,7 @@
                 "94 Prozent der Ransomware-Angriffe zielen auf die Backup-Infrastruktur ab",
                 "Angreifer warten wochenlang darauf, sicherzustellen, dass saubere Backups überschrieben werden",
                 "Unveränderliche Backups schlagen fehl, wenn Angreifer über Administratoranmeldeinformationen verfügen",
-                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldforderung",
+                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldzahlung",
                 "Verschlüsselte Anbieter-Backups bedeuten, dass Anbieter bei der Wiederherstellung nicht helfen können"
               ],
               "description": "Ransomware-Angreifer zielen auf die Backup-Infrastruktur ab und löschen oder überschreiben Kopien, um eine Wiederherstellung zu verhindern. Backups im selben Cloud-Konto mit gemeinsamen Anmeldeinformationen ermöglichen es Angreifern, den Verlauf von Monaten zu löschen. Selbst unveränderliche Backups schlagen bei Administratorzugriff fehl. Saubere Backups verschwinden, bevor Sie es merken.",
@@ -738,7 +977,7 @@
         "title": "Unser Team | Rediacc – Aufbau einer Infrastruktur, die überlebt"
       },
       "mission": {
-        "belief": "Wir glauben, dass jedes Unternehmen, unabhängig von Größe oder Budget, Zugriff auf dieselben leistungsstarken Infrastrukturtools verdient, die Fortune-500-Unternehmen verwenden. Aus diesem Grund haben wir Rediacc entwickelt – um gleiche Wettbewerbsbedingungen zu schaffen und Unternehmen die Möglichkeit zu geben, sich auf das zu konzentrieren, was sie am besten können, während wir die Komplexität der Infrastruktur bewältigen.",
+        "belief": "Wir glauben, dass jedes Unternehmen, unabhängig von Größe oder Budget, Zugriff auf dieselben leistungsstarken Infrastrukturtools verdient, die Fortune-500-Unternehmen verwenden. Deshalb haben wir Rediacc entwickelt – um gleiche Wettbewerbsbedingungen zu schaffen und Unternehmen die Möglichkeit zu geben, sich auf das zu konzentrieren, was sie am besten können, während wir die Komplexität der Infrastruktur bewältigen.",
         "description": "Alle 47 Tage löscht AI eine Produktionsdatenbank. Jedes Jahr fallen 1,71 % der Laufwerke aus. 75 % der Ransomware zielt auf Backups ab. Wir machen alle diese Katastrophen in 60 Sekunden behebbar.",
         "title": "Unsere Mission: Katastrophen unmöglich machen"
       },

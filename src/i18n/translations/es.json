@@ -319,6 +319,40 @@
       "title": "Página no encontrada"
     },
     "pricing": {
+      "enterpriseCta": {
+        "button": "Contacto Ventas",
+        "description": "Obtenga protección de infraestructura personalizada para su organización",
+        "heading": "¿Necesita una solución empresarial personalizada?"
+      },
+      "faq": {
+        "heading": "Preguntas frecuentes",
+        "items": [
+          {
+            "answer": "Sí, puedes cambiar tu plan en cualquier momento. Las actualizaciones entran en vigencia de inmediato y las rebajas se aplicarán al comienzo de su próximo ciclo de facturación.",
+            "question": "¿Puedo actualizar o degradar mi plan?"
+          },
+          {
+            "answer": "Aceptamos todas las principales tarjetas de crédito (Visa, MasterCard, American Express) y admitimos facturación basada en facturas para planes empresariales anuales.",
+            "question": "¿Qué métodos de pago aceptan?"
+          },
+          {
+            "answer": "Nuestro plan Community es gratuito para siempre. Para planes comerciales, comuníquese con nuestro equipo de ventas para analizar las opciones de prueba.",
+            "question": "¿Hay una prueba gratuita disponible?"
+          },
+          {
+            "answer": "Los planes comunitarios incluyen apoyo comunitario. Los planes comerciales incluyen soporte prioritario por correo electrónico y los planes Premium/Elite incluyen soporte telefónico las 24 horas, los 7 días de la semana y administradores de cuentas dedicados.",
+            "question": "¿Qué incluye el soporte?"
+          }
+        ]
+      },
+      "finalCta": {
+        "buttons": {
+          "startFree": "Comience gratis",
+          "talkToSales": "Habla con Ventas"
+        },
+        "description": "Únase a equipos que protegen su infraestructura con Rediacc",
+        "heading": "¿Listo para empezar?"
+      },
       "hero": {
         "subtitle": "Elija el plan adecuado para su negocio. Sin cargos ocultos, sin sorpresas.",
         "title": "Precios simples y transparentes"
@@ -327,6 +361,211 @@
         "description": "Elija el plan adecuado para su negocio. Desde acceso comunitario gratuito hasta protección de nivel empresarial. Sin tarifas ocultas.",
         "keywords": "precios, automatización de infraestructura, precios de recuperación ante desastres, precios de respaldo, planes de continuidad del negocio",
         "title": "Precios | Protección de infraestructura simple y transparente"
+      },
+      "plans": {
+        "advanced": {
+          "description": "Para equipos en crecimiento y cargas de trabajo de producción",
+          "features": [
+            "Tiempo de espera de trabajo de 24 horas",
+            "5 trabajos activos",
+            "2 trabajos reservados",
+            "20 máquinas",
+            "50 repositorios",
+            "Tamaño máximo de repositorio de 50 GB",
+            "Registros de auditoría de 14 días",
+            "Soporte prioritario"
+          ],
+          "name": "Avanzada"
+        },
+        "community": {
+          "description": "Perfecto para proyectos personales y pruebas.",
+          "features": [
+            "Usuarios y equipos ilimitados",
+            "Regiones y almacenamiento ilimitados",
+            "Puentes ilimitados",
+            "Tiempo de espera de trabajo de 2 horas",
+            "2 trabajos activos",
+            "1 trabajo reservado",
+            "5 maquinas",
+            "10 repositorios",
+            "Tamaño máximo de repositorio de 10 GB",
+            "Registros de auditoría de 7 días"
+          ],
+          "name": "Comunidad"
+        },
+        "elite": {
+          "description": "Para empresas con requisitos personalizados",
+          "features": [
+            "Tiempo de espera del trabajo de más de 96 horas",
+            "Más de 10 trabajos activos",
+            "Más de 5 trabajos reservados",
+            "Más de 400 máquinas",
+            "Más de 1000 repositorios",
+            "Tamaño máximo de repositorio de 1 TB+",
+            "Registros de auditoría de más de 90 días",
+            "Gerente de cuenta dedicada"
+          ],
+          "name": "Élite",
+          "priceNote": "*A partir de"
+        },
+        "premium": {
+          "description": "Para equipos establecidos con infraestructura crítica",
+          "features": [
+            "Tiempo de espera de trabajo de 72 horas",
+            "7 trabajos activos",
+            "3 trabajos reservados",
+            "100 máquinas",
+            "250 repositorios",
+            "Tamaño máximo de repositorio de 250 GB",
+            "Registros de auditoría de 30 días",
+            "Soporte 24 horas al día, 7 días a la semana"
+          ],
+          "name": "De primera calidad"
+        }
+      },
+      "professionalServices": {
+        "benefits": {
+          "description": "Nuestros servicios profesionales garantizan que nunca esté solo cuando enfrente desafíos críticos de infraestructura.",
+          "heading": "¿Por qué servicios profesionales?",
+          "items": [
+            "Equipo dedicado de expertos asignados a su proyecto",
+            "Tiempos de respuesta garantizados con SLA",
+            "Cambie entre niveles de servicio según sea necesario",
+            "Línea directa de emergencia 24 horas al día, 7 días a la semana para el nivel de Emergencia"
+          ],
+          "statistics": [
+            "El coste medio de un ataque de ransomware es de 4,62 millones de dólares (IBM Security, 2023)",
+            "El coste medio del tiempo de inactividad es de 5.600 dólares por minuto para las empresas."
+          ]
+        },
+        "cta": {
+          "button": "Programar consulta",
+          "description": "Nuestros expertos están listos para ayudarle a tener éxito",
+          "heading": "¿Necesita asistencia profesional?"
+        },
+        "header": {
+          "badge": "Acelere su éxito con asistencia profesional",
+          "eligibility": "Elegibilidad: Los servicios profesionales están disponibles solo para clientes de los planes Advanced, Premium y Elite.",
+          "subtitle": "Obtenga ayuda de expertos cuando más la necesite",
+          "title": "Paquetes de servicios profesionales"
+        },
+        "packages": {
+          "emergency": {
+            "benefits": [
+              "Respuesta inmediata",
+              "Equipo dedicado 24 horas al día, 7 días a la semana",
+              "Sólo situaciones críticas"
+            ],
+            "description": "Respuesta inmediata ante situaciones críticas.",
+            "name": "Emergencia",
+            "turnaround": "el mismo dia"
+          },
+          "priority": {
+            "benefits": [
+              "Ejecución rápida",
+              "Soporte en horario extendido",
+              "Ideal para necesidades urgentes"
+            ],
+            "description": "Acelere su proyecto con ejecución prioritaria",
+            "name": "Prioridad",
+            "turnaround": "24-48 horas"
+          },
+          "standard": {
+            "benefits": [
+              "Tiempo de respuesta estándar",
+              "Soporte en horario comercial",
+              "El mejor valor para proyectos planificados"
+            ],
+            "description": "Tiempo de respuesta estándar para proyectos planificados",
+            "name": "Estándar",
+            "turnaround": "3-5 días hábiles"
+          }
+        },
+        "pricingFactors": {
+          "factors": [
+            {
+              "description": "Número de sistemas, integraciones y dependencias involucradas",
+              "title": "Complejidad del alcance"
+            },
+            {
+              "description": "Soluciones listas para usar frente a requisitos de desarrollo personalizados",
+              "title": "Nivel de personalización"
+            },
+            {
+              "description": "Experto único versus equipo completo de especialistas dedicados",
+              "title": "Tamaño del equipo"
+            }
+          ],
+          "heading": "Comprensión del precio de los servicios profesionales",
+          "intro": "Los costos finales del proyecto están determinados por:",
+          "note": "Ejemplo: una infraestructura estándar que se escala en 3 sistemas con una personalización moderada generalmente oscila entre $ 9 999 y $ 15 999"
+        },
+        "serviceTypes": {
+          "badgeLabels": {
+            "emergency": "Emergencia",
+            "priority": "Prioridad",
+            "standard": "Estándar"
+          },
+          "heading": "Servicios disponibles",
+          "intro": "Haga clic en cualquier servicio para ver los tiempos de respuesta para cada nivel de paquete",
+          "services": [
+            {
+              "emergency": "Evaluación inmediata + sistemas críticos en línea el mismo día + comienza la migración completa",
+              "name": "Migración de datos",
+              "priority": "Configuración rápida del proceso de migración + transferencia de datos principales en 48 horas",
+              "standard": "Migración completa de un extremo a otro con validación completa"
+            },
+            {
+              "emergency": "Contención inmediata + sistemas críticos restaurados el mismo día + comienza la recuperación completa",
+              "name": "Recuperación de ransomware",
+              "priority": "Evaluación rápida de amenazas + operaciones centrales restauradas en 48 horas",
+              "standard": "Recuperación completa con análisis forense y endurecimiento."
+            },
+            {
+              "emergency": "Exploración de vulnerabilidades críticas + parches de alto riesgo implementados el mismo día + comienza la auditoría completa",
+              "name": "Evaluación de seguridad",
+              "priority": "Evaluación integral de vulnerabilidad + plan de remediación en 48h",
+              "standard": "Auditoría de seguridad completa con hoja de ruta de implementación"
+            },
+            {
+              "emergency": "Recursos críticos aprovisionados el mismo día + escalado automático configurado + comienza el plan completo",
+              "name": "Escalamiento de infraestructura",
+              "priority": "Aumento rápido de la capacidad + configuración de monitoreo en 48 horas",
+              "standard": "Rediseño completo de infraestructura con optimización."
+            },
+            {
+              "emergency": "Sesión informativa sobre procedimientos críticos el mismo día + preparación de respuesta a incidentes + comienza el programa completo",
+              "name": "Entrenamiento en equipo",
+              "priority": "Taller práctico intensivo + flujos de trabajo clave cubiertos en 2 días",
+              "standard": "Programa de formación integral de varios días."
+            },
+            {
+              "emergency": "Se identifica un cuello de botella crítico + se implementa una revisión inmediata el mismo día + comienza la optimización completa",
+              "name": "Optimización del rendimiento",
+              "priority": "Creación de perfiles rápida + optimizaciones de alto impacto implementadas en 48 horas",
+              "standard": "Análisis profundo con ajuste integral del rendimiento"
+            },
+            {
+              "emergency": "Conexión crítica establecida el mismo día + flujo de datos básico funcionando + comienza el desarrollo completo",
+              "name": "Integración personalizada",
+              "priority": "Integración principal funcional + funciones esenciales disponibles en 48 horas",
+              "standard": "Integración completa con pruebas y documentación."
+            }
+          ]
+        }
+      },
+      "toggleButtons": {
+        "businesses": "Para empresas",
+        "individuals": "Para particulares"
+      },
+      "ui": {
+        "contactSales": "Contacto Ventas",
+        "getStarted": "Empezar",
+        "keyBenefits": "Beneficios clave",
+        "learnMore": "Más información",
+        "popular": "mas popular",
+        "startingAt": "*A partir de",
+        "whatsIncluded": "Qué incluye:"
       }
     },
     "solutions": {
