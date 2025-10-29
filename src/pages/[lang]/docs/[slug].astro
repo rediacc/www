@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import ContentLayout from '../../../layouts/ContentLayout.astro';
+import DocsLayout from '../../../layouts/DocsLayout.astro';
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
 
@@ -56,13 +56,12 @@ const baseSlug = slugParts.length > 1 ? slugParts[slugParts.length - 1] : doc.sl
 const isFallback = Astro.params.lang !== currentLang;
 ---
 
-<ContentLayout
+<DocsLayout
   frontmatter={doc.data}
   url={`/${Astro.params.lang}/docs/${baseSlug}`}
   currentLang={Astro.params.lang as Language}
   availableLanguages={translations}
   showFallbackNotice={isFallback}
-  collection="docs"
 >
   <Content />
-</ContentLayout>
+</DocsLayout>

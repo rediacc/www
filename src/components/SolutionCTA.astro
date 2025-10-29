@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { Language } from '../i18n/types';
+import { EXTERNAL_LINKS } from '../config/constants';
 
 export interface Props {
   title: string;
@@ -22,10 +23,10 @@ const {
   lang = 'en'
 } = Astro.props;
 
-const ctaLink = buttonHref || `/${lang}/contact`;
+const ctaLink = buttonHref || EXTERNAL_LINKS.SCHEDULE_CONSULTATION;
 ---
 
-<section class="solution-cta">
+<section id="get-started" class="solution-cta">
   <div class="container">
     <div class="cta-grid">
       <div class="cta-image">
@@ -39,7 +40,7 @@ const ctaLink = buttonHref || `/${lang}/contact`;
       <div class="cta-content">
         <h2 class="cta-title">{title}</h2>
         <p class="cta-subtitle">{subtitle}</p>
-        <a href={ctaLink} class="btn btn-primary btn-large">
+        <a href={ctaLink} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
           {buttonText}
         </a>
       </div>

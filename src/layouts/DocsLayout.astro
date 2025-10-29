@@ -1,0 +1,484 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import LanguageSwitcher from '../components/LanguageSwitcher';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { getCollection } from 'astro:content';
+import type { Language } from '../i18n/types';
+import { createTranslator } from '../i18n/utils';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    category?: string;
+  };
+  url: string;
+  currentLang: Language;
+  availableLanguages?: Array<{ lang: Language; url: string }>;
+  showFallbackNotice?: boolean;
+}
+
+const { frontmatter, url, currentLang, availableLanguages = [], showFallbackNotice = false } = Astro.props;
+
+// Fetch all docs for navigation
+const allDocs = await getCollection('docs');
+const docs = allDocs
+  .filter((doc) => doc.data.language === currentLang)
+  .sort((a, b) => {
+    const categorySort = (a.data.category || 'other').localeCompare(
+      b.data.category || 'other'
+    );
+    if (categorySort !== 0) return categorySort;
+    return (a.data.order ?? 999) - (b.data.order ?? 999);
+  });
+
+// Extract base slug helper function (removes language prefix)
+const getBaseSlug = (slug: string) => {
+  const parts = slug.split('/');
+  return parts.length > 1 ? parts[parts.length - 1] : slug;
+};
+
+// Group docs by category
+const docsByCategory = docs.reduce((acc, doc) => {
+  const category = doc.data.category || 'Other';
+  if (!acc[category]) acc[category] = [];
+  acc[category].push(doc);
+  return acc;
+}, {} as Record<string, typeof docs>);
+
+const categories = Object.keys(docsByCategory).sort();
+
+// Generate breadcrumbs
+const { t } = createTranslator(currentLang);
+const breadcrumbItems = [
+  {
+    name: t('navigation.home'),
+    url: `/${currentLang}/`
+  },
+  {
+    name: t('navigation.docs'),
+    url: `/${currentLang}/docs/`
+  },
+  {
+    name: frontmatter.title,
+    url: url
+  }
+];
+
+// Generate table of contents from headings
+function generateTOC(content: string) {
+  const headingRegex = /<h([2-6])[^>]*>(.*?)<\/h\1>/gi;
+  const headings: Array<{ level: number; title: string; id: string }> = [];
+  let match;
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const level = parseInt(match[1]);
+    const title = match[2].replace(/<[^>]+>/g, ''); // Strip inner HTML tags
+    const id = title
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-');
+
+    headings.push({ level, title, id });
+  }
+
+  return headings;
+}
+
+const toc = generateTOC(await Astro.slots.render('default'));
+
+// Get current doc slug for active state
+const currentSlug = url.split('/').pop();
+---
+
+<BaseLayout
+  title={frontmatter.title}
+  description={frontmatter.description}
+  lang={currentLang}
+>
+  <div class="docs-layout">
+    <aside class="docs-sidebar">
+      <nav class="docs-nav">
+        <h2 class="nav-title">{t('pages.docs.title')}</h2>
+        <ul class="category-list">
+          {categories.map(category => (
+            <li class="category-item">
+              <span class="category-header">{category}</span>
+              <ul class="doc-list">
+                {docsByCategory[category].map(doc => {
+                  const docSlug = getBaseSlug(doc.slug);
+                  const isActive = docSlug === currentSlug;
+                  return (
+                    <li>
+                      <a
+                        href={`/${currentLang}/docs/${docSlug}`}
+                        class={`doc-link ${isActive ? 'active' : ''}`}
+                      >
+                        {doc.data.title}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="docs-content">
+      <article class="docs-article">
+        <Breadcrumb items={breadcrumbItems} />
+
+        <header class="article-header">
+          {availableLanguages.length > 0 && (
+            <LanguageSwitcher
+              client:visible
+              currentLang={currentLang}
+              availableLanguages={availableLanguages}
+              showFallbackNotice={showFallbackNotice}
+            />
+          )}
+
+          <h1 class="article-title">{frontmatter.title}</h1>
+
+          {frontmatter.description && (
+            <p class="article-description">{frontmatter.description}</p>
+          )}
+        </header>
+
+        <div class="article-body">
+          <slot />
+        </div>
+      </article>
+    </main>
+
+    {toc.length > 0 && (
+      <aside class="toc-sidebar">
+        <nav class="toc-nav">
+          <h3 class="toc-title">{t('pages.docs.tableOfContents')}</h3>
+          <ul class="toc-list">
+            {toc.map(heading => (
+              <li class={`toc-item toc-level-${heading.level}`}>
+                <a href={`#${heading.id}`}>{heading.title}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </aside>
+    )}
+  </div>
+
+  <style>
+    .docs-layout {
+      display: grid;
+      grid-template-columns: 250px 1fr 250px;
+      gap: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: calc(3.5rem + 2rem) 1rem 2rem 1rem; /* Account for fixed nav height (3.5rem) + spacing */
+    }
+
+    /* Left Sidebar - Navigation */
+    .docs-sidebar {
+      position: sticky;
+      top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
+      height: fit-content;
+      max-height: calc(100vh - 3.5rem - 4rem); /* Account for nav height and padding */
+      overflow-y: auto;
+    }
+
+    .docs-nav {
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .nav-title {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #666;
+      margin: 0 0 1rem 0;
+    }
+
+    .category-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .category-header {
+      display: block;
+      font-weight: 600;
+      color: #333;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .doc-list li {
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-link {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: #1A1A1A;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: background-color 0.2s;
+    }
+
+    .doc-link:hover {
+      background-color: #F5F5F7;
+      text-decoration: underline;
+    }
+
+    .doc-link.active {
+      background-color: #1A1A1A;
+      color: white;
+      font-weight: 500;
+    }
+
+    .doc-link.active:hover {
+      background-color: #000000;
+      text-decoration: none;
+    }
+
+    /* Main Content */
+    .docs-content {
+      min-width: 0;
+    }
+
+    .docs-article {
+      max-width: 800px;
+    }
+
+    .article-header {
+      margin-bottom: 2rem;
+    }
+
+    .article-title {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin: 1rem 0;
+      color: #000;
+    }
+
+    .article-description {
+      font-size: 1.125rem;
+      color: #666;
+      margin: 1rem 0;
+    }
+
+    .article-body {
+      line-height: 1.8;
+    }
+
+    /* Right Sidebar - TOC */
+    .toc-sidebar {
+      position: sticky;
+      top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
+      height: fit-content;
+      max-height: calc(100vh - 3.5rem - 4rem); /* Account for nav height and padding */
+      overflow-y: auto;
+    }
+
+    .toc-nav {
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border-left: 3px solid #1A1A1A;
+    }
+
+    .toc-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #666;
+      margin: 0 0 1rem 0;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc-item {
+      margin: 0.5rem 0;
+    }
+
+    .toc-level-2 {
+      margin-left: 0;
+    }
+
+    .toc-level-3 {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .toc-level-4 {
+      margin-left: 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    .toc-level-5,
+    .toc-level-6 {
+      margin-left: 2rem;
+      font-size: 0.8rem;
+    }
+
+    .toc-item a {
+      color: #1A1A1A;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .toc-item a:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    /* Article Content Styles */
+    .article-body :global(h2),
+    .article-body :global(h3),
+    .article-body :global(h4),
+    .article-body :global(h5),
+    .article-body :global(h6) {
+      margin: 2rem 0 1rem 0;
+      scroll-margin-top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
+    }
+
+    .article-body :global(h2) {
+      font-size: 1.75rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+    }
+
+    .article-body :global(h3) {
+      font-size: 1.375rem;
+    }
+
+    .article-body :global(p) {
+      margin: 1rem 0;
+      line-height: 1.8;
+    }
+
+    .article-body :global(code) {
+      background-color: #f5f5f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+
+    .article-body :global(pre) {
+      background-color: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    .article-body :global(pre code) {
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .article-body :global(blockquote) {
+      border-left: 4px solid #1A1A1A;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      color: #666;
+      font-style: italic;
+    }
+
+    .article-body :global(ul),
+    .article-body :global(ol) {
+      margin: 1rem 0;
+      padding-left: 2rem;
+    }
+
+    .article-body :global(li) {
+      margin: 0.5rem 0;
+      line-height: 1.8;
+    }
+
+    .article-body :global(table) {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    .article-body :global(th),
+    .article-body :global(td) {
+      border: 1px solid #e0e0e0;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    .article-body :global(th) {
+      background-color: #f5f5f5;
+      font-weight: 600;
+    }
+
+    .article-body :global(a) {
+      color: #1A1A1A;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .article-body :global(a:hover) {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .article-body :global(img) {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1rem 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .docs-layout {
+        grid-template-columns: 250px 1fr;
+      }
+
+      .toc-sidebar {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .docs-layout {
+        grid-template-columns: 1fr;
+        padding: 1rem 0.5rem;
+      }
+
+      .docs-sidebar {
+        position: static;
+        max-height: none;
+        margin-bottom: 2rem;
+      }
+
+      .article-title {
+        font-size: 1.75rem;
+      }
+    }
+  </style>
+</BaseLayout>

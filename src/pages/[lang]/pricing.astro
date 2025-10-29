@@ -1,0 +1,345 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PricingCard from '../../components/PricingCard.astro';
+import FAQSection from '../../components/FAQSection.astro';
+import { createTranslator } from '../../i18n/utils';
+import { SUPPORTED_LANGUAGES } from '../../i18n/language-utils';
+import type { Language } from '../../i18n/types';
+import { EXTERNAL_LINKS } from '../../config/constants';
+import '../../styles/pricing-page.css';
+
+export async function getStaticPaths() {
+  return SUPPORTED_LANGUAGES.map((lang) => ({
+    params: { lang },
+    props: { lang },
+  }));
+}
+
+const { lang } = Astro.params as { lang: Language };
+const { t } = createTranslator(lang);
+
+// Pricing plans data
+const communityPlan = {
+  id: 'community',
+  name: 'Community',
+  price: '$0',
+  period: null,
+  description: 'Perfect for personal projects and testing',
+  features: [
+    'Unlimited Users & Teams',
+    'Unlimited Regions & Storage',
+    'Unlimited Bridges',
+    '2 Hour Job Timeout',
+    '2 Active Jobs',
+    '1 Reserved Job',
+    '5 Machines',
+    '10 Repositories',
+    '10 GB Max Repo Size',
+    '7 Day Audit Logs'
+  ]
+};
+
+const businessPlans = [
+  {
+    id: 'advanced',
+    name: 'Advanced',
+    price: '$399',
+    period: 'per month',
+    description: 'For growing teams and production workloads',
+    isPopular: true,
+    features: [
+      '24 Hour Job Timeout',
+      '5 Active Jobs',
+      '2 Reserved Jobs',
+      '20 Machines',
+      '50 Repositories',
+      '50 GB Max Repo Size',
+      '14 Day Audit Logs',
+      'Priority Support',
+      'API Access'
+    ]
+  },
+  {
+    id: 'premium',
+    name: 'Premium',
+    price: '$799',
+    period: 'per month',
+    description: 'For established teams with critical infrastructure',
+    isPopular: false,
+    features: [
+      '72 Hour Job Timeout',
+      '7 Active Jobs',
+      '3 Reserved Jobs',
+      '100 Machines',
+      '250 Repositories',
+      '250 GB Max Repo Size',
+      '30 Day Audit Logs',
+      '24/7 Support',
+      'Advanced Security'
+    ]
+  },
+  {
+    id: 'elite',
+    name: 'Elite',
+    price: '$2,100',
+    priceNote: '*Starting at',
+    period: 'per month',
+    description: 'For enterprises with custom requirements',
+    isPopular: false,
+    features: [
+      '96+ Hour Job Timeout',
+      '10+ Active Jobs',
+      '5+ Reserved Jobs',
+      '400+ Machines',
+      '1000+ Repositories',
+      '1TB+ Max Repo Size',
+      '90+ Day Audit Logs',
+      'Dedicated Account Manager',
+      'Custom SLA'
+    ]
+  }
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title={t('pages.pricing.meta.title')}
+  description={t('pages.pricing.meta.description')}
+  keywords={t('pages.pricing.meta.keywords')}
+  ogType="website"
+  structuredDataType="organization"
+>
+  <article class="pricing-page">
+    <!-- Hero Section -->
+    <section id="pricing-plans" class="pricing-hero section-dark">
+      <div class="pricing-hero-content">
+        <h1>{t('pages.pricing.hero.title')}</h1>
+        <p class="hero-subtitle">{t('pages.pricing.hero.subtitle')}</p>
+      </div>
+    </section>
+
+    <!-- Pricing Toggle & Cards -->
+    <section id="plans" class="pricing-content section-light">
+      <div class="container">
+        <!-- Toggle Buttons -->
+        <div class="pricing-toggle">
+          <button class="toggle-btn active" data-toggle="individuals">
+            For Individuals
+          </button>
+          <button class="toggle-btn" data-toggle="businesses">
+            For Businesses
+          </button>
+        </div>
+
+        <!-- Individual Plan View -->
+        <div class="pricing-grid individuals-view active">
+          <PricingCard plan={communityPlan} lang={lang} />
+        </div>
+
+        <!-- Business Plans View -->
+        <div class="pricing-grid businesses-view">
+          {businessPlans.map(plan => (
+            <PricingCard plan={plan} lang={lang} />
+          ))}
+        </div>
+
+        <!-- Enterprise CTA -->
+        <div class="enterprise-cta">
+          <div class="enterprise-content">
+            <h3>Need a Custom Enterprise Solution?</h3>
+            <p>Get tailored infrastructure protection for your organization</p>
+          </div>
+          <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Service Packages Section -->
+    <section id="professional-services" class="services-section section-dark">
+      <div class="container">
+        <div class="services-header">
+          <h2>Professional Service Packages</h2>
+          <p class="services-subtitle">Get expert help when you need it most</p>
+          <div class="services-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <span>Fast-track your success with professional assistance</span>
+          </div>
+          <div class="services-eligibility">
+            <strong>Eligibility:</strong> Professional services are available for Advanced, Premium, and Elite plan customers only.
+          </div>
+        </div>
+
+        <div class="services-table-wrapper">
+          <table class="services-table">
+            <thead>
+              <tr>
+                <th class="service-type-header">Service Type</th>
+                <th class="package-header">
+                  <div class="package-info">
+                    <h4>Standard</h4>
+                    <p class="package-speed">3-5 Business Days</p>
+                    <p class="package-price">From $9,999</p>
+                    <p class="package-desc">Standard turnaround time</p>
+                  </div>
+                </th>
+                <th class="package-header popular">
+                  <div class="package-info">
+                    <h4>Priority</h4>
+                    <p class="package-speed">24-48 Hours</p>
+                    <p class="package-price">From $19,999</p>
+                    <p class="package-desc">Fast-track your project</p>
+                  </div>
+                </th>
+                <th class="package-header">
+                  <div class="package-info">
+                    <h4>Emergency</h4>
+                    <p class="package-speed">Same Day</p>
+                    <p class="package-price">From $29,999</p>
+                    <p class="package-desc">Immediate response</p>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="service-name">Data Migration</td>
+                <td>5 business days for up to 100GB</td>
+                <td class="popular">48 hours for any size</td>
+                <td>12 hours guaranteed</td>
+              </tr>
+              <tr>
+                <td class="service-name">Ransomware Recovery</td>
+                <td>3-5 days assessment</td>
+                <td class="popular">24 hours to begin recovery</td>
+                <td>Immediate response team</td>
+              </tr>
+              <tr>
+                <td class="service-name">Security Assessment</td>
+                <td>2 weeks full assessment</td>
+                <td class="popular">5 days expedited</td>
+                <td>24 hours preliminary</td>
+              </tr>
+              <tr>
+                <td class="service-name">Infrastructure Scaling</td>
+                <td>1 week planning + execution</td>
+                <td class="popular">2-3 days rapid scaling</td>
+                <td>Same day emergency scaling</td>
+              </tr>
+              <tr>
+                <td class="service-name">Team Training</td>
+                <td>Schedule within 2 weeks</td>
+                <td class="popular">Schedule within 3 days</td>
+                <td>Next day training session</td>
+              </tr>
+              <tr>
+                <td class="service-name">Performance Optimization</td>
+                <td>1 week analysis + tuning</td>
+                <td class="popular">2 days quick optimization</td>
+                <td>Immediate performance fix</td>
+              </tr>
+              <tr>
+                <td class="service-name">Custom Integration</td>
+                <td>2-3 weeks development</td>
+                <td class="popular">1 week fast-track</td>
+                <td>48 hours critical integration</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="services-benefits">
+          <h4>Why Professional Services?</h4>
+          <p><strong>The average cost of a ransomware attack is $4.62 million (IBM Security, 2023)</strong></p>
+          <p><strong>The average downtime cost is $5,600 per minute for enterprises</strong></p>
+          <p>Our professional services ensure you're never alone when facing critical infrastructure challenges.</p>
+          <ul>
+            <li>Dedicated team of experts assigned to your project</li>
+            <li>Guaranteed response times with SLA</li>
+            <li>Switch between service tiers as needed</li>
+            <li>24/7 emergency hotline for Emergency tier</li>
+          </ul>
+        </div>
+
+        <div class="services-cta">
+          <h4>Need Professional Assistance?</h4>
+          <p>Our experts are ready to help you succeed</p>
+          <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION}
+             target="_blank"
+             rel="noopener noreferrer"
+             class="btn btn-primary btn-large">
+            Schedule Consultation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section-light">
+      <FAQSection faqs={[
+        {
+          question: 'Can I upgrade or downgrade my plan?',
+          answer: 'Yes, you can change your plan at any time. Upgrades take effect immediately, and downgrades will apply at the start of your next billing cycle.'
+        },
+        {
+          question: 'What payment methods do you accept?',
+          answer: 'We accept all major credit cards (Visa, MasterCard, American Express) and support invoice-based billing for annual Enterprise plans.'
+        },
+        {
+          question: 'Is there a free trial available?',
+          answer: 'Our Community plan is free forever. For business plans, contact our sales team to discuss trial options.'
+        },
+        {
+          question: "What's included in support?",
+          answer: 'Community plans include community support. Business plans include priority email support, and Premium/Elite plans include 24/7 phone support and dedicated account managers.'
+        }
+      ]} />
+    </section>
+
+    <!-- CTA Section -->
+    <section id="get-started" class="pricing-cta section-dark">
+      <div class="container">
+        <h2>Ready to Get Started?</h2>
+        <p>Join teams protecting their infrastructure with Rediacc</p>
+        <div class="cta-actions">
+          <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+            Start Free
+          </a>
+          <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">
+            Talk to Sales
+          </a>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
+
+<script>
+  // Toggle between individual and business plans
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  const individualsView = document.querySelector('.individuals-view');
+  const businessesView = document.querySelector('.businesses-view');
+
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const toggleType = btn.dataset.toggle;
+
+      // Update button states
+      toggleBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Show/hide appropriate view
+      if (toggleType === 'individuals') {
+        individualsView?.classList.add('active');
+        businessesView?.classList.remove('active');
+      } else {
+        individualsView?.classList.remove('active');
+        businessesView?.classList.add('active');
+      }
+    });
+  });
+</script>
+

@@ -1,0 +1,59 @@
+---
+import { EXTERNAL_LINKS } from '../config/constants';
+
+interface Props {
+  plan: {
+    id: string;
+    name: string;
+    price: string;
+    priceNote?: string;
+    period?: string | null;
+    description: string;
+    isPopular?: boolean;
+    features: string[];
+  };
+  lang: string;
+}
+
+const { plan, lang } = Astro.props;
+---
+
+<div class={`pricing-card ${plan.isPopular ? 'popular' : ''}`}>
+  {plan.isPopular && <div class="popular-badge">Most popular</div>}
+
+  <div class="card-header">
+    <h3>{plan.name}</h3>
+    <p class="card-description">{plan.description}</p>
+  </div>
+
+  <div class="card-price">
+    <div class="price-wrapper">
+      <span class="price">{plan.price}</span>
+      {plan.priceNote && <span class="price-note">{plan.priceNote}</span>}
+    </div>
+    {plan.period && <span class="period">{plan.period}</span>}
+  </div>
+
+  <div class="card-actions">
+    <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Get Started</a>
+    {plan.id === 'community' ? (
+      <a href={`/${lang}/docs`} class="btn btn-secondary btn-large">Learn More</a>
+    ) : (
+      <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Contact Sales</a>
+    )}
+  </div>
+
+  <details class="card-features" open={plan.id === 'community'}>
+    <summary>What's included:</summary>
+    <ul>
+      {plan.features.map((feature) => (
+        <li>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/>
+          </svg>
+          {feature}
+        </li>
+      ))}
+    </ul>
+  </details>
+</div>

@@ -73,6 +73,11 @@ export default defineConfig({
           item.priority = 0.9;
           item.changefreq = 'monthly';
         }
+        // Pricing page - high priority
+        else if (url.includes('/pricing')) {
+          item.priority = 0.9;
+          item.changefreq = 'weekly';
+        }
         // Blog listing pages - high priority, frequent updates
         else if (url.match(/\/blog\/?$/)) {
           item.priority = 0.8;
@@ -92,6 +97,11 @@ export default defineConfig({
         else if (url.includes('/docs/') && !url.endsWith('/docs/')) {
           item.priority = 0.7;
           item.changefreq = 'weekly';
+        }
+        // Team page - medium-high priority
+        else if (url.includes('/team')) {
+          item.priority = 0.7;
+          item.changefreq = 'monthly';
         }
         // Contact page - medium priority
         else if (url.includes('/contact')) {

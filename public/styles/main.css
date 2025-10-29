@@ -340,6 +340,78 @@ body.sidebar-active {
     justify-content: center;
 }
 
+.hero-cta-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-3);
+    transition: all 0.2s ease;
+}
+
+.hero-cta-primary:hover .hero-badge {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.badge-icon {
+    font-weight: bold;
+    color: #10B981;
+}
+
+.hero-cta-note {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    margin-top: var(--space-3);
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-cta-note a {
+    color: rgba(255, 255, 255, 0.95);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+}
+
+.hero-cta-note a:hover {
+    color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Mobile responsive styles for hero CTAs */
+@media (max-width: 768px) {
+    .hero-cta-primary {
+        gap: var(--space-4);
+    }
+
+    .hero-badge {
+        font-size: 0.75rem;
+        padding: var(--space-2) var(--space-3);
+    }
+
+    .hero-cta-note {
+        font-size: 0.8125rem;
+        max-width: 280px;
+    }
+}
+
 /* ===== BUTTONS ===== */
 .btn {
     display: inline-flex;

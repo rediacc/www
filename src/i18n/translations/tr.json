@@ -125,8 +125,12 @@
   },
   "hero": {
     "cta": {
-      "contactUs": "Uygula",
-      "learnMore": "Daha fazla bilgi edin"
+      "contactUs": "Ücretsiz Başla",
+      "learnMore": "Daha fazla bilgi edin",
+      "bookDemo": "Demo Rezervasyonu",
+      "freeBadge": "SONSUZA KADAR ÜCRETSİZ • Kredi kartı gerektirmez",
+      "benefits": "5 makine • Sınırsız ekipler • 0 $",
+      "seeDetails": "Tüm detayları gör"
     },
     "subtitle": "20 Ekim 2025: AWS çöktü. Coinbase, Fortnite, Signal, Zoom; hepsi 15 saat boyunca çevrimdışı. Çoklu bulut altyapısına sahip kuruluşlar çevrimiçi kaldı. Hazır mısın?",
     "title": "Altyapı",
@@ -429,13 +433,13 @@
             "problem": {
               "additionalPoints": [
                 "Saldırganlar bilinçli olarak temiz yedeklemelerin süresinin dolmasını bekler",
-                "Geleneksel yedi ila on dört günlük saklama, güvenlik açıkları bırakır",
+                "Geleneksel kısa saklama süreleri güvenlik açıkları bırakır",
                 "Her tam yedekleme, çok büyük depolama alanı tüketir ve saklamayı sınırlandırır",
                 "Uyumluluk gereklilikleri genellikle aylarca süren bir geçmiş gerektirir",
                 "Depolama maliyetleri geçmiş ve bütçe arasında seçim yapmaya zorluyor"
               ],
               "description": "Kısa saklama süreleri depolama alanından tasarruf sağlar ancak güvenlik açığı yaratır. Bulaşma öncesindeki verilere ihtiyacınız olduğunda bunların üzerine zaten yazılmıştır. Geleneksel sistemler, büyük depolama maliyetleri nedeniyle uzun süreli saklamayı karşılayamaz.",
-              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını kasıtlı olarak bekler. 7-14 gün saklama süresine sahip kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını kasıtlı olarak bekler. Kısa saklama süresine sahip kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -445,7 +449,7 @@
                 "Uzun süre elde tutma özelliğiyle uyumluluk gereksinimlerini uygun maliyetle karşılayın",
                 "Saldırganlar saklama sürenizin bitmesini bekleyemez"
               ],
-              "description": "Rediacc'ın artımlı tekilleştirme özelliği, depolama patlaması olmadan 30, 60, 90+ günlük yedekleme geçmişini saklamanıza olanak tanır. Yalnızca değişiklikler depolanır; yinelenen veriler depolanmaz.",
+              "description": "Rediacc'ın artımlı tekilleştirme özelliği, depolama patlaması olmadan uzatılmış yedekleme geçmişini saklamanıza olanak tanır. Yalnızca değişiklikler depolanır; yinelenen veriler depolanmaz.",
               "title": "Uzatılmış Geçmiş Saklama"
             },
             "subtitle": "Erken kalkan kuş solucanı yakalar <small class='subtitle-attribution'>— William Camden (1636)</small>",
@@ -738,7 +742,7 @@
       {
         "benefits": [
           "Otomatik doğrulama",
-          "30-90 gün saklama",
+          "Uzatılmış saklama",
           "Dakikalar içinde kurtarın"
         ],
         "description": "Doğrulanmış kurtarma. Sadece iddialar değil. Tam tarih.",

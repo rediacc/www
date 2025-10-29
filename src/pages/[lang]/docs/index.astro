@@ -55,11 +55,6 @@ const categories = Object.keys(docsByCategory).sort();
 
 <BaseLayout lang={lang}>
   <div class="docs-page">
-    <header class="docs-header">
-      <h1>{t('pages.docs.title')}</h1>
-      <p>{t('pages.docs.subtitle')}</p>
-    </header>
-
     <nav class="docs-nav">
       <h2>{t('pages.docs.title')}</h2>
       <ul class="docs-list">
@@ -81,13 +76,13 @@ const categories = Object.keys(docsByCategory).sort();
     </nav>
 
     <section class="docs-content">
-      <div class="welcome-section">
+      <div class="welcome-section" id="welcome">
         <h2>{t('pages.docs.welcome')}</h2>
         <p>
           {t('pages.docs.welcomeDescription')}
         </p>
 
-        <div class="quick-links">
+        <div class="quick-links" id="quick-links">
           <div class="quick-link-card">
             <h3>{t('pages.docs.gettingStarted')}</h3>
             <p>{t('pages.docs.gettingStartedDesc')}</p>
@@ -106,10 +101,10 @@ const categories = Object.keys(docsByCategory).sort();
         </div>
       </div>
 
-      <section class="all-docs-section">
+      <section class="all-docs-section" id="all-documentation">
         <h2>{t('pages.docs.allDocumentation')}</h2>
         {categories.map(category => (
-          <div key={category} class="doc-category">
+          <div key={category} class="doc-category" id={category.toLowerCase().replace(/\s+/g, '-')}>
             <h3>{category}</h3>
             <ul class="doc-items">
               {docsByCategory[category].map(doc => (
@@ -127,37 +122,45 @@ const categories = Object.keys(docsByCategory).sort();
         ))}
       </section>
     </section>
+
+    <aside class="toc-sidebar">
+      <nav class="toc-nav">
+        <h3 class="toc-title">{t('pages.docs.tableOfContents')}</h3>
+        <ul class="toc-list">
+          <li class="toc-item toc-level-2">
+            <a href="#welcome">{t('pages.docs.welcome')}</a>
+          </li>
+          <li class="toc-item toc-level-2">
+            <a href="#quick-links">Quick Links</a>
+          </li>
+          <li class="toc-item toc-level-2">
+            <a href="#all-documentation">{t('pages.docs.allDocumentation')}</a>
+          </li>
+          {categories.map(category => (
+            <li class="toc-item toc-level-3">
+              <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>
+                {category} <span class="doc-count">({docsByCategory[category].length})</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
   </div>
 
   <style>
     .docs-page {
       display: grid;
-      grid-template-columns: 250px 1fr;
+      grid-template-columns: 250px 1fr 250px;
       gap: 2rem;
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 2rem 1rem;
-    }
-
-    .docs-header {
-      grid-column: 1 / -1;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .docs-header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .docs-header p {
-      font-size: 1.125rem;
-      color: #666;
+      padding: calc(3.5rem + 2rem) 1rem 2rem 1rem; /* Account for fixed nav height (3.5rem) + spacing */
     }
 
     .docs-nav {
       position: sticky;
-      top: 2rem;
+      top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
       height: fit-content;
       padding: 1rem;
       background-color: #f9f9f9;
@@ -204,7 +207,7 @@ const categories = Object.keys(docsByCategory).sort();
     .doc-link {
       display: block;
       padding: 0.5rem 0.75rem;
-      color: #0066cc;
+      color: #1A1A1A;
       text-decoration: none;
       border-radius: 4px;
       font-size: 0.9rem;
@@ -212,7 +215,7 @@ const categories = Object.keys(docsByCategory).sort();
     }
 
     .doc-link:hover {
-      background-color: #e8f0ff;
+      background-color: #F5F5F7;
       text-decoration: underline;
     }
 
@@ -220,6 +223,7 @@ const categories = Object.keys(docsByCategory).sort();
       display: flex;
       flex-direction: column;
       gap: 3rem;
+      grid-column: 2; /* Stay in middle column */
     }
 
     .welcome-section h2 {
@@ -243,9 +247,9 @@ const categories = Object.keys(docsByCategory).sort();
 
     .quick-link-card {
       padding: 1.5rem;
-      background-color: #f0f5ff;
+      background-color: #F5F5F7;
       border-radius: 8px;
-      border-left: 4px solid #0066cc;
+      border-left: 4px solid #1A1A1A;
     }
 
     .quick-link-card h3 {
@@ -262,14 +266,14 @@ const categories = Object.keys(docsByCategory).sort();
     .btn-link {
       display: inline-block;
       margin-top: 1rem;
-      color: #0066cc;
+      color: #1A1A1A;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.2s;
     }
 
     .btn-link:hover {
-      color: #0052a3;
+      color: #000000;
     }
 
     .all-docs-section h2 {
@@ -302,12 +306,12 @@ const categories = Object.keys(docsByCategory).sort();
       padding: 1rem;
       background-color: #f9f9f9;
       border-radius: 8px;
-      border-left: 3px solid #0066cc;
+      border-left: 3px solid #1A1A1A;
       transition: background-color 0.2s;
     }
 
     .doc-item:hover {
-      background-color: #f0f5ff;
+      background-color: #F5F5F7;
     }
 
     .doc-item h4 {
@@ -316,11 +320,12 @@ const categories = Object.keys(docsByCategory).sort();
     }
 
     .doc-item h4 a {
-      color: #0066cc;
+      color: #1A1A1A;
       text-decoration: none;
     }
 
     .doc-item h4 a:hover {
+      color: #000000;
       text-decoration: underline;
     }
 
@@ -329,6 +334,86 @@ const categories = Object.keys(docsByCategory).sort();
       color: #666;
       font-size: 0.9375rem;
       line-height: 1.6;
+    }
+
+    /* TOC Sidebar */
+    .toc-sidebar {
+      position: sticky;
+      top: calc(3.5rem + 2rem);
+      height: fit-content;
+      max-height: calc(100vh - 3.5rem - 4rem);
+      overflow-y: auto;
+    }
+
+    .toc-nav {
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      border-left: 3px solid #1A1A1A;
+    }
+
+    .toc-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #666;
+      margin: 0 0 1rem 0;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc-item {
+      margin: 0.5rem 0;
+    }
+
+    .toc-level-2 {
+      margin-left: 0;
+    }
+
+    .toc-level-3 {
+      margin-left: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .toc-item a {
+      color: #1A1A1A;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .toc-item a:hover {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .doc-count {
+      color: #666;
+      font-size: 0.85rem;
+      font-weight: normal;
+    }
+
+    /* Add scroll offset for anchor links */
+    #welcome,
+    #quick-links,
+    #all-documentation,
+    .doc-category {
+      scroll-margin-top: calc(3.5rem + 2rem);
+    }
+
+    @media (max-width: 1200px) {
+      .toc-sidebar {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .docs-page {
+        grid-template-columns: 250px 1fr;
+      }
     }
 
     @media (max-width: 768px) {

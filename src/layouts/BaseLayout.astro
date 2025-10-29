@@ -146,6 +146,33 @@ const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
     <!-- View Transitions for smooth navigation -->
     <ViewTransitions />
 
+    <!-- Language Cookie Redirect Script (runs early to prevent flash) -->
+    <script is:inline define:vars={{ currentLang, pathWithoutLang, SUPPORTED_LANGUAGES }}>
+      (function() {
+        // Get language cookie
+        function getLanguageCookie() {
+          const cookies = document.cookie.split(';');
+          for (const cookie of cookies) {
+            const [name, value] = cookie.trim().split('=');
+            if (name === 'rediacc_lang') {
+              return decodeURIComponent(value);
+            }
+          }
+          return null;
+        }
+
+        // Only redirect if cookie language differs from current URL language
+        const cookieLang = getLanguageCookie();
+        if (cookieLang && cookieLang !== currentLang && SUPPORTED_LANGUAGES.includes(cookieLang)) {
+          // Build new URL with cookie language
+          const newPath = cookieLang === 'en' ? pathWithoutLang : `/${cookieLang}${pathWithoutLang}`;
+
+          // Redirect to the preferred language
+          window.location.href = newPath;
+        }
+      })();
+    </script>
+
     <!-- Custom head content from pages -->
     <slot name="head" />
 
