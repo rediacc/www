@@ -17,84 +17,46 @@ export async function getStaticPaths() {
 }
 
 const { lang } = Astro.params as { lang: Language };
-const { t } = createTranslator(lang);
+const { t, ta, to } = createTranslator(lang);
 
 // Pricing plans data
 const communityPlan = {
   id: 'community',
-  name: 'Community',
+  name: t('pages.pricing.plans.community.name'),
   price: '$0',
   period: null,
-  description: 'Perfect for personal projects and testing',
-  features: [
-    'Unlimited Users & Teams',
-    'Unlimited Regions & Storage',
-    'Unlimited Bridges',
-    '2 Hour Job Timeout',
-    '2 Active Jobs',
-    '1 Reserved Job',
-    '5 Machines',
-    '10 Repositories',
-    '10 GB Max Repo Size',
-    '7 Day Audit Logs'
-  ]
+  description: t('pages.pricing.plans.community.description'),
+  features: ta('pages.pricing.plans.community.features')
 };
 
 const businessPlans = [
   {
     id: 'advanced',
-    name: 'Advanced',
+    name: t('pages.pricing.plans.advanced.name'),
     price: '$399',
     period: 'per month',
-    description: 'For growing teams and production workloads',
+    description: t('pages.pricing.plans.advanced.description'),
     isPopular: true,
-    features: [
-      '24 Hour Job Timeout',
-      '5 Active Jobs',
-      '2 Reserved Jobs',
-      '20 Machines',
-      '50 Repositories',
-      '50 GB Max Repo Size',
-      '14 Day Audit Logs',
-      'Priority Support'
-    ]
+    features: ta('pages.pricing.plans.advanced.features')
   },
   {
     id: 'premium',
-    name: 'Premium',
+    name: t('pages.pricing.plans.premium.name'),
     price: '$799',
     period: 'per month',
-    description: 'For established teams with critical infrastructure',
+    description: t('pages.pricing.plans.premium.description'),
     isPopular: false,
-    features: [
-      '72 Hour Job Timeout',
-      '7 Active Jobs',
-      '3 Reserved Jobs',
-      '100 Machines',
-      '250 Repositories',
-      '250 GB Max Repo Size',
-      '30 Day Audit Logs',
-      '24/7 Support'
-    ]
+    features: ta('pages.pricing.plans.premium.features')
   },
   {
     id: 'elite',
-    name: 'Elite',
+    name: t('pages.pricing.plans.elite.name'),
     price: '$2,100',
-    priceNote: '*Starting at',
+    priceNote: t('pages.pricing.plans.elite.priceNote'),
     period: 'per month',
-    description: 'For enterprises with custom requirements',
+    description: t('pages.pricing.plans.elite.description'),
     isPopular: false,
-    features: [
-      '96+ Hour Job Timeout',
-      '10+ Active Jobs',
-      '5+ Reserved Jobs',
-      '400+ Machines',
-      '1000+ Repositories',
-      '1TB+ Max Repo Size',
-      '90+ Day Audit Logs',
-      'Dedicated Account Manager'
-    ]
+    features: ta('pages.pricing.plans.elite.features')
   }
 ];
 
@@ -102,85 +64,59 @@ const businessPlans = [
 const servicePackages = [
   {
     id: 'standard',
-    name: 'Standard',
+    name: t('pages.pricing.professionalServices.packages.standard.name'),
     price: '$9,999',
-    turnaround: '3-5 Business Days',
-    description: 'Standard turnaround time for planned projects',
+    turnaround: t('pages.pricing.professionalServices.packages.standard.turnaround'),
+    description: t('pages.pricing.professionalServices.packages.standard.description'),
     isPopular: false,
     icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 11l3 3 5-5"/></svg>'
   },
   {
     id: 'priority',
-    name: 'Priority',
+    name: t('pages.pricing.professionalServices.packages.priority.name'),
     price: '$19,999',
-    turnaround: '24-48 Hours',
-    description: 'Fast-track your project with priority execution',
+    turnaround: t('pages.pricing.professionalServices.packages.priority.turnaround'),
+    description: t('pages.pricing.professionalServices.packages.priority.description'),
     isPopular: true,
     icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>'
   },
   {
     id: 'emergency',
-    name: 'Emergency',
+    name: t('pages.pricing.professionalServices.packages.emergency.name'),
     price: '$29,999',
-    turnaround: 'Same Day',
-    description: 'Immediate response for critical situations',
+    turnaround: t('pages.pricing.professionalServices.packages.emergency.turnaround'),
+    description: t('pages.pricing.professionalServices.packages.emergency.description'),
     isPopular: false,
     icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'
   }
 ];
 
-// Service types with details for each package
-const serviceTypes = [
-  {
-    name: 'Data Migration',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/></svg>',
-    standard: 'Complete end-to-end migration with full validation',
-    priority: 'Rapid migration pipeline setup + core data transferred within 48h',
-    emergency: 'Immediate assessment + critical systems online same-day + full migration begins'
-  },
-  {
-    name: 'Ransomware Recovery',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/></svg>',
-    standard: 'Complete recovery with forensics and hardening',
-    priority: 'Rapid threat assessment + core operations restored within 48h',
-    emergency: 'Immediate containment + critical systems restored same-day + full recovery begins'
-  },
-  {
-    name: 'Security Assessment',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>',
-    standard: 'Full security audit with implementation roadmap',
-    priority: 'Comprehensive vulnerability assessment + remediation plan within 48h',
-    emergency: 'Critical vulnerability scan + high-risk patches deployed same-day + full audit begins'
-  },
-  {
-    name: 'Infrastructure Scaling',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>',
-    standard: 'Complete infrastructure redesign with optimization',
-    priority: 'Rapid capacity increase + monitoring setup within 48h',
-    emergency: 'Critical resources provisioned same-day + auto-scaling configured + full plan begins'
-  },
-  {
-    name: 'Team Training',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>',
-    standard: 'Comprehensive multi-day training program',
-    priority: 'Intensive hands-on workshop + key workflows covered within 2 days',
-    emergency: 'Critical procedures briefing same-day + incident response prep + full program begins'
-  },
-  {
-    name: 'Performance Optimization',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg>',
-    standard: 'Deep analysis with comprehensive performance tuning',
-    priority: 'Quick profiling + high-impact optimizations deployed within 48h',
-    emergency: 'Critical bottleneck identified + immediate hotfix deployed same-day + full optimization begins'
-  },
-  {
-    name: 'Custom Integration',
-    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>',
-    standard: 'Complete integration with testing and documentation',
-    priority: 'Core integration functional + essential features live within 48h',
-    emergency: 'Critical connection established same-day + basic data flow working + full dev begins'
-  }
-];
+// Service types with details for each package - get from translations
+const serviceTypesDataRaw = ta('pages.pricing.professionalServices.serviceTypes.services');
+const serviceTypes = serviceTypesDataRaw.map((service: any) => ({
+  name: service.name,
+  icon: getIconForService(service.id),
+  standard: service.standard,
+  priority: service.priority,
+  emergency: service.emergency
+}));
+
+// Get pricing factors data
+const pricingFactorsData = ta('pages.pricing.professionalServices.pricingFactors.factors');
+const pricingFactors = pricingFactorsData;
+
+function getIconForService(id: string): string {
+  const icons: Record<string, string> = {
+    'data-migration': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/></svg>',
+    'ransomware-recovery': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/></svg>',
+    'security-assessment': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>',
+    'infrastructure-scaling': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>',
+    'team-training': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>',
+    'performance-optimization': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg>',
+    'custom-integration': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>'
+  };
+  return icons[id] || '';
+}
 ---
 
 <BaseLayout
@@ -206,10 +142,10 @@ const serviceTypes = [
         <!-- Toggle Buttons -->
         <div class="pricing-toggle">
           <button class="toggle-btn active" data-toggle="individuals">
-            For Individuals
+            {t('pages.pricing.toggleButtons.individuals')}
           </button>
           <button class="toggle-btn" data-toggle="businesses">
-            For Businesses
+            {t('pages.pricing.toggleButtons.businesses')}
           </button>
         </div>
 
@@ -228,11 +164,11 @@ const serviceTypes = [
         <!-- Enterprise CTA -->
         <div class="enterprise-cta">
           <div class="enterprise-content">
-            <h3>Need a Custom Enterprise Solution?</h3>
-            <p>Get tailored infrastructure protection for your organization</p>
+            <h3>{t('pages.pricing.enterpriseCta.heading')}</h3>
+            <p>{t('pages.pricing.enterpriseCta.description')}</p>
           </div>
           <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
-            Contact Sales
+            {t('pages.pricing.enterpriseCta.button')}
           </a>
         </div>
       </div>
@@ -242,16 +178,16 @@ const serviceTypes = [
     <section id="professional-services" class="services-section section-dark">
       <div class="container">
         <div class="services-header">
-          <h2>Professional Service Packages</h2>
-          <p class="services-subtitle">Get expert help when you need it most</p>
+          <h2>{t('pages.pricing.professionalServices.header.title')}</h2>
+          <p class="services-subtitle">{t('pages.pricing.professionalServices.header.subtitle')}</p>
           <div class="services-badge">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
               <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
             </svg>
-            <span>Fast-track your success with professional assistance</span>
+            <span>{t('pages.pricing.professionalServices.header.badge')}</span>
           </div>
           <div class="services-eligibility">
-            <strong>Eligibility:</strong> Professional services are available for Advanced, Premium, and Elite plan customers only.
+            <strong>{t('pages.pricing.professionalServices.header.eligibility')}</strong>
           </div>
         </div>
 
@@ -264,49 +200,30 @@ const serviceTypes = [
 
         <!-- Pricing Factors -->
         <div class="pricing-factors">
-          <h3>Understanding Professional Service Pricing</h3>
-          <p class="factors-intro">Final project costs are determined by:</p>
+          <h3>{t('pages.pricing.professionalServices.pricingFactors.heading')}</h3>
+          <p class="factors-intro">{t('pages.pricing.professionalServices.pricingFactors.intro')}</p>
           <div class="factors-grid">
-            <div class="factor-item">
-              <div class="factor-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="3"/>
-                  <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"/>
-                </svg>
+            {pricingFactors.map((factor: any) => (
+              <div class="factor-item">
+                <div class="factor-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"/>
+                  </svg>
+                </div>
+                <h4>{factor.title}</h4>
+                <p>{factor.description}</p>
               </div>
-              <h4>Scope Complexity</h4>
-              <p>Number of systems, integrations, and dependencies involved</p>
-            </div>
-            <div class="factor-item">
-              <div class="factor-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
-                  <path d="M12 6v6l4 2"/>
-                </svg>
-              </div>
-              <h4>Customization Level</h4>
-              <p>Off-the-shelf solutions vs. custom development requirements</p>
-            </div>
-            <div class="factor-item">
-              <div class="factor-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                </svg>
-              </div>
-              <h4>Team Size</h4>
-              <p>Single expert vs. full dedicated team of specialists</p>
-            </div>
+            ))}
           </div>
-          <p class="factors-note"><strong>Example:</strong> A standard infrastructure scaling across 3 systems with moderate customization typically ranges from $9,999-$15,999</p>
+          <p class="factors-note"><strong>Example:</strong> {t('pages.pricing.professionalServices.pricingFactors.note')}</p>
         </div>
+
 
         <!-- Service Types -->
         <div class="service-types">
-          <h3>Available Services</h3>
-          <p class="service-types-intro">Click any service to see turnaround times for each package tier</p>
+          <h3>{t('pages.pricing.professionalServices.serviceTypes.heading')}</h3>
+          <p class="service-types-intro">{t('pages.pricing.professionalServices.serviceTypes.intro')}</p>
 
           {serviceTypes.map((service, index) => (
             <details class="service-type-item">
@@ -321,15 +238,15 @@ const serviceTypes = [
               </summary>
               <div class="service-type-details">
                 <div class="service-detail-item">
-                  <div class="detail-badge standard">Standard</div>
+                  <div class="detail-badge standard">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.standard')}</div>
                   <p>{service.standard}</p>
                 </div>
                 <div class="service-detail-item">
-                  <div class="detail-badge priority">Priority</div>
+                  <div class="detail-badge priority">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.priority')}</div>
                   <p>{service.priority}</p>
                 </div>
                 <div class="service-detail-item">
-                  <div class="detail-badge emergency">Emergency</div>
+                  <div class="detail-badge emergency">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.emergency')}</div>
                   <p>{service.emergency}</p>
                 </div>
               </div>
@@ -339,27 +256,27 @@ const serviceTypes = [
 
         <!-- Benefits -->
         <div class="services-benefits">
-          <h4>Why Professional Services?</h4>
-          <p><strong>The average cost of a ransomware attack is $4.62 million (IBM Security, 2023)</strong></p>
-          <p><strong>The average downtime cost is $5,600 per minute for enterprises</strong></p>
-          <p>Our professional services ensure you're never alone when facing critical infrastructure challenges.</p>
+          <h4>{t('pages.pricing.professionalServices.benefits.heading')}</h4>
+          {ta('pages.pricing.professionalServices.benefits.statistics').map((stat) => (
+            <p><strong>{stat}</strong></p>
+          ))}
+          <p>{t('pages.pricing.professionalServices.benefits.description')}</p>
           <ul>
-            <li>Dedicated team of experts assigned to your project</li>
-            <li>Guaranteed response times with SLA</li>
-            <li>Switch between service tiers as needed</li>
-            <li>24/7 emergency hotline for Emergency tier</li>
+            {ta('pages.pricing.professionalServices.benefits.items').map((item) => (
+              <li>{item}</li>
+            ))}
           </ul>
         </div>
 
         <!-- CTA -->
         <div class="services-cta">
-          <h4>Need Professional Assistance?</h4>
-          <p>Our experts are ready to help you succeed</p>
+          <h4>{t('pages.pricing.professionalServices.cta.heading')}</h4>
+          <p>{t('pages.pricing.professionalServices.cta.description')}</p>
           <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION}
              target="_blank"
              rel="noopener noreferrer"
              class="btn btn-primary btn-large">
-            Schedule Consultation
+            {t('pages.pricing.professionalServices.cta.button')}
           </a>
         </div>
       </div>

@@ -513,43 +513,50 @@
               "emergency": "Anında değerlendirme + kritik sistemler aynı gün çevrimiçi + tam geçiş başlıyor",
               "name": "Veri Taşıma",
               "priority": "Hızlı geçiş hattı kurulumu + 48 saat içinde aktarılan temel veriler",
-              "standard": "Tam doğrulamayla uçtan uca geçişi tamamlayın"
+              "standard": "Tam doğrulamayla uçtan uca geçişi tamamlayın",
+              "id": "data-migration"
             },
             {
               "emergency": "Derhal kontrol altına alma + kritik sistemler aynı gün içinde onarılır + tam kurtarma başlar",
               "name": "Fidye Yazılımı Kurtarma",
               "priority": "Hızlı tehdit değerlendirmesi + temel operasyonlar 48 saat içinde geri yüklendi",
-              "standard": "Adli tıp ve sertleştirmeyle tam iyileşme"
+              "standard": "Adli tıp ve sertleştirmeyle tam iyileşme",
+              "id": "ransomware-recovery"
             },
             {
               "emergency": "Kritik güvenlik açığı taraması + yüksek riskli yamalar aynı gün dağıtılır + tam denetim başlar",
               "name": "Güvenlik Değerlendirmesi",
               "priority": "Kapsamlı güvenlik açığı değerlendirmesi + 48 saat içinde iyileştirme planı",
-              "standard": "Uygulama yol haritasıyla birlikte tam güvenlik denetimi"
+              "standard": "Uygulama yol haritasıyla birlikte tam güvenlik denetimi",
+              "id": "security-assessment"
             },
             {
               "emergency": "Kritik kaynaklar aynı gün sağlandı + otomatik ölçeklendirme yapılandırıldı + tam plan başlıyor",
               "name": "Altyapı Ölçeklendirmesi",
               "priority": "Hızlı kapasite artışı + 48 saat içinde izleme kurulumu",
-              "standard": "Optimizasyonla komple altyapı yeniden tasarımı"
+              "standard": "Optimizasyonla komple altyapı yeniden tasarımı",
+              "id": "infrastructure-scaling"
             },
             {
               "emergency": "Aynı gün içinde kritik prosedürler brifingi + olay müdahale hazırlığı + tam program başlıyor",
               "name": "Takım Eğitimi",
               "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde tamamlanan önemli iş akışları",
-              "standard": "Kapsamlı, çok günlük eğitim programı"
+              "standard": "Kapsamlı, çok günlük eğitim programı",
+              "id": "team-training"
             },
             {
               "emergency": "Kritik darboğaz belirlendi + aynı gün anında düzeltme uygulandı + tam optimizasyon başlıyor",
               "name": "Performans Optimizasyonu",
               "priority": "Hızlı profil oluşturma + 48 saat içinde devreye alınan yüksek etkili optimizasyonlar",
-              "standard": "Kapsamlı performans ayarıyla derin analiz"
+              "standard": "Kapsamlı performans ayarıyla derin analiz",
+              "id": "performance-optimization"
             },
             {
               "emergency": "Kritik bağlantı aynı gün kuruldu + temel veri akışı çalışıyor + tam geliştirme başlıyor",
               "name": "Özel Entegrasyon",
               "priority": "Temel entegrasyon fonksiyonel + temel özellikler 48 saat içinde yayınlanır",
-              "standard": "Test ve dokümantasyonla tam entegrasyon"
+              "standard": "Test ve dokümantasyonla tam entegrasyon",
+              "id": "custom-integration"
             }
           ]
         }

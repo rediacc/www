@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from '../i18n/react';
 import { SUPPORTED_LANGUAGES, getLanguageFromPath, getLanguageName, getLanguageFlag } from '../i18n/language-utils';
 import type { Language } from '../i18n/types';
+import { setLanguageCookie } from '../utils/language-cookie';
 import '../styles/language-switcher.css';
 
 const Footer: React.FC = () => {
@@ -30,6 +31,9 @@ const Footer: React.FC = () => {
   }, []);
 
   const handleLanguageChange = (lang: Language) => {
+    // Set the language cookie so the redirect script doesn't override our choice
+    setLanguageCookie(lang);
+
     const currentPath = window.location.pathname;
     const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '');
     const newPath = `/${lang}${pathWithoutLang || '/'}`;

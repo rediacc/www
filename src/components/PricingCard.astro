@@ -1,5 +1,7 @@
 ---
 import { EXTERNAL_LINKS } from '../config/constants';
+import { createTranslator } from '../i18n/utils';
+import type { Language } from '../i18n/types';
 
 interface Props {
   plan: {
@@ -12,14 +14,15 @@ interface Props {
     isPopular?: boolean;
     features: string[];
   };
-  lang: string;
+  lang: Language;
 }
 
 const { plan, lang } = Astro.props;
+const { t } = createTranslator(lang);
 ---
 
 <div class={`pricing-card ${plan.isPopular ? 'popular' : ''}`}>
-  {plan.isPopular && <div class="popular-badge">Most popular</div>}
+  {plan.isPopular && <div class="popular-badge">{t('pages.pricing.ui.popular')}</div>}
 
   <div class="card-header">
     <h3>{plan.name}</h3>
@@ -35,16 +38,16 @@ const { plan, lang } = Astro.props;
   </div>
 
   <div class="card-actions">
-    <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Get Started</a>
+    <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">{t('pages.pricing.ui.getStarted')}</a>
     {plan.id === 'community' ? (
-      <a href={`/${lang}/docs`} class="btn btn-secondary btn-large">Learn More</a>
+      <a href={`/${lang}/docs`} class="btn btn-secondary btn-large">{t('pages.pricing.ui.learnMore')}</a>
     ) : (
-      <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Contact Sales</a>
+      <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION} target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">{t('pages.pricing.ui.contactSales')}</a>
     )}
   </div>
 
   <details class="card-features" open={plan.id === 'community'}>
-    <summary>What's included:</summary>
+    <summary>{t('pages.pricing.ui.whatsIncluded')}</summary>
     <ul>
       {plan.features.map((feature) => (
         <li>
