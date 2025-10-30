@@ -485,43 +485,50 @@
               "name": "Data Migration",
               "standard": "Complete end-to-end migration with full validation",
               "priority": "Rapid migration pipeline setup + core data transferred within 48h",
-              "emergency": "Immediate assessment + critical systems online same-day + full migration begins"
+              "emergency": "Immediate assessment + critical systems online same-day + full migration begins",
+              "id": "data-migration"
             },
             {
               "name": "Ransomware Recovery",
               "standard": "Complete recovery with forensics and hardening",
               "priority": "Rapid threat assessment + core operations restored within 48h",
-              "emergency": "Immediate containment + critical systems restored same-day + full recovery begins"
+              "emergency": "Immediate containment + critical systems restored same-day + full recovery begins",
+              "id": "ransomware-recovery"
             },
             {
               "name": "Security Assessment",
               "standard": "Full security audit with implementation roadmap",
               "priority": "Comprehensive vulnerability assessment + remediation plan within 48h",
-              "emergency": "Critical vulnerability scan + high-risk patches deployed same-day + full audit begins"
+              "emergency": "Critical vulnerability scan + high-risk patches deployed same-day + full audit begins",
+              "id": "security-assessment"
             },
             {
               "name": "Infrastructure Scaling",
               "standard": "Complete infrastructure redesign with optimization",
               "priority": "Rapid capacity increase + monitoring setup within 48h",
-              "emergency": "Critical resources provisioned same-day + auto-scaling configured + full plan begins"
+              "emergency": "Critical resources provisioned same-day + auto-scaling configured + full plan begins",
+              "id": "infrastructure-scaling"
             },
             {
               "name": "Team Training",
               "standard": "Comprehensive multi-day training program",
               "priority": "Intensive hands-on workshop + key workflows covered within 2 days",
-              "emergency": "Critical procedures briefing same-day + incident response prep + full program begins"
+              "emergency": "Critical procedures briefing same-day + incident response prep + full program begins",
+              "id": "team-training"
             },
             {
               "name": "Performance Optimization",
               "standard": "Deep analysis with comprehensive performance tuning",
               "priority": "Quick profiling + high-impact optimizations deployed within 48h",
-              "emergency": "Critical bottleneck identified + immediate hotfix deployed same-day + full optimization begins"
+              "emergency": "Critical bottleneck identified + immediate hotfix deployed same-day + full optimization begins",
+              "id": "performance-optimization"
             },
             {
               "name": "Custom Integration",
               "standard": "Complete integration with testing and documentation",
               "priority": "Core integration functional + essential features live within 48h",
-              "emergency": "Critical connection established same-day + basic data flow working + full dev begins"
+              "emergency": "Critical connection established same-day + basic data flow working + full dev begins",
+              "id": "custom-integration"
             }
           ]
         },

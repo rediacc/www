@@ -1,6 +1,7 @@
 ---
 import type { Language } from '../i18n/types';
 import { EXTERNAL_LINKS } from '../config/constants';
+import { createTranslator } from '../i18n/utils';
 
 interface Props {
   package: {
@@ -16,112 +17,60 @@ interface Props {
 }
 
 const { package: pkg, lang } = Astro.props;
+const { t, ta } = createTranslator(lang);
 ---
 
-<div class={`service-package-card ${pkg.isPopular ? 'popular' : ''}`}>
-  {pkg.isPopular && <div class="popular-badge">Most Popular</div>}
+{(() => {
+  const benefits = ta(`pages.pricing.professionalServices.packages.${pkg.id}.benefits`);
+  return (
+    <div class={`service-package-card ${pkg.isPopular ? 'popular' : ''}`}>
+      {pkg.isPopular && <div class="popular-badge">{t('pages.pricing.ui.popular')}</div>}
 
-  <div class="package-icon">
-    <Fragment set:html={pkg.icon} />
-  </div>
+      <div class="package-icon">
+        <Fragment set:html={pkg.icon} />
+      </div>
 
-  <div class="package-header">
-    <h3>{pkg.name}</h3>
-    <p class="package-description">{pkg.description}</p>
-  </div>
+      <div class="package-header">
+        <h3>{pkg.name}</h3>
+        <p class="package-description">{pkg.description}</p>
+      </div>
 
-  <div class="package-pricing">
-    <div class="price-main">
-      <span class="price-from">Starting at</span>
-      <span class="price-amount">{pkg.price}</span>
+      <div class="package-pricing">
+        <div class="price-main">
+          <span class="price-from">{t('pages.pricing.ui.startingAt')}</span>
+          <span class="price-amount">{pkg.price}</span>
+        </div>
+        <div class="turnaround-time">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <span>{pkg.turnaround}</span>
+        </div>
+      </div>
+
+      <div class="package-benefits">
+        <h4>{t('pages.pricing.ui.keyBenefits')}</h4>
+        <ul>
+          {benefits.map((benefit) => (
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>{benefit}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="package-action">
+        <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION}
+           target="_blank"
+           rel="noopener noreferrer"
+           class={`btn ${pkg.isPopular ? 'btn-primary' : 'btn-secondary'} btn-full-width`}>
+          {t('pages.pricing.ui.getStarted')}
+        </a>
+      </div>
     </div>
-    <div class="turnaround-time">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"/>
-        <polyline points="12 6 12 12 16 14"/>
-      </svg>
-      <span>{pkg.turnaround}</span>
-    </div>
-  </div>
-
-  <div class="package-benefits">
-    <h4>Key Benefits</h4>
-    <ul>
-      {pkg.id === 'standard' && (
-        <>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Standard turnaround time</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Business hours support</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Best value for planned projects</span>
-          </li>
-        </>
-      )}
-      {pkg.id === 'priority' && (
-        <>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Fast-track execution</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Extended hours support</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Ideal for urgent needs</span>
-          </li>
-        </>
-      )}
-      {pkg.id === 'emergency' && (
-        <>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Immediate response</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>24/7 dedicated team</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-            <span>Critical situations only</span>
-          </li>
-        </>
-      )}
-    </ul>
-  </div>
-
-  <div class="package-action">
-    <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION}
-       target="_blank"
-       rel="noopener noreferrer"
-       class={`btn ${pkg.isPopular ? 'btn-primary' : 'btn-secondary'} btn-full-width`}>
-      Get Started
-    </a>
-  </div>
-</div>
+  );
+})()}

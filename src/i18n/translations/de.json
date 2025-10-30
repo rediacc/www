@@ -513,43 +513,50 @@
               "emergency": "Sofortige Bewertung + kritische Systeme online am selben Tag + vollständige Migration beginnt",
               "name": "Datenmigration",
               "priority": "Schnelle Einrichtung der Migrationspipeline + Übertragung der Kerndaten innerhalb von 48 Stunden",
-              "standard": "Vollständige End-to-End-Migration mit vollständiger Validierung"
+              "standard": "Vollständige End-to-End-Migration mit vollständiger Validierung",
+              "id": "data-migration"
             },
             {
               "emergency": "Sofortige Eindämmung + Wiederherstellung kritischer Systeme am selben Tag + Beginn der vollständigen Wiederherstellung",
               "name": "Ransomware-Wiederherstellung",
               "priority": "Schnelle Bedrohungsanalyse + Wiederherstellung des Kernbetriebs innerhalb von 48 Stunden",
-              "standard": "Vollständige Wiederherstellung mit Forensik und Härtung"
+              "standard": "Vollständige Wiederherstellung mit Forensik und Härtung",
+              "id": "ransomware-recovery"
             },
             {
               "emergency": "Kritischer Schwachstellenscan + Hochrisiko-Patches werden noch am selben Tag bereitgestellt + vollständige Prüfung beginnt",
               "name": "Sicherheitsbewertung",
               "priority": "Umfassende Schwachstellenbewertung + Sanierungsplan innerhalb von 48 Stunden",
-              "standard": "Vollständiges Sicherheitsaudit mit Implementierungs-Roadmap"
+              "standard": "Vollständiges Sicherheitsaudit mit Implementierungs-Roadmap",
+              "id": "security-assessment"
             },
             {
               "emergency": "Kritische Ressourcen werden am selben Tag bereitgestellt + automatische Skalierung konfiguriert + der vollständige Plan beginnt",
               "name": "Skalierung der Infrastruktur",
               "priority": "Schnelle Kapazitätssteigerung + Überwachungseinrichtung innerhalb von 48 Stunden",
-              "standard": "Komplette Neugestaltung der Infrastruktur mit Optimierung"
+              "standard": "Komplette Neugestaltung der Infrastruktur mit Optimierung",
+              "id": "infrastructure-scaling"
             },
             {
               "emergency": "Einweisung in kritische Verfahren am selben Tag + Vorbereitung der Reaktion auf Vorfälle + Beginn des vollständigen Programms",
               "name": "Teamtraining",
               "priority": "Intensiver praktischer Workshop + wichtige Arbeitsabläufe innerhalb von 2 Tagen abgedeckt",
-              "standard": "Umfangreiches mehrtägiges Schulungsprogramm"
+              "standard": "Umfangreiches mehrtägiges Schulungsprogramm",
+              "id": "team-training"
             },
             {
               "emergency": "Kritischer Engpass erkannt + sofortiger Hotfix am selben Tag bereitgestellt + vollständige Optimierung beginnt",
               "name": "Leistungsoptimierung",
               "priority": "Schnelle Profilerstellung + wirkungsvolle Optimierungen, die innerhalb von 48 Stunden bereitgestellt werden",
-              "standard": "Tiefgreifende Analyse mit umfassender Leistungsoptimierung"
+              "standard": "Tiefgreifende Analyse mit umfassender Leistungsoptimierung",
+              "id": "performance-optimization"
             },
             {
               "emergency": "Kritische Verbindung wird am selben Tag hergestellt + grundlegender Datenfluss funktioniert + vollständige Entwicklung beginnt",
               "name": "Benutzerdefinierte Integration",
               "priority": "Kernintegrationsfunktionen und wesentliche Funktionen sind innerhalb von 48 Stunden verfügbar",
-              "standard": "Vollständige Integration mit Tests und Dokumentation"
+              "standard": "Vollständige Integration mit Tests und Dokumentation",
+              "id": "custom-integration"
             }
           ]
         }

@@ -513,43 +513,50 @@
               "emergency": "Évaluation immédiate + systèmes critiques en ligne le jour même + début de la migration complète",
               "name": "Migration des données",
               "priority": "Configuration rapide du pipeline de migration + données de base transférées dans les 48 heures",
-              "standard": "Migration complète de bout en bout avec validation complète"
+              "standard": "Migration complète de bout en bout avec validation complète",
+              "id": "data-migration"
             },
             {
               "emergency": "Confinement immédiat + systèmes critiques restaurés le jour même + début de la récupération complète",
               "name": "Récupération de rançongiciel",
               "priority": "Évaluation rapide des menaces + opérations principales restaurées dans les 48 heures",
-              "standard": "Récupération complète avec expertise médico-légale et durcissement"
+              "standard": "Récupération complète avec expertise médico-légale et durcissement",
+              "id": "ransomware-recovery"
             },
             {
               "emergency": "Analyse des vulnérabilités critiques + correctifs à haut risque déployés le jour même + début de l'audit complet",
               "name": "Évaluation de la sécurité",
               "priority": "Évaluation complète des vulnérabilités + plan de remédiation sous 48h",
-              "standard": "Audit de sécurité complet avec feuille de route de mise en œuvre"
+              "standard": "Audit de sécurité complet avec feuille de route de mise en œuvre",
+              "id": "security-assessment"
             },
             {
               "emergency": "Ressources critiques provisionnées le jour même + mise à l'échelle automatique configurée + début du plan complet",
               "name": "Mise à l'échelle de l'infrastructure",
               "priority": "Augmentation rapide de la capacité + mise en place du monitoring sous 48h",
-              "standard": "Refonte complète de l'infrastructure avec optimisation"
+              "standard": "Refonte complète de l'infrastructure avec optimisation",
+              "id": "infrastructure-scaling"
             },
             {
               "emergency": "Briefing sur les procédures critiques le jour même + préparation à la réponse aux incidents + début du programme complet",
               "name": "Formation d'équipe",
               "priority": "Atelier pratique intensif + flux de travail clés couverts en 2 jours",
-              "standard": "Programme de formation complet sur plusieurs jours"
+              "standard": "Programme de formation complet sur plusieurs jours",
+              "id": "team-training"
             },
             {
               "emergency": "Goulot d'étranglement critique identifié + correctif immédiat déployé le jour même + début de l'optimisation complète",
               "name": "Optimisation des performances",
               "priority": "Profilage rapide + optimisations à fort impact déployées en 48h",
-              "standard": "Analyse approfondie avec réglage complet des performances"
+              "standard": "Analyse approfondie avec réglage complet des performances",
+              "id": "performance-optimization"
             },
             {
               "emergency": "Connexion critique établie le jour même + flux de données de base fonctionnel + début du développement complet",
               "name": "Intégration personnalisée",
               "priority": "Intégration de base fonctionnelle + fonctionnalités essentielles disponibles sous 48h",
-              "standard": "Intégration complète avec tests et documentation"
+              "standard": "Intégration complète avec tests et documentation",
+              "id": "custom-integration"
             }
           ]
         }

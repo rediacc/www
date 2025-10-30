@@ -513,43 +513,50 @@
               "emergency": "立即评估+关键系统当天上线+开始全面迁移",
               "name": "数据迁移",
               "priority": "快速迁移管道设置+48小时内传输核心数据",
-              "standard": "通过全面验证完成端到端迁移"
+              "standard": "通过全面验证完成端到端迁移",
+              "id": "data-migration"
             },
             {
               "emergency": "立即遏制 + 关键系统当天恢复 + 开始全面恢复",
               "name": "勒索软件恢复",
               "priority": "快速威胁评估+48小时内恢复核心运营",
-              "standard": "通过取证和强化完全恢复"
+              "standard": "通过取证和强化完全恢复",
+              "id": "ransomware-recovery"
             },
             {
               "emergency": "关键漏洞扫描+当天部署高危补丁+全面审计开始",
               "name": "安全评估",
               "priority": "全面漏洞评估+48小时内修复计划",
-              "standard": "全面的安全审计和实施路线图"
+              "standard": "全面的安全审计和实施路线图",
+              "id": "security-assessment"
             },
             {
               "emergency": "当天配置关键资源 + 配置自动扩展 + 完整计划开始",
               "name": "基础设施扩展",
               "priority": "快速扩容+48小时内监控搭建",
-              "standard": "完成基础设施重新设计和优化"
+              "standard": "完成基础设施重新设计和优化",
+              "id": "infrastructure-scaling"
             },
             {
               "emergency": "当天关键程序简报 + 事件响应准备 + 完整计划开始",
               "name": "团队训练",
               "priority": "密集实践研讨会 + 2 天内涵盖的关键工作流程",
-              "standard": "综合多日培训计划"
+              "standard": "综合多日培训计划",
+              "id": "team-training"
             },
             {
               "emergency": "发现关键瓶颈+当天立即部署修补程序+开始全面优化",
               "name": "性能优化",
               "priority": "48 小时内部署快速分析 + 高效优化",
-              "standard": "深入分析和全面的性能调优"
+              "standard": "深入分析和全面的性能调优",
+              "id": "performance-optimization"
             },
             {
               "emergency": "关键连接当天建立+基本数据流工作+全面开发开始",
               "name": "定制集成",
               "priority": "核心集成功能+基本功能48小时内上线",
-              "standard": "与测试和文档完全集成"
+              "standard": "与测试和文档完全集成",
+              "id": "custom-integration"
             }
           ]
         }
