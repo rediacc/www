@@ -31,32 +31,32 @@ const communityPlan = {
 
 const businessPlans = [
   {
-    id: 'advanced',
-    name: t('pages.pricing.plans.advanced.name'),
+    id: 'pro',
+    name: t('pages.pricing.plans.pro.name'),
     price: '$399',
     period: 'per month',
-    description: t('pages.pricing.plans.advanced.description'),
+    description: t('pages.pricing.plans.pro.description'),
     isPopular: true,
-    features: ta('pages.pricing.plans.advanced.features')
+    features: ta('pages.pricing.plans.pro.features')
   },
   {
-    id: 'premium',
-    name: t('pages.pricing.plans.premium.name'),
+    id: 'business',
+    name: t('pages.pricing.plans.business.name'),
     price: '$799',
     period: 'per month',
-    description: t('pages.pricing.plans.premium.description'),
+    description: t('pages.pricing.plans.business.description'),
     isPopular: false,
-    features: ta('pages.pricing.plans.premium.features')
+    features: ta('pages.pricing.plans.business.features')
   },
   {
-    id: 'elite',
-    name: t('pages.pricing.plans.elite.name'),
+    id: 'enterprise',
+    name: t('pages.pricing.plans.enterprise.name'),
     price: '$2,100',
-    priceNote: t('pages.pricing.plans.elite.priceNote'),
+    priceNote: t('pages.pricing.plans.enterprise.priceNote'),
     period: 'per month',
-    description: t('pages.pricing.plans.elite.description'),
+    description: t('pages.pricing.plans.enterprise.description'),
     isPopular: false,
-    features: ta('pages.pricing.plans.elite.features')
+    features: ta('pages.pricing.plans.enterprise.features')
   }
 ];
 
@@ -328,4 +328,3 @@ function getIconForService(id: string): string {
     });
   });
 </script>
-

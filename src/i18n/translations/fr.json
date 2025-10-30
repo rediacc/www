@@ -340,7 +340,7 @@
             "question": "Existe-t-il un essai gratuit disponible ?"
           },
           {
-            "answer": "Les plans communautaires incluent le soutien communautaire. Les forfaits Business incluent une assistance prioritaire par e-mail, et les forfaits Premium/Elite incluent une assistance téléphonique 24h/24 et 7j/7 et des gestionnaires de compte dédiés.",
+            "answer": "Les plans communautaires incluent le soutien communautaire. Les forfaits Business incluent une assistance prioritaire par e-mail, et les forfaits Business/Entreprise incluent une assistance téléphonique 24h/24 et 7j/7 et des gestionnaires de comptes dédiés.",
             "question": "Qu'est-ce qui est inclus dans l'assistance ?"
           }
         ]
@@ -363,19 +363,19 @@
         "title": "Tarifs | Protection des infrastructures simple et transparente"
       },
       "plans": {
-        "advanced": {
-          "description": "Pour les équipes en croissance et les charges de travail de production",
+        "business": {
+          "description": "Pour les équipes établies avec une infrastructure critique",
           "features": [
-            "Délai d'attente de travail de 24 heures",
-            "5 emplois actifs",
-            "2 emplois réservés",
-            "20 machines",
-            "50 référentiels",
-            "Taille maximale du dépôt de 50 Go",
-            "Journaux d'audit sur 14 jours",
-            "Assistance prioritaire"
+            "Délai d'expiration de la tâche de 72 heures",
+            "7 emplois actifs",
+            "3 emplois réservés",
+            "100 machines",
+            "250 référentiels",
+            "Taille maximale du dépôt de 250 Go",
+            "Journaux d'audit sur 30 jours",
+            "Assistance 24h/24 et 7j/7"
           ],
-          "name": "Avancée"
+          "name": "Entreprise"
         },
         "community": {
           "description": "Parfait pour les projets personnels et les tests",
@@ -393,7 +393,7 @@
           ],
           "name": "Communauté"
         },
-        "elite": {
+        "enterprise": {
           "description": "Pour les entreprises ayant des exigences personnalisées",
           "features": [
             "Délai d'attente de travail de plus de 96 heures",
@@ -405,22 +405,22 @@
             "Journaux d'audit de plus de 90 jours",
             "Gestionnaire de compte dédié"
           ],
-          "name": "Élite",
+          "name": "Entreprise",
           "priceNote": "*À partir de"
         },
-        "premium": {
-          "description": "Pour les équipes établies avec une infrastructure critique",
+        "pro": {
+          "description": "Pour les équipes en croissance et les charges de travail de production",
           "features": [
-            "Délai d'expiration de la tâche de 72 heures",
-            "7 emplois actifs",
-            "3 emplois réservés",
-            "100 machines",
-            "250 référentiels",
-            "Taille maximale du dépôt de 250 Go",
-            "Journaux d'audit sur 30 jours",
-            "Assistance 24h/24 et 7j/7"
+            "Délai d'attente de travail de 24 heures",
+            "5 emplois actifs",
+            "2 emplois réservés",
+            "20 machines",
+            "50 référentiels",
+            "Taille maximale du dépôt de 50 Go",
+            "Journaux d'audit sur 14 jours",
+            "Assistance prioritaire"
           ],
-          "name": "Prime"
+          "name": "Pro"
         }
       },
       "professionalServices": {
@@ -445,7 +445,7 @@
         },
         "header": {
           "badge": "Accélérez votre réussite avec l’assistance d’un professionnel",
-          "eligibility": "Admissibilité : les services professionnels sont disponibles uniquement pour les clients des forfaits Advanced, Premium et Elite.",
+          "eligibility": "Admissibilité : les services professionnels sont disponibles uniquement pour les clients des forfaits Pro, Business et Enterprise.",
           "subtitle": "Obtenez l'aide d'un expert lorsque vous en avez le plus besoin",
           "title": "Forfaits de services professionnels"
         },
@@ -511,52 +511,52 @@
           "services": [
             {
               "emergency": "Évaluation immédiate + systèmes critiques en ligne le jour même + début de la migration complète",
+              "id": "migration de données",
               "name": "Migration des données",
               "priority": "Configuration rapide du pipeline de migration + données de base transférées dans les 48 heures",
-              "standard": "Migration complète de bout en bout avec validation complète",
-              "id": "data-migration"
+              "standard": "Migration complète de bout en bout avec validation complète"
             },
             {
               "emergency": "Confinement immédiat + systèmes critiques restaurés le jour même + début de la récupération complète",
+              "id": "récupération de ransomware",
               "name": "Récupération de rançongiciel",
               "priority": "Évaluation rapide des menaces + opérations principales restaurées dans les 48 heures",
-              "standard": "Récupération complète avec expertise médico-légale et durcissement",
-              "id": "ransomware-recovery"
+              "standard": "Récupération complète avec expertise médico-légale et durcissement"
             },
             {
               "emergency": "Analyse des vulnérabilités critiques + correctifs à haut risque déployés le jour même + début de l'audit complet",
+              "id": "évaluation de sécurité",
               "name": "Évaluation de la sécurité",
               "priority": "Évaluation complète des vulnérabilités + plan de remédiation sous 48h",
-              "standard": "Audit de sécurité complet avec feuille de route de mise en œuvre",
-              "id": "security-assessment"
+              "standard": "Audit de sécurité complet avec feuille de route de mise en œuvre"
             },
             {
               "emergency": "Ressources critiques provisionnées le jour même + mise à l'échelle automatique configurée + début du plan complet",
+              "id": "mise à l'échelle de l'infrastructure",
               "name": "Mise à l'échelle de l'infrastructure",
               "priority": "Augmentation rapide de la capacité + mise en place du monitoring sous 48h",
-              "standard": "Refonte complète de l'infrastructure avec optimisation",
-              "id": "infrastructure-scaling"
+              "standard": "Refonte complète de l'infrastructure avec optimisation"
             },
             {
               "emergency": "Briefing sur les procédures critiques le jour même + préparation à la réponse aux incidents + début du programme complet",
+              "id": "formation d'équipe",
               "name": "Formation d'équipe",
               "priority": "Atelier pratique intensif + flux de travail clés couverts en 2 jours",
-              "standard": "Programme de formation complet sur plusieurs jours",
-              "id": "team-training"
+              "standard": "Programme de formation complet sur plusieurs jours"
             },
             {
               "emergency": "Goulot d'étranglement critique identifié + correctif immédiat déployé le jour même + début de l'optimisation complète",
+              "id": "optimisation des performances",
               "name": "Optimisation des performances",
               "priority": "Profilage rapide + optimisations à fort impact déployées en 48h",
-              "standard": "Analyse approfondie avec réglage complet des performances",
-              "id": "performance-optimization"
+              "standard": "Analyse approfondie avec réglage complet des performances"
             },
             {
               "emergency": "Connexion critique établie le jour même + flux de données de base fonctionnel + début du développement complet",
+              "id": "intégration personnalisée",
               "name": "Intégration personnalisée",
               "priority": "Intégration de base fonctionnelle + fonctionnalités essentielles disponibles sous 48h",
-              "standard": "Intégration complète avec tests et documentation",
-              "id": "custom-integration"
+              "standard": "Intégration complète avec tests et documentation"
             }
           ]
         }

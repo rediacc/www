@@ -79,7 +79,7 @@
             "disasterRecovery": "Felaket Kurtarma",
             "multiple": "Çoklu",
             "other": "Diğer",
-            "placeholder": "Birini seç"
+            "placeholder": "Birini seçin"
           }
         }
       },
@@ -112,7 +112,7 @@
     },
     "links": {
       "contactSupport": "Destek Ekibiyle İletişime Geçin",
-      "returnToHome": "Ana Sayfaya Dönüş"
+      "returnToHome": "Ana Sayfaya Dön"
     },
     "productLinks": {
       "overview": "Genel Bakış",
@@ -340,14 +340,14 @@
             "question": "Ücretsiz deneme mevcut mu?"
           },
           {
-            "answer": "Topluluk planları topluluk desteğini içerir. İş planları öncelikli e-posta desteğini içerir ve Premium/Elit planlar 7/24 telefon desteğini ve özel hesap yöneticilerini içerir.",
+            "answer": "Topluluk planları topluluk desteğini içerir. İş planları öncelikli e-posta desteğini içerir ve İş/Kurumsal planlar 7/24 telefon desteğini ve özel hesap yöneticilerini içerir.",
             "question": "Desteğe neler dahildir?"
           }
         ]
       },
       "finalCta": {
         "buttons": {
-          "startFree": "Ücretsiz Başla",
+          "startFree": "Ücretsiz Başlayın",
           "talkToSales": "Satışla Konuşun"
         },
         "description": "Rediacc ile altyapılarını koruyan ekiplere katılın",
@@ -363,19 +363,19 @@
         "title": "Fiyatlandırma | Basit, Şeffaf Altyapı Koruması"
       },
       "plans": {
-        "advanced": {
-          "description": "Büyüyen ekipler ve üretim iş yükleri için",
+        "business": {
+          "description": "Kritik altyapıya sahip yerleşik ekipler için",
           "features": [
-            "24 Saatlik İş Zaman Aşımı",
-            "5 Aktif İş",
-            "2 Rezerve İş İlanı",
-            "20 Makine",
-            "50 Depo",
-            "50 GB Maksimum Repo Boyutu",
-            "14 Günlük Denetim Günlükleri",
-            "Öncelikli Destek"
+            "72 Saatlik İş Zaman Aşımı",
+            "7 Aktif İş",
+            "3 Rezerve İş",
+            "100 Makine",
+            "250 Depo",
+            "250 GB Maksimum Repo Boyutu",
+            "30 Günlük Denetim Günlükleri",
+            "7/24 Destek"
           ],
-          "name": "Gelişmiş"
+          "name": "İşletme"
         },
         "community": {
           "description": "Kişisel projeler ve testler için mükemmel",
@@ -393,7 +393,7 @@
           ],
           "name": "Toplum"
         },
-        "elite": {
+        "enterprise": {
           "description": "Özel gereksinimleri olan işletmeler için",
           "features": [
             "96+ Saat İş Zaman Aşımı",
@@ -405,27 +405,27 @@
             "90+ Günlük Denetim Günlükleri",
             "Özel Hesap Yöneticisi"
           ],
-          "name": "Elit",
+          "name": "Girişim",
           "priceNote": "*Başlangıç ​​tarihi:"
         },
-        "premium": {
-          "description": "Kritik altyapıya sahip yerleşik ekipler için",
+        "pro": {
+          "description": "Büyüyen ekipler ve üretim iş yükleri için",
           "features": [
-            "72 Saatlik İş Zaman Aşımı",
-            "7 Aktif İş",
-            "3 Rezerve İş",
-            "100 Makine",
-            "250 Depo",
-            "250 GB Maksimum Repo Boyutu",
-            "30 Günlük Denetim Günlükleri",
-            "7/24 Destek"
+            "24 Saatlik İş Zaman Aşımı",
+            "5 Aktif İş",
+            "2 Rezerve İş İlanı",
+            "20 Makine",
+            "50 Depo",
+            "50 GB Maksimum Repo Boyutu",
+            "14 Günlük Denetim Günlükleri",
+            "Öncelikli Destek"
           ],
-          "name": "prim"
+          "name": "Profesyonel"
         }
       },
       "professionalServices": {
         "benefits": {
-          "description": "Profesyonel hizmetlerimiz, kritik altyapı sorunlarıyla karşılaştığınızda asla yalnız kalmamanızı sağlar.",
+          "description": "Profesyonel hizmetlerimiz, kritik altyapı zorluklarıyla karşılaştığınızda asla yalnız kalmamanızı sağlar.",
           "heading": "Neden Profesyonel Hizmetler?",
           "items": [
             "Projenize atanan uzmanlardan oluşan özel ekip",
@@ -445,7 +445,7 @@
         },
         "header": {
           "badge": "Başarınızı profesyonel yardımla hızlandırın",
-          "eligibility": "Uygunluk: Profesyonel hizmetler yalnızca Gelişmiş, Premium ve Elit plan müşterileri için mevcuttur.",
+          "eligibility": "Uygunluk: Profesyonel hizmetler yalnızca Pro, Business ve Enterprise plan müşterileri için mevcuttur.",
           "subtitle": "En çok ihtiyaç duyduğunuz anda uzman yardımı alın",
           "title": "Profesyonel Hizmet Paketleri"
         },
@@ -511,52 +511,52 @@
           "services": [
             {
               "emergency": "Anında değerlendirme + kritik sistemler aynı gün çevrimiçi + tam geçiş başlıyor",
+              "id": "veri taşıma",
               "name": "Veri Taşıma",
               "priority": "Hızlı geçiş hattı kurulumu + 48 saat içinde aktarılan temel veriler",
-              "standard": "Tam doğrulamayla uçtan uca geçişi tamamlayın",
-              "id": "data-migration"
+              "standard": "Tam doğrulamayla uçtan uca geçişi tamamlayın"
             },
             {
               "emergency": "Derhal kontrol altına alma + kritik sistemler aynı gün içinde onarılır + tam kurtarma başlar",
+              "id": "fidye yazılımı kurtarma",
               "name": "Fidye Yazılımı Kurtarma",
               "priority": "Hızlı tehdit değerlendirmesi + temel operasyonlar 48 saat içinde geri yüklendi",
-              "standard": "Adli tıp ve sertleştirmeyle tam iyileşme",
-              "id": "ransomware-recovery"
+              "standard": "Adli tıp ve sertleştirmeyle tam iyileşme"
             },
             {
               "emergency": "Kritik güvenlik açığı taraması + yüksek riskli yamalar aynı gün dağıtılır + tam denetim başlar",
+              "id": "güvenlik değerlendirmesi",
               "name": "Güvenlik Değerlendirmesi",
               "priority": "Kapsamlı güvenlik açığı değerlendirmesi + 48 saat içinde iyileştirme planı",
-              "standard": "Uygulama yol haritasıyla birlikte tam güvenlik denetimi",
-              "id": "security-assessment"
+              "standard": "Uygulama yol haritasıyla birlikte tam güvenlik denetimi"
             },
             {
               "emergency": "Kritik kaynaklar aynı gün sağlandı + otomatik ölçeklendirme yapılandırıldı + tam plan başlıyor",
+              "id": "altyapı ölçeklendirme",
               "name": "Altyapı Ölçeklendirmesi",
               "priority": "Hızlı kapasite artışı + 48 saat içinde izleme kurulumu",
-              "standard": "Optimizasyonla komple altyapı yeniden tasarımı",
-              "id": "infrastructure-scaling"
+              "standard": "Optimizasyonla komple altyapı yeniden tasarımı"
             },
             {
               "emergency": "Aynı gün içinde kritik prosedürler brifingi + olay müdahale hazırlığı + tam program başlıyor",
+              "id": "takım eğitimi",
               "name": "Takım Eğitimi",
               "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde tamamlanan önemli iş akışları",
-              "standard": "Kapsamlı, çok günlük eğitim programı",
-              "id": "team-training"
+              "standard": "Kapsamlı, çok günlük eğitim programı"
             },
             {
               "emergency": "Kritik darboğaz belirlendi + aynı gün anında düzeltme uygulandı + tam optimizasyon başlıyor",
+              "id": "performans optimizasyonu",
               "name": "Performans Optimizasyonu",
               "priority": "Hızlı profil oluşturma + 48 saat içinde devreye alınan yüksek etkili optimizasyonlar",
-              "standard": "Kapsamlı performans ayarıyla derin analiz",
-              "id": "performance-optimization"
+              "standard": "Kapsamlı performans ayarıyla derin analiz"
             },
             {
               "emergency": "Kritik bağlantı aynı gün kuruldu + temel veri akışı çalışıyor + tam geliştirme başlıyor",
+              "id": "özel entegrasyon",
               "name": "Özel Entegrasyon",
               "priority": "Temel entegrasyon fonksiyonel + temel özellikler 48 saat içinde yayınlanır",
-              "standard": "Test ve dokümantasyonla tam entegrasyon",
-              "id": "custom-integration"
+              "standard": "Test ve dokümantasyonla tam entegrasyon"
             }
           ]
         }
@@ -824,7 +824,7 @@
                 "Test edilmemiş yük devretme planları ihtiyacınız olduğunda başarısız olur"
               ],
               "description": "Tek bulut risklidir. Felaket meydana gelmeden önce yük devretmeyi test etmek istiyorsunuz. Ancak test yapmak, üretimi tam olarak yansıtan altyapının kopyalanması ve senkronizasyonun haftalar boyunca sürdürülmesi anlamına gelir. Çoğu şirket felaketten kurtarmayı hiçbir zaman test etmez çünkü risk ve çaba buna değmez; ta ki kesintiler değmesi gerektiğini kanıtlayana kadar.",
-              "story": "Şirketlerin yalnızca %7'si felaket kurtarma planlarını asla test etmiyor. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Ancak yalnızca yıllık %46 test yapılıyor. <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Neden: zaman, kaynak eksikliği, karmaşıklık. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Test yapmak maliyetleri iki katına çıkarır. Sağlayıcının kesintisi, test etmeleri gerektiğini kanıtlıyor."
+              "story": "Şirketlerin yalnızca %7'si felaket kurtarma planlarını asla test etmiyor. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Ancak yalnızca yıllık olarak %46 test yapılıyor. <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Neden: zaman, kaynak eksikliği, karmaşıklık. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Test yapmak maliyetleri iki katına çıkarır. Sağlayıcının kesintisi, test etmeleri gerektiğini kanıtlıyor."
             },
             "solution": {
               "benefits": [
@@ -1003,7 +1003,7 @@
         },
         "title": "Hikayemiz",
         "turningPoint": {
-          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolayca yedekleyebileceğim ve nereye taşırsam taşıayım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
+          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolaylıkla yedekleyebileceğim ve nereye taşırsam taşıyım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
           "paragraph2": "2021 yılında Docker'ı NetworkChuck'ın videosu aracılığıyla keşfettim. Neyin mümkün olduğu karşısında şok oldum. Keşke bu teknolojiyi daha önce bilseydim; her şeyi değiştirebilirdi.",
           "paragraph3": "Ancak Docker tek başına tüm sorunlarımı çözmedi. Konteyner dosyalarını sistemler arasında taşımak zordu. Dosya sahipliği uyumluluk sorunlarıyla karşılaştım ve veri boyutu büyüdükçe aktarımlar daha uzun sürdü. En önemlisi, geçiş bitene kadar hizmetleri çevrimdışı tutmak zorunda kaldım ve Docker minimum güvenlik özellikleri sundu.",
           "title": "Dönüm Noktası"

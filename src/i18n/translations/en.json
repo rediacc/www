@@ -365,8 +365,8 @@
             "7 Day Audit Logs"
           ]
         },
-        "advanced": {
-          "name": "Advanced",
+        "pro": {
+          "name": "Pro",
           "description": "For growing teams and production workloads",
           "features": [
             "24 Hour Job Timeout",
@@ -379,8 +379,8 @@
             "Priority Support"
           ]
         },
-        "premium": {
-          "name": "Premium",
+        "business": {
+          "name": "Business",
           "description": "For established teams with critical infrastructure",
           "features": [
             "72 Hour Job Timeout",
@@ -393,8 +393,8 @@
             "24/7 Support"
           ]
         },
-        "elite": {
-          "name": "Elite",
+        "enterprise": {
+          "name": "Enterprise",
           "description": "For enterprises with custom requirements",
           "priceNote": "*Starting at",
           "features": [
@@ -419,7 +419,7 @@
           "title": "Professional Service Packages",
           "subtitle": "Get expert help when you need it most",
           "badge": "Fast-track your success with professional assistance",
-          "eligibility": "Eligibility: Professional services are available for Advanced, Premium, and Elite plan customers only."
+          "eligibility": "Eligibility: Professional services are available for Pro, Business, and Enterprise plan customers only."
         },
         "packages": {
           "standard": {
@@ -569,7 +569,7 @@
           },
           {
             "question": "What's included in support?",
-            "answer": "Community plans include community support. Business plans include priority email support, and Premium/Elite plans include 24/7 phone support and dedicated account managers."
+            "answer": "Community plans include community support. Business plans include priority email support, and Business/Enterprise plans include 24/7 phone support and dedicated account managers."
           }
         ]
       },
