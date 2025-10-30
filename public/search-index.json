@@ -1742,7 +1742,7 @@
     "excerpt": "Advanced",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.name",
+    "path": "pages.pricing.plans.pro.name",
     "priority": 3
   },
   {
@@ -1751,7 +1751,7 @@
     "excerpt": "For growing teams and production workloads",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.description",
+    "path": "pages.pricing.plans.pro.description",
     "priority": 2
   },
   {
@@ -1760,7 +1760,7 @@
     "excerpt": "24 Hour Job Timeout",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[0]",
+    "path": "pages.pricing.plans.pro.features[0]",
     "priority": 3
   },
   {
@@ -1769,7 +1769,7 @@
     "excerpt": "5 Active Jobs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[1]",
+    "path": "pages.pricing.plans.pro.features[1]",
     "priority": 3
   },
   {
@@ -1778,7 +1778,7 @@
     "excerpt": "2 Reserved Jobs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[2]",
+    "path": "pages.pricing.plans.pro.features[2]",
     "priority": 3
   },
   {
@@ -1787,7 +1787,7 @@
     "excerpt": "20 Machines",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[3]",
+    "path": "pages.pricing.plans.pro.features[3]",
     "priority": 3
   },
   {
@@ -1796,7 +1796,7 @@
     "excerpt": "50 Repositories",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[4]",
+    "path": "pages.pricing.plans.pro.features[4]",
     "priority": 3
   },
   {
@@ -1805,7 +1805,7 @@
     "excerpt": "50 GB Max Repo Size",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[5]",
+    "path": "pages.pricing.plans.pro.features[5]",
     "priority": 3
   },
   {
@@ -1814,7 +1814,7 @@
     "excerpt": "14 Day Audit Logs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[6]",
+    "path": "pages.pricing.plans.pro.features[6]",
     "priority": 3
   },
   {
@@ -1823,7 +1823,7 @@
     "excerpt": "Priority Support",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.advanced.features[7]",
+    "path": "pages.pricing.plans.pro.features[7]",
     "priority": 3
   },
   {
@@ -1832,7 +1832,7 @@
     "excerpt": "Premium",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.name",
+    "path": "pages.pricing.plans.business.name",
     "priority": 3
   },
   {
@@ -1841,7 +1841,7 @@
     "excerpt": "For established teams with critical infrastructure",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.description",
+    "path": "pages.pricing.plans.business.description",
     "priority": 2
   },
   {
@@ -1850,7 +1850,7 @@
     "excerpt": "72 Hour Job Timeout",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[0]",
+    "path": "pages.pricing.plans.business.features[0]",
     "priority": 3
   },
   {
@@ -1859,7 +1859,7 @@
     "excerpt": "7 Active Jobs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[1]",
+    "path": "pages.pricing.plans.business.features[1]",
     "priority": 3
   },
   {
@@ -1868,7 +1868,7 @@
     "excerpt": "3 Reserved Jobs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[2]",
+    "path": "pages.pricing.plans.business.features[2]",
     "priority": 3
   },
   {
@@ -1877,7 +1877,7 @@
     "excerpt": "100 Machines",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[3]",
+    "path": "pages.pricing.plans.business.features[3]",
     "priority": 3
   },
   {
@@ -1886,7 +1886,7 @@
     "excerpt": "250 Repositories",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[4]",
+    "path": "pages.pricing.plans.business.features[4]",
     "priority": 3
   },
   {
@@ -1895,7 +1895,7 @@
     "excerpt": "250 GB Max Repo Size",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[5]",
+    "path": "pages.pricing.plans.business.features[5]",
     "priority": 3
   },
   {
@@ -1904,7 +1904,7 @@
     "excerpt": "30 Day Audit Logs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[6]",
+    "path": "pages.pricing.plans.business.features[6]",
     "priority": 3
   },
   {
@@ -1913,7 +1913,7 @@
     "excerpt": "24/7 Support",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.premium.features[7]",
+    "path": "pages.pricing.plans.business.features[7]",
     "priority": 3
   },
   {
@@ -1922,7 +1922,7 @@
     "excerpt": "Elite",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.name",
+    "path": "pages.pricing.plans.enterprise.name",
     "priority": 3
   },
   {
@@ -1931,7 +1931,7 @@
     "excerpt": "For enterprises with custom requirements",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.description",
+    "path": "pages.pricing.plans.enterprise.description",
     "priority": 2
   },
   {
@@ -1940,7 +1940,7 @@
     "excerpt": "*Starting at",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.priceNote",
+    "path": "pages.pricing.plans.enterprise.priceNote",
     "priority": 3
   },
   {
@@ -1949,7 +1949,7 @@
     "excerpt": "96+ Hour Job Timeout",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[0]",
+    "path": "pages.pricing.plans.enterprise.features[0]",
     "priority": 3
   },
   {
@@ -1958,7 +1958,7 @@
     "excerpt": "10+ Active Jobs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[1]",
+    "path": "pages.pricing.plans.enterprise.features[1]",
     "priority": 3
   },
   {
@@ -1967,7 +1967,7 @@
     "excerpt": "5+ Reserved Jobs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[2]",
+    "path": "pages.pricing.plans.enterprise.features[2]",
     "priority": 3
   },
   {
@@ -1976,7 +1976,7 @@
     "excerpt": "400+ Machines",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[3]",
+    "path": "pages.pricing.plans.enterprise.features[3]",
     "priority": 3
   },
   {
@@ -1985,7 +1985,7 @@
     "excerpt": "1000+ Repositories",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[4]",
+    "path": "pages.pricing.plans.enterprise.features[4]",
     "priority": 3
   },
   {
@@ -1994,7 +1994,7 @@
     "excerpt": "1TB+ Max Repo Size",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[5]",
+    "path": "pages.pricing.plans.enterprise.features[5]",
     "priority": 3
   },
   {
@@ -2003,7 +2003,7 @@
     "excerpt": "90+ Day Audit Logs",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[6]",
+    "path": "pages.pricing.plans.enterprise.features[6]",
     "priority": 3
   },
   {
@@ -2012,7 +2012,7 @@
     "excerpt": "Dedicated Account Manager",
     "category": "Pages",
     "page": "/",
-    "path": "pages.pricing.plans.elite.features[7]",
+    "path": "pages.pricing.plans.enterprise.features[7]",
     "priority": 3
   },
   {
@@ -2071,8 +2071,8 @@
   },
   {
     "id": "search-230",
-    "content": "Eligibility: Professional services are available for Advanced, Premium, and Elite plan customers only.",
-    "excerpt": "Eligibility: Professional services are available for Advanced, Premium, and Elite plan customers only.",
+    "content": "Eligibility: Professional services are available for Pro, Business, and Enterprise plan customers only.",
+    "excerpt": "Eligibility: Professional services are available for Pro, Business, and Enterprise plan customers only.",
     "category": "Pages",
     "page": "/",
     "path": "pages.pricing.professionalServices.header.eligibility",
@@ -2854,8 +2854,8 @@
   },
   {
     "id": "search-317",
-    "content": "Community plans include community support. Business plans include priority email support, and Premium/Elite plans include 24/7 phone support and dedicated account managers.",
-    "excerpt": "Community plans include community support. Business plans include priority email support, and Premium/Elite plans include 24/7 phone support and dedic...",
+    "content": "Community plans include community support. Business plans include priority email support, and Business/Enterprise plans include 24/7 phone support and dedicated account managers.",
+    "excerpt": "Community plans include community support. Business plans include priority email support, and Business/Enterprise plans include 24/7 phone support and dedic...",
     "category": "Pages",
     "page": "/",
     "path": "pages.pricing.faq.items[3].answer",

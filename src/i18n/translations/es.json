@@ -340,7 +340,7 @@
             "question": "¿Hay una prueba gratuita disponible?"
           },
           {
-            "answer": "Los planes comunitarios incluyen apoyo comunitario. Los planes comerciales incluyen soporte prioritario por correo electrónico y los planes Premium/Elite incluyen soporte telefónico las 24 horas, los 7 días de la semana y administradores de cuentas dedicados.",
+            "answer": "Los planes comunitarios incluyen apoyo comunitario. Los planes Business incluyen soporte prioritario por correo electrónico y los planes Business/Enterprise incluyen soporte telefónico las 24 horas, los 7 días de la semana y administradores de cuentas dedicados.",
             "question": "¿Qué incluye el soporte?"
           }
         ]
@@ -363,19 +363,19 @@
         "title": "Precios | Protección de infraestructura simple y transparente"
       },
       "plans": {
-        "advanced": {
-          "description": "Para equipos en crecimiento y cargas de trabajo de producción",
+        "business": {
+          "description": "Para equipos establecidos con infraestructura crítica",
           "features": [
-            "Tiempo de espera de trabajo de 24 horas",
-            "5 trabajos activos",
-            "2 trabajos reservados",
-            "20 máquinas",
-            "50 repositorios",
-            "Tamaño máximo de repositorio de 50 GB",
-            "Registros de auditoría de 14 días",
-            "Soporte prioritario"
+            "Tiempo de espera de trabajo de 72 horas",
+            "7 trabajos activos",
+            "3 trabajos reservados",
+            "100 máquinas",
+            "250 repositorios",
+            "Tamaño máximo de repositorio de 250 GB",
+            "Registros de auditoría de 30 días",
+            "Soporte 24 horas al día, 7 días a la semana"
           ],
-          "name": "Avanzada"
+          "name": "Negocio"
         },
         "community": {
           "description": "Perfecto para proyectos personales y pruebas.",
@@ -393,7 +393,7 @@
           ],
           "name": "Comunidad"
         },
-        "elite": {
+        "enterprise": {
           "description": "Para empresas con requisitos personalizados",
           "features": [
             "Tiempo de espera del trabajo de más de 96 horas",
@@ -405,22 +405,22 @@
             "Registros de auditoría de más de 90 días",
             "Gerente de cuenta dedicada"
           ],
-          "name": "Élite",
+          "name": "Empresa",
           "priceNote": "*A partir de"
         },
-        "premium": {
-          "description": "Para equipos establecidos con infraestructura crítica",
+        "pro": {
+          "description": "Para equipos en crecimiento y cargas de trabajo de producción",
           "features": [
-            "Tiempo de espera de trabajo de 72 horas",
-            "7 trabajos activos",
-            "3 trabajos reservados",
-            "100 máquinas",
-            "250 repositorios",
-            "Tamaño máximo de repositorio de 250 GB",
-            "Registros de auditoría de 30 días",
-            "Soporte 24 horas al día, 7 días a la semana"
+            "Tiempo de espera de trabajo de 24 horas",
+            "5 trabajos activos",
+            "2 trabajos reservados",
+            "20 máquinas",
+            "50 repositorios",
+            "Tamaño máximo de repositorio de 50 GB",
+            "Registros de auditoría de 14 días",
+            "Soporte prioritario"
           ],
-          "name": "De primera calidad"
+          "name": "Pro"
         }
       },
       "professionalServices": {
@@ -445,7 +445,7 @@
         },
         "header": {
           "badge": "Acelere su éxito con asistencia profesional",
-          "eligibility": "Elegibilidad: Los servicios profesionales están disponibles solo para clientes de los planes Advanced, Premium y Elite.",
+          "eligibility": "Elegibilidad: Los servicios profesionales están disponibles solo para clientes de los planes Pro, Business y Enterprise.",
           "subtitle": "Obtenga ayuda de expertos cuando más la necesite",
           "title": "Paquetes de servicios profesionales"
         },
@@ -511,52 +511,52 @@
           "services": [
             {
               "emergency": "Evaluación inmediata + sistemas críticos en línea el mismo día + comienza la migración completa",
+              "id": "migración de datos",
               "name": "Migración de datos",
               "priority": "Configuración rápida del proceso de migración + transferencia de datos principales en 48 horas",
-              "standard": "Migración completa de un extremo a otro con validación completa",
-              "id": "data-migration"
+              "standard": "Migración completa de un extremo a otro con validación completa"
             },
             {
               "emergency": "Contención inmediata + sistemas críticos restaurados el mismo día + comienza la recuperación completa",
+              "id": "recuperación-ransomware",
               "name": "Recuperación de ransomware",
               "priority": "Evaluación rápida de amenazas + operaciones centrales restauradas en 48 horas",
-              "standard": "Recuperación completa con análisis forense y endurecimiento.",
-              "id": "ransomware-recovery"
+              "standard": "Recuperación completa con análisis forense y endurecimiento."
             },
             {
               "emergency": "Exploración de vulnerabilidades críticas + parches de alto riesgo implementados el mismo día + comienza la auditoría completa",
+              "id": "evaluación de seguridad",
               "name": "Evaluación de seguridad",
               "priority": "Evaluación integral de vulnerabilidad + plan de remediación en 48h",
-              "standard": "Auditoría de seguridad completa con hoja de ruta de implementación",
-              "id": "security-assessment"
+              "standard": "Auditoría de seguridad completa con hoja de ruta de implementación"
             },
             {
               "emergency": "Recursos críticos aprovisionados el mismo día + escalado automático configurado + comienza el plan completo",
+              "id": "escalamiento de infraestructura",
               "name": "Escalamiento de infraestructura",
               "priority": "Aumento rápido de la capacidad + configuración de monitoreo en 48 horas",
-              "standard": "Rediseño completo de infraestructura con optimización.",
-              "id": "infrastructure-scaling"
+              "standard": "Rediseño completo de infraestructura con optimización."
             },
             {
               "emergency": "Sesión informativa sobre procedimientos críticos el mismo día + preparación de respuesta a incidentes + comienza el programa completo",
+              "id": "entrenamiento en equipo",
               "name": "Entrenamiento en equipo",
               "priority": "Taller práctico intensivo + flujos de trabajo clave cubiertos en 2 días",
-              "standard": "Programa de formación integral de varios días.",
-              "id": "team-training"
+              "standard": "Programa de formación integral de varios días."
             },
             {
               "emergency": "Se identifica un cuello de botella crítico + se implementa una revisión inmediata el mismo día + comienza la optimización completa",
+              "id": "optimización del rendimiento",
               "name": "Optimización del rendimiento",
               "priority": "Creación de perfiles rápida + optimizaciones de alto impacto implementadas en 48 horas",
-              "standard": "Análisis profundo con ajuste integral del rendimiento",
-              "id": "performance-optimization"
+              "standard": "Análisis profundo con ajuste integral del rendimiento"
             },
             {
               "emergency": "Conexión crítica establecida el mismo día + flujo de datos básico funcionando + comienza el desarrollo completo",
+              "id": "integración personalizada",
               "name": "Integración personalizada",
               "priority": "Integración principal funcional + funciones esenciales disponibles en 48 horas",
-              "standard": "Integración completa con pruebas y documentación.",
-              "id": "custom-integration"
+              "standard": "Integración completa con pruebas y documentación."
             }
           ]
         }
