@@ -387,13 +387,6 @@
   white-space: nowrap;
 }
 
-/* Card Header - Fixed height for alignment */
-.card-header {
-  min-height: 130px;
-  display: flex;
-  flex-direction: column;
-}
-
 .card-header h3 {
   font-size: var(--font-size-2xl);
   margin-bottom: var(--space-3);
@@ -406,11 +399,14 @@
   line-height: 1.5;
 }
 
-/* Card Price - Fixed height rows for alignment */
 .card-price {
-  margin-bottom: var(--space-4);
-  padding-bottom: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
   border-bottom: 1px solid var(--color-border);
+  min-height: 130px;
 }
 
 .price-wrapper {
@@ -1246,191 +1242,5 @@
 
   .ps-advanced-content {
     padding: var(--space-6) var(--space-4);
-  }
-}
-
-/* Phase 1: Quick Wins Additions */
-
-/* Savings Badge */
-.savings-badge {
-  display: inline-block;
-  font-size: var(--font-size-sm);
-  color: #16a34a;
-  font-weight: 600;
-  margin-top: var(--space-2);
-}
-
-/* Trust Section */
-.trust-section {
-  margin-top: var(--space-12);
-  padding-top: var(--space-8);
-  border-top: 1px solid var(--color-border);
-}
-
-.trust-badges {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-8);
-  flex-wrap: wrap;
-}
-
-.trust-item {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--font-size-base);
-  color: var(--color-text-secondary);
-  font-weight: 500;
-}
-
-.trust-item svg {
-  color: var(--color-red-primary);
-  flex-shrink: 0;
-}
-
-/* Card Guarantees */
-.card-guarantees {
-  margin-top: var(--space-4);
-  padding: var(--space-4);
-  background: #f8f9fa;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.guarantee-badge {
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  color: var(--color-text);
-  margin-bottom: var(--space-2);
-}
-
-.guarantee-items {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-2);
-  flex-wrap: wrap;
-}
-
-.guarantee-items .separator {
-  color: var(--color-text-secondary);
-  opacity: 0.5;
-}
-
-/* CTA Value Notes */
-.value-note,
-.subtext {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-3);
-  font-weight: 600;
-  text-align: center;
-}
-
-.value-note {
-  color: #16a34a;
-}
-
-/* Community Card Note */
-.card-note {
-  margin-top: var(--space-4);
-  padding: var(--space-3);
-  background: #f8f9fa;
-  border-radius: 8px;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-}
-
-/* Mobile Responsive Adjustments */
-@media (max-width: 768px) {
-  .trust-badges {
-    flex-direction: column;
-    gap: var(--space-4);
-  }
-
-  .guarantee-items {
-    flex-direction: column;
-    gap: var(--space-1);
-  }
-
-  .guarantee-items .separator {
-    display: none;
-  }
-}
-
-/* Card Alignment System - Fixed heights for easy comparison */
-
-/* Price Section Rows - Each row has fixed height */
-.billing-row,
-.savings-row,
-.price-note-row {
-  min-height: 28px;
-  display: flex;
-  align-items: center;
-  margin-top: var(--space-2);
-}
-
-.billing-placeholder,
-.savings-placeholder,
-.price-note-placeholder,
-.pre-cta-placeholder {
-  visibility: hidden;
-  user-select: none;
-}
-
-.price-note-inline {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-secondary);
-}
-
-/* Pre-CTA Section - Fixed height for value notes */
-.pre-cta-section {
-  min-height: 56px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: var(--space-4);
-}
-
-/* Button Text Centering */
-.card-actions .btn {
-  text-align: center;
-  justify-content: center;
-}
-
-/* Post-CTA Section - Fixed height for guarantees/notes */
-.post-cta-section {
-  min-height: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-/* Adjust guarantee section to fit in post-CTA */
-.post-cta-section .card-guarantees {
-  margin-top: 0;
-}
-
-.post-cta-section .card-note {
-  margin-top: 0;
-}
-
-/* Mobile Adjustments for Alignment System */
-@media (max-width: 768px) {
-  /* Reduce fixed heights on mobile for better space usage */
-  .card-header {
-    min-height: auto;
-  }
-
-  .pre-cta-section {
-    min-height: auto;
-  }
-
-  .post-cta-section {
-    min-height: auto;
   }
 }
