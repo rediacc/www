@@ -354,7 +354,7 @@
         "heading": "准备好开始了吗？"
       },
       "hero": {
-        "subtitle": "选择适合您业务的计划。 没有隐藏费用，没有惊喜。",
+        "subtitle": "Four growth-ready tiers that keep teams moving without decision paralysis.",
         "title": "简单、透明的定价"
       },
       "meta": {
@@ -364,63 +364,61 @@
       },
       "plans": {
         "business": {
-          "description": "对于拥有关键基础设施的成熟团队",
+          "description": "Hero tier for scaling teams that need compliance and guardrails",
           "features": [
-            "72 小时作业超时",
-            "7 个活跃职位",
-            "3 保留职位",
-            "100 台机器",
-            "250 个存储库",
-            "最大存储库大小 250 GB",
-            "30 天审核日志",
-            "24/7 支持"
+            "250 Machines",
+            "Geo-redundant storage (3 regions)",
+            "Continuous data protection",
+            "Compliance reporting (SOC 2, HIPAA, GDPR)",
+            "Role-based access control & audit logs",
+            "Priority recovery SLA (4 hours)",
+            "Phone support + dedicated CSM",
+            "Collaboration spaces & workflow approvals"
           ],
-          "name": "商业"
+          "name": "Business"
         },
         "community": {
-          "description": "非常适合个人项目和测试",
+          "description": "For prototypes, personal workloads, and resilience testing",
           "features": [
-            "无限的用户和团队",
-            "无限区域和存储",
-            "无限桥梁",
-            "2 小时作业超时",
-            "2 活跃职位",
-            "1 保留职位",
-            "5 台机器",
-            "10 个存储库",
-            "最大存储库大小 10 GB",
-            "7 天审核日志"
+            "5 Machines",
+            "10 Repositories",
+            "10 GB Max Repo Size",
+            "Manual backup scheduling",
+            "Latest snapshot restores",
+            "Community Slack access",
+            "Self-service support & docs",
+            "\"Powered by Rediacc\" attribution"
           ],
-          "name": "社区"
+          "name": "Community"
         },
         "enterprise": {
-          "description": "对于有定制需求的企业",
+          "description": "For regulated and mission-critical environments that need customization",
           "features": [
-            "超过 96 小时的作业超时",
-            "10+ 活跃职位",
-            "5+ 预留职位",
-            "400 多台机器",
-            "1000+ 存储库",
-            "1TB+ 最大存储库大小",
-            "90 多天的审核日志",
-            "专属客户经理"
+            "Unlimited machines & repositories",
+            "Dedicated infrastructure tenant",
+            "Custom SLA (15-60 minute RTO)",
+            "24/7/365 white-glove support",
+            "Quarterly disaster recovery exercises",
+            "Executive escalation hotline",
+            "Custom integrations & workflows",
+            "Compliance co-authoring & attestations"
           ],
-          "name": "企业",
+          "name": "Enterprise",
           "priceNote": "*开始于"
         },
         "pro": {
-          "description": "适用于不断壮大的团队和生产工作负载",
+          "description": "For growing teams ready to automate production workloads",
           "features": [
-            "24 小时作业超时",
-            "5 个活跃职位",
-            "2 预留职位",
-            "20 台机器",
-            "50 个存储库",
-            "最大存储库大小 50 GB",
-            "14 天审核日志",
-            "优先支持"
+            "50 Machines",
+            "Unlimited Repositories",
+            "Automated backup scheduling",
+            "Point-in-time recovery (24h)",
+            "Slack & PagerDuty notifications",
+            "Email + chat support",
+            "No \"Powered by Rediacc\" attribution",
+            "Integrations API access"
           ],
-          "name": "专业版"
+          "name": "Professional"
         }
       },
       "professionalServices": {
@@ -445,40 +443,52 @@
         },
         "header": {
           "badge": "通过专业帮助快速取得成功",
-          "eligibility": "资格：专业服务仅适用于 Pro、Business 和 Enterprise 计划客户。",
+          "eligibility": "Professional services align to every plan via hybrid access. Use the matrix below to see what’s included and what can be added on.",
           "subtitle": "在您最需要时获得专家帮助",
           "title": "专业服务包"
         },
         "packages": {
           "emergency": {
             "benefits": [
-              "立即响应",
-              "24/7 专职团队",
-              "仅在紧急情况下"
+              "Immediate engagement (under 2 hours)",
+              "Forensics, containment, and recovery plan",
+              "Stabilization report with hardening roadmap"
             ],
-            "description": "紧急情况立即响应",
+            "description": "On-demand incident response team ready to contain and restore critical systems.",
             "name": "紧急情况",
-            "turnaround": "同一天"
+            "turnaround": "同一天",
+            "price": "$29,999",
+            "tiers": []
           },
           "priority": {
             "benefits": [
-              "快速执行",
-              "延长工作时间支持",
-              "紧急需求的理想选择"
+              "Dedicated engagement manager",
+              "Evening/weekend availability",
+              "Production cutover assistance"
             ],
-            "description": "优先执行快速跟踪您的项目",
+            "description": "Accelerated delivery with extended availability and guided cutover support.",
             "name": "优先事项",
-            "turnaround": "24-48小时"
+            "turnaround": "24-48小时",
+            "price": "$19,999",
+            "tiers": []
           },
           "standard": {
             "benefits": [
-              "标准周转时间",
-              "营业时间支持",
-              "规划项目的最佳价值"
+              "Project discovery and success plan",
+              "Environment provisioning and configuration",
+              "Validation checklist and knowledge transfer"
             ],
-            "description": "计划项目的标准周转时间",
+            "description": "Structured implementation that covers architecture, deployment, validation, and enablement.",
             "name": "标准",
-            "turnaround": "3-5 个工作日"
+            "turnaround": "3-5 个工作日",
+            "price": "From $7,499",
+            "tiers": [
+              "Small (5-25 machines): $7,499",
+              "Medium (25-100 machines): $14,999",
+              "Large (100-500 machines): $29,999",
+              "Enterprise (500+ machines): Custom quote"
+            ],
+            "tierHeading": "Implementation package tiers"
           }
         },
         "pricingFactors": {
@@ -498,7 +508,7 @@
           ],
           "heading": "了解专业服务定价",
           "intro": "最终项目成本由以下因素决定：",
-          "note": "示例：可跨 3 个系统进行适度定制的标准基础架构通常范围为 9,999 美元至 15,999 美元"
+          "note": "Example: A mid-sized implementation (120 machines) with compliance review typically ranges from $14,999–$24,999 depending on integrations and retainer coverage."
         },
         "serviceTypes": {
           "badgeLabels": {
@@ -559,11 +569,83 @@
               "standard": "与测试和文档完全集成"
             }
           ]
+        },
+        "access": {
+          "heading": "Professional services access by tier",
+          "description": "Hybrid coverage combines included onboarding with optional add-ons so every team can get the right help at the right time.",
+          "labels": {
+            "included": "Included",
+            "available": "Available add-ons"
+          },
+          "tiers": [
+            {
+              "planId": "community",
+              "included": [
+                "Self-service documentation, video tutorials, and community forum"
+              ],
+              "available": [
+                "Standard Implementation ($9,999) or tiered packages (Small $7,499 · Medium $14,999 · Large $29,999 · Enterprise custom)",
+                "Emergency Response engagement ($29,999 on-demand)"
+              ]
+            },
+            {
+              "planId": "pro",
+              "included": [
+                "Email support",
+                "Standard onboarding session (setup call and configuration walkthrough)"
+              ],
+              "available": [
+                "Priority Implementation ($19,999)",
+                "Emergency Response engagement ($29,999 on-demand)",
+                "Custom integration projects (scoped)"
+              ]
+            },
+            {
+              "planId": "business",
+              "included": [
+                "Priority email/chat/phone support",
+                "Dedicated onboarding with configuration and runbook handoff",
+                "Standard Implementation package included ($9,999 value)",
+                "Quarterly success reviews"
+              ],
+              "available": [
+                "Priority Implementation upgrade ($19,999)",
+                "Emergency Response engagement ($29,999 on-demand)",
+                "Custom development and compliance consulting"
+              ]
+            },
+            {
+              "planId": "enterprise",
+              "included": [
+                "24/7/365 white-glove support and dedicated CSM",
+                "Priority Implementation included ($19,999 value)",
+                "Quarterly disaster recovery testing",
+                "Annual business continuity planning workshop",
+                "Executive escalation hotline"
+              ],
+              "available": [
+                "Custom development and advanced integrations",
+                "Compliance consulting (FedRAMP, sector-specific frameworks)",
+                "Emergency Response retainer ($5,000-$7,500/month)"
+              ]
+            }
+          ]
+        },
+        "retainers": {
+          "heading": "Retainer options for always-on readiness",
+          "description": "Give executive stakeholders guaranteed access to our specialists with predictable monthly pricing.",
+          "items": [
+            {
+              "title": "Emergency Response Retainer",
+              "price": "$5,000–$7,500/month",
+              "bullets": [
+                "Guaranteed 2-hour response time",
+                "Priority escalation path with war-room coordination",
+                "Quarterly readiness review and playbook updates"
+              ]
+            }
+          ]
         }
-      },
-      "toggleButtons": {
-        "businesses": "对于企业",
-        "individuals": "对于个人"
       },
       "ui": {
         "contactSales": "联系销售人员",
@@ -571,8 +653,101 @@
         "keyBenefits": "主要优点",
         "learnMore": "了解更多",
         "popular": "最受欢迎",
+        "bestValue": "最佳价值",
         "startingAt": "*开始于",
-        "whatsIncluded": "包含内容："
+        "whatsIncluded": "包含内容：",
+        "monthOrYear": "每月或每年 {{price}}",
+        "foreverFree": "永久免费",
+        "anchor": "Strategic anchor"
+      },
+      "strategy": {
+        "heading": "Built for every stage",
+        "copy": "Choose the plan that fits your operational stage today and scale without switching platforms tomorrow.",
+        "distribution": [
+          "Community → Professional: Move from experiments to production with automation, recovery points, and live support.",
+          "Professional → Business: Add compliance, collaboration, and faster recovery windows as your team grows.",
+          "Business → Enterprise: Unlock custom SLAs, dedicated tenancy, and white-glove partnership when stakes are highest."
+        ]
+      },
+      "technicalSummary": {
+        "heading": "Technical limits at a glance",
+        "description": "Give your platform team a precise view of throughput, retention, and recovery expectations.",
+        "metrics": [
+          {
+            "key": "jobTimeout",
+            "label": "Job timeout"
+          },
+          {
+            "key": "activeJobs",
+            "label": "Active jobs"
+          },
+          {
+            "key": "reservedJobs",
+            "label": "Reserved jobs"
+          },
+          {
+            "key": "machines",
+            "label": "Managed machines"
+          },
+          {
+            "key": "repositories",
+            "label": "Repositories"
+          },
+          {
+            "key": "repoSize",
+            "label": "Max repo size"
+          },
+          {
+            "key": "auditLogs",
+            "label": "Audit log retention"
+          },
+          {
+            "key": "recovery",
+            "label": "Recovery objectives"
+          }
+        ],
+        "values": {
+          "community": {
+            "jobTimeout": "2 hours",
+            "activeJobs": "2 concurrent",
+            "reservedJobs": "1 reserved",
+            "machines": "Up to 5",
+            "repositories": "10 repos",
+            "repoSize": "10 GB each",
+            "auditLogs": "7 days",
+            "recovery": "Latest snapshot restore"
+          },
+          "pro": {
+            "jobTimeout": "24 hours",
+            "activeJobs": "5 concurrent",
+            "reservedJobs": "2 reserved",
+            "machines": "Up to 50",
+            "repositories": "Unlimited repos",
+            "repoSize": "100 GB each",
+            "auditLogs": "30 days",
+            "recovery": "Point-in-time (15 min)"
+          },
+          "business": {
+            "jobTimeout": "72 hours",
+            "activeJobs": "7 concurrent",
+            "reservedJobs": "3 reserved",
+            "machines": "Up to 250",
+            "repositories": "500 repos",
+            "repoSize": "500 GB each",
+            "auditLogs": "90 days",
+            "recovery": "Continuous data protection (~5 min RPO)"
+          },
+          "enterprise": {
+            "jobTimeout": "96+ hours",
+            "activeJobs": "10+ concurrent",
+            "reservedJobs": "5+ reserved",
+            "machines": "Unlimited",
+            "repositories": "Unlimited",
+            "repoSize": "Custom (5 TB+)",
+            "auditLogs": "1 year+",
+            "recovery": "Custom RPO/RTO (15-60 min)"
+          }
+        }
       }
     },
     "solutions": {

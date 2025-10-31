@@ -342,72 +342,75 @@
       },
       "hero": {
         "title": "Simple, Transparent Pricing",
-        "subtitle": "Choose the right plan for your business. No hidden fees, no surprises."
-      },
-      "toggleButtons": {
-        "individuals": "For Individuals",
-        "businesses": "For Businesses"
+        "subtitle": "Four growth-ready tiers that keep teams moving without decision paralysis."
       },
       "plans": {
         "community": {
           "name": "Community",
-          "description": "Perfect for personal projects and testing",
+          "description": "For prototypes, personal workloads, and resilience testing",
           "features": [
-            "Unlimited Users & Teams",
-            "Unlimited Regions & Storage",
-            "Unlimited Bridges",
-            "2 Hour Job Timeout",
-            "2 Active Jobs",
-            "1 Reserved Job",
             "5 Machines",
             "10 Repositories",
             "10 GB Max Repo Size",
-            "7 Day Audit Logs"
+            "Manual backup scheduling",
+            "Latest snapshot restores",
+            "Community Slack access",
+            "Self-service support & docs",
+            "\"Powered by Rediacc\" attribution"
           ]
         },
         "pro": {
-          "name": "Pro",
-          "description": "For growing teams and production workloads",
+          "name": "Professional",
+          "description": "For growing teams ready to automate production workloads",
           "features": [
-            "24 Hour Job Timeout",
-            "5 Active Jobs",
-            "2 Reserved Jobs",
-            "20 Machines",
-            "50 Repositories",
-            "50 GB Max Repo Size",
-            "14 Day Audit Logs",
-            "Priority Support"
+            "50 Machines",
+            "Unlimited Repositories",
+            "Automated backup scheduling",
+            "Point-in-time recovery (24h)",
+            "Slack & PagerDuty notifications",
+            "Email + chat support",
+            "No \"Powered by Rediacc\" attribution",
+            "Integrations API access"
           ]
         },
         "business": {
           "name": "Business",
-          "description": "For established teams with critical infrastructure",
+          "description": "Hero tier for scaling teams that need compliance and guardrails",
           "features": [
-            "72 Hour Job Timeout",
-            "7 Active Jobs",
-            "3 Reserved Jobs",
-            "100 Machines",
-            "250 Repositories",
-            "250 GB Max Repo Size",
-            "30 Day Audit Logs",
-            "24/7 Support"
+            "250 Machines",
+            "Geo-redundant storage (3 regions)",
+            "Continuous data protection",
+            "Compliance reporting (SOC 2, HIPAA, GDPR)",
+            "Role-based access control & audit logs",
+            "Priority recovery SLA (4 hours)",
+            "Phone support + dedicated CSM",
+            "Collaboration spaces & workflow approvals"
           ]
         },
         "enterprise": {
           "name": "Enterprise",
-          "description": "For enterprises with custom requirements",
+          "description": "For regulated and mission-critical environments that need customization",
           "priceNote": "*Starting at",
           "features": [
-            "96+ Hour Job Timeout",
-            "10+ Active Jobs",
-            "5+ Reserved Jobs",
-            "400+ Machines",
-            "1000+ Repositories",
-            "1TB+ Max Repo Size",
-            "90+ Day Audit Logs",
-            "Dedicated Account Manager"
+            "Unlimited machines & repositories",
+            "Dedicated infrastructure tenant",
+            "Custom SLA (15-60 minute RTO)",
+            "24/7/365 white-glove support",
+            "Quarterly disaster recovery exercises",
+            "Executive escalation hotline",
+            "Custom integrations & workflows",
+            "Compliance co-authoring & attestations"
           ]
         }
+      },
+      "strategy": {
+        "heading": "Built for every stage",
+        "copy": "Choose the plan that fits your operational stage today and scale without switching platforms tomorrow.",
+        "distribution": [
+          "Community → Professional: Move from experiments to production with automation, recovery points, and live support.",
+          "Professional → Business: Add compliance, collaboration, and faster recovery windows as your team grows.",
+          "Business → Enterprise: Unlock custom SLAs, dedicated tenancy, and white-glove partnership when stakes are highest."
+        ]
       },
       "enterpriseCta": {
         "heading": "Need a Custom Enterprise Solution?",
@@ -419,38 +422,50 @@
           "title": "Professional Service Packages",
           "subtitle": "Get expert help when you need it most",
           "badge": "Fast-track your success with professional assistance",
-          "eligibility": "Eligibility: Professional services are available for Pro, Business, and Enterprise plan customers only."
+          "eligibility": "Professional services align to every plan via hybrid access. Use the matrix below to see what’s included and what can be added on."
         },
         "packages": {
           "standard": {
             "name": "Standard",
             "turnaround": "3-5 Business Days",
-            "description": "Standard turnaround time for planned projects",
+            "description": "Structured implementation that covers architecture, deployment, validation, and enablement.",
             "benefits": [
-              "Standard turnaround time",
-              "Business hours support",
-              "Best value for planned projects"
-            ]
+              "Project discovery and success plan",
+              "Environment provisioning and configuration",
+              "Validation checklist and knowledge transfer"
+            ],
+            "price": "From $7,499",
+            "tiers": [
+              "Small (5-25 machines): $7,499",
+              "Medium (25-100 machines): $14,999",
+              "Large (100-500 machines): $29,999",
+              "Enterprise (500+ machines): Custom quote"
+            ],
+            "tierHeading": "Implementation package tiers"
           },
           "priority": {
             "name": "Priority",
             "turnaround": "24-48 Hours",
-            "description": "Fast-track your project with priority execution",
+            "description": "Accelerated delivery with extended availability and guided cutover support.",
             "benefits": [
-              "Fast-track execution",
-              "Extended hours support",
-              "Ideal for urgent needs"
-            ]
+              "Dedicated engagement manager",
+              "Evening/weekend availability",
+              "Production cutover assistance"
+            ],
+            "price": "$19,999",
+            "tiers": []
           },
           "emergency": {
             "name": "Emergency",
             "turnaround": "Same Day",
-            "description": "Immediate response for critical situations",
+            "description": "On-demand incident response team ready to contain and restore critical systems.",
             "benefits": [
-              "Immediate response",
-              "24/7 dedicated team",
-              "Critical situations only"
-            ]
+              "Immediate engagement (under 2 hours)",
+              "Forensics, containment, and recovery plan",
+              "Stabilization report with hardening roadmap"
+            ],
+            "price": "$29,999",
+            "tiers": []
           }
         },
         "pricingFactors": {
@@ -470,7 +485,7 @@
               "description": "Single expert vs. full dedicated team of specialists"
             }
           ],
-          "note": "Example: A standard infrastructure scaling across 3 systems with moderate customization typically ranges from $9,999-$15,999"
+          "note": "Example: A mid-sized implementation (120 machines) with compliance review typically ranges from $14,999–$24,999 depending on integrations and retainer coverage."
         },
         "serviceTypes": {
           "heading": "Available Services",
@@ -550,6 +565,82 @@
           "heading": "Need Professional Assistance?",
           "description": "Our experts are ready to help you succeed",
           "button": "Schedule Consultation"
+        },
+        "access": {
+          "heading": "Professional services access by tier",
+          "description": "Hybrid coverage combines included onboarding with optional add-ons so every team can get the right help at the right time.",
+          "labels": {
+            "included": "Included",
+            "available": "Available add-ons"
+          },
+          "tiers": [
+            {
+              "planId": "community",
+              "included": [
+                "Self-service documentation, video tutorials, and community forum"
+              ],
+              "available": [
+                "Standard Implementation ($9,999) or tiered packages (Small $7,499 · Medium $14,999 · Large $29,999 · Enterprise custom)",
+                "Emergency Response engagement ($29,999 on-demand)"
+              ]
+            },
+            {
+              "planId": "pro",
+              "included": [
+                "Email support",
+                "Standard onboarding session (setup call and configuration walkthrough)"
+              ],
+              "available": [
+                "Priority Implementation ($19,999)",
+                "Emergency Response engagement ($29,999 on-demand)",
+                "Custom integration projects (scoped)"
+              ]
+            },
+            {
+              "planId": "business",
+              "included": [
+                "Priority email/chat/phone support",
+                "Dedicated onboarding with configuration and runbook handoff",
+                "Standard Implementation package included ($9,999 value)",
+                "Quarterly success reviews"
+              ],
+              "available": [
+                "Priority Implementation upgrade ($19,999)",
+                "Emergency Response engagement ($29,999 on-demand)",
+                "Custom development and compliance consulting"
+              ]
+            },
+            {
+              "planId": "enterprise",
+              "included": [
+                "24/7/365 white-glove support and dedicated CSM",
+                "Priority Implementation included ($19,999 value)",
+                "Quarterly disaster recovery testing",
+                "Annual business continuity planning workshop",
+                "Executive escalation hotline"
+              ],
+              "available": [
+                "Custom development and advanced integrations",
+                "Compliance consulting (FedRAMP, sector-specific frameworks)",
+                "Emergency Response retainer ($5,000-$7,500/month)"
+              ]
+            }
+          ]
+        },
+        "retainers": {
+          "heading": "Retainer options for always-on readiness",
+          "description": "Give executive stakeholders guaranteed access to our specialists with predictable monthly pricing.",
+          "items": [
+            {
+              "title": "Emergency Response Retainer",
+              "price": "$5,000–$7,500/month",
+              "bullets": [
+                "Guaranteed 2-hour response time",
+                "Priority escalation path with war-room coordination",
+                "Quarterly readiness review and playbook updates"
+              ]
+            }
+          ]
         }
       },
       "faq": {
@@ -583,12 +674,96 @@
       },
       "ui": {
         "popular": "Most popular",
+        "bestValue": "Best value",
+        "anchor": "Strategic anchor",
         "whatsIncluded": "What's included:",
         "getStarted": "Get Started",
         "learnMore": "Learn More",
         "contactSales": "Contact Sales",
         "startingAt": "*Starting at",
-        "keyBenefits": "Key Benefits"
+        "keyBenefits": "Key Benefits",
+        "monthOrYear": "per month or {{price}} per year",
+        "foreverFree": "Forever free"
+      },
+      "technicalSummary": {
+        "heading": "Technical limits at a glance",
+        "description": "Give your platform team a precise view of throughput, retention, and recovery expectations.",
+        "metrics": [
+          {
+            "key": "jobTimeout",
+            "label": "Job timeout"
+          },
+          {
+            "key": "activeJobs",
+            "label": "Active jobs"
+          },
+          {
+            "key": "reservedJobs",
+            "label": "Reserved jobs"
+          },
+          {
+            "key": "machines",
+            "label": "Managed machines"
+          },
+          {
+            "key": "repositories",
+            "label": "Repositories"
+          },
+          {
+            "key": "repoSize",
+            "label": "Max repo size"
+          },
+          {
+            "key": "auditLogs",
+            "label": "Audit log retention"
+          },
+          {
+            "key": "recovery",
+            "label": "Recovery objectives"
+          }
+        ],
+        "values": {
+          "community": {
+            "jobTimeout": "2 hours",
+            "activeJobs": "2 concurrent",
+            "reservedJobs": "1 reserved",
+            "machines": "Up to 5",
+            "repositories": "10 repos",
+            "repoSize": "10 GB each",
+            "auditLogs": "7 days",
+            "recovery": "Latest snapshot restore"
+          },
+          "pro": {
+            "jobTimeout": "24 hours",
+            "activeJobs": "5 concurrent",
+            "reservedJobs": "2 reserved",
+            "machines": "Up to 50",
+            "repositories": "Unlimited repos",
+            "repoSize": "100 GB each",
+            "auditLogs": "30 days",
+            "recovery": "Point-in-time (15 min)"
+          },
+          "business": {
+            "jobTimeout": "72 hours",
+            "activeJobs": "7 concurrent",
+            "reservedJobs": "3 reserved",
+            "machines": "Up to 250",
+            "repositories": "500 repos",
+            "repoSize": "500 GB each",
+            "auditLogs": "90 days",
+            "recovery": "Continuous data protection (~5 min RPO)"
+          },
+          "enterprise": {
+            "jobTimeout": "96+ hours",
+            "activeJobs": "10+ concurrent",
+            "reservedJobs": "5+ reserved",
+            "machines": "Unlimited",
+            "repositories": "Unlimited",
+            "repoSize": "Custom (5 TB+)",
+            "auditLogs": "1 year+",
+            "recovery": "Custom RPO/RTO (15-60 min)"
+          }
+        }
       }
     },
     "blog": {

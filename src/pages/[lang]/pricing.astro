@@ -19,53 +19,115 @@ export async function getStaticPaths() {
 const { lang } = Astro.params as { lang: Language };
 const { t, ta, to } = createTranslator(lang);
 
-// Pricing plans data
-const communityPlan = {
-  id: 'community',
-  name: t('pages.pricing.plans.community.name'),
-  price: '$0',
-  period: null,
-  description: t('pages.pricing.plans.community.description'),
-  features: ta('pages.pricing.plans.community.features')
+const priceFormatter = new Intl.NumberFormat(lang === 'en' ? 'en-US' : lang, {
+  style: 'currency',
+  currency: 'USD',
+  maximumFractionDigits: 0,
+});
+
+const formatPrice = (amount: number) => priceFormatter.format(amount);
+
+const buildPlan = ({
+  id,
+  monthlyPrice,
+  description,
+  isPopular = false,
+  badgeLabel,
+  badgeVariant,
+  priceNote,
+}: {
+  id: string;
+  monthlyPrice: number;
+  description: string;
+  isPopular?: boolean;
+  badgeLabel?: string;
+  badgeVariant?: string;
+  priceNote?: string | null;
+}) => {
+  const yearlyPrice = monthlyPrice * 10;
+  const price = formatPrice(monthlyPrice);
+  const yearlyPriceFormatted = formatPrice(yearlyPrice);
+
+  let period = monthlyPrice > 0
+    ? t('pages.pricing.ui.monthOrYear', { price: yearlyPriceFormatted })
+    : t('pages.pricing.ui.foreverFree');
+
+  if (id === 'enterprise' && monthlyPrice > 0) {
+    period = period.replace(yearlyPriceFormatted, `${yearlyPriceFormatted}*`);
+  }
+
+  return {
+    id,
+    name: t(`pages.pricing.plans.${id}.name`),
+    price,
+    priceNote: priceNote ?? (id === 'enterprise' ? t('pages.pricing.plans.enterprise.priceNote') : undefined),
+    period,
+    description,
+    isPopular,
+    badgeLabel,
+    badgeVariant,
+    features: ta(`pages.pricing.plans.${id}.features`)
+  };
 };
 
-const businessPlans = [
-  {
+// Pricing plans data
+const allPlans = [
+  buildPlan({
+    id: 'community',
+    monthlyPrice: 0,
+    description: t('pages.pricing.plans.community.description'),
+    badgeLabel: t('pages.pricing.ui.foreverFree')
+  }),
+  buildPlan({
     id: 'pro',
-    name: t('pages.pricing.plans.pro.name'),
-    price: '$399',
-    period: 'per month',
-    description: t('pages.pricing.plans.pro.description'),
-    isPopular: true,
-    features: ta('pages.pricing.plans.pro.features')
-  },
-  {
+    monthlyPrice: 349,
+    description: t('pages.pricing.plans.pro.description')
+  }),
+  buildPlan({
     id: 'business',
-    name: t('pages.pricing.plans.business.name'),
-    price: '$799',
-    period: 'per month',
+    monthlyPrice: 699,
     description: t('pages.pricing.plans.business.description'),
-    isPopular: false,
-    features: ta('pages.pricing.plans.business.features')
-  },
-  {
+    isPopular: true,
+    badgeLabel: t('pages.pricing.ui.popular'),
+    badgeVariant: 'popular'
+  }),
+  buildPlan({
     id: 'enterprise',
-    name: t('pages.pricing.plans.enterprise.name'),
-    price: '$2,100',
-    priceNote: t('pages.pricing.plans.enterprise.priceNote'),
-    period: 'per month',
+    monthlyPrice: 2100,
     description: t('pages.pricing.plans.enterprise.description'),
-    isPopular: false,
-    features: ta('pages.pricing.plans.enterprise.features')
-  }
+    badgeLabel: t('pages.pricing.ui.anchor'),
+    badgeVariant: 'anchor',
+    priceNote: t('pages.pricing.plans.enterprise.priceNote')
+  })
 ];
+
+const technicalMetrics = ta('pages.pricing.technicalSummary.metrics');
+const technicalValues = to('pages.pricing.technicalSummary.values');
+
+const technicalCards = allPlans.map(plan => ({
+  id: plan.id,
+  name: plan.name,
+  metrics: technicalMetrics.map((metric: any) => ({
+    label: metric.label,
+    value: technicalValues?.[plan.id]?.[metric.key] ?? '—'
+  }))
+}));
+
+const planNameMap = Object.fromEntries(allPlans.map(plan => [plan.id, plan.name]));
+
+const psAccess = to('pages.pricing.professionalServices.access');
+const psAccessLabels = psAccess?.labels ?? {};
+const psAccessTiers = psAccess?.tiers ?? [];
+
+const psRetainers = to('pages.pricing.professionalServices.retainers');
+const psRetainerItems = psRetainers?.items ?? [];
 
 // Service packages data
 const servicePackages = [
   {
     id: 'standard',
     name: t('pages.pricing.professionalServices.packages.standard.name'),
-    price: '$9,999',
+    price: t('pages.pricing.professionalServices.packages.standard.price'),
     turnaround: t('pages.pricing.professionalServices.packages.standard.turnaround'),
     description: t('pages.pricing.professionalServices.packages.standard.description'),
     isPopular: false,
@@ -74,7 +136,7 @@ const servicePackages = [
   {
     id: 'priority',
     name: t('pages.pricing.professionalServices.packages.priority.name'),
-    price: '$19,999',
+    price: t('pages.pricing.professionalServices.packages.priority.price'),
     turnaround: t('pages.pricing.professionalServices.packages.priority.turnaround'),
     description: t('pages.pricing.professionalServices.packages.priority.description'),
     isPopular: true,
@@ -83,7 +145,7 @@ const servicePackages = [
   {
     id: 'emergency',
     name: t('pages.pricing.professionalServices.packages.emergency.name'),
-    price: '$29,999',
+    price: t('pages.pricing.professionalServices.packages.emergency.price'),
     turnaround: t('pages.pricing.professionalServices.packages.emergency.turnaround'),
     description: t('pages.pricing.professionalServices.packages.emergency.description'),
     isPopular: false,
@@ -139,26 +201,45 @@ function getIconForService(id: string): string {
     <!-- Pricing Toggle & Cards -->
     <section id="plans" class="pricing-content section-light">
       <div class="container">
-        <!-- Toggle Buttons -->
-        <div class="pricing-toggle">
-          <button class="toggle-btn active" data-toggle="individuals">
-            {t('pages.pricing.toggleButtons.individuals')}
-          </button>
-          <button class="toggle-btn" data-toggle="businesses">
-            {t('pages.pricing.toggleButtons.businesses')}
-          </button>
+        <div class="pricing-overview">
+          <div class="pricing-overview-copy">
+            <h3>{t('pages.pricing.strategy.heading')}</h3>
+            <p>{t('pages.pricing.strategy.copy')}</p>
+          </div>
+          <ul class="pricing-distribution">
+            {ta('pages.pricing.strategy.distribution').map((item: string) => (
+              <li>{item}</li>
+            ))}
+          </ul>
         </div>
 
-        <!-- Individual Plan View -->
-        <div class="pricing-grid individuals-view active">
-          <PricingCard plan={communityPlan} lang={lang} />
-        </div>
-
-        <!-- Business Plans View -->
-        <div class="pricing-grid businesses-view">
-          {businessPlans.map(plan => (
+        <div class="pricing-grid active four-up">
+          {allPlans.map(plan => (
             <PricingCard plan={plan} lang={lang} />
           ))}
+        </div>
+
+        <div class="technical-summary">
+          <div class="technical-summary-header">
+            <h3>{t('pages.pricing.technicalSummary.heading')}</h3>
+            <p>{t('pages.pricing.technicalSummary.description')}</p>
+          </div>
+
+          <div class="technical-grid">
+            {technicalCards.map(card => (
+              <div class="technical-card">
+                <h4>{card.name}</h4>
+                <dl class="technical-metrics">
+                  {card.metrics.map(metric => (
+                    <div class="technical-metric">
+                      <dt>{metric.label}</dt>
+                      <dd>{metric.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            ))}
+          </div>
         </div>
 
         <!-- Enterprise CTA -->
@@ -191,12 +272,84 @@ function getIconForService(id: string): string {
           </div>
         </div>
 
+        <!-- Professional Services Access Matrix -->
+        <div class="ps-access">
+          <div class="ps-access-intro">
+            <h3>{psAccess?.heading}</h3>
+            <p>{psAccess?.description}</p>
+          </div>
+          <div class="ps-access-rows">
+            {psAccessTiers.map((tier: any, index: number) => (
+              <div class={`ps-access-row ${index % 2 === 0 ? 'align-left' : 'align-right'}`}>
+                <div class="ps-access-row-header">
+                  <h4>{planNameMap[tier.planId] ?? tier.planId}</h4>
+                </div>
+                <div class="ps-access-columns">
+                  <div class="ps-access-column">
+                    <span class="ps-access-label">{psAccessLabels?.included}</span>
+                    <ul>
+                      {(tier.included ?? []).map((item: string) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div class="ps-access-column">
+                    <span class="ps-access-label">{psAccessLabels?.available}</span>
+                    <ul>
+                      {(tier.available ?? []).map((item: string) => (
+                        <li>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <!-- Service Package Cards -->
         <div class="service-packages-grid">
           {servicePackages.map(pkg => (
             <ServicePackageCard package={pkg} lang={lang} />
           ))}
         </div>
+
+        <!-- Implementation Tier Overview -->
+        <div class="implementation-overview">
+          <h3>{t('pages.pricing.professionalServices.packages.standard.tierHeading')}</h3>
+          <div class="implementation-grid">
+            {ta('pages.pricing.professionalServices.packages.standard.tiers').map((tier: string) => {
+              const [label, price] = tier.split(':').map(part => part.trim());
+              return (
+                <div class="implementation-card">
+                  <h4>{label}</h4>
+                  <p>{price}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <!-- Retainer Options -->
+        {psRetainerItems.length > 0 && (
+          <div class="retainer-options">
+            <h3>{psRetainers?.heading}</h3>
+            <p class="retainer-description">{psRetainers?.description}</p>
+            <div class="retainer-grid">
+              {psRetainerItems.map((item: any) => (
+                <div class="retainer-card">
+                  <h4>{item.title}</h4>
+                  <div class="retainer-price">{item.price}</div>
+                  <ul>
+                    {(item.bullets ?? []).map((bullet: string) => (
+                      <li>{bullet}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <!-- Pricing Factors -->
         <div class="pricing-factors">
@@ -302,29 +455,3 @@ function getIconForService(id: string): string {
     </section>
   </article>
 </BaseLayout>
-
-<script>
-  // Toggle between individual and business plans
-  const toggleBtns = document.querySelectorAll('.toggle-btn');
-  const individualsView = document.querySelector('.individuals-view');
-  const businessesView = document.querySelector('.businesses-view');
-
-  toggleBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const toggleType = btn.dataset.toggle;
-
-      // Update button states
-      toggleBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      // Show/hide appropriate view
-      if (toggleType === 'individuals') {
-        individualsView?.classList.add('active');
-        businessesView?.classList.remove('active');
-      } else {
-        individualsView?.classList.remove('active');
-        businessesView?.classList.add('active');
-      }
-    });
-  });
-</script>

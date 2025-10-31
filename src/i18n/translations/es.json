@@ -354,7 +354,7 @@
         "heading": "¿Listo para empezar?"
       },
       "hero": {
-        "subtitle": "Elija el plan adecuado para su negocio. Sin cargos ocultos, sin sorpresas.",
+        "subtitle": "Four growth-ready tiers that keep teams moving without decision paralysis.",
         "title": "Precios simples y transparentes"
       },
       "meta": {
@@ -364,63 +364,61 @@
       },
       "plans": {
         "business": {
-          "description": "Para equipos establecidos con infraestructura crítica",
+          "description": "Hero tier for scaling teams that need compliance and guardrails",
           "features": [
-            "Tiempo de espera de trabajo de 72 horas",
-            "7 trabajos activos",
-            "3 trabajos reservados",
-            "100 máquinas",
-            "250 repositorios",
-            "Tamaño máximo de repositorio de 250 GB",
-            "Registros de auditoría de 30 días",
-            "Soporte 24 horas al día, 7 días a la semana"
+            "250 Machines",
+            "Geo-redundant storage (3 regions)",
+            "Continuous data protection",
+            "Compliance reporting (SOC 2, HIPAA, GDPR)",
+            "Role-based access control & audit logs",
+            "Priority recovery SLA (4 hours)",
+            "Phone support + dedicated CSM",
+            "Collaboration spaces & workflow approvals"
           ],
-          "name": "Negocio"
+          "name": "Business"
         },
         "community": {
-          "description": "Perfecto para proyectos personales y pruebas.",
+          "description": "For prototypes, personal workloads, and resilience testing",
           "features": [
-            "Usuarios y equipos ilimitados",
-            "Regiones y almacenamiento ilimitados",
-            "Puentes ilimitados",
-            "Tiempo de espera de trabajo de 2 horas",
-            "2 trabajos activos",
-            "1 trabajo reservado",
-            "5 maquinas",
-            "10 repositorios",
-            "Tamaño máximo de repositorio de 10 GB",
-            "Registros de auditoría de 7 días"
+            "5 Machines",
+            "10 Repositories",
+            "10 GB Max Repo Size",
+            "Manual backup scheduling",
+            "Latest snapshot restores",
+            "Community Slack access",
+            "Self-service support & docs",
+            "\"Powered by Rediacc\" attribution"
           ],
-          "name": "Comunidad"
+          "name": "Community"
         },
         "enterprise": {
-          "description": "Para empresas con requisitos personalizados",
+          "description": "For regulated and mission-critical environments that need customization",
           "features": [
-            "Tiempo de espera del trabajo de más de 96 horas",
-            "Más de 10 trabajos activos",
-            "Más de 5 trabajos reservados",
-            "Más de 400 máquinas",
-            "Más de 1000 repositorios",
-            "Tamaño máximo de repositorio de 1 TB+",
-            "Registros de auditoría de más de 90 días",
-            "Gerente de cuenta dedicada"
+            "Unlimited machines & repositories",
+            "Dedicated infrastructure tenant",
+            "Custom SLA (15-60 minute RTO)",
+            "24/7/365 white-glove support",
+            "Quarterly disaster recovery exercises",
+            "Executive escalation hotline",
+            "Custom integrations & workflows",
+            "Compliance co-authoring & attestations"
           ],
-          "name": "Empresa",
+          "name": "Enterprise",
           "priceNote": "*A partir de"
         },
         "pro": {
-          "description": "Para equipos en crecimiento y cargas de trabajo de producción",
+          "description": "For growing teams ready to automate production workloads",
           "features": [
-            "Tiempo de espera de trabajo de 24 horas",
-            "5 trabajos activos",
-            "2 trabajos reservados",
-            "20 máquinas",
-            "50 repositorios",
-            "Tamaño máximo de repositorio de 50 GB",
-            "Registros de auditoría de 14 días",
-            "Soporte prioritario"
+            "50 Machines",
+            "Unlimited Repositories",
+            "Automated backup scheduling",
+            "Point-in-time recovery (24h)",
+            "Slack & PagerDuty notifications",
+            "Email + chat support",
+            "No \"Powered by Rediacc\" attribution",
+            "Integrations API access"
           ],
-          "name": "Pro"
+          "name": "Professional"
         }
       },
       "professionalServices": {
@@ -445,40 +443,52 @@
         },
         "header": {
           "badge": "Acelere su éxito con asistencia profesional",
-          "eligibility": "Elegibilidad: Los servicios profesionales están disponibles solo para clientes de los planes Pro, Business y Enterprise.",
+          "eligibility": "Professional services align to every plan via hybrid access. Use the matrix below to see what’s included and what can be added on.",
           "subtitle": "Obtenga ayuda de expertos cuando más la necesite",
           "title": "Paquetes de servicios profesionales"
         },
         "packages": {
           "emergency": {
             "benefits": [
-              "Respuesta inmediata",
-              "Equipo dedicado 24 horas al día, 7 días a la semana",
-              "Sólo situaciones críticas"
+              "Immediate engagement (under 2 hours)",
+              "Forensics, containment, and recovery plan",
+              "Stabilization report with hardening roadmap"
             ],
-            "description": "Respuesta inmediata ante situaciones críticas.",
+            "description": "On-demand incident response team ready to contain and restore critical systems.",
             "name": "Emergencia",
-            "turnaround": "el mismo dia"
+            "turnaround": "el mismo dia",
+            "price": "$29,999",
+            "tiers": []
           },
           "priority": {
             "benefits": [
-              "Ejecución rápida",
-              "Soporte en horario extendido",
-              "Ideal para necesidades urgentes"
+              "Dedicated engagement manager",
+              "Evening/weekend availability",
+              "Production cutover assistance"
             ],
-            "description": "Acelere su proyecto con ejecución prioritaria",
+            "description": "Accelerated delivery with extended availability and guided cutover support.",
             "name": "Prioridad",
-            "turnaround": "24-48 horas"
+            "turnaround": "24-48 horas",
+            "price": "$19,999",
+            "tiers": []
           },
           "standard": {
             "benefits": [
-              "Tiempo de respuesta estándar",
-              "Soporte en horario comercial",
-              "El mejor valor para proyectos planificados"
+              "Project discovery and success plan",
+              "Environment provisioning and configuration",
+              "Validation checklist and knowledge transfer"
             ],
-            "description": "Tiempo de respuesta estándar para proyectos planificados",
+            "description": "Structured implementation that covers architecture, deployment, validation, and enablement.",
             "name": "Estándar",
-            "turnaround": "3-5 días hábiles"
+            "turnaround": "3-5 días hábiles",
+            "price": "From $7,499",
+            "tiers": [
+              "Small (5-25 machines): $7,499",
+              "Medium (25-100 machines): $14,999",
+              "Large (100-500 machines): $29,999",
+              "Enterprise (500+ machines): Custom quote"
+            ],
+            "tierHeading": "Implementation package tiers"
           }
         },
         "pricingFactors": {
@@ -498,7 +508,7 @@
           ],
           "heading": "Comprensión del precio de los servicios profesionales",
           "intro": "Los costos finales del proyecto están determinados por:",
-          "note": "Ejemplo: una infraestructura estándar que se escala en 3 sistemas con una personalización moderada generalmente oscila entre $ 9 999 y $ 15 999"
+          "note": "Example: A mid-sized implementation (120 machines) with compliance review typically ranges from $14,999–$24,999 depending on integrations and retainer coverage."
         },
         "serviceTypes": {
           "badgeLabels": {
@@ -559,11 +569,83 @@
               "standard": "Integración completa con pruebas y documentación."
             }
           ]
+        },
+        "access": {
+          "heading": "Professional services access by tier",
+          "description": "Hybrid coverage combines included onboarding with optional add-ons so every team can get the right help at the right time.",
+          "labels": {
+            "included": "Included",
+            "available": "Available add-ons"
+          },
+          "tiers": [
+            {
+              "planId": "community",
+              "included": [
+                "Self-service documentation, video tutorials, and community forum"
+              ],
+              "available": [
+                "Standard Implementation ($9,999) or tiered packages (Small $7,499 · Medium $14,999 · Large $29,999 · Enterprise custom)",
+                "Emergency Response engagement ($29,999 on-demand)"
+              ]
+            },
+            {
+              "planId": "pro",
+              "included": [
+                "Email support",
+                "Standard onboarding session (setup call and configuration walkthrough)"
+              ],
+              "available": [
+                "Priority Implementation ($19,999)",
+                "Emergency Response engagement ($29,999 on-demand)",
+                "Custom integration projects (scoped)"
+              ]
+            },
+            {
+              "planId": "business",
+              "included": [
+                "Priority email/chat/phone support",
+                "Dedicated onboarding with configuration and runbook handoff",
+                "Standard Implementation package included ($9,999 value)",
+                "Quarterly success reviews"
+              ],
+              "available": [
+                "Priority Implementation upgrade ($19,999)",
+                "Emergency Response engagement ($29,999 on-demand)",
+                "Custom development and compliance consulting"
+              ]
+            },
+            {
+              "planId": "enterprise",
+              "included": [
+                "24/7/365 white-glove support and dedicated CSM",
+                "Priority Implementation included ($19,999 value)",
+                "Quarterly disaster recovery testing",
+                "Annual business continuity planning workshop",
+                "Executive escalation hotline"
+              ],
+              "available": [
+                "Custom development and advanced integrations",
+                "Compliance consulting (FedRAMP, sector-specific frameworks)",
+                "Emergency Response retainer ($5,000-$7,500/month)"
+              ]
+            }
+          ]
+        },
+        "retainers": {
+          "heading": "Retainer options for always-on readiness",
+          "description": "Give executive stakeholders guaranteed access to our specialists with predictable monthly pricing.",
+          "items": [
+            {
+              "title": "Emergency Response Retainer",
+              "price": "$5,000–$7,500/month",
+              "bullets": [
+                "Guaranteed 2-hour response time",
+                "Priority escalation path with war-room coordination",
+                "Quarterly readiness review and playbook updates"
+              ]
+            }
+          ]
         }
-      },
-      "toggleButtons": {
-        "businesses": "Para empresas",
-        "individuals": "Para particulares"
       },
       "ui": {
         "contactSales": "Contacto Ventas",
@@ -571,8 +653,101 @@
         "keyBenefits": "Beneficios clave",
         "learnMore": "Más información",
         "popular": "mas popular",
+        "bestValue": "Mejor valor",
         "startingAt": "*A partir de",
-        "whatsIncluded": "Qué incluye:"
+        "whatsIncluded": "Qué incluye:",
+        "monthOrYear": "por mes o {{price}} por año",
+        "foreverFree": "Gratis para siempre",
+        "anchor": "Strategic anchor"
+      },
+      "strategy": {
+        "heading": "Built for every stage",
+        "copy": "Choose the plan that fits your operational stage today and scale without switching platforms tomorrow.",
+        "distribution": [
+          "Community → Professional: Move from experiments to production with automation, recovery points, and live support.",
+          "Professional → Business: Add compliance, collaboration, and faster recovery windows as your team grows.",
+          "Business → Enterprise: Unlock custom SLAs, dedicated tenancy, and white-glove partnership when stakes are highest."
+        ]
+      },
+      "technicalSummary": {
+        "heading": "Technical limits at a glance",
+        "description": "Give your platform team a precise view of throughput, retention, and recovery expectations.",
+        "metrics": [
+          {
+            "key": "jobTimeout",
+            "label": "Job timeout"
+          },
+          {
+            "key": "activeJobs",
+            "label": "Active jobs"
+          },
+          {
+            "key": "reservedJobs",
+            "label": "Reserved jobs"
+          },
+          {
+            "key": "machines",
+            "label": "Managed machines"
+          },
+          {
+            "key": "repositories",
+            "label": "Repositories"
+          },
+          {
+            "key": "repoSize",
+            "label": "Max repo size"
+          },
+          {
+            "key": "auditLogs",
+            "label": "Audit log retention"
+          },
+          {
+            "key": "recovery",
+            "label": "Recovery objectives"
+          }
+        ],
+        "values": {
+          "community": {
+            "jobTimeout": "2 hours",
+            "activeJobs": "2 concurrent",
+            "reservedJobs": "1 reserved",
+            "machines": "Up to 5",
+            "repositories": "10 repos",
+            "repoSize": "10 GB each",
+            "auditLogs": "7 days",
+            "recovery": "Latest snapshot restore"
+          },
+          "pro": {
+            "jobTimeout": "24 hours",
+            "activeJobs": "5 concurrent",
+            "reservedJobs": "2 reserved",
+            "machines": "Up to 50",
+            "repositories": "Unlimited repos",
+            "repoSize": "100 GB each",
+            "auditLogs": "30 days",
+            "recovery": "Point-in-time (15 min)"
+          },
+          "business": {
+            "jobTimeout": "72 hours",
+            "activeJobs": "7 concurrent",
+            "reservedJobs": "3 reserved",
+            "machines": "Up to 250",
+            "repositories": "500 repos",
+            "repoSize": "500 GB each",
+            "auditLogs": "90 days",
+            "recovery": "Continuous data protection (~5 min RPO)"
+          },
+          "enterprise": {
+            "jobTimeout": "96+ hours",
+            "activeJobs": "10+ concurrent",
+            "reservedJobs": "5+ reserved",
+            "machines": "Unlimited",
+            "repositories": "Unlimited",
+            "repoSize": "Custom (5 TB+)",
+            "auditLogs": "1 year+",
+            "recovery": "Custom RPO/RTO (15-60 min)"
+          }
+        }
       }
     },
     "solutions": {
