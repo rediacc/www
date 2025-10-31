@@ -218,30 +218,15 @@ function getIconForService(id: string): string {
             <PricingCard plan={plan} lang={lang} />
           ))}
         </div>
+      </div>
+    </section>
 
-        <div class="technical-summary">
-          <div class="technical-summary-header">
-            <h3>{t('pages.pricing.technicalSummary.heading')}</h3>
-            <p>{t('pages.pricing.technicalSummary.description')}</p>
-          </div>
+    <!-- FAQ Section (Moved up for early objection handling) -->
+    <FAQSection lang={lang} />
 
-          <div class="technical-grid">
-            {technicalCards.map(card => (
-              <div class="technical-card">
-                <h4>{card.name}</h4>
-                <dl class="technical-metrics">
-                  {card.metrics.map(metric => (
-                    <div class="technical-metric">
-                      <dt>{metric.label}</dt>
-                      <dd>{metric.value}</dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
-            ))}
-          </div>
-        </div>
-
+    <!-- Enterprise CTA Section -->
+    <section class="pricing-content section-light">
+      <div class="container">
         <!-- Enterprise CTA -->
         <div class="enterprise-cta">
           <div class="enterprise-content">
@@ -270,6 +255,13 @@ function getIconForService(id: string): string {
           <div class="services-eligibility">
             <strong>{t('pages.pricing.professionalServices.header.eligibility')}</strong>
           </div>
+        </div>
+
+        <!-- Service Package Cards -->
+        <div class="service-packages-grid">
+          {servicePackages.map(pkg => (
+            <ServicePackageCard package={pkg} lang={lang} />
+          ))}
         </div>
 
         <!-- Professional Services Access Matrix -->
@@ -307,120 +299,6 @@ function getIconForService(id: string): string {
           </div>
         </div>
 
-        <!-- Service Package Cards -->
-        <div class="service-packages-grid">
-          {servicePackages.map(pkg => (
-            <ServicePackageCard package={pkg} lang={lang} />
-          ))}
-        </div>
-
-        <!-- Implementation Tier Overview -->
-        <div class="implementation-overview">
-          <h3>{t('pages.pricing.professionalServices.packages.standard.tierHeading')}</h3>
-          <div class="implementation-grid">
-            {ta('pages.pricing.professionalServices.packages.standard.tiers').map((tier: string) => {
-              const [label, price] = tier.split(':').map(part => part.trim());
-              return (
-                <div class="implementation-card">
-                  <h4>{label}</h4>
-                  <p>{price}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        <!-- Retainer Options -->
-        {psRetainerItems.length > 0 && (
-          <div class="retainer-options">
-            <h3>{psRetainers?.heading}</h3>
-            <p class="retainer-description">{psRetainers?.description}</p>
-            <div class="retainer-grid">
-              {psRetainerItems.map((item: any) => (
-                <div class="retainer-card">
-                  <h4>{item.title}</h4>
-                  <div class="retainer-price">{item.price}</div>
-                  <ul>
-                    {(item.bullets ?? []).map((bullet: string) => (
-                      <li>{bullet}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        <!-- Pricing Factors -->
-        <div class="pricing-factors">
-          <h3>{t('pages.pricing.professionalServices.pricingFactors.heading')}</h3>
-          <p class="factors-intro">{t('pages.pricing.professionalServices.pricingFactors.intro')}</p>
-          <div class="factors-grid">
-            {pricingFactors.map((factor: any) => (
-              <div class="factor-item">
-                <div class="factor-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="3"/>
-                    <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"/>
-                  </svg>
-                </div>
-                <h4>{factor.title}</h4>
-                <p>{factor.description}</p>
-              </div>
-            ))}
-          </div>
-          <p class="factors-note"><strong>Example:</strong> {t('pages.pricing.professionalServices.pricingFactors.note')}</p>
-        </div>
-
-
-        <!-- Service Types -->
-        <div class="service-types">
-          <h3>{t('pages.pricing.professionalServices.serviceTypes.heading')}</h3>
-          <p class="service-types-intro">{t('pages.pricing.professionalServices.serviceTypes.intro')}</p>
-
-          {serviceTypes.map((service, index) => (
-            <details class="service-type-item">
-              <summary>
-                <span class="service-type-icon" set:html={service.icon} />
-                <span class="service-type-name">{service.name}</span>
-                <span class="expand-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"/>
-                  </svg>
-                </span>
-              </summary>
-              <div class="service-type-details">
-                <div class="service-detail-item">
-                  <div class="detail-badge standard">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.standard')}</div>
-                  <p>{service.standard}</p>
-                </div>
-                <div class="service-detail-item">
-                  <div class="detail-badge priority">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.priority')}</div>
-                  <p>{service.priority}</p>
-                </div>
-                <div class="service-detail-item">
-                  <div class="detail-badge emergency">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.emergency')}</div>
-                  <p>{service.emergency}</p>
-                </div>
-              </div>
-            </details>
-          ))}
-        </div>
-
-        <!-- Benefits -->
-        <div class="services-benefits">
-          <h4>{t('pages.pricing.professionalServices.benefits.heading')}</h4>
-          {ta('pages.pricing.professionalServices.benefits.statistics').map((stat) => (
-            <p><strong>{stat}</strong></p>
-          ))}
-          <p>{t('pages.pricing.professionalServices.benefits.description')}</p>
-          <ul>
-            {ta('pages.pricing.professionalServices.benefits.items').map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-
         <!-- CTA -->
         <div class="services-cta">
           <h4>{t('pages.pricing.professionalServices.cta.heading')}</h4>
@@ -432,11 +310,160 @@ function getIconForService(id: string): string {
             {t('pages.pricing.professionalServices.cta.button')}
           </a>
         </div>
+
+        <!-- Advanced Details (Collapsible) -->
+        <details class="ps-advanced-details">
+          <summary>
+            <div class="summary-content">
+              <h3>{t('pages.pricing.professionalServices.advancedDetails.heading')}</h3>
+              <span class="summary-description">{t('pages.pricing.professionalServices.advancedDetails.description')}</span>
+            </div>
+            <span class="expand-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </span>
+          </summary>
+          <div class="ps-advanced-content">
+
+            <!-- Service Types -->
+            <div class="service-types">
+              <h3>{t('pages.pricing.professionalServices.serviceTypes.heading')}</h3>
+              <p class="service-types-intro">{t('pages.pricing.professionalServices.serviceTypes.intro')}</p>
+
+              {serviceTypes.map((service, index) => (
+                <details class="service-type-item">
+                  <summary>
+                    <span class="service-type-icon" set:html={service.icon} />
+                    <span class="service-type-name">{service.name}</span>
+                    <span class="expand-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"/>
+                      </svg>
+                    </span>
+                  </summary>
+                  <div class="service-type-details">
+                    <div class="service-detail-item">
+                      <div class="detail-badge standard">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.standard')}</div>
+                      <p>{service.standard}</p>
+                    </div>
+                    <div class="service-detail-item">
+                      <div class="detail-badge priority">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.priority')}</div>
+                      <p>{service.priority}</p>
+                    </div>
+                    <div class="service-detail-item">
+                      <div class="detail-badge emergency">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.emergency')}</div>
+                      <p>{service.emergency}</p>
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            <!-- Implementation Tier Overview -->
+            <div class="implementation-overview">
+          <h3>{t('pages.pricing.professionalServices.packages.standard.tierHeading')}</h3>
+          <div class="implementation-grid">
+            {ta('pages.pricing.professionalServices.packages.standard.tiers').map((tier: string) => {
+              const [label, price] = tier.split(':').map(part => part.trim());
+              return (
+                <div class="implementation-card">
+                  <h4>{label}</h4>
+                  <p>{price}</p>
+                </div>
+              );
+            })}
+              </div>
+            </div>
+
+            <!-- Retainer Options -->
+            {psRetainerItems.length > 0 && (
+              <div class="retainer-options">
+                <h3>{psRetainers?.heading}</h3>
+                <p class="retainer-description">{psRetainers?.description}</p>
+                <div class="retainer-grid">
+                  {psRetainerItems.map((item: any) => (
+                    <div class="retainer-card">
+                      <h4>{item.title}</h4>
+                      <div class="retainer-price">{item.price}</div>
+                      <ul>
+                        {(item.bullets ?? []).map((bullet: string) => (
+                          <li>{bullet}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <!-- Pricing Factors -->
+            <div class="pricing-factors">
+              <h3>{t('pages.pricing.professionalServices.pricingFactors.heading')}</h3>
+              <p class="factors-intro">{t('pages.pricing.professionalServices.pricingFactors.intro')}</p>
+              <div class="factors-grid">
+                {pricingFactors.map((factor: any) => (
+                  <div class="factor-item">
+                    <div class="factor-icon">
+                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"/>
+                      </svg>
+                    </div>
+                    <h4>{factor.title}</h4>
+                    <p>{factor.description}</p>
+                  </div>
+                ))}
+              </div>
+              <p class="factors-note"><strong>Example:</strong> {t('pages.pricing.professionalServices.pricingFactors.note')}</p>
+            </div>
+
+            <!-- Benefits -->
+            <div class="services-benefits">
+              <h4>{t('pages.pricing.professionalServices.benefits.heading')}</h4>
+              {ta('pages.pricing.professionalServices.benefits.statistics').map((stat) => (
+                <p><strong>{stat}</strong></p>
+              ))}
+              <p>{t('pages.pricing.professionalServices.benefits.description')}</p>
+              <ul>
+                {ta('pages.pricing.professionalServices.benefits.items').map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+          </div>
+        </details>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <FAQSection lang={lang} />
+    <!-- Technical Summary (For Technical Buyers) -->
+    <section class="technical-details section-light">
+      <div class="container">
+        <div class="technical-summary">
+          <div class="technical-summary-header">
+            <h3>{t('pages.pricing.technicalSummary.heading')}</h3>
+            <p>{t('pages.pricing.technicalSummary.description')}</p>
+          </div>
+
+          <div class="technical-grid">
+            {technicalCards.map(card => (
+              <div class="technical-card">
+                <h4>{card.name}</h4>
+                <dl class="technical-metrics">
+                  {card.metrics.map(metric => (
+                    <div class="technical-metric">
+                      <dt>{metric.label}</dt>
+                      <dd>{metric.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- CTA Section -->
     <section id="get-started" class="pricing-cta section-dark">

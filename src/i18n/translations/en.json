@@ -641,6 +641,10 @@
               ]
             }
           ]
+        },
+        "advancedDetails": {
+          "heading": "Implementation & Pricing Details",
+          "description": "Service packages, implementation tiers, pricing factors, and retainer options"
         }
       },
       "faq": {
@@ -750,7 +754,7 @@
             "activeJobs": "5 concurrent",
             "reservedJobs": "2 reserved",
             "machines": "Up to 50",
-            "repositories": "Unlimited repos",
+            "repositories": "500 repos",
             "repoSize": "100 GB each",
             "auditLogs": "30 days",
             "recovery": "Point-in-time (15 min)"
@@ -760,7 +764,7 @@
             "activeJobs": "7 concurrent",
             "reservedJobs": "3 reserved",
             "machines": "Up to 250",
-            "repositories": "500 repos",
+            "repositories": "Unlimited",
             "repoSize": "500 GB each",
             "auditLogs": "90 days",
             "recovery": "Continuous data protection (~5 min RPO)"
