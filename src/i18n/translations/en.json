@@ -375,16 +375,18 @@
         },
         "business": {
           "name": "Business",
-          "description": "Enterprise-grade protection for mission-critical infrastructure",
+          "description": "Mission-Critical Protection + Expert Setup",
           "features": [
+            "Everything in Professional +",
+            "$9,999 implementation support included (Launch Offer)",
             "250 Machines",
             "Geo-redundant storage (3 regions)—one failure won't stop you",
             "Continuous data protection—zero data loss",
-            "Compliance-ready audit reporting",
+            "4-hour recovery SLA (guaranteed)",
+            "Dedicated customer success manager",
             "Role-based access control & comprehensive audit logs",
-            "Priority recovery SLA (4 hours)",
-            "Phone support + dedicated CSM",
-            "Collaboration spaces & workflow approvals"
+            "Compliance-ready audit reporting",
+            "Phone support + collaboration spaces"
           ]
         },
         "enterprise": {
@@ -688,9 +690,17 @@
           "talkToSales": "Talk to Sales"
         }
       },
+      "trust": {
+        "heading": "Enterprise-Grade Security & Reliability",
+        "items": [
+          "Bank-level encryption",
+          "99.9% uptime commitment"
+        ]
+      },
       "ui": {
         "popular": "Most popular",
-        "bestValue": "Best value",
+        "bestValue": "Best Value",
+        "limitedOffer": "Limited Launch Offer",
         "anchor": "Strategic anchor",
         "whatsIncluded": "What's included:",
         "getStarted": "Get Started",
@@ -699,7 +709,37 @@
         "startingAt": "*Starting at",
         "keyBenefits": "Key Benefits",
         "monthOrYear": "per month or {{price}} per year",
-        "foreverFree": "Forever free"
+        "foreverFree": "Forever free",
+        "cta": {
+          "community": {
+            "primary": "Start Free",
+            "secondary": "Learn More",
+            "note": "No credit card required"
+          },
+          "pro": {
+            "primary": "Get Started",
+            "secondary": "Contact Sales",
+            "guarantee": "14-Day Money Payback Guarantee"
+          },
+          "business": {
+            "primary": "Schedule Implementation Call",
+            "secondary": "Contact Sales",
+            "guarantee": "14-Day Money Payback Guarantee",
+            "valueNote": "Includes $9,999 setup credit",
+            "launchBadge": "Limited Launch Offer"
+          },
+          "enterprise": {
+            "primary": "Schedule Executive Demo",
+            "secondary": "Contact Sales",
+            "guarantee": "14-Day Money Payback Guarantee",
+            "subtext": "Custom SLA · Dedicated support"
+          }
+        },
+        "guarantees": {
+          "moneyBack": "14-Day Money Payback Guarantee",
+          "cancelAnytime": "Cancel anytime",
+          "noContracts": "No long-term contracts"
+        }
       },
       "technicalSummary": {
         "heading": "Technical limits at a glance",

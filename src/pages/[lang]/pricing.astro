@@ -88,7 +88,7 @@ const allPlans = [
     monthlyPrice: 699,
     description: t('pages.pricing.plans.business.description'),
     isPopular: true,
-    badgeLabel: t('pages.pricing.ui.popular'),
+    badgeLabel: `${t('pages.pricing.ui.bestValue')} · ${t('pages.pricing.ui.limitedOffer')}`,
     badgeVariant: 'popular'
   }),
   buildPlan({
@@ -217,6 +217,24 @@ function getIconForService(id: string): string {
           {allPlans.map(plan => (
             <PricingCard plan={plan} lang={lang} />
           ))}
+        </div>
+
+        <!-- Trust Section -->
+        <div class="trust-section">
+          <div class="trust-badges">
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+              </svg>
+              <span>{t('pages.pricing.trust.items.0')}</span>
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+              <span>{t('pages.pricing.trust.items.1')}</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
