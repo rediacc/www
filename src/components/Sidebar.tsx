@@ -24,6 +24,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     { href: `/${currentLang}/solutions/threat-response`, label: t('navigation.solutions.threatResponse') },
     { href: `/${currentLang}/solutions/data-security`, label: t('navigation.solutions.dataSecurity') },
     { href: `/${currentLang}/solutions/system-portability`, label: t('navigation.solutions.systemPortability') },
+    { href: `/${currentLang}/solutions/development-environments`, label: t('navigation.solutions.developmentEnvironments') },
     { href: `/${currentLang}/blog`, label: t('navigation.blog') },
     { href: `/${currentLang}/docs`, label: t('navigation.docs') },
     { href: `/${currentLang}/contact`, label: t('navigation.contact') },
