@@ -99,7 +99,7 @@
       "learnMore": "Learn More",
       "bookDemo": "Book Demo",
       "freeBadge": "FREE FOREVER • No credit card",
-      "benefits": "5 machines • Unlimited teams • $0",
+      "benefits": "10 CPU cores • Unlimited teams • $0",
       "seeDetails": "See full details"
     }
   },
@@ -350,11 +350,13 @@
           "name": "Community",
           "description": "Production-ready disaster recovery from day one—Free forever",
           "features": [
-            "5 Machines",
-            "10 Repositories",
-            "10 GB Max Repo Size",
-            "Manual backup scheduling",
+            "Unlimited users & teams—collaborate freely",
             "Latest snapshot restores—recover from failures in minutes",
+            "10 CPU cores—perfect for small workloads",
+            "10 Repositories, 10 GB each",
+            "2-hour job timeout, 2 active/1 reserved jobs",
+            "7-day audit log retention",
+            "Manual backup scheduling",
             "Community Slack access",
             "Self-service support & docs",
             "\"Powered by Rediacc\" attribution"
@@ -364,12 +366,15 @@
           "name": "Professional",
           "description": "Professional-grade disaster recovery without enterprise complexity",
           "features": [
-            "50 Machines",
-            "Unlimited Repositories",
+            "Everything in Community +",
             "Automated backup scheduling—set it and forget it",
             "Point-in-time recovery (24h)",
-            "Slack & PagerDuty notifications",
+            "100 CPU cores—handle production scale",
+            "500 Repositories, 100 GB each",
+            "24-hour job timeout, 5 active/2 reserved jobs",
+            "30-day audit log retention",
             "Email + chat support",
+            "Slack & PagerDuty notifications",
             "No \"Powered by Rediacc\" attribution",
             "Integrations API access"
           ]
@@ -380,13 +385,16 @@
           "features": [
             "Everything in Professional +",
             "$9,999 implementation support included (Launch Offer)",
-            "250 Machines",
             "Geo-redundant storage (3 regions)—one failure won't stop you",
             "Continuous data protection—zero data loss",
             "4-hour recovery SLA (guaranteed)",
-            "Dedicated customer success manager",
+            "500 CPU cores—enterprise workloads with 72-hour job windows",
+            "Unlimited Repositories, 500 GB each",
+            "7 active/3 reserved jobs",
+            "90-day audit log retention",
             "Role-based access control & comprehensive audit logs",
             "Compliance-ready audit reporting",
+            "Dedicated customer success manager",
             "Phone support + collaboration spaces"
           ]
         },
@@ -395,10 +403,14 @@
           "description": "White-glove disaster recovery for complex enterprise infrastructure",
           "priceNote": "*Starting at",
           "features": [
-            "Unlimited machines & repositories",
-            "Dedicated infrastructure tenant—maximum security & performance",
+            "Everything in Business +",
             "Custom SLA (15-60 minute RTO)—your requirements, our commitment",
+            "Dedicated infrastructure tenant—maximum security & performance",
             "24/7/365 white-glove support",
+            "1000+ CPU cores—unlimited scale for massive workloads",
+            "Unlimited Repositories, 1TB+ each",
+            "96+ hour job windows with 10+ active/5+ reserved jobs",
+            "1 Year+ audit log retention",
             "Quarterly disaster recovery exercises—tested readiness",
             "Executive escalation hotline",
             "Custom integrations & workflows",
@@ -745,22 +757,11 @@
       "technicalSummary": {
         "heading": "Technical limits at a glance",
         "description": "Give your platform team a precise view of throughput, retention, and recovery expectations.",
+        "recoveryNote": "RPO (Recovery Point Objective): How much data you can afford to lose—measured in time. For example, 15-minute RPO means you might lose up to 15 minutes of recent changes.\n\nRTO (Recovery Time Objective): How quickly you need to be back online after a disaster. For example, 4-hour RTO means your systems will be restored within 4 hours.",
         "metrics": [
           {
-            "key": "jobTimeout",
-            "label": "Job timeout"
-          },
-          {
-            "key": "activeJobs",
-            "label": "Active jobs"
-          },
-          {
-            "key": "reservedJobs",
-            "label": "Reserved jobs"
-          },
-          {
-            "key": "machines",
-            "label": "Managed machines"
+            "key": "cpuCore",
+            "label": "CPU Cores"
           },
           {
             "key": "repositories",
@@ -768,57 +769,77 @@
           },
           {
             "key": "repoSize",
-            "label": "Max repo size"
+            "label": "Repository size limit"
+          },
+          {
+            "key": "jobTimeout",
+            "label": "Max job duration"
+          },
+          {
+            "key": "activeJobs",
+            "label": "Concurrent jobs"
+          },
+          {
+            "key": "reservedJobs",
+            "label": "Job queue depth"
+          },
+          {
+            "key": "rpo",
+            "label": "Recovery Point Objective (RPO)"
+          },
+          {
+            "key": "rto",
+            "label": "Recovery Time Objective (RTO)"
           },
           {
             "key": "auditLogs",
             "label": "Audit log retention"
-          },
-          {
-            "key": "recovery",
-            "label": "Recovery objectives"
           }
         ],
         "values": {
           "community": {
-            "jobTimeout": "2 hours",
-            "activeJobs": "2 concurrent",
-            "reservedJobs": "1 reserved",
-            "machines": "Up to 5",
+            "cpuCore": "10 cores",
             "repositories": "10 repos",
-            "repoSize": "10 GB each",
-            "auditLogs": "7 days",
-            "recovery": "Latest snapshot restore"
+            "repoSize": "10 GB",
+            "jobTimeout": "2 hours",
+            "activeJobs": "2 active",
+            "reservedJobs": "1 reserved",
+            "rpo": "Best effort",
+            "rto": "Best effort",
+            "auditLogs": "7 days"
           },
           "pro": {
-            "jobTimeout": "24 hours",
-            "activeJobs": "5 concurrent",
-            "reservedJobs": "2 reserved",
-            "machines": "Up to 50",
+            "cpuCore": "100 cores",
             "repositories": "500 repos",
-            "repoSize": "100 GB each",
-            "auditLogs": "30 days",
-            "recovery": "Point-in-time (15 min)"
+            "repoSize": "100 GB",
+            "jobTimeout": "24 hours",
+            "activeJobs": "5 active",
+            "reservedJobs": "2 reserved",
+            "rpo": "~15 minutes",
+            "rto": "Point-in-time restore",
+            "auditLogs": "30 days"
           },
           "business": {
-            "jobTimeout": "72 hours",
-            "activeJobs": "7 concurrent",
-            "reservedJobs": "3 reserved",
-            "machines": "Up to 250",
+            "cpuCore": "500 cores",
             "repositories": "Unlimited",
-            "repoSize": "500 GB each",
-            "auditLogs": "90 days",
-            "recovery": "Continuous data protection (~5 min RPO)"
+            "repoSize": "500 GB",
+            "jobTimeout": "72 hours",
+            "activeJobs": "7 active",
+            "reservedJobs": "3 reserved",
+            "rpo": "~5 minutes (continuous)",
+            "rto": "4 hours (guaranteed)",
+            "auditLogs": "90 days"
           },
           "enterprise": {
-            "jobTimeout": "96+ hours",
-            "activeJobs": "10+ concurrent",
-            "reservedJobs": "5+ reserved",
-            "machines": "Unlimited",
+            "cpuCore": "1000+ cores",
             "repositories": "Unlimited",
-            "repoSize": "Custom (5 TB+)",
-            "auditLogs": "1 year+",
-            "recovery": "Custom RPO/RTO (15-60 min)"
+            "repoSize": "1 TB+",
+            "jobTimeout": "96+ hours",
+            "activeJobs": "10+ active",
+            "reservedJobs": "5+ reserved",
+            "rpo": "Custom (near-zero)",
+            "rto": "15-60 minutes (custom)",
+            "auditLogs": "1+ year"
           }
         }
       }
