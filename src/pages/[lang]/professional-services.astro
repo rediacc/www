@@ -228,7 +228,6 @@ function getIconForService(id: string): string {
         <!-- Implementation Tier Overview -->
         <div class="implementation-overview">
           <h2>{t('pages.pricing.professionalServices.packages.standard.tierHeading')}</h2>
-          <p class="tier-description">{t('pages.pricing.professionalServices.packages.standard.tierNote')}</p>
           <div class="implementation-grid">
             {ta('pages.pricing.professionalServices.packages.standard.tiers').map((tier: string) => {
               const [label, price] = tier.split(':').map(part => part.trim());

@@ -34,6 +34,7 @@ const Footer: React.FC = () => {
             <a href={`/${currentLang}/#solutions`} className="footer-link">{t('footer.productLinks.solutions')}</a>
             <a href={`/${currentLang}/#problem`} className="footer-link">{t('footer.productLinks.overview')}</a>
             <a href={`/${currentLang}/pricing`} className="footer-link">{t('footer.productLinks.pricing')}</a>
+            <a href={`/${currentLang}/professional-services`} className="footer-link">{t('footer.productLinks.professionalServices')}</a>
           </div>
 
           {/* Company Column */}

@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PricingCard from '../../components/PricingCard.astro';
-import ServicePackageCard from '../../components/ServicePackageCard.astro';
 import FAQSection from '../../components/FAQSection.astro';
 import { createTranslator } from '../../i18n/utils';
 import { SUPPORTED_LANGUAGES } from '../../i18n/language-utils';
@@ -19,104 +18,99 @@ export async function getStaticPaths() {
 const { lang } = Astro.params as { lang: Language };
 const { t, ta, to } = createTranslator(lang);
 
-// Pricing plans data
-const communityPlan = {
-  id: 'community',
-  name: t('pages.pricing.plans.community.name'),
-  price: '$0',
-  period: null,
-  description: t('pages.pricing.plans.community.description'),
-  features: ta('pages.pricing.plans.community.features')
+const priceFormatter = new Intl.NumberFormat(lang === 'en' ? 'en-US' : lang, {
+  style: 'currency',
+  currency: 'USD',
+  maximumFractionDigits: 0,
+});
+
+const formatPrice = (amount: number) => priceFormatter.format(amount);
+
+const buildPlan = ({
+  id,
+  monthlyPrice,
+  description,
+  isPopular = false,
+  badgeLabel,
+  badgeVariant,
+  priceNote,
+}: {
+  id: string;
+  monthlyPrice: number;
+  description: string;
+  isPopular?: boolean;
+  badgeLabel?: string;
+  badgeVariant?: string;
+  priceNote?: string | null;
+}) => {
+  const yearlyPrice = monthlyPrice * 10;
+  const price = formatPrice(monthlyPrice);
+  const yearlyPriceFormatted = formatPrice(yearlyPrice);
+
+  let period = monthlyPrice > 0
+    ? t('pages.pricing.ui.monthOrYear', { price: yearlyPriceFormatted })
+    : t('pages.pricing.ui.foreverFree');
+
+  if (id === 'enterprise' && monthlyPrice > 0) {
+    period = period.replace(yearlyPriceFormatted, `${yearlyPriceFormatted}*`);
+  }
+
+  return {
+    id,
+    name: t(`pages.pricing.plans.${id}.name`),
+    price,
+    priceNote: priceNote ?? (id === 'enterprise' ? t('pages.pricing.plans.enterprise.priceNote') : undefined),
+    period,
+    description,
+    isPopular,
+    badgeLabel,
+    badgeVariant,
+    features: ta(`pages.pricing.plans.${id}.features`)
+  };
 };
 
-const businessPlans = [
-  {
+// Pricing plans data
+const allPlans = [
+  buildPlan({
+    id: 'community',
+    monthlyPrice: 0,
+    description: t('pages.pricing.plans.community.description'),
+    badgeLabel: t('pages.pricing.ui.foreverFree')
+  }),
+  buildPlan({
     id: 'pro',
-    name: t('pages.pricing.plans.pro.name'),
-    price: '$399',
-    period: 'per month',
-    description: t('pages.pricing.plans.pro.description'),
-    isPopular: true,
-    features: ta('pages.pricing.plans.pro.features')
-  },
-  {
+    monthlyPrice: 349,
+    description: t('pages.pricing.plans.pro.description')
+  }),
+  buildPlan({
     id: 'business',
-    name: t('pages.pricing.plans.business.name'),
-    price: '$799',
-    period: 'per month',
+    monthlyPrice: 699,
     description: t('pages.pricing.plans.business.description'),
-    isPopular: false,
-    features: ta('pages.pricing.plans.business.features')
-  },
-  {
-    id: 'enterprise',
-    name: t('pages.pricing.plans.enterprise.name'),
-    price: '$2,100',
-    priceNote: t('pages.pricing.plans.enterprise.priceNote'),
-    period: 'per month',
-    description: t('pages.pricing.plans.enterprise.description'),
-    isPopular: false,
-    features: ta('pages.pricing.plans.enterprise.features')
-  }
-];
-
-// Service packages data
-const servicePackages = [
-  {
-    id: 'standard',
-    name: t('pages.pricing.professionalServices.packages.standard.name'),
-    price: '$9,999',
-    turnaround: t('pages.pricing.professionalServices.packages.standard.turnaround'),
-    description: t('pages.pricing.professionalServices.packages.standard.description'),
-    isPopular: false,
-    icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 11l3 3 5-5"/></svg>'
-  },
-  {
-    id: 'priority',
-    name: t('pages.pricing.professionalServices.packages.priority.name'),
-    price: '$19,999',
-    turnaround: t('pages.pricing.professionalServices.packages.priority.turnaround'),
-    description: t('pages.pricing.professionalServices.packages.priority.description'),
     isPopular: true,
-    icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>'
-  },
-  {
-    id: 'emergency',
-    name: t('pages.pricing.professionalServices.packages.emergency.name'),
-    price: '$29,999',
-    turnaround: t('pages.pricing.professionalServices.packages.emergency.turnaround'),
-    description: t('pages.pricing.professionalServices.packages.emergency.description'),
-    isPopular: false,
-    icon: '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'
-  }
+    badgeLabel: `${t('pages.pricing.ui.bestValue')} · ${t('pages.pricing.ui.limitedOffer')}`,
+    badgeVariant: 'popular'
+  }),
+  buildPlan({
+    id: 'enterprise',
+    monthlyPrice: 2100,
+    description: t('pages.pricing.plans.enterprise.description'),
+    badgeLabel: t('pages.pricing.ui.anchor'),
+    badgeVariant: 'anchor',
+    priceNote: t('pages.pricing.plans.enterprise.priceNote')
+  })
 ];
 
-// Service types with details for each package - get from translations
-const serviceTypesDataRaw = ta('pages.pricing.professionalServices.serviceTypes.services');
-const serviceTypes = serviceTypesDataRaw.map((service: any) => ({
-  name: service.name,
-  icon: getIconForService(service.id),
-  standard: service.standard,
-  priority: service.priority,
-  emergency: service.emergency
+const technicalMetrics = ta('pages.pricing.technicalSummary.metrics');
+const technicalValues = to('pages.pricing.technicalSummary.values');
+
+const technicalCards = allPlans.map(plan => ({
+  id: plan.id,
+  name: plan.name,
+  metrics: technicalMetrics.map((metric: any) => ({
+    label: metric.label,
+    value: technicalValues?.[plan.id]?.[metric.key] ?? '—'
+  }))
 }));
-
-// Get pricing factors data
-const pricingFactorsData = ta('pages.pricing.professionalServices.pricingFactors.factors');
-const pricingFactors = pricingFactorsData;
-
-function getIconForService(id: string): string {
-  const icons: Record<string, string> = {
-    'data-migration': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"/></svg>',
-    'ransomware-recovery': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/></svg>',
-    'security-assessment': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>',
-    'infrastructure-scaling': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>',
-    'team-training': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>',
-    'performance-optimization': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"/></svg>',
-    'custom-integration': '<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>'
-  };
-  return icons[id] || '';
-}
 ---
 
 <BaseLayout
@@ -139,28 +133,80 @@ function getIconForService(id: string): string {
     <!-- Pricing Toggle & Cards -->
     <section id="plans" class="pricing-content section-light">
       <div class="container">
-        <!-- Toggle Buttons -->
-        <div class="pricing-toggle">
-          <button class="toggle-btn active" data-toggle="individuals">
-            {t('pages.pricing.toggleButtons.individuals')}
-          </button>
-          <button class="toggle-btn" data-toggle="businesses">
-            {t('pages.pricing.toggleButtons.businesses')}
-          </button>
+        <div class="pricing-overview">
+          <div class="pricing-overview-copy">
+            <h3>{t('pages.pricing.strategy.heading')}</h3>
+            <p>{t('pages.pricing.strategy.copy')}</p>
+          </div>
+          <ul class="pricing-distribution">
+            {ta('pages.pricing.strategy.distribution').map((item: string) => (
+              <li>{item}</li>
+            ))}
+          </ul>
         </div>
 
-        <!-- Individual Plan View -->
-        <div class="pricing-grid individuals-view active">
-          <PricingCard plan={communityPlan} lang={lang} />
-        </div>
-
-        <!-- Business Plans View -->
-        <div class="pricing-grid businesses-view">
-          {businessPlans.map(plan => (
+        <div class="pricing-grid active four-up">
+          {allPlans.map(plan => (
             <PricingCard plan={plan} lang={lang} />
           ))}
         </div>
 
+        <!-- Trust Section -->
+        <div class="trust-section">
+          <div class="trust-badges">
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+              </svg>
+              <span>{t('pages.pricing.trust.items.0')}</span>
+            </div>
+            <div class="trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+              <span>{t('pages.pricing.trust.items.1')}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (Moved up for early objection handling) -->
+    <FAQSection lang={lang} />
+
+    <!-- Professional Services Teaser Section -->
+    <section class="ps-teaser-section section-dark">
+      <div class="container">
+        <div class="ps-teaser-content">
+          <h2>{t('pages.pricing.psTeaser.heading')}</h2>
+          <p class="ps-teaser-subtitle">{t('pages.pricing.psTeaser.subtitle')}</p>
+
+          <div class="ps-teaser-packages">
+            <div class="ps-teaser-card">
+              <h3>{t('pages.pricing.psTeaser.packages.standard.name')}</h3>
+              <p class="teaser-price">{t('pages.pricing.psTeaser.packages.standard.price')}</p>
+            </div>
+            <div class="ps-teaser-card popular">
+              <div class="popular-badge">{t('pages.pricing.ui.popular')}</div>
+              <h3>{t('pages.pricing.psTeaser.packages.priority.name')}</h3>
+              <p class="teaser-price">{t('pages.pricing.psTeaser.packages.priority.price')}</p>
+            </div>
+            <div class="ps-teaser-card">
+              <h3>{t('pages.pricing.psTeaser.packages.emergency.name')}</h3>
+              <p class="teaser-price">{t('pages.pricing.psTeaser.packages.emergency.price')}</p>
+            </div>
+          </div>
+
+          <a href={`/${lang}/professional-services`} class="btn btn-primary btn-large">
+            {t('pages.pricing.psTeaser.viewDetails')}
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise CTA Section -->
+    <section class="pricing-content section-light">
+      <div class="container">
         <!-- Enterprise CTA -->
         <div class="enterprise-cta">
           <div class="enterprise-content">
@@ -174,116 +220,33 @@ function getIconForService(id: string): string {
       </div>
     </section>
 
-    <!-- Professional Service Packages Section -->
-    <section id="professional-services" class="services-section section-dark">
+    <!-- Technical Summary (For Technical Buyers) -->
+    <section class="technical-details section-light">
       <div class="container">
-        <div class="services-header">
-          <h2>{t('pages.pricing.professionalServices.header.title')}</h2>
-          <p class="services-subtitle">{t('pages.pricing.professionalServices.header.subtitle')}</p>
-          <div class="services-badge">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
-            </svg>
-            <span>{t('pages.pricing.professionalServices.header.badge')}</span>
+        <div class="technical-summary">
+          <div class="technical-summary-header">
+            <h3>{t('pages.pricing.technicalSummary.heading')}</h3>
+            <p>{t('pages.pricing.technicalSummary.description')}</p>
           </div>
-          <div class="services-eligibility">
-            <strong>{t('pages.pricing.professionalServices.header.eligibility')}</strong>
-          </div>
-        </div>
 
-        <!-- Service Package Cards -->
-        <div class="service-packages-grid">
-          {servicePackages.map(pkg => (
-            <ServicePackageCard package={pkg} lang={lang} />
-          ))}
-        </div>
-
-        <!-- Pricing Factors -->
-        <div class="pricing-factors">
-          <h3>{t('pages.pricing.professionalServices.pricingFactors.heading')}</h3>
-          <p class="factors-intro">{t('pages.pricing.professionalServices.pricingFactors.intro')}</p>
-          <div class="factors-grid">
-            {pricingFactors.map((factor: any) => (
-              <div class="factor-item">
-                <div class="factor-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="3"/>
-                    <path d="M12 1v6m0 6v6M5.6 5.6l4.2 4.2m4.2 4.2l4.2 4.2M1 12h6m6 0h6M5.6 18.4l4.2-4.2m4.2-4.2l4.2-4.2"/>
-                  </svg>
-                </div>
-                <h4>{factor.title}</h4>
-                <p>{factor.description}</p>
+          <div class="technical-grid">
+            {technicalCards.map(card => (
+              <div class="technical-card">
+                <h4>{card.name}</h4>
+                <dl class="technical-metrics">
+                  {card.metrics.map(metric => (
+                    <div class="technical-metric">
+                      <dt>{metric.label}</dt>
+                      <dd>{metric.value}</dd>
+                    </div>
+                  ))}
+                </dl>
               </div>
             ))}
           </div>
-          <p class="factors-note"><strong>Example:</strong> {t('pages.pricing.professionalServices.pricingFactors.note')}</p>
-        </div>
-
-
-        <!-- Service Types -->
-        <div class="service-types">
-          <h3>{t('pages.pricing.professionalServices.serviceTypes.heading')}</h3>
-          <p class="service-types-intro">{t('pages.pricing.professionalServices.serviceTypes.intro')}</p>
-
-          {serviceTypes.map((service, index) => (
-            <details class="service-type-item">
-              <summary>
-                <span class="service-type-icon" set:html={service.icon} />
-                <span class="service-type-name">{service.name}</span>
-                <span class="expand-icon">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"/>
-                  </svg>
-                </span>
-              </summary>
-              <div class="service-type-details">
-                <div class="service-detail-item">
-                  <div class="detail-badge standard">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.standard')}</div>
-                  <p>{service.standard}</p>
-                </div>
-                <div class="service-detail-item">
-                  <div class="detail-badge priority">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.priority')}</div>
-                  <p>{service.priority}</p>
-                </div>
-                <div class="service-detail-item">
-                  <div class="detail-badge emergency">{t('pages.pricing.professionalServices.serviceTypes.badgeLabels.emergency')}</div>
-                  <p>{service.emergency}</p>
-                </div>
-              </div>
-            </details>
-          ))}
-        </div>
-
-        <!-- Benefits -->
-        <div class="services-benefits">
-          <h4>{t('pages.pricing.professionalServices.benefits.heading')}</h4>
-          {ta('pages.pricing.professionalServices.benefits.statistics').map((stat) => (
-            <p><strong>{stat}</strong></p>
-          ))}
-          <p>{t('pages.pricing.professionalServices.benefits.description')}</p>
-          <ul>
-            {ta('pages.pricing.professionalServices.benefits.items').map((item) => (
-              <li>{item}</li>
-            ))}
-          </ul>
-        </div>
-
-        <!-- CTA -->
-        <div class="services-cta">
-          <h4>{t('pages.pricing.professionalServices.cta.heading')}</h4>
-          <p>{t('pages.pricing.professionalServices.cta.description')}</p>
-          <a href={EXTERNAL_LINKS.SCHEDULE_CONSULTATION}
-             target="_blank"
-             rel="noopener noreferrer"
-             class="btn btn-primary btn-large">
-            {t('pages.pricing.professionalServices.cta.button')}
-          </a>
         </div>
       </div>
     </section>
-
-    <!-- FAQ Section -->
-    <FAQSection lang={lang} />
 
     <!-- CTA Section -->
     <section id="get-started" class="pricing-cta section-dark">
@@ -302,29 +265,3 @@ function getIconForService(id: string): string {
     </section>
   </article>
 </BaseLayout>
-
-<script>
-  // Toggle between individual and business plans
-  const toggleBtns = document.querySelectorAll('.toggle-btn');
-  const individualsView = document.querySelector('.individuals-view');
-  const businessesView = document.querySelector('.businesses-view');
-
-  toggleBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const toggleType = btn.dataset.toggle;
-
-      // Update button states
-      toggleBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      // Show/hide appropriate view
-      if (toggleType === 'individuals') {
-        individualsView?.classList.add('active');
-        businessesView?.classList.remove('active');
-      } else {
-        individualsView?.classList.remove('active');
-        businessesView?.classList.add('active');
-      }
-    });
-  });
-</script>
