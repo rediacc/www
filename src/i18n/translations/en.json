@@ -55,8 +55,7 @@
       "disasterRecovery": "Disaster Recovery",
       "threatResponse": "Threat Response",
       "dataSecurity": "Data Security",
-      "systemPortability": "System Portability",
-      "developmentEnvironments": "Development Environments"
+      "systemPortability": "System Portability"
     }
   },
   "footer": {
@@ -75,8 +74,7 @@
     "productLinks": {
       "solutions": "Solutions",
       "overview": "Overview",
-      "pricing": "Pricing",
-      "professionalServices": "Professional Services"
+      "pricing": "Pricing"
     },
     "companyLinks": {
       "aboutUs": "About Us",
@@ -101,7 +99,7 @@
       "learnMore": "Learn More",
       "bookDemo": "Book Demo",
       "freeBadge": "FREE FOREVER • No credit card",
-      "benefits": "10 CPU cores • Unlimited teams • $0",
+      "benefits": "5 machines • Unlimited teams • $0",
       "seeDetails": "See full details"
     }
   },
@@ -119,17 +117,8 @@
   },
   "solutions": {
     "title": "How We Ensure Business Continuity",
-    "subtitle": "Five integrated solutions for development acceleration and rapid response when infrastructure fails or threats strike.",
+    "subtitle": "Four integrated solutions for rapid response when infrastructure fails or threats strike.",
     "items": [
-      {
-        "title": "Development Environments",
-        "description": "Production clones in 60 seconds. Zero environment drift. Ephemeral infrastructure.",
-        "benefits": [
-          "Instant production-identical environments",
-          "40-70% infrastructure cost reduction",
-          "Zero DevOps intervention needed"
-        ]
-      },
       {
         "title": "Ransomware Survival",
         "description": "Recovery speed saves lives. Immutable backups. Rapid response.",
@@ -346,78 +335,26 @@
         }
       }
     },
-    "professionalServices": {
-      "meta": {
-        "title": "Professional Services | Expert Implementation & Support",
-        "description": "Get expert help when you need it most. From standard implementation to emergency response, our professional services ensure your success.",
-        "keywords": "professional services, implementation support, infrastructure consulting, emergency response, migration services, ransomware recovery"
-      },
-      "hero": {
-        "title": "Expert Help When You Need It Most",
-        "subtitle": "Fast-track your infrastructure deployment with professional implementation, migration support, and emergency response services.",
-        "badge": "Available for all subscription tiers"
-      },
-      "value": {
-        "heading": "Why Professional Services Matter",
-        "description": "Infrastructure challenges require expert guidance. Our professional services team brings years of experience to ensure your deployment succeeds, your migrations complete safely, and your emergencies resolve quickly.",
-        "statistics": [
-          "Average implementation time reduced by 75% with professional support",
-          "Emergency response team available within 2 hours for critical incidents",
-          "100% success rate on guided infrastructure migrations"
-        ]
-      },
-      "packages": {
-        "heading": "Professional Service Packages",
-        "subtitle": "Choose the service level that matches your urgency and complexity"
-      },
-      "cta": {
-        "heading": "Ready to Get Started?",
-        "description": "Schedule a consultation to discuss your infrastructure needs and get a custom quote.",
-        "button": "Schedule Consultation",
-        "subtext": "Most consultations completed within 48 hours"
-      }
-    },
     "pricing": {
       "meta": {
         "title": "Pricing | Simple, Transparent Infrastructure Protection",
         "description": "Choose the right plan for your business. From free community access to enterprise-grade protection. No hidden fees.",
         "keywords": "pricing, infrastructure automation, disaster recovery pricing, backup pricing, business continuity plans"
       },
-      "psTeaser": {
-        "heading": "Need Expert Help Getting Started?",
-        "subtitle": "Professional implementation and support services available for all tiers",
-        "viewDetails": "Explore Professional Services",
-        "packages": {
-          "standard": {
-            "name": "Standard",
-            "price": "From $7,499"
-          },
-          "priority": {
-            "name": "Priority",
-            "price": "$19,999"
-          },
-          "emergency": {
-            "name": "Emergency",
-            "price": "$29,999"
-          }
-        }
-      },
       "hero": {
         "title": "Simple, Transparent Pricing",
-        "subtitle": "Choose the disaster recovery tier that protects your critical workloads today and scales as you grow."
+        "subtitle": "Choose the disaster recovery tier that protects your infrastructure today and scales as you grow."
       },
       "plans": {
         "community": {
           "name": "Community",
           "description": "Production-ready disaster recovery from day one—Free forever",
           "features": [
-            "Unlimited users & teams—collaborate freely",
-            "Latest snapshot restores—recover from failures in minutes",
-            "10 CPU cores—perfect for small workloads",
-            "10 Repositories, 10 GB each",
-            "2-hour job timeout, 2 active/1 reserved jobs",
-            "7-day audit log retention",
+            "5 Machines",
+            "10 Repositories",
+            "10 GB Max Repo Size",
             "Manual backup scheduling",
+            "Latest snapshot restores—recover from failures in minutes",
             "Community Slack access",
             "Self-service support & docs",
             "\"Powered by Rediacc\" attribution"
@@ -427,15 +364,12 @@
           "name": "Professional",
           "description": "Professional-grade disaster recovery without enterprise complexity",
           "features": [
-            "Everything in Community +",
+            "50 Machines",
+            "Unlimited Repositories",
             "Automated backup scheduling—set it and forget it",
             "Point-in-time recovery (24h)",
-            "100 CPU cores—handle production scale",
-            "500 Repositories, 100 GB each",
-            "24-hour job timeout, 5 active/2 reserved jobs",
-            "30-day audit log retention",
-            "Email + chat support",
             "Slack & PagerDuty notifications",
+            "Email + chat support",
             "No \"Powered by Rediacc\" attribution",
             "Integrations API access"
           ]
@@ -446,16 +380,13 @@
           "features": [
             "Everything in Professional +",
             "$9,999 implementation support included (Launch Offer)",
+            "250 Machines",
             "Geo-redundant storage (3 regions)—one failure won't stop you",
             "Continuous data protection—zero data loss",
             "4-hour recovery SLA (guaranteed)",
-            "500 CPU cores—enterprise workloads with 72-hour job windows",
-            "Unlimited Repositories, 500 GB each",
-            "7 active/3 reserved jobs",
-            "90-day audit log retention",
+            "Dedicated customer success manager",
             "Role-based access control & comprehensive audit logs",
             "Compliance-ready audit reporting",
-            "Dedicated customer success manager",
             "Phone support + collaboration spaces"
           ]
         },
@@ -464,14 +395,10 @@
           "description": "White-glove disaster recovery for complex enterprise infrastructure",
           "priceNote": "*Starting at",
           "features": [
-            "Everything in Business +",
-            "Custom SLA (15-60 minute RTO)—your requirements, our commitment",
+            "Unlimited machines & repositories",
             "Dedicated infrastructure tenant—maximum security & performance",
+            "Custom SLA (15-60 minute RTO)—your requirements, our commitment",
             "24/7/365 white-glove support",
-            "1000+ CPU cores—unlimited scale for massive workloads",
-            "Unlimited Repositories, 1TB+ each",
-            "96+ hour job windows with 10+ active/5+ reserved jobs",
-            "1 Year+ audit log retention",
             "Quarterly disaster recovery exercises—tested readiness",
             "Executive escalation hotline",
             "Custom integrations & workflows",
@@ -512,13 +439,12 @@
             ],
             "price": "From $7,499",
             "tiers": [
-              "Starter (1-4 workloads): $7,499",
-              "Growth (5-10 workloads): $14,999",
-              "Scale (11-25 workloads): $29,999",
-              "Enterprise (25+ workloads): Custom quote"
+              "Small (5-25 machines): $7,499",
+              "Medium (25-100 machines): $14,999",
+              "Large (100-500 machines): $29,999",
+              "Enterprise (500+ machines): Custom quote"
             ],
-            "tierHeading": "Workload-Based Implementation Pricing",
-            "tierNote": "A workload represents a distinct business process, application, or service requiring backup and disaster recovery protection. Implementation includes architecture design, deployment, validation, and team enablement."
+            "tierHeading": "Implementation package tiers"
           },
           "priority": {
             "name": "Priority",
@@ -562,7 +488,7 @@
               "description": "Single expert vs. full dedicated team of specialists"
             }
           ],
-          "note": "Example: A mid-sized implementation (8 workloads) with security architecture review typically ranges from $14,999–$24,999 depending on integrations and retainer coverage."
+          "note": "Example: A mid-sized implementation (120 machines) with security architecture review typically ranges from $14,999–$24,999 depending on integrations and retainer coverage."
         },
         "serviceTypes": {
           "heading": "Available Services",
@@ -819,11 +745,22 @@
       "technicalSummary": {
         "heading": "Technical limits at a glance",
         "description": "Give your platform team a precise view of throughput, retention, and recovery expectations.",
-        "recoveryNote": "RPO (Recovery Point Objective): How much data you can afford to lose—measured in time. For example, 15-minute RPO means you might lose up to 15 minutes of recent changes.\n\nRTO (Recovery Time Objective): How quickly you need to be back online after a disaster. For example, 4-hour RTO means your systems will be restored within 4 hours.",
         "metrics": [
           {
-            "key": "cpuCore",
-            "label": "CPU Cores"
+            "key": "jobTimeout",
+            "label": "Job timeout"
+          },
+          {
+            "key": "activeJobs",
+            "label": "Active jobs"
+          },
+          {
+            "key": "reservedJobs",
+            "label": "Reserved jobs"
+          },
+          {
+            "key": "machines",
+            "label": "Managed machines"
           },
           {
             "key": "repositories",
@@ -831,77 +768,57 @@
           },
           {
             "key": "repoSize",
-            "label": "Repository size limit"
-          },
-          {
-            "key": "jobTimeout",
-            "label": "Max job duration"
-          },
-          {
-            "key": "activeJobs",
-            "label": "Concurrent jobs"
-          },
-          {
-            "key": "reservedJobs",
-            "label": "Job queue depth"
-          },
-          {
-            "key": "rpo",
-            "label": "Recovery Point Objective (RPO)"
-          },
-          {
-            "key": "rto",
-            "label": "Recovery Time Objective (RTO)"
+            "label": "Max repo size"
           },
           {
             "key": "auditLogs",
             "label": "Audit log retention"
+          },
+          {
+            "key": "recovery",
+            "label": "Recovery objectives"
           }
         ],
         "values": {
           "community": {
-            "cpuCore": "10 cores",
-            "repositories": "10 repos",
-            "repoSize": "10 GB",
             "jobTimeout": "2 hours",
-            "activeJobs": "2 active",
+            "activeJobs": "2 concurrent",
             "reservedJobs": "1 reserved",
-            "rpo": "Best effort",
-            "rto": "Best effort",
-            "auditLogs": "7 days"
+            "machines": "Up to 5",
+            "repositories": "10 repos",
+            "repoSize": "10 GB each",
+            "auditLogs": "7 days",
+            "recovery": "Latest snapshot restore"
           },
           "pro": {
-            "cpuCore": "100 cores",
-            "repositories": "500 repos",
-            "repoSize": "100 GB",
             "jobTimeout": "24 hours",
-            "activeJobs": "5 active",
+            "activeJobs": "5 concurrent",
             "reservedJobs": "2 reserved",
-            "rpo": "~15 minutes",
-            "rto": "Point-in-time restore",
-            "auditLogs": "30 days"
+            "machines": "Up to 50",
+            "repositories": "500 repos",
+            "repoSize": "100 GB each",
+            "auditLogs": "30 days",
+            "recovery": "Point-in-time (15 min)"
           },
           "business": {
-            "cpuCore": "500 cores",
-            "repositories": "Unlimited",
-            "repoSize": "500 GB",
             "jobTimeout": "72 hours",
-            "activeJobs": "7 active",
+            "activeJobs": "7 concurrent",
             "reservedJobs": "3 reserved",
-            "rpo": "~5 minutes (continuous)",
-            "rto": "4 hours (guaranteed)",
-            "auditLogs": "90 days"
+            "machines": "Up to 250",
+            "repositories": "Unlimited",
+            "repoSize": "500 GB each",
+            "auditLogs": "90 days",
+            "recovery": "Continuous data protection (~5 min RPO)"
           },
           "enterprise": {
-            "cpuCore": "1000+ cores",
-            "repositories": "Unlimited",
-            "repoSize": "1 TB+",
             "jobTimeout": "96+ hours",
-            "activeJobs": "10+ active",
+            "activeJobs": "10+ concurrent",
             "reservedJobs": "5+ reserved",
-            "rpo": "Custom (near-zero)",
-            "rto": "15-60 minutes (custom)",
-            "auditLogs": "1+ year"
+            "machines": "Unlimited",
+            "repositories": "Unlimited",
+            "repoSize": "Custom (5 TB+)",
+            "auditLogs": "1 year+",
+            "recovery": "Custom RPO/RTO (15-60 min)"
           }
         }
       }
@@ -1369,128 +1286,6 @@
           "title": "Ready for True Data Protection?",
           "subtitle": "Zero-knowledge encryption. Complete audit trail. Compliance-ready architecture.",
           "button": "Audit Your Security"
-        }
-      },
-      "developmentEnvironments": {
-        "meta": {
-          "title": "Development Environments That Spin Up in Seconds | Rediacc",
-          "description": "Clone your complete production infrastructure—apps, databases, configs—in under 60 seconds. Stop waiting days for development environments. Production-identical environments on demand.",
-          "keywords": "ephemeral environments, development environment provisioning, instant development environment, on-demand environments, preview environments, git-native environments, production clone"
-        },
-        "hero": {
-          "title": "Stop waiting days for development environments. Start deploying in seconds.",
-          "subtitle": "Clone your complete production infrastructure—apps, databases, configs, dependencies—with one click. Development teams get production-identical environments on demand while infrastructure costs drop by 60%."
-        },
-        "problems": {
-          "provisioningDelays": {
-            "title": "The Development Environment Bottleneck",
-            "subtitle": "Time is what we want most, but what we use worst <small class='subtitle-attribution'>— William Penn</small>",
-            "problem": {
-              "description": "Development teams waste 21+ hours every day waiting for environments. Manual setup requires DevOps intervention, multiple tickets, and days of waiting. By the time staging is ready, requirements have changed. This bottleneck kills velocity—61% of teams report environment provisioning as their major deployment roadblock. One in four organizations takes three-plus months from code complete to production deployment because environments can't keep pace.",
-              "story": "A mid-sized SaaS company with 30 developers calculated they wasted 21 hours per day across the team just waiting for environment setup. Each developer needed 30-45 minutes daily for environment configuration issues. That's 525 hours monthly—equivalent to 3 full-time engineers doing nothing but fighting infrastructure instead of shipping features. The cost: $150K+ annually in wasted developer time, not counting delayed features and missed market opportunities.",
-              "additionalPoints": [
-                "Manual setup requires DevOps tickets creating 2-3 day delays",
-                "Each developer configures environments differently creating inconsistencies",
-                "Onboarding new developers takes 1-2 weeks just for environment setup",
-                "Context switching while waiting for environments kills productivity",
-                "DevOps teams become bottleneck handling provisioning requests"
-              ]
-            },
-            "solution": {
-              "title": "Instant Provisioning with Infrastructure Cloning",
-              "description": "Rediacc provisions complete development environments in under 60 seconds through automated infrastructure cloning. Developers trigger environment creation directly from Git branches without tickets or manual intervention. The platform replicates your entire production stack—applications, databases, configurations, network topology, dependencies—as exact copies. Ephemeral environments automatically clean up when branches merge, preventing infrastructure waste. DevOps teams define provisioning rules once, then developers self-serve infinitely.",
-              "benefits": [
-                "Provision complete environments in 60 seconds vs 2-3 days of waiting",
-                "Zero DevOps intervention—developers self-service from Git workflows",
-                "Automatic Git integration creates environments per branch automatically",
-                "Ephemeral architecture saves 40-70% on infrastructure costs",
-                "Onboard new developers in hours not weeks"
-              ]
-            }
-          },
-          "environmentDrift": {
-            "title": "The Production Parity Problem",
-            "subtitle": "An ounce of prevention is worth a pound of cure <small class='subtitle-attribution'>— Benjamin Franklin</small>",
-            "problem": {
-              "description": "Staging environments drift from production through manual changes, version mismatches, and configuration decay. What works in staging fails in production. Developers spend hours debugging environmental differences rather than fixing actual bugs. This 'works on my machine' syndrome wastes 30+ minutes per developer per day troubleshooting inconsistencies. Environment parity becomes impossible when each developer manually configures local setups differently.",
-              "story": "A fintech startup deployed a critical payment feature that passed all staging tests. In production, it failed immediately—a database collation setting differed between staging and production, breaking payment processing. The issue went undetected because staging had drifted from production over months of manual changes. Result: 4 hours of downtime during peak trading hours, $200K in lost transaction fees, and a regulatory compliance inquiry. The fix took 5 minutes. Finding the environmental difference took 4 hours.",
-              "additionalPoints": [
-                "Configuration files drift through manual edits not tracked in Git",
-                "Database schema versions mismatch between environments",
-                "Dependency versions diverge causing 'works here fails there' bugs",
-                "Environment variables differ breaking integrations in production",
-                "No way to guarantee staging matches production exactly"
-              ]
-            },
-            "solution": {
-              "title": "Guaranteed Production Parity Through Point-in-Time Cloning",
-              "description": "Rediacc eliminates drift by cloning production infrastructure at point-in-time, capturing exact application versions, database schemas, configuration files, and environment variables. Every clone guarantees production parity because it IS production—replicated atomically. Updates propagate automatically when production changes, keeping all environments synchronized. Developers work in containers or VMs that mirror production precisely, making 'it worked locally' synonymous with 'it will work in production.'",
-              "benefits": [
-                "Atomic cloning captures complete system state ensuring consistency",
-                "Zero configuration drift—clones match production exactly by design",
-                "Automatic synchronization propagates production changes to all environments",
-                "Catch environment-specific bugs in development not production",
-                "Eliminate 30+ minutes daily per developer debugging environment issues"
-              ]
-            }
-          },
-          "infrastructureCosts": {
-            "title": "The Always-On Infrastructure Waste",
-            "subtitle": "Waste not, want not <small class='subtitle-attribution'>— English proverb</small>",
-            "problem": {
-              "description": "Traditional development infrastructure requires always-on staging, QA, and developer environments consuming cloud resources 24/7. Multiply environments across teams and costs explode. A 30-developer team maintaining standard dev/staging/QA setups easily burns $50K-100K monthly on idle infrastructure. Storage costs compound with full database copies consuming terabytes unnecessarily. Finance pressures engineering to cut infrastructure spending without understanding the velocity impact.",
-              "story": "An e-commerce company with 50 developers reviewed their AWS bill: $180K monthly for development infrastructure. Analysis showed 78% of environments sat idle after business hours and weekends. Each environment ran full database copies—30TB total storage for data that could fit in 3TB with deduplication. They had 15 permanent staging environments, but only 3-4 were actively used at any time. The waste: $140K monthly on idle infrastructure that developers forgot to shut down.",
-              "additionalPoints": [
-                "Always-on environments cost 24/7 but used 8-10 hours daily",
-                "Developers forget to shut down test environments after use",
-                "Full database copies multiply storage costs unnecessarily",
-                "Multiple staging environments 'just in case' sit idle most time",
-                "Infrastructure budget battles harm team morale and velocity"
-              ]
-            },
-            "solution": {
-              "title": "Ephemeral Environments with On-Demand Provisioning",
-              "description": "Rediacc's ephemeral approach cuts infrastructure costs 40-70% through on-demand provisioning and automatic cleanup. Environments exist only when actively used—create for testing, destroy when done. Thin cloning technology eliminates storage duplication, provisioning 10TB databases from less than 1GB storage through copy-on-write mechanics. Teams pay only for compute during active usage, not for always-on infrastructure sitting idle overnight and weekends. The ROI calculator shows typical 30-person teams save $750K to $1.5M annually.",
-              "benefits": [
-                "Reduce infrastructure costs 40-70% through ephemeral provisioning",
-                "Automatic cleanup when branches merge prevents environment sprawl",
-                "Thin cloning saves 90%+ storage with copy-on-write technology",
-                "Pay-per-use model charges only for active compute time",
-                "ROI payback typically within 3-6 months"
-              ]
-            }
-          },
-          "cicdComplexity": {
-            "title": "The Integration Overhead",
-            "subtitle": "Simplicity is the ultimate sophistication <small class='subtitle-attribution'>— Leonardo da Vinci</small>",
-            "problem": {
-              "description": "Adding environment provisioning to existing DevOps pipelines requires custom scripts, API integrations, and ongoing maintenance. Each new tool adds complexity to already-sprawling toolchains where 13% of teams juggle 14+ different tools. Integration failures break CI/CD pipelines. Documentation gaps mean only one engineer understands the provisioning system, creating knowledge concentration risk.",
-              "story": "A B2B SaaS company attempted to automate environment provisioning through custom Jenkins scripts calling AWS CloudFormation and RDS APIs. Initial implementation took 3 months and 500 hours of DevOps engineering time. Six months later, when the original engineer left, nobody could modify the scripts safely. The provisioning system became technical debt—working but untouchable. When AWS deprecated an API endpoint, the entire pipeline broke. Recovery time: 2 weeks of lost development velocity while a consultant reverse-engineered the custom scripts.",
-              "additionalPoints": [
-                "Custom integration scripts require ongoing maintenance",
-                "API changes break custom integrations without warning",
-                "Only one person understands the provisioning system",
-                "Each CI/CD platform needs different integration approach",
-                "Tool sprawl increases cognitive load and failure points"
-              ]
-            },
-            "solution": {
-              "title": "Native CI/CD Integration with Infrastructure-as-Code Support",
-              "description": "Rediacc integrates with your existing stack through native plugins for GitHub, GitLab, Bitbucket, Jenkins, CircleCI, and major CI/CD platforms. Provisioning triggers automatically on PR creation or manual command. Infrastructure-as-code definitions using Terraform, Kubernetes, Docker Compose, or CloudFormation work unchanged. The platform complements rather than replaces existing tools—your development workflow stays familiar while environment provisioning becomes automatic. Setup takes minutes not weeks, and every engineer can provision environments without specialized knowledge.",
-              "benefits": [
-                "Native integrations for all major Git platforms and CI/CD tools",
-                "Infrastructure-as-code compatibility with Terraform Kubernetes Docker",
-                "Zero workflow disruption—works with existing development processes",
-                "Automatic provisioning on PR creation or Git events",
-                "Setup in minutes vs weeks of custom integration development"
-              ]
-            }
-          }
-        },
-        "cta": {
-          "title": "Ready to Accelerate Development?",
-          "subtitle": "Clone your first environment in seconds. Limited spots available.",
-          "button": "Apply for Early Access"
         }
       }
     }
