@@ -26,7 +26,7 @@ Bu dokümanın amacı:
 
 ### 1.1 Kayıt Olma
 
-![Resim 1](resim1.png)
+![Resim 1](/assets/images/UserGuide/1-Register.png)
 
 1. Tarayıcıdan [https://www.rediacc.com/](https://www.rediacc.com/) adresine gidin.  
 2. Sağ üst köşedeki **Register** butonuna tıklayın. (Resim 1)  
@@ -35,13 +35,13 @@ Bu dokümanın amacı:
    - **E-posta adresi**  
    - **Parola**
 
-![Resim 2](resim2.png)
+![Resim 2](/assets/images/UserGuide/2_Create_New_Account.png)
 
 4. **Create Account** butonuna tıklayın.  
    E-posta adresinize bir doğrulama kodu gönderilecektir.  
 5. E-postanıza gelen doğrulama bağlantısına tıklayarak hesabınızı etkinleştirin. (Resim 3)
 
-![Resim 3](resim3.png)
+![Resim 3](/assets/images/UserGuide/3_Create_New_Account_Activation_Code.png)
 
 ---
 
@@ -50,11 +50,11 @@ Bu dokümanın amacı:
 1. Ana sayfada **Login** seçeneğine tıklayın.  
 2. E-posta ve parolanızı girin. (Resim 4)
 
-![Resim 4](resim4.png)
+![Resim 4](/assets/images/UserGuide/4_Login_SignIn.png)
 
 3. Başarılı girişten sonra **Resources** ekranına yönlendirilirsiniz. (Resim 5)
 
-![Resim 5](resim5.png)
+![Resim 5](/assets/images/UserGuide/5_Resorces_Main.png)
 
 ---
 
@@ -72,7 +72,7 @@ Bu bölüm, **Makinalar**, **Repo** ve **Storage** kaynaklarının eklenmesi, li
 
 1. Yeni bir makina eklemek için **Makinalar** bölümü seçiliyken sağ üst köşedeki **Add Machine** butonuna tıklayın. (Resim 6)
 
-![Resim 6](resim6.png)
+![Resim 6](/assets/images/UserGuide/6_Create_Machine.png)
 
 2. Açılan formda aşağıdaki bilgileri doldurun: (Resim 7)
 
@@ -81,7 +81,7 @@ Bu bölüm, **Makinalar**, **Repo** ve **Storage** kaynaklarının eklenmesi, li
    - **User Name:** Kullanıcı adı  
    - **SSH Password (Temporary):** Kullanıcı şifresi  
 
-![Resim 7](resim7.png)
+![Resim 7](/assets/images/UserGuide/7_Machine_Add_Interface.png)
 
 3. **Create** butonuna tıklayarak makine oluşturun.
 
