@@ -1738,8 +1738,8 @@
   },
   {
     "id": "search-193",
-    "content": "Advanced",
-    "excerpt": "Advanced",
+    "content": "Pro",
+    "excerpt": "Pro",
     "category": "Pages",
     "page": "/",
     "path": "pages.pricing.plans.pro.name",
@@ -1828,8 +1828,8 @@
   },
   {
     "id": "search-203",
-    "content": "Premium",
-    "excerpt": "Premium",
+    "content": "Business",
+    "excerpt": "Business",
     "category": "Pages",
     "page": "/",
     "path": "pages.pricing.plans.business.name",
@@ -1918,8 +1918,8 @@
   },
   {
     "id": "search-213",
-    "content": "Elite",
-    "excerpt": "Elite",
+    "content": "Enterprise",
+    "excerpt": "Enterprise",
     "category": "Pages",
     "page": "/",
     "path": "pages.pricing.plans.enterprise.name",
@@ -2855,7 +2855,7 @@
   {
     "id": "search-317",
     "content": "Community plans include community support. Business plans include priority email support, and Business/Enterprise plans include 24/7 phone support and dedicated account managers.",
-    "excerpt": "Community plans include community support. Business plans include priority email support, and Business/Enterprise plans include 24/7 phone support and dedic...",
+    "excerpt": "Community plans include community support. Business plans include priority email support, and Business/Enterprise plans include 24/7 phone support and...",
     "category": "Pages",
     "page": "/",
     "path": "pages.pricing.faq.items[3].answer",
