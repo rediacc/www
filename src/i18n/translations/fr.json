@@ -72,7 +72,7 @@
           "label": "Rôle"
         },
         "useCase": {
-          "label": "Intérêt principal",
+          "label": "Intérêt primordial",
           "options": {
             "aiSafeOperations": "Cybersécurité",
             "developmentAcceleration": "Développement",
@@ -158,6 +158,7 @@
     "home": "Maison",
     "login": "Se connecter",
     "search": "Recherche",
+    "selectLanguage": "Sélectionnez la langue",
     "solutions": {
       "dataSecurity": "Sécurité des données",
       "disasterRecovery": "Reprise après sinistre",
@@ -879,7 +880,7 @@
           "title": "Les menaces évoluent rapidement. Vous devriez aussi."
         },
         "meta": {
-          "description": "Survivez aux attaques de ransomware grâce à des sauvegardes immuables, une récupération rapide et la portabilité de l'infrastructure. Évacuez les systèmes compromis en quelques minutes.",
+          "description": "Survivez aux attaques de ransomware grâce à des sauvegardes immuables, une récupération rapide et la portabilité de l’infrastructure. Évacuez les systèmes compromis en quelques minutes.",
           "keywords": "protection contre les ransomwares, cyber-résilience, sauvegardes immuables, récupération rapide, continuité des activités, évacuation des infrastructures, reprise après sinistre",
           "title": "Solutions contre les ransomwares et la cyber-résilience | Les menaces évoluent rapidement"
         },

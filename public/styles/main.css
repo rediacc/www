@@ -221,16 +221,64 @@ main {
     outline: none;
 }
 
+.language-selector {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.language-trigger-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-3);
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+.language-trigger-icon:hover {
+    opacity: 0.7;
+}
+
+.language-trigger-icon:focus {
+    outline: 2px solid var(--color-text);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.language-trigger-icon:focus:not(:focus-visible) {
+    outline: none;
+}
+
 .login-btn {
     text-decoration: none;
     color: var(--color-text);
     font-size: var(--font-size-base);
     font-weight: 400;
-    padding: var(--space-2) 0;
+    padding: var(--space-3) var(--space-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
 }
 
 .login-btn:hover {
     opacity: 0.7;
+}
+
+.login-btn:focus {
+    outline: 2px solid var(--color-text);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+.login-btn:focus:not(:focus-visible) {
+    outline: none;
 }
 
 /* ===== SIDEBAR ===== */

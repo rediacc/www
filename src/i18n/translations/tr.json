@@ -129,7 +129,7 @@
     "cta": {
       "benefits": "5 makine • Sınırsız ekip • 0 $",
       "bookDemo": "Kitap Demosu",
-      "contactUs": "Ücretsiz Başlayın",
+      "contactUs": "Ücretsiz Başla",
       "freeBadge": "KESİNLİKLE ÜCRETSİZ • Kredi kartı yok",
       "learnMore": "Daha fazla bilgi edin",
       "seeDetails": "Tüm ayrıntıları görün"
@@ -158,6 +158,7 @@
     "home": "Ev",
     "login": "Giriş yapmak",
     "search": "Aramak",
+    "selectLanguage": "Dil seçin",
     "solutions": {
       "dataSecurity": "Veri Güvenliği",
       "disasterRecovery": "Felaket Kurtarma",
@@ -347,7 +348,7 @@
       },
       "finalCta": {
         "buttons": {
-          "startFree": "Ücretsiz Başlayın",
+          "startFree": "Ücretsiz Başla",
           "talkToSales": "Satışla Konuşun"
         },
         "description": "Rediacc ile altyapılarını koruyan ekiplere katılın",
@@ -425,7 +426,7 @@
       },
       "professionalServices": {
         "benefits": {
-          "description": "Profesyonel hizmetlerimiz, kritik altyapı zorluklarıyla karşılaştığınızda asla yalnız kalmamanızı sağlar.",
+          "description": "Profesyonel hizmetlerimiz, kritik altyapı sorunlarıyla karşılaştığınızda asla yalnız kalmamanızı sağlar.",
           "heading": "Neden Profesyonel Hizmetler?",
           "items": [
             "Projenize atanan uzmanlardan oluşan özel ekip",
@@ -698,7 +699,7 @@
                 "Depolama maliyetleri geçmiş ve bütçe arasında seçim yapmaya zorluyor"
               ],
               "description": "Kısa saklama süreleri depolama alanından tasarruf sağlar ancak güvenlik açığı yaratır. Bulaşma öncesindeki verilere ihtiyacınız olduğunda bunların üzerine zaten yazılmıştır. Geleneksel sistemler, büyük depolama maliyetleri nedeniyle uzun süreli saklamayı karşılayamaz.",
-              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını bilinçli olarak bekler. Saklama süreleri kısa olan kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
+              "story": "Fidye yazılımının kalma süresi bir günün altına düştü. <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Saldırganlar, virüslü yedeklerin temiz yedeklerin üzerine yazılmasını kasıtlı olarak bekler. Saklama süreleri kısa olan kuruluşlar, tüm yedeklemelerin kötü amaçlı yazılım içerdiğini keşfeder. <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -824,7 +825,7 @@
                 "Test edilmemiş yük devretme planları ihtiyacınız olduğunda başarısız olur"
               ],
               "description": "Tek bulut risklidir. Felaket meydana gelmeden önce yük devretmeyi test etmek istiyorsunuz. Ancak test yapmak, üretimi tam olarak yansıtan altyapının kopyalanması ve senkronizasyonun haftalar boyunca sürdürülmesi anlamına gelir. Çoğu şirket felaketten kurtarmayı hiçbir zaman test etmez çünkü risk ve çaba buna değmez; ta ki kesintiler değmesi gerektiğini kanıtlayana kadar.",
-              "story": "Şirketlerin yalnızca %7'si felaket kurtarma planlarını asla test etmiyor. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Ancak yalnızca yıllık olarak %46 test yapılıyor. <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Neden: zaman, kaynak eksikliği, karmaşıklık. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Test yapmak maliyetleri iki katına çıkarır. Sağlayıcının kesintisi, test etmeleri gerektiğini kanıtlıyor."
+              "story": "Şirketlerin yalnızca %7'si felaket kurtarma planlarını asla test etmiyor. <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Ancak yalnızca yıllık %46 test yapılıyor. <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Neden: zaman, kaynak eksikliği, karmaşıklık. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='citation'>[3]</a> Test yapmak maliyetleri iki katına çıkarır. Sağlayıcının kesintisi, test etmeleri gerektiğini kanıtlıyor."
             },
             "solution": {
               "benefits": [
@@ -1003,7 +1004,7 @@
         },
         "title": "Hikayemiz",
         "turningPoint": {
-          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolaylıkla yedekleyebileceğim ve nereye taşırsam taşıyım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
+          "paragraph1": "Yıllar sonra böyle bir sorunun bir daha yaşanmaması için ne yapabileceğimi düşünmeye devam ettim. Sistemlerimi istediğim zaman başka bir ortama taşıyabileceğim, ihtiyaç duyduğumda aktif hale getirebileceğim, kolaylıkla yedekleyebileceğim ve nereye taşırsam taşıayım güvenli bir şekilde saklayabileceğim bir araca ihtiyacım vardı.",
           "paragraph2": "2021 yılında Docker'ı NetworkChuck'ın videosu aracılığıyla keşfettim. Neyin mümkün olduğu karşısında şok oldum. Keşke bu teknolojiyi daha önce bilseydim; her şeyi değiştirebilirdi.",
           "paragraph3": "Ancak Docker tek başına tüm sorunlarımı çözmedi. Konteyner dosyalarını sistemler arasında taşımak zordu. Dosya sahipliği uyumluluk sorunlarıyla karşılaştım ve veri boyutu büyüdükçe aktarımlar daha uzun sürdü. En önemlisi, geçiş bitene kadar hizmetleri çevrimdışı tutmak zorunda kaldım ve Docker minimum güvenlik özellikleri sundu.",
           "title": "Dönüm Noktası"

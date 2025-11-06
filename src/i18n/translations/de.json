@@ -158,6 +158,7 @@
     "home": "Heim",
     "login": "Einloggen",
     "search": "Suchen",
+    "selectLanguage": "Sprache auswählen",
     "solutions": {
       "dataSecurity": "Datensicherheit",
       "disasterRecovery": "Notfallwiederherstellung",
@@ -942,7 +943,7 @@
                 "94 Prozent der Ransomware-Angriffe zielen auf die Backup-Infrastruktur ab",
                 "Angreifer warten wochenlang darauf, sicherzustellen, dass saubere Backups überschrieben werden",
                 "Unveränderliche Backups schlagen fehl, wenn Angreifer über Administratoranmeldeinformationen verfügen",
-                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldforderung",
+                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldzahlung",
                 "Verschlüsselte Anbieter-Backups bedeuten, dass Anbieter bei der Wiederherstellung nicht helfen können"
               ],
               "description": "Ransomware-Angreifer zielen auf die Backup-Infrastruktur ab und löschen oder überschreiben Kopien, um eine Wiederherstellung zu verhindern. Backups im selben Cloud-Konto mit gemeinsamen Anmeldeinformationen ermöglichen es Angreifern, den Verlauf von Monaten zu löschen. Selbst unveränderliche Backups schlagen bei Administratorzugriff fehl. Saubere Backups verschwinden, bevor Sie es merken.",

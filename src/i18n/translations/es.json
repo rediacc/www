@@ -158,6 +158,7 @@
     "home": "Hogar",
     "login": "Acceso",
     "search": "Buscar",
+    "selectLanguage": "Seleccionar idioma",
     "solutions": {
       "dataSecurity": "Seguridad de datos",
       "disasterRecovery": "Recuperación ante desastres",
@@ -492,7 +493,7 @@
               "title": "Nivel de personalización"
             },
             {
-              "description": "Experto único versus equipo completo de especialistas dedicados",
+              "description": "Un único experto frente a un equipo completo de especialistas dedicados",
               "title": "Tamaño del equipo"
             }
           ],
@@ -720,7 +721,7 @@
                 "El mismo ataque de ransomware produce tiempos de recuperación drásticamente diferentes",
                 "Las restauraciones completas tradicionales significan días de inactividad de servicios cancelados",
                 "La recuperación incremental moderna vuelve a estar en línea en minutos",
-                "La atención médica no puede esperar días que las pacientes necesitan atención ahora",
+                "La atención médica no puede esperar los días en que los pacientes necesitan atención ahora",
                 "Cada hora de inactividad multiplica los daños operativos y financieros"
               ],
               "description": "Las copias de seguridad completas tradicionales implican restauraciones completas lentas. Las organizaciones con sistemas de recuperación modernos vuelven a estar en línea en horas. ¿Aquellos con copias de seguridad tradicionales? Días de inactividad, servicios cancelados y pérdida de ingresos.",

@@ -1,44 +1,20 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../i18n/react';
-import { SUPPORTED_LANGUAGES, getLanguageFromPath, getLanguageName, getLanguageFlag } from '../i18n/language-utils';
+import { SUPPORTED_LANGUAGES, getLanguageFromPath } from '../i18n/language-utils';
 import type { Language } from '../i18n/types';
-import { setLanguageCookie } from '../utils/language-cookie';
+import LanguageMenu from './LanguageMenu';
 import '../styles/language-switcher.css';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState<Language>('en');
   const { t } = useTranslation(currentLang);
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Get current language from URL on mount
   useEffect(() => {
     const lang = getLanguageFromPath(window.location.pathname);
     setCurrentLang(lang);
   }, []);
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsLangDropdownOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  const handleLanguageChange = (lang: Language) => {
-    // Set the language cookie so the redirect script doesn't override our choice
-    setLanguageCookie(lang);
-
-    const currentPath = window.location.pathname;
-    const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '');
-    const newPath = `/${lang}${pathWithoutLang || '/'}`;
-    window.location.href = newPath;
-  };
 
   return (
     <footer id="footer" className="footer" role="contentinfo">
@@ -109,47 +85,14 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div className="footer-bottom-right">
-            <div className="language-selector" ref={dropdownRef}>
-              <button
-                className="language-trigger"
-                onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
-                aria-label="Select language"
-                aria-expanded={isLangDropdownOpen}
-              >
-                <span className="language-flag">{getLanguageFlag(currentLang)}</span>
-                <span className="language-name">{getLanguageName(currentLang)}</span>
-                <svg
-                  className={`language-chevron ${isLangDropdownOpen ? 'open' : ''}`}
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-
-              {isLangDropdownOpen && (
-                <div className="language-menu bottom">
-                  {SUPPORTED_LANGUAGES.map((lang) => (
-                    <button
-                      key={lang}
-                      className={`language-option ${lang === currentLang ? 'active' : ''}`}
-                      onClick={() => {
-                        handleLanguageChange(lang);
-                        setIsLangDropdownOpen(false);
-                      }}
-                    >
-                      <span className="flag">{getLanguageFlag(lang)}</span>
-                      <span className="name">{getLanguageName(lang)}</span>
-                      {lang === currentLang && <span className="checkmark">✓</span>}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+            <LanguageMenu
+              variant="flag-name"
+              currentLang={currentLang}
+              languages={SUPPORTED_LANGUAGES}
+              position="bottom"
+              navigationMode="button"
+              ariaLabel={t('navigation.selectLanguage')}
+            />
           </div>
         </div>
       </div>
