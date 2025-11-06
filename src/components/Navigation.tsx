@@ -21,19 +21,27 @@ const Navigation: React.FC = () => {
     setConsoleUrl(getConsoleUrl());
   }, []);
 
-  // Handle scroll to show/hide navigation
+  // Handle scroll to show/hide navigation (only on solutions page)
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      setIsVisible(scrollTop > 0);
-    };
+    const isOnSolutionsPage = window.location.pathname.includes('/solutions');
 
-    // Set initial state
-    handleScroll();
+    if (isOnSolutionsPage) {
+      // On solutions page: hide nav at top, show when scrolled
+      const handleScroll = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        setIsVisible(scrollTop > 0);
+      };
 
-    // Listen to scroll events
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+      // Set initial state
+      handleScroll();
+
+      // Listen to scroll events
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      return () => window.removeEventListener('scroll', handleScroll);
+    } else {
+      // On all other pages: always show nav
+      setIsVisible(true);
+    }
   }, []);
 
   const toggleSidebar = () => {
