@@ -79,7 +79,7 @@
             "disasterRecovery": "Felaket Kurtarma",
             "multiple": "Çoklu",
             "other": "Diğer",
-            "placeholder": "Birini seçin"
+            "placeholder": "Birini seç"
           }
         }
       },
@@ -90,7 +90,7 @@
       "emailLabel": "iletişim@rediacc.com",
       "title": "Nasıl Gönderilir"
     },
-    "subtitle": "Sınırlı sayıda yer mevcuttur.",
+    "subtitle": "Bir daha asla veri kaybetmeyen ilk kişilerden biri olun.",
     "title": "Erken Erişim Alın"
   },
   "footer": {
@@ -117,6 +117,7 @@
     "productLinks": {
       "overview": "Genel Bakış",
       "pricing": "Fiyatlandırma",
+      "professionalServices": "Profesyonel Hizmetler",
       "solutions": "Çözümler"
     },
     "supportLinks": {
@@ -127,7 +128,7 @@
   },
   "hero": {
     "cta": {
-      "benefits": "5 makine • Sınırsız ekip • 0 $",
+      "benefits": "10 CPU çekirdeği • Sınırsız ekip • 0 ABD doları",
       "bookDemo": "Kitap Demosu",
       "contactUs": "Ücretsiz Başla",
       "freeBadge": "KESİNLİKLE ÜCRETSİZ • Kredi kartı yok",
@@ -161,6 +162,7 @@
     "selectLanguage": "Dil seçin",
     "solutions": {
       "dataSecurity": "Veri Güvenliği",
+      "developmentEnvironments": "Geliştirme Ortamları",
       "disasterRecovery": "Felaket Kurtarma",
       "systemPortability": "Sistem Taşınabilirliği",
       "threatResponse": "Tehdit Yanıtı"
@@ -341,8 +343,20 @@
             "question": "Ücretsiz deneme mevcut mu?"
           },
           {
-            "answer": "Topluluk planları topluluk desteğini içerir. İş planları öncelikli e-posta desteğini içerir ve İş/Kurumsal planlar 7/24 telefon desteğini ve özel hesap yöneticilerini içerir.",
+            "answer": "Topluluk planı topluluk desteğini ve self-servis belgeleri içerir. Profesyonel, e-posta ve sohbet desteğini içerir. İşletme, telefon desteği ve özel bir müşteri başarısı yöneticisi ekler. Kurumsal, yönetici kademelendirmeyle birlikte 7/24/365 teknik destek içerir.",
             "question": "Desteğe neler dahildir?"
+          },
+          {
+            "answer": "Kurtarma süresi, katmanınıza bağlıdır: Topluluk, en son anlık yedekleri dakikalar içinde geri yükler, Professional, belirli bir noktaya kurtarma (24 saat) sunar, Business, 4 saatlik SLA sağlar ve Enterprise, 15-60 dakikalık özel RTO sunar.",
+            "question": "Bir felaketten ne kadar hızlı kurtulabilirim?"
+          },
+          {
+            "answer": "Evet. Geleneksel yedekleme sistemlerinden farklı olarak, geri yükleme süreçlerini test ederek yedeklemeleri otomatik olarak doğrularız, böylece acil bir durumda onlara ihtiyaç duymadan önce onların çalıştıklarını bilirsiniz.",
+            "question": "Yedeklemelerim gerçekten test edildi ve doğrulandı mı?"
+          },
+          {
+            "answer": "Verileriniz seçtiğiniz depolama konumunda şifrelenmiş halde kalır. Tam kontrol sizdedir ve şifrelenmiş yedeklemelere hizmetlerimizden bağımsız olarak erişebilirsiniz.",
+            "question": "Hizmet kesilirse verilerime ne olur?"
           }
         ]
       },
@@ -351,11 +365,11 @@
           "startFree": "Ücretsiz Başla",
           "talkToSales": "Satışla Konuşun"
         },
-        "description": "Rediacc ile altyapılarını koruyan ekiplere katılın",
+        "description": "Altyapınızı ilk günden korumaya başlayın",
         "heading": "Başlamaya Hazır mısınız?"
       },
       "hero": {
-        "subtitle": "İşletmeniz için doğru planı seçin. Gizli ücret yok, sürpriz yok.",
+        "subtitle": "Altyapınızı bugün koruyan ve siz büyüdükçe ölçeklenen olağanüstü durum kurtarma katmanını seçin.",
         "title": "Basit, Şeffaf Fiyatlandırma"
       },
       "meta": {
@@ -365,66 +379,143 @@
       },
       "plans": {
         "business": {
-          "description": "Kritik altyapıya sahip yerleşik ekipler için",
+          "description": "Görev Açısından Kritik Koruma + Uzman Kurulumu",
           "features": [
-            "72 Saatlik İş Zaman Aşımı",
-            "7 Aktif İş",
-            "3 Rezerve İş",
-            "100 Makine",
-            "250 Depo",
-            "250 GB Maksimum Repo Boyutu",
-            "30 Günlük Denetim Günlükleri",
-            "7/24 Destek"
+            "Profesyoneldeki her şey +",
+            "9.999 $ uygulama desteği dahildir (Lansman Teklifi)",
+            "Coğrafi olarak yedekli depolama (3 bölge) — tek bir hata sizi durduramaz",
+            "Sürekli veri koruması; sıfır veri kaybı",
+            "4 saatlik kurtarma HDS'si (garantili)",
+            "500 CPU çekirdeği — 72 saatlik iş pencereleriyle kurumsal iş yükleri",
+            "Sınırsız Depo, her biri 500 GB",
+            "7 aktif/3 ayrılmış iş",
+            "90 günlük denetim günlüğü saklama",
+            "Rol tabanlı erişim kontrolü ve kapsamlı denetim günlükleri",
+            "Uyumluluğa hazır denetim raporlaması",
+            "Özel müşteri başarısı yöneticisi",
+            "Telefon desteği + ortak çalışma alanları"
           ],
           "name": "İşletme"
         },
         "community": {
-          "description": "Kişisel projeler ve testler için mükemmel",
+          "description": "İlk günden itibaren üretime hazır felaket kurtarma - Sonsuza kadar ücretsiz",
           "features": [
-            "Sınırsız Kullanıcı ve Ekip",
-            "Sınırsız Bölge ve Depolama",
-            "Sınırsız Köprü",
-            "2 Saatlik İş Zaman Aşımı",
-            "2 Aktif İş",
-            "1 Rezerve İş",
-            "5 Makine",
-            "10 Depo",
-            "10 GB Maksimum Repo Boyutu",
-            "7 Günlük Denetim Günlükleri"
+            "Sınırsız kullanıcı ve ekip; özgürce işbirliği yapın",
+            "En son anlık görüntü geri yüklemeleri; arızalardan dakikalar içinde kurtulma",
+            "10 CPU çekirdeği—küçük iş yükleri için mükemmel",
+            "10 Depo, her biri 10 GB",
+            "2 saatlik iş zaman aşımı, 2 etkin/1 ayrılmış iş",
+            "7 günlük denetim günlüğü saklama",
+            "Manuel yedekleme planlama",
+            "Topluluk Slack erişimi",
+            "Self servis destek ve dokümanlar",
+            "\"Powered by Rediacc\" özelliği"
           ],
           "name": "Toplum"
         },
         "enterprise": {
-          "description": "Özel gereksinimleri olan işletmeler için",
+          "description": "Karmaşık kurumsal altyapı için beyaz eldiven felaket kurtarma",
           "features": [
-            "96+ Saat İş Zaman Aşımı",
-            "10+ Aktif İş",
-            "5+ Rezerve İş",
-            "400+ Makine",
-            "1000+ Depo",
-            "1TB+ Maksimum Repo Boyutu",
-            "90+ Günlük Denetim Günlükleri",
-            "Özel Hesap Yöneticisi"
+            "İş Hayatındaki Her Şey +",
+            "Özel SLA (15-60 dakikalık RTO)—sizin gereksinimleriniz, taahhüdümüz",
+            "Özel altyapı kiracısı—maksimum güvenlik ve performans",
+            "7/24/365 beyaz eldiven desteği",
+            "1000'den fazla CPU çekirdeği—çok büyük iş yükleri için sınırsız ölçek",
+            "Sınırsız Depo, her biri 1TB+",
+            "10'dan fazla aktif/5'ten fazla rezerve edilmiş iş ile 96+ saatlik iş aralığı",
+            "1 Yıldan fazla denetim günlüğü saklama",
+            "Üç ayda bir gerçekleşen olağanüstü durum kurtarma çalışmaları – test edilmiş hazırlık",
+            "Yöneticilere iletme hattı",
+            "Özel entegrasyonlar ve iş akışları",
+            "Denetim belgeleri desteği ve güvenlik incelemeleri"
           ],
           "name": "Girişim",
           "priceNote": "*Başlangıç ​​tarihi:"
         },
         "pro": {
-          "description": "Büyüyen ekipler ve üretim iş yükleri için",
+          "description": "Kurumsal karmaşıklık olmadan profesyonel düzeyde felaket kurtarma",
           "features": [
-            "24 Saatlik İş Zaman Aşımı",
-            "5 Aktif İş",
-            "2 Rezerve İş İlanı",
-            "20 Makine",
-            "50 Depo",
-            "50 GB Maksimum Repo Boyutu",
-            "14 Günlük Denetim Günlükleri",
-            "Öncelikli Destek"
+            "Topluluktaki her şey +",
+            "Otomatik yedekleme planlaması; ayarlayın ve unutun",
+            "Belirli bir noktaya kurtarma (24 saat)",
+            "100 CPU çekirdeği — üretim ölçeğini yönetin",
+            "500 Depo, her biri 100 GB",
+            "24 saatlik iş zaman aşımı, 5 etkin/2 ayrılmış iş",
+            "30 günlük denetim günlüğü saklama",
+            "E-posta + sohbet desteği",
+            "Slack ve PagerDuty bildirimleri",
+            "\"Powered by Rediacc\" özelliği yok",
+            "Entegrasyon API erişimi"
           ],
           "name": "Profesyonel"
         }
       },
       "professionalServices": {
+        "access": {
+          "description": "Hibrit kapsam, dahil edilen katılım sürecini isteğe bağlı eklentilerle birleştirir, böylece her ekip doğru zamanda doğru yardımı alabilir.",
+          "heading": "Katmana göre profesyonel hizmet erişimi",
+          "labels": {
+            "available": "Mevcut eklentiler",
+            "included": "Dahil"
+          },
+          "tiers": [
+            {
+              "available": [
+                "Standart Uygulama (9.999 ABD Doları) veya katmanlı paketler (Küçük 7.499 ABD Doları · Orta 14.999 ABD Doları · Büyük 29.999 ABD Doları · Kurumsal özel)",
+                "Acil Durum Müdahale katılımı (talep üzerine 29.999 ABD doları)"
+              ],
+              "included": [
+                "Self servis belgeler, video eğitimleri ve topluluk forumu"
+              ],
+              "planId": "toplum"
+            },
+            {
+              "available": [
+                "Öncelikli Uygulama (19.999 ABD Doları)",
+                "Acil Durum Müdahale katılımı (talep üzerine 29.999 ABD doları)",
+                "Özel entegrasyon projeleri (kapsamlı)"
+              ],
+              "included": [
+                "E-posta desteği",
+                "Standart katılım oturumu (kurulum çağrısı ve yapılandırma kılavuzu)"
+              ],
+              "planId": "profesyonel"
+            },
+            {
+              "available": [
+                "Öncelikli Uygulama yükseltmesi (19.999 ABD doları)",
+                "Acil Durum Müdahale katılımı (talep üzerine 29.999 ABD doları)",
+                "Özel geliştirme ve güvenlik mimarisi danışmanlığı"
+              ],
+              "included": [
+                "Öncelikli e-posta/sohbet/telefon desteği",
+                "Yapılandırma ve runbook aktarımıyla özel katılım",
+                "Standart Uygulama paketi dahil (9.999 ABD doları değerinde)",
+                "Üç aylık başarı değerlendirmeleri"
+              ],
+              "planId": "işletme"
+            },
+            {
+              "available": [
+                "Özel geliştirme ve gelişmiş entegrasyonlar",
+                "Güvenlik ve denetim mimarisi danışmanlığı",
+                "Acil Durum Müdahale ücreti (5.000-7.500$/ay)"
+              ],
+              "included": [
+                "7/24/365 beyaz eldiven desteği ve özel CSM",
+                "Öncelikli Uygulama dahil (19.999 ABD doları değerinde)",
+                "Üç ayda bir olağanüstü durum kurtarma testi",
+                "Yıllık iş sürekliliği planlama çalıştayı",
+                "Yöneticilere iletme hattı"
+              ],
+              "planId": "girişim"
+            }
+          ]
+        },
+        "advancedDetails": {
+          "description": "Hizmet paketleri, uygulama katmanları, fiyatlandırma faktörleri ve hizmet tutma seçenekleri",
+          "heading": "Uygulama ve Fiyatlandırma Detayları"
+        },
         "benefits": {
           "description": "Profesyonel hizmetlerimiz, kritik altyapı sorunlarıyla karşılaştığınızda asla yalnız kalmamanızı sağlar.",
           "heading": "Neden Profesyonel Hizmetler?",
@@ -446,39 +537,51 @@
         },
         "header": {
           "badge": "Başarınızı profesyonel yardımla hızlandırın",
-          "eligibility": "Uygunluk: Profesyonel hizmetler yalnızca Pro, Business ve Enterprise plan müşterileri için mevcuttur.",
+          "eligibility": "Profesyonel hizmetler, hibrit erişim aracılığıyla her plana uyum sağlar. Nelerin dahil olduğunu ve nelerin eklenebileceğini görmek için aşağıdaki matrisi kullanın.",
           "subtitle": "En çok ihtiyaç duyduğunuz anda uzman yardımı alın",
           "title": "Profesyonel Hizmet Paketleri"
         },
         "packages": {
           "emergency": {
             "benefits": [
-              "Anında yanıt",
-              "7/24 özel ekip",
-              "Yalnızca kritik durumlar"
+              "Anında katılım (2 saatin altında)",
+              "Adli tıp, kontrol altına alma ve kurtarma planı",
+              "Sağlamlaştırma yol haritasını içeren stabilizasyon raporu"
             ],
-            "description": "Kritik durumlara anında müdahale",
+            "description": "Talep üzerine olay müdahale ekibi, kritik sistemleri kontrol altına almaya ve geri yüklemeye hazır.",
             "name": "Acil durum",
+            "price": "29.999$",
+            "tiers": [],
             "turnaround": "Aynı Gün"
           },
           "priority": {
             "benefits": [
-              "Hızlı yürütme",
-              "Uzatılmış çalışma saatleri desteği",
-              "Acil ihtiyaçlar için ideal"
+              "Özel görev yöneticisi",
+              "Akşam/hafta sonu müsaitliği",
+              "Üretim kesintisi yardımı"
             ],
-            "description": "Öncelikli yürütmeyle projenizi hızlandırın",
+            "description": "Genişletilmiş kullanılabilirlik ve yönlendirmeli geçiş desteği ile hızlandırılmış teslimat.",
             "name": "Öncelik",
+            "price": "19.999$",
+            "tiers": [],
             "turnaround": "24-48 Saat"
           },
           "standard": {
             "benefits": [
-              "Standart geri dönüş süresi",
-              "Çalışma saatleri desteği",
-              "Planlanan projeler için en iyi değer"
+              "Proje keşfi ve başarı planı",
+              "Ortam sağlama ve yapılandırma",
+              "Doğrulama kontrol listesi ve bilgi aktarımı"
             ],
-            "description": "Planlanan projeler için standart geri dönüş süresi",
+            "description": "Mimariyi, dağıtımı, doğrulamayı ve etkinleştirmeyi kapsayan yapılandırılmış uygulama.",
             "name": "Standart",
+            "price": "7.499$'dan başlayan fiyatlarla",
+            "tierHeading": "Uygulama paketi katmanları",
+            "tiers": [
+              "Küçük (5-25 makine): 7.499 ABD doları",
+              "Orta (25-100 makine): 14.999 ABD doları",
+              "Büyük (100-500 makine): 29.999 ABD doları",
+              "Kurumsal (500'den fazla makine): Özel teklif"
+            ],
             "turnaround": "3-5 İş Günü"
           }
         },
@@ -499,7 +602,22 @@
           ],
           "heading": "Profesyonel Hizmet Fiyatlandırmasını Anlamak",
           "intro": "Nihai proje maliyetleri şu şekilde belirlenir:",
-          "note": "Örnek: Orta düzeyde özelleştirme ile 3 sistem genelinde standart bir altyapı ölçeklendirmesi genellikle 9.999 ABD Doları ile 15.999 ABD Doları arasında değişir"
+          "note": "Örnek: Güvenlik mimarisi incelemesine sahip orta ölçekli bir uygulama (120 makine), entegrasyonlara ve hizmet kapsamına bağlı olarak genellikle 14.999 ABD Doları ile 24.999 ABD Doları arasında değişir."
+        },
+        "retainers": {
+          "description": "Öngörülebilir aylık fiyatlandırmayla yönetici paydaşlarımıza uzmanlarımıza garantili erişim sağlayın.",
+          "heading": "Her zaman hazır olma için tutucu seçenekleri",
+          "items": [
+            {
+              "bullets": [
+                "Garantili 2 saatlik yanıt süresi",
+                "Savaş odası koordinasyonu ile öncelikli yükseltme yolu",
+                "Üç ayda bir hazırlık incelemesi ve başucu kitabı güncellemeleri"
+              ],
+              "price": "5.000$–7.500$/ay",
+              "title": "Acil Durum Müdahale Tutucusu"
+            }
+          ]
         },
         "serviceTypes": {
           "badgeLabels": {
@@ -562,25 +680,211 @@
           ]
         }
       },
-      "toggleButtons": {
-        "businesses": "İşletmeler için",
-        "individuals": "Bireyler için"
+      "psTeaser": {
+        "heading": "Başlarken Uzman Yardımına mı ihtiyacınız var?",
+        "packages": {
+          "emergency": {
+            "name": "Acil durum",
+            "price": "29.999$"
+          },
+          "priority": {
+            "name": "Öncelik",
+            "price": "19.999$"
+          },
+          "standard": {
+            "name": "Standart",
+            "price": "7.499$'dan başlayan fiyatlarla"
+          }
+        },
+        "subtitle": "Tüm katmanlar için profesyonel uygulama ve destek hizmetleri mevcuttur",
+        "viewDetails": "Profesyonel Hizmetleri Keşfedin"
+      },
+      "strategy": {
+        "copy": "Bugün operasyon aşamanıza uygun olan planı seçin ve yarın platform değiştirmeden ölçeklendirin.",
+        "distribution": [
+          "Topluluk → Profesyonel: Otomasyon, kurtarma noktaları ve canlı destek ile denemelerden üretime geçin.",
+          "Profesyonel → İş: Ekibiniz büyüdükçe güvenlik ve denetim özellikleri, işbirliği ve daha hızlı kurtarma pencereleri ekleyin.",
+          "İş → Kurumsal: Riskler en yüksek olduğunda özel SLA'ların, özel kiracılığın ve beyaz eldiven ortaklığının kilidini açın."
+        ],
+        "heading": "Her aşama için tasarlandı"
+      },
+      "technicalSummary": {
+        "description": "Platform ekibinize aktarım hızı, elde tutma ve kurtarma beklentilerine ilişkin kesin bir görünüm sağlayın.",
+        "heading": "Bir bakışta teknik sınırlar",
+        "metrics": [
+          {
+            "key": "CPUÇekirdek",
+            "label": "CPU Çekirdekleri"
+          },
+          {
+            "key": "depolar",
+            "label": "Depolar"
+          },
+          {
+            "key": "repoSize",
+            "label": "Kod deposu boyutu sınırı"
+          },
+          {
+            "key": "işzaman aşımı",
+            "label": "Maksimum iş süresi"
+          },
+          {
+            "key": "aktif İşler",
+            "label": "Eşzamanlı işler"
+          },
+          {
+            "key": "ayrılmışİşler",
+            "label": "İş kuyruğu derinliği"
+          },
+          {
+            "key": "rpo",
+            "label": "Kurtarma Noktası Hedefi (RPO)"
+          },
+          {
+            "key": "rto",
+            "label": "Kurtarma Süresi Hedefi (RTO)"
+          },
+          {
+            "key": "denetim penceresi",
+            "label": "Denetim günlüğü tutma"
+          }
+        ],
+        "recoveryNote": "RPO (Kurtarma Noktası Hedefi): Ne kadar veriyi kaybetmeyi göze alabileceğiniz, zaman içinde ölçülür. Örneğin, 15 dakikalık RPO, son değişikliklerin 15 dakikaya kadarını kaybedebileceğiniz anlamına gelir. \n\nRTO (Kurtarma Süresi Hedefi): Bir felaketten sonra ne kadar hızlı tekrar çevrimiçi olmanız gerekir. Örneğin 4 saatlik RTO, sistemlerinizin 4 saat içinde geri yükleneceği anlamına gelir.",
+        "values": {
+          "business": {
+            "activeJobs": "7 aktif",
+            "auditLogs": "90 gün",
+            "cpuCore": "500 çekirdek",
+            "jobTimeout": "72 saat",
+            "repoSize": "500 GB",
+            "repositories": "Sınırsız",
+            "reservedJobs": "3 ayrılmış",
+            "rpo": "~5 dakika (sürekli)",
+            "rto": "4 saat (garantili)"
+          },
+          "community": {
+            "activeJobs": "2 aktif",
+            "auditLogs": "7 gün",
+            "cpuCore": "10 çekirdek",
+            "jobTimeout": "2 saat",
+            "repoSize": "10GB",
+            "repositories": "10 depo",
+            "reservedJobs": "1 rezerve edildi",
+            "rpo": "En iyi çaba",
+            "rto": "En iyi çaba"
+          },
+          "enterprise": {
+            "activeJobs": "10+ aktif",
+            "auditLogs": "1+ yıl",
+            "cpuCore": "1000'den fazla çekirdek",
+            "jobTimeout": "96+ saat",
+            "repoSize": "1 TB+",
+            "repositories": "Sınırsız",
+            "reservedJobs": "5+ ayrılmış",
+            "rpo": "Özel (sıfıra yakın)",
+            "rto": "15-60 dakika (özel)"
+          },
+          "pro": {
+            "activeJobs": "5 aktif",
+            "auditLogs": "30 gün",
+            "cpuCore": "100 çekirdek",
+            "jobTimeout": "24 saat",
+            "repoSize": "100GB",
+            "repositories": "500 repo",
+            "reservedJobs": "2 rezerve edildi",
+            "rpo": "~15 dakika",
+            "rto": "Belirli bir noktaya geri yükleme"
+          }
+        }
+      },
+      "trust": {
+        "heading": "Kurumsal Düzeyde Güvenlik ve Güvenilirlik",
+        "items": [
+          "Banka düzeyinde şifreleme",
+          "%99,9 kesintisiz çalışma taahhüdü"
+        ]
       },
       "ui": {
+        "anchor": "Stratejik çapa",
+        "bestValue": "En İyi Değer",
         "contactSales": "Satış Ekibiyle İletişime Geçin",
+        "cta": {
+          "business": {
+            "guarantee": "14 Günlük Para İade Garantisi",
+            "launchBadge": "Sınırlı Lansman Teklifi",
+            "primary": "Uygulama Çağrısını Planlayın",
+            "secondary": "Satış Ekibiyle İletişime Geçin",
+            "valueNote": "9.999$ kurulum kredisi dahildir"
+          },
+          "community": {
+            "note": "Kredi kartına gerek yok",
+            "primary": "Ücretsiz Başla",
+            "secondary": "Daha fazla bilgi edin"
+          },
+          "enterprise": {
+            "guarantee": "14 Günlük Para İade Garantisi",
+            "primary": "Yönetici Demosunu Planlayın",
+            "secondary": "Satış Ekibiyle İletişime Geçin",
+            "subtext": "Özel SLA · Özel destek"
+          },
+          "pro": {
+            "guarantee": "14 Günlük Para İade Garantisi",
+            "primary": "Başlayın",
+            "secondary": "Satış Ekibiyle İletişime Geçin"
+          }
+        },
+        "foreverFree": "Sonsuza kadar ücretsiz",
         "getStarted": "Başlayın",
+        "guarantees": {
+          "cancelAnytime": "İstediğiniz zaman iptal edin",
+          "moneyBack": "14 Günlük Para İade Garantisi",
+          "noContracts": "Uzun vadeli sözleşme yok"
+        },
         "keyBenefits": "Temel Faydalar",
         "learnMore": "Daha fazla bilgi edin",
+        "limitedOffer": "Sınırlı Lansman Teklifi",
+        "monthOrYear": "ayda veya yılda {{price}}",
         "popular": "En popüler",
         "startingAt": "*Başlangıç ​​tarihi:",
         "whatsIncluded": "Neler dahil:"
+      }
+    },
+    "professionalServices": {
+      "cta": {
+        "button": "Planlama Danışmanlığı",
+        "description": "Altyapı ihtiyaçlarınızı tartışmak ve özel bir fiyat teklifi almak için bir danışma planlayın.",
+        "heading": "Başlamaya Hazır mısınız?",
+        "subtext": "Çoğu konsültasyon 48 saat içinde tamamlandı"
+      },
+      "hero": {
+        "badge": "Tüm abonelik katmanları için kullanılabilir",
+        "subtitle": "Profesyonel uygulama, geçiş desteği ve acil müdahale hizmetleriyle altyapı dağıtımınızı hızlandırın.",
+        "title": "En Çok İhtiyacınız Olduğunda Uzman Yardımı"
+      },
+      "meta": {
+        "description": "En çok ihtiyaç duyduğunuz anda uzman yardımı alın. Standart uygulamadan acil müdahaleye kadar profesyonel hizmetlerimiz başarınızı garanti eder.",
+        "keywords": "profesyonel hizmetler, uygulama desteği, altyapı danışmanlığı, acil müdahale, geçiş hizmetleri, fidye yazılımı kurtarma",
+        "title": "Profesyonel Hizmetler | Uzman Uygulama ve Destek"
+      },
+      "packages": {
+        "heading": "Profesyonel Hizmet Paketleri",
+        "subtitle": "Aciliyetinize ve karmaşıklığınıza uygun hizmet düzeyini seçin"
+      },
+      "value": {
+        "description": "Altyapı zorlukları uzman rehberliği gerektirir. Profesyonel hizmet ekibimiz, dağıtımınızın başarılı olmasını, geçişlerinizin güvenli bir şekilde tamamlanmasını ve acil durumlarınızın hızlı bir şekilde çözülmesini sağlamak için yılların deneyimini sunar.",
+        "heading": "Profesyonel Hizmetler Neden Önemlidir?",
+        "statistics": [
+          "Profesyonel destekle ortalama uygulama süresi %75 azaldı",
+          "Kritik olaylar için acil müdahale ekibi 2 saat içinde hazır olacaktır",
+          "Rehberli altyapı geçişlerinde %100 başarı oranı"
+        ]
       }
     },
     "solutions": {
       "dataSecurity": {
         "cta": {
           "button": "Güvenliğinizi Denetleyin",
-          "subtitle": "Sıfır bilgi şifrelemesi. Denetim izini tamamlayın. Uyumluluk göz önünde bulundurularak oluşturulmuştur.",
+          "subtitle": "Sıfır bilgi şifrelemesi. Denetim izini tamamlayın. Uyumluluğa hazır mimari.",
           "title": "Gerçek Veri Korumaya Hazır mısınız?"
         },
         "hero": {
@@ -588,9 +892,9 @@
           "title": "Her Şeyi Şifreleyin. Herşeyi Kontrol Edin. Sıfır Bilgiyi tamamlayın."
         },
         "meta": {
-          "description": "Tam altyapı koruması için sıfır bilgi şifrelemesi. Uyumluluk gereklilikleri göz önünde bulundurularak oluşturulmuştur. Fiziksel hırsızlıktan kurtulun, denetim izlerini koruyun, güvenli bir şekilde geçiş yapın.",
+          "description": "Tam altyapı koruması için sıfır bilgi şifrelemesi. Kapsamlı denetim yetenekleriyle uyumluluğa hazır mimari. Fiziksel hırsızlıktan kurtulun, denetim izlerini koruyun, güvenli bir şekilde geçiş yapın.",
           "keywords": "veri güvenliği, şifreleme, uyumluluk, altyapı şifrelemesi, denetim izleri, sıfır bilgi",
-          "title": "Veri Güvenliği ve Uyumluluğu | Denetim Yollarına Sahip Şifreli Altyapı"
+          "title": "Veri Güvenliği ve Denetim Kontrolleri | Denetim Yollarına Sahip Şifreli Altyapı"
         },
         "problems": {
           "auditTrail": {
@@ -603,18 +907,18 @@
                 "Denetim izi olmaması, ne olduğuna dair kanıtın olmaması anlamına gelir"
               ],
               "description": "Altyapı geçişleri aşamalı olarak gerçekleşir. Geçişler sırasında kalan eski sistemler denetim radarından çıkar. Denetçiler 'Üretimde neler var?' diye sorduğunda ve 'Kim neye erişti?' gibi soruların yanıtını, kullanımdan kaldırıldığı düşünülen sistemler için veremezsiniz. Tamamlanmamış geçişler, verileri tutan, savunmasız ve izlenmeyen kör noktalar oluşturur.",
-              "story": "Oracle Health, 2022'de satın alınan eski Cerner sunucularını devraldı. Ocak 2025'te saldırganlar taşınmamış bir sistemi ihlal etti. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Bir ay boyunca tespit edilmedi; artık izlenmiyor. 262.831 hasta kaydı çalındı. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises- Patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> İhlal, denetlenmeyen altyapıda meydana geldi."
+              "story": "Oracle Health, 2022'de satın alınan eski Cerner sunucularını devraldı. Ocak 2025'te saldırganlar taşınmamış bir sistemi ihlal etti. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> Bir ay boyunca tespit edilmedi; artık izlenmiyor. 262.831 hasta kaydı çalındı. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises- Patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> İhlal, denetlenmemiş altyapıda meydana geldi."
             },
             "solution": {
               "benefits": [
                 "Günlüğe kaydedilen ve izlenebilir her işlemin eksiksiz denetim takibi",
                 "Tam görünürlük denetçileri neyin korunduğunu, kimin eriştiğini görür",
                 "Erişim kontrolü kanıtı kimin neyi, ne zaman, neden yaptığını",
-                "Uyumluluk incelemeleri için denetime hazır belgeler kapsamlı günlükler",
+                "Güvenlik incelemeleri için kapsamlı günlükler içeren denetime hazır belgeler",
                 "Şifrelenmiş verileri denetçilere ifşa etmeden şeffaf işlemler"
               ],
               "description": "Her işlem günlüğe kaydedildi: Kim konuşlandırdı, kim neye erişti, ne zaman değişiklik yapıldı? Altyapınıza yönelik tam görünürlük. Denetim ekibi kesin zaman damgalarını ve kimliği doğrulanmış erişim kanıtını alır. Depo başına şifreleme, operasyonel kontrollerden ayrı kalır; denetim takibi erişimi kanıtlarken veriler şifreli kalır.",
-              "title": "Tam Denetim Uyumluluğu"
+              "title": "Eksiksiz Denetim Yetenekleri"
             },
             "subtitle": "Ölçemediğiniz şeyi yönetemezsiniz <small class='subtitle-attribution'>— Peter Drucker</small>",
             "title": "Eksik Denetim Yolları"
@@ -652,7 +956,7 @@
                 "Hizmetten çıkarma prosedürleri genellikle şifreleme adımlarını tamamen atlar",
                 "Dosya silme verileri silmez, yalnızca girişleri kaldırır",
                 "Veritabanı yedekleri sıklıkla güvenli konumlarda şifrelenmeden depolanır",
-                "Uyumluluk açıkça veriler için kullanımda olmayan şifrelemeyi gerektirir"
+                "Sektördeki en iyi uygulamalar, veriler için kullanımda olmayan şifrelemeyi gerektirir"
               ],
               "description": "Birisi sunucunuzu, yedek sürücünüzü veya eski donanımınızı çalıyor. İşletim sistemi şifreleri fiziksel erişime karşı sıfır koruma sağlar; USB'den önyükleme yapar, kimlik doğrulamayı atlar, diskleri bağlar, her şeyi kopyalar. Müşteri verileri, kimlik bilgileri, veritabanları; hepsi gitti. Veri merkezlerinde düzenli olarak hırsızlık yaşanıyor. Hizmetten çıkarma, açığa çıkma yaratır.",
               "story": "Morgan Stanley, 2016 yılında veri merkezlerini hizmet dışı bırakmak için nakliyeciler kiraladı. <a href='https://techcrunch.com/2022/09/21/morgan-stanley-hard-drives-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 15 milyon müşteri kaydına sahip sabit diskler, şifrelenmeden çevrimiçi olarak açık artırmaya çıkarıldı. <a href='https://www.bankinfosecurity.com/morgan-stanley-charged-sec-over-data-disposal-failures-a-12342' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 35 milyon dolar para cezası. Çoğu cihaz asla kurtarılmadı."
@@ -670,6 +974,128 @@
             },
             "subtitle": "Kilitler dürüst insanları dürüst tutar <sma class='subtitle-attribution'>— Halk deyişi (1912)</small>",
             "title": "Fiziksel Erişim Hırsızlığı"
+          }
+        }
+      },
+      "developmentEnvironments": {
+        "cta": {
+          "button": "Erken Erişim İçin Başvurun",
+          "subtitle": "İlk ortamınızı saniyeler içinde klonlayın. Sınırlı sayıda yer mevcuttur.",
+          "title": "Gelişimi Hızlandırmaya Hazır mısınız?"
+        },
+        "hero": {
+          "subtitle": "Tek tıklamayla tüm üretim altyapınızı (uygulamalar, veritabanları, yapılandırmalar, bağımlılıklar) klonlayın. Geliştirme ekipleri talep üzerine üretimle aynı ortamlara sahip olurken altyapı maliyetleri %60 azalır.",
+          "title": "Geliştirme ortamları için günlerce beklemeye son verin. Saniyeler içinde dağıtıma başlayın."
+        },
+        "meta": {
+          "description": "Üretim altyapınızın tamamını (uygulamalar, veritabanları, yapılandırmalar) 60 saniyeden kısa sürede klonlayın. Geliştirme ortamları için günlerce beklemeye son verin. Talep üzerine üretimle aynı ortamlar.",
+          "keywords": "geçici ortamlar, geliştirme ortamı sağlama, anında geliştirme ortamı, isteğe bağlı ortamlar, önizleme ortamları, git-yerel ortamlar, üretim klonu",
+          "title": "Saniyeler İçinde Hızlanan Geliştirme Ortamları | Rediacc"
+        },
+        "problems": {
+          "cicdComplexity": {
+            "problem": {
+              "additionalPoints": [
+                "Özel entegrasyon komut dosyaları sürekli bakım gerektirir",
+                "API değişiklikleri özel entegrasyonları uyarı vermeden bozar",
+                "Provizyon sistemini yalnızca bir kişi anlıyor",
+                "Her CI/CD platformunun farklı entegrasyon yaklaşımına ihtiyacı vardır",
+                "Araçların yayılması bilişsel yükü ve başarısızlık noktalarını artırır"
+              ],
+              "description": "Mevcut DevOps işlem hatlarına ortam sağlamanın eklenmesi, özel komut dosyaları, API entegrasyonları ve sürekli bakım gerektirir. Her yeni araç, ekiplerin %13'ünün 14'ten fazla farklı araçla hokkabazlık yaptığı, zaten yaygın olan araç zincirlerine karmaşıklık katıyor. Entegrasyon hataları CI/CD ardışık düzenlerini bozar. Dokümantasyon boşlukları, tedarik sistemini yalnızca bir mühendisin anlaması anlamına gelir ve bu da bilgi yoğunlaşması riski yaratır.",
+              "story": "Bir B2B SaaS şirketi, AWS CloudFormation ve RDS API'lerini çağıran özel Jenkins komut dosyaları aracılığıyla ortam sağlamayı otomatikleştirmeye çalıştı. İlk uygulama 3 ay ve 500 saatlik DevOps mühendislik süresi gerektirdi. Altı ay sonra, asıl mühendis ayrıldığında kimse senaryoları güvenli bir şekilde değiştiremedi. Tedarik sistemi teknik borca ​​dönüştü; çalışıyor ama dokunulmazdı. AWS bir API uç noktasını kullanımdan kaldırdığında tüm işlem hattı bozuldu. İyileşme süresi: Bir danışman özel komut dosyalarına tersine mühendislik uygularken 2 haftalık geliştirme hızı kaybı."
+            },
+            "solution": {
+              "benefits": [
+                "Tüm önemli Git platformları ve CI/CD araçları için yerel entegrasyonlar",
+                "Terraform Kubernetes Docker ile kod olarak altyapı uyumluluğu",
+                "Sıfır iş akışı kesintisi—mevcut geliştirme süreçleriyle çalışır",
+                "PR oluşturma veya Git etkinliklerinde otomatik sağlama",
+                "Dakikalar içinde kurulum ve haftalar süren özel entegrasyon geliştirme"
+              ],
+              "description": "Rediacc, GitHub, GitLab, Bitbucket, Jenkins, CircleCI ve başlıca CI/CD platformlarına yönelik yerel eklentiler aracılığıyla mevcut yığınınızla bütünleşir. Provizyon, PR oluşturma veya manuel komutla otomatik olarak tetiklenir. Terraform, Kubernetes, Docker Compose veya CloudFormation kullanan kod olarak altyapı tanımları değişmeden çalışır. Platform, mevcut araçların yerini almak yerine onları tamamlar; ortam sağlama işlemi otomatik hale gelirken geliştirme iş akışınız tanıdık kalır. Kurulum haftalar değil dakikalar alır ve her mühendis uzmanlık bilgisi gerektirmeden ortamların hazırlığını yapabilir.",
+              "title": "Kod Olarak Altyapı Desteğiyle Yerel CI/CD Entegrasyonu"
+            },
+            "subtitle": "Sadelik, gelişmişliğin en üst noktasıdır <small class='subtitle-attribution'>— Leonardo da Vinci</small>",
+            "title": "Entegrasyon Ek Yükü"
+          },
+          "environmentDrift": {
+            "problem": {
+              "additionalPoints": [
+                "Yapılandırma dosyaları Git'te izlenmeyen manuel düzenlemeler arasında sürükleniyor",
+                "Ortamlar arasında veritabanı şeması sürümleri uyuşmazlığı",
+                "Bağımlılık sürümleri farklılaşıyor ve 'burada çalışır orada başarısız olur' hatalarına neden oluyor",
+                "Ortam değişkenleri üretimdeki entegrasyonları bozarak farklılık gösterir",
+                "Aşamanın prodüksiyonla tam olarak eşleştiğini garanti etmenin bir yolu yok"
+              ],
+              "description": "Hazırlama ortamları, manuel değişiklikler, sürüm uyumsuzlukları ve konfigürasyon bozulması nedeniyle üretimden uzaklaşıyor. Sahnelemede işe yarayan şey, üretimde başarısız olur. Geliştiriciler, gerçek hataları düzeltmek yerine çevresel farklılıklardaki hataları ayıklamak için saatler harcıyor. Bu 'makinemde çalışıyor' sendromu, tutarsızlıkları gidermek için geliştirici başına günde 30'dan fazla dakika harcıyor. Her geliştirici yerel kurulumları manuel olarak farklı şekilde yapılandırdığında ortam eşliği imkansız hale gelir.",
+              "story": "Bir fintech girişimi, tüm aşamalandırma testlerini geçen kritik bir ödeme özelliğini devreye aldı. Üretimde hemen başarısız oldu; veritabanı harmanlama ayarı, hazırlama ve üretim arasında farklılık göstererek ödeme sürecini bozdu. Aylar süren manuel değişiklikler nedeniyle aşamalandırma üretimden saptığı için sorun fark edilmedi. Sonuç: Yoğun işlem saatlerinde 4 saatlik kesinti, 200 bin dolarlık işlem ücreti kaybı ve mevzuata uygunluk soruşturması. Düzeltme 5 dakika sürdü. Çevresel farkı bulmak 4 saat sürdü."
+            },
+            "solution": {
+              "benefits": [
+                "Atomik klonlama, tutarlılık sağlayarak tüm sistem durumunu yakalar",
+                "Sıfır konfigürasyon sapması—klonlar üretime tam olarak tasarımla uyum sağlar",
+                "Otomatik senkronizasyon, üretim değişikliklerini tüm ortamlara yayar",
+                "Ortama özgü hataları üretimde değil geliştirme aşamasında yakalayın",
+                "Geliştirici başına günlük 30 dakikadan fazla hata ayıklama ortamı sorununu ortadan kaldırın"
+              ],
+              "description": "Rediacc, üretim altyapısını belirli bir anda klonlayarak, tam uygulama sürümlerini, veritabanı şemalarını, yapılandırma dosyalarını ve ortam değişkenlerini yakalayarak sapmayı ortadan kaldırır. Her klon üretim eşitliğini garanti eder çünkü bu üretimdir - atomik olarak kopyalanmıştır. Güncellemeler, üretim değiştiğinde otomatik olarak yayılır ve tüm ortamların senkronize olmasını sağlar. Geliştiriciler, üretimi tam olarak yansıtan konteynerler veya VM'lerde çalışır ve 'yerel olarak çalıştı' ifadesini 'üretimde çalışacak' ile eşanlamlı hale getirir.",
+              "title": "Belirli Bir Noktada Klonlama Sayesinde Garantili Üretim Eşliği"
+            },
+            "subtitle": "Bir gram önleme bir kilo tedaviye değerdir <small class='subtitle-attribution'>— Benjamin Franklin</small>",
+            "title": "Üretim Paritesi Sorunu"
+          },
+          "infrastructureCosts": {
+            "problem": {
+              "additionalPoints": [
+                "Her zaman açık ortamlar 7/24 ücrete tabidir ancak günde 8-10 saat kullanılır",
+                "Geliştiriciler kullanımdan sonra test ortamlarını kapatmayı unutuyor",
+                "Tam veritabanı kopyaları, depolama maliyetlerini gereksiz yere katlar",
+                "Birden fazla hazırlama ortamı 'her ihtimale karşı' çoğu zaman boşta kalır",
+                "Altyapı bütçe savaşları ekibin moraline ve hızına zarar veriyor"
+              ],
+              "description": "Geleneksel geliştirme altyapısı, her zaman açık olan hazırlama, QA ve bulut kaynaklarını 7/24 tüketen geliştirici ortamlarını gerektirir. Ortamları ekipler arasında çoğaltın ve maliyetler patlayın. Standart geliştirme/hazırlama/QA kurulumlarını sürdüren 30 geliştiriciden oluşan bir ekip, boşta kalan altyapıyla ayda kolayca 50.000-100.000 ABD doları harcar. Depolama maliyetleri, gereksiz yere terabayt tüketen tam veritabanı kopyalarıyla birleşiyor. Finans, hız etkisini anlamadan mühendisliğe altyapı harcamalarını kesmesi için baskı yapıyor.",
+              "story": "50 geliştiriciye sahip bir e-ticaret şirketi, AWS faturasını inceledi: Geliştirme altyapısı için aylık 180 bin dolar. Analiz, ortamların %78'inin iş saatleri ve hafta sonları dışında boşta kaldığını gösterdi. Her ortamda veri tekilleştirme ile 3 TB'a sığabilecek veriler için toplam 30 TB depolama alanı olan tam veritabanı kopyaları çalıştırıldı. 15 kalıcı sahneleme ortamı vardı, ancak herhangi bir zamanda yalnızca 3-4 tanesi aktif olarak kullanıldı. İsraf: Geliştiricilerin kapatmayı unuttuğu boşta kalan altyapı için aylık 140 bin dolar."
+            },
+            "solution": {
+              "benefits": [
+                "Geçici provizyon yoluyla altyapı maliyetlerini %40-70 azaltın",
+                "Dallar birleştiğinde otomatik temizleme ortamın yayılmasını önler",
+                "İnce klonlama, yazma üzerine kopyalama teknolojisiyle %90'dan fazla depolama tasarrufu sağlar",
+                "Kullanım başına ödeme modeli yalnızca etkin işlem süresi için ücret alır",
+                "Yatırım getirisinin geri dönüşü genellikle 3-6 ay içinde"
+              ],
+              "description": "Rediacc'ın geçici yaklaşımı, isteğe bağlı provizyon ve otomatik temizleme yoluyla altyapı maliyetlerini %40-70 oranında azaltır. Ortamlar yalnızca aktif olarak kullanıldığında var olur; test için oluşturun, bittiğinde yok edin. İnce klonlama teknolojisi, yazma üzerine kopyalama mekaniği aracılığıyla 1 GB'tan daha az depolama alanından 10 TB'lık veritabanları sağlayarak depolama çoğaltmasını ortadan kaldırır. Ekipler yalnızca aktif kullanım sırasında bilgi işlem için ödeme yapar, her zaman açık olan altyapının gece boyunca ve hafta sonları boşta kalması için ödeme yapmaz. Yatırım getirisi hesaplayıcısı, tipik 30 kişilik ekiplerin yılda 750 bin ila 1,5 milyon dolar tasarruf ettiğini gösteriyor.",
+              "title": "İsteğe Bağlı Sağlama ile Geçici Ortamlar"
+            },
+            "subtitle": "İsraf etme, isteme <small class='subtitle-attribution'>— İngiliz atasözü</small>",
+            "title": "Daima Açık Altyapı İsrafı"
+          },
+          "provisioningDelays": {
+            "problem": {
+              "additionalPoints": [
+                "Manuel kurulum, DevOps biletlerinin 2-3 günlük gecikmelere neden olmasını gerektirir",
+                "Her geliştirici, ortamları farklı şekilde yapılandırarak tutarsızlıklar yaratır",
+                "Yeni geliştiricilerin katılımı yalnızca ortam kurulumu için 1-2 hafta sürer",
+                "Ortamları beklerken bağlam değiştirmek üretkenliği azaltır",
+                "DevOps ekipleri, ön hazırlık isteklerini işlemede darboğaz haline geliyor"
+              ],
+              "description": "Geliştirme ekipleri her gün ortamları bekleyerek 21 saatten fazla zaman harcıyor. Manuel kurulum, DevOps müdahalesini, birden fazla bildirimi ve günlerce beklemeyi gerektirir. Aşamalandırma hazır olduğunda gereksinimler değişti. Bu darboğaz hızı öldürüyor; ekiplerin %61'i ortam sağlamanın en büyük dağıtım engeli olduğunu belirtiyor. Ortamların buna ayak uyduramaması nedeniyle dört kuruluştan biri kodun tamamlanmasından üretim dağıtımına kadar üç aydan fazla zaman alıyor.",
+              "story": "30 geliştiriciden oluşan orta ölçekli bir SaaS şirketi, ekibin günde 21 saatini sadece ortam kurulumunu bekleyerek harcadıklarını hesapladı. Her geliştiricinin ortam yapılandırma sorunları için günde 30-45 dakikaya ihtiyacı vardı. Bu, ayda 525 saat anlamına gelir; bu da 3 tam zamanlı mühendisin nakliye özellikleri yerine altyapıyla mücadele etmekten başka hiçbir şey yapmamasına eşdeğerdir. Maliyet: Geciken özellikleri ve kaçırılan pazar fırsatlarını saymazsak, boşa harcanan geliştirici zamanı nedeniyle yılda 150.000 ABD Doları +."
+            },
+            "solution": {
+              "benefits": [
+                "Ortamların tamamını 2-3 gün bekleme yerine 60 saniyede sağlayın",
+                "Sıfır DevOps müdahalesi — geliştiricilerin Git iş akışlarından self servis çalışması",
+                "Otomatik Git entegrasyonu, şube başına otomatik olarak ortamlar oluşturur",
+                "Geçici mimari, altyapı maliyetlerinde %40-70 tasarruf sağlar",
+                "Yeni geliştiricilerin katılımını haftalar değil saatler içinde sağlayın"
+              ],
+              "description": "Rediacc, otomatik altyapı klonlaması yoluyla geliştirme ortamlarının 60 saniyeden kısa sürede tamamlanmasını sağlar. Geliştiriciler, ortam oluşturma işlemini bilet veya manuel müdahale olmadan doğrudan Git şubelerinden tetikler. Platform, tüm üretim yığınınızı (uygulamalar, veritabanları, yapılandırmalar, ağ topolojisi, bağımlılıklar) tam kopyalar olarak çoğaltır. Geçici ortamlar, şubeler birleştiğinde otomatik olarak temizlenerek altyapı israfını önler. DevOps ekipleri temel hazırlık kurallarını bir kez tanımlar, ardından geliştiriciler sınırsız sayıda kendi kendine hizmet verir.",
+              "title": "Altyapı Klonlama ile Anında Provizyon"
+            },
+            "subtitle": "Zaman en çok istediğimiz ama en kötü kullandığımız şeydir <sma class='subtitle-attribution'>— William Penn</small>",
+            "title": "Geliştirme Ortamı Darboğazı"
           }
         }
       },
@@ -706,7 +1132,7 @@
                 "Tekilleştirme ile aylarca süren yedekleme geçmişini verimli bir şekilde saklayın",
                 "Herhangi bir enfeksiyon öncesinde temiz yedeklemelere erişin",
                 "Artımlı veri tekilleştirme depolama alanından yüzde doksanın üzerinde tasarruf sağlar",
-                "Uzun süre elde tutma özelliğiyle uyumluluk gereksinimlerini uygun maliyetle karşılayın",
+                "Düzenleyici veri saklama gereksinimlerini uygun maliyetle karşılayın",
                 "Saldırganlar saklama sürenizin bitmesini bekleyemez"
               ],
               "description": "Rediacc'ın artımlı tekilleştirme özelliği, depolama alanında patlama olmadan genişletilmiş yedekleme geçmişini korumanıza olanak tanır. Yalnızca değişiklikler depolanır; yinelenen veriler depolanmaz.",
@@ -941,7 +1367,7 @@
             "problem": {
               "additionalPoints": [
                 "Fidye yazılımı saldırılarının yüzde doksan dördü yedekleme altyapısını hedef alıyor",
-                "Saldırganlar temiz yedeklemelerin üzerine yazılmasını sağlamak için haftalarca bekler",
+                "Saldırganlar temiz yedeklerin üzerine yazılmasını sağlamak için haftalarca bekler",
                 "Saldırganların yönetici kimlik bilgileri olduğunda değişmez yedeklemeler başarısız olur",
                 "Yedeklemeyi silme, fidye sonrasında bile kurtarma yollarını ortadan kaldırır",
                 "Şifrelenmiş sağlayıcı yedeklemeleri, sağlayıcıların geri yüklemeye yardımcı olamayacağı anlamına gelir"
@@ -1034,6 +1460,15 @@
     "items": [
       {
         "benefits": [
+          "Anında üretimle aynı ortamlar",
+          "Altyapı maliyetinde %40-70 azalma",
+          "Sıfır DevOps müdahalesi gerekli"
+        ],
+        "description": "60 saniyede üretim klonları. Sıfır ortam kayması. Geçici altyapı.",
+        "title": "Geliştirme Ortamları"
+      },
+      {
+        "benefits": [
           "Değişmez yedeklemeler saldırılardan kurtulur",
           "Saatler veya günler değil, dakikalar içinde iyileşin",
           "Risksiz işletim sistemi testi"
@@ -1069,7 +1504,7 @@
         "title": "Şifreleme Kontrolü"
       }
     ],
-    "subtitle": "Altyapı arızalandığında veya tehditler ortaya çıktığında hızlı müdahale için dört entegre çözüm.",
+    "subtitle": "Altyapı arızalandığında veya tehditler ortaya çıktığında geliştirmeyi hızlandırmak ve hızlı yanıt vermek için beş entegre çözüm.",
     "title": "İş Sürekliliğini Nasıl Sağlıyoruz?"
   }
 }
