@@ -214,10 +214,11 @@
   padding: 0;
   margin: 0;
   max-height: 9999px;
-  transition: max-height var(--transition-speed);
+  transition: max-height var(--transition-speed), overflow var(--transition-speed);
 }
 
-.collapsible-list[aria-expanded="false"] {
+/* When parent category item is collapsed, hide the list */
+.category-item[aria-expanded="false"] .collapsible-list {
   max-height: 0;
   overflow: hidden;
 }
