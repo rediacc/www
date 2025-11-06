@@ -4,6 +4,8 @@ import DocsSidebar from '../components/DocsSidebar.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import type { Language } from '../i18n/types';
 import { createTranslator } from '../i18n/utils';
+import { generateTOCFromHtml } from '../utils/sidebar-behavior';
+import '../styles/sidebar-shared.css';
 
 interface Props {
   frontmatter: {
@@ -36,27 +38,8 @@ const breadcrumbItems = [
   }
 ];
 
-// Generate table of contents from headings
-function generateTOC(content: string) {
-  const headingRegex = /<h([2-6])[^>]*>(.*?)<\/h\1>/gi;
-  const headings: Array<{ level: number; title: string; id: string }> = [];
-  let match;
-
-  while ((match = headingRegex.exec(content)) !== null) {
-    const level = parseInt(match[1]);
-    const title = match[2].replace(/<[^>]+>/g, ''); // Strip inner HTML tags
-    const id = title
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, '')
-      .replace(/\s+/g, '-');
-
-    headings.push({ level, title, id });
-  }
-
-  return headings;
-}
-
-const toc = generateTOC(await Astro.slots.render('default'));
+// Generate table of contents from rendered HTML using shared utility
+const toc = generateTOCFromHtml(await Astro.slots.render('default'));
 ---
 
 <BaseLayout
@@ -86,13 +69,13 @@ const toc = generateTOC(await Astro.slots.render('default'));
     </main>
 
     {toc.length > 0 && (
-      <aside class="toc-sidebar">
-        <nav class="toc-nav">
-          <h3 class="toc-title">{t('pages.docs.tableOfContents')}</h3>
-          <ul class="toc-list">
+      <aside class="sidebar-base sidebar-toc toc-sidebar">
+        <nav class="sidebar-nav sidebar-nav-with-accent toc-nav" role="navigation" aria-label="Table of contents">
+          <h3 class="sidebar-title toc-title">{t('pages.docs.tableOfContents')}</h3>
+          <ul class="sidebar-list toc-list">
             {toc.map(heading => (
-              <li class={`toc-item toc-level-${heading.level}`}>
-                <a href={`#${heading.id}`}>{heading.title}</a>
+              <li class={`sidebar-item toc-item toc-level-${heading.level}`}>
+                <a href={`#${heading.id}`} class="sidebar-link toc-link">{heading.title}</a>
               </li>
             ))}
           </ul>
@@ -100,6 +83,65 @@ const toc = generateTOC(await Astro.slots.render('default'));
       </aside>
     )}
   </div>
+
+  <script is:inline>
+    // Initialize active state tracking for TOC as user scrolls
+    (function() {
+      // Prevent multiple initializations
+      if (window.rediaccTOCInitialized) return;
+      window.rediaccTOCInitialized = true;
+
+      function initTOCActiveState() {
+        const container = document.querySelector('.toc-sidebar');
+        if (!container) return; // No TOC sidebar on this page
+
+        const headings = document.querySelectorAll('.article-body h2, .article-body h3, .article-body h4');
+        if (headings.length === 0) return; // No headings to track
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const id = entry.target.id;
+            if (!id) return;
+
+            const tocLink = container?.querySelector(`a[href="#${id}"]`);
+            if (!tocLink) return;
+
+            if (entry.isIntersecting) {
+              // Remove active class from all links
+              container?.querySelectorAll('a').forEach(link => {
+                link.classList.remove('active');
+              });
+
+              // Add active class to current link
+              tocLink.classList.add('active');
+            }
+          });
+        }, {
+          rootMargin: '-100px 0px -66%'
+        });
+
+        // Start observing all headings
+        headings.forEach(heading => {
+          observer.observe(heading);
+        });
+      }
+
+      // Initialize on load events
+      function init() {
+        initTOCActiveState();
+      }
+
+      // Astro View Transitions support
+      document.addEventListener('astro:page-load', init);
+
+      // Initial load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 
   <style>
     .docs-layout {
@@ -142,69 +184,9 @@ const toc = generateTOC(await Astro.slots.render('default'));
       line-height: 1.8;
     }
 
-    /* Right Sidebar - TOC */
+    /* Right Sidebar - TOC (uses shared styles from sidebar-shared.css) */
     .toc-sidebar {
-      position: sticky;
-      top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
-      height: fit-content;
-      max-height: calc(100vh - 3.5rem - 4rem); /* Account for nav height and padding */
-      overflow-y: auto;
-    }
-
-    .toc-nav {
-      padding: 1rem;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      border-left: 3px solid #1A1A1A;
-    }
-
-    .toc-title {
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #666;
-      margin: 0 0 1rem 0;
-    }
-
-    .toc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .toc-item {
-      margin: 0.5rem 0;
-    }
-
-    .toc-level-2 {
-      margin-left: 0;
-    }
-
-    .toc-level-3 {
-      margin-left: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .toc-level-4 {
-      margin-left: 1.5rem;
-      font-size: 0.85rem;
-    }
-
-    .toc-level-5,
-    .toc-level-6 {
-      margin-left: 2rem;
-      font-size: 0.8rem;
-    }
-
-    .toc-item a {
-      color: #1A1A1A;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .toc-item a:hover {
-      color: #000000;
-      text-decoration: underline;
+      /* All base styles inherited from sidebar-base */
     }
 
     /* Article Content Styles */
@@ -308,14 +290,10 @@ const toc = generateTOC(await Astro.slots.render('default'));
       margin: 1rem 0;
     }
 
-    /* Responsive Design */
+    /* Responsive Design - TOC sidebar is hidden on tablets/phones (handled in sidebar-shared.css) */
     @media (max-width: 1200px) {
       .docs-layout {
         grid-template-columns: 250px 1fr;
-      }
-
-      .toc-sidebar {
-        display: none;
       }
     }
 

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import type { Language } from '../i18n/types';
 import { createTranslator } from '../i18n/utils';
+import '../styles/sidebar-shared.css';
 
 interface Props {
   currentLang: Language;
@@ -65,15 +66,25 @@ const categoryStates = categories.map(category => {
 });
 ---
 
-<aside class="docs-sidebar">
-  <nav class="docs-nav">
-    <h2 class="nav-title">{t('pages.docs.title')}</h2>
-    <ul class="category-list">
+<aside class="sidebar-base docs-sidebar">
+  <nav class="sidebar-nav docs-nav" role="navigation" aria-label="Documentation navigation">
+    <h2 class="sidebar-title">{t('pages.docs.title')}</h2>
+
+    <div class="sidebar-search-container">
+      <input
+        type="text"
+        class="sidebar-search-input"
+        placeholder="Search docs..."
+        aria-label="Search documentation"
+      />
+    </div>
+
+    <ul class="sidebar-list category-list">
       {categoryStates.map(({ category, itemCount, categoryId, hasActiveDoc, expandedAttr }) => {
 
         return (
           <li
-            class="category-item"
+            class="sidebar-item category-item"
             data-category={category}
             data-item-count={String(itemCount)}
             data-is-active={hasActiveDoc ? 'true' : 'false'}
@@ -86,17 +97,17 @@ const categoryStates = categories.map(category => {
               data-collapsible={itemCount > 0 ? 'true' : 'false'}
             >
               {category}
-              <span class="chevron" aria-hidden="true">▶</span>
+              <span class="category-chevron" aria-hidden="true">▶</span>
             </button>
-            <ul class="doc-list" id={categoryId}>
+            <ul class="sidebar-list collapsible-list doc-list" id={categoryId}>
               {docsByCategory[category].map(doc => {
                 const docSlug = getBaseSlug(doc.slug);
                 const isActive = docSlug === currentSlug;
                 return (
-                  <li>
+                  <li class="sidebar-item">
                     <a
                       href={`/${currentLang}/docs/${docSlug}`}
-                      class={`doc-link ${isActive ? 'active' : ''}`}
+                      class={`sidebar-link doc-link ${isActive ? 'active' : ''}`}
                     >
                       {doc.data.title}
                     </a>
@@ -112,121 +123,52 @@ const categoryStates = categories.map(category => {
 </aside>
 
 <style>
-  /* Sidebar Container */
+  /* DocsSidebar specific overrides */
   .docs-sidebar {
-    position: sticky;
-    top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
-    height: fit-content;
-    max-height: calc(100vh - 3.5rem - 4rem); /* Account for nav height and padding */
-    overflow-y: visible;
+    /* Uses shared sidebar-base styles from sidebar-shared.css */
   }
 
   .docs-nav {
-    padding: 1rem;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    /* Uses shared sidebar-nav styles from sidebar-shared.css */
   }
 
-  .nav-title {
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #666;
+  /* Search Input Container */
+  .sidebar-search-container {
     margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--sidebar-border);
   }
 
-  .category-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .sidebar-search-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--sidebar-border);
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: var(--text-primary);
+    transition: border-color var(--transition-speed);
   }
 
+  .sidebar-search-input:focus {
+    outline: none;
+    border-color: var(--sidebar-accent);
+    box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+  }
+
+  .sidebar-search-input::placeholder {
+    color: var(--text-secondary);
+  }
+
+  /* Add extra margin to category items for spacing */
   .category-item {
     margin-bottom: 1.5rem;
   }
 
-  .category-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0.5rem 0;
-    font-weight: 600;
-    color: #333;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    background: none;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 0.5rem;
-  }
-
-  .category-header:hover {
-    color: #1A1A1A;
-  }
-
-  .category-header:focus-visible {
-    outline: 2px solid #1A1A1A;
-    outline-offset: 2px;
-    border-radius: 2px;
-  }
-
-  .chevron {
-    display: inline-flex;
-    align-items: center;
-    font-size: 0.75em;
-    margin-left: 0.5rem;
-    flex-shrink: 0;
-  }
-
-  .category-item[data-is-active="true"] .category-header {
-    color: #1A1A1A;
-  }
-
-  /* Collapsed state */
-  .category-item[aria-expanded="false"] .chevron {
-    transform: rotate(-90deg);
-  }
-
-  .category-item[aria-expanded="false"] .doc-list {
-    max-height: 0;
-    overflow: hidden;
-  }
-
-  .doc-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    max-height: 9999px;
-  }
-
-  .doc-list li {
-    margin-bottom: 0.5rem;
-  }
-
-  .doc-link {
-    display: block;
-    padding: 0.5rem 0.75rem;
-    color: #1A1A1A;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 0.9rem;
-  }
-
-  .doc-link:hover {
-    background-color: #F5F5F7;
-    text-decoration: underline;
-  }
-
-  .doc-link.active {
-    background-color: #1A1A1A;
-    color: white;
-    font-weight: 500;
-  }
-
-  .doc-link.active:hover {
-    background-color: #000000;
-    text-decoration: none;
+  /* Highlight search matches */
+  .doc-link.search-match {
+    background-color: rgba(26, 26, 26, 0.05);
   }
 
   /* Responsive Design */
@@ -234,6 +176,7 @@ const categoryStates = categories.map(category => {
     .docs-sidebar {
       position: static;
       max-height: none;
+      overflow-y: visible;
     }
   }
 </style>
@@ -309,9 +252,63 @@ const categoryStates = categories.map(category => {
       });
     }
 
+    /**
+     * Initialize search/filter functionality for sidebar navigation
+     */
+    function initSidebarSearch() {
+      const sidebar = document.querySelector('.docs-sidebar');
+      const input = document.querySelector('.sidebar-search-input');
+
+      if (!sidebar || !input) return;
+
+      input.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+
+        // Get all items to filter
+        const categoryItems = sidebar.querySelectorAll('[data-category]');
+        const docLinks = sidebar.querySelectorAll('.doc-link');
+
+        if (searchTerm.length === 0) {
+          // Reset view - show all
+          categoryItems.forEach(item => {
+            item.style.display = '';
+          });
+          docLinks.forEach(link => {
+            link.style.display = '';
+            link.classList.remove('search-match');
+          });
+          return;
+        }
+
+        // Filter and highlight
+        categoryItems.forEach(item => {
+          const links = item.querySelectorAll('.doc-link');
+          let hasMatch = false;
+
+          links.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            const matches = text.includes(searchTerm);
+
+            if (matches) {
+              hasMatch = true;
+              link.style.display = '';
+              link.classList.add('search-match');
+            } else {
+              link.style.display = 'none';
+              link.classList.remove('search-match');
+            }
+          });
+
+          // Show category if it has matching items
+          item.style.display = hasMatch ? '' : 'none';
+        });
+      });
+    }
+
     // Initialize on various events
     function init() {
       initCollapsibleCategories();
+      initSidebarSearch();
     }
 
     // Astro View Transitions support

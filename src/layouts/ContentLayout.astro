@@ -5,6 +5,8 @@ import Breadcrumb from '../components/Breadcrumb.astro';
 import type { CollectionEntry } from 'astro:content';
 import type { Language } from '../i18n/types';
 import { createTranslator } from '../i18n/utils';
+import { generateTOCFromMarkdown } from '../utils/sidebar-behavior';
+import '../styles/sidebar-shared.css';
 
 interface Props {
   frontmatter: {
@@ -60,27 +62,8 @@ if (currentLang) {
   });
 }
 
-// Generate table of contents from headings
-function generateTOC(content: string) {
-  const headingRegex = /^(#{1,6})\s+(.+)$/gm;
-  const headings: Array<{ level: number; title: string; id: string }> = [];
-  let match;
-
-  while ((match = headingRegex.exec(content)) !== null) {
-    const level = match[1].length;
-    const title = match[2];
-    const id = title
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, '')
-      .replace(/\s+/g, '-');
-
-    headings.push({ level, title, id });
-  }
-
-  return headings;
-}
-
-const toc = frontmatter.toc !== false ? generateTOC(await Astro.slots.render('default')) : [];
+// Generate table of contents from markdown using shared utility (respecting toc frontmatter flag)
+const toc = frontmatter.toc !== false ? generateTOCFromMarkdown(await Astro.slots.render('default')) : [];
 ---
 
 <BaseLayout
@@ -151,13 +134,13 @@ const toc = frontmatter.toc !== false ? generateTOC(await Astro.slots.render('de
 
     <div class="article-container">
       {toc.length > 0 && (
-        <aside class="toc-sidebar">
-          <nav class="toc-nav">
-            <h3 class="toc-title">On this page</h3>
-            <ul class="toc-list">
+        <aside class="sidebar-base sidebar-toc toc-sidebar">
+          <nav class="sidebar-nav sidebar-nav-with-accent toc-nav" role="navigation" aria-label="Table of contents">
+            <h3 class="sidebar-title toc-title">On this page</h3>
+            <ul class="sidebar-list toc-list">
               {toc.map(heading => (
-                <li class={`toc-item toc-level-${heading.level}`}>
-                  <a href={`#${heading.id}`}>{heading.title}</a>
+                <li class={`sidebar-item toc-item toc-level-${heading.level}`}>
+                  <a href={`#${heading.id}`} class="sidebar-link toc-link">{heading.title}</a>
                 </li>
               ))}
             </ul>
@@ -242,66 +225,27 @@ const toc = frontmatter.toc !== false ? generateTOC(await Astro.slots.render('de
       gap: 3rem;
     }
 
+    /* TOC Sidebar - ContentLayout specific positioning */
     .toc-sidebar {
       position: sticky;
       top: 2rem;
       height: fit-content;
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+      /* Other styles inherited from sidebar-base in sidebar-shared.css */
     }
 
-    .toc-nav {
-      padding: 1rem;
-      background-color: var(--color-bg-secondary, #f9f9f9);
-      border-radius: 8px;
-      border-left: 3px solid var(--color-primary, #0066cc);
+    .toc-sidebar .sidebar-nav {
+      /* Inherits styles from sidebar-nav in sidebar-shared.css */
     }
 
-    .toc-title {
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: var(--color-text-secondary, #666);
-      margin: 0 0 1rem 0;
+    /* Fallback for blog-specific colors if CSS variables not defined */
+    .content-article .toc-item a {
+      color: var(--color-primary, #1A1A1A);
     }
 
-    .toc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .toc-item {
-      margin: 0.5rem 0;
-    }
-
-    .toc-level-2 {
-      margin-left: 0;
-    }
-
-    .toc-level-3 {
-      margin-left: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .toc-level-4 {
-      margin-left: 1.5rem;
-      font-size: 0.85rem;
-    }
-
-    .toc-level-5,
-    .toc-level-6 {
-      margin-left: 2rem;
-      font-size: 0.8rem;
-    }
-
-    .toc-item a {
-      color: var(--color-primary, #0066cc);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .toc-item a:hover {
-      color: var(--color-primary-dark, #0052a3);
-      text-decoration: underline;
+    .content-article .toc-item a:hover {
+      color: var(--color-primary-dark, #000000);
     }
 
     .article-content {

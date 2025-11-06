@@ -5,6 +5,7 @@ import DocsSidebar from '../../../components/DocsSidebar.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
+import '../../../styles/sidebar-shared.css';
 
 export async function getStaticPaths() {
   const allDocs = await getCollection('docs');
@@ -109,22 +110,22 @@ const currentUrl = `/${lang}/docs/`;
       </section>
     </section>
 
-    <aside class="toc-sidebar">
-      <nav class="toc-nav">
-        <h3 class="toc-title">{t('pages.docs.tableOfContents')}</h3>
-        <ul class="toc-list">
-          <li class="toc-item toc-level-2">
-            <a href="#welcome">{t('pages.docs.welcome')}</a>
+    <aside class="sidebar-base sidebar-toc toc-sidebar">
+      <nav class="sidebar-nav sidebar-nav-with-accent toc-nav" role="navigation" aria-label="Table of contents">
+        <h3 class="sidebar-title toc-title">{t('pages.docs.tableOfContents')}</h3>
+        <ul class="sidebar-list toc-list">
+          <li class="sidebar-item toc-item toc-level-2">
+            <a href="#welcome" class="sidebar-link toc-link">{t('pages.docs.welcome')}</a>
           </li>
-          <li class="toc-item toc-level-2">
-            <a href="#quick-links">Quick Links</a>
+          <li class="sidebar-item toc-item toc-level-2">
+            <a href="#quick-links" class="sidebar-link toc-link">Quick Links</a>
           </li>
-          <li class="toc-item toc-level-2">
-            <a href="#all-documentation">{t('pages.docs.allDocumentation')}</a>
+          <li class="sidebar-item toc-item toc-level-2">
+            <a href="#all-documentation" class="sidebar-link toc-link">{t('pages.docs.allDocumentation')}</a>
           </li>
           {categories.map(category => (
-            <li class="toc-item toc-level-3">
-              <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`}>
+            <li class="sidebar-item toc-item toc-level-3">
+              <a href={`#${category.toLowerCase().replace(/\s+/g, '-')}`} class="sidebar-link toc-link">
                 {category} <span class="doc-count">({docsByCategory[category].length})</span>
               </a>
             </li>
@@ -262,58 +263,13 @@ const currentUrl = `/${lang}/docs/`;
       line-height: 1.6;
     }
 
-    /* TOC Sidebar */
+    /* TOC Sidebar (uses shared styles from sidebar-shared.css) */
     .toc-sidebar {
-      position: sticky;
-      top: calc(3.5rem + 2rem);
-      height: fit-content;
-      max-height: calc(100vh - 3.5rem - 4rem);
-      overflow-y: auto;
+      /* All base styles inherited from sidebar-base */
     }
 
     .toc-nav {
-      padding: 1rem;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      border-left: 3px solid #1A1A1A;
-    }
-
-    .toc-title {
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #666;
-      margin: 0 0 1rem 0;
-    }
-
-    .toc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .toc-item {
-      margin: 0.5rem 0;
-    }
-
-    .toc-level-2 {
-      margin-left: 0;
-    }
-
-    .toc-level-3 {
-      margin-left: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .toc-item a {
-      color: #1A1A1A;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .toc-item a:hover {
-      color: #000000;
-      text-decoration: underline;
+      /* All nav styles inherited from sidebar-nav and sidebar-nav-with-accent */
     }
 
     .doc-count {
