@@ -59,7 +59,9 @@ const finalDescription = description || t('layout.meta.defaultDescription');
 const finalKeywords = keywords || t('layout.meta.defaultKeywords');
 const finalOgDescription = ogDescription || finalDescription;
 
-const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, Astro.site);
+// Use current origin in development, production site in build
+const baseURL = import.meta.env.DEV ? Astro.url.origin : Astro.site;
+const canonicalURL = canonical ? canonical : new URL(Astro.url.pathname, baseURL);
 const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === `/${currentLang}/`;
 
 // Get path without language prefix for generating alternate language links
@@ -112,13 +114,13 @@ const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
     {SUPPORTED_LANGUAGES.map((lang) => {
       // Generate proper language-specific URLs for all languages
       const langPath = lang === 'en' ? pathWithoutLang : `/${lang}${pathWithoutLang}`;
-      const fullUrl = new URL(langPath, Astro.site).toString();
+      const fullUrl = new URL(langPath, baseURL).toString();
       return (
         <link rel="alternate" hreflang={lang} href={fullUrl} />
       );
     })}
     <!-- Default language fallback (always English) -->
-    <link rel="alternate" hreflang="x-default" href={new URL(pathWithoutLang, Astro.site).toString()} />
+    <link rel="alternate" hreflang="x-default" href={new URL(pathWithoutLang, baseURL).toString()} />
 
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">

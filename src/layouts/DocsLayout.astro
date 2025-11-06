@@ -1,8 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import DocsSidebar from '../components/DocsSidebar.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
-import { getCollection } from 'astro:content';
 import type { Language } from '../i18n/types';
 import { createTranslator } from '../i18n/utils';
 
@@ -19,34 +18,6 @@ interface Props {
 }
 
 const { frontmatter, url, currentLang, availableLanguages = [], showFallbackNotice = false } = Astro.props;
-
-// Fetch all docs for navigation
-const allDocs = await getCollection('docs');
-const docs = allDocs
-  .filter((doc) => doc.data.language === currentLang)
-  .sort((a, b) => {
-    const categorySort = (a.data.category || 'other').localeCompare(
-      b.data.category || 'other'
-    );
-    if (categorySort !== 0) return categorySort;
-    return (a.data.order ?? 999) - (b.data.order ?? 999);
-  });
-
-// Extract base slug helper function (removes language prefix)
-const getBaseSlug = (slug: string) => {
-  const parts = slug.split('/');
-  return parts.length > 1 ? parts[parts.length - 1] : slug;
-};
-
-// Group docs by category
-const docsByCategory = docs.reduce((acc, doc) => {
-  const category = doc.data.category || 'Other';
-  if (!acc[category]) acc[category] = [];
-  acc[category].push(doc);
-  return acc;
-}, {} as Record<string, typeof docs>);
-
-const categories = Object.keys(docsByCategory).sort();
 
 // Generate breadcrumbs
 const { t } = createTranslator(currentLang);
@@ -86,9 +57,6 @@ function generateTOC(content: string) {
 }
 
 const toc = generateTOC(await Astro.slots.render('default'));
-
-// Get current doc slug for active state
-const currentSlug = url.split('/').pop();
 ---
 
 <BaseLayout
@@ -97,71 +65,13 @@ const currentSlug = url.split('/').pop();
   lang={currentLang}
 >
   <div class="docs-layout">
-    <aside class="docs-sidebar">
-      <nav class="docs-nav">
-        <h2 class="nav-title">{t('pages.docs.title')}</h2>
-        <ul class="category-list">
-          {categories.map(category => {
-            const itemCount = docsByCategory[category].length;
-            const categoryId = `category-${category.toLowerCase().replace(/\s+/g, '-')}`;
-            const hasActiveDoc = docsByCategory[category].some(doc => {
-              const docSlug = getBaseSlug(doc.slug);
-              return docSlug === currentSlug;
-            });
-
-            return (
-              <li
-                class="category-item"
-                data-category={category}
-                data-item-count={itemCount}
-                data-is-active={hasActiveDoc ? 'true' : 'false'}
-              >
-                <button
-                  class="category-header"
-                  aria-expanded="true"
-                  aria-controls={categoryId}
-                  data-collapsible={itemCount > 0 ? 'true' : 'false'}
-                >
-                  {category}
-                  <span class="chevron" aria-hidden="true">▶</span>
-                </button>
-                <ul class="doc-list" id={categoryId}>
-                  {docsByCategory[category].map(doc => {
-                    const docSlug = getBaseSlug(doc.slug);
-                    const isActive = docSlug === currentSlug;
-                    return (
-                      <li>
-                        <a
-                          href={`/${currentLang}/docs/${docSlug}`}
-                          class={`doc-link ${isActive ? 'active' : ''}`}
-                        >
-                          {doc.data.title}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-    </aside>
+    <DocsSidebar currentLang={currentLang} currentUrl={url} />
 
     <main class="docs-content">
       <article class="docs-article">
         <Breadcrumb items={breadcrumbItems} />
 
         <header class="article-header">
-          {availableLanguages.length > 0 && (
-            <LanguageSwitcher
-              client:visible
-              currentLang={currentLang}
-              availableLanguages={availableLanguages}
-              showFallbackNotice={showFallbackNotice}
-            />
-          )}
-
           <h1 class="article-title">{frontmatter.title}</h1>
 
           {frontmatter.description && (
@@ -201,126 +111,6 @@ const currentSlug = url.split('/').pop();
       padding: calc(3.5rem + 2rem) 1rem 2rem 1rem; /* Account for fixed nav height (3.5rem) + spacing */
     }
 
-    /* Left Sidebar - Navigation */
-    .docs-sidebar {
-      position: sticky;
-      top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
-      height: fit-content;
-      max-height: calc(100vh - 3.5rem - 4rem); /* Account for nav height and padding */
-      overflow-y: auto;
-    }
-
-    .docs-nav {
-      padding: 1rem;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-    }
-
-    .nav-title {
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: #666;
-      margin: 0 0 1rem 0;
-    }
-
-    .category-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .category-item {
-      margin-bottom: 1.5rem;
-    }
-
-    .category-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 0.5rem 0;
-      font-weight: 600;
-      color: #333;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin-bottom: 0.5rem;
-      transition: color 0.2s;
-    }
-
-    .category-header:hover {
-      color: #1A1A1A;
-    }
-
-    .category-header:focus-visible {
-      outline: 2px solid #1A1A1A;
-      outline-offset: 2px;
-      border-radius: 2px;
-    }
-
-    .chevron {
-      display: inline-flex;
-      align-items: center;
-      font-size: 0.75em;
-      transition: transform 250ms ease-out;
-      margin-left: 0.5rem;
-      flex-shrink: 0;
-    }
-
-    .category-item[data-is-active="true"] .category-header {
-      color: #1A1A1A;
-    }
-
-    /* Collapsed state */
-    .category-item[aria-expanded="false"] .chevron {
-      transform: rotate(-90deg);
-    }
-
-    .category-item[aria-expanded="false"] .doc-list {
-      max-height: 0;
-      overflow: hidden;
-    }
-
-    .doc-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      max-height: 9999px;
-      transition: max-height 250ms ease-out;
-    }
-
-    .doc-list li {
-      margin-bottom: 0.5rem;
-    }
-
-    .doc-link {
-      display: block;
-      padding: 0.5rem 0.75rem;
-      color: #1A1A1A;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      transition: background-color 0.2s;
-    }
-
-    .doc-link:hover {
-      background-color: #F5F5F7;
-      text-decoration: underline;
-    }
-
-    .doc-link.active {
-      background-color: #1A1A1A;
-      color: white;
-      font-weight: 500;
-    }
-
-    .doc-link.active:hover {
-      background-color: #000000;
-      text-decoration: none;
-    }
 
     /* Main Content */
     .docs-content {
@@ -535,103 +325,10 @@ const currentSlug = url.split('/').pop();
         padding: 1rem 0.5rem;
       }
 
-      .docs-sidebar {
-        position: static;
-        max-height: none;
-        margin-bottom: 2rem;
-      }
-
       .article-title {
         font-size: 1.75rem;
       }
     }
   </style>
 
-  <script>
-    /**
-     * Initialize collapsible category menus
-     * Manages expand/collapse state with sessionStorage persistence
-     */
-    function initCollapsibleCategories() {
-      const categoryItems = document.querySelectorAll('.category-item');
-
-      categoryItems.forEach(item => {
-        const button = item.querySelector('.category-header');
-        const category = item.dataset.category;
-        const itemCount = parseInt(item.dataset.itemCount, 10);
-        const isActive = item.dataset.isActive === 'true';
-
-        if (!button) return;
-
-        // Determine initial expanded state
-        let isExpanded = true; // Default expanded
-
-        // Check sessionStorage for saved state
-        const storageKey = `rediacc_docs_cat_${category}`;
-        const savedState = sessionStorage.getItem(storageKey);
-
-        if (savedState !== null) {
-          // Use saved state if available
-          isExpanded = savedState === 'true';
-        } else {
-          // Default behavior: collapse categories with >3 items
-          if (itemCount > 3) {
-            isExpanded = false;
-          }
-          // Override: if this category contains active doc, expand it
-          if (isActive) {
-            isExpanded = true;
-          }
-        }
-
-        // Apply initial state
-        setCollapsedState(item, !isExpanded);
-
-        // Add click handler for toggle
-        button.addEventListener('click', () => {
-          const currentExpanded = item.getAttribute('aria-expanded') === 'true';
-          const newExpanded = !currentExpanded;
-
-          setCollapsedState(item, !newExpanded);
-          sessionStorage.setItem(storageKey, newExpanded ? 'true' : 'false');
-        });
-
-        // Handle keyboard navigation (Enter/Space)
-        button.addEventListener('keydown', (e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            button.click();
-          }
-        });
-      });
-    }
-
-    /**
-     * Set collapsed/expanded state of a category
-     * @param {Element} categoryItem - The .category-item element
-     * @param {boolean} isCollapsed - Whether the category should be collapsed
-     */
-    function setCollapsedState(categoryItem, isCollapsed) {
-      const button = categoryItem.querySelector('.category-header');
-      if (!button) return;
-
-      if (isCollapsed) {
-        button.setAttribute('aria-expanded', 'false');
-        categoryItem.setAttribute('aria-expanded', 'false');
-      } else {
-        button.setAttribute('aria-expanded', 'true');
-        categoryItem.setAttribute('aria-expanded', 'true');
-      }
-    }
-
-    // Initialize on page load
-    document.addEventListener('astro:page-load', initCollapsibleCategories);
-
-    // Also initialize immediately in case page-load has already fired
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initCollapsibleCategories);
-    } else {
-      initCollapsibleCategories();
-    }
-  </script>
 </BaseLayout>

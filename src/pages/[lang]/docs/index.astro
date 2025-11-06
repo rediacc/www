@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import DocsSidebar from '../../../components/DocsSidebar.astro';
 import { createTranslator } from '../../../i18n/utils';
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES } from '../../../i18n/language-utils';
 import type { Language } from '../../../i18n/types';
@@ -51,29 +52,14 @@ const docsByCategory = docs.reduce((acc, doc) => {
 }, {} as Record<string, typeof docs>);
 
 const categories = Object.keys(docsByCategory).sort();
+
+// Get the current page URL
+const currentUrl = `/${lang}/docs/`;
 ---
 
 <BaseLayout lang={lang}>
   <div class="docs-page">
-    <nav class="docs-nav">
-      <h2>{t('pages.docs.title')}</h2>
-      <ul class="docs-list">
-        {categories.map(category => (
-          <li key={category} class="category-item">
-            <span class="category-header">{category}</span>
-            <ul class="subcategory-list">
-              {docsByCategory[category].map(doc => (
-                <li key={doc.slug}>
-                  <a href={`/${lang}/docs/${getBaseSlug(doc.slug)}`} class="doc-link">
-                    {doc.data.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <DocsSidebar currentLang={lang} currentUrl={currentUrl} />
 
     <section class="docs-content">
       <div class="welcome-section" id="welcome">
@@ -158,66 +144,6 @@ const categories = Object.keys(docsByCategory).sort();
       padding: calc(3.5rem + 2rem) 1rem 2rem 1rem; /* Account for fixed nav height (3.5rem) + spacing */
     }
 
-    .docs-nav {
-      position: sticky;
-      top: calc(3.5rem + 2rem); /* Account for fixed nav height + spacing */
-      height: fit-content;
-      padding: 1rem;
-      background-color: #f9f9f9;
-      border-radius: 8px;
-      border: 1px solid #e0e0e0;
-    }
-
-    .docs-nav h2 {
-      font-size: 1rem;
-      text-transform: uppercase;
-      color: #666;
-      margin: 0 0 1rem 0;
-    }
-
-    .docs-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .category-item {
-      margin-bottom: 1.5rem;
-    }
-
-    .category-header {
-      display: block;
-      font-weight: 600;
-      color: #333;
-      font-size: 0.875rem;
-      text-transform: uppercase;
-      margin-bottom: 0.5rem;
-    }
-
-    .subcategory-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .subcategory-list li {
-      margin-bottom: 0.5rem;
-    }
-
-    .doc-link {
-      display: block;
-      padding: 0.5rem 0.75rem;
-      color: #1A1A1A;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      transition: background-color 0.2s;
-    }
-
-    .doc-link:hover {
-      background-color: #F5F5F7;
-      text-decoration: underline;
-    }
 
     .docs-content {
       display: flex;
