@@ -195,7 +195,7 @@ main {
 }
 
 .search-btn {
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: var(--space-3);
@@ -203,8 +203,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 48px;
-    min-height: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
 }
 
 .search-btn:hover {
@@ -228,7 +229,7 @@ main {
 }
 
 .language-trigger-icon {
-    background: none;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: var(--space-3);
@@ -236,8 +237,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 48px;
-    min-height: 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 0;
 }
 
 .language-trigger-icon:hover {
@@ -259,12 +261,15 @@ main {
     color: var(--color-text);
     font-size: var(--font-size-base);
     font-weight: 400;
-    padding: var(--space-3) var(--space-3);
+    padding: var(--space-3);
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 48px;
-    min-height: 48px;
+    height: 48px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    white-space: nowrap;
 }
 
 .login-btn:hover {

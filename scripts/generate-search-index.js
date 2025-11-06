@@ -16,10 +16,11 @@ function generateSearchIndex() {
     const searchIndex = [];
     let idCounter = 0;
 
-    // Part 1: Index translations from en.json
-    console.log('📄 Indexing translations...');
-    indexTranslations(searchIndex, idCounter);
-    idCounter = searchIndex.length;
+    // Part 1: Index translations from en.json - DISABLED
+    // (Only indexing blog and docs for better search results)
+    // console.log('📄 Indexing translations...');
+    // indexTranslations(searchIndex, idCounter);
+    // idCounter = searchIndex.length;
 
     // Part 2: Index blog posts
     console.log('📝 Indexing blog posts...');
