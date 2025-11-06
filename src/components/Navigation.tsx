@@ -3,6 +3,7 @@ import { useTranslation } from '../i18n/react';
 import SearchModal from './SearchModal';
 import Sidebar from './Sidebar';
 import { getLanguageFromPath } from '../i18n/language-utils';
+import { getConsoleUrl } from '../config/constants';
 import type { Language } from '../i18n/types';
 
 const Navigation: React.FC = () => {
@@ -10,12 +11,14 @@ const Navigation: React.FC = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState<Language>('en');
   const [isVisible, setIsVisible] = useState(false);
+  const [consoleUrl, setConsoleUrl] = useState('https://console.rediacc.com/');
   const { t } = useTranslation(currentLang);
 
-  // Get current language from URL
+  // Get current language from URL and console URL
   useEffect(() => {
     const lang = getLanguageFromPath(window.location.pathname);
     setCurrentLang(lang);
+    setConsoleUrl(getConsoleUrl());
   }, []);
 
   // Handle scroll to show/hide navigation
@@ -92,7 +95,7 @@ const Navigation: React.FC = () => {
                 <path d="M12.5 12.5L17 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
               </svg>
             </button>
-            <a href="https://console.rediacc.com/" className="login-btn">{t('navigation.login')}</a>
+            <a href={consoleUrl} className="login-btn">{t('navigation.login')}</a>
           </div>
         </div>
       </nav>

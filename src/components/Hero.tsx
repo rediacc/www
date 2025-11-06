@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from '../i18n/react';
 import type { Language } from '../i18n/types';
-import { EXTERNAL_LINKS } from '../config/constants';
+import { EXTERNAL_LINKS, getConsoleUrl } from '../config/constants';
 
 interface HeroProps {
   lang?: Language;
@@ -9,6 +9,11 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ lang = 'en' }) => {
   const { t } = useTranslation(lang);
+  const [consoleUrl, setConsoleUrl] = useState('https://console.rediacc.com/');
+
+  useEffect(() => {
+    setConsoleUrl(getConsoleUrl());
+  }, []);
 
   return (
     <section className="hero hero-dark" id="hero">
@@ -27,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ lang = 'en' }) => {
                 <span className="badge-icon">✓</span>
                 <span>{t('hero.cta.freeBadge')}</span>
               </div>
-              <a href="https://console.rediacc.com/" className="btn btn-primary">{t('hero.cta.contactUs')}</a>
+              <a href={consoleUrl} className="btn btn-primary">{t('hero.cta.contactUs')}</a>
               <p className="hero-cta-note">
                 {t('hero.cta.benefits')}
                 <br />
