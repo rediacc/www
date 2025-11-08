@@ -187,9 +187,11 @@ const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
         gtag('config', 'G-NLFCSWPL71');
     </script>
 
+    <!-- Critical CSS loaded first -->
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/responsive.css">
-    <link rel="stylesheet" href="/styles/search-modal.css">
+    <!-- Non-critical CSS loaded with lower priority -->
+    <link rel="stylesheet" href="/styles/search-modal.css" media="print" onload="this.media='all'; this.onload=null;">
 
     <!-- Skip Navigation Styles -->
     <style>
