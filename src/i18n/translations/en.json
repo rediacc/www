@@ -335,6 +335,37 @@
         }
       }
     },
+    "professionalServices": {
+      "meta": {
+        "title": "Professional Services | Expert Implementation & Support",
+        "description": "Get expert help when you need it most. From standard implementation to emergency response, our professional services ensure your success.",
+        "keywords": "professional services, implementation support, infrastructure consulting, emergency response, migration services, ransomware recovery"
+      },
+      "hero": {
+        "title": "Expert Help When You Need It Most",
+        "subtitle": "Fast-track your infrastructure deployment with professional implementation, migration support, and emergency response services.",
+        "badge": "Available for all subscription tiers"
+      },
+      "value": {
+        "heading": "Why Professional Services Matter",
+        "description": "Infrastructure challenges require expert guidance. Our professional services team brings years of experience to ensure your deployment succeeds, your migrations complete safely, and your emergencies resolve quickly.",
+        "statistics": [
+          "Average implementation time reduced by 75% with professional support",
+          "Emergency response team available within 2 hours for critical incidents",
+          "100% success rate on guided infrastructure migrations"
+        ]
+      },
+      "packages": {
+        "heading": "Professional Service Packages",
+        "subtitle": "Choose the service level that matches your urgency and complexity"
+      },
+      "cta": {
+        "heading": "Ready to Get Started?",
+        "description": "Schedule a consultation to discuss your infrastructure needs and get a custom quote.",
+        "button": "Schedule Consultation",
+        "subtext": "Most consultations completed within 48 hours"
+      }
+    },
     "pricing": {
       "meta": {
         "title": "Pricing | Simple, Transparent Infrastructure Protection",
