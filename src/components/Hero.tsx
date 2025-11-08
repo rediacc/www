@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useTranslation } from '../i18n/react';
 import type { Language } from '../i18n/types';
 import { EXTERNAL_LINKS, getConsoleUrl } from '../config/constants';
 
 interface HeroProps {
   lang?: Language;
+  origin?: string;
 }
 
-const Hero: React.FC<HeroProps> = ({ lang = 'en' }) => {
+const Hero: React.FC<HeroProps> = ({ lang = 'en', origin }) => {
   const { t } = useTranslation(lang);
-  const [consoleUrl, setConsoleUrl] = useState('https://console.rediacc.com/');
 
-  useEffect(() => {
-    setConsoleUrl(getConsoleUrl());
-  }, []);
+  // Get console URL (use origin from server-side if provided)
+  const consoleUrl = getConsoleUrl(origin);
 
   return (
     <section className="hero hero-dark" id="hero">

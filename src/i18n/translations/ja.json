@@ -218,7 +218,7 @@
         "submit": "始めましょう"
       },
       "hero": {
-        "subtitle": "フォームにご記入ください。48 時間以内にご連絡いたします。",
+        "subtitle": "フォームにご記入いただければ、48 時間以内にご連絡いたします。",
         "title": "以下からお申し込みください"
       },
       "info": {
@@ -710,7 +710,7 @@
                 "攻撃者は保存期間が過ぎるのを待つことはできません"
               ],
               "description": "Rediacc の増分重複排除により、ストレージを爆発的に増やすことなく、拡張されたバックアップ履歴を保存できます。 変更のみが保存され、重複データは保存されません。",
-              "title": "履歴の拡張保存"
+              "title": "拡張された履歴保持"
             },
             "subtitle": "早起きは虫を捕まえる <small class='subtitle-attribution'>— ウィリアム カムデン (1636)</small>",
             "title": "短いバックアップ履歴"
@@ -729,7 +729,7 @@
             },
             "solution": {
               "benefits": [
-                "数日間のダウンタイムではなく、数分で回復します",
+                "数日にわたるダウンタイムではなく、数分で回復します",
                 "増分復元では、変更されたデータ部分のみが転送されます。",
                 "競合他社がダウンしている間、重要なシステムはオンラインに",
                 "収益の損失とサービスの中断を迅速に最小限に抑えます",
@@ -825,7 +825,7 @@
                 "テストされていないフェイルオーバー プランは必要なときに失敗します"
               ],
               "description": "単一クラウドにはリスクがあります。 災害が発生する前にフェイルオーバーをテストしたいと考えています。 しかし、テストとは、本番環境を正確にミラーリングするインフラストラクチャを複製し、数週間にわたって同期を維持することを意味します。 ほとんどの企業は、障害が発生してテストすべきであることが判明するまで、リスクと労力を費やす価値がないため、ディザスタリカバリをテストしません。",
-              "story": "災害復旧計画をまったくテストしていない企業はわずか 7% です。 <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> しかし、46% は毎年のみ検査を行っています。 <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> Why: lack of time, resources, complexity. <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='quote'>[3]</a> テストのコストは 2 倍になります。 プロバイダーの停止は、テストする必要があったことを証明します。"
+              "story": "災害復旧計画をまったくテストしていない企業はわずか 7% です。 <a href='https://invenioit.com/continuity/disaster-recovery-statistics/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> しかし、46% は毎年のみ検査を行っています。 <a href='https://dbvisit.com/blog/five-consequences-of-not-testing-your-disaster-recovery-plan' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> 理由: 時間、リソース、複雑さの不足。 <a href='https://www.techrepublic.com/article/why-23-of-companies-never-test-their-disaster-recovery-plan-despite-major-risks/' target='_blank' rel='noopener noreferrer' class='quote'>[3]</a> テストのコストは 2 倍になります。 プロバイダーの停止は、テストする必要があったことを証明します。"
             },
             "solution": {
               "benefits": [

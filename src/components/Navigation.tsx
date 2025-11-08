@@ -7,7 +7,11 @@ import LanguageMenu from './LanguageMenu';
 import { getConsoleUrl } from '../config/constants';
 import type { Language } from '../i18n/types';
 
-const Navigation: React.FC = () => {
+interface NavigationProps {
+  origin?: string;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ origin }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [currentLang, setCurrentLang] = useState<Language>('en');
@@ -20,8 +24,8 @@ const Navigation: React.FC = () => {
     setCurrentLang(lang);
   }, []);
 
-  // Get console URL (compute directly to ensure it's always up to date)
-  const consoleUrl = getConsoleUrl();
+  // Get console URL (use origin from server-side if provided)
+  const consoleUrl = getConsoleUrl(origin);
 
   // Handle scroll to show/hide navigation (only on solutions page)
   useEffect(() => {

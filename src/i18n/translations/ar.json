@@ -629,7 +629,7 @@
                 "تخلق نوافذ الترحيل فرصًا يستغلها المهاجمون بنشاط اليوم"
               ],
               "description": "تتطلب عمليات ترحيل البنية التحتية تخفيفًا أمنيًا مؤقتًا. يقوم المقاولون بتعطيل جدران الحماية \"لتسريع العملية\". تم تجاوز التشفير للأداء. النوافذ المؤقتة تصبح نواقل هجوم دائمة. يتم كشف البيانات المحمية لساعات أو أيام. يستهدف المهاجمون نوافذ الترحيل عندما تضعف الضوابط الأمنية.",
-              "story": "قامت شركة Keepnet Labs بتعيين مقاول لترحيل قاعدة البيانات الخاصة بها في مارس 2020. وقام المقاول بتعطيل جدار الحماية لمدة 10 دقائق. <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> تمت فهرسة 5 مليارات سجل. قاعدة البيانات مكشوفة 24 ساعة. <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='citification'>[2]</a> كشفت هجرة إحدى شركات الأمن السيبراني عن مليارات الدولارات."
+              "story": "قامت شركة Keepnet Labs بتعيين مقاول لترحيل قاعدة البيانات الخاصة بها في مارس 2020. وقام المقاول بتعطيل جدار الحماية لمدة 10 دقائق. <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='citification'>[1]</a> تمت فهرسة 5 مليار سجل. قاعدة البيانات مكشوفة 24 ساعة. <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='citification'>[2]</a> كشفت هجرة إحدى شركات الأمن السيبراني عن مليارات الدولارات."
             },
             "solution": {
               "benefits": [

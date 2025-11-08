@@ -26,15 +26,18 @@ export const EXTERNAL_LINKS = {
  * - Production (www.rediacc.com): https://console.rediacc.com/
  * - Other domains (tunnels, staging, etc.): {current-origin}/console
  *
+ * @param origin - Optional origin to use (for server-side rendering). If not provided, uses window.location.origin
  * This function dynamically detects the hosting environment and returns the appropriate console URL
  */
-export function getConsoleUrl(): string {
-  // Server-side or fallback: use production default
-  if (typeof window === 'undefined') {
+export function getConsoleUrl(origin?: string): string {
+  // Use provided origin or get from window (client-side)
+  const currentOrigin = origin ?? (typeof window !== 'undefined' ? window.location.origin : null);
+
+  // If we still don't have an origin, fall back to production
+  if (!currentOrigin) {
     return 'https://console.rediacc.com/';
   }
 
-  const currentOrigin = window.location.origin;
   const isProduction = currentOrigin === 'https://www.rediacc.com';
 
   return isProduction

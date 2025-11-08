@@ -266,7 +266,7 @@
       "queueSystem": "Sistema de cola",
       "queueSystemDesc": "Comprenda cómo se gestionan y ejecutan las tareas en todas las máquinas.",
       "subtitle": "Aprenda a utilizar Rediacc y domine la ejecución de tareas distribuidas",
-      "tableOfContents": "En esta pagina",
+      "tableOfContents": "En esta página",
       "title": "Documentación",
       "welcome": "Bienvenido a la documentación de Rediacc",
       "welcomeDescription": "Rediacc es un potente sistema distribuido de ejecución de tareas. Ya sea que esté comenzando o esté buscando dominar funciones avanzadas, aquí encontrará todo lo que necesita."
@@ -493,7 +493,7 @@
               "title": "Nivel de personalización"
             },
             {
-              "description": "Un único experto frente a un equipo completo de especialistas dedicados",
+              "description": "Experto único versus equipo completo de especialistas dedicados",
               "title": "Tamaño del equipo"
             }
           ],

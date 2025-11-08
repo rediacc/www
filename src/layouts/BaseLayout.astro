@@ -333,7 +333,7 @@ const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
       <a href="#footer" class="skip-nav-link">{t('common.skipNavigation.skipToFooter')}</a>
     </div>
 
-    <Navigation currentPath={Astro.url.pathname} client:idle />
+    <Navigation origin={Astro.url.origin} client:idle />
     <main id="main-content">
         <slot />
     </main>

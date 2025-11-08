@@ -785,7 +785,7 @@
         },
         "meta": {
           "description": "Satıcı bağımlılığından kurtulun. Tek bir taşınabilir dosyada eksiksiz sistem, askeri düzeyde şifreleme ve herhangi bir altyapıda sıfır yapılandırma dağıtımı.",
-          "keywords": "sistem taşınabilirliği, satıcıya bağımlılık, altyapı mobilitesi, buluta geçiş, çoklu bulut, sistem şifreleme, veri güvenliği, dağıtım otomasyonu",
+          "keywords": "sistem taşınabilirliği, satıcıya bağlılık, altyapı mobilitesi, buluta geçiş, çoklu bulut, sistem şifreleme, veri güvenliği, dağıtım otomasyonu",
           "title": "Evrensel Sistem Taşınabilirliği | Altyapınızı Her Yere Güvenle Taşıyın"
         },
         "problems": {
@@ -941,7 +941,7 @@
             "problem": {
               "additionalPoints": [
                 "Fidye yazılımı saldırılarının yüzde doksan dördü yedekleme altyapısını hedef alıyor",
-                "Saldırganlar temiz yedeklerin üzerine yazılmasını sağlamak için haftalarca bekler",
+                "Saldırganlar temiz yedeklemelerin üzerine yazılmasını sağlamak için haftalarca bekler",
                 "Saldırganların yönetici kimlik bilgileri olduğunda değişmez yedeklemeler başarısız olur",
                 "Yedeklemeyi silme, fidye sonrasında bile kurtarma yollarını ortadan kaldırır",
                 "Şifrelenmiş sağlayıcı yedeklemeleri, sağlayıcıların geri yüklemeye yardımcı olamayacağı anlamına gelir"

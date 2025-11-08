@@ -72,7 +72,7 @@
           "label": "Rôle"
         },
         "useCase": {
-          "label": "Intérêt primordial",
+          "label": "Intérêt principal",
           "options": {
             "aiSafeOperations": "Cybersécurité",
             "developmentAcceleration": "Développement",
@@ -880,7 +880,7 @@
           "title": "Les menaces évoluent rapidement. Vous devriez aussi."
         },
         "meta": {
-          "description": "Survivez aux attaques de ransomware grâce à des sauvegardes immuables, une récupération rapide et la portabilité de l’infrastructure. Évacuez les systèmes compromis en quelques minutes.",
+          "description": "Survivez aux attaques de ransomware grâce à des sauvegardes immuables, une récupération rapide et la portabilité de l'infrastructure. Évacuez les systèmes compromis en quelques minutes.",
           "keywords": "protection contre les ransomwares, cyber-résilience, sauvegardes immuables, récupération rapide, continuité des activités, évacuation des infrastructures, reprise après sinistre",
           "title": "Solutions contre les ransomwares et la cyber-résilience | Les menaces évoluent rapidement"
         },
@@ -992,7 +992,7 @@
       "story": {
         "beginning": {
           "paragraph1": "En 2018, j'ai quitté mon poste d'ingénieur logiciel pour poursuivre la construction de ma propre vision. L'excitation m'a fait travailler 18 heures par jour et ne dormir que 4 à 5 heures. J'ai tout investi dans le projet pendant 5 à 6 mois.",
-          "paragraph2": "Ensuite, j’ai perdu de manière inattendue l’accès à toute mon infrastructure de développement. Tout ce que j'avais construit était soudainement inaccessible. Je n'avais aucune sauvegarde, et même si j'en avais, je ne pourrais pas me permettre de remplacer le matériel sur site que j'utilisais.",
+          "paragraph2": "Ensuite, j’ai perdu de manière inattendue l’accès à toute mon infrastructure de développement. Tout ce que j'avais construit était soudain inaccessible. Je n'avais aucune sauvegarde, et même si j'en avais, je ne pourrais pas me permettre de remplacer le matériel sur site que j'utilisais.",
           "paragraph3": "Pour rembourser mes dettes et subvenir aux besoins de ma famille, j'ai dû reprendre un travail salarié. Il m’a fallu 20 mois pour retrouver l’accès à mon travail. Pendant cette période, je me suis éloigné de mes rêves, vivant dans l’incertitude et sous une pression financière croissante.",
           "title": "Le début"
         },
