@@ -117,6 +117,7 @@
     "productLinks": {
       "overview": "Überblick",
       "pricing": "Preise",
+      "professionalServices": "Professionelle Dienstleistungen",
       "solutions": "Lösungen"
     },
     "supportLinks": {
@@ -161,6 +162,7 @@
     "selectLanguage": "Sprache auswählen",
     "solutions": {
       "dataSecurity": "Datensicherheit",
+      "developmentEnvironments": "Entwicklungsumgebungen",
       "disasterRecovery": "Notfallwiederherstellung",
       "systemPortability": "Systemportabilität",
       "threatResponse": "Bedrohungsreaktion"
@@ -414,7 +416,7 @@
         "enterprise": {
           "description": "Notwendige Notfallwiederherstellung für komplexe Unternehmensinfrastrukturen",
           "features": [
-            "Alles in Business+",
+            "Alles in Business +",
             "Maßgeschneidertes SLA (15–60 Minuten RTO) – Ihre Anforderungen, unser Engagement",
             "Dedizierter Infrastrukturmieter – maximale Sicherheit und Leistung",
             "24/7/365 White-Glove-Support",
@@ -976,6 +978,128 @@
           }
         }
       },
+      "developmentEnvironments": {
+        "cta": {
+          "button": "Beantragen Sie den Early Access",
+          "subtitle": "Klonen Sie Ihre erste Umgebung in Sekundenschnelle. Begrenzte Plätze verfügbar.",
+          "title": "Bereit, die Entwicklung zu beschleunigen?"
+        },
+        "hero": {
+          "subtitle": "Klonen Sie Ihre gesamte Produktionsinfrastruktur – Apps, Datenbanken, Konfigurationen, Abhängigkeiten – mit einem Klick. Entwicklungsteams erhalten bei Bedarf produktionsidentische Umgebungen, während die Infrastrukturkosten um 60 % sinken.",
+          "title": "Warten Sie nicht mehr tagelang auf Entwicklungsumgebungen. Beginnen Sie in Sekundenschnelle mit der Bereitstellung."
+        },
+        "meta": {
+          "description": "Klonen Sie Ihre komplette Produktionsinfrastruktur – Apps, Datenbanken, Konfigurationen – in weniger als 60 Sekunden. Warten Sie nicht mehr tagelang auf Entwicklungsumgebungen. Produktionsidentische Umgebungen auf Anfrage.",
+          "keywords": "Kurzlebige Umgebungen, Bereitstellung von Entwicklungsumgebungen, sofortige Entwicklungsumgebung, On-Demand-Umgebungen, Vorschauumgebungen, Git-native Umgebungen, Produktionsklon",
+          "title": "Entwicklungsumgebungen, die in Sekundenschnelle hochfahren | Rediacc"
+        },
+        "problems": {
+          "cicdComplexity": {
+            "problem": {
+              "additionalPoints": [
+                "Benutzerdefinierte Integrationsskripte erfordern eine fortlaufende Wartung",
+                "API-Änderungen unterbrechen benutzerdefinierte Integrationen ohne Vorwarnung",
+                "Nur eine Person versteht das Bereitstellungssystem",
+                "Jede CI/CD-Plattform benötigt einen anderen Integrationsansatz",
+                "Die Werkzeugvielfalt erhöht die kognitive Belastung und die Fehlerquellen"
+              ],
+              "description": "Das Hinzufügen der Umgebungsbereitstellung zu bestehenden DevOps-Pipelines erfordert benutzerdefinierte Skripte, API-Integrationen und laufende Wartung. Jedes neue Tool erhöht die Komplexität der bereits weitläufigen Toolchains, in denen 13 % der Teams mit mehr als 14 verschiedenen Tools jonglieren. Integrationsfehler unterbrechen CI/CD-Pipelines. Dokumentationslücken führen dazu, dass nur ein Ingenieur das Bereitstellungssystem versteht, was zu einem Risiko der Wissenskonzentration führt.",
+              "story": "Ein B2B-SaaS-Unternehmen versuchte, die Umgebungsbereitstellung durch benutzerdefinierte Jenkins-Skripts zu automatisieren, die AWS CloudFormation und RDS-APIs aufrufen. Die erste Implementierung dauerte drei Monate und 500 Stunden DevOps-Engineering-Zeit. Sechs Monate später, als der ursprüngliche Ingenieur ging, konnte niemand die Skripte sicher ändern. Das Bereitstellungssystem wurde zur technischen Schuld – funktionsfähig, aber unantastbar. Als AWS einen API-Endpunkt ablehnte, brach die gesamte Pipeline zusammen. Wiederherstellungszeit: 2 Wochen verlorene Entwicklungsgeschwindigkeit, während ein Berater die benutzerdefinierten Skripte zurückentwickelte."
+            },
+            "solution": {
+              "benefits": [
+                "Native Integrationen für alle wichtigen Git-Plattformen und CI/CD-Tools",
+                "Infrastructure-as-Code-Kompatibilität mit Terraform Kubernetes Docker",
+                "Keine Unterbrechung des Arbeitsablaufs – funktioniert mit vorhandenen Entwicklungsprozessen",
+                "Automatische Bereitstellung bei PR-Erstellung oder Git-Ereignissen",
+                "Einrichtung in wenigen Minuten statt wochenlanger kundenspezifischer Integrationsentwicklung"
+              ],
+              "description": "Rediacc lässt sich über native Plugins für GitHub, GitLab, Bitbucket, Jenkins, CircleCI und die wichtigsten CI/CD-Plattformen in Ihren vorhandenen Stack integrieren. Die Bereitstellung wird automatisch bei PR-Erstellung oder manuellem Befehl ausgelöst. Infrastructure-as-Code-Definitionen mit Terraform, Kubernetes, Docker Compose oder CloudFormation funktionieren unverändert. Die Plattform ergänzt vorhandene Tools, anstatt sie zu ersetzen – Ihr Entwicklungsworkflow bleibt vertraut, während die Umgebungsbereitstellung automatisch erfolgt. Die Einrichtung dauert nur wenige Minuten statt Wochen, und jeder Techniker kann Umgebungen ohne spezielle Kenntnisse bereitstellen.",
+              "title": "Native CI/CD-Integration mit Infrastructure-as-Code-Unterstützung"
+            },
+            "subtitle": "Einfachheit ist die ultimative Raffinesse <small class='subtitle-attribution'> – Leonardo da Vinci</small>",
+            "title": "Der Integrationsaufwand"
+          },
+          "environmentDrift": {
+            "problem": {
+              "additionalPoints": [
+                "Konfigurationsdateien driften durch manuelle Bearbeitungen, die nicht in Git verfolgt werden",
+                "Datenbankschemaversionen stimmen zwischen den Umgebungen nicht überein",
+                "Abhängigkeitsversionen weichen voneinander ab, was zu Fehlern führt, bei denen „funktioniert hier fehlschlägt“.",
+                "Umgebungsvariablen unterscheiden sich durch die Unterbrechung von Integrationen in der Produktion",
+                "Es gibt keine Möglichkeit zu garantieren, dass die Inszenierung genau mit der Produktion übereinstimmt"
+              ],
+              "description": "Staging-Umgebungen weichen durch manuelle Änderungen, Versionskonflikte und Konfigurationsverfall von der Produktion ab. Was in der Inszenierung funktioniert, scheitert in der Produktion. Entwickler verbringen Stunden damit, Umgebungsunterschiede zu debuggen, anstatt tatsächliche Fehler zu beheben. Dieses „Funktioniert auf meinem Computer“-Syndrom verschwendet mehr als 30 Minuten pro Entwickler und Tag mit der Behebung von Inkonsistenzen. Umgebungsparität wird unmöglich, wenn jeder Entwickler die lokalen Setups manuell anders konfiguriert.",
+              "story": "Ein Fintech-Startup hat eine wichtige Zahlungsfunktion implementiert, die alle Staging-Tests bestanden hat. In der Produktion scheiterte es sofort – eine Datenbank-Sortierungseinstellung unterschied sich zwischen Staging und Produktion, wodurch die Zahlungsabwicklung unterbrochen wurde. Das Problem blieb unentdeckt, da das Staging über Monate hinweg durch manuelle Änderungen von der Produktion abgewichen war. Ergebnis: 4 Stunden Ausfallzeit während der Haupthandelszeiten, 200.000 US-Dollar an entgangenen Transaktionsgebühren und eine Untersuchung zur Einhaltung gesetzlicher Vorschriften. Die Reparatur dauerte 5 Minuten. Die Ermittlung des Umweltunterschieds dauerte 4 Stunden."
+            },
+            "solution": {
+              "benefits": [
+                "Atomares Klonen erfasst den gesamten Systemstatus und sorgt so für Konsistenz",
+                "Kein Konfigurationsdrift – Klone entsprechen der Produktion exakt vom Design her",
+                "Durch die automatische Synchronisierung werden Produktionsänderungen auf alle Umgebungen übertragen",
+                "Erkennen Sie umgebungsspezifische Fehler in der Entwicklung, nicht in der Produktion",
+                "Eliminieren Sie täglich mehr als 30 Minuten pro Entwickler für das Debuggen von Umgebungsproblemen"
+              ],
+              "description": "Rediacc eliminiert Abweichungen durch das Klonen der Produktionsinfrastruktur zu einem bestimmten Zeitpunkt und die Erfassung exakter Anwendungsversionen, Datenbankschemata, Konfigurationsdateien und Umgebungsvariablen. Jeder Klon garantiert Produktionsparität, da es sich um eine atomar replizierte Produktion handelt. Aktualisierungen werden automatisch verbreitet, wenn sich die Produktion ändert, sodass alle Umgebungen synchronisiert bleiben. Entwickler arbeiten in Containern oder VMs, die die Produktion genau widerspiegeln, sodass „es lokal funktionierte“ gleichbedeutend mit „es wird in der Produktion funktionieren“ ist.",
+              "title": "Garantierte Produktionsparität durch zeitpunktbezogenes Klonen"
+            },
+            "subtitle": "Eine Unze Prävention ist ein Pfund Heilung wert <small class='subtitle-attribution'>- Benjamin Franklin</small>",
+            "title": "Das Produktionsparitätsproblem"
+          },
+          "infrastructureCosts": {
+            "problem": {
+              "additionalPoints": [
+                "Always-on-Umgebungen kosten rund um die Uhr, werden aber täglich 8–10 Stunden genutzt",
+                "Entwickler vergessen, Testumgebungen nach der Nutzung herunterzufahren",
+                "Vollständige Datenbankkopien vervielfachen die Speicherkosten unnötig",
+                "Mehrere Staging-Umgebungen bleiben „nur für den Fall“ die meiste Zeit ungenutzt",
+                "Streit um das Infrastrukturbudget beeinträchtigt die Moral und Geschwindigkeit des Teams"
+              ],
+              "description": "Herkömmliche Entwicklungsinfrastrukturen erfordern Staging, Qualitätssicherung und Entwicklerumgebungen, die rund um die Uhr Cloud-Ressourcen verbrauchen. Vervielfachen Sie Umgebungen über mehrere Teams hinweg, explodieren die Kosten. Ein 30-köpfiges Entwicklerteam, das Standard-Entwicklungs-/Staging-/QA-Setups aufrechterhält, verbrennt monatlich problemlos 50.000 bis 100.000 US-Dollar für ungenutzte Infrastruktur. Die Speicherkosten erhöhen sich, da vollständige Datenbankkopien unnötig Terabyte verbrauchen. Die Finanzabteilung drängt die Technik, die Infrastrukturausgaben zu kürzen, ohne die Auswirkungen auf die Geschwindigkeit zu verstehen.",
+              "story": "Ein E-Commerce-Unternehmen mit 50 Entwicklern überprüfte seine AWS-Rechnung: 180.000 US-Dollar monatlich für die Entwicklungsinfrastruktur. Die Analyse ergab, dass 78 % der Umgebungen außerhalb der Geschäftszeiten und am Wochenende ungenutzt blieben. In jeder Umgebung wurden vollständige Datenbankkopien ausgeführt – insgesamt 30 TB Speicherplatz für Daten, die mit Deduplizierung in 3 TB passen. Sie verfügten über 15 permanente Staging-Umgebungen, aber nur drei bis vier wurden zu irgendeinem Zeitpunkt aktiv genutzt. Die Verschwendung: 140.000 US-Dollar monatlich für ungenutzte Infrastruktur, die die Entwickler vergessen haben, herunterzufahren."
+            },
+            "solution": {
+              "benefits": [
+                "Reduzieren Sie die Infrastrukturkosten um 40–70 % durch kurzlebige Bereitstellung",
+                "Die automatische Bereinigung beim Zusammenführen von Zweigen verhindert eine Ausbreitung der Umgebung",
+                "Durch das Thin Cloning wird mit der Copy-on-Write-Technologie über 90 % Speicherplatz eingespart",
+                "Beim Pay-per-Use-Modell wird nur die aktive Rechenzeit berechnet",
+                "Die Amortisation des ROI erfolgt in der Regel innerhalb von 3–6 Monaten"
+              ],
+              "description": "Der kurzlebige Ansatz von Rediacc senkt die Infrastrukturkosten durch bedarfsgesteuerte Bereitstellung und automatische Bereinigung um 40–70 %. Umgebungen existieren nur, wenn sie aktiv genutzt werden – zum Testen erstellen und anschließend zerstören. Die Thin-Cloning-Technologie eliminiert die Speicherduplizierung und stellt durch Copy-on-Write-Mechaniken 10-TB-Datenbanken aus weniger als 1 GB Speicher bereit. Teams zahlen nur für die Rechenleistung während der aktiven Nutzung, nicht für die ständig verfügbare Infrastruktur, die über Nacht und am Wochenende ungenutzt bleibt. Der ROI-Rechner zeigt, dass typische 30-köpfige Teams jährlich 750.000 bis 1,5 Millionen US-Dollar einsparen.",
+              "title": "Kurzlebige Umgebungen mit On-Demand-Bereitstellung"
+            },
+            "subtitle": "Nicht verschwenden, nicht wollen <small class='subtitle-attribution'> – englisches Sprichwort</small>",
+            "title": "Die Always-On-Infrastrukturverschwendung"
+          },
+          "provisioningDelays": {
+            "problem": {
+              "additionalPoints": [
+                "Für die manuelle Einrichtung sind DevOps-Tickets erforderlich, die zu Verzögerungen von 2–3 Tagen führen",
+                "Jeder Entwickler konfiguriert Umgebungen anders, was zu Inkonsistenzen führt",
+                "Das Onboarding neuer Entwickler dauert allein für die Einrichtung der Umgebung 1–2 Wochen",
+                "Der Kontextwechsel beim Warten auf Umgebungen beeinträchtigt die Produktivität",
+                "DevOps-Teams werden zu Engpässen bei der Bearbeitung von Bereitstellungsanfragen"
+              ],
+              "description": "Entwicklungsteams verschwenden täglich mehr als 21 Stunden mit dem Warten auf Umgebungen. Die manuelle Einrichtung erfordert einen DevOps-Eingriff, mehrere Tickets und tagelange Wartezeit. Bis die Bereitstellung fertig ist, haben sich die Anforderungen geändert. Dieser Engpass verringert die Geschwindigkeit – 61 % der Teams geben an, dass die Bereitstellung der Umgebung ihr größtes Hindernis für die Bereitstellung darstellt. Jedes vierte Unternehmen benötigt von der Fertigstellung des Codes bis zur Produktionsbereitstellung mehr als drei Monate, da die Umgebungen nicht mithalten können.",
+              "story": "Ein mittelgroßes SaaS-Unternehmen mit 30 Entwicklern hat berechnet, dass das gesamte Team 21 Stunden pro Tag damit verschwendet, nur auf die Einrichtung der Umgebung zu warten. Jeder Entwickler benötigte täglich 30–45 Minuten für Probleme bei der Umgebungskonfiguration. Das sind 525 Stunden pro Monat – das entspricht drei Vollzeit-Ingenieuren, die nichts anderes tun, als die Infrastruktur zu bekämpfen, anstatt Funktionen auszuliefern. Die Kosten: Mehr als 150.000 US-Dollar jährlich an verschwendeter Entwicklerzeit, verzögerte Funktionen und verpasste Marktchancen nicht eingerechnet."
+            },
+            "solution": {
+              "benefits": [
+                "Stellen Sie komplette Umgebungen in 60 Sekunden bereit, statt 2–3 Tage Wartezeit",
+                "Kein DevOps-Eingriff – Entwickler-Self-Service über Git-Workflows",
+                "Durch die automatische Git-Integration werden automatisch Umgebungen pro Zweig erstellt",
+                "Ephemere Architektur spart 40–70 % der Infrastrukturkosten",
+                "Onboarding neuer Entwickler innerhalb von Stunden statt Wochen"
+              ],
+              "description": "Rediacc stellt vollständige Entwicklungsumgebungen in weniger als 60 Sekunden durch automatisiertes Klonen der Infrastruktur bereit. Entwickler lösen die Umgebungserstellung direkt aus Git-Zweigen aus, ohne Tickets oder manuelle Eingriffe. Die Plattform repliziert Ihren gesamten Produktions-Stack – Anwendungen, Datenbanken, Konfigurationen, Netzwerktopologie, Abhängigkeiten – als exakte Kopien. Vergängliche Umgebungen werden automatisch bereinigt, wenn Zweigstellen zusammengelegt werden, wodurch Infrastrukturverschwendung vermieden wird. DevOps-Teams definieren einmalig Bereitstellungsregeln, dann übernehmen die Entwickler endlos die Selbstbedienung.",
+              "title": "Sofortige Bereitstellung mit Infrastruktur-Klonen"
+            },
+            "subtitle": "Zeit ist das, was wir am meisten wollen, aber das, was wir am schlechtesten nutzen <small class='subtitle-attribution'>– William Penn</small>",
+            "title": "Der Engpass in der Entwicklungsumgebung"
+          }
+        }
+      },
       "disasterRecovery": {
         "cta": {
           "button": "Erstellen Sie Ihren Wiederherstellungsplan",
@@ -1246,7 +1370,7 @@
                 "94 Prozent der Ransomware-Angriffe zielen auf die Backup-Infrastruktur ab",
                 "Angreifer warten wochenlang darauf, sicherzustellen, dass saubere Backups überschrieben werden",
                 "Unveränderliche Backups schlagen fehl, wenn Angreifer über Administratoranmeldeinformationen verfügen",
-                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldforderung",
+                "Durch das Löschen von Backups werden Wiederherstellungspfade eliminiert, auch nach einer Lösegeldzahlung",
                 "Verschlüsselte Anbieter-Backups bedeuten, dass Anbieter bei der Wiederherstellung nicht helfen können"
               ],
               "description": "Ransomware-Angreifer zielen auf die Backup-Infrastruktur ab und löschen oder überschreiben Kopien, um eine Wiederherstellung zu verhindern. Backups im selben Cloud-Konto mit gemeinsamen Anmeldeinformationen ermöglichen es Angreifern, den Verlauf von Monaten zu löschen. Selbst unveränderliche Backups schlagen bei Administratorzugriff fehl. Saubere Backups verschwinden, bevor Sie es merken.",
@@ -1370,9 +1494,18 @@
         ],
         "description": "Alles verschlüsselt. Alles geprüft. Vollständige Kontrolle.",
         "title": "Verschlüsselungskontrolle"
+      },
+      {
+        "benefits": [
+          "60-Sekunden-Umgebungsbereitstellung",
+          "Produktionsidentische Klone",
+          "Automatische Git-Integration"
+        ],
+        "description": "Sofortige Produktionsklone. Keine DevOps-Tickets. 60-Sekunden-Umgebungen.",
+        "title": "Entwicklungsumgebungen"
       }
     ],
-    "subtitle": "Vier integrierte Lösungen für schnelle Reaktion bei Infrastrukturausfällen oder Bedrohungen.",
+    "subtitle": "Fünf integrierte Lösungen für schnelle Reaktion bei Infrastrukturausfällen oder Bedrohungen.",
     "title": "Wie wir die Geschäftskontinuität sicherstellen"
   }
 }

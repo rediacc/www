@@ -117,6 +117,7 @@
     "productLinks": {
       "overview": "Aperçu",
       "pricing": "Tarifs",
+      "professionalServices": "Services professionnels",
       "solutions": "Solutions"
     },
     "supportLinks": {
@@ -161,6 +162,7 @@
     "selectLanguage": "Sélectionnez la langue",
     "solutions": {
       "dataSecurity": "Sécurité des données",
+      "developmentEnvironments": "Environnements de développement",
       "disasterRecovery": "Reprise après sinistre",
       "systemPortability": "Portabilité du système",
       "threatResponse": "Réponse aux menaces"
@@ -709,7 +711,7 @@
       },
       "technicalSummary": {
         "description": "Donnez à votre équipe de plateforme une vue précise des attentes en matière de débit, de rétention et de récupération.",
-        "heading": "Limites techniques en un coup d'œil",
+        "heading": "Limites techniques en un coup d'oeil",
         "metrics": [
           {
             "key": "CPUCore",
@@ -976,6 +978,128 @@
           }
         }
       },
+      "developmentEnvironments": {
+        "cta": {
+          "button": "Demander un accès anticipé",
+          "subtitle": "Clonez votre premier environnement en quelques secondes. Places limitées disponibles.",
+          "title": "Prêt à accélérer le développement ?"
+        },
+        "hero": {
+          "subtitle": "Clonez l'intégralité de votre infrastructure de production (applications, bases de données, configurations, dépendances) en un seul clic. Les équipes de développement obtiennent à la demande des environnements identiques à la production tandis que les coûts d’infrastructure diminuent de 60 %.",
+          "title": "Arrêtez d'attendre des jours pour les environnements de développement. Commencez le déploiement en quelques secondes."
+        },
+        "meta": {
+          "description": "Clonez l'intégralité de votre infrastructure de production (applications, bases de données, configurations) en moins de 60 secondes. Arrêtez d'attendre des jours pour les environnements de développement. Environnements identiques à la production sur demande.",
+          "keywords": "environnements éphémères, provisionnement d'environnement de développement, environnement de développement instantané, environnements à la demande, environnements de prévisualisation, environnements git natifs, clone de production",
+          "title": "Des environnements de développement qui démarrent en quelques secondes | Rediac"
+        },
+        "problems": {
+          "cicdComplexity": {
+            "problem": {
+              "additionalPoints": [
+                "Les scripts d'intégration personnalisés nécessitent une maintenance continue",
+                "Les modifications de l'API interrompent les intégrations personnalisées sans avertissement",
+                "Une seule personne comprend le système d'approvisionnement",
+                "Chaque plateforme CI/CD nécessite une approche d'intégration différente",
+                "La prolifération des outils augmente la charge cognitive et les points de défaillance"
+              ],
+              "description": "L'ajout d'un provisionnement d'environnement aux pipelines DevOps existants nécessite des scripts personnalisés, des intégrations d'API et une maintenance continue. Chaque nouvel outil ajoute de la complexité à des chaînes d'outils déjà tentaculaires où 13 % des équipes jonglent avec plus de 14 outils différents. Les échecs d’intégration interrompent les pipelines CI/CD. Les lacunes en matière de documentation signifient qu'un seul ingénieur comprend le système d'approvisionnement, ce qui crée un risque de concentration des connaissances.",
+              "story": "Une entreprise SaaS B2B a tenté d'automatiser le provisionnement de l'environnement via des scripts Jenkins personnalisés appelant les API AWS CloudFormation et RDS. La mise en œuvre initiale a pris 3 mois et 500 heures d'ingénierie DevOps. Six mois plus tard, lorsque l'ingénieur d'origine est parti, personne ne pouvait modifier les scripts en toute sécurité. Le système d’approvisionnement est devenu une dette technique, fonctionnelle mais intouchable. Lorsqu'AWS a rendu obsolète un point de terminaison d'API, l'ensemble du pipeline s'est arrêté. Temps de récupération : 2 semaines de perte de vitesse de développement pendant qu'un consultant effectuait une rétro-ingénierie des scripts personnalisés."
+            },
+            "solution": {
+              "benefits": [
+                "Intégrations natives pour toutes les principales plates-formes Git et outils CI/CD",
+                "Compatibilité infrastructure-as-code avec Terraform Kubernetes Docker",
+                "Aucune interruption du flux de travail : fonctionne avec les processus de développement existants",
+                "Provisionnement automatique lors de la création de PR ou d'événements Git",
+                "Configuration en quelques minutes contre des semaines de développement d'intégration personnalisée"
+              ],
+              "description": "Rediacc s'intègre à votre pile existante via des plugins natifs pour GitHub, GitLab, Bitbucket, Jenkins, CircleCI et les principales plates-formes CI/CD. Le provisionnement se déclenche automatiquement lors de la création d’un PR ou d’une commande manuelle. Les définitions d'infrastructure en tant que code utilisant Terraform, Kubernetes, Docker Compose ou CloudFormation fonctionnent inchangées. La plateforme complète plutôt qu'elle ne remplace les outils existants : votre flux de travail de développement reste familier tandis que le provisionnement de l'environnement devient automatique. La configuration ne prend que quelques minutes et non des semaines, et chaque ingénieur peut provisionner des environnements sans connaissances spécialisées.",
+              "title": "Intégration CI/CD native avec prise en charge de l'infrastructure en tant que code"
+            },
+            "subtitle": "La simplicité est la sophistication ultime <small class='subtitle-attribution'>— Léonard de Vinci</small>",
+            "title": "Les frais généraux d’intégration"
+          },
+          "environmentDrift": {
+            "problem": {
+              "additionalPoints": [
+                "Les fichiers de configuration dérivent à travers des modifications manuelles non suivies dans Git",
+                "Les versions du schéma de base de données ne correspondent pas entre les environnements",
+                "Les versions de dépendance divergent, provoquant des bugs « les travaux ici échouent là »",
+                "Les variables d'environnement diffèrent en cassant les intégrations en production",
+                "Aucun moyen de garantir exactement la production des matchs de mise en scène"
+              ],
+              "description": "Les environnements de test s'éloignent de la production en raison de modifications manuelles, d'incompatibilités de versions et de dégradation de la configuration. Ce qui fonctionne en mise en scène échoue en production. Les développeurs passent des heures à déboguer les différences environnementales plutôt que de corriger les bogues réels. Ce syndrome « ​​fonctionne sur ma machine » fait perdre plus de 30 minutes par développeur et par jour à résoudre les incohérences. La parité des environnements devient impossible lorsque chaque développeur configure manuellement les configurations locales différemment.",
+              "story": "Une startup fintech a déployé une fonctionnalité de paiement critique qui a réussi tous les tests de mise en scène. En production, le système a échoué immédiatement : un paramètre de classement de la base de données différait entre la phase de préparation et la production, interrompant ainsi le traitement des paiements. Le problème n’a pas été détecté car la préparation s’était éloignée de la production après des mois de modifications manuelles. Résultat : 4 heures d'arrêt pendant les heures de pointe, 200 000 $ de frais de transaction perdus et une enquête de conformité réglementaire. Le correctif a pris 5 minutes. Trouver la différence environnementale a pris 4 heures."
+            },
+            "solution": {
+              "benefits": [
+                "Le clonage atomique capture l'état complet du système, garantissant ainsi la cohérence",
+                "Aucune dérive de configuration : les clones correspondent exactement à la production dès leur conception",
+                "La synchronisation automatique propage les modifications de production à tous les environnements",
+                "Détectez les bogues spécifiques à l'environnement en développement et non en production",
+                "Éliminez plus de 30 minutes par jour des problèmes d'environnement de débogage par développeur"
+              ],
+              "description": "Rediacc élimine la dérive en clonant l'infrastructure de production à un moment donné, en capturant les versions exactes des applications, les schémas de base de données, les fichiers de configuration et les variables d'environnement. Chaque clone garantit la parité de production car il s’agit d’une production répliquée de manière atomique. Les mises à jour se propagent automatiquement lorsque la production change, gardant ainsi tous les environnements synchronisés. Les développeurs travaillent dans des conteneurs ou des machines virtuelles qui reflètent précisément la production, ce qui fait que « cela a fonctionné localement » est synonyme de « cela fonctionnera en production ».",
+              "title": "Parité de production garantie grâce au clonage ponctuel"
+            },
+            "subtitle": "Mieux vaut prévenir que guérir <small class='subtitle-attribution'>— Benjamin Franklin</small>",
+            "title": "Le problème de la parité de production"
+          },
+          "infrastructureCosts": {
+            "problem": {
+              "additionalPoints": [
+                "Les environnements toujours actifs coûtent 24h/24 et 7j/7 mais sont utilisés 8 à 10 heures par jour",
+                "Les développeurs oublient de fermer les environnements de test après utilisation",
+                "Les copies complètes de la base de données multiplient inutilement les coûts de stockage",
+                "Plusieurs environnements de test « juste au cas où » restent inactifs la plupart du temps",
+                "Les batailles budgétaires en matière d’infrastructure nuisent au moral et à la rapidité des équipes"
+              ],
+              "description": "L'infrastructure de développement traditionnelle nécessite des environnements de développement, d'assurance qualité et de développement permanents consommant des ressources cloud 24h/24 et 7j/7. Multipliez les environnements au sein des équipes et les coûts explosent. Une équipe de 30 développeurs qui maintient des configurations standard de développement, de préparation et d'assurance qualité dépense facilement entre 50 000 et 100 000 $ par mois sur une infrastructure inactive. Les coûts de stockage s'aggravent car les copies complètes de la base de données consomment inutilement des téraoctets. La finance pousse l’ingénierie à réduire les dépenses d’infrastructure sans comprendre l’impact sur la vitesse.",
+              "story": "Une entreprise de commerce électronique comptant 50 développeurs a revu sa facture AWS : 180 000 $ par mois pour l'infrastructure de développement. L'analyse a montré que 78 % des environnements restaient inactifs après les heures de bureau et le week-end. Chaque environnement exécutait des copies complètes de la base de données : 30 To de stockage total pour des données pouvant tenir dans 3 To avec déduplication. Ils disposaient de 15 environnements de transit permanents, mais seulement 3 à 4 étaient activement utilisés à tout moment. Le gaspillage : 140 000 $ par mois sur une infrastructure inutilisée que les développeurs ont oublié de fermer."
+            },
+            "solution": {
+              "benefits": [
+                "Réduisez les coûts d’infrastructure de 40 à 70 % grâce au provisionnement éphémère",
+                "Le nettoyage automatique lors de la fusion des branches empêche la prolifération de l'environnement",
+                "Le clonage fin permet d'économiser plus de 90 % de stockage grâce à la technologie de copie sur écriture",
+                "Le modèle de paiement à l'utilisation facture uniquement le temps de calcul actif",
+                "Retour sur investissement généralement dans les 3 à 6 mois"
+              ],
+              "description": "L'approche éphémère de Rediacc réduit les coûts d'infrastructure de 40 à 70 % grâce au provisionnement à la demande et au nettoyage automatique. Les environnements n'existent que lorsqu'ils sont activement utilisés : créez-les à des fins de test, détruisez-les une fois terminés. La technologie de clonage dynamique élimine la duplication du stockage, en provisionnant des bases de données de 10 To à partir de moins de 1 Go de stockage via des mécanismes de copie sur écriture. Les équipes ne paient que pour le calcul pendant l'utilisation active, et non pour une infrastructure toujours active qui reste inactive la nuit et le week-end. Le calculateur de retour sur investissement montre que les équipes typiques de 30 personnes économisent entre 750 000 et 1,5 million de dollars par an.",
+              "title": "Environnements éphémères avec provisionnement à la demande"
+            },
+            "subtitle": "Ne gaspillez pas, ne voulez pas <small class='subtitle-attribution'>— Proverbe anglais</small>",
+            "title": "Le gaspillage d’infrastructure toujours actif"
+          },
+          "provisioningDelays": {
+            "problem": {
+              "additionalPoints": [
+                "La configuration manuelle nécessite des tickets DevOps créant des retards de 2 à 3 jours",
+                "Chaque développeur configure les environnements différemment, créant des incohérences",
+                "L'intégration de nouveaux développeurs prend 1 à 2 semaines uniquement pour la configuration de l'environnement",
+                "Le changement de contexte en attendant les environnements tue la productivité",
+                "Les équipes DevOps deviennent un goulot d'étranglement dans la gestion des demandes de provisionnement"
+              ],
+              "description": "Les équipes de développement perdent plus de 21 heures chaque jour à attendre les environnements. La configuration manuelle nécessite une intervention DevOps, plusieurs tickets et des jours d'attente. Au moment où la mise en scène est prête, les exigences ont changé. Ce goulot d'étranglement tue la rapidité : 61 % des équipes déclarent que le provisionnement de l'environnement est leur principal obstacle au déploiement. Une organisation sur quatre met plus de trois mois entre l'achèvement du code et le déploiement en production, car les environnements ne peuvent pas suivre le rythme.",
+              "story": "Une entreprise SaaS de taille moyenne comptant 30 développeurs a calculé que toute l'équipe perdait 21 heures par jour à attendre la configuration de l'environnement. Chaque développeur avait besoin de 30 à 45 minutes par jour pour résoudre les problèmes de configuration de l'environnement. Cela représente 525 heures par mois, soit l'équivalent de 3 ingénieurs à temps plein ne faisant rien d'autre que combattre l'infrastructure au lieu de livrer des fonctionnalités. Le coût : plus de 150 000 $ par an en temps de développement perdu, sans compter les fonctionnalités retardées et les opportunités de marché manquées."
+            },
+            "solution": {
+              "benefits": [
+                "Provisionnez des environnements complets en 60 secondes contre 2 à 3 jours d'attente",
+                "Zéro intervention DevOps : les développeurs sont en libre-service à partir des workflows Git",
+                "L'intégration automatique de Git crée automatiquement des environnements par branche",
+                "L'architecture éphémère permet d'économiser 40 à 70 % sur les coûts d'infrastructure",
+                "Intégrez de nouveaux développeurs en quelques heures et non en quelques semaines"
+              ],
+              "description": "Rediacc fournit des environnements de développement complets en moins de 60 secondes grâce au clonage automatisé de l'infrastructure. Les développeurs déclenchent la création d’environnement directement depuis les branches Git sans tickets ni intervention manuelle. La plateforme réplique l'intégralité de votre pile de production (applications, bases de données, configurations, topologie réseau, dépendances) sous forme de copies exactes. Les environnements éphémères sont automatiquement nettoyés lorsque les branches fusionnent, évitant ainsi le gaspillage d'infrastructure. Les équipes DevOps définissent les règles de provisionnement une seule fois, puis les développeurs se mettent en libre-service à l'infini.",
+              "title": "Provisionnement instantané avec clonage d'infrastructure"
+            },
+            "subtitle": "Le temps est ce que nous voulons le plus, mais ce que nous utilisons le moins <small class='subtitle-attribution'>— William Penn</small>",
+            "title": "Le goulot d’étranglement de l’environnement de développement"
+          }
+        }
+      },
       "disasterRecovery": {
         "cta": {
           "button": "Construisez votre plan de récupération",
@@ -1183,7 +1307,7 @@
           "title": "Les menaces évoluent rapidement. Vous devriez aussi."
         },
         "meta": {
-          "description": "Survivez aux attaques de ransomware grâce à des sauvegardes immuables, une récupération rapide et la portabilité de l'infrastructure. Évacuez les systèmes compromis en quelques minutes.",
+          "description": "Survivez aux attaques de ransomware grâce à des sauvegardes immuables, une récupération rapide et la portabilité de l’infrastructure. Évacuez les systèmes compromis en quelques minutes.",
           "keywords": "protection contre les ransomwares, cyber-résilience, sauvegardes immuables, récupération rapide, continuité des activités, évacuation des infrastructures, reprise après sinistre",
           "title": "Solutions contre les ransomwares et la cyber-résilience | Les menaces évoluent rapidement"
         },
@@ -1370,9 +1494,18 @@
         ],
         "description": "Tout est crypté. Tout est audité. Contrôle total.",
         "title": "Contrôle du cryptage"
+      },
+      {
+        "benefits": [
+          "Provisionnement de l'environnement en 60 secondes",
+          "Clones identiques à la production",
+          "Intégration automatique de Git"
+        ],
+        "description": "Clones de production instantanés. Zéro ticket DevOps. Environnements de 60 secondes.",
+        "title": "Environnements de développement"
       }
     ],
-    "subtitle": "Quatre solutions intégrées pour une réponse rapide en cas de panne d'infrastructure ou de menaces.",
+    "subtitle": "Cinq solutions intégrées pour une réponse rapide en cas de panne d'infrastructure ou de menaces.",
     "title": "Comment nous assurons la continuité des activités"
   }
 }

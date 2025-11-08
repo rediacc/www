@@ -117,6 +117,7 @@
     "productLinks": {
       "overview": "Descripción general",
       "pricing": "Precios",
+      "professionalServices": "Servicios profesionales",
       "solutions": "Soluciones"
     },
     "supportLinks": {
@@ -161,6 +162,7 @@
     "selectLanguage": "Seleccionar idioma",
     "solutions": {
       "dataSecurity": "Seguridad de datos",
+      "developmentEnvironments": "Entornos de desarrollo",
       "disasterRecovery": "Recuperación ante desastres",
       "systemPortability": "Portabilidad del sistema",
       "threatResponse": "Respuesta a amenazas"
@@ -266,7 +268,7 @@
       "queueSystem": "Sistema de cola",
       "queueSystemDesc": "Comprenda cómo se gestionan y ejecutan las tareas en todas las máquinas.",
       "subtitle": "Aprenda a utilizar Rediacc y domine la ejecución de tareas distribuidas",
-      "tableOfContents": "En esta página",
+      "tableOfContents": "En esta pagina",
       "title": "Documentación",
       "welcome": "Bienvenido a la documentación de Rediacc",
       "welcomeDescription": "Rediacc es un potente sistema distribuido de ejecución de tareas. Ya sea que esté comenzando o esté buscando dominar funciones avanzadas, aquí encontrará todo lo que necesita."
@@ -976,6 +978,128 @@
           }
         }
       },
+      "developmentEnvironments": {
+        "cta": {
+          "button": "Solicite acceso anticipado",
+          "subtitle": "Clona tu primer entorno en segundos. Plazas limitadas disponibles.",
+          "title": "¿Listo para acelerar el desarrollo?"
+        },
+        "hero": {
+          "subtitle": "Clone su infraestructura de producción completa (aplicaciones, bases de datos, configuraciones, dependencias) con un solo clic. Los equipos de desarrollo obtienen entornos idénticos a los de producción bajo demanda, mientras que los costos de infraestructura se reducen en un 60 %.",
+          "title": "Deje de esperar días para los entornos de desarrollo. Comience a implementar en segundos."
+        },
+        "meta": {
+          "description": "Clone su infraestructura de producción completa (aplicaciones, bases de datos, configuraciones) en menos de 60 segundos. Deje de esperar días para los entornos de desarrollo. Entornos idénticos a la producción bajo demanda.",
+          "keywords": "entornos efímeros, aprovisionamiento de entornos de desarrollo, entorno de desarrollo instantáneo, entornos bajo demanda, entornos de vista previa, entornos nativos de git, clonación de producción",
+          "title": "entornos de desarrollo que funcionan en segundos | rediacc"
+        },
+        "problems": {
+          "cicdComplexity": {
+            "problem": {
+              "additionalPoints": [
+                "Los scripts de integración personalizados requieren un mantenimiento continuo",
+                "Los cambios en la API rompen las integraciones personalizadas sin previo aviso",
+                "Sólo una persona entiende el sistema de aprovisionamiento.",
+                "Cada plataforma CI/CD necesita un enfoque de integración diferente",
+                "La dispersión de herramientas aumenta la carga cognitiva y los puntos de falla"
+              ],
+              "description": "Agregar aprovisionamiento de entorno a los canales de DevOps existentes requiere scripts personalizados, integraciones de API y mantenimiento continuo. Cada nueva herramienta agrega complejidad a cadenas de herramientas que ya están en expansión, donde el 13% de los equipos hacen malabarismos con más de 14 herramientas diferentes. Los fallos de integración interrumpen los canales de CI/CD. Las lagunas en la documentación significan que solo un ingeniero comprende el sistema de aprovisionamiento, lo que crea un riesgo de concentración de conocimientos.",
+              "story": "Una empresa B2B SaaS intentó automatizar el aprovisionamiento del entorno mediante scripts Jenkins personalizados que llaman a AWS CloudFormation y las API de RDS. La implementación inicial tomó 3 meses y 500 horas de ingeniería de DevOps. Seis meses después, cuando el ingeniero original se fue, nadie podía modificar los guiones de forma segura. El sistema de aprovisionamiento se convirtió en deuda técnica: funcional pero intocable. Cuando AWS dejó de utilizar un punto final de API, todo el proceso se rompió. Tiempo de recuperación: 2 semanas de velocidad de desarrollo perdida mientras un consultor realizaba ingeniería inversa en los scripts personalizados."
+            },
+            "solution": {
+              "benefits": [
+                "Integraciones nativas para todas las principales plataformas Git y herramientas CI/CD",
+                "Compatibilidad de infraestructura como código con Terraform Kubernetes Docker",
+                "Cero interrupción del flujo de trabajo: funciona con los procesos de desarrollo existentes",
+                "Aprovisionamiento automático en la creación de relaciones públicas o eventos Git",
+                "Configuración en minutos frente a semanas de desarrollo de integración personalizado"
+              ],
+              "description": "Rediacc se integra con su pila existente a través de complementos nativos para GitHub, GitLab, Bitbucket, Jenkins, CircleCI y las principales plataformas CI/CD. El aprovisionamiento se activa automáticamente al crear un PR o al realizar un comando manual. Las definiciones de infraestructura como código que utilizan Terraform, Kubernetes, Docker Compose o CloudFormation funcionan sin cambios. La plataforma complementa, en lugar de reemplazar, las herramientas existentes: su flujo de trabajo de desarrollo sigue siendo familiar mientras el aprovisionamiento del entorno se vuelve automático. La configuración lleva unos minutos, no semanas, y cada ingeniero puede aprovisionar entornos sin conocimientos especializados.",
+              "title": "Integración nativa de CI/CD con soporte de infraestructura como código"
+            },
+            "subtitle": "La simplicidad es la máxima sofisticación <small class='subtitle-attribution'>— Leonardo da Vinci</small>",
+            "title": "Los gastos generales de integración"
+          },
+          "environmentDrift": {
+            "problem": {
+              "additionalPoints": [
+                "Los archivos de configuración se desplazan a través de ediciones manuales que no se rastrean en Git",
+                "Las versiones del esquema de la base de datos no coinciden entre entornos",
+                "Las versiones de dependencia divergen causando errores de \"funciona aquí falla allí\"",
+                "Las variables del entorno difieren rompiendo las integraciones en la producción",
+                "No hay manera de garantizar que la puesta en escena coincida exactamente con la producción."
+              ],
+              "description": "Los entornos de prueba se alejan de la producción a través de cambios manuales, discrepancias de versiones y deterioro de la configuración. Lo que funciona en la puesta en escena falla en la producción. Los desarrolladores pasan horas depurando diferencias ambientales en lugar de corregir errores reales. Este síndrome de \"funciona en mi máquina\" desperdicia más de 30 minutos por desarrollador por día solucionando inconsistencias. La paridad del entorno se vuelve imposible cuando cada desarrollador configura manualmente las configuraciones locales de manera diferente.",
+              "story": "Una startup de fintech implementó una función de pago crítica que pasó todas las pruebas de preparación. En producción, falló de inmediato: la configuración de recopilación de la base de datos difería entre la etapa de preparación y la producción, lo que interrumpió el procesamiento de pagos. El problema no se detectó porque la puesta en escena se había desviado de la producción tras meses de cambios manuales. Resultado: 4 horas de inactividad durante las horas pico de negociación, 200.000 dólares en tarifas de transacción perdidas y una consulta de cumplimiento normativo. La solución tardó 5 minutos. Encontrar la diferencia ambiental tomó 4 horas."
+            },
+            "solution": {
+              "benefits": [
+                "La clonación atómica captura el estado completo del sistema garantizando la coherencia",
+                "Desviación de configuración cero: los clones coinciden con la producción exactamente por diseño",
+                "La sincronización automática propaga los cambios de producción a todos los entornos.",
+                "Detectar errores específicos del entorno en desarrollo, no en producción",
+                "Elimine más de 30 minutos diarios por problema del entorno de depuración del desarrollador"
+              ],
+              "description": "Rediacc elimina la deriva clonando la infraestructura de producción en un momento dado, capturando versiones exactas de las aplicaciones, esquemas de bases de datos, archivos de configuración y variables de entorno. Cada clon garantiza la paridad de producción porque ES producción: se replica atómicamente. Las actualizaciones se propagan automáticamente cuando cambia la producción, manteniendo todos los entornos sincronizados. Los desarrolladores trabajan en contenedores o máquinas virtuales que reflejan la producción con precisión, lo que hace que \"funcionó localmente\" sea sinónimo de \"funcionará en producción\".",
+              "title": "Paridad de producción garantizada mediante clonación en un momento dado"
+            },
+            "subtitle": "Más vale prevenir que curar <small class='subtitle-attribution'>—Benjamin Franklin</small>",
+            "title": "El problema de la paridad de producción"
+          },
+          "infrastructureCosts": {
+            "problem": {
+              "additionalPoints": [
+                "Los entornos siempre activos cuestan 24 horas al día, 7 días a la semana, pero se utilizan entre 8 y 10 horas al día",
+                "Los desarrolladores olvidan cerrar los entornos de prueba después de su uso",
+                "Las copias completas de la base de datos multiplican los costos de almacenamiento innecesariamente",
+                "Múltiples entornos de preparación 'por si acaso' permanecen inactivos la mayor parte del tiempo",
+                "Las batallas por el presupuesto de infraestructura dañan la moral y la velocidad del equipo"
+              ],
+              "description": "La infraestructura de desarrollo tradicional requiere entornos de preparación, control de calidad y desarrollo siempre activos que consuman recursos de la nube las 24 horas del día, los 7 días de la semana. Multiplique los entornos entre los equipos y los costos se dispararán. Un equipo de 30 desarrolladores que mantiene configuraciones estándar de desarrollo, preparación y control de calidad gasta fácilmente entre 50.000 y 100.000 dólares mensuales en una infraestructura inactiva. Los costos de almacenamiento se ven agravados por el hecho de que las copias completas de bases de datos consumen terabytes innecesariamente. Las finanzas presionan a la ingeniería para que reduzca el gasto en infraestructura sin comprender el impacto de la velocidad.",
+              "story": "Una empresa de comercio electrónico con 50 desarrolladores revisó su factura de AWS: 180.000 dólares mensuales para infraestructura de desarrollo. El análisis mostró que el 78% de los entornos permanecían inactivos después del horario comercial y los fines de semana. Cada entorno ejecutó copias completas de bases de datos: 30 TB de almacenamiento total para datos que podrían caber en 3 TB con deduplicación. Tenían 15 entornos de puesta en escena permanentes, pero sólo 3 o 4 se utilizaban activamente en cualquier momento. El desperdicio: 140.000 dólares mensuales en infraestructura inactiva que los desarrolladores olvidaron cerrar."
+            },
+            "solution": {
+              "benefits": [
+                "Reducir los costos de infraestructura entre un 40% y un 70% mediante el aprovisionamiento efímero",
+                "La limpieza automática cuando las ramas se fusionan evita la expansión del entorno",
+                "La clonación delgada ahorra más del 90 % del almacenamiento con tecnología de copia en escritura",
+                "El modelo de pago por uso cobra solo por el tiempo de procesamiento activo",
+                "Recuperación del retorno de la inversión (ROI) normalmente en un plazo de 3 a 6 meses"
+              ],
+              "description": "El enfoque efímero de Rediacc reduce los costos de infraestructura entre un 40% y un 70% mediante el aprovisionamiento bajo demanda y la limpieza automática. Los entornos existen sólo cuando se utilizan activamente: se crean para realizar pruebas y se destruyen cuando haya terminado. La tecnología de clonación delgada elimina la duplicación del almacenamiento, aprovisionando bases de datos de 10 TB desde menos de 1 GB de almacenamiento mediante mecanismos de copia en escritura. Los equipos pagan solo por la computación durante el uso activo, no por la infraestructura siempre activa que permanece inactiva durante la noche y los fines de semana. La calculadora de retorno de la inversión muestra que los equipos típicos de 30 personas ahorran entre 750.000 y 1,5 millones de dólares al año.",
+              "title": "Entornos efímeros con aprovisionamiento bajo demanda"
+            },
+            "subtitle": "No desperdicies, no quieras <small class='subtitle-attribution'>—Proverbio inglés</small>",
+            "title": "El desperdicio de infraestructura siempre activo"
+          },
+          "provisioningDelays": {
+            "problem": {
+              "additionalPoints": [
+                "La configuración manual requiere tickets de DevOps, lo que genera retrasos de 2 a 3 días",
+                "Cada desarrollador configura los entornos de forma diferente creando inconsistencias",
+                "La incorporación de nuevos desarrolladores lleva entre 1 y 2 semanas solo para la configuración del entorno",
+                "El cambio de contexto mientras se espera entornos acaba con la productividad",
+                "Los equipos de DevOps se convierten en cuellos de botella al manejar solicitudes de aprovisionamiento"
+              ],
+              "description": "Los equipos de desarrollo pierden más de 21 horas cada día esperando entornos. La configuración manual requiere la intervención de DevOps, múltiples tickets y días de espera. Cuando la puesta en escena está lista, los requisitos han cambiado. Este cuello de botella acaba con la velocidad: el 61% de los equipos informan que el aprovisionamiento del entorno es su principal obstáculo en la implementación. Una de cada cuatro organizaciones tarda más de tres meses desde que se completa el código hasta la implementación en producción porque los entornos no pueden seguir el ritmo.",
+              "story": "Una empresa SaaS de tamaño mediano con 30 desarrolladores calculó que desperdiciaban 21 horas al día en todo el equipo esperando la configuración del entorno. Cada desarrollador necesitaba entre 30 y 45 minutos diarios para resolver problemas de configuración del entorno. Eso equivale a 525 horas mensuales, lo que equivale a 3 ingenieros de tiempo completo que no hacen más que luchar contra la infraestructura en lugar de enviar funciones. El coste: más de 150.000 dólares al año en tiempo perdido para los desarrolladores, sin contar las funciones retrasadas y las oportunidades de mercado perdidas."
+            },
+            "solution": {
+              "benefits": [
+                "Proporcione entornos completos en 60 segundos frente a 2 o 3 días de espera",
+                "Intervención cero de DevOps: autoservicio para desarrolladores desde flujos de trabajo de Git",
+                "La integración automática de Git crea entornos por sucursal automáticamente",
+                "La arquitectura efímera ahorra entre un 40% y un 70% en costes de infraestructura",
+                "A bordo de nuevas desarrolladoras en horas no semanas."
+              ],
+              "description": "Rediacc aprovisiona entornos de desarrollo completos en menos de 60 segundos mediante la clonación automatizada de infraestructura. Los desarrolladores activan la creación del entorno directamente desde las ramas de Git sin tickets ni intervención manual. La plataforma replica toda su pila de producción (aplicaciones, bases de datos, configuraciones, topología de red, dependencias) como copias exactas. Los entornos efímeros se limpian automáticamente cuando se fusionan sucursales, lo que evita el desperdicio de infraestructura. Los equipos de DevOps definen las reglas de aprovisionamiento una vez y luego los desarrolladores se autoservicio infinitamente.",
+              "title": "Aprovisionamiento instantáneo con clonación de infraestructura"
+            },
+            "subtitle": "El tiempo es lo que más queremos, pero lo que peor utilizamos <small class='subtitle-attribution'>—William Penn</small>",
+            "title": "El cuello de botella del entorno de desarrollo"
+          }
+        }
+      },
       "disasterRecovery": {
         "cta": {
           "button": "Construya su plan de recuperación",
@@ -1024,7 +1148,7 @@
                 "El mismo ataque de ransomware produce tiempos de recuperación drásticamente diferentes",
                 "Las restauraciones completas tradicionales significan días de inactividad de servicios cancelados",
                 "La recuperación incremental moderna vuelve a estar en línea en minutos",
-                "La atención médica no puede esperar días que las pacientes necesitan atención ahora",
+                "La atención médica no puede esperar los días en que los pacientes necesitan atención ahora",
                 "Cada hora de inactividad multiplica los daños operativos y financieros"
               ],
               "description": "Las copias de seguridad completas tradicionales implican restauraciones completas lentas. Las organizaciones con sistemas de recuperación modernos vuelven a estar en línea en horas. ¿Aquellos con copias de seguridad tradicionales? Días de inactividad, servicios cancelados y pérdida de ingresos.",
@@ -1370,9 +1494,18 @@
         ],
         "description": "Todo cifrado. Todo auditado. Control total.",
         "title": "Control de cifrado"
+      },
+      {
+        "benefits": [
+          "Aprovisionamiento de entorno de 60 segundos",
+          "Clones idénticos a la producción",
+          "Integración automática de Git"
+        ],
+        "description": "Clones de producción instantánea. Cero tickets de DevOps. Entornos de 60 segundos.",
+        "title": "Entornos de desarrollo"
       }
     ],
-    "subtitle": "Cuatro soluciones integradas para una respuesta rápida cuando falla la infraestructura o surgen amenazas.",
+    "subtitle": "Cinco soluciones integradas para una respuesta rápida cuando falla la infraestructura o surgen amenazas.",
     "title": "Cómo garantizamos la continuidad del negocio"
   }
 }
