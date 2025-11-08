@@ -418,6 +418,25 @@
           ]
         }
       },
+      "psTeaser": {
+        "heading": "Need Expert Help Getting Started?",
+        "subtitle": "Professional implementation and support services available for all tiers",
+        "viewDetails": "Explore Professional Services",
+        "packages": {
+          "standard": {
+            "name": "Standard",
+            "price": "From $7,499"
+          },
+          "priority": {
+            "name": "Priority",
+            "price": "$19,999"
+          },
+          "emergency": {
+            "name": "Emergency",
+            "price": "$29,999"
+          }
+        }
+      },
       "strategy": {
         "heading": "Built for every stage",
         "copy": "Choose the plan that fits your operational stage today and scale without switching platforms tomorrow.",
