@@ -112,12 +112,11 @@
     },
     "links": {
       "contactSupport": "Destek Ekibiyle İletişime Geçin",
-      "returnToHome": "Ana Sayfaya Dön"
+      "returnToHome": "Ana Sayfaya Dönüş"
     },
     "productLinks": {
       "overview": "Genel Bakış",
       "pricing": "Fiyatlandırma",
-      "professionalServices": "Profesyonel Hizmetler",
       "solutions": "Çözümler"
     },
     "supportLinks": {
@@ -162,7 +161,6 @@
     "selectLanguage": "Dil seçin",
     "solutions": {
       "dataSecurity": "Veri Güvenliği",
-      "developmentEnvironments": "Geliştirme Ortamları",
       "disasterRecovery": "Felaket Kurtarma",
       "systemPortability": "Sistem Taşınabilirliği",
       "threatResponse": "Tehdit Yanıtı"
@@ -212,7 +210,7 @@
               "general": "Genel",
               "other": "Diğer",
               "partnership": "ortaklık",
-              "placeholder": "Birini seçin",
+              "placeholder": "Birini seç",
               "technical": "Teknik Soru"
             }
           }
@@ -574,7 +572,7 @@
             ],
             "description": "Mimariyi, dağıtımı, doğrulamayı ve etkinleştirmeyi kapsayan yapılandırılmış uygulama.",
             "name": "Standart",
-            "price": "7.499$'dan başlayan fiyatlarla",
+            "price": "7.499 $'dan başlayan fiyatlarla",
             "tierHeading": "Uygulama paketi katmanları",
             "tiers": [
               "Küçük (5-25 makine): 7.499 ABD doları",
@@ -660,7 +658,7 @@
               "emergency": "Aynı gün içinde kritik prosedürler brifingi + olay müdahale hazırlığı + tam program başlıyor",
               "id": "takım eğitimi",
               "name": "Takım Eğitimi",
-              "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde tamamlanan önemli iş akışları",
+              "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde ele alınan temel iş akışları",
               "standard": "Kapsamlı, çok günlük eğitim programı"
             },
             {
@@ -679,25 +677,6 @@
             }
           ]
         }
-      },
-      "psTeaser": {
-        "heading": "Başlarken Uzman Yardımına mı ihtiyacınız var?",
-        "packages": {
-          "emergency": {
-            "name": "Acil durum",
-            "price": "29.999$"
-          },
-          "priority": {
-            "name": "Öncelik",
-            "price": "19.999$"
-          },
-          "standard": {
-            "name": "Standart",
-            "price": "7.499$'dan başlayan fiyatlarla"
-          }
-        },
-        "subtitle": "Tüm katmanlar için profesyonel uygulama ve destek hizmetleri mevcuttur",
-        "viewDetails": "Profesyonel Hizmetleri Keşfedin"
       },
       "strategy": {
         "copy": "Bugün operasyon aşamanıza uygun olan planı seçin ve yarın platform değiştirmeden ölçeklendirin.",
@@ -849,37 +828,6 @@
         "whatsIncluded": "Neler dahil:"
       }
     },
-    "professionalServices": {
-      "cta": {
-        "button": "Planlama Danışmanlığı",
-        "description": "Altyapı ihtiyaçlarınızı tartışmak ve özel bir fiyat teklifi almak için bir danışma planlayın.",
-        "heading": "Başlamaya Hazır mısınız?",
-        "subtext": "Çoğu konsültasyon 48 saat içinde tamamlandı"
-      },
-      "hero": {
-        "badge": "Tüm abonelik katmanları için kullanılabilir",
-        "subtitle": "Profesyonel uygulama, geçiş desteği ve acil müdahale hizmetleriyle altyapı dağıtımınızı hızlandırın.",
-        "title": "En Çok İhtiyacınız Olduğunda Uzman Yardımı"
-      },
-      "meta": {
-        "description": "En çok ihtiyaç duyduğunuz anda uzman yardımı alın. Standart uygulamadan acil müdahaleye kadar profesyonel hizmetlerimiz başarınızı garanti eder.",
-        "keywords": "profesyonel hizmetler, uygulama desteği, altyapı danışmanlığı, acil müdahale, geçiş hizmetleri, fidye yazılımı kurtarma",
-        "title": "Profesyonel Hizmetler | Uzman Uygulama ve Destek"
-      },
-      "packages": {
-        "heading": "Profesyonel Hizmet Paketleri",
-        "subtitle": "Aciliyetinize ve karmaşıklığınıza uygun hizmet düzeyini seçin"
-      },
-      "value": {
-        "description": "Altyapı zorlukları uzman rehberliği gerektirir. Profesyonel hizmet ekibimiz, dağıtımınızın başarılı olmasını, geçişlerinizin güvenli bir şekilde tamamlanmasını ve acil durumlarınızın hızlı bir şekilde çözülmesini sağlamak için yılların deneyimini sunar.",
-        "heading": "Profesyonel Hizmetler Neden Önemlidir?",
-        "statistics": [
-          "Profesyonel destekle ortalama uygulama süresi %75 azaldı",
-          "Kritik olaylar için acil müdahale ekibi 2 saat içinde hazır olacaktır",
-          "Rehberli altyapı geçişlerinde %100 başarı oranı"
-        ]
-      }
-    },
     "solutions": {
       "dataSecurity": {
         "cta": {
@@ -974,128 +922,6 @@
             },
             "subtitle": "Kilitler dürüst insanları dürüst tutar <sma class='subtitle-attribution'>— Halk deyişi (1912)</small>",
             "title": "Fiziksel Erişim Hırsızlığı"
-          }
-        }
-      },
-      "developmentEnvironments": {
-        "cta": {
-          "button": "Erken Erişim İçin Başvurun",
-          "subtitle": "İlk ortamınızı saniyeler içinde klonlayın. Sınırlı sayıda yer mevcuttur.",
-          "title": "Gelişimi Hızlandırmaya Hazır mısınız?"
-        },
-        "hero": {
-          "subtitle": "Tek tıklamayla tüm üretim altyapınızı (uygulamalar, veritabanları, yapılandırmalar, bağımlılıklar) klonlayın. Geliştirme ekipleri talep üzerine üretimle aynı ortamlara sahip olurken altyapı maliyetleri %60 azalır.",
-          "title": "Geliştirme ortamları için günlerce beklemeye son verin. Saniyeler içinde dağıtıma başlayın."
-        },
-        "meta": {
-          "description": "Üretim altyapınızın tamamını (uygulamalar, veritabanları, yapılandırmalar) 60 saniyeden kısa sürede klonlayın. Geliştirme ortamları için günlerce beklemeye son verin. Talep üzerine üretimle aynı ortamlar.",
-          "keywords": "geçici ortamlar, geliştirme ortamı sağlama, anında geliştirme ortamı, isteğe bağlı ortamlar, önizleme ortamları, git-yerel ortamlar, üretim klonu",
-          "title": "Saniyeler İçinde Hızlanan Geliştirme Ortamları | Rediacc"
-        },
-        "problems": {
-          "cicdComplexity": {
-            "problem": {
-              "additionalPoints": [
-                "Özel entegrasyon komut dosyaları sürekli bakım gerektirir",
-                "API değişiklikleri özel entegrasyonları uyarı vermeden bozar",
-                "Provizyon sistemini yalnızca bir kişi anlıyor",
-                "Her CI/CD platformunun farklı entegrasyon yaklaşımına ihtiyacı vardır",
-                "Araçların yayılması bilişsel yükü ve başarısızlık noktalarını artırır"
-              ],
-              "description": "Mevcut DevOps işlem hatlarına ortam sağlamanın eklenmesi, özel komut dosyaları, API entegrasyonları ve sürekli bakım gerektirir. Her yeni araç, ekiplerin %13'ünün 14'ten fazla farklı araçla hokkabazlık yaptığı, zaten yaygın olan araç zincirlerine karmaşıklık katıyor. Entegrasyon hataları CI/CD ardışık düzenlerini bozar. Dokümantasyon boşlukları, tedarik sistemini yalnızca bir mühendisin anlaması anlamına gelir ve bu da bilgi yoğunlaşması riski yaratır.",
-              "story": "Bir B2B SaaS şirketi, AWS CloudFormation ve RDS API'lerini çağıran özel Jenkins komut dosyaları aracılığıyla ortam sağlamayı otomatikleştirmeye çalıştı. İlk uygulama 3 ay ve 500 saatlik DevOps mühendislik süresi gerektirdi. Altı ay sonra, asıl mühendis ayrıldığında kimse senaryoları güvenli bir şekilde değiştiremedi. Tedarik sistemi teknik borca ​​dönüştü; çalışıyor ama dokunulmazdı. AWS bir API uç noktasını kullanımdan kaldırdığında tüm işlem hattı bozuldu. İyileşme süresi: Bir danışman özel komut dosyalarına tersine mühendislik uygularken 2 haftalık geliştirme hızı kaybı."
-            },
-            "solution": {
-              "benefits": [
-                "Tüm önemli Git platformları ve CI/CD araçları için yerel entegrasyonlar",
-                "Terraform Kubernetes Docker ile kod olarak altyapı uyumluluğu",
-                "Sıfır iş akışı kesintisi—mevcut geliştirme süreçleriyle çalışır",
-                "PR oluşturma veya Git etkinliklerinde otomatik sağlama",
-                "Dakikalar içinde kurulum ve haftalar süren özel entegrasyon geliştirme"
-              ],
-              "description": "Rediacc, GitHub, GitLab, Bitbucket, Jenkins, CircleCI ve başlıca CI/CD platformlarına yönelik yerel eklentiler aracılığıyla mevcut yığınınızla bütünleşir. Provizyon, PR oluşturma veya manuel komutla otomatik olarak tetiklenir. Terraform, Kubernetes, Docker Compose veya CloudFormation kullanan kod olarak altyapı tanımları değişmeden çalışır. Platform, mevcut araçların yerini almak yerine onları tamamlar; ortam sağlama işlemi otomatik hale gelirken geliştirme iş akışınız tanıdık kalır. Kurulum haftalar değil dakikalar alır ve her mühendis uzmanlık bilgisi gerektirmeden ortamların hazırlığını yapabilir.",
-              "title": "Kod Olarak Altyapı Desteğiyle Yerel CI/CD Entegrasyonu"
-            },
-            "subtitle": "Sadelik, gelişmişliğin en üst noktasıdır <small class='subtitle-attribution'>— Leonardo da Vinci</small>",
-            "title": "Entegrasyon Ek Yükü"
-          },
-          "environmentDrift": {
-            "problem": {
-              "additionalPoints": [
-                "Yapılandırma dosyaları Git'te izlenmeyen manuel düzenlemeler arasında sürükleniyor",
-                "Ortamlar arasında veritabanı şeması sürümleri uyuşmazlığı",
-                "Bağımlılık sürümleri farklılaşıyor ve 'burada çalışır orada başarısız olur' hatalarına neden oluyor",
-                "Ortam değişkenleri üretimdeki entegrasyonları bozarak farklılık gösterir",
-                "Aşamanın prodüksiyonla tam olarak eşleştiğini garanti etmenin bir yolu yok"
-              ],
-              "description": "Hazırlama ortamları, manuel değişiklikler, sürüm uyumsuzlukları ve konfigürasyon bozulması nedeniyle üretimden uzaklaşıyor. Sahnelemede işe yarayan şey, üretimde başarısız olur. Geliştiriciler, gerçek hataları düzeltmek yerine çevresel farklılıklardaki hataları ayıklamak için saatler harcıyor. Bu 'makinemde çalışıyor' sendromu, tutarsızlıkları gidermek için geliştirici başına günde 30'dan fazla dakika harcıyor. Her geliştirici yerel kurulumları manuel olarak farklı şekilde yapılandırdığında ortam eşliği imkansız hale gelir.",
-              "story": "Bir fintech girişimi, tüm aşamalandırma testlerini geçen kritik bir ödeme özelliğini devreye aldı. Üretimde hemen başarısız oldu; veritabanı harmanlama ayarı, hazırlama ve üretim arasında farklılık göstererek ödeme sürecini bozdu. Aylar süren manuel değişiklikler nedeniyle aşamalandırma üretimden saptığı için sorun fark edilmedi. Sonuç: Yoğun işlem saatlerinde 4 saatlik kesinti, 200 bin dolarlık işlem ücreti kaybı ve mevzuata uygunluk soruşturması. Düzeltme 5 dakika sürdü. Çevresel farkı bulmak 4 saat sürdü."
-            },
-            "solution": {
-              "benefits": [
-                "Atomik klonlama, tutarlılık sağlayarak tüm sistem durumunu yakalar",
-                "Sıfır konfigürasyon sapması—klonlar üretime tam olarak tasarımla uyum sağlar",
-                "Otomatik senkronizasyon, üretim değişikliklerini tüm ortamlara yayar",
-                "Ortama özgü hataları üretimde değil geliştirme aşamasında yakalayın",
-                "Geliştirici başına günlük 30 dakikadan fazla hata ayıklama ortamı sorununu ortadan kaldırın"
-              ],
-              "description": "Rediacc, üretim altyapısını belirli bir anda klonlayarak, tam uygulama sürümlerini, veritabanı şemalarını, yapılandırma dosyalarını ve ortam değişkenlerini yakalayarak sapmayı ortadan kaldırır. Her klon üretim eşitliğini garanti eder çünkü bu üretimdir - atomik olarak kopyalanmıştır. Güncellemeler, üretim değiştiğinde otomatik olarak yayılır ve tüm ortamların senkronize olmasını sağlar. Geliştiriciler, üretimi tam olarak yansıtan konteynerler veya VM'lerde çalışır ve 'yerel olarak çalıştı' ifadesini 'üretimde çalışacak' ile eşanlamlı hale getirir.",
-              "title": "Belirli Bir Noktada Klonlama Sayesinde Garantili Üretim Eşliği"
-            },
-            "subtitle": "Bir gram önleme bir kilo tedaviye değerdir <small class='subtitle-attribution'>— Benjamin Franklin</small>",
-            "title": "Üretim Paritesi Sorunu"
-          },
-          "infrastructureCosts": {
-            "problem": {
-              "additionalPoints": [
-                "Her zaman açık ortamlar 7/24 ücrete tabidir ancak günde 8-10 saat kullanılır",
-                "Geliştiriciler kullanımdan sonra test ortamlarını kapatmayı unutuyor",
-                "Tam veritabanı kopyaları, depolama maliyetlerini gereksiz yere katlar",
-                "Birden fazla hazırlama ortamı 'her ihtimale karşı' çoğu zaman boşta kalır",
-                "Altyapı bütçe savaşları ekibin moraline ve hızına zarar veriyor"
-              ],
-              "description": "Geleneksel geliştirme altyapısı, her zaman açık olan hazırlama, QA ve bulut kaynaklarını 7/24 tüketen geliştirici ortamlarını gerektirir. Ortamları ekipler arasında çoğaltın ve maliyetler patlayın. Standart geliştirme/hazırlama/QA kurulumlarını sürdüren 30 geliştiriciden oluşan bir ekip, boşta kalan altyapıyla ayda kolayca 50.000-100.000 ABD doları harcar. Depolama maliyetleri, gereksiz yere terabayt tüketen tam veritabanı kopyalarıyla birleşiyor. Finans, hız etkisini anlamadan mühendisliğe altyapı harcamalarını kesmesi için baskı yapıyor.",
-              "story": "50 geliştiriciye sahip bir e-ticaret şirketi, AWS faturasını inceledi: Geliştirme altyapısı için aylık 180 bin dolar. Analiz, ortamların %78'inin iş saatleri ve hafta sonları dışında boşta kaldığını gösterdi. Her ortamda veri tekilleştirme ile 3 TB'a sığabilecek veriler için toplam 30 TB depolama alanı olan tam veritabanı kopyaları çalıştırıldı. 15 kalıcı sahneleme ortamı vardı, ancak herhangi bir zamanda yalnızca 3-4 tanesi aktif olarak kullanıldı. İsraf: Geliştiricilerin kapatmayı unuttuğu boşta kalan altyapı için aylık 140 bin dolar."
-            },
-            "solution": {
-              "benefits": [
-                "Geçici provizyon yoluyla altyapı maliyetlerini %40-70 azaltın",
-                "Dallar birleştiğinde otomatik temizleme ortamın yayılmasını önler",
-                "İnce klonlama, yazma üzerine kopyalama teknolojisiyle %90'dan fazla depolama tasarrufu sağlar",
-                "Kullanım başına ödeme modeli yalnızca etkin işlem süresi için ücret alır",
-                "Yatırım getirisinin geri dönüşü genellikle 3-6 ay içinde"
-              ],
-              "description": "Rediacc'ın geçici yaklaşımı, isteğe bağlı provizyon ve otomatik temizleme yoluyla altyapı maliyetlerini %40-70 oranında azaltır. Ortamlar yalnızca aktif olarak kullanıldığında var olur; test için oluşturun, bittiğinde yok edin. İnce klonlama teknolojisi, yazma üzerine kopyalama mekaniği aracılığıyla 1 GB'tan daha az depolama alanından 10 TB'lık veritabanları sağlayarak depolama çoğaltmasını ortadan kaldırır. Ekipler yalnızca aktif kullanım sırasında bilgi işlem için ödeme yapar, her zaman açık olan altyapının gece boyunca ve hafta sonları boşta kalması için ödeme yapmaz. Yatırım getirisi hesaplayıcısı, tipik 30 kişilik ekiplerin yılda 750 bin ila 1,5 milyon dolar tasarruf ettiğini gösteriyor.",
-              "title": "İsteğe Bağlı Sağlama ile Geçici Ortamlar"
-            },
-            "subtitle": "İsraf etme, isteme <small class='subtitle-attribution'>— İngiliz atasözü</small>",
-            "title": "Daima Açık Altyapı İsrafı"
-          },
-          "provisioningDelays": {
-            "problem": {
-              "additionalPoints": [
-                "Manuel kurulum, DevOps biletlerinin 2-3 günlük gecikmelere neden olmasını gerektirir",
-                "Her geliştirici, ortamları farklı şekilde yapılandırarak tutarsızlıklar yaratır",
-                "Yeni geliştiricilerin katılımı yalnızca ortam kurulumu için 1-2 hafta sürer",
-                "Ortamları beklerken bağlam değiştirmek üretkenliği azaltır",
-                "DevOps ekipleri, ön hazırlık isteklerini işlemede darboğaz haline geliyor"
-              ],
-              "description": "Geliştirme ekipleri her gün ortamları bekleyerek 21 saatten fazla zaman harcıyor. Manuel kurulum, DevOps müdahalesini, birden fazla bildirimi ve günlerce beklemeyi gerektirir. Aşamalandırma hazır olduğunda gereksinimler değişti. Bu darboğaz hızı öldürüyor; ekiplerin %61'i ortam sağlamanın en büyük dağıtım engeli olduğunu belirtiyor. Ortamların buna ayak uyduramaması nedeniyle dört kuruluştan biri kodun tamamlanmasından üretim dağıtımına kadar üç aydan fazla zaman alıyor.",
-              "story": "30 geliştiriciden oluşan orta ölçekli bir SaaS şirketi, ekibin günde 21 saatini sadece ortam kurulumunu bekleyerek harcadıklarını hesapladı. Her geliştiricinin ortam yapılandırma sorunları için günde 30-45 dakikaya ihtiyacı vardı. Bu, ayda 525 saat anlamına gelir; bu da 3 tam zamanlı mühendisin nakliye özellikleri yerine altyapıyla mücadele etmekten başka hiçbir şey yapmamasına eşdeğerdir. Maliyet: Geciken özellikleri ve kaçırılan pazar fırsatlarını saymazsak, boşa harcanan geliştirici zamanı nedeniyle yılda 150.000 ABD Doları +."
-            },
-            "solution": {
-              "benefits": [
-                "Ortamların tamamını 2-3 gün bekleme yerine 60 saniyede sağlayın",
-                "Sıfır DevOps müdahalesi — geliştiricilerin Git iş akışlarından self servis çalışması",
-                "Otomatik Git entegrasyonu, şube başına otomatik olarak ortamlar oluşturur",
-                "Geçici mimari, altyapı maliyetlerinde %40-70 tasarruf sağlar",
-                "Yeni geliştiricilerin katılımını haftalar değil saatler içinde sağlayın"
-              ],
-              "description": "Rediacc, otomatik altyapı klonlaması yoluyla geliştirme ortamlarının 60 saniyeden kısa sürede tamamlanmasını sağlar. Geliştiriciler, ortam oluşturma işlemini bilet veya manuel müdahale olmadan doğrudan Git şubelerinden tetikler. Platform, tüm üretim yığınınızı (uygulamalar, veritabanları, yapılandırmalar, ağ topolojisi, bağımlılıklar) tam kopyalar olarak çoğaltır. Geçici ortamlar, şubeler birleştiğinde otomatik olarak temizlenerek altyapı israfını önler. DevOps ekipleri temel hazırlık kurallarını bir kez tanımlar, ardından geliştiriciler sınırsız sayıda kendi kendine hizmet verir.",
-              "title": "Altyapı Klonlama ile Anında Provizyon"
-            },
-            "subtitle": "Zaman en çok istediğimiz ama en kötü kullandığımız şeydir <sma class='subtitle-attribution'>— William Penn</small>",
-            "title": "Geliştirme Ortamı Darboğazı"
           }
         }
       },
@@ -1460,15 +1286,6 @@
     "items": [
       {
         "benefits": [
-          "Anında üretimle aynı ortamlar",
-          "Altyapı maliyetinde %40-70 azalma",
-          "Sıfır DevOps müdahalesi gerekli"
-        ],
-        "description": "60 saniyede üretim klonları. Sıfır ortam kayması. Geçici altyapı.",
-        "title": "Geliştirme Ortamları"
-      },
-      {
-        "benefits": [
           "Değişmez yedeklemeler saldırılardan kurtulur",
           "Saatler veya günler değil, dakikalar içinde iyileşin",
           "Risksiz işletim sistemi testi"
@@ -1504,7 +1321,7 @@
         "title": "Şifreleme Kontrolü"
       }
     ],
-    "subtitle": "Altyapı arızalandığında veya tehditler ortaya çıktığında geliştirmeyi hızlandırmak ve hızlı yanıt vermek için beş entegre çözüm.",
+    "subtitle": "Altyapı arızalandığında veya tehditler ortaya çıktığında hızlı müdahale için dört entegre çözüm.",
     "title": "İş Sürekliliğini Nasıl Sağlıyoruz?"
   }
 }

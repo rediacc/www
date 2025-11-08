@@ -14,7 +14,7 @@ language: es
 
 ## El problema
 
-La red eléctrica ibérica se enfrentó a una catastrófica cascada de fallos:
+La red eléctrica ibérica se enfrentó a una cascada de fallos catastróficos:
 
 * Un **incendio en el suroeste de Francia** dañó una línea de transmisión crítica 
 * Los daños provocados por la **desconexión repentina** de las interconexiones transfronterizas 
@@ -28,7 +28,7 @@ La red eléctrica ibérica se enfrentó a una catastrófica cascada de fallos:
 **Desafíos de la infraestructura de TI:** 
 * **Los sistemas de respaldo locales** fueron ineficaces ya que estaban ubicados en la misma región afectada 
 * **Procedimientos de recuperación de emergencia** dependían del acceso local a servidores físicos 
-* **Los planes de continuidad del negocio** no tuvieron en cuenta los cortes de energía en todo el país que duraron más de 4 horas.
+* **Los planes de continuidad del negocio** no tuvieron en cuenta el corte de energía a nivel nacional que duró más de 4 horas
 
 ## Impacto de la crisis
 
@@ -68,4 +68,4 @@ Un importante grupo bancario español que implementó la solución de replicaci�
 * No se perdieron ni corrompieron datos, lo que eliminó costosas operaciones de recuperación
 
 **Ventaja competitiva:** 
-* El banco incorporó 140.000 nuevos clientes el mes siguiente procedentes de competidores que no lograron mantener el servicio.
+* El banco incorporó 140.000 nuevos clientes el mes siguiente procedentes de competidores que no mantuvieron el servicio.

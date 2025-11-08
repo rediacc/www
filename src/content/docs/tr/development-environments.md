@@ -31,7 +31,7 @@ Geliştirme ekipleri her gün ortamları bekleyerek 21 saatten fazla zaman harc�
 Hazırlama ortamları, manuel değişiklikler, sürüm uyumsuzlukları ve konfigürasyon bozulması nedeniyle üretimden uzaklaşıyor. Sahnelemede işe yarayan şey, üretimde başarısız olur.
 
 **Sürüklenme felaketi:** 
-* Yapılandırma dosyaları Git'te izlenmeyen manuel düzenlemeler yoluyla değişir 
+* Yapılandırma dosyaları Git'te izlenmeyen manuel düzenlemelerle değişir 
 * Ortamlar arasında veritabanı şeması sürümleri uyuşmazlığı 
 * Bağımlılık sürümleri birbirinden ayrılarak "burada çalışır, orada başarısız olur" hatalarına neden olur 
 * Ortam değişkenleri farklılık gösteriyor, üretimdeki entegrasyonlar bozuluyor 
@@ -96,7 +96,7 @@ Rediacc'ın geçici yaklaşımı, isteğe bağlı provizyon ve otomatik temizlem
 
 İnce klonlama teknolojisi depolama çoğaltmasını ortadan kaldırır:
 
-* Yazma üzerine kopyalama mekaniği aracılığıyla **1 GB'tan daha az depolama alanından** 10 TB veri tabanı sağlayın 
+* Yazma üzerine kopyalama mekaniği aracılığıyla **1 GB'tan daha az depolama alanından** 10 TB veritabanları sağlayın 
 * **Tekilleştirme ile %90'dan fazla depolama tasarrufu** 
 * Ekipler yalnızca etkin kullanım sırasında bilgi işlem için ödeme yapar 
 * Gece boyunca ve hafta sonları her zaman açık olan altyapının boşta kalması yok
@@ -135,7 +135,7 @@ Yerel eklentiler aracılığıyla mevcut yığınınızla entegre edin:
 
 * Platform mevcut araçların yerine geçmek yerine onları tamamlıyor 
 * Ortam provizyonu otomatik hale gelirken geliştirme iş akışınız tanıdık kalır 
-* **Kurulum haftalar değil dakikalar sürer** 
+* **Kurulum haftalar değil dakikalar alır** 
 * Her mühendis uzmanlık bilgisi gerektirmeden ortamları hazırlayabilir
 
 ## Temel Faydalar

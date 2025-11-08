@@ -10,7 +10,7 @@ language: tr
 
 **Not:** Bu, Rediacc'ın bu sorunu nasıl çözebileceğini gösteren bir **kullanım örneğidir**. Bir startup olarak bu senaryolar, tamamlanmış vaka çalışmalarından ziyade potansiyel uygulamaları temsil ediyor.
 
-**Kriz Senaryosu:** Yapay zeka eğitim süreleri **2-3 kat uzadı**, bu da projede gecikmelere neden oldu. Mühendisler kaynakları beklerken önemli bir üretkenlik kaybı yaşadılar ve bu durum şirketin rekabet avantajını tehdit etti.
+**Kriz Senaryosu:** Yapay zeka eğitim süreleri **2-3 kat uzatıldı**, bu da projede gecikmelere neden oldu. Mühendisler kaynakları beklerken önemli bir üretkenlik kaybı yaşadılar ve bu durum şirketin rekabet avantajını tehdit etti.
 
 ## Sorun
 

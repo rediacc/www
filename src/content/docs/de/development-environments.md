@@ -106,7 +106,7 @@ Die Thin-Cloning-Technologie eliminiert Speicherduplizierung:
 Typische 30-köpfige Teams sparen **750.000 bis 1,5 Millionen US-Dollar pro Jahr**:
 
 * Sparen Sie monatlich 50.000 bis 100.000 US-Dollar für ungenutzte Infrastruktur 
-* Reduzieren Sie die Cloud-Kosten durch ein kurzlebiges oder ein Always-On-Modell 
+* Reduzieren Sie die Cloud-Kosten durch ein kurzlebiges oder ein Always-on-Modell 
 * **ROI-Amortisation in der Regel innerhalb von 3–6 Monaten** 
 * Die Finanzabteilung erhält Transparenz über die Infrastrukturkosten, die Technik erhält Geschwindigkeit
 
