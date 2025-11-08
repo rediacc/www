@@ -141,13 +141,9 @@ const Solutions: React.FC<SolutionsProps> = ({ lang = 'en' }) => {
           <path d="M38 24l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
-      title: t('navigation.solutions.developmentEnvironments'),
-      description: 'Instant production clones. Zero DevOps tickets. 60-second environments.',
-      benefits: [
-        '60-second environment provisioning',
-        'Production-identical clones',
-        'Automatic Git integration'
-      ],
+      title: solutionsData[4]?.title || '',
+      description: solutionsData[4]?.description || '',
+      benefits: solutionsData[4]?.benefits || [],
       href: `/${lang}/solutions/development-environments`
     }
   ];

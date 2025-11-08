@@ -119,7 +119,7 @@
   },
   "solutions": {
     "title": "How We Ensure Business Continuity",
-    "subtitle": "Four integrated solutions for rapid response when infrastructure fails or threats strike.",
+    "subtitle": "Five integrated solutions for rapid response when infrastructure fails or threats strike.",
     "items": [
       {
         "title": "Ransomware Survival",
@@ -155,6 +155,15 @@
           "Encryption you control",
           "Full audit trail",
           "Migration-safe"
+        ]
+      },
+      {
+        "title": "Development Environments",
+        "description": "Instant production clones. Zero DevOps tickets. 60-second environments.",
+        "benefits": [
+          "60-second environment provisioning",
+          "Production-identical clones",
+          "Automatic Git integration"
         ]
       }
     ]
