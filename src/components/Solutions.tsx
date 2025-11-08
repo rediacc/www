@@ -70,24 +70,6 @@ const Solutions: React.FC<SolutionsProps> = ({ lang = 'en' }) => {
       number: 1,
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <path d="M6 18h36" stroke="currentColor" strokeWidth="2"/>
-          <circle cx="10" cy="14" r="1" fill="currentColor"/>
-          <circle cx="14" cy="14" r="1" fill="currentColor"/>
-          <circle cx="18" cy="14" r="1" fill="currentColor"/>
-          <path d="M12 24h24M12 30h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          <path d="M38 24l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-      ),
-      title: solutionsData[0]?.title || '',
-      description: solutionsData[0]?.description || '',
-      benefits: solutionsData[0]?.benefits || [],
-      href: `/${lang}/solutions/development-environments`
-    },
-    {
-      number: 2,
-      icon: (
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="8" y="8" width="32" height="24" rx="4" stroke="currentColor" strokeWidth="2" fill="none"/>
           <path d="M8 16h32" stroke="currentColor" strokeWidth="2"/>
           <circle cx="12" cy="12" r="1" fill="currentColor"/>
@@ -97,13 +79,13 @@ const Solutions: React.FC<SolutionsProps> = ({ lang = 'en' }) => {
           <path d="M8 36h32l-4 8H12l-4-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" fill="none"/>
         </svg>
       ),
-      title: solutionsData[1]?.title || '',
-      description: solutionsData[1]?.description || '',
-      benefits: solutionsData[1]?.benefits || [],
-      href: `/${lang}/solutions/threat-response`
+      title: solutionsData[0]?.title || '',
+      description: solutionsData[0]?.description || '',
+      benefits: solutionsData[0]?.benefits || [],
+      href: `/${lang}/solutions/disaster-recovery`
     },
     {
-      number: 3,
+      number: 2,
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M24 4L6 16v20c0 2.2 1.8 4 4 4h28c2.2 0 4-1.8 4-4V16L24 4z" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -112,13 +94,13 @@ const Solutions: React.FC<SolutionsProps> = ({ lang = 'en' }) => {
           <path d="M16 28h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
         </svg>
       ),
-      title: solutionsData[2]?.title || '',
-      description: solutionsData[2]?.description || '',
-      benefits: solutionsData[2]?.benefits || [],
+      title: solutionsData[1]?.title || '',
+      description: solutionsData[1]?.description || '',
+      benefits: solutionsData[1]?.benefits || [],
       href: `/${lang}/solutions/system-portability`
     },
     {
-      number: 4,
+      number: 3,
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="6" y="6" width="36" height="36" rx="8" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -128,23 +110,45 @@ const Solutions: React.FC<SolutionsProps> = ({ lang = 'en' }) => {
           <path d="M16 19l8 10 8-10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
-      title: solutionsData[3]?.title || '',
-      description: solutionsData[3]?.description || '',
-      benefits: solutionsData[3]?.benefits || [],
+      title: solutionsData[2]?.title || '',
+      description: solutionsData[2]?.description || '',
+      benefits: solutionsData[2]?.benefits || [],
       href: `/${lang}/solutions/disaster-recovery`
     },
     {
-      number: 5,
+      number: 4,
       icon: (
         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4z" stroke="currentColor" strokeWidth="2" fill="none"/>
           <path d="M24 12v12l8 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       ),
-      title: solutionsData[4]?.title || 'Data Security & Compliance',
-      description: solutionsData[4]?.description || 'Zero-knowledge encryption, audit trails, and compliance.',
-      benefits: solutionsData[4]?.benefits || [],
+      title: solutionsData[3]?.title || '',
+      description: solutionsData[3]?.description || '',
+      benefits: solutionsData[3]?.benefits || [],
       href: `/${lang}/solutions/data-security`
+    },
+    {
+      number: 5,
+      icon: (
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <path d="M6 18h36" stroke="currentColor" strokeWidth="2"/>
+          <circle cx="10" cy="14" r="1" fill="currentColor"/>
+          <circle cx="14" cy="14" r="1" fill="currentColor"/>
+          <circle cx="18" cy="14" r="1" fill="currentColor"/>
+          <path d="M12 24h24M12 30h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          <path d="M38 24l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      ),
+      title: t('navigation.solutions.developmentEnvironments'),
+      description: 'Instant production clones. Zero DevOps tickets. 60-second environments.',
+      benefits: [
+        '60-second environment provisioning',
+        'Production-identical clones',
+        'Automatic Git integration'
+      ],
+      href: `/${lang}/solutions/development-environments`
     }
   ];
 
