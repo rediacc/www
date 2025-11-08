@@ -501,12 +501,13 @@
             ],
             "price": "From $7,499",
             "tiers": [
-              "Small (5-25 machines): $7,499",
-              "Medium (25-100 machines): $14,999",
-              "Large (100-500 machines): $29,999",
-              "Enterprise (500+ machines): Custom quote"
+              "Starter (1-4 workloads): $7,499",
+              "Growth (5-10 workloads): $14,999",
+              "Scale (11-25 workloads): $29,999",
+              "Enterprise (25+ workloads): Custom quote"
             ],
-            "tierHeading": "Implementation package tiers"
+            "tierHeading": "Workload-Based Implementation Pricing",
+            "tierNote": "A workload represents a distinct business process, application, or service requiring backup and disaster recovery protection. Implementation includes architecture design, deployment, validation, and team enablement."
           },
           "priority": {
             "name": "Priority",
