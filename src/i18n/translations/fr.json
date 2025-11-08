@@ -573,12 +573,13 @@
             "description": "Implémentation structurée qui couvre l'architecture, le déploiement, la validation et l'activation.",
             "name": "Standard",
             "price": "À partir de 7 499 $",
-            "tierHeading": "Niveaux du package de mise en œuvre",
+            "tierHeading": "Tarification de mise en œuvre basée sur la charge de travail",
+            "tierNote": "Une charge de travail représente un processus métier, une application ou un service distinct nécessitant une protection de sauvegarde et de reprise après sinistre. La mise en œuvre comprend la conception de l’architecture, le déploiement, la validation et l’activation de l’équipe.",
             "tiers": [
-              "Petit (5 à 25 machines) : 7 499 $",
-              "Moyen (25 à 100 machines) : 14 999 $",
-              "Grand (100 à 500 machines) : 29 999 $",
-              "Entreprise (plus de 500 machines) : devis personnalisé"
+              "Débutant (1 à 4 charges de travail) : 7 499 $",
+              "Croissance (5 à 10 charges de travail) : 14 999 $",
+              "Échelle (11 à 25 charges de travail) : 29 999 $",
+              "Entreprise (25+ charges de travail) : devis personnalisé"
             ],
             "turnaround": "3-5 jours ouvrables"
           }
@@ -677,6 +678,25 @@
             }
           ]
         }
+      },
+      "psTeaser": {
+        "heading": "Besoin de l'aide d'un expert pour démarrer ?",
+        "packages": {
+          "emergency": {
+            "name": "Urgence",
+            "price": "29 999 $"
+          },
+          "priority": {
+            "name": "Priorité",
+            "price": "19 999 $"
+          },
+          "standard": {
+            "name": "Standard",
+            "price": "À partir de 7 499 $"
+          }
+        },
+        "subtitle": "Services professionnels de mise en œuvre et de support disponibles pour tous les niveaux",
+        "viewDetails": "Explorez les services professionnels"
       },
       "strategy": {
         "copy": "Choisissez le plan qui correspond à votre étape opérationnelle aujourd’hui et évoluez sans changer de plate-forme demain.",
@@ -826,6 +846,37 @@
         "popular": "Le plus populaire",
         "startingAt": "*À partir de",
         "whatsIncluded": "Ce qui est inclus :"
+      }
+    },
+    "professionalServices": {
+      "cta": {
+        "button": "Planifier une consultation",
+        "description": "Planifiez une consultation pour discuter de vos besoins en infrastructure et obtenez un devis personnalisé.",
+        "heading": "Prêt à commencer ?",
+        "subtext": "La plupart des consultations sont réalisées dans les 48 heures"
+      },
+      "hero": {
+        "badge": "Disponible pour tous les niveaux d'abonnement",
+        "subtitle": "Accélérez le déploiement de votre infrastructure grâce à une mise en œuvre professionnelle, une assistance à la migration et des services d'intervention d'urgence.",
+        "title": "Aide d'experts lorsque vous en avez le plus besoin"
+      },
+      "meta": {
+        "description": "Obtenez l’aide d’un expert lorsque vous en avez le plus besoin. De la mise en œuvre standard à l’intervention d’urgence, nos services professionnels assurent votre succès.",
+        "keywords": "services professionnels, assistance à la mise en œuvre, conseil en infrastructure, intervention d'urgence, services de migration, récupération de ransomware",
+        "title": "Services professionnels | Implémentation et assistance expertes"
+      },
+      "packages": {
+        "heading": "Forfaits de services professionnels",
+        "subtitle": "Choisissez le niveau de service qui correspond à votre urgence et votre complexité"
+      },
+      "value": {
+        "description": "Les défis liés aux infrastructures nécessitent des conseils d’experts. Notre équipe de services professionnels apporte des années d'expérience pour garantir la réussite de votre déploiement, la réussite de vos migrations en toute sécurité et la résolution rapide de vos urgences.",
+        "heading": "Pourquoi les services professionnels sont importants",
+        "statistics": [
+          "Délai moyen de mise en œuvre réduit de 75 % avec un accompagnement professionnel",
+          "Équipe d'intervention d'urgence disponible dans les 2 heures pour les incidents critiques",
+          "Taux de réussite de 100 % sur les migrations guidées d'infrastructure"
+        ]
       }
     },
     "solutions": {

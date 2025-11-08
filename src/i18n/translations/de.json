@@ -573,12 +573,13 @@
             "description": "Strukturierte Implementierung, die Architektur, Bereitstellung, Validierung und Aktivierung umfasst.",
             "name": "Standard",
             "price": "Ab 7.499 $",
-            "tierHeading": "Ebenen der Implementierungspakete",
+            "tierHeading": "Workload-basierte Implementierungspreise",
+            "tierNote": "Eine Arbeitslast stellt einen bestimmten Geschäftsprozess, eine bestimmte Anwendung oder einen bestimmten Dienst dar, der einen Backup- und Disaster-Recovery-Schutz erfordert. Die Implementierung umfasst Architekturdesign, Bereitstellung, Validierung und Teamaktivierung.",
             "tiers": [
-              "Klein (5–25 Maschinen): 7.499 $",
-              "Mittel (25–100 Maschinen): 14.999 $",
-              "Groß (100–500 Maschinen): 29.999 $",
-              "Unternehmen (500+ Maschinen): Individuelles Angebot"
+              "Starter (1–4 Workloads): 7.499 $",
+              "Wachstum (5–10 Workloads): 14.999 $",
+              "Umfang (11–25 Workloads): 29.999 $",
+              "Unternehmen (25+ Workloads): Individuelles Angebot"
             ],
             "turnaround": "3-5 Werktage"
           }
@@ -677,6 +678,25 @@
             }
           ]
         }
+      },
+      "psTeaser": {
+        "heading": "Benötigen Sie Expertenhilfe für den Einstieg?",
+        "packages": {
+          "emergency": {
+            "name": "Notfall",
+            "price": "29.999 $"
+          },
+          "priority": {
+            "name": "Priorität",
+            "price": "19.999 $"
+          },
+          "standard": {
+            "name": "Standard",
+            "price": "Ab 7.499 $"
+          }
+        },
+        "subtitle": "Professionelle Implementierungs- und Supportdienste für alle Ebenen verfügbar",
+        "viewDetails": "Entdecken Sie professionelle Dienstleistungen"
       },
       "strategy": {
         "copy": "Wählen Sie heute den Plan, der zu Ihrer Betriebsphase passt, und skalieren Sie morgen, ohne die Plattform wechseln zu müssen.",
@@ -828,6 +848,37 @@
         "whatsIncluded": "Was ist enthalten:"
       }
     },
+    "professionalServices": {
+      "cta": {
+        "button": "Termin für Beratung vereinbaren",
+        "description": "Vereinbaren Sie einen Beratungstermin, um Ihre Infrastrukturanforderungen zu besprechen und ein individuelles Angebot zu erhalten.",
+        "heading": "Bereit zum Einstieg?",
+        "subtext": "Die meisten Beratungen wurden innerhalb von 48 Stunden abgeschlossen"
+      },
+      "hero": {
+        "badge": "Verfügbar für alle Abonnementstufen",
+        "subtitle": "Beschleunigen Sie die Bereitstellung Ihrer Infrastruktur mit professioneller Implementierung, Migrationsunterstützung und Notfalldiensten.",
+        "title": "Kompetente Hilfe, wenn Sie sie am meisten brauchen"
+      },
+      "meta": {
+        "description": "Holen Sie sich kompetente Hilfe, wenn Sie sie am meisten brauchen. Von der Standardimplementierung bis zur Notfallreaktion sichern unsere professionellen Dienstleistungen Ihren Erfolg.",
+        "keywords": "Professionelle Dienstleistungen, Implementierungsunterstützung, Infrastrukturberatung, Notfallmaßnahmen, Migrationsdienste, Ransomware-Wiederherstellung",
+        "title": "Professionelle Dienstleistungen | Kompetente Implementierung und Support"
+      },
+      "packages": {
+        "heading": "Professionelle Servicepakete",
+        "subtitle": "Wählen Sie den Servicelevel, der Ihrer Dringlichkeit und Komplexität entspricht"
+      },
+      "value": {
+        "description": "Infrastrukturherausforderungen erfordern fachkundige Beratung. Unser professionelles Serviceteam verfügt über jahrelange Erfahrung, um sicherzustellen, dass Ihre Bereitstellung erfolgreich ist, Ihre Migrationen sicher abgeschlossen werden und Ihre Notfälle schnell behoben werden.",
+        "heading": "Warum professionelle Dienstleistungen wichtig sind",
+        "statistics": [
+          "Durch professionelle Unterstützung wurde die durchschnittliche Implementierungszeit um 75 % verkürzt",
+          "Das Notfallteam ist bei kritischen Vorfällen innerhalb von 2 Stunden verfügbar",
+          "100 % Erfolgsquote bei geführten Infrastrukturmigrationen"
+        ]
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
@@ -972,7 +1023,7 @@
               "additionalPoints": [
                 "Derselbe Ransomware-Angriff führt zu drastisch unterschiedlichen Wiederherstellungszeiten",
                 "Herkömmliche vollständige Wiederherstellungen bedeuten tagelange Ausfallzeiten für den Ausfall von Diensten",
-                "Moderne inkrementelle Wiederherstellung innerhalb von Minuten wieder online",
+                "Moderne inkrementelle Wiederherstellung innerhalb weniger Minuten wieder online",
                 "Das Gesundheitswesen kann nicht darauf warten, dass Patienten jetzt Pflege benötigen",
                 "Jede Ausfallstunde vervielfacht den betrieblichen und finanziellen Schaden"
               ],

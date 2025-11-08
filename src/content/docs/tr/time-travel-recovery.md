@@ -10,7 +10,7 @@ language: tr
 
 **Not:** Bu, Rediacc'ın bu sorunu nasıl çözebileceğini gösteren bir **kullanım örneğidir**. Bir startup olarak bu senaryolar, tamamlanmış vaka çalışmalarından ziyade potansiyel uygulamaları temsil ediyor.
 
-**Kriz Senaryosu:** Yeni işe alınan bir çalışan, 3 hafta önce canlı veritabanındaki kritik verileri **yanlışlıkla sildi**. Şirketin yedekleme sistemi, yedeklemeleri yalnızca 2 hafta boyunca sakladı ve bu da geleneksel yöntemlerle veri kurtarmayı neredeyse imkansız hale getirdi.
+**Kriz Senaryosu:** Yeni işe alınan bir çalışan, 3 hafta önce canlı veritabanındaki kritik verileri **yanlışlıkla sildi**. Şirketin yedekleme sistemi, yedeklemeleri yalnızca 2 hafta boyunca sakladı ve geleneksel yöntemlerle veri kurtarmayı neredeyse imkansız hale getirdi.
 
 ## Sorun
 

@@ -135,7 +135,7 @@ Yerel eklentiler aracılığıyla mevcut yığınınızla entegre edin:
 
 * Platform mevcut araçların yerine geçmek yerine onları tamamlıyor 
 * Ortam provizyonu otomatik hale gelirken geliştirme iş akışınız tanıdık kalır 
-* **Kurulum haftalar değil dakikalar alır** 
+* **Kurulum haftalar değil dakikalar sürer** 
 * Her mühendis uzmanlık bilgisi gerektirmeden ortamları hazırlayabilir
 
 ## Temel Faydalar

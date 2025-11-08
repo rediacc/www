@@ -124,7 +124,7 @@ language: ja
 ./rediacc list queue --output json
 ```
 
-### キューアイテムの詳細を取得する
+### キューアイテムの詳細を取得
 
 ```bash
 ./rediacc inspect queue item-123

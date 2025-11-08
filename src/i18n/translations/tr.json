@@ -210,7 +210,7 @@
               "general": "Genel",
               "other": "Diğer",
               "partnership": "ortaklık",
-              "placeholder": "Birini seç",
+              "placeholder": "Birini seçin",
               "technical": "Teknik Soru"
             }
           }
@@ -572,13 +572,14 @@
             ],
             "description": "Mimariyi, dağıtımı, doğrulamayı ve etkinleştirmeyi kapsayan yapılandırılmış uygulama.",
             "name": "Standart",
-            "price": "7.499 $'dan başlayan fiyatlarla",
-            "tierHeading": "Uygulama paketi katmanları",
+            "price": "7.499$'dan başlayan fiyatlarla",
+            "tierHeading": "İş Yüküne Dayalı Uygulama Fiyatlandırması",
+            "tierNote": "İş yükü, yedekleme ve olağanüstü durum kurtarma koruması gerektiren ayrı bir iş sürecini, uygulamayı veya hizmeti temsil eder. Uygulama, mimari tasarımı, dağıtımı, doğrulamayı ve ekibin etkinleştirilmesini içerir.",
             "tiers": [
-              "Küçük (5-25 makine): 7.499 ABD doları",
-              "Orta (25-100 makine): 14.999 ABD doları",
-              "Büyük (100-500 makine): 29.999 ABD doları",
-              "Kurumsal (500'den fazla makine): Özel teklif"
+              "Başlangıç ​​(1-4 iş yükü): 7.499 USD",
+              "Büyüme (5-10 iş yükü): 14.999 ABD doları",
+              "Ölçek (11-25 iş yükü): 29.999 ABD doları",
+              "Kurumsal (25+ iş yükü): Özel fiyat teklifi"
             ],
             "turnaround": "3-5 İş Günü"
           }
@@ -658,7 +659,7 @@
               "emergency": "Aynı gün içinde kritik prosedürler brifingi + olay müdahale hazırlığı + tam program başlıyor",
               "id": "takım eğitimi",
               "name": "Takım Eğitimi",
-              "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde ele alınan temel iş akışları",
+              "priority": "Yoğun uygulamalı atölye çalışması + 2 gün içinde tamamlanan önemli iş akışları",
               "standard": "Kapsamlı, çok günlük eğitim programı"
             },
             {
@@ -677,6 +678,25 @@
             }
           ]
         }
+      },
+      "psTeaser": {
+        "heading": "Başlarken Uzman Yardımına mı ihtiyacınız var?",
+        "packages": {
+          "emergency": {
+            "name": "Acil durum",
+            "price": "29.999$"
+          },
+          "priority": {
+            "name": "Öncelik",
+            "price": "19.999$"
+          },
+          "standard": {
+            "name": "Standart",
+            "price": "7.499$'dan başlayan fiyatlarla"
+          }
+        },
+        "subtitle": "Tüm katmanlar için profesyonel uygulama ve destek hizmetleri mevcuttur",
+        "viewDetails": "Profesyonel Hizmetleri Keşfedin"
       },
       "strategy": {
         "copy": "Bugün operasyon aşamanıza uygun olan planı seçin ve yarın platform değiştirmeden ölçeklendirin.",
@@ -793,7 +813,7 @@
             "launchBadge": "Sınırlı Lansman Teklifi",
             "primary": "Uygulama Çağrısını Planlayın",
             "secondary": "Satış Ekibiyle İletişime Geçin",
-            "valueNote": "9.999$ kurulum kredisi dahildir"
+            "valueNote": "9.999$ kurulum kredisi içerir"
           },
           "community": {
             "note": "Kredi kartına gerek yok",
@@ -826,6 +846,37 @@
         "popular": "En popüler",
         "startingAt": "*Başlangıç ​​tarihi:",
         "whatsIncluded": "Neler dahil:"
+      }
+    },
+    "professionalServices": {
+      "cta": {
+        "button": "Planlama Danışmanlığı",
+        "description": "Altyapı ihtiyaçlarınızı tartışmak ve özel bir fiyat teklifi almak için bir danışma planlayın.",
+        "heading": "Başlamaya Hazır mısınız?",
+        "subtext": "Çoğu konsültasyon 48 saat içinde tamamlandı"
+      },
+      "hero": {
+        "badge": "Tüm abonelik katmanları için kullanılabilir",
+        "subtitle": "Profesyonel uygulama, geçiş desteği ve acil müdahale hizmetleriyle altyapı dağıtımınızı hızlandırın.",
+        "title": "En Çok İhtiyacınız Olduğunda Uzman Yardımı"
+      },
+      "meta": {
+        "description": "En çok ihtiyaç duyduğunuz anda uzman yardımı alın. Standart uygulamadan acil müdahaleye kadar profesyonel hizmetlerimiz başarınızı garanti eder.",
+        "keywords": "profesyonel hizmetler, uygulama desteği, altyapı danışmanlığı, acil müdahale, geçiş hizmetleri, fidye yazılımı kurtarma",
+        "title": "Profesyonel Hizmetler | Uzman Uygulama ve Destek"
+      },
+      "packages": {
+        "heading": "Profesyonel Hizmet Paketleri",
+        "subtitle": "Aciliyetinize ve karmaşıklığınıza uygun hizmet düzeyini seçin"
+      },
+      "value": {
+        "description": "Altyapı zorlukları uzman rehberliği gerektirir. Profesyonel hizmet ekibimiz, dağıtımınızın başarılı olmasını, geçişlerinizin güvenli bir şekilde tamamlanmasını ve acil durumlarınızın hızlı bir şekilde çözülmesini sağlamak için yılların deneyimini sunar.",
+        "heading": "Profesyonel Hizmetler Neden Önemlidir?",
+        "statistics": [
+          "Profesyonel destekle ortalama uygulama süresi %75 azaldı",
+          "Kritik olaylar için acil müdahale ekibi 2 saat içinde hazır olacaktır",
+          "Rehberli altyapı geçişlerinde %100 başarı oranı"
+        ]
       }
     },
     "solutions": {
@@ -1037,7 +1088,7 @@
         },
         "meta": {
           "description": "Satıcı bağımlılığından kurtulun. Tek bir taşınabilir dosyada eksiksiz sistem, askeri düzeyde şifreleme ve herhangi bir altyapıda sıfır yapılandırma dağıtımı.",
-          "keywords": "sistem taşınabilirliği, satıcıya bağlılık, altyapı mobilitesi, buluta geçiş, çoklu bulut, sistem şifreleme, veri güvenliği, dağıtım otomasyonu",
+          "keywords": "sistem taşınabilirliği, satıcıya bağımlılık, altyapı mobilitesi, buluta geçiş, çoklu bulut, sistem şifreleme, veri güvenliği, dağıtım otomasyonu",
           "title": "Evrensel Sistem Taşınabilirliği | Altyapınızı Her Yere Güvenle Taşıyın"
         },
         "problems": {

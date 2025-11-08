@@ -47,7 +47,7 @@ Rediacc'ın kıtalar arası kopyalama çözümünü uygulayan büyük bir İspan
 * Tüm müşteri verileri ve işlem kayıtları **3 saniyeden az gecikmeyle** senkronize edildi
 
 ### 2. **Sorunsuz Operasyonel Geçiş** 
-* İspanyol sunucularının gücü kesildiğinde trafik **otomatik olarak ABD merkezli sistemlere yönlendirildi** 
+* İspanyol sunucuları güç kaybettiğinde trafik **otomatik olarak ABD merkezli sistemlere yönlendirildi** 
 * Müşteriler, hizmetler yeniden başlatılmadan önce yalnızca 47 saniyelik kısa bir kesinti yaşadı
 
 ### 3. **Uzaktan Hizmete Devam Etme** 

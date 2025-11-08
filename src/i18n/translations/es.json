@@ -266,7 +266,7 @@
       "queueSystem": "Sistema de cola",
       "queueSystemDesc": "Comprenda cómo se gestionan y ejecutan las tareas en todas las máquinas.",
       "subtitle": "Aprenda a utilizar Rediacc y domine la ejecución de tareas distribuidas",
-      "tableOfContents": "En esta pagina",
+      "tableOfContents": "En esta página",
       "title": "Documentación",
       "welcome": "Bienvenido a la documentación de Rediacc",
       "welcomeDescription": "Rediacc es un potente sistema distribuido de ejecución de tareas. Ya sea que esté comenzando o esté buscando dominar funciones avanzadas, aquí encontrará todo lo que necesita."
@@ -573,12 +573,13 @@
             "description": "Implementación estructurada que cubre arquitectura, implementación, validación y habilitación.",
             "name": "Estándar",
             "price": "Desde $7,499",
-            "tierHeading": "Niveles del paquete de implementación",
+            "tierHeading": "Precios de implementación basados ​​en cargas de trabajo",
+            "tierNote": "Una carga de trabajo representa un proceso de negocio, aplicación o servicio distinto que requiere copia de seguridad y protección de recuperación ante desastres. La implementación incluye el diseño de la arquitectura, la implementación, la validación y la habilitación del equipo.",
             "tiers": [
-              "Pequeña (5-25 máquinas): $ 7,499",
-              "Mediano (25-100 máquinas): $14,999",
-              "Grande (100-500 máquinas): $29,999",
-              "Enterprise (más de 500 máquinas): presupuesto personalizado"
+              "Inicial (1-4 cargas de trabajo): $7,499",
+              "Crecimiento (5-10 cargas de trabajo): $14,999",
+              "Escala (11-25 cargas de trabajo): $29,999",
+              "Empresa (más de 25 cargas de trabajo): cotización personalizada"
             ],
             "turnaround": "3-5 días hábiles"
           }
@@ -594,7 +595,7 @@
               "title": "Nivel de personalización"
             },
             {
-              "description": "Un único experto frente a un equipo completo de especialistas dedicados",
+              "description": "Experto único versus equipo completo de especialistas dedicados",
               "title": "Tamaño del equipo"
             }
           ],
@@ -677,6 +678,25 @@
             }
           ]
         }
+      },
+      "psTeaser": {
+        "heading": "¿Necesita ayuda de expertos para empezar?",
+        "packages": {
+          "emergency": {
+            "name": "Emergencia",
+            "price": "$29,999"
+          },
+          "priority": {
+            "name": "Prioridad",
+            "price": "$19,999"
+          },
+          "standard": {
+            "name": "Estándar",
+            "price": "Desde $7,499"
+          }
+        },
+        "subtitle": "Servicios profesionales de implementación y soporte disponibles para todos los niveles.",
+        "viewDetails": "Explorar servicios profesionales"
       },
       "strategy": {
         "copy": "Elija el plan que se adapte a su etapa operativa actual y escale sin cambiar de plataforma mañana.",
@@ -828,6 +848,37 @@
         "whatsIncluded": "Qué incluye:"
       }
     },
+    "professionalServices": {
+      "cta": {
+        "button": "Programar consulta",
+        "description": "Programe una consulta para analizar sus necesidades de infraestructura y obtener una cotización personalizada.",
+        "heading": "¿Listo para empezar?",
+        "subtext": "La mayoría de las consultas se completan en 48 horas."
+      },
+      "hero": {
+        "badge": "Disponible para todos los niveles de suscripción",
+        "subtitle": "Acelere la implementación de su infraestructura con implementación profesional, soporte de migración y servicios de respuesta a emergencias.",
+        "title": "Ayuda experta cuando más la necesita"
+      },
+      "meta": {
+        "description": "Obtenga ayuda de expertos cuando más la necesite. Desde la implementación estándar hasta la respuesta de emergencia, nuestros servicios profesionales garantizan su éxito.",
+        "keywords": "servicios profesionales, soporte de implementación, consultoría de infraestructura, respuesta de emergencia, servicios de migración, recuperación de ransomware",
+        "title": "Servicios Profesionales | Implementación y soporte de expertos"
+      },
+      "packages": {
+        "heading": "Paquetes de servicios profesionales",
+        "subtitle": "Elija el nivel de servicio que se adapte a su urgencia y complejidad"
+      },
+      "value": {
+        "description": "Los desafíos de infraestructura requieren orientación experta. Nuestro equipo de servicios profesionales aporta años de experiencia para garantizar que su implementación sea exitosa, que sus migraciones se completen de manera segura y que sus emergencias se resuelvan rápidamente.",
+        "heading": "Por qué son importantes los servicios profesionales",
+        "statistics": [
+          "El tiempo promedio de implementación se redujo en un 75% con soporte profesional.",
+          "Equipo de respuesta a emergencias disponible en 2 horas para incidentes críticos",
+          "Tasa de éxito del 100% en migraciones de infraestructura guiadas"
+        ]
+      }
+    },
     "solutions": {
       "dataSecurity": {
         "cta": {
@@ -973,7 +1024,7 @@
                 "El mismo ataque de ransomware produce tiempos de recuperación drásticamente diferentes",
                 "Las restauraciones completas tradicionales significan días de inactividad de servicios cancelados",
                 "La recuperación incremental moderna vuelve a estar en línea en minutos",
-                "La atención médica no puede esperar los días en que los pacientes necesitan atención ahora",
+                "La atención médica no puede esperar días que las pacientes necesitan atención ahora",
                 "Cada hora de inactividad multiplica los daños operativos y financieros"
               ],
               "description": "Las copias de seguridad completas tradicionales implican restauraciones completas lentas. Las organizaciones con sistemas de recuperación modernos vuelven a estar en línea en horas. ¿Aquellos con copias de seguridad tradicionales? Días de inactividad, servicios cancelados y pérdida de ingresos.",

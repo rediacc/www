@@ -128,7 +128,7 @@ Rediacc 的临时方法通过按需配置和自动清理将基础设施成本降
 ### 无缝集成
 
 * 适用于 GitHub、GitLab、Bitbucket、Jenkins、CircleCI 和主要 CI/CD 平台的本机插件
- * 在 PR 创建或手动命令时自动触发配置
+ * 配置在 PR 创建或手动命令时自动触发
  * 使用 Terraform、Kubernetes、Docker Compose 或 CloudFormation 的基础设施即代码定义保持不变
 
 ### 补充，而不是替代
