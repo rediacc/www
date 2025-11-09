@@ -2111,8 +2111,8 @@
   },
   {
     "id": "search-211",
-    "content": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et les meilleures pratiques. Découvrez comment optimiser votre flux de travail avec Rediacc.",
-    "excerpt": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et les meilleures pratiques. Découvrez comment optimiser votre flu...",
+    "content": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et de bonnes pratiques. Découvrez comment optimiser votre flux de travail avec Rediacc.",
+    "excerpt": "La gestion des tâches sur plusieurs machines nécessite une planification minutieuse et de bonnes pratiques. Découvrez comment optimiser votre flux de...",
     "category": "Blog",
     "page": "/fr/blog/distributed-task-management-best-practices",
     "path": "blog.distributed-task-management-best-practices.content",
@@ -12931,8 +12931,8 @@
   },
   {
     "id": "search-1293",
-    "content": "キューアイテムの詳細を取得する",
-    "excerpt": "キューアイテムの詳細を取得する",
+    "content": "キューアイテムの詳細を取得",
+    "excerpt": "キューアイテムの詳細を取得",
     "category": "Documentation",
     "page": "/ja/docs/cli-reference",
     "path": "docs.cli-reference.content",
@@ -13641,8 +13641,8 @@
   },
   {
     "id": "search-1364",
-    "content": "> レガシーデータベースがあなたの足を引っ張っています。 壊すことなく自由になる",
-    "excerpt": "> レガシーデータベースがあなたの足を引っ張っています。 壊すことなく自由になる",
+    "content": "> レガシーデータベースがあなたの足を引っ張っています。 壊さずに自由に。",
+    "excerpt": "> レガシーデータベースがあなたの足を引っ張っています。 壊さずに自由に。",
     "category": "Documentation",
     "page": "/ja/docs/legacy-database-scaling",
     "path": "docs.legacy-database-scaling.content",
