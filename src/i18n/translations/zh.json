@@ -383,7 +383,7 @@
           "features": [
             "一切尽在专业+",
             "包括 9,999 美元的实施支持（启动优惠）",
-            "异地冗余存储（3 个区域）—一次故障不会阻止您",
+            "地理冗余存储（3 个区域）—一次故障不会阻止您",
             "持续数据保护——零数据丢失",
             "4 小时恢复 SLA（保证）",
             "500 个 CPU 核心 — 具有 72 小时作业窗口的企业工作负载",
@@ -401,7 +401,7 @@
           "description": "从第一天起即可投入生产的灾难恢复 — 永久免费",
           "features": [
             "无限的用户和团队——自由协作",
-            "最新快照恢复 — 在几分钟内从故障中恢复",
+            "最新快照恢复 - 在几分钟内从故障中恢复",
             "10 个 CPU 核心 — 非常适合小型工作负载",
             "10 个存储库，每个存储库 10 GB",
             "2 小时作业超时，2 个活动作业/1 个保留作业",
@@ -432,7 +432,7 @@
           "name": "企业",
           "priceNote": "*开始于"
         },
-        "pro": {
+        "professional": {
           "description": "专业级灾难恢复，无需企业级复杂性",
           "features": [
             "一切尽在社区+",
@@ -461,7 +461,7 @@
           "tiers": [
             {
               "available": [
-                "标准实施（9,999 美元）或分层套餐（小型 7,499 美元 · 中型 14,999 美元 · 大型 29,999 美元 · 企业定制）",
+                "标准实施（9,999 美元）或分层套餐（小型 7,499 美元·中型 14,999 美元·大型 29,999 美元·企业定制）",
                 "紧急响应参与（按需 29,999 美元）"
               ],
               "included": [
@@ -747,7 +747,7 @@
           },
           {
             "key": "审计窗口",
-            "label": "审核日志保留"
+            "label": "审计日志保留"
           }
         ],
         "recoveryNote": "RPO（恢复点目标）：您可以承受丢失多少数据（按时间衡量）。 例如，15 分钟 RPO 意味着您可能会丢失最多 15 分钟的最近更改。 \n\nRTO（恢复时间目标）：灾难发生后您需要多快恢复在线。 例如，4小时RTO意味着您的系统将在4小时内恢复。",
@@ -1126,7 +1126,7 @@
                 "存储成本迫使我们在历史和预算之间做出选择"
               ],
               "description": "较短的保留期可以节省存储空间，但会产生漏洞。 当您需要感染之前的数据时，它已经被覆盖了。 由于巨大的存储成本，传统系统无法承受长期保留。",
-              "story": "勒索软件的驻留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 保留期较短的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
+              "story": "勒索软件的停留时间降至不到一天。 <a href='https://www.secureworks.com/about/press/ransomware-dwell-time-hits-low-of-24-hours' target='_blank' rel='noopener noreferrer' class='itation'>[1]</a> 攻击者故意等待受感染的备份覆盖干净的备份。 保留期较短的组织会发现所有备份都包含恶意软件。 <a href='https://www.sophos.com/en-us/press/press-releases/2023/08/dwell-time-time-start-attack-when-its-detected-shrinks-8-days-first' target='_blank' rel='noopener noreferrer' class='itation'>[2]</a>"
             },
             "solution": {
               "benefits": [
@@ -1165,7 +1165,7 @@
               "description": "Rediacc 的增量架构可实现快速恢复。 仅恢复更改的内容，而不是整个系统。 让关键操作在几分钟内恢复在线，而其他操作仍在恢复中。",
               "title": "快速恢复过程"
             },
-            "subtitle": "善用五前五<small class='subtitle-attribution'>—先知穆罕默德，苏南·伊本·马贾 (Sunan Ibn Majah) (4240)</small>",
+            "subtitle": "善用五前五<small class='subtitle-attribution'>—先知穆罕默德，苏南·伊本·马贾 (4240)</small>",
             "title": "恢复时间慢"
           },
           "unverified": {
@@ -1384,7 +1384,7 @@
                 "基础设施完全受损后可以恢复",
                 "无需支付赎金，备份仍由您掌控"
               ],
-              "description": "Rediacc 在存储级别（而非管理级别）存储不可变的加密备份副本。 即使攻击者破坏了基础设施令牌或管理凭据，他们也只能读取加密数据，无法修改、删除或覆盖版本。 使用密码加密的快照对于攻击者来说仍然毫无价值。",
+              "description": "Rediacc 在存储级别（而不是管理级别）存储不可变的加密备份副本。 即使攻击者破坏了基础设施令牌或管理凭据，他们也只能读取加密数据，无法修改、删除或覆盖版本。 使用密码加密的快照对于攻击者来说仍然毫无价值。",
               "title": "不可变的备份保护"
             },
             "subtitle": "拴好你的骆驼并信任真主<small class='subtitle-attribution'>—先知穆罕默德，苏南·提尔米济 (2517)</small>",

@@ -144,7 +144,7 @@
       "author": "Rediacc",
       "defaultDescription": "Infrastrukturautomatisierungsplattform für beschleunigte Entwicklungsvorgänge. Erhalten Sie frühzeitig Zugriff auf sofortige Entwicklungsumgebungen und Disaster Recovery der nächsten Generation.",
       "defaultKeywords": "Infrastrukturautomatisierung, KI-Betrieb, Disaster Recovery, Entwicklungsumgebungen, Model Context Protocol, DevOps, CI/CD",
-      "locale": "und_USA",
+      "locale": "und_US",
       "siteName": "Rediacc",
       "twitter": {
         "creator": "@rediacc",
@@ -432,7 +432,7 @@
           "name": "Unternehmen",
           "priceNote": "*Beginnt um"
         },
-        "pro": {
+        "professional": {
           "description": "Professionelle Notfallwiederherstellung ohne Unternehmenskomplexität",
           "features": [
             "Alles in Community +",
@@ -872,7 +872,7 @@
         "subtitle": "Wählen Sie den Servicelevel, der Ihrer Dringlichkeit und Komplexität entspricht"
       },
       "value": {
-        "description": "Infrastrukturherausforderungen erfordern fachkundige Beratung. Unser professionelles Serviceteam verfügt über jahrelange Erfahrung, um sicherzustellen, dass Ihre Bereitstellung erfolgreich ist, Ihre Migrationen sicher abgeschlossen werden und Ihre Notfälle schnell behoben werden.",
+        "description": "Infrastrukturherausforderungen erfordern fachkundige Beratung. Unser professionelles Serviceteam verfügt über jahrelange Erfahrung, um sicherzustellen, dass Ihre Bereitstellung erfolgreich ist, Ihre Migrationen sicher abgeschlossen werden und Ihre Notfälle schnell gelöst werden.",
         "heading": "Warum professionelle Dienstleistungen wichtig sind",
         "statistics": [
           "Durch professionelle Unterstützung wurde die durchschnittliche Implementierungszeit um 75 % verkürzt",
@@ -1093,7 +1093,7 @@
                 "Onboarding neuer Entwickler innerhalb von Stunden statt Wochen"
               ],
               "description": "Rediacc stellt vollständige Entwicklungsumgebungen in weniger als 60 Sekunden durch automatisiertes Klonen der Infrastruktur bereit. Entwickler lösen die Umgebungserstellung direkt aus Git-Zweigen aus, ohne Tickets oder manuelle Eingriffe. Die Plattform repliziert Ihren gesamten Produktions-Stack – Anwendungen, Datenbanken, Konfigurationen, Netzwerktopologie, Abhängigkeiten – als exakte Kopien. Vergängliche Umgebungen werden automatisch bereinigt, wenn Zweigstellen zusammengelegt werden, wodurch Infrastrukturverschwendung vermieden wird. DevOps-Teams definieren einmalig Bereitstellungsregeln, dann übernehmen die Entwickler endlos die Selbstbedienung.",
-              "title": "Sofortige Bereitstellung mit Infrastruktur-Klonen"
+              "title": "Sofortige Bereitstellung mit Infrastrukturklonen"
             },
             "subtitle": "Zeit ist das, was wir am meisten wollen, aber das, was wir am schlechtesten nutzen <small class='subtitle-attribution'>– William Penn</small>",
             "title": "Der Engpass in der Entwicklungsumgebung"
@@ -1447,11 +1447,11 @@
   },
   "problem": {
     "reality": {
-      "imageAlt": "Diagramm, das die Herausforderungen herkömmlicher Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
+      "imageAlt": "Diagramm, das die Herausforderungen traditioneller Infrastruktur-Workflows veranschaulicht: frustrierte Entwickler, die auf die Bereitstellung der Umgebung warten, Stakeholder, die eine schnellere Bereitstellung fordern, und Teams, die aufgrund langsamer Sandbox-Updates auf gefährliche Produktionstests zurückgreifen",
       "title": "Die Realität: Frustrierte Teams, gefährliche Workarounds"
     },
     "solution": {
-      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Abläufe mit Model Context Protocol-Integration",
+      "imageAlt": "Lösungsdiagramm der Rediacc-Plattform: automatisierte Infrastrukturbereitstellung, sofortige produktionsähnliche Umgebungsklone, optimierte Entwickler-Workflows und KI-sichere Vorgänge mit Model Context Protocol-Integration",
       "title": "Die Lösung: Rediacc-Plattform"
     },
     "subtitle": "Wenn Produktionsumgebungen über Terabytes an Daten verfügen, Sandbox-Umgebungen jedoch nur monatlich synchronisiert werden, stehen Teams vor unmöglichen Entscheidungen, die zu gefährlichen Problemumgehungen führen.",

@@ -432,7 +432,7 @@
           "name": "مَشرُوع",
           "priceNote": "* ابتداء من"
         },
-        "pro": {
+        "professional": {
           "description": "التعافي من الكوارث بدرجة احترافية دون تعقيد المؤسسة",
           "features": [
             "كل شيء في المجتمع +",
@@ -908,7 +908,7 @@
                 "عدم وجود مسار التدقيق يعني عدم وجود دليل على ما حدث"
               ],
               "description": "تحدث عمليات ترحيل البنية التحتية على مراحل. الأنظمة القديمة المتبقية أثناء التحولات تسقط عن رادار التدقيق. عندما يسأل المدققون \"ما هو الإنتاج؟\" و\"من وصل إلى ماذا؟\"، لا يمكنك الإجابة على الأنظمة التي تم إيقاف تشغيلها. تؤدي عمليات الترحيل غير المكتملة إلى إنشاء نقاط عمياء — وهي أنظمة تحتفظ بالبيانات، وهي ضعيفة وغير خاضعة للرقابة.",
-              "story": "ورثت Oracle Health خوادم Cerner القديمة من عملية الاستحواذ في عام 2022. في يناير 2025، اخترق المهاجمون نظامًا غير مُرحّل. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citification'>[1]</a> لم يتم اكتشافه لمدة شهر، ولم يعد يخضع للمراقبة. سرقة سجلات مرضى 262,831. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> حدث الاختراق على بنية تحتية غير مدققة."
+              "story": "ورثت Oracle Health خوادم Cerner القديمة من عملية الاستحواذ في عام 2022. في يناير 2025، اخترق المهاجمون نظامًا غير مُرحَّل. <a href='https://www.hipaajournal.com/oracle-health-data-breach/' target='_blank' rel='noopener noreferrer' class='citification'>[1]</a> لم يتم اكتشافه لمدة شهر، ولم يعد يخضع للمراقبة. سرقة سجلات مرضى 262,831. <a href='https://www.bleepingcomputer.com/news/security/oracle-health-breach-compromises-patient-data-at-us-hospitals/' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> حدث الاختراق على بنية تحتية غير مدققة."
             },
             "solution": {
               "benefits": [

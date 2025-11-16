@@ -268,7 +268,7 @@
       "queueSystem": "Sistema de cola",
       "queueSystemDesc": "Comprenda cómo se gestionan y ejecutan las tareas en todas las máquinas.",
       "subtitle": "Aprenda a utilizar Rediacc y domine la ejecución de tareas distribuidas",
-      "tableOfContents": "En esta pagina",
+      "tableOfContents": "En esta página",
       "title": "Documentación",
       "welcome": "Bienvenido a la documentación de Rediacc",
       "welcomeDescription": "Rediacc es un potente sistema distribuido de ejecución de tareas. Ya sea que esté comenzando o esté buscando dominar funciones avanzadas, aquí encontrará todo lo que necesita."
@@ -432,7 +432,7 @@
           "name": "Empresa",
           "priceNote": "*A partir de"
         },
-        "pro": {
+        "professional": {
           "description": "Recuperación ante desastres de nivel profesional sin complejidad empresarial",
           "features": [
             "Todo en Comunidad +",
@@ -757,7 +757,7 @@
             "auditLogs": "90 dias",
             "cpuCore": "500 núcleos",
             "jobTimeout": "72 horas",
-            "repoSize": "500 GB",
+            "repoSize": "500GB",
             "repositories": "Ilimitada",
             "reservedJobs": "3 reservados",
             "rpo": "~ 5 minutos (continua)",
@@ -768,7 +768,7 @@
             "auditLogs": "7 dias",
             "cpuCore": "10 núcleos",
             "jobTimeout": "2 horas",
-            "repoSize": "10GB",
+            "repoSize": "10 GB",
             "repositories": "10 repositorios",
             "reservedJobs": "1 reservado",
             "rpo": "Mejor esfuerzo",
@@ -933,7 +933,7 @@
                 "La desactivación temporal de la seguridad puede volverse permanente si se olvida",
                 "Las ventanas de migración crean oportunidades que los atacantes aprovechan activamente hoy"
               ],
-              "description": "Las migraciones de infraestructura requieren una relajación temporal de la seguridad. Los contratistas desactivan los cortafuegos para \"acelerar el proceso\". Cifrado omitido para mejorar el rendimiento. Las ventanas temporales se convierten en vectores de ataque permanentes. Los datos protegidos quedan expuestos durante horas o días. Los atacantes atacan las ventanas de migración cuando los controles de seguridad se debilitan.",
+              "description": "Las migraciones de infraestructura requieren una relajación temporal de la seguridad. Los contratistas desactivan los cortafuegos para \"acelerar el proceso\". Se omitió el cifrado para mejorar el rendimiento. Las ventanas temporales se convierten en vectores de ataque permanentes. Los datos protegidos quedan expuestos durante horas o días. Los atacantes atacan las ventanas de migración cuando los controles de seguridad se debilitan.",
               "story": "Keepnet Labs contrató a un contratista para migrar su base de datos en marzo de 2020. El contratista desactivó el firewall durante 10 minutos. <a href='https://www.verdict.co.uk/keepnet-labs-data-breach/' target='_blank' rel='noopener noreferrer' class='citation'>[1]</a> 5 mil millones de registros indexados. Base de datos expuesta las 24 horas. <a href='https://securityaffairs.com/100198/data-breach/uk-security-firm-data-leak.html' target='_blank' rel='noopener noreferrer' class='citation'>[2]</a> La migración de una empresa de ciberseguridad expuso miles de millones."
             },
             "solution": {
@@ -1041,7 +1041,7 @@
                 "Elimine más de 30 minutos diarios por problema del entorno de depuración del desarrollador"
               ],
               "description": "Rediacc elimina la deriva clonando la infraestructura de producción en un momento dado, capturando versiones exactas de las aplicaciones, esquemas de bases de datos, archivos de configuración y variables de entorno. Cada clon garantiza la paridad de producción porque ES producción: se replica atómicamente. Las actualizaciones se propagan automáticamente cuando cambia la producción, manteniendo todos los entornos sincronizados. Los desarrolladores trabajan en contenedores o máquinas virtuales que reflejan la producción con precisión, lo que hace que \"funcionó localmente\" sea sinónimo de \"funcionará en producción\".",
-              "title": "Paridad de producción garantizada mediante clonación en un momento dado"
+              "title": "Paridad de producción garantizada mediante clonación en un momento determinado"
             },
             "subtitle": "Más vale prevenir que curar <small class='subtitle-attribution'>—Benjamin Franklin</small>",
             "title": "El problema de la paridad de producción"
@@ -1056,7 +1056,7 @@
                 "Las batallas por el presupuesto de infraestructura dañan la moral y la velocidad del equipo"
               ],
               "description": "La infraestructura de desarrollo tradicional requiere entornos de preparación, control de calidad y desarrollo siempre activos que consuman recursos de la nube las 24 horas del día, los 7 días de la semana. Multiplique los entornos entre los equipos y los costos se dispararán. Un equipo de 30 desarrolladores que mantiene configuraciones estándar de desarrollo, preparación y control de calidad gasta fácilmente entre 50.000 y 100.000 dólares mensuales en una infraestructura inactiva. Los costos de almacenamiento se ven agravados por el hecho de que las copias completas de bases de datos consumen terabytes innecesariamente. Las finanzas presionan a la ingeniería para que reduzca el gasto en infraestructura sin comprender el impacto de la velocidad.",
-              "story": "Una empresa de comercio electrónico con 50 desarrolladores revisó su factura de AWS: 180.000 dólares mensuales para infraestructura de desarrollo. El análisis mostró que el 78% de los entornos permanecían inactivos después del horario comercial y los fines de semana. Cada entorno ejecutó copias completas de bases de datos: 30 TB de almacenamiento total para datos que podrían caber en 3 TB con deduplicación. Tenían 15 entornos de puesta en escena permanentes, pero sólo 3 o 4 se utilizaban activamente en cualquier momento. El desperdicio: 140.000 dólares mensuales en infraestructura inactiva que los desarrolladores olvidaron cerrar."
+              "story": "Una empresa de comercio electrónico con 50 desarrolladores revisó su factura de AWS: 180.000 dólares mensuales para infraestructura de desarrollo. El análisis mostró que el 78% de los entornos permanecían inactivos después del horario laboral y los fines de semana. Cada entorno ejecutó copias completas de bases de datos: 30 TB de almacenamiento total para datos que podrían caber en 3 TB con deduplicación. Tenían 15 entornos de puesta en escena permanentes, pero sólo 3 o 4 se utilizaban activamente en cualquier momento. El desperdicio: 140.000 dólares mensuales en infraestructura inactiva que los desarrolladores olvidaron cerrar."
             },
             "solution": {
               "benefits": [
