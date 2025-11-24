@@ -136,8 +136,8 @@ const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
     <!-- Preload critical resources -->
     <link rel="preload" href="/styles/main.css" as="style">
     <link rel="preload" href="/styles/responsive.css" as="style">
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="//plausible.rediacc.com">
+    <link rel="preconnect" href="https://plausible.rediacc.com" crossorigin>
 
     <!-- Structured Data -->
     <StructuredData type={structuredDataType} data={structuredData} />
@@ -178,13 +178,11 @@ const pathWithoutLang = getPathWithoutLanguage(Astro.url.pathname);
     <!-- Custom head content from pages -->
     <slot name="head" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLFCSWPL71"></script>
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.rediacc.com/js/pa-QD2nMPajNQtoHBoHdMBpP.js"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-NLFCSWPL71');
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
     </script>
 
     <!-- Critical CSS loaded first -->
