@@ -117,7 +117,7 @@ const Navigation: React.FC<NavigationProps> = ({ origin }) => {
               navigationMode="button"
               ariaLabel={t('navigation.selectLanguage')}
             />
-            <a href={consoleUrl} className="login-btn">{t('navigation.login')}</a>
+            <a href={consoleUrl} className="login-btn" target="_blank" rel="noopener noreferrer">{t('navigation.login')}</a>
           </div>
         </div>
       </nav>

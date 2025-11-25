@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = ({ lang = 'en', origin }) => {
                 <span className="badge-icon">✓</span>
                 <span>{t('hero.cta.freeBadge')}</span>
               </div>
-              <a href={consoleUrl} className="btn btn-primary">{t('hero.cta.contactUs')}</a>
+              <a href={consoleUrl} className="btn btn-primary" target="_blank" rel="noopener noreferrer">{t('hero.cta.contactUs')}</a>
               <p className="hero-cta-note">
                 {t('hero.cta.benefits')}
                 <br />
