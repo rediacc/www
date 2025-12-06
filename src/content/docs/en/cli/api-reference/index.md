@@ -29,8 +29,8 @@ Company management commands.
 ### [Create](./create)
 Create new resources in the system.
 
-### [Distributed Storage](./distributed-storage)
-Manage distributed storage clusters and pools.
+### [Ceph](./ceph)
+Manage Ceph clusters and pools.
 
 ### [Inspect](./inspect)
 Inspect resources and their details.

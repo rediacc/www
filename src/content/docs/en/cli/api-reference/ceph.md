@@ -1,13 +1,13 @@
 ---
-title: "Distributed Storage"
-description: "Manage distributed storage clusters and pools."
+title: "Ceph"
+description: "Manage Ceph clusters and pools."
 category: "CLI API Reference"
 language: "en"
 ---
 
-# Distributed Storage
+# Ceph
 
-Manage distributed storage clusters and pools.
+Manage Ceph clusters and pools.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ Manage distributed storage clusters and pools.
 
 ## create-cluster
 
-Create a distributed storage cluster
+Create a Ceph cluster
 
 #### API Information
 
@@ -43,7 +43,7 @@ Create a distributed storage cluster
 
 #### Details
 
-Creates a cluster configuration for distributed storage across multiple machines. Enables redundant storage with automatic replication and failover.
+Creates a cluster configuration for Ceph across multiple machines. Enables redundant storage with automatic replication and failover.
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Creates a cluster configuration for distributed storage across multiple machines
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage create-cluster
+rediacc ceph create-cluster
 ```
 
 ##### Auto-Generated cURL Examples
@@ -92,7 +92,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateDistributedStora
 
 #### Success Message
 
-`Successfully created distributed storage cluster: {name} for team {team}`
+`Successfully created Ceph cluster: {name} for team {team}`
 
 ## create-distributed-storage-pool
 
@@ -119,7 +119,7 @@ create-distributed-storage-pool command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage create-distributed-storage-pool
+rediacc ceph create-distributed-storage-pool
 ```
 
 ##### Auto-Generated cURL Examples
@@ -167,7 +167,7 @@ create-distributed-storage-rbd-clone command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage create-distributed-storage-rbd-clone
+rediacc ceph create-distributed-storage-rbd-clone
 ```
 
 ##### Auto-Generated cURL Examples
@@ -214,7 +214,7 @@ create-distributed-storage-rbd-image command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage create-distributed-storage-rbd-image
+rediacc ceph create-distributed-storage-rbd-image
 ```
 
 ##### Auto-Generated cURL Examples
@@ -261,7 +261,7 @@ create-distributed-storage-rbd-snapshot command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage create-distributed-storage-rbd-snapshot
+rediacc ceph create-distributed-storage-rbd-snapshot
 ```
 
 ##### Auto-Generated cURL Examples
@@ -284,7 +284,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateDistributedStora
 
 ## delete-cluster
 
-Delete a distributed storage cluster
+Delete a Ceph cluster
 
 #### API Information
 
@@ -294,7 +294,7 @@ Delete a distributed storage cluster
 
 #### Details
 
-Permanently removes a distributed storage cluster configuration. Does not delete data on machines, only the cluster configuration.
+Permanently removes a Ceph cluster configuration. Does not delete data on machines, only the cluster configuration.
 
 #### Parameters
 
@@ -310,7 +310,7 @@ Permanently removes a distributed storage cluster configuration. Does not delete
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage delete-cluster
+rediacc ceph delete-cluster
 ```
 
 ##### Auto-Generated cURL Examples
@@ -335,17 +335,17 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/DeleteDistributedStora
 - Cannot delete cluster with machines still attached
 - Deletion removes cluster configuration and credentials
 - Associated vault data is automatically cleaned up
-- Machine distributed storage flags remain unchanged
+- Machine Ceph flags remain unchanged
 - Operation is permanent and cannot be undone
 - Deletion is logged in audit trail for compliance
 
 #### Success Message
 
-`Successfully deleted distributed storage cluster: {name}`
+`Successfully deleted Ceph cluster: {name}`
 
 #### Confirmation Required
 
-This operation requires confirmation: `Are you sure you want to delete distributed storage cluster '{name}' from team '{team}'?`
+This operation requires confirmation: `Are you sure you want to delete Ceph cluster '{name}' from team '{team}'?`
 
 ## delete-distributed-storage-pool
 
@@ -371,7 +371,7 @@ delete-distributed-storage-pool command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage delete-distributed-storage-pool
+rediacc ceph delete-distributed-storage-pool
 ```
 
 ##### Auto-Generated cURL Examples
@@ -418,7 +418,7 @@ delete-distributed-storage-rbd-clone command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage delete-distributed-storage-rbd-clone
+rediacc ceph delete-distributed-storage-rbd-clone
 ```
 
 ##### Auto-Generated cURL Examples
@@ -464,7 +464,7 @@ delete-distributed-storage-rbd-image command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage delete-distributed-storage-rbd-image
+rediacc ceph delete-distributed-storage-rbd-image
 ```
 
 ##### Auto-Generated cURL Examples
@@ -511,7 +511,7 @@ delete-distributed-storage-rbd-snapshot command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage delete-distributed-storage-rbd-snapshot
+rediacc ceph delete-distributed-storage-rbd-snapshot
 ```
 
 ##### Auto-Generated cURL Examples
@@ -555,7 +555,7 @@ list-distributed-storage-cluster-machines command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage list-distributed-storage-cluster-machines
+rediacc ceph list-distributed-storage-cluster-machines
 ```
 
 ##### Auto-Generated cURL Examples
@@ -595,7 +595,7 @@ No parameters required.
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage list-distributed-storage-clusters
+rediacc ceph list-distributed-storage-clusters
 ```
 
 ##### Auto-Generated cURL Examples
@@ -636,7 +636,7 @@ list-distributed-storage-pools command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage list-distributed-storage-pools
+rediacc ceph list-distributed-storage-pools
 ```
 
 ##### Auto-Generated cURL Examples
@@ -682,7 +682,7 @@ list-distributed-storage-rbd-clones command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage list-distributed-storage-rbd-clones
+rediacc ceph list-distributed-storage-rbd-clones
 ```
 
 ##### Auto-Generated cURL Examples
@@ -727,7 +727,7 @@ list-distributed-storage-rbd-images command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage list-distributed-storage-rbd-images
+rediacc ceph list-distributed-storage-rbd-images
 ```
 
 ##### Auto-Generated cURL Examples
@@ -772,7 +772,7 @@ list-distributed-storage-rbd-snapshots command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage list-distributed-storage-rbd-snapshots
+rediacc ceph list-distributed-storage-rbd-snapshots
 ```
 
 ##### Auto-Generated cURL Examples
@@ -818,7 +818,7 @@ update-distributed-storage-pool-vault command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage update-distributed-storage-pool-vault
+rediacc ceph update-distributed-storage-pool-vault
 ```
 
 ##### Auto-Generated cURL Examples
@@ -864,7 +864,7 @@ update-machine-distributed-storage command
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage update-machine-distributed-storage
+rediacc ceph update-machine-distributed-storage
 ```
 
 ##### Auto-Generated cURL Examples
@@ -897,7 +897,7 @@ Update cluster configuration vault
 
 #### Details
 
-Updates the encrypted configuration for a distributed storage cluster including replication settings, storage policies, and performance parameters.
+Updates the encrypted configuration for a Ceph cluster including replication settings, storage policies, and performance parameters.
 
 #### Parameters
 
@@ -916,7 +916,7 @@ Updates the encrypted configuration for a distributed storage cluster including 
 
 ```bash
 # Basic usage (required parameters only)
-rediacc distributed-storage update-vault --cluster <value>
+rediacc ceph update-vault --cluster <value>
 ```
 
 ##### Auto-Generated cURL Examples
@@ -948,5 +948,5 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateDistributedStora
 
 #### Success Message
 
-`Successfully updated distributed storage cluster vault: {cluster}`
+`Successfully updated Ceph cluster vault: {cluster}`
 

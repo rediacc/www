@@ -748,7 +748,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyDashboardJso
 
 #### Notes
 
-Plans: COMMUNITY (free), PRO, BUSINESS, ENTERPRISE. Higher tiers offer more resources, priority levels, and features like schedules and distributed storage.
+Plans: COMMUNITY (free), PRO, BUSINESS, ENTERPRISE. Higher tiers offer more resources, priority levels, and features like schedules and Ceph.
 
 #### Business Rules
 
