@@ -35,7 +35,7 @@
         "title": "尝试："
       }
     },
-    "siteName": "雷迪亚克",
+    "siteName": "Rediacc",
     "skipNavigation": {
       "skipToFooter": "跳至页脚",
       "skipToMainContent": "跳至主要内容",
@@ -102,10 +102,10 @@
     },
     "companyLinks": {
       "aboutUs": "关于我们",
-      "contact": "接触",
+      "contact": "联系我们",
       "team": "团队"
     },
-    "copyright": "{{year}} 雷迪亚克。 版权所有。",
+    "copyright": "{{year}} Rediacc. 版权所有。",
     "legalLinks": {
       "privacyPolicy": "隐私政策",
       "termsOfUse": "使用条款"
@@ -129,7 +129,7 @@
   "hero": {
     "cta": {
       "benefits": "10 个 CPU 核心 • 无限团队 • 0 美元",
-      "bookDemo": "书籍演示",
+      "bookDemo": "预约演示",
       "contactUs": "免费开始",
       "freeBadge": "永久免费 • 无需信用卡",
       "learnMore": "了解更多",
@@ -141,22 +141,22 @@
   },
   "layout": {
     "meta": {
-      "author": "雷迪亚克",
+      "author": "Rediacc",
       "defaultDescription": "基础设施自动化平台专为加速开发运营而设计。 尽早访问即时开发环境和下一代灾难恢复。",
       "defaultKeywords": "基础设施自动化、AI 运营、灾难恢复、开发环境、模型上下文协议、DevOps、CI/CD",
-      "locale": "和_美国",
-      "siteName": "雷迪亚克",
+      "locale": "zh_CN",
+      "siteName": "Rediacc",
       "twitter": {
-        "creator": "@雷迪亚克",
-        "site": "@雷迪亚克"
+        "creator": "@rediacc",
+        "site": "@rediacc"
       }
     }
   },
   "navigation": {
     "blog": "博客",
-    "contact": "接触",
+    "contact": "联系我们",
     "docs": "文档",
-    "home": "家",
+    "home": "首页",
     "login": "登录",
     "search": "搜索",
     "selectLanguage": "选择语言",
@@ -173,7 +173,7 @@
     "blog": {
       "allArticles": "所有文章",
       "backToBlog": "返回博客",
-      "byAuthor": "作者：{{作者}}",
+      "byAuthor": "作者：{{author}}",
       "category": "类别",
       "featured": "专题文章",
       "meta": {
@@ -191,7 +191,7 @@
     "contact": {
       "breadcrumb": {
         "contact": "申请",
-        "home": "家"
+        "home": "首页"
       },
       "form": {
         "fields": {
@@ -245,7 +245,7 @@
       "meta": {
         "description": "名额有限。",
         "keywords": "Rediacc 早期访问、灾难恢复平台、经过验证的备份",
-        "title": "申请 | 雷迪亚克"
+        "title": "申请 | Rediacc"
       },
       "notice": {
         "description": "单击提交以打开您的电子邮件。 问题？ 电子邮件",
@@ -259,7 +259,7 @@
       "cliReference": "CLI 参考",
       "cliReferenceDesc": "所有命令行界面命令和选项的完整参考。",
       "gettingStarted": "入门",
-      "gettingStartedDesc": "雷迪亚克新手？ 从基础开始并学习基本概念。",
+      "gettingStartedDesc": "Rediacc新手？ 从基础开始并学习基本概念。",
       "meta": {
         "description": "通过我们全面的文档、指南和 API 参考来了解如何使用 Rediacc 来执行分布式任务。",
         "keywords": "文档、API 参考、指南、基础设施自动化、CLI 参考、队列系统",
@@ -275,7 +275,7 @@
     },
     "home": {
       "imageModal": {
-        "indicator": "{{当前}} / {{总计}}"
+        "indicator": "{{current}} / {{total}}"
       },
       "meta": {
         "description": "利用 Rediacc 的基础设施自动化实现开发转型。 获得即时环境、灾难恢复和人工智能安全操作。",
@@ -289,7 +289,7 @@
         "homepage": "前往主页"
       },
       "breadcrumb": {
-        "home": "家",
+        "home": "首页",
         "notFound": "404 - 找不到页面"
       },
       "description": "抱歉，您要查找的页面不存在或已被移动。 如果您点击过时的链接或输入了错误的 URL，则可能会发生这种情况。",
@@ -301,7 +301,7 @@
       "meta": {
         "description": "无法找到您要查找的页面。 浏览我们的基础设施自动化平台或联系我们寻求帮助。",
         "keywords": "404、未找到页面、基础设施自动化、Rediacc",
-        "title": "404 - 页面未找到 | 雷迪亚克"
+        "title": "404 - 页面未找到 | Rediacc"
       },
       "suggestions": {
         "items": [
@@ -991,7 +991,7 @@
         "meta": {
           "description": "在 60 秒内克隆完整的生产基础设施（应用程序、数据库、配置）。 停止等待开发环境。 按需提供与生产环境相同的环境。",
           "keywords": "临时环境、开发环境配置、即时开发环境、按需环境、预览环境、git-native 环境、生产克隆",
-          "title": "几秒钟内启动的开发环境 | 雷迪亚克"
+          "title": "几秒钟内启动的开发环境 | Rediacc"
         },
         "problems": {
           "cicdComplexity": {
@@ -1427,7 +1427,7 @@
           "paragraph1": "这一切都始于开发可移植文件系统逻辑。 从那里，我集成了一个备份模块。 接下来是最关键的挑战之一：无论数据大小如何，都能以最短的停机时间实现实时系统传输。 我根据实际需要添加了独特的功能。",
           "paragraph2": "Rediacc 就是这样诞生的——一款经过最严峻挑战打造的产品。 现在，每个人都可以使用它。 使用它，不要让任何事情阻碍您的业务 - 准备好生存和加速。",
           "quote": "当我无法访问我的基础设施时，我知道我必须构建什么：一个使灾难不可能发生的系统。",
-          "title": "雷迪亚克的诞生"
+          "title": "Rediacc的诞生"
         },
         "title": "我们的故事",
         "turningPoint": {

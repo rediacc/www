@@ -11,7 +11,7 @@
       "zoomOut": "alejar"
     },
     "buttons": {
-      "close": "Cerca",
+      "close": "Cerrar",
       "contactSupport": "Contactar con soporte",
       "goToHomepage": "Ir a la página de inicio",
       "learnMore": "Más información",
@@ -87,7 +87,7 @@
     },
     "notice": {
       "description": "Haga clic en enviar para abrir su correo electrónico. Responderemos dentro de las 48 horas.",
-      "emailLabel": "contacto@rediacc.com",
+      "emailLabel": "contact@rediacc.com",
       "title": "Cómo enviar"
     },
     "subtitle": "Sea uno de los primeros en no volver a perder datos.",
@@ -101,11 +101,11 @@
       "support": "Apoyo"
     },
     "companyLinks": {
-      "aboutUs": "Sobre nosotras",
+      "aboutUs": "Sobre nosotros",
       "contact": "Contacto",
       "team": "Equipo"
     },
-    "copyright": "{{año}} Rediacc. Reservados todos los derechos.",
+    "copyright": "{{year}} Rediacc. Reservados todos los derechos.",
     "legalLinks": {
       "privacyPolicy": "política de privacidad",
       "termsOfUse": "Condiciones de uso"
@@ -129,13 +129,13 @@
   "hero": {
     "cta": {
       "benefits": "10 núcleos de CPU • Equipos ilimitados • $0",
-      "bookDemo": "Reservar demostración",
+      "bookDemo": "Reservar demo",
       "contactUs": "Comience gratis",
       "freeBadge": "GRATIS PARA SIEMPRE • Sin tarjeta de crédito",
       "learnMore": "Más información",
       "seeDetails": "Ver todos los detalles"
     },
-    "subtitle": "Sobrevive a las interrupciones en la nube. Implemente en cualquier lugar. Falla rápidamente.",
+    "subtitle": "Sobrevive a las interrupciones en la nube. Implemente en cualquier lugar. Conmutación por error rápida.",
     "title": "Infraestructura que",
     "titleHighlight": "Sobrevive. Cada vez."
   },
@@ -144,7 +144,7 @@
       "author": "rediacc",
       "defaultDescription": "Plataforma de automatización de infraestructura diseñada para operaciones de desarrollo aceleradas. Obtenga acceso temprano a entornos de desarrollo instantáneo y recuperación ante desastres de próxima generación.",
       "defaultKeywords": "automatización de infraestructura, operaciones de IA, recuperación ante desastres, entornos de desarrollo, protocolo de contexto modelo, DevOps, CI/CD",
-      "locale": "y_US",
+      "locale": "es_ES",
       "siteName": "rediacc",
       "twitter": {
         "creator": "@rediacc",
@@ -156,7 +156,7 @@
     "blog": "Blog",
     "contact": "Contacto",
     "docs": "Documentos",
-    "home": "Hogar",
+    "home": "Inicio",
     "login": "Acceso",
     "search": "Buscar",
     "selectLanguage": "Seleccionar idioma",
@@ -173,7 +173,7 @@
     "blog": {
       "allArticles": "Todos los artículos",
       "backToBlog": "Volver al blog",
-      "byAuthor": "Por {{autor}}",
+      "byAuthor": "Por {{author}}",
       "category": "Categoría",
       "featured": "Artículos destacados",
       "meta": {
@@ -191,7 +191,7 @@
     "contact": {
       "breadcrumb": {
         "contact": "Aplicar",
-        "home": "Hogar"
+        "home": "Inicio"
       },
       "form": {
         "fields": {
@@ -232,7 +232,7 @@
             "title": "Acceso temprano"
           },
           "general": {
-            "email": "contacto@rediacc.com",
+            "email": "contact@rediacc.com",
             "title": "¿Preguntas?"
           },
           "technicalSupport": {
@@ -249,7 +249,7 @@
       },
       "notice": {
         "description": "Haga clic en enviar para abrir su correo electrónico. ¿Preguntas? Correo electrónico",
-        "emailLabel": "contacto@rediacc.com",
+        "emailLabel": "contact@rediacc.com",
         "title": "Cómo enviar"
       }
     },
@@ -289,7 +289,7 @@
         "homepage": "Ir a la página de inicio"
       },
       "breadcrumb": {
-        "home": "Hogar",
+        "home": "Inicio",
         "notFound": "404 - Página no encontrada"
       },
       "description": "Lo sentimos, la página que estás buscando no existe o ha sido movida. Esto puede suceder si siguió un enlace desactualizado o escribió la URL incorrectamente.",
@@ -1474,7 +1474,7 @@
           "Bloqueo cero del proveedor",
           "Listo para conmutación por error probado"
         ],
-        "description": "La nube única es peligrosa. Implemente en cualquier lugar. Falla rápidamente.",
+        "description": "La nube única es peligrosa. Implemente en cualquier lugar. Conmutación por error rápida.",
         "title": "Multinube siempre"
       },
       {

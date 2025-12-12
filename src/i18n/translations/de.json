@@ -14,9 +14,9 @@
       "close": "Schließen",
       "contactSupport": "Kontaktieren Sie den Support",
       "goToHomepage": "Gehen Sie zur Startseite",
-      "learnMore": "Erfahren Sie mehr",
-      "requestEarlyAccess": "Anwenden",
-      "sendMessage": "Anwenden"
+      "learnMore": "Mehr erfahren",
+      "requestEarlyAccess": "Bewerben",
+      "sendMessage": "Nachricht senden"
     },
     "logoAlt": "Rediacc – Infrastrukturautomatisierungsplattform",
     "search": {
@@ -129,10 +129,10 @@
   "hero": {
     "cta": {
       "benefits": "10 CPU-Kerne • Unbegrenzte Teams • 0 $",
-      "bookDemo": "Buchdemo",
+      "bookDemo": "Demo buchen",
       "contactUs": "Kostenlos starten",
       "freeBadge": "FÜR IMMER KOSTENLOS • Keine Kreditkarte",
-      "learnMore": "Erfahren Sie mehr",
+      "learnMore": "Mehr erfahren",
       "seeDetails": "Sehen Sie sich alle Details an"
     },
     "subtitle": "Überstehen Sie Cloud-Ausfälle. Überall einsetzbar. Schnelles Failover.",
@@ -144,7 +144,7 @@
       "author": "Rediacc",
       "defaultDescription": "Infrastrukturautomatisierungsplattform für beschleunigte Entwicklungsvorgänge. Erhalten Sie frühzeitig Zugriff auf sofortige Entwicklungsumgebungen und Disaster Recovery der nächsten Generation.",
       "defaultKeywords": "Infrastrukturautomatisierung, KI-Betrieb, Disaster Recovery, Entwicklungsumgebungen, Model Context Protocol, DevOps, CI/CD",
-      "locale": "und_US",
+      "locale": "de_DE",
       "siteName": "Rediacc",
       "twitter": {
         "creator": "@rediacc",
@@ -156,7 +156,7 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "docs": "Dokumente",
-    "home": "Heim",
+    "home": "Startseite",
     "login": "Einloggen",
     "search": "Suchen",
     "selectLanguage": "Sprache auswählen",
@@ -190,8 +190,8 @@
     },
     "contact": {
       "breadcrumb": {
-        "contact": "Anwenden",
-        "home": "Heim"
+        "contact": "Kontakt",
+        "home": "Startseite"
       },
       "form": {
         "fields": {
@@ -289,7 +289,7 @@
         "homepage": "Gehen Sie zur Startseite"
       },
       "breadcrumb": {
-        "home": "Heim",
+        "home": "Startseite",
         "notFound": "404 – Seite nicht gefunden"
       },
       "description": "Leider existiert die gesuchte Seite nicht oder wurde verschoben. Dies kann passieren, wenn Sie einem veralteten Link gefolgt sind oder die URL falsch eingegeben haben.",
@@ -842,7 +842,7 @@
           "noContracts": "Keine langfristigen Verträge"
         },
         "keyBenefits": "Hauptvorteile",
-        "learnMore": "Erfahren Sie mehr",
+        "learnMore": "Mehr erfahren",
         "limitedOffer": "Begrenztes Einführungsangebot",
         "monthOrYear": "pro Monat oder {{price}} pro Jahr",
         "popular": "Am beliebtesten",
@@ -1397,7 +1397,7 @@
       "cta": {
         "buttons": {
           "contact": "Nehmen Sie Kontakt auf",
-          "learnMore": "Erfahren Sie mehr"
+          "learnMore": "Mehr erfahren"
         },
         "subtitle": "Ob als Kunde, Partner oder Teammitglied – seien Sie Teil der Infrastrukturrevolution.",
         "title": "Begleiten Sie uns auf unserer Mission"

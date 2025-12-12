@@ -11,7 +11,7 @@
       "zoomOut": "ズームアウト"
     },
     "buttons": {
-      "close": "近い",
+      "close": "閉じる",
       "contactSupport": "サポートに連絡する",
       "goToHomepage": "ホームページへ行く",
       "learnMore": "もっと詳しく知る",
@@ -35,7 +35,7 @@
         "title": "試す："
       }
     },
-    "siteName": "レディアク",
+    "siteName": "Rediacc",
     "skipNavigation": {
       "skipToFooter": "フッターにスキップ",
       "skipToMainContent": "メインコンテンツにスキップ",
@@ -75,7 +75,7 @@
           "label": "主な関心事",
           "options": {
             "aiSafeOperations": "サイバーセキュリティ",
-            "developmentAcceleration": "発達",
+            "developmentAcceleration": "開発",
             "disasterRecovery": "災害復旧",
             "multiple": "複数",
             "other": "他の",
@@ -102,10 +102,10 @@
     },
     "companyLinks": {
       "aboutUs": "私たちについて",
-      "contact": "接触",
+      "contact": "お問い合わせ",
       "team": "チーム"
     },
-    "copyright": "{{年}} レディアック。 無断転載を禁じます。",
+    "copyright": "{{year}} Rediacc。 無断転載を禁じます。",
     "legalLinks": {
       "privacyPolicy": "プライバシーポリシー",
       "termsOfUse": "利用規約"
@@ -141,11 +141,11 @@
   },
   "layout": {
     "meta": {
-      "author": "レディアク",
+      "author": "Rediacc",
       "defaultDescription": "開発運用を加速するために設計されたインフラストラクチャ自動化プラットフォーム。 インスタント開発環境と次世代の災害復旧に早期にアクセスできます。",
       "defaultKeywords": "インフラストラクチャの自動化、AI 運用、災害復旧、開発環境、モデル コンテキスト プロトコル、DevOps、CI/CD",
-      "locale": "and_US",
-      "siteName": "レディアク",
+      "locale": "ja_JP",
+      "siteName": "Rediacc",
       "twitter": {
         "creator": "@rediacc",
         "site": "@rediacc"
@@ -154,9 +154,9 @@
   },
   "navigation": {
     "blog": "ブログ",
-    "contact": "接触",
+    "contact": "お問い合わせ",
     "docs": "ドキュメント",
-    "home": "家",
+    "home": "ホーム",
     "login": "ログイン",
     "search": "検索",
     "selectLanguage": "言語を選択してください",
@@ -173,7 +173,7 @@
     "blog": {
       "allArticles": "すべての記事",
       "backToBlog": "ブログに戻る",
-      "byAuthor": "投稿者: {{著者}}",
+      "byAuthor": "投稿者: {{author}}",
       "category": "カテゴリ",
       "featured": "注目の記事",
       "meta": {
@@ -191,7 +191,7 @@
     "contact": {
       "breadcrumb": {
         "contact": "適用する",
-        "home": "家"
+        "home": "ホーム"
       },
       "form": {
         "fields": {
@@ -245,7 +245,7 @@
       "meta": {
         "description": "利用できるスポットは限られています。",
         "keywords": "Rediacc 早期アクセス、災害復旧プラットフォーム、検証済みバックアップ",
-        "title": "申し込む | レディアク"
+        "title": "申し込む | Rediacc"
       },
       "notice": {
         "description": "「送信」をクリックして電子メールを開きます。 質問がありますか? 電子メール",
@@ -275,7 +275,7 @@
     },
     "home": {
       "imageModal": {
-        "indicator": "{{現在}} / {{合計}}"
+        "indicator": "{{current}} / {{total}}"
       },
       "meta": {
         "description": "Rediacc のインフラストラクチャ自動化で開発を変革します。 インスタント環境、災害復旧、AI に安全な運用を実現します。",
@@ -289,7 +289,7 @@
         "homepage": "ホームページへ行く"
       },
       "breadcrumb": {
-        "home": "家",
+        "home": "ホーム",
         "notFound": "404 - ページが見つかりません"
       },
       "description": "申し訳ございませんが、お探しのページは存在しないか、移動されました。 これは、古いリンクをたどった場合、または URL を間違って入力した場合に発生する可能性があります。",
@@ -301,7 +301,7 @@
       "meta": {
         "description": "お探しのページは見つかりませんでした。 当社のインフラ自動化プラットフォームを参照するか、サポートが必要な場合はお問い合わせください。",
         "keywords": "404、ページが見つかりません、インフラストラクチャ自動化、Rediacc",
-        "title": "404 - ページが見つかりません | レディアク"
+        "title": "404 - ページが見つかりません | Rediacc"
       },
       "suggestions": {
         "items": [
@@ -991,7 +991,7 @@
         "meta": {
           "description": "アプリ、データベース、構成など、完全な運用インフラストラクチャのクローンを 60 秒以内に作成します。 開発環境を何日も待つ必要はありません。 本番環境と同じ環境をオンデマンドで利用できます。",
           "keywords": "一時的な環境、開発環境のプロビジョニング、インスタント開発環境、オンデマンド環境、プレビュー環境、Git ネイティブ環境、実稼働クローン",
-          "title": "数秒で起動する開発環境 | レディアク"
+          "title": "数秒で起動する開発環境 | Rediacc"
         },
         "problems": {
           "cicdComplexity": {

@@ -14,7 +14,7 @@
       "close": "Fermer",
       "contactSupport": "Contacter l'assistance",
       "goToHomepage": "Aller à la page d'accueil",
-      "learnMore": "Apprendre encore plus",
+      "learnMore": "En savoir plus",
       "requestEarlyAccess": "Appliquer",
       "sendMessage": "Appliquer"
     },
@@ -35,7 +35,7 @@
         "title": "Essayer:"
       }
     },
-    "siteName": "Rediac",
+    "siteName": "Rediacc",
     "skipNavigation": {
       "skipToFooter": "Passer au pied de page",
       "skipToMainContent": "Passer au contenu principal",
@@ -105,14 +105,14 @@
       "contact": "Contact",
       "team": "Équipe"
     },
-    "copyright": "{{année}} Rediacc. Tous droits réservés.",
+    "copyright": "{{year}} Rediacc. Tous droits réservés.",
     "legalLinks": {
       "privacyPolicy": "politique de confidentialité",
       "termsOfUse": "Conditions d'utilisation"
     },
     "links": {
       "contactSupport": "Contacter l'assistance",
-      "returnToHome": "Retour à la maison"
+      "returnToHome": "Retour à l'accueil"
     },
     "productLinks": {
       "overview": "Aperçu",
@@ -129,10 +129,10 @@
   "hero": {
     "cta": {
       "benefits": "10 cœurs de processeur • Équipes illimitées • 0 $",
-      "bookDemo": "Livre démo",
+      "bookDemo": "Réserver une démo",
       "contactUs": "Commencez gratuitement",
       "freeBadge": "GRATUIT POUR TOUJOURS • Pas de carte de crédit",
-      "learnMore": "Apprendre encore plus",
+      "learnMore": "En savoir plus",
       "seeDetails": "Voir tous les détails"
     },
     "subtitle": "Survivez aux pannes de cloud. Déployez n'importe où. Basculez rapidement.",
@@ -141,11 +141,11 @@
   },
   "layout": {
     "meta": {
-      "author": "Rediac",
+      "author": "Rediacc",
       "defaultDescription": "Plateforme d'automatisation d'infrastructure conçue pour les opérations de développement accélérées. Bénéficiez d’un accès anticipé aux environnements de développement instantanés et à la reprise après sinistre de nouvelle génération.",
       "defaultKeywords": "automatisation des infrastructures, opérations d'IA, reprise après sinistre, environnements de développement, Model Context Protocol, DevOps, CI/CD",
-      "locale": "et_US",
-      "siteName": "Rediac",
+      "locale": "fr_FR",
+      "siteName": "Rediacc",
       "twitter": {
         "creator": "@rediacc",
         "site": "@rediacc"
@@ -153,10 +153,10 @@
     }
   },
   "navigation": {
-    "blog": "Blogue",
+    "blog": "Blog",
     "contact": "Contact",
     "docs": "Documents",
-    "home": "Maison",
+    "home": "Accueil",
     "login": "Se connecter",
     "search": "Recherche",
     "selectLanguage": "Sélectionnez la langue",
@@ -173,25 +173,25 @@
     "blog": {
       "allArticles": "Tous les articles",
       "backToBlog": "Retour au blog",
-      "byAuthor": "Par {{auteur}}",
+      "byAuthor": "Par {{author}}",
       "category": "Catégorie",
       "featured": "Articles en vedette",
       "meta": {
         "description": "Lisez des informations, des guides et des mises à jour sur l'exécution de tâches distribuées, l'automatisation de l'infrastructure et les meilleures pratiques DevOps.",
         "keywords": "blog sur l'automatisation de l'infrastructure, guides DevOps, systèmes distribués, exécution de tâches, infrastructure cloud",
-        "title": "Blogue | Rediacc - Informations sur l'automatisation de l'infrastructure"
+        "title": "Blog | Rediacc - Informations sur l'automatisation de l'infrastructure"
       },
       "published": "Publié",
       "readMore": "En savoir plus",
       "relatedArticles": "Articles connexes",
       "sharingIs": "Partager, c'est prendre soin",
       "subtitle": "Informations, guides et mises à jour sur l'exécution de tâches distribuées",
-      "title": "Blogue"
+      "title": "Blog"
     },
     "contact": {
       "breadcrumb": {
         "contact": "Appliquer",
-        "home": "Maison"
+        "home": "Accueil"
       },
       "form": {
         "fields": {
@@ -228,7 +228,7 @@
         "methods": {
           "earlyAccess": {
             "description": "Places limitées. Accompagnement prioritaire.",
-            "link": "Apprendre encore plus",
+            "link": "En savoir plus",
             "title": "Accès anticipé"
           },
           "general": {
@@ -245,7 +245,7 @@
       "meta": {
         "description": "Places limitées disponibles.",
         "keywords": "Accès anticipé Rediacc, plateforme de reprise après sinistre, sauvegardes vérifiées",
-        "title": "Postuler | Rediac"
+        "title": "Postuler | Rediacc"
       },
       "notice": {
         "description": "Cliquez sur Soumettre pour ouvrir votre e-mail. Des questions ? E-mail",
@@ -275,7 +275,7 @@
     },
     "home": {
       "imageModal": {
-        "indicator": "{{actuel}} / {{total}}"
+        "indicator": "{{current}} / {{total}}"
       },
       "meta": {
         "description": "Transformez le développement avec l'automatisation de l'infrastructure de Rediacc. Bénéficiez d’environnements instantanés, d’une reprise après sinistre et d’opérations sécurisées par l’IA.",
@@ -289,7 +289,7 @@
         "homepage": "Aller à la page d'accueil"
       },
       "breadcrumb": {
-        "home": "Maison",
+        "home": "Accueil",
         "notFound": "404 - Page introuvable"
       },
       "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée. Cela peut se produire si vous avez suivi un lien obsolète ou si vous avez mal saisi l'URL.",
@@ -301,7 +301,7 @@
       "meta": {
         "description": "La page que vous recherchez est introuvable. Parcourez notre plateforme d’automatisation des infrastructures ou contactez-nous pour obtenir de l’aide.",
         "keywords": "404, page introuvable, automatisation de l'infrastructure, Rediacc",
-        "title": "404 - Page introuvable | Rediac"
+        "title": "404 - Page introuvable | Rediacc"
       },
       "suggestions": {
         "items": [
@@ -820,7 +820,7 @@
           "community": {
             "note": "Aucune carte de crédit requise",
             "primary": "Commencez gratuitement",
-            "secondary": "Apprendre encore plus"
+            "secondary": "En savoir plus"
           },
           "enterprise": {
             "guarantee": "Garantie de remboursement sous 14 jours",
@@ -842,7 +842,7 @@
           "noContracts": "Pas de contrats à long terme"
         },
         "keyBenefits": "Avantages clés",
-        "learnMore": "Apprendre encore plus",
+        "learnMore": "En savoir plus",
         "limitedOffer": "Offre de lancement limitée",
         "monthOrYear": "par mois ou {{price}} par an",
         "popular": "Le plus populaire",
@@ -991,7 +991,7 @@
         "meta": {
           "description": "Clonez l'intégralité de votre infrastructure de production (applications, bases de données, configurations) en moins de 60 secondes. Arrêtez d'attendre des jours pour les environnements de développement. Environnements identiques à la production sur demande.",
           "keywords": "environnements éphémères, provisionnement d'environnement de développement, environnement de développement instantané, environnements à la demande, environnements de prévisualisation, environnements git natifs, clone de production",
-          "title": "Des environnements de développement qui démarrent en quelques secondes | Rediac"
+          "title": "Des environnements de développement qui démarrent en quelques secondes | Rediacc"
         },
         "problems": {
           "cicdComplexity": {
@@ -1397,7 +1397,7 @@
       "cta": {
         "buttons": {
           "contact": "Entrer en contact",
-          "learnMore": "Apprendre encore plus"
+          "learnMore": "En savoir plus"
         },
         "subtitle": "Que ce soit en tant que client, partenaire ou membre d'une équipe, faites partie de la révolution des infrastructures.",
         "title": "Rejoignez-nous dans notre mission"

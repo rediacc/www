@@ -11,28 +11,28 @@
       "zoomOut": "Uzaklaştır"
     },
     "buttons": {
-      "close": "Kapalı",
+      "close": "Kapat",
       "contactSupport": "Destek Ekibiyle İletişime Geçin",
       "goToHomepage": "Ana Sayfaya Git",
-      "learnMore": "Daha fazla bilgi edin",
-      "requestEarlyAccess": "Uygula",
-      "sendMessage": "Uygula"
+      "learnMore": "Daha Fazla Bilgi",
+      "requestEarlyAccess": "Başvur",
+      "sendMessage": "Gönder"
     },
     "logoAlt": "Rediacc - Altyapı Otomasyon Platformu",
     "search": {
       "closeModal": "Aramayı kapat",
       "keyboardShortcut": "Aramak için ⌘K",
-      "navigate": "Gezin",
+      "navigate": "Gezinti",
       "noResults": "Sonuç bulunamadı",
       "placeholder": "Belgeleri, çözümleri, özellikleri arayın...",
-      "searching": "Arama...",
-      "select": "Seçme",
+      "searching": "Aranıyor...",
+      "select": "Seç",
       "suggestions": {
-        "browseSolutions": "Çözümler sayfamıza göz atıyorsunuz",
-        "checkSpelling": "Yazımınızı kontrol etme",
-        "contactSupport": "Destek ekibimizle iletişime geçme",
-        "differentKeywords": "Farklı anahtar kelimeler veya daha kısa terimler",
-        "title": "Denemek:"
+        "browseSolutions": "Çözümler sayfamıza göz atın",
+        "checkSpelling": "Yazımınızı kontrol edin",
+        "contactSupport": "Destek ekibimizle iletişime geçin",
+        "differentKeywords": "Farklı anahtar kelimeler veya daha kısa terimler deneyin",
+        "title": "Deneyin:"
       }
     },
     "siteName": "Rediacc",
@@ -75,7 +75,7 @@
           "label": "Birincil ilgi",
           "options": {
             "aiSafeOperations": "Siber güvenlik",
-            "developmentAcceleration": "Gelişim",
+            "developmentAcceleration": "Geliştirme",
             "disasterRecovery": "Felaket Kurtarma",
             "multiple": "Çoklu",
             "other": "Diğer",
@@ -102,8 +102,8 @@
     },
     "companyLinks": {
       "aboutUs": "Hakkımızda",
-      "contact": "Temas etmek",
-      "team": "Takım"
+      "contact": "İletişim",
+      "team": "Ekip"
     },
     "copyright": "{{year}} Rediacc. Her hakkı saklıdır.",
     "legalLinks": {
@@ -129,22 +129,22 @@
   "hero": {
     "cta": {
       "benefits": "10 CPU çekirdeği • Sınırsız ekip • 0 ABD doları",
-      "bookDemo": "Kitap Demosu",
+      "bookDemo": "Demo Talep Et",
       "contactUs": "Ücretsiz Başlayın",
-      "freeBadge": "KESİNLİKLE ÜCRETSİZ • Kredi kartı yok",
-      "learnMore": "Daha fazla bilgi edin",
+      "freeBadge": "SONSUZA DEK ÜCRETSİZ • Kredi kartı gerekmez",
+      "learnMore": "Daha Fazla Bilgi",
       "seeDetails": "Tüm ayrıntıları görün"
     },
-    "subtitle": "Bulut kesintilerinden kurtulun. İstediğiniz yere konuşlandırın. Hızlı bir şekilde başarısız olun.",
+    "subtitle": "Bulut kesintilerinden kurtulun. Her yere dağıtın. Hızlı yük devretme.",
     "title": "Altyapı",
-    "titleHighlight": "Hayatta kaldı. Her zaman."
+    "titleHighlight": "Hayatta Kalır. Her Zaman."
   },
   "layout": {
     "meta": {
       "author": "Rediacc",
       "defaultDescription": "Hızlandırılmış geliştirme operasyonları için tasarlanmış Altyapı Otomasyon Platformu. Anında geliştirme ortamlarına ve yeni nesil olağanüstü durum kurtarmaya erken erişim elde edin.",
       "defaultKeywords": "altyapı otomasyonu, yapay zeka işlemleri, felaket kurtarma, geliştirme ortamları, Model Bağlam Protokolü, DevOps, CI/CD",
-      "locale": "ve_US",
+      "locale": "tr_TR",
       "siteName": "Rediacc",
       "twitter": {
         "creator": "@rediacc",
@@ -154,11 +154,11 @@
   },
   "navigation": {
     "blog": "Blog",
-    "contact": "Temas etmek",
+    "contact": "İletişim",
     "docs": "Dokümanlar",
-    "home": "Ev",
-    "login": "Giriş yapmak",
-    "search": "Aramak",
+    "home": "Ana Sayfa",
+    "login": "Giriş",
+    "search": "Ara",
     "selectLanguage": "Dil seçin",
     "solutions": {
       "dataSecurity": "Veri Güvenliği",
@@ -184,14 +184,14 @@
       "published": "Yayınlandı",
       "readMore": "Devamını oku",
       "relatedArticles": "İlgili Makaleler",
-      "sharingIs": "Paylaşmak önemser",
+      "sharingIs": "Paylaşmak güzeldir",
       "subtitle": "Dağıtılmış görev yürütmeyle ilgili bilgiler, kılavuzlar ve güncellemeler",
       "title": "Blog"
     },
     "contact": {
       "breadcrumb": {
-        "contact": "Uygula",
-        "home": "Ev"
+        "contact": "Başvuru",
+        "home": "Ana Sayfa"
       },
       "form": {
         "fields": {
@@ -211,7 +211,7 @@
               "earlyAccess": "Felaket Kurtarma",
               "general": "Genel",
               "other": "Diğer",
-              "partnership": "ortaklık",
+              "partnership": "İş Ortaklığı",
               "placeholder": "Birini seçin",
               "technical": "Teknik Soru"
             }
@@ -221,7 +221,7 @@
       },
       "hero": {
         "subtitle": "Formu doldurun, 48 saat içinde sizinle iletişime geçeceğiz.",
-        "title": "Aşağıya Uygula"
+        "title": "Aşağıdan Başvurun"
       },
       "info": {
         "description": "Doğrudan ekibimizle çalışın. Yedeklemelerinizin çalıştığını bilin.",
@@ -245,7 +245,7 @@
       "meta": {
         "description": "Sınırlı sayıda yer mevcuttur.",
         "keywords": "Rediacc erken erişim, felaket kurtarma platformu, doğrulanmış yedeklemeler",
-        "title": "Uygula | Rediacc"
+        "title": "Başvuru | Rediacc"
       },
       "notice": {
         "description": "E-postanızı açmak için gönder'i tıklayın. Sorunuz mu var? E-posta",
@@ -275,7 +275,7 @@
     },
     "home": {
       "imageModal": {
-        "indicator": "{{güncel}} / {{toplam}}"
+        "indicator": "{{current}} / {{total}}"
       },
       "meta": {
         "description": "Rediacc'ın altyapı otomasyonu ile geliştirmeyi dönüştürün. Anında ortamlar, olağanüstü durum kurtarma ve yapay zeka açısından güvenli operasyonlar elde edin.",
@@ -289,7 +289,7 @@
         "homepage": "Ana Sayfaya Git"
       },
       "breadcrumb": {
-        "home": "Ev",
+        "home": "Ana Sayfa",
         "notFound": "404 - Sayfa Bulunamadı"
       },
       "description": "Üzgünüz, aradığınız sayfa mevcut değil veya taşınmış. Güncel olmayan bir bağlantıyı izlediyseniz veya URL'yi yanlış yazdıysanız bu durum meydana gelebilir.",
@@ -842,7 +842,7 @@
           "noContracts": "Uzun vadeli sözleşme yok"
         },
         "keyBenefits": "Temel Faydalar",
-        "learnMore": "Daha fazla bilgi edin",
+        "learnMore": "Daha Fazla Bilgi",
         "limitedOffer": "Sınırlı Lansman Teklifi",
         "monthOrYear": "ayda veya yılda {{price}}",
         "popular": "En popüler",
@@ -1397,7 +1397,7 @@
       "cta": {
         "buttons": {
           "contact": "İletişime Geçin",
-          "learnMore": "Daha fazla bilgi edin"
+          "learnMore": "Daha Fazla Bilgi"
         },
         "subtitle": "İster müşteri, ister ortak, ister ekip üyesi olun, altyapı devriminin bir parçası olun.",
         "title": "Misyonumuzda Bize Katılın"
