@@ -185,7 +185,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 2. **fx** tuşuna basın.  
 3. **deploy** tuşuna basın. (Resim 23)  
 
-![Resim 23](/assets/images/UserGuideEng/23_DeployButon.png) (Resim 23)
+![Resim 23](/assets/images/UserGuideEng/23_DeployButon1.png) (Resim 23)
 
 4. Açılan formdan zorunlu alanları doldurun ve **Add to Queu** tuşuna basın.  (Resim 24)   
 
