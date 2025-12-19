@@ -179,7 +179,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 ![Resim 22](/assets/images/UserGuideEng/22_DownComplated.png) (Resim 22)
 ---
 
-#### d) Repo “deploy” İşlemi
+#### e) Repo “deploy” İşlemi
 
 1. “deploy” yapmak istediğiniz repoyu seçin. 
 2. **fx** tuşuna basın.  
@@ -197,7 +197,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ---
 
-#### e) Repo “Backup” İşlemi
+#### f) Repo “Backup” İşlemi
 
 1. **“backup”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **backup** butonuna tıklayın. (Resim 26) 
@@ -211,7 +211,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ---
 
-#### f) Repo “templates” İşlemi
+#### g) Repo “templates” İşlemi
 
 1. **“templates”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **templates** butonuna tıklayın. (Resim 29) 
@@ -226,7 +226,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 ---
 
 
-#### g) Repo “unmount” İşlemi
+#### h) Repo “unmount” İşlemi
 
 1. **“unmount”** işlemi yapılacak repoyu seçin.  
 2. **fx--> advanced** butonuna basın ve açılan menüden **unmount** butonuna tıklayın. (Resim 32) 
@@ -237,7 +237,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 ![Resim 33](/assets/images/UserGuideEng/33_UnmoundComplated.png) (Resim 33)
 
 ---
-#### g) Repo “expand” İşlemi
+#### i) Repo “expand” İşlemi
 
 1. **“expand”** işlemi yapılacak repoyu seçin.  
 2. **fx--> advanced** butonuna basın ve açılan menüden **expand** butonuna tıklayın. (Resim 34) 
@@ -251,7 +251,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ---
 
-#### h) Repo “rename” İşlemi
+#### i) Repo “rename” İşlemi
 
 1. **“rename”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **rename** butonuna tıklayın. (Resim 34) 
@@ -264,7 +264,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 4. “rename” işlemi tamamlanmıştır. 
 
 ---
-#### h) Repo “delete repository” İşlemi
+#### j) Repo “delete repository” İşlemi
 
 1. **“delete repository”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **delete repository** butonuna tıklayın. (Resim 40) 
@@ -274,20 +274,79 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 ![Resim 38](/assets/images/UserGuideEng/38_RenameForm.png) 
 (Resim 38)
 
-----hata4. “rename” işlemi tamamlanmıştır. 
+----
+#### k) Repo “repo View Details” İşlemi
 
+1. Bir repo seçin ve   **View Details** butonuna basın. (Resim 42) 
+![Resim 42](/assets/images/UserGuideEng/42_RepoWievButon.png) (Resim 42)
+2. Seçilen repo ile ilgili bilgiler açılacaktır. (Resim 43) 
+![Resim 43](/assets/images/UserGuideEng/43_RepoDetailsView.png) (Resim 43)
+ 
 ---
-<!-- ### 2.1.3 Repo Connection İşlemleri
+
+ ### 2.1.3 Repo Connection İşlemleri
 
 #### a) desktop-aap
 
-1. desktop-app işlemi  için  ![Resim 131](/assets/images/UserGuideEng/karesimge.png) ,  butona basın.
+1. desktop-app işlemi  için  Local butonuna basın (Resim 49)![Resim 49](/assets/images/UserGuideEng/49_RepoConnecionLocal.png)(Resim 49)
 
-2. Açılan listeden **desktop-app** butonuna basın (Resim 45)
-![Resim 14](/assets/images/UserGuideEng/45_DesktopAppButon.png)  (Resim 45)
-
+2. Açılan listeden **desktop-app** butonuna basın (Resim 50)
+![Resim 50](/assets/images/UserGuideEng/50_0RepoConnection)  (Resim 50)
+3. . Açılan sayfadan **Open xdg-open** butonuna basın (Resim 50.1)
+![Resim 50.1](/assets/images/UserGuideEng/50_1DesktopOpenPage.png)  (Resim 50.1)
+<!-- 
 3. **Create** butonuna basın.  
 ![Resim 14](/assets/images/UserGuideEng/14_RepoForm.png)  (Resim 14)
-4. Açılan pencerede **Completed** mesajını gördükten sonra **Close** butonuna basın. (Resim 15)   -->
+4. Açılan pencerede **Completed** mesajını gördükten sonra **Close** butonuna basın. (Resim 15)    -->
 
+---
+## 2.3 Settings
+ **Settings** işlemi program ile ilgili bazı  ayarları yapmak için kullanılır.
+ 
+a) **Profile Şifre değiştirme İşlemi** 
+   1- **Setting->Profiles**  butonuna tıklayın.(Resim 55)
+   ![Resim 55](/assets/images/UserGuideEng/55_0ProfilesButon.png)  (Resim 55)
+   2- Açılan sayfadan *Change Password* butonuna tıklayın (Resim 55.1)
+    ![Resim 55.1](/assets/images/UserGuideEng/55_1ProfilesChangeButon.png)  (Resim 55.1)
+   3- Açılan formdan yeni Password girdikten sonra *Change Password* butonuna tıklayın (Resim 55.2)
+    ![Resim 55.2](/assets/images/UserGuideEng/55_2ProfilesChangeForm.png)  (Resim 55.2)
+
+---
+
+## 2.4 Storage
+ **Storage** depola ile ilgili işlemler yapılır.
+
+ a) **Storage İşlemi** 
+   1- **Storage** menüsü altındaki *Add Strorage* butonuna tıklayın.(Resim 56)
+   ![Resim 56](/assets/images/UserGuideEng/56_0StrogeAddButon.png)  (Resim 56)
+   2- Açılan formdan zorunlu alanları doldurun.*Create* butonuna basın. (Resim 56.1)
+    ![Resim 56.1](/assets/images/UserGuideEng/56_1StrogeForm.png)  (Resim 56.1) 
+
+---
+
+## 2.4 Credentials
+ **Credentials** oluşturulan repoların şifreleri  ile ilgili işlemler yapılır.
+
+ ## 2.4.1 Credentials İşlemi 
+   a)- **Edit İşlemi**
+   1-Credentials  menüsü altındaki bir repo seçin ve *Edit* butonuna tıklayın.(Resim 57)
+   ![Resim 57](/assets/images/UserGuideEng/57_0Credentials.png)  (Resim 57)
+   2- Açılan formdan değişiklikeri yaptıktan sonra *Save* butonuna basın. (Resim 57.1)
+    ![Resim 57.1](/assets/images/UserGuideEng/57_1CredentialsForm.png)  (Resim 57.1) 
+   b- **Trace İşlemi** 
+   1-Credentials menüsü altındaki bir repo seçin ve *Trace* butonuna tıklayın.(Resim 57.2)
+   ![Resim 57](/assets/images/UserGuideEng/57_2_Credentials_TraceButon.png)  (Resim 57.2)
+   
+   2- Açılan sayfada seçilen reponun *Denetim Geçmişi* - listelenmiştir. *Export* butonuna tıklayıp istenilen formatta listeyi dışa aktarımını sağlayın. (Resim 57.3)
+   ![Resim 57](/assets/images/UserGuideEng/57_3CredentialsListeEXport.png)  (Resim 57.3)
+
+c- **Delete İşlemi** 
+   1-Credentials menüsü altındaki bir repo seçin ve *Delete* butonuna tıklayın.(Resim 57.4)
+   ![Resim 57.4](/assets/images/UserGuideEng/57_4CredentalsDelete.png)  (Resim 57.4)
+   
+   2- Açılan sayfadan  *Delete* - butonuna basın.Silme işlemi tamamlanmıştır. (Resim 57.5)
+   ![Resim 57.5](/assets/images/UserGuideEng/57_5CredentalsDelete.png)  (Resim 57.5)
+
+
+---
 **© 2025 Rediacc Platformu – Tüm Hakları Saklıdır.**
