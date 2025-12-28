@@ -75,19 +75,21 @@ Giriş işleminden sonra karşınıza çıkan ekran temel olarak **Organization*
  
 ![Resim 7](/assets/images/UserGuideEng/7_UserAdd.png) 
 (Resim 7)
-   2. **Create** butonuna basın. Kullanıcı ekleme işlemi tamamlanmıştır. (Resim 8)
+
+2. **Create** butonuna basın. Kullanıcı ekleme işlemi tamamlanmıştır. (Resim 8)
 ![Resim 8](/assets/images/UserGuideEng/8_UserList.png)(Resim 8)
 
 1.2 Takım işlemleri için **Organization** altındaki **Teams** sekmesine tıklayın.Açılan sayfadan **"+" Create Teams** simgesine tıklayın.   (Resim 9) 
 ![Resim 9](/assets/images/UserGuideEng/9_Teams.png) (Resim 9)
-   1.1. **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
 
-![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) **Create** butonuna basarak takım oluşturun.  (Resim 10)
+1.1. **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
+
+![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) **Create** butonuna basarak takım oluşturun.
 
 ---
 ### 2.2 Machines
 
-Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, listelenmesi, düzenlenmesi ve silinmesi işlemlerini içerir.
+Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, listelenmesi, düzenlenmesi, silinmesi gibi işlemlerini içerir.
 
 ---
 
@@ -97,7 +99,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ![Resim 11](/assets/images/UserGuideEng/11_MachinesAdd.png) (Resim 11)
 
-1.2 Açılan formdan zorunlu alanları doldurduktan sonra **Test Connection** butonuna tıklayın ve bağlantı başarılı olduğunda **Create** butonuna basın.(Resim 12)
+1.2 Açılan formdan zorunlu alanları doldurduktan sonra **Test Connection** butonuna tıklayın ve bağlantı başarılı olduğunda **Create** butonuna basın. (Resim 12)
 
 ![Resim 12](/assets/images/UserGuideEng/12_0MachineCreate.png)
 (Resim 12)
@@ -106,11 +108,11 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 ![Resim 12.1](/assets/images/UserGuideEng/12_1MachineCreate2.png)
 (Resim 12.1)
 
-2.1 Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1ConnectivyTest.png)  **Connectivity Test** butonuna basın.
+2.1 *Connectivity Test* için en az bir makina eklenmiş ise ![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1ConnectivyTest.png)  **Connectivity Test** butonuna basın.
 
-2.2 Açılan formdan *Run Test* butonuna basarak test işlemi yapılmıştır.![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1_ConnecTestForm.png)  **Connectivity Test** butonuna basın.
+2.2 Açılan formdan  bir makina seçerek *Run Test* butonuna basın Test işlemi tamamlanmıştır.![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1_ConnecTestForm.png)  **Connectivity Test** butonuna basın.
 
-3.Eklenmiş olan makinayı seçtikten sonra **Refresh** butonuna basın ![Resim 12.3](/assets/images/UserGuideEng/12_2_3Refresh.png)   Makine listelem işlemi tamamlanmıştır.
+3.**Refresh** işlemi için **Refresh** butonuna basın. ![Resim 12.3](/assets/images/UserGuideEng/12_2_3Refresh.png)   Makine listeleme işlemi tamamlanmıştır.
 
 4.Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.3](/assets/images/UserGuideEng/12_3viewDetals.png)  **View Details** butonuna basın.Açılan sayfadan makine ile ilgili bilgilere ulaşabilirsiniz.  (Resim 12.2)
 
@@ -143,7 +145,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 ![Resim 12.13](/assets/images/UserGuideEng/12_13_RemoteHelloCompl.png)
 (Resim 12.13)
 
-10. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **advanced** butonuna basın.Açılan sayfadan *Machine Functions* menüsünden istediğiniz fonksiyonu seçip *Add to Queue* butonun basın İşlemi tamamlanmıştır. (Resim 12.14)
+10. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **advanced** butonuna basın.Açılan sayfadan *Machine Functions* menüsünden istediğiniz fonksiyonu seçip *Add to Queue* butonun basın İşlem tamamlanmıştır. (Resim 12.14)
 
 ![Resim 12.14](/assets/images/UserGuideEng/12_14_RemoteAdvanced.png)
 (Resim 12.14)
@@ -280,7 +282,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 #### i) Repo “rename” İşlemi
 
 1. **“rename”** işlemi yapılacak repoyu seçin.  
-2. **fx** butonuna basın ve açılan menüden **rename** butonuna tıklayın. (Resim 34) 
+2. **fx** butonuna basın ve açılan menüden **rename** butonuna tıklayın. (Resim 37) 
 ![Resim 37](/assets/images/UserGuideEng/37_RenameButon.png) (Resim 37)
  
  3. Açılan formu doldurun ve **save** tuşuna basın.(Resim 38)
@@ -296,9 +298,9 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 2. **fx** butonuna basın ve açılan menüden **delete repository** butonuna tıklayın. (Resim 40) 
 ![Resim 40](/assets/images/UserGuideEng/40_DeleteRopoButon.png) (Resim 40)
  
- ---hata3. Açılan formu doldurun ve **save** tuşuna basın.(Resim 38)
-![Resim 38](/assets/images/UserGuideEng/38_RenameForm.png) 
-(Resim 38)
+3. Açılan formu doldurun ve **save** tuşuna basın.(Resim 41)
+![Resim 41](/assets/images/UserGuideEng/38_RenameForm.png) 
+(Resim 41)
 
 ----
 #### k) Repo “repo View Details” İşlemi
