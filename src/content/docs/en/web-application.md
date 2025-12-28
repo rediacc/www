@@ -67,24 +67,51 @@ Bu dokümanın amacı:
 
 Giriş işleminden sonra karşınıza çıkan ekran temel olarak **Organization** , **Machines** ve **Settings** bölümlerinden oluşur.
 
-## 2.1. Organization
+## 2.1. Organization--> Users
 
    2.1.1 Kullanıcı işlemleri için **Organization** altındaki **Users** sekmesine tıklayın.Açılan sayfadan **"+"** simgesine tıklayın.   (Resim 6)
-![Resim 6](/assets/images/UserGuideEng/6_Users.png)  (Resim 6)
+![Resim 6](/assets/images/UserGuideEng/6_Users.png)  
+(Resim 6)
    1. **Create User** butonuna tıklayın ve açılan formu doldurun. (Resim 7)
  
 ![Resim 7](/assets/images/UserGuideEng/7_UserAdd.png) 
 (Resim 7)
 
 2. **Create** butonuna basın. Kullanıcı ekleme işlemi tamamlanmıştır. (Resim 8)
-![Resim 8](/assets/images/UserGuideEng/8_UserList.png)(Resim 8)
+![Resim 8](/assets/images/UserGuideEng/8_UserList.png)
+(Resim 8)
 
-1.2 Takım işlemleri için **Organization** altındaki **Teams** sekmesine tıklayın.Açılan sayfadan **"+" Create Teams** simgesine tıklayın.   (Resim 9) 
-![Resim 9](/assets/images/UserGuideEng/9_Teams.png) (Resim 9)
+  2.1.1 **Permissions** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Permissions"** butonuna tıklayın.   (Resim 6.1)
+![Resim 6.1](/assets/images/UserGuideEng/6_1UsersPermissions.png)  
+(Resim 6.1)
 
-1.1. **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
+2.1.2. Açılan ekrandan bir *Permissions Grup* seçin ve **Assign** butonuna basın. Permissions işlemi tamamlanmıştır.(Resim 6.2)
+![Resim 6.2](/assets/images/UserGuideEng/6_2_UserPermissionsForm.png) 
+(Resim 6.2)
 
-![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) **Create** butonuna basarak takım oluşturun.
+ 2.2.1 **Users Activate** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Activate"** butonuna tıklayın.   (Resim 6.3)
+
+![Resim 6.3](/assets/images/UserGuideEng/6_3_UsersActivition.png)  
+(Resim 6.3)
+
+2.2.2. Açılan ekrandan bir *General.Yes*  butonuna basın. Activate işlemi tamamlanmıştır.(Resim 6.4)
+![Resim 6.4](/assets/images/UserGuideEng/6_4_UsersActivatiYes.png) 
+(Resim 6.4)
+
+ 2.3.1 **Users Trace** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Trace"** butonuna tıklayın.   (Resim 6.5)
+
+![Resim 6.5](/assets/images/UserGuideEng/6_5_UsersTrace.png)  
+(Resim 6.5)
+
+2.3.2. Açılan ekrandan bir *Export*  butonu altında istediğimiz formatı tıkladığımızda *Trace* işlemi tamamlanmıştır.(Resim 6.6)
+![Resim 6.6](/assets/images/UserGuideEng/6_6_UserTaceExport.png) 
+(Resim 6.6)
+
+3.1.**'Teams'** işlemi için  **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
+
+![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) 
+( Resim 10)
+**Create** butonuna basarak takım oluşturun.
 
 ---
 ### 2.2 Machines
