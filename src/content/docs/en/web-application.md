@@ -107,11 +107,17 @@ Giriş işleminden sonra karşınıza çıkan ekran temel olarak **Organization*
 ![Resim 6.6](/assets/images/UserGuideEng/6_6_UserTaceExport.png) 
 (Resim 6.6)
 
-3.1.**'Teams'** işlemi için  **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
+3.1.1  **'Teams'** işlemi için  **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
 
 ![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) 
 ( Resim 10)
-**Create** butonuna basarak takım oluşturun.
+3.1.2 *Create* butonuna basarak takım oluşturun.
+
+3.2.1  **'Teams Edit'** işlemi için bir **Teams** seçin  **Edit** butonuna tıklayın ve açılan Formda değişiklikleri yaptıktan sonra *Save* butonuna tıklayın.Edit işlemi tamamlanmıştır. (Resim 10.1)
+
+![Resim 10.1](/assets/images/UserGuideEng/10_1TeamsEditForm.png) 
+( Resim 10.1)
+
 
 ---
 ### 2.2 Machines
