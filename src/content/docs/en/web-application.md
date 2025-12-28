@@ -93,20 +93,26 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ### 2.2.1 Machines
 
-1. Yeni bir makina eklemek için **Machines** bölümü seçiliyken sağ üst köşedeki **Add Machine** butonuna tıklayın. (Resim 11)
+1.1 Yeni bir makina eklemek için **Machines** bölümü seçiliyken sağ üst köşedeki **Add Machine** butonuna tıklayın. (Resim 11)
 
 ![Resim 11](/assets/images/UserGuideEng/11_MachinesAdd.png) (Resim 11)
 
-2. Açılan formdan zorunlu alanları doldurduktan sonra **Test Connection** butonuna tıklayın ve bağlantı başarılı olduğunda **Create** butonuna basın.(Resim 12)
+1.2 Açılan formdan zorunlu alanları doldurduktan sonra **Test Connection** butonuna tıklayın ve bağlantı başarılı olduğunda **Create** butonuna basın.(Resim 12)
 
 ![Resim 12](/assets/images/UserGuideEng/12_0MachineCreate.png)
 (Resim 12)
 
-3. Açılan formdan **Test Complated** mesajı görüldüğünde **close** butonuna basarak makine ekleme işlemini tamamlayın.(Resim 12.1)
+1.3 Açılan formdan **Test Complated** mesajı görüldüğünde **close** butonuna basarak makine ekleme işlemini tamamlayın.(Resim 12.1)
 ![Resim 12.1](/assets/images/UserGuideEng/12_1MachineCreate2.png)
 (Resim 12.1)
 
-4. Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.3](/assets/images/UserGuideEng/12_3viewDetals.png)  **View Details** butonuna basın.Açılan sayfadan makine ile ilgili bilgilere ulaşabilirsiniz.  (Resim 12.2)
+2.1 Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1ConnectivyTest.png)  **Connectivity Test** butonuna basın.
+
+2.2 Açılan formdan *Run Test* butonuna basarak test işlemi yapılmıştır.![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1_ConnecTestForm.png)  **Connectivity Test** butonuna basın.
+
+3.Eklenmiş olan makinayı seçtikten sonra **Refresh** butonuna basın ![Resim 12.3](/assets/images/UserGuideEng/12_2_3Refresh.png)   Makine listelem işlemi tamamlanmıştır.
+
+4.Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.3](/assets/images/UserGuideEng/12_3viewDetals.png)  **View Details** butonuna basın.Açılan sayfadan makine ile ilgili bilgilere ulaşabilirsiniz.  (Resim 12.2)
 
 ![Resim 12.2](/assets/images/UserGuideEng/12_2MachineViewDetals.png)
 (Resim 12.2)
@@ -125,6 +131,26 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ![Resim 12.25](/assets/images/UserGuideEng/12_9DeleteForm.png)
 (Resim 12.5)
+
+
+8. Eklenmiş olan bir makinaye *Remote* olmak için ![Resim 12.10](/assets/images/UserGuideEng/12_10RemoteButon.png)  **Remote** butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **Setup** butonuna basın.Açılan sayfadan *Task Complated* mesajını gördüğünüzde *Setup* işlemi tamamlanmıştır. (Resim 12.11)
+
+![Resim 12.11](/assets/images/UserGuideEng/12_11ServerSetup.png)
+(Resim 12.11)
+
+9. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **Hello** butonuna basın.![Resim 12.12](/assets/images/UserGuideEng/12_12RemotoHello.png)  Açılan sayfadan *Task Complated* mesajını gördüğünüzde *Hello* işlemi tamamlanmıştır. (Resim 12.13)
+
+![Resim 12.13](/assets/images/UserGuideEng/12_13_RemoteHelloCompl.png)
+(Resim 12.13)
+
+10. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **advanced** butonuna basın.Açılan sayfadan *Machine Functions* menüsünden istediğiniz fonksiyonu seçip *Add to Queue* butonun basın İşlemi tamamlanmıştır. (Resim 12.14)
+
+![Resim 12.14](/assets/images/UserGuideEng/12_14_RemoteAdvanced.png)
+(Resim 12.14)
+
+11. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Connectivity Test** butonuna basın.![Resim 12.15](/assets/images/UserGuideEng/12_15Connectivy_Test.png) connectivity Test işlemi tamamlanmıştır.
+
+
 
 ---
 
@@ -324,10 +350,10 @@ a) **Profile Şifre değiştirme İşlemi**
 
 ---
 
-## 2.4 Credentials
+## 2.5 Credentials
  **Credentials** oluşturulan repoların şifreleri  ile ilgili işlemler yapılır.
 
- ## 2.4.1 Credentials İşlemi 
+ ## 2.5.1 Credentials İşlemi 
    a)- **Edit İşlemi**
    1-Credentials  menüsü altındaki bir repo seçin ve *Edit* butonuna tıklayın.(Resim 57)
    ![Resim 57](/assets/images/UserGuideEng/57_0Credentials.png)  (Resim 57)
@@ -347,6 +373,17 @@ c- **Delete İşlemi**
    2- Açılan sayfadan  *Delete* - butonuna basın.Silme işlemi tamamlanmıştır. (Resim 57.5)
    ![Resim 57.5](/assets/images/UserGuideEng/57_5CredentalsDelete.png)  (Resim 57.5)
 
+## 2.6.1 Queue İşlemi 
+   1-Queue menüsüne tıklayın.(Resim 58)
+   ![Resim 58](/assets/images/UserGuideEng/58_0QueueButon.png)  (Resim 58)
+   2- Açılan sayfadan *export*  butonuna tıklayın.Açılan menüden dışa aktarım için format seçin.Aktarım işlemi tamamlanmıştır. (Resim 58.1)
+    ![Resim 58.1](/assets/images/UserGuideEng/58_1QueuExport.png)  (Resim 58.1) 
+## 2.7.1 Audit İşlemi 
+   
+   1-Audit menüsüne tıklayın.(Resim 59)
+   ![Resim 59](/assets/images/UserGuideEng/59_0AuditButonList.png)  (Resim 59)
+   2- Açılan sayfadan *export*  butonuna tıklayın.Açılan menüden dışa aktarım için format seçin.Aktarım işlemi tamamlanmıştır. (Resim 58.1)
+    ![Resim 59.1](/assets/images/UserGuideEng/59_1AuditButonList.png)  (Resim 59.1) 
 
 ---
 **© 2025 Rediacc Platformu – Tüm Hakları Saklıdır.**
