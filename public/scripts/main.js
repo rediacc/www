@@ -94,11 +94,11 @@ function validateField(field) {
         }
     }
 
-    // Company validation
-    if (fieldName === 'company' && fieldValue) {
+    // Organization validation
+    if (fieldName === 'organization' && fieldValue) {
         if (fieldValue.length < 2) {
             isValid = false;
-            errorMessage = 'Company name must be at least 2 characters long.';
+            errorMessage = 'Organization name must be at least 2 characters long.';
         }
     }
 
@@ -156,7 +156,7 @@ function getFieldLabel(fieldName) {
     const labels = {
         'name': 'Full Name',
         'email': 'Email Address',
-        'company': 'Company',
+        'organization': 'Organization',
         'role': 'Role',
         'use-case': 'Use Case',
         'message': 'Message'

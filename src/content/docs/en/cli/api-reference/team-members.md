@@ -39,12 +39,12 @@ Grants a user membership in a team, giving them access to all team resources inc
 #### Examples
 
 ```bash
-rediacc team-member add dev-team john@company.com
+rediacc team-member add dev-team john@organization.com
 ```
 Add John to development team
 
 ```bash
-rediacc team-member add production admin@company.com
+rediacc team-member add production admin@organization.com
 ```
 Add admin to production team
 
@@ -74,10 +74,10 @@ User must exist and be activated. You must be a team member to add others. Chang
 
 #### Business Rules
 
-- Requires team admin or company admin permissions
-- User must already have an account in the company
+- Requires team admin or organization admin permissions
+- User must already have an account in the organization
 - User must have activated their account
-- Cannot add users from other companies
+- Cannot add users from other organizations
 - Users can be members of multiple teams
 - Team role determines permissions within that team only
 - Adding as Admin grants full control over team resources
@@ -101,7 +101,7 @@ Remove user from team
 
 #### Details
 
-Revokes a user's team membership, removing their access to all team resources. The user remains in the company.
+Revokes a user's team membership, removing their access to all team resources. The user remains in the organization.
 
 #### Parameters
 
@@ -119,7 +119,7 @@ rediacc team-member remove dev-team contractor@external.com
 Remove contractor with confirmation
 
 ```bash
-rediacc team-member remove production ex-employee@company.com --force
+rediacc team-member remove production ex-employee@organization.com --force
 ```
 Force remove without confirmation
 
@@ -149,11 +149,11 @@ Cannot remove last team member. User loses access immediately. Consider impact o
 
 #### Business Rules
 
-- Requires team admin or company admin permissions
+- Requires team admin or organization admin permissions
 - Cannot remove the last admin from a team
 - User immediately loses access to all team resources
 - Active sessions for team resources are terminated
-- Does not delete the user account from the company
+- Does not delete the user account from the organization
 - User can be re-added to the team later if needed
 - Removal is logged in audit trail
 - Any running operations by the user continue to completion

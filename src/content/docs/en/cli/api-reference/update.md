@@ -71,7 +71,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateBridgeName" \
 #### Business Rules
 
 - User must be authenticated to perform this operation
-- User must belong to the same company as the bridge
+- User must belong to the same organization as the bridge
 - Current bridge name must exist in the region
 - New bridge name must be unique within the region
 - New name must be between 1 and 50 characters
@@ -97,7 +97,7 @@ Rename a machine
 
 #### Details
 
-Changes the name of an existing machine. The new name must be unique across the entire company. Active queue items continue processing.
+Changes the name of an existing machine. The new name must be unique across the entire organization. Active queue items continue processing.
 
 #### Parameters
 
@@ -105,7 +105,7 @@ Changes the name of an existing machine. The new name must be unique across the 
 |-----------|------|----------|---------|-------------|---------|
 | `team` | string | Yes | - | Team that owns the machine | production-team |
 | `currentMachineName` | string | Yes | - |  |  |
-| `newName` | string | Yes | - | New machine name (company-wide unique) | new-server |
+| `newName` | string | Yes | - | New machine name (organization-wide unique) | new-server |
 
 
 #### Examples
@@ -215,7 +215,7 @@ New queue items will be processed by the new bridge. Existing items in PENDING s
 - User must be authenticated to perform this operation
 - User must be a member of the specified team
 - Machine must exist within the team
-- Bridge must exist and belong to the same company
+- Bridge must exist and belong to the same organization
 - Bridge and machine must be in the same region
 - Bridge must be in an active state
 - Previous bridge assignment will be removed
@@ -339,9 +339,9 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateRegionName" \
 #### Business Rules
 
 - User must be authenticated to perform this operation
-- User must belong to the same company as the region
-- Current region name must exist in the company
-- New region name must be unique within the company
+- User must belong to the same organization as the region
+- Current region name must exist in the organization
+- New region name must be unique within the organization
 - New name must be between 1 and 50 characters
 - New name cannot be empty or only whitespace
 - All bridges in the region remain associated
@@ -683,8 +683,8 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateTeamName" \
 
 - User must be authenticated to perform this operation
 - User must be a member of the team being renamed
-- Current team name must exist in the company
-- New team name must be unique within the company
+- Current team name must exist in the organization
+- New team name must be unique within the organization
 - New name must be between 1 and 50 characters
 - New name cannot be empty or only whitespace
 - Team memberships and permissions are preserved

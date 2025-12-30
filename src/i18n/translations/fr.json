@@ -51,7 +51,7 @@
     ],
     "form": {
       "fields": {
-        "company": {
+        "organization": {
           "autoComplete": "organisation",
           "label": "Entreprise *"
         },
@@ -95,12 +95,12 @@
   },
   "footer": {
     "columns": {
-      "company": "Entreprise",
+      "organization": "Entreprise",
       "legal": "Légale",
       "product": "Produit",
       "support": "Soutien"
     },
-    "companyLinks": {
+    "organizationLinks": {
       "aboutUs": "À propos de nous",
       "contact": "Contact",
       "team": "Équipe"

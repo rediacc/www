@@ -82,7 +82,7 @@ Cannot delete if machines are assigned. Reassign machines first using 'update ma
 #### Business Rules
 
 - User must be authenticated to perform this operation
-- User must belong to the same company as the bridge
+- User must belong to the same organization as the bridge
 - Bridge name must exist in the specified region
 - Bridge must not be assigned to any machines
 - Bridge must not have active queue items in PENDING or ASSIGNED states
@@ -163,7 +163,7 @@ Check for pending queue items before deletion. The actual server is not affected
 #### Business Rules
 
 - You must be logged in with valid user account
-- Must belong to the same company that owns the machine
+- Must belong to the same organization that owns the machine
 - Must be an active member of the team that owns the machine
 - Machine must exist in the specified team
 - Cannot delete if machine has pending queue items
@@ -321,7 +321,7 @@ WARNING: Cascades to all bridges in the region. Cannot delete if bridges have as
 #### Business Rules
 
 - User must be authenticated to perform this operation
-- User must belong to the same company as the region
+- User must belong to the same organization as the region
 - Region name must exist in the system
 - Region must not contain any bridges
 - Region must not be referenced by any machines
@@ -559,9 +559,9 @@ WARNING: This cascades to all team resources. Ensure data is backed up. Requires
 
 - You must be logged in with valid credentials
 - You must be a member of the team to delete it
-- Team must belong to your company
+- Team must belong to your organization
 - 'Private Team' cannot be deleted (system requirement)
-- Cannot delete the last team in a company
+- Cannot delete the last team in an organization
 - Team must have no machines before deletion
 - Team must have no repositories before deletion
 - Team must have no schedules before deletion

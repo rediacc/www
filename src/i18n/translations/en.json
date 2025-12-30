@@ -68,7 +68,7 @@
     "copyright": "{{year}} Rediacc. All rights reserved.",
     "columns": {
       "product": "Product",
-      "company": "Company",
+      "organization": "Organization",
       "support": "Support",
       "legal": "Legal"
     },
@@ -78,7 +78,7 @@
       "pricing": "Pricing",
       "professionalServices": "Professional Services"
     },
-    "companyLinks": {
+    "organizationLinks": {
       "aboutUs": "About Us",
       "team": "Team",
       "contact": "Contact"
@@ -192,8 +192,8 @@
           "label": "Email *",
           "autoComplete": "email"
         },
-        "company": {
-          "label": "Company *",
+        "organization": {
+          "label": "Organization *",
           "autoComplete": "organization"
         },
         "role": {
@@ -311,7 +311,7 @@
       "mission": {
         "title": "Our Mission: Make Disasters Impossible",
         "description": "Every 47 days, AI deletes a production database. Every year, 1.71% of drives fail. 75% of ransomware targets backups. We make all these disasters recoverable in 60 seconds.",
-        "belief": "We believe that every company, regardless of size or budget, deserves access to the same powerful infrastructure tools that Fortune 500 companies use. That's why we built Rediacc—to level the playing field and empower businesses to focus on what they do best, while we handle the infrastructure complexity."
+        "belief": "We believe that every organization, regardless of size or budget, deserves access to the same powerful infrastructure tools that Fortune 500 companies use. That's why we built Rediacc—to level the playing field and empower businesses to focus on what they do best, while we handle the infrastructure complexity."
       },
       "values": {
         "title": "Our Values"
@@ -1387,7 +1387,7 @@
             "subtitle": "Time is what we want most, but what we use worst <small class='subtitle-attribution'>— William Penn</small>",
             "problem": {
               "description": "Development teams waste 21+ hours every day waiting for environments. Manual setup requires DevOps intervention, multiple tickets, and days of waiting. By the time staging is ready, requirements have changed. This bottleneck kills velocity—61% of teams report environment provisioning as their major deployment roadblock. One in four organizations takes three-plus months from code complete to production deployment because environments can't keep pace.",
-              "story": "A mid-sized SaaS company with 30 developers calculated they wasted 21 hours per day across the team just waiting for environment setup. Each developer needed 30-45 minutes daily for environment configuration issues. That's 525 hours monthly—equivalent to 3 full-time engineers doing nothing but fighting infrastructure instead of shipping features. The cost: $150K+ annually in wasted developer time, not counting delayed features and missed market opportunities.",
+              "story": "A mid-sized SaaS organization with 30 developers calculated they wasted 21 hours per day across the team just waiting for environment setup. Each developer needed 30-45 minutes daily for environment configuration issues. That's 525 hours monthly—equivalent to 3 full-time engineers doing nothing but fighting infrastructure instead of shipping features. The cost: $150K+ annually in wasted developer time, not counting delayed features and missed market opportunities.",
               "additionalPoints": [
                 "Manual setup requires DevOps tickets creating 2-3 day delays",
                 "Each developer configures environments differently creating inconsistencies",
@@ -1439,7 +1439,7 @@
             "subtitle": "Waste not, want not <small class='subtitle-attribution'>— English proverb</small>",
             "problem": {
               "description": "Traditional development infrastructure requires always-on staging, QA, and developer environments consuming cloud resources 24/7. Multiply environments across teams and costs explode. A 30-developer team maintaining standard dev/staging/QA setups easily burns $50K-100K monthly on idle infrastructure. Storage costs compound with full database copies consuming terabytes unnecessarily. Finance pressures engineering to cut infrastructure spending without understanding the velocity impact.",
-              "story": "An e-commerce company with 50 developers reviewed their AWS bill: $180K monthly for development infrastructure. Analysis showed 78% of environments sat idle after business hours and weekends. Each environment ran full database copies—30TB total storage for data that could fit in 3TB with deduplication. They had 15 permanent staging environments, but only 3-4 were actively used at any time. The waste: $140K monthly on idle infrastructure that developers forgot to shut down.",
+              "story": "An e-commerce organization with 50 developers reviewed their AWS bill: $180K monthly for development infrastructure. Analysis showed 78% of environments sat idle after business hours and weekends. Each environment ran full database copies—30TB total storage for data that could fit in 3TB with deduplication. They had 15 permanent staging environments, but only 3-4 were actively used at any time. The waste: $140K monthly on idle infrastructure that developers forgot to shut down.",
               "additionalPoints": [
                 "Always-on environments cost 24/7 but used 8-10 hours daily",
                 "Developers forget to shut down test environments after use",
@@ -1465,7 +1465,7 @@
             "subtitle": "Simplicity is the ultimate sophistication <small class='subtitle-attribution'>— Leonardo da Vinci</small>",
             "problem": {
               "description": "Adding environment provisioning to existing DevOps pipelines requires custom scripts, API integrations, and ongoing maintenance. Each new tool adds complexity to already-sprawling toolchains where 13% of teams juggle 14+ different tools. Integration failures break CI/CD pipelines. Documentation gaps mean only one engineer understands the provisioning system, creating knowledge concentration risk.",
-              "story": "A B2B SaaS company attempted to automate environment provisioning through custom Jenkins scripts calling AWS CloudFormation and RDS APIs. Initial implementation took 3 months and 500 hours of DevOps engineering time. Six months later, when the original engineer left, nobody could modify the scripts safely. The provisioning system became technical debt—working but untouchable. When AWS deprecated an API endpoint, the entire pipeline broke. Recovery time: 2 weeks of lost development velocity while a consultant reverse-engineered the custom scripts.",
+              "story": "A B2B SaaS organization attempted to automate environment provisioning through custom Jenkins scripts calling AWS CloudFormation and RDS APIs. Initial implementation took 3 months and 500 hours of DevOps engineering time. Six months later, when the original engineer left, nobody could modify the scripts safely. The provisioning system became technical debt—working but untouchable. When AWS deprecated an API endpoint, the entire pipeline broke. Recovery time: 2 weeks of lost development velocity while a consultant reverse-engineered the custom scripts.",
               "additionalPoints": [
                 "Custom integration scripts require ongoing maintenance",
                 "API changes break custom integrations without warning",

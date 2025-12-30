@@ -51,7 +51,7 @@
     ],
     "form": {
       "fields": {
-        "company": {
+        "organization": {
           "autoComplete": "组织",
           "label": "公司 *"
         },
@@ -95,12 +95,12 @@
   },
   "footer": {
     "columns": {
-      "company": "公司",
+      "organization": "公司",
       "legal": "合法的",
       "product": "产品",
       "support": "支持"
     },
-    "companyLinks": {
+    "organizationLinks": {
       "aboutUs": "关于我们",
       "contact": "联系我们",
       "team": "团队"

@@ -64,7 +64,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/ResetBridgeAuthorizati
 #### Business Rules
 
 - User must be authenticated to perform this operation
-- User must belong to the same company as the bridge
+- User must belong to the same organization as the bridge
 - Bridge must exist in the system
 - Old authentication token will be immediately invalidated
 - New token is generated using cryptographically secure randomness

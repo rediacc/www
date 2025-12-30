@@ -83,7 +83,7 @@ Traditional development infrastructure requires always-on staging, QA, and devel
 * Multiple staging environments "just in case" sit idle most of the time
 * **78% of environments** sit idle after business hours and weekends
 
-**E-commerce company case:**
+**E-commerce organization case:**
 50 developers. AWS bill: **$180K monthly** for development infrastructure. Analysis showed 78% idle. Each environment ran full database copies—30TB total storage for data that could fit in 3TB with deduplication. They had 15 permanent staging environments, but only 3-4 were actively used.
 
 **The waste: $140K monthly** on idle infrastructure developers forgot to shut down.

@@ -23,14 +23,14 @@ Update vault data for any resource type
 
 #### Details
 
-Updates the encrypted vault configuration for teams, machines, regions, bridges, company, repositories, storages, or schedules. Vaults store sensitive configuration data and credentials.
+Updates the encrypted vault configuration for teams, machines, regions, bridges, organization, repositories, storages, or schedules. Vaults store sensitive configuration data and credentials.
 
 #### Parameters
 
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
-| `resourceType` | string | Yes | - | Type of resource to update (choices: team, machine, region, bridge, company, repository, storage, schedule) | machine |
-| `name` | string | No | - | Resource name (not needed for 'company') | web-server-01 |
+| `resourceType` | string | Yes | - | Type of resource to update (choices: team, machine, region, bridge, organization, repository, storage, schedule) | machine |
+| `name` | string | No | - | Resource name (not needed for 'organization') | web-server-01 |
 | `file` | string | No | - | File containing JSON vault data (use '-' for stdin) | vault-config.json |
 | `team` | string | No | - | Team name (required for machine, repository, storage, schedule) | dev-team |
 | `region` | string | No | - | Region name (required for bridge) | us-east |
@@ -50,9 +50,9 @@ echo '{"SSH_PRIVATE_KEY":"..."}' | rediacc vault set team dev-team -
 Update team vault from stdin
 
 ```bash
-rediacc vault set company company-settings.json
+rediacc vault set organization organization-settings.json
 ```
-Update company-wide vault
+Update organization-wide vault
 
 ##### Auto-Generated CLI Examples
 
@@ -86,7 +86,7 @@ Vault data is encrypted with master password. Always backup current vault before
 - Vault data must be valid JSON format
 - Vault data is encrypted with master password before storage
 - Maximum vault size is 64KB after encryption
-- Company vault requires company admin permissions
+- Organization vault requires organization admin permissions
 - Team vault requires team membership
 - Entity-specific vaults require team membership
 - Previous vault data is completely replaced

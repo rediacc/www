@@ -14,7 +14,7 @@ language: en
 
 ## The Problem
 
-The company becomes aware of the risks of backing up data **only on the same machine**:
+The organization becomes aware of the risks of backing up data **only on the same machine**:
 * Hardware failures
 * Cyber attacks
 * Physical disasters like war, earthquake, fire, flood
@@ -34,7 +34,7 @@ After a customer call:
 **Results:**
 * Manual disk recovery attempts **fail**
 * Due to 3 weeks of data loss, **customer contracts are canceled**
-* The company's **reputation is seriously damaged**
+* The organization's **reputation is seriously damaged**
 
 ## Rediacc Solution
 

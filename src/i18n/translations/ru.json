@@ -51,7 +51,7 @@
     ],
     "form": {
       "fields": {
-        "company": {
+        "organization": {
           "autoComplete": "организация",
           "label": "Компания *"
         },
@@ -95,12 +95,12 @@
   },
   "footer": {
     "columns": {
-      "company": "Компания",
+      "organization": "Компания",
       "legal": "Юридический",
       "product": "Продукт",
       "support": "Поддерживать"
     },
-    "companyLinks": {
+    "organizationLinks": {
       "aboutUs": "О нас",
       "contact": "Контакты",
       "team": "Команда"

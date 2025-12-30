@@ -27,7 +27,7 @@ Mehmet is an experienced system administrator who manages large-scale databases.
 
 **Impacts:**
 * Customers **cannot access payment and order systems**
-* Company employees (**5000+ people**) cannot work
+* Organization employees (**5000+ people**) cannot work
 * **Reputation loss** and increasing complaints begin
 
 **Temporary Solution:**

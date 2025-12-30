@@ -62,11 +62,11 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetEntityAuditTrace" \
 - User must be authenticated with valid credentials
 - Regular users can only view their own audit history
 - Team members can view audit for team resources
-- Administrators can view all company entity audits
+- Administrators can view all organization entity audits
 - Audit retention varies by subscription tier (7-365 days)
 - Maximum 100 records shown at once
 - Sensitive operations masked for non-administrators
-- Entity must exist and belong to your company
+- Entity must exist and belong to your organization
 - Region, bridge, permissions require admin access
 - Results sorted newest to oldest
 

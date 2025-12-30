@@ -51,7 +51,7 @@
     ],
     "form": {
       "fields": {
-        "company": {
+        "organization": {
           "autoComplete": "organizasyon",
           "label": "Şirket *"
         },
@@ -95,12 +95,12 @@
   },
   "footer": {
     "columns": {
-      "company": "Şirket",
+      "organization": "Şirket",
       "legal": "Yasal",
       "product": "Ürün",
       "support": "Destek"
     },
-    "companyLinks": {
+    "organizationLinks": {
       "aboutUs": "Hakkımızda",
       "contact": "İletişim",
       "team": "Ekip"

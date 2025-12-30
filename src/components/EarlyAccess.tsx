@@ -61,18 +61,18 @@ const EarlyAccess: React.FC = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="company" className="form-label">{formFields.company?.label}</label>
+                <label htmlFor="organization" className="form-label">{formFields.organization?.label}</label>
                 <input
                   type="text"
-                  id="company"
-                  name="company"
+                  id="organization"
+                  name="organization"
                   className="form-input"
                   required
-                  aria-describedby="company-error"
-                  autoComplete={formFields.company?.autoComplete}
+                  aria-describedby="organization-error"
+                  autoComplete={formFields.organization?.autoComplete}
                   suppressHydrationWarning
                 />
-                <div className="form-error" id="company-error" role="alert" aria-live="polite"></div>
+                <div className="form-error" id="organization-error" role="alert" aria-live="polite"></div>
               </div>
 
               <div className="form-group">

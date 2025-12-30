@@ -82,12 +82,12 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateDistributedStora
 - User must be authenticated with valid credentials
 - User must be a member of the specified team
 - Cluster name must be unique within the team
-- Team must exist in your company
+- Team must exist in your organization
 - Cluster configuration requires specific parameters in vault data
 - Pool PG number must be between 1 and 1024
 - New clusters start with PENDING status
 - No subscription plan restrictions for creating clusters
-- Vault data is encrypted using company master password
+- Vault data is encrypted using organization master password
 - Cluster creation is logged in audit trail
 
 #### Success Message
@@ -941,7 +941,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateDistributedStora
 - Vault data must be provided as text (cannot be empty)
 - Maximum vault chunk size is 3,072 characters
 - Large vaults automatically split into multiple chunks
-- Vault data is encrypted with company master password
+- Vault data is encrypted with organization master password
 - Each update increments vault version number
 - Previous vault data is completely replaced
 - Update is logged in audit trail

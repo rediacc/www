@@ -68,7 +68,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/PrivilegeAuthenticatio
 - Some operations may require approval from another admin
 - Elevation automatically expires after timeout period
 - Failed elevation attempts are logged and may trigger alerts
-- Cannot be used to bypass company-level restrictions
+- Cannot be used to bypass organization-level restrictions
 - Revoked immediately if suspicious activity is detected
 
 #### Success Message
@@ -129,7 +129,7 @@ Request hashes are provided during login attempts. Status includes pending, auth
 #### Business Rules
 
 - Requires active authentication token to display status
-- Shows current user email, company, and assigned teams
+- Shows current user email, organization, and assigned teams
 - Displays token creation time and expiration status
 - Lists all permission groups assigned to the user
 - Shows whether TFA is enabled for the account

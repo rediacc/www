@@ -51,7 +51,7 @@
     ],
     "form": {
       "fields": {
-        "company": {
+        "organization": {
           "autoComplete": "組織",
           "label": "会社 *"
         },
@@ -95,12 +95,12 @@
   },
   "footer": {
     "columns": {
-      "company": "会社",
+      "organization": "会社",
       "legal": "法律上の",
       "product": "製品",
       "support": "サポート"
     },
-    "companyLinks": {
+    "organizationLinks": {
       "aboutUs": "私たちについて",
       "contact": "お問い合わせ",
       "team": "チーム"

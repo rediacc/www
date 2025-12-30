@@ -14,7 +14,7 @@ language: en
 
 ## The Problem
 
-The company's services in the cloud environment were **struggling to respond**. As a solution, the software team:
+The organization's services in the cloud environment were **struggling to respond**. As a solution, the software team:
 * Performed **horizontal scaling with Kubernetes** and **increased the number of servers 10 times**
 * However, performance improved **only 2 times**
 

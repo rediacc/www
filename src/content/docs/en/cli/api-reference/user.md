@@ -34,19 +34,19 @@ Activates a newly created user account using an activation code. Users must be a
 
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
-| `email` | string | Yes | - | Email address of user to activate | newuser@company.com |
+| `email` | string | Yes | - | Email address of user to activate | newuser@organization.com |
 | `code` | string | No | - | Activation code (default: 111111) | 123456 |
 
 
 #### Examples
 
 ```bash
-rediacc user activate newuser@company.com
+rediacc user activate newuser@organization.com
 ```
 Activate with default code
 
 ```bash
-rediacc user activate admin@company.com --code 654321
+rediacc user activate admin@organization.com --code 654321
 ```
 Activate with custom code
 
@@ -63,10 +63,10 @@ rediacc user activate --email <value>
 # Using credential authentication
 curl -X POST "https://www.rediacc.com/api/StoredProcedure/ActivateUserAccount" \
   -H "Content-Type: application/json" \
-  -H "Rediacc-UserEmail: user@company.com" \
+  -H "Rediacc-UserEmail: user@organization.com" \
   -H "Rediacc-UserHash: YOUR_PASSWORD_HASH" \
   -d '{
-    "email": "newuser@company.com",
+    "email": "newuser@organization.com",
     "code": "123456"
 }'
 ```
@@ -85,7 +85,7 @@ No authentication required for activation. Activation codes are set during user 
 - Activation code is deleted after successful use
 - Account becomes active and can log in
 - User can join teams after activation
-- Counts toward company's active user limit
+- Counts toward organization's active user limit
 - Activation is logged in audit trail
 
 #### Success Message
@@ -110,19 +110,19 @@ Deactivates a user account, preventing login while preserving all data and histo
 
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
-| `email` | string | Yes | - | Email address of user to deactivate | user@company.com |
+| `email` | string | Yes | - | Email address of user to deactivate | user@organization.com |
 | `force` | string | No | - | Skip confirmation prompt | --force |
 
 
 #### Examples
 
 ```bash
-rediacc user deactivate employee@company.com
+rediacc user deactivate employee@organization.com
 ```
 Deactivate with confirmation
 
 ```bash
-rediacc user deactivate contractor@company.com --force
+rediacc user deactivate contractor@organization.com --force
 ```
 Deactivate without confirmation
 
@@ -141,7 +141,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateUserToDeactivate
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{
-    "email": "user@company.com",
+    "email": "user@organization.com",
     "force": "--force"
 }'
 ```
@@ -189,19 +189,19 @@ Updates a user's email address across the system. The new email becomes the logi
 
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
-| `currentEmail` | string | Yes | - | Current email address | old@company.com |
-| `newEmail` | string | Yes | - | New email address | new@company.com |
+| `currentEmail` | string | Yes | - | Current email address | old@organization.com |
+| `newEmail` | string | Yes | - | New email address | new@organization.com |
 
 
 #### Examples
 
 ```bash
-rediacc user update-email old@company.com new@company.com
+rediacc user update-email old@organization.com new@organization.com
 ```
 Change user's email
 
 ```bash
-rediacc user update-email jane.doe@company.com jane.smith@company.com
+rediacc user update-email jane.doe@organization.com jane.smith@organization.com
 ```
 Update email after name change
 
@@ -220,8 +220,8 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateUserEmail" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{
-    "currentEmail": "old@company.com",
-    "newEmail": "new@company.com"
+    "currentEmail": "old@organization.com",
+    "newEmail": "new@organization.com"
 }'
 ```
 
@@ -234,7 +234,7 @@ New email must be unique. User must log in with new email after change. Consider
 - Requires user management or admin permissions
 - New email must not already exist in system
 - New email must be valid email format
-- Cannot change email to one from different company domain
+- Cannot change email to one from different organization domain
 - User's active sessions remain valid
 - All permissions and team memberships preserved
 - Audit history updated with both emails
@@ -300,14 +300,14 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateUserPassword" \
 
 #### Notes
 
-Requires current authentication. Password requirements depend on company policy. After change, all sessions are invalidated - you must log in again.
+Requires current authentication. Password requirements depend on organization policy. After change, all sessions are invalidated - you must log in again.
 
 #### Business Rules
 
 - User must be authenticated with valid session
 - Session-based identity verification (no current password needed)
 - New password must be provided as 32-byte hash
-- Password is encrypted with company passphrase
+- Password is encrypted with organization passphrase
 - Change takes effect immediately
 - Current session remains active (not logged out)
 - Other sessions remain valid until expiration

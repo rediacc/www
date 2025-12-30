@@ -10,11 +10,11 @@ language: en
 
 **Note:** This is a **use case example** demonstrating how Rediacc can solve this problem. As a startup, these scenarios represent potential applications rather than completed case studies.
 
-**Crisis Scenario:** AI training times **extended 2-3 times**, causing project delays. Engineers experienced significant productivity loss while waiting for resources, threatening the company's competitive advantage.
+**Crisis Scenario:** AI training times **extended 2-3 times**, causing project delays. Engineers experienced significant productivity loss while waiting for resources, threatening the organization's competitive advantage.
 
 ## The Problem
 
-The company's software engineers are experiencing performance issues with **on-premise** servers used for **AI model training**:
+The organization's software engineers are experiencing performance issues with **on-premise** servers used for **AI model training**:
 * During **office hours** (08:00-17:00), server requests reach 99% capacity
 * Training requiring high processing power causes the hardware to **be insufficient**
 
@@ -26,7 +26,7 @@ The company's software engineers are experiencing performance issues with **on-p
 
 * AI training times **extend 2-3 times**, projects are delayed
 * Engineers experience **productivity loss** while waiting for resources
-* The company faces the risk of **gradually losing its competitive advantage**
+* The organization faces the risk of **gradually losing its competitive advantage**
 
 ## Rediacc Solution
 

@@ -12,7 +12,7 @@ Create new resources in the system.
 ## Table of Contents
 
 - [bridge](#bridge)
-- [company](#company)
+- [organization](#organization)
 - [machine](#machine)
 - [queue-item](#queue-item)
 - [region](#region)
@@ -85,9 +85,9 @@ After creation, start the bridge with './bridge --bridge-mode token=<token> api_
 #### Business Rules
 
 - Bridge name must be unique within the region
-- Region must exist and belong to the user's company
+- Region must exist and belong to the user's organization
 - Bridge vault data cannot be null or empty
-- Company must not have exceeded bridge resource limits
+- Organization must not have exceeded bridge resource limits
 - User must have appropriate permissions
 - Vault data must be valid JSON format
 - Resource limits depend on subscription plan
@@ -99,19 +99,19 @@ After creation, start the bridge with './bridge --bridge-mode token=<token> api_
 
 `Successfully created bridge: {name} in region {region}`
 
-## company
+## organization
 
-Create a new company account with admin user
+Create a new organization account with admin user
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/CreateNewCompany`
+**Endpoint:** `POST /api/StoredProcedure/CreateNewOrganization`
 
 **Authentication:** Required (credential-based with Rediacc-UserEmail and Rediacc-UserHash headers)
 
 #### Details
 
-Creates a new Rediacc company along with its admin user account. The email and password parameters are used to create the admin user who will own the company. This is typically the first step in setting up a new Rediacc deployment.
+Creates a new Rediacc organization along with its admin user account. The email and password parameters are used to create the admin user who will own the organization. This is typically the first step in setting up a new Rediacc deployment.
 
 #### Parameters
 
@@ -119,7 +119,7 @@ Creates a new Rediacc company along with its admin user account. The email and p
 |-----------|------|----------|---------|-------------|---------|
 | `activationCode` | string | No | - |  |  |
 | `vaultDefaults` | string | No | - |  |  |
-| `companyName` | string | Yes | - |  |  |
+| `organizationName` | string | Yes | - |  |  |
 | `subscriptionPlan` | string | Yes | - |  |  |
 
 
@@ -129,21 +129,21 @@ Creates a new Rediacc company along with its admin user account. The email and p
 
 ```bash
 # Basic usage (required parameters only)
-rediacc create company
+rediacc create organization
 ```
 
 ##### Auto-Generated cURL Examples
 
 ```bash
 # Using credential authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateNewCompany" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateNewOrganization" \
   -H "Content-Type: application/json" \
-  -H "Rediacc-UserEmail: user@company.com" \
+  -H "Rediacc-UserEmail: user@organization.com" \
   -H "Rediacc-UserHash: YOUR_PASSWORD_HASH" \
   -d '{
     "activationCode": "example-activation_code",
     "vaultDefaults": "example-vault_defaults",
-    "companyName": "example-company_name"
+    "organizationName": "example-organization_name"
 }'
 ```
 
@@ -154,15 +154,15 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateNewCompany" \
 - User email must not already exist in the system
 - Email format must be valid (contains @ and .)
 - Subscription plan must exist and be active (COMMUNITY, PRO, BUSINESS, or ENTERPRISE)
-- Company name is required and cannot be empty
-- Default company vault configuration will be applied automatically
+- Organization name is required and cannot be empty
+- Default organization vault configuration will be applied automatically
 - COMMUNITY plan gets 10 years subscription, other plans get 30-day trial
-- Company creation is atomic - all or nothing operation
+- Organization creation is atomic - all or nothing operation
 - Email validation checks for proper format with @ symbol and domain
 
 #### Success Message
 
-`Successfully created company: {name}`
+`Successfully created organization: {name}`
 
 ## machine
 
@@ -176,7 +176,7 @@ Create a new machine in a team
 
 #### Details
 
-Machines are remote servers that execute tasks via SSH. They must be associated with a team and connected through a bridge. Machine names must be unique across the entire company.
+Machines are remote servers that execute tasks via SSH. They must be associated with a team and connected through a bridge. Machine names must be unique across the entire organization.
 
 #### Parameters
 
@@ -184,7 +184,7 @@ Machines are remote servers that execute tasks via SSH. They must be associated 
 |-----------|------|----------|---------|-------------|---------|
 | `team` | string | Yes | - | Team that will own this machine | production-team |
 | `bridge` | string | Yes | - | Bridge to connect through (must exist in a region) | us-east-bridge-01 |
-| `vault` | string | No | - | JSON with machine config (ip, user, ssh_port, datastore) | {"ip": "10.0.0.5", "user": "rediacc", "datastore": "/mnt/datastore"} |
+| `vault` | string | No | - | JSON with machine config (ip, user, ssh_port, datastore) | {"ip": "10.0.0.5", "user": "rediacc", "datastore": "/mnt/rediacc"} |
 | `machine` | string | Yes | - |  |  |
 | `name` | string | Yes | - |  |  |
 
@@ -218,7 +218,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateMachine" \
   -d '{
     "team": "production-team",
     "bridge": "us-east-bridge-01",
-    "vault": "{"ip": "10.0.0.5", "user": "rediacc", "datastore": "/mnt/datastore"}"
+    "vault": "{"ip": "10.0.0.5", "user": "rediacc", "datastore": "/mnt/rediacc"}"
 }'
 ```
 
@@ -228,13 +228,13 @@ You must be a member of the team. The bridge must exist and be accessible. Machi
 
 #### Business Rules
 
-- Machine name must be unique across the entire company (not just within team)
+- Machine name must be unique across the entire organization (not just within team)
 - User must be a member of the specified team
-- Bridge must exist in a region within the company
-- Company must not have exceeded machine resource limits
+- Bridge must exist in a region within the organization
+- Organization must not have exceeded machine resource limits
 - Machine vault data cannot be null or empty
 - Vault data must be valid JSON format
-- Team must exist within the user's company
+- Team must exist within the user's organization
 - Resource limits depend on subscription plan
 - Machine names are case-sensitive
 - Bridge must be accessible and properly configured
@@ -316,7 +316,7 @@ Priority 1-2 requires Business/Enterprise subscription. Community/Pro limited to
 - Machine can be optional for bridge-only queue items
 - Queue vault data must be valid JSON format
 - Task execution is subject to subscription concurrency limits
-- Bridge must be in the same company as the machine
+- Bridge must be in the same organization as the machine
 
 #### Success Message
 
@@ -380,20 +380,20 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateRegion" \
 
 #### Notes
 
-Regions cannot be deleted if they contain bridges. Region names must be unique across the company.
+Regions cannot be deleted if they contain bridges. Region names must be unique across the organization.
 
 #### Business Rules
 
-- Region name must be unique within the company
+- Region name must be unique within the organization
 - Region vault data cannot be null or empty
-- Company must not have exceeded region resource limits
+- Organization must not have exceeded region resource limits
 - User must pass authentication and authorization checks
 - Vault data must be valid JSON format
 - Resource limits depend on subscription plan
 - Region names are case-sensitive
 - Regions with bridges cannot be deleted
 - Region creation is tracked in audit log
-- Admin permissions may be required depending on company settings
+- Admin permissions may be required depending on organization settings
 
 #### Success Message
 
@@ -452,8 +452,8 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateRepository" \
 - Repository name must be unique within the team
 - User must be a member of the specified team
 - Repository vault data cannot be null or empty
-- Company must not have exceeded repository resource limits
-- Team must exist within the user's company
+- Organization must not have exceeded repository resource limits
+- Team must exist within the user's organization
 - Vault data must be valid JSON format
 - Parent repository must exist if specified
 - Resource limits depend on subscription plan
@@ -532,8 +532,8 @@ Storage credentials are encrypted in the vault. Supported types include S3, Azur
 - Storage name must be unique within the team
 - User must be a member of the specified team
 - Storage vault data cannot be null or empty
-- Company must not have exceeded storage resource limits
-- Team must exist within the user's company
+- Organization must not have exceeded storage resource limits
+- Team must exist within the user's organization
 - Vault data must be valid JSON format
 - Resource limits depend on subscription plan
 - Storage names are case-sensitive
@@ -546,7 +546,7 @@ Storage credentials are encrypted in the vault. Supported types include S3, Azur
 
 ## team
 
-Create a new team in your company
+Create a new team in your organization
 
 #### API Information
 
@@ -606,10 +606,10 @@ Team creation counts against your subscription limits. The creator automatically
 
 #### Business Rules
 
-- Team name must be unique within the company
+- Team name must be unique within the organization
 - Team vault data cannot be null or empty
 - User must pass authentication and authorization checks
-- Company must not have exceeded team resource limits
+- Organization must not have exceeded team resource limits
 - Creator is automatically added as a team member
 - Team names are case-sensitive
 - Vault data must be valid JSON format
@@ -623,7 +623,7 @@ Team creation counts against your subscription limits. The creator automatically
 
 ## user
 
-Create a new user in your company
+Create a new user in your organization
 
 #### API Information
 
@@ -633,7 +633,7 @@ Create a new user in your company
 
 #### Details
 
-Creates a new user account that can access the company resources. Users must be activated before they can log in.
+Creates a new user account that can access the organization resources. Users must be activated before they can log in.
 
 #### Parameters
 
@@ -673,7 +673,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreateNewUser" \
 - Password hash must be exactly 32 bytes
 - Activation code must be exactly 6 characters
 - Email format validation is performed
-- Company must not have exceeded user resource limits
+- Organization must not have exceeded user resource limits
 - User creation is atomic with transactional safety
 - New users are created in inactive state and must be activated
 - Empty user vault is created automatically

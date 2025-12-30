@@ -13,7 +13,7 @@ List and view resources.
 
 - [audit-logs](#audit-logs)
 - [bridges](#bridges)
-- [company-vault](#company-vault)
+- [organization-vault](#organization-vault)
 - [data-graph](#data-graph)
 - [entity-history](#entity-history)
 - [list-system-configuration](#list-system-configuration)
@@ -28,7 +28,7 @@ List and view resources.
 - [team-repositories](#team-repositories)
 - [team-storages](#team-storages)
 - [teams](#teams)
-- [user-company](#user-company)
+- [user-organization](#user-organization)
 - [users](#users)
 
 ## audit-logs
@@ -95,11 +95,11 @@ Audit logs are retained based on subscription tier. Includes create, update, del
 #### Business Rules
 
 - User must be authenticated
-- Can only see audit logs for your own company
+- Can only see audit logs for your own organization
 - Default time period is 30 days if no start date provided
 - Start date must come before end date
 - Default limit is 1,000 records, maximum is 10,000
-- Administrators see all company audit logs
+- Administrators see all organization audit logs
 - Regular users only see logs for resources they have access to
 - Entity type filtering is optional
 - Sensitive operations masked for non-administrators
@@ -159,7 +159,7 @@ Bridges must be running in bridge mode to process queue items.
 #### Business Rules
 
 - User must be authenticated with a valid token
-- Region must exist within your company
+- Region must exist within your organization
 - Region names are case-sensitive
 - Regular users can only see vault data for bridges they have access to through team machines
 - Access determined by: user is member of team that has machines using the bridge
@@ -169,19 +169,19 @@ Bridges must be running in bridge mode to process queue items.
 - HasAccess indicator shows if user can use the bridge
 - Special 'Global Bridges' entry may be shown for cloud-managed bridges
 
-## company-vault
+## organization-vault
 
-View company-wide vault configuration
+View organization-wide vault configuration
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyVault`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationVault`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
 #### Details
 
-Displays the encrypted vault data stored at the company level. This typically contains global settings and shared credentials.
+Displays the encrypted vault data stored at the organization level. This typically contains global settings and shared credentials.
 
 #### Parameters
 
@@ -191,22 +191,22 @@ No parameters required.
 #### Examples
 
 ```bash
-rediacc list company-vault
+rediacc list organization-vault
 ```
-View company vault contents
+View organization vault contents
 
 ##### Auto-Generated CLI Examples
 
 ```bash
 # Basic usage (required parameters only)
-rediacc list company-vault
+rediacc list organization-vault
 ```
 
 ##### Auto-Generated cURL Examples
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyVault" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationVault" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -214,28 +214,28 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyVault" \
 
 #### Notes
 
-Requires company admin permissions. Vault data is automatically decrypted if you have the master password configured.
+Requires organization admin permissions. Vault data is automatically decrypted if you have the master password configured.
 
 #### Business Rules
 
 - User must be logged in with valid credentials
-- Can only access vault data for your own company
-- Returns company's main vault content and version
-- Includes company name for identification
+- Can only access vault data for your own organization
+- Returns organization's main vault content and version
+- Includes organization name for identification
 - Request must pass security validation
-- Cross-company access not permitted
-- GetCompanyVaults (admin-only) shows ALL vaults across organization
+- Cross-organization access not permitted
+- GetOrganizationVaults (admin-only) shows ALL vaults across organization
 - Administrators can view decrypted credentials and sensitive data
 - Two-factor authentication vaults excluded for security
 - Bridge users allowed access for automated operations
 
 ## data-graph
 
-Display company infrastructure as a hierarchical graph
+Display organization infrastructure as a hierarchical graph
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyDataGraphJson`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationDataGraphJson`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
@@ -271,7 +271,7 @@ rediacc list data-graph
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyDataGraphJson" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationDataGraphJson" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -284,8 +284,8 @@ Useful for understanding infrastructure topology and dependencies. JSON output c
 #### Business Rules
 
 - User must be authenticated with valid credentials
-- Can only view data for your own company
-- Administrators see all infrastructure across the company
+- Can only view data for your own organization
+- Administrators see all infrastructure across the organization
 - Regular users only see infrastructure they have access to
 - Access determined through team membership chain
 - Users see teams they belong to and resources owned by those teams
@@ -359,7 +359,7 @@ Get the credential from 'inspect' commands. History includes creates, updates, d
 - User must be authenticated
 - Entity type is required and must be valid
 - Entity credential (GUID) is mandatory
-- Entity must exist in your company
+- Entity must exist in your organization
 - Access rules vary by entity type and user role
 - Maximum 5,000 records, default 500
 - Users can view their own history, admins see all
@@ -498,23 +498,23 @@ Returns different data based on user permissions. Admins see all resources, regu
 #### Business Rules
 
 - User must be authenticated with valid token
-- User must belong to a company
+- User must belong to an organization
 - Regular users only see teams they are members of
 - Regular users only see machines belonging to their teams
 - Regular users only see bridges/regions with accessible machines
 - Regular users only see users in shared teams
-- Administrators see all company resources
+- Administrators see all organization resources
 - Optional context parameter filters data for specific use cases
-- Company isolation enforced - no cross-company visibility
+- Organization isolation enforced - no cross-organization visibility
 - All data returned as JSON with value/label pairs
 
 ## regions
 
-List all regions in your company
+List all regions in your organization
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyRegions`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationRegions`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
@@ -545,7 +545,7 @@ rediacc list regions
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyRegions" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationRegions" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -559,8 +559,8 @@ Regions define geographic or logical boundaries for infrastructure deployment.
 
 - User must be authenticated with a valid token
 - Token must be active and not expired
-- User must belong to a company
-- Only regions within your company are visible
+- User must belong to an organization
+- Only regions within your organization are visible
 - Administrators can see full vault data for all regions
 - Non-administrators cannot see sensitive vault data
 - Bridge count is shown for each region
@@ -570,11 +570,11 @@ Regions define geographic or logical boundaries for infrastructure deployment.
 
 ## resource-limits
 
-Display company resource limits and current usage
+Display organization resource limits and current usage
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyDashboardJson`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationDashboardJson`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
@@ -610,7 +610,7 @@ rediacc list resource-limits
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyDashboardJson" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationDashboardJson" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -622,7 +622,7 @@ Useful for capacity planning and monitoring when approaching subscription limits
 
 #### Business Rules
 
-- User must be authenticated and belong to a company
+- User must be authenticated and belong to an organization
 - Resource limits are additive across multiple active subscriptions
 - Tracks 8 resource types: regions, teams, bridges, machines, repositories, schedules, storage, users
 - Shows current usage count vs total allowed limit
@@ -691,7 +691,7 @@ Sessions expire based on tokenExpirationHours setting. Bridge tokens may have ex
 - Only active sessions are accepted (not expired or logged out)
 - Token rotation up to 3 times before requiring latest token
 - Users can only see their own sessions
-- Company maintenance mode blocks non-administrator access
+- Organization maintenance mode blocks non-administrator access
 - Two-factor authentication must be completed if enabled
 - Sessions sorted by creation time (newest first)
 - Shows session name, creation time, permissions, and expiration
@@ -704,7 +704,7 @@ Show subscription details and billing information
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyDashboardJson`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationDashboardJson`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
@@ -740,7 +740,7 @@ rediacc list subscription
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyDashboardJson" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationDashboardJson" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -753,7 +753,7 @@ Plans: COMMUNITY (free), PRO, BUSINESS, ENTERPRISE. Higher tiers offer more reso
 #### Business Rules
 
 - User must be authenticated with valid session
-- Can only view subscription information for your own company
+- Can only view subscription information for your own organization
 - Shows highest tier subscription when multiple are active
 - Subscription priority: Enterprise > Business > Pro > Community
 - Active subscriptions must have ACTIVE status and future end date
@@ -775,7 +775,7 @@ List machines in a specific team
 
 #### Details
 
-Shows all machines assigned to a team including their status, assigned bridge, vault configuration, and queue statistics. Machine names are unique across the company.
+Shows all machines assigned to a team including their status, assigned bridge, vault configuration, and queue statistics. Machine names are unique across the organization.
 
 #### Parameters
 
@@ -823,7 +823,7 @@ You must be a member of the team to see its machines. Shows queue count for each
 
 - Valid user authentication required with active session
 - User must be a member of the team to see machines
-- Company boundary enforced - only see machines in your company
+- Organization boundary enforced - only see machines in your organization
 - Multiple teams supported with comma-separated names
 - No team filter returns machines from all your teams
 - Shows machine details including bridge, region, queue count
@@ -887,7 +887,7 @@ You must be a member of the team to view its membership. Shows email addresses a
 
 - User must be authenticated with valid token
 - Can only view members of teams you belong to
-- Company boundary restriction applies
+- Organization boundary restriction applies
 - Team filtering with comma-separated names supported
 - No team specified returns members from all your teams
 - Shows user email and activation status
@@ -955,15 +955,15 @@ You must be a member of the team. Shows repository names, credentials, and vault
 #### Business Rules
 
 - User must be logged in with valid credentials
-- User must belong to the company
+- User must belong to the organization
 - User must be member of the team to view repositories
 - Team name filtering with exact case-sensitive match
 - Multiple teams supported with comma-separated names
 - No team specified returns repositories from all your teams
 - Shows repository name, GUID, and parent repository ID
-- Vault data decrypted using company passphrase
+- Vault data decrypted using organization passphrase
 - Results sorted by team name then repository name
-- Three-level access control: authentication, company, team
+- Three-level access control: authentication, organization, team
 
 ## team-storages
 
@@ -1025,7 +1025,7 @@ You must be a member of the team. Storage credentials are encrypted in vaults. U
 
 - User must be logged in with valid credentials
 - User account must be activated
-- Can only access storage from your own company
+- Can only access storage from your own organization
 - Must be member of the team to view storage
 - Maintenance mode blocks non-administrator access
 - Team name filtering supports comma-separated values
@@ -1036,11 +1036,11 @@ You must be a member of the team. Storage credentials are encrypted in vaults. U
 
 ## teams
 
-List all teams in your company
+List all teams in your organization
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyTeams`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationTeams`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
@@ -1076,7 +1076,7 @@ rediacc list teams
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyTeams" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationTeams" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -1089,29 +1089,29 @@ Requires authentication. Vault content is only visible for teams you belong to.
 #### Business Rules
 
 - User must be authenticated with valid credentials
-- User must belong to a company to retrieve team information
-- All teams in the company are visible to all users
+- User must belong to an organization to retrieve team information
+- All teams in the organization are visible to all users
 - Vault data (sensitive information) is only visible for teams where you are a member
 - Teams are sorted alphabetically by name
 - Statistics show member count, machine count, repository count, schedule count, and storage count
-- Encrypted vault data requires company passphrase for decryption
-- No cross-company access is allowed
+- Encrypted vault data requires organization passphrase for decryption
+- No cross-organization access is allowed
 - Membership status indicator shows 1 for member, 0 for non-member
-- Company name is included for context
+- Organization name is included for context
 
-## user-company
+## user-organization
 
-Display which company the current user belongs to
+Display which organization the current user belongs to
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetUserCompany`
+**Endpoint:** `POST /api/StoredProcedure/GetUserOrganization`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
 #### Details
 
-Shows the company information for the currently authenticated user. Useful for verifying you're logged into the correct company account.
+Shows the organization information for the currently authenticated user. Useful for verifying you're logged into the correct organization account.
 
 #### Parameters
 
@@ -1121,22 +1121,22 @@ No parameters required.
 #### Examples
 
 ```bash
-rediacc list user-company
+rediacc list user-organization
 ```
-Display current user's company
+Display current user's organization
 
 ##### Auto-Generated CLI Examples
 
 ```bash
 # Basic usage (required parameters only)
-rediacc list user-company
+rediacc list user-organization
 ```
 
 ##### Auto-Generated cURL Examples
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetUserCompany" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetUserOrganization" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -1144,28 +1144,28 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetUserCompany" \
 
 #### Notes
 
-Requires authentication. Shows company name and ID.
+Requires authentication. Shows organization name and ID.
 
 #### Business Rules
 
 - Valid authentication token required
 - Token rotation required for security
 - Active session must not be expired
-- Users can only view their own company information
-- No cross-company access allowed
-- Company name and vault data returned
+- Users can only view their own organization information
+- No cross-organization access allowed
+- Organization name and vault data returned
 - Shows team count, region count, and user count statistics
-- Each user associated with exactly one company
-- Company passphrase used to decrypt vault data
-- Failed validation returns no company information
+- Each user associated with exactly one organization
+- Organization passphrase used to decrypt vault data
+- Failed validation returns no organization information
 
 ## users
 
-List all users in your company
+List all users in your organization
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyUsers`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationUsers`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
@@ -1183,7 +1183,7 @@ No parameters required.
 ```bash
 rediacc list users
 ```
-Display all company users in table format
+Display all organization users in table format
 
 ```bash
 rediacc list users --output json | jq '.[] | select(.isActive == false)'
@@ -1201,7 +1201,7 @@ rediacc list users
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyUsers" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationUsers" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -1217,10 +1217,10 @@ Requires authentication. Shows user status, permissions, and security settings. 
 - Token must be active and not expired
 - User account must be activated
 - Token rotation required for security
-- Users can only view users from their own company
+- Users can only view users from their own organization
 - Administrators can see all users and their vault data
 - Non-administrators can only see users who share at least one team with them
 - Vault data (sensitive information) only visible to administrators
 - Shows permission groups (Administrators, Users, or Bridges)
-- Company boundary enforcement prevents cross-company visibility
+- Organization boundary enforcement prevents cross-organization visibility
 

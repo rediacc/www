@@ -23,8 +23,8 @@ Bridge management and operations.
 ### [Clone](./clone)
 Clone resources and configurations.
 
-### [Company](./company)
-Company management commands.
+### [Organization](./organization)
+Organization management commands.
 
 ### [Create](./create)
 Create new resources in the system.

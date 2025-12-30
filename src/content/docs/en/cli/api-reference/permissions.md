@@ -80,7 +80,7 @@ Permission names correspond to API endpoints. Use 'list lookup-data' to see avai
 #### Business Rules
 
 - User must be authenticated with valid credentials
-- Permission group must exist in your company
+- Permission group must exist in your organization
 - Cannot add permissions to Administrators group (has all permissions)
 - Cannot add permissions to Bridges group (protected system group)
 - Permission must be a valid system permission name
@@ -88,7 +88,7 @@ Permission names correspond to API endpoints. Use 'list lookup-data' to see avai
 - Only custom groups can have permissions added
 - Permission names must match approved API endpoints
 - Each addition is logged in audit trail
-- Company boundaries are strictly enforced
+- Organization boundaries are strictly enforced
 
 #### Success Message
 
@@ -119,7 +119,7 @@ Changes a user's permission group, granting them all permissions associated with
 #### Examples
 
 ```bash
-rediacc permission assign john@company.com developers
+rediacc permission assign john@organization.com developers
 ```
 Give John developer permissions
 
@@ -155,11 +155,11 @@ Replaces user's current permission group. Changes take effect on next login. Req
 #### Business Rules
 
 - User must be authenticated with valid credentials
-- Target user must exist in your company
-- Permission group must exist in your company
+- Target user must exist in your organization
+- Permission group must exist in your organization
 - Can only assign groups with equal or fewer privileges
 - Only administrators can assign users to Bridges group
-- Cannot remove last active administrator from company
+- Cannot remove last active administrator from organization
 - Changes take effect immediately for active sessions
 - Higher privilege tokens are automatically downgraded
 - Assignment is logged with token modification count
@@ -223,14 +223,14 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/CreatePermissionGroup"
 
 #### Notes
 
-Requires admin permissions. Group names must be unique within the company. Add permissions after creation.
+Requires admin permissions. Group names must be unique within the organization. Add permissions after creation.
 
 #### Business Rules
 
 - User must be authenticated with valid credentials
 - Custom groups require paid subscription (Pro, Business, or Enterprise)
 - Community plan users cannot create custom permission groups
-- Group name must be unique within your company
+- Group name must be unique within your organization
 - Cannot use reserved names: Administrators, Users, or Bridges
 - Maximum group name length is 100 characters
 - Group name cannot be empty or only whitespace
@@ -309,7 +309,7 @@ Cannot delete system groups. Check user assignments before deletion. This is irr
 - Only custom permission groups can be deleted
 - All permissions within the group are permanently removed
 - Deletion works on any subscription plan (including Community)
-- Group must exist in your company
+- Group must exist in your organization
 - Operation is permanent and cannot be undone
 - Deletion is logged in audit trail
 
@@ -381,12 +381,12 @@ Permission names correspond to API endpoints. Compare groups to understand acces
 
 - User must be authenticated with valid credentials
 - Only administrators can view group details
-- Group must exist in your company
+- Group must exist in your organization
 - Shows all permissions in the group alphabetically
 - Group names are case-sensitive
 - Works for both system and custom groups
 - No limit on permissions displayed
-- Company-specific access only
+- Organization-specific access only
 - Access attempts are tracked for security
 - Returns error if group doesn't exist
 
@@ -396,13 +396,13 @@ List all permission groups
 
 #### API Information
 
-**Endpoint:** `POST /api/StoredProcedure/GetCompanyPermissionGroups`
+**Endpoint:** `POST /api/StoredProcedure/GetOrganizationPermissionGroups`
 
 **Authentication:** Required (token-based with Rediacc-RequestToken header)
 
 #### Details
 
-Shows all permission groups in the company including system groups and custom groups. Displays group names and member counts.
+Shows all permission groups in the organization including system groups and custom groups. Displays group names and member counts.
 
 #### Parameters
 
@@ -432,7 +432,7 @@ rediacc permission list-groups
 
 ```bash
 # Using token authentication
-curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetCompanyPermissionGroups" \
+curl -X POST "https://www.rediacc.com/api/StoredProcedure/GetOrganizationPermissionGroups" \
   -H "Content-Type: application/json" \
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{}'
@@ -446,13 +446,13 @@ System groups like 'Admins' and 'Bridges' cannot be modified. Shows user count f
 
 - User must be authenticated with valid credentials
 - Only administrators can view permission groups
-- Shows all groups for your company (system and custom)
+- Shows all groups for your organization (system and custom)
 - Displays group name, user count, and permission count
 - Lists all permissions for each group
 - Results sorted alphabetically by group name
 - No filtering or pagination available
 - Maintenance mode blocks non-admin access
-- Operation is company-specific
+- Operation is organization-specific
 - Failed attempts are logged for security
 
 ## remove
@@ -518,7 +518,7 @@ Takes effect immediately for all users in the group. Use 'list-group' to see cur
 #### Business Rules
 
 - User must be authenticated with valid credentials
-- Permission group must exist in your company
+- Permission group must exist in your organization
 - Cannot modify Administrators group (protected)
 - Cannot modify Bridges group (protected)
 - Permission must exist in the specified group
