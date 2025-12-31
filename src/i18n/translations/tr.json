@@ -464,9 +464,7 @@
                 "Standart Uygulama (9.999 ABD Doları) veya katmanlı paketler (Küçük 7.499 ABD Doları · Orta 14.999 ABD Doları · Büyük 29.999 ABD Doları · Kurumsal özel)",
                 "Acil Durum Müdahale katılımı (talep üzerine 29.999 ABD doları)"
               ],
-              "included": [
-                "Self servis belgeler, video eğitimleri ve topluluk forumu"
-              ],
+              "included": ["Self servis belgeler, video eğitimleri ve topluluk forumu"],
               "planId": "toplum"
             },
             {
@@ -800,10 +798,7 @@
       },
       "trust": {
         "heading": "Kurumsal Düzeyde Güvenlik ve Güvenilirlik",
-        "items": [
-          "Banka düzeyinde şifreleme",
-          "%99,9 kesintisiz çalışma taahhüdü"
-        ]
+        "items": ["Banka düzeyinde şifreleme", "%99,9 kesintisiz çalışma taahhüdü"]
       },
       "ui": {
         "anchor": "Stratejik çapa",
@@ -1478,20 +1473,12 @@
         "title": "Her Zaman Çoklu Bulut"
       },
       {
-        "benefits": [
-          "Otomatik doğrulama",
-          "Uzatılmış saklama",
-          "Dakikalar içinde kurtarın"
-        ],
+        "benefits": ["Otomatik doğrulama", "Uzatılmış saklama", "Dakikalar içinde kurtarın"],
         "description": "Doğrulanmış kurtarma garantilidir. Yedeklemeler test edildi. Tarihi tamamlayın.",
         "title": "Doğrulanmış Yedeklemeler"
       },
       {
-        "benefits": [
-          "Kontrol ettiğiniz şifreleme",
-          "Tam denetim izi",
-          "Taşıma açısından güvenli"
-        ],
+        "benefits": ["Kontrol ettiğiniz şifreleme", "Tam denetim izi", "Taşıma açısından güvenli"],
         "description": "Her şey şifrelendi. Her şey denetlendi. Tam kontrol.",
         "title": "Şifreleme Kontrolü"
       },

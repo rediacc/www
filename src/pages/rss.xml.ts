@@ -7,15 +7,15 @@ export async function GET(context: APIContext) {
 
   // Filter for English posts only for the main RSS feed
   const englishPosts = blog
-    .filter(post => post.data.language === 'en')
+    .filter((post) => post.data.language === 'en')
     .sort((a, b) => b.data.publishedDate.valueOf() - a.data.publishedDate.valueOf());
 
   return rss({
     title: 'Rediacc Blog',
     description: 'Infrastructure automation, disaster recovery, and system portability insights',
-    site: context.site || 'https://www.rediacc.com',
+    site: context.site ?? 'https://www.rediacc.com',
     items: englishPosts.map((post) => {
-      const slug = post.slug.split('/').pop() || post.slug;
+      const slug = post.slug.split('/').pop() ?? post.slug;
       return {
         title: post.data.title,
         description: post.data.description,

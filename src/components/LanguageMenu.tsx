@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { getLanguageName, getLanguageFlag, SUPPORTED_LANGUAGES } from '../i18n/language-utils';
-import type { Language } from '../i18n/types';
 import { setLanguageCookie } from '../utils/language-cookie';
+import type { Language } from '../i18n/types';
 import '../styles/language-switcher.css';
 
 interface LanguageMenuProps {
@@ -49,14 +49,16 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   // Normalize languages to Language[] format
-  const languageList: Language[] = languages.map(lang =>
+  const languageList: Language[] = languages.map((lang) =>
     typeof lang === 'string' ? lang : lang.lang
   );
 
   // Get URL for a language if using link mode
   const getLanguageUrl = (lang: Language): string => {
     if (navigationMode === 'link') {
-      const langData = languages.find(l => (typeof l === 'string' ? l === lang : l.lang === lang));
+      const langData = languages.find((l) =>
+        typeof l === 'string' ? l === lang : l.lang === lang
+      );
       if (typeof langData !== 'string' && 'url' in langData) {
         return langData.url;
       }
@@ -119,14 +121,15 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
     if (variant === 'icon-only') {
       return (
         <button
+          type="button"
           ref={triggerRef}
-          className={`language-trigger-icon ${className || ''}`}
+          className={`language-trigger-icon ${className ?? ''}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={ariaLabel}
           aria-expanded={isOpen}
           aria-haspopup="menu"
         >
-          {icon || (
+          {icon ?? (
             <svg
               width="20"
               height="20"
@@ -148,8 +151,9 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
     // flag-name and full-list variants
     return (
       <button
+        type="button"
         ref={triggerRef}
-        className={`language-trigger ${className || ''}`}
+        className={`language-trigger ${className ?? ''}`}
         onClick={() => setIsOpen(!isOpen)}
         aria-label={ariaLabel}
         aria-expanded={isOpen}
@@ -169,7 +173,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
           strokeWidth="2"
           aria-hidden="true"
         >
-          <polyline points="6 9 12 15 18 9"></polyline>
+          <polyline points="6 9 12 15 18 9" />
         </svg>
       </button>
     );
@@ -196,6 +200,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
     // Button mode
     return languageList.map((lang) => (
       <button
+        type="button"
         key={lang}
         className={`language-option ${lang === currentLang ? 'active' : ''}`}
         onClick={() => handleLanguageSelect(lang)}
@@ -209,7 +214,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
   };
 
   return (
-    <div className={`language-selector ${className || ''}`} ref={dropdownRef}>
+    <div className={`language-selector ${className ?? ''}`} ref={dropdownRef}>
       {renderTrigger()}
 
       {isOpen && (

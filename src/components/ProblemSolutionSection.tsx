@@ -24,29 +24,72 @@ interface ProblemSolutionSectionProps {
 }
 
 const LinkIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
   </svg>
 );
 
 const ProblemIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle cx="16" cy="16" r="14" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M16 8v8M16 20h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+  <svg
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <circle cx="16" cy="16" r="14" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path d="M16 8v8M16 20h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
 );
 
 const SolutionIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle cx="16" cy="16" r="14" stroke="currentColor" strokeWidth="2" fill="none"/>
-    <path d="M10 16l4 4 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  <svg
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <circle cx="16" cy="16" r="14" stroke="currentColor" strokeWidth="2" fill="none" />
+    <path
+      d="M10 16l4 4 8-8"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
 const BenefitCheckmark = () => (
-  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M4 10l4 4 8-8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    <path
+      d="M4 10l4 4 8-8"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
   </svg>
 );
 
@@ -58,7 +101,7 @@ const ProblemSolutionSection: React.FC<ProblemSolutionSectionProps> = ({
   solution,
   variant = 'light',
   cta,
-  pageSlug
+  pageSlug,
 }) => {
   const anchorId = pageSlug ? generateSectionAnchorId(pageSlug, number, title) : undefined;
   const [copied, setCopied] = React.useState(false);
@@ -67,7 +110,9 @@ const ProblemSolutionSection: React.FC<ProblemSolutionSectionProps> = ({
   const handleCopyLink = () => {
     if (anchorId && sectionRef.current) {
       const url = `${window.location.origin}${window.location.pathname}#${anchorId}`;
-      navigator.clipboard.writeText(url).catch(() => {/* ignore clipboard errors */});
+      navigator.clipboard.writeText(url).catch(() => {
+        /* ignore clipboard errors */
+      });
       setCopied(true);
 
       // Smooth scroll to section
@@ -78,11 +123,7 @@ const ProblemSolutionSection: React.FC<ProblemSolutionSectionProps> = ({
   };
 
   return (
-    <section
-      ref={sectionRef}
-      className={`problem-solution-section ${variant}`}
-      id={anchorId}
-    >
+    <section ref={sectionRef} className={`problem-solution-section ${variant}`} id={anchorId}>
       <div className="container">
         <div className="section-number">
           <span className="number-badge">{number}</span>
@@ -93,6 +134,7 @@ const ProblemSolutionSection: React.FC<ProblemSolutionSectionProps> = ({
             <h2 className="section-main-title">{title}</h2>
             {anchorId && (
               <button
+                type="button"
                 onClick={handleCopyLink}
                 className="copy-link-button"
                 title={copied ? 'Copied!' : 'Copy link to this section'}
@@ -103,7 +145,9 @@ const ProblemSolutionSection: React.FC<ProblemSolutionSectionProps> = ({
               </button>
             )}
           </div>
-          {subtitle && <p className="section-subtitle" dangerouslySetInnerHTML={{ __html: subtitle }} />}
+          {subtitle && (
+            <p className="section-subtitle" dangerouslySetInnerHTML={{ __html: subtitle }} />
+          )}
 
           {problem.story && (
             <div className="story-box-featured">

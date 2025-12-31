@@ -276,7 +276,10 @@
   border-radius: 12px;
   padding: var(--space-6) var(--space-4);
   text-align: center;
-  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    border-color 0.2s,
+    background 0.2s;
 }
 
 .ps-teaser-card:hover {
@@ -434,7 +437,9 @@
   border: var(--badge-border-width) solid var(--badge-color);
   border-radius: var(--box-border-radius);
   padding: var(--box-padding);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   box-shadow: var(--box-shadow);
 }
 
@@ -652,7 +657,10 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--box-border-radius);
   padding: var(--box-padding);
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;

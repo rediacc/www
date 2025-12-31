@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from '../i18n/react';
-import { SUPPORTED_LANGUAGES, getLanguageFromPath } from '../i18n/language-utils';
+import LanguageMenu from './LanguageMenu';
 import SearchModal from './SearchModal';
 import Sidebar from './Sidebar';
-import LanguageMenu from './LanguageMenu';
 import { getConsoleUrl } from '../config/constants';
+import { SUPPORTED_LANGUAGES, getLanguageFromPath } from '../i18n/language-utils';
+import { useTranslation } from '../i18n/react';
 import type { Language } from '../i18n/types';
 
 interface NavigationProps {
@@ -44,10 +44,9 @@ const Navigation: React.FC<NavigationProps> = ({ origin }) => {
       // Listen to scroll events
       window.addEventListener('scroll', handleScroll, { passive: true });
       return () => window.removeEventListener('scroll', handleScroll);
-    } else {
-      // On all other pages: always show nav
-      setIsVisible(true);
     }
+    // On all other pages: always show nav
+    setIsVisible(true);
   }, []);
 
   const toggleSidebar = () => {
@@ -68,7 +67,8 @@ const Navigation: React.FC<NavigationProps> = ({ origin }) => {
 
   // Listen for global search hotkey event
   useEffect(() => {
-    const eventName = (window as any).SEARCH_HOTKEY_EVENT || 'search:open';
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const eventName = (window as any).SEARCH_HOTKEY_EVENT ?? 'search:open';
     const handleSearchHotkey = () => {
       setIsSearchOpen(true);
     };
@@ -81,15 +81,21 @@ const Navigation: React.FC<NavigationProps> = ({ origin }) => {
 
   return (
     <>
-      <nav id="navigation" className={`nav ${isVisible ? 'nav-visible' : 'nav-hidden'}`} role="navigation" aria-label={t('common.aria.mainNavigation')}>
+      <nav
+        id="navigation"
+        className={`nav ${isVisible ? 'nav-visible' : 'nav-hidden'}`}
+        role="navigation"
+        aria-label={t('common.aria.mainNavigation')}
+      >
         <div className="nav-container">
           <button
+            type="button"
             className="hamburger-btn"
             onClick={toggleSidebar}
             aria-label={t('navigation.toggleMenu')}
             aria-expanded={isSidebarOpen}
           >
-            <span className="hamburger-icon"></span>
+            <span className="hamburger-icon" />
           </button>
           <a href={`/${currentLang}/`} className="nav-brand">
             <img
@@ -103,10 +109,26 @@ const Navigation: React.FC<NavigationProps> = ({ origin }) => {
             />
           </a>
           <div className="nav-right">
-            <button className="search-btn" onClick={openSearch} aria-label={t('navigation.search')}>
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="2"/>
-                <path d="M12.5 12.5L17 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+            <button
+              type="button"
+              className="search-btn"
+              onClick={openSearch}
+              aria-label={t('navigation.search')}
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="2" />
+                <path
+                  d="M12.5 12.5L17 17"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
               </svg>
             </button>
             <LanguageMenu
@@ -117,7 +139,9 @@ const Navigation: React.FC<NavigationProps> = ({ origin }) => {
               navigationMode="button"
               ariaLabel={t('navigation.selectLanguage')}
             />
-            <a href={consoleUrl} className="login-btn" target="_blank" rel="noopener noreferrer">{t('navigation.login')}</a>
+            <a href={consoleUrl} className="login-btn" target="_blank" rel="noopener noreferrer">
+              {t('navigation.login')}
+            </a>
           </div>
         </div>
       </nav>

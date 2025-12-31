@@ -7,6 +7,17 @@
  * - Active state tracking
  */
 
+interface WindowWithSidebarInit extends Window {
+  rediaccDocsSidebarInitialized?: boolean;
+}
+
+interface CategoryDataset extends DOMStringMap {
+  initialized?: string;
+  category?: string;
+  itemCount?: string;
+  isActive?: string;
+}
+
 /**
  * Represents a heading for table of contents
  */
@@ -20,8 +31,8 @@ export interface TOCHeading {
  * Options for TOC generation
  */
 export interface TOCOptions {
-  minLevel?: number;  // Minimum heading level to include (default: 2)
-  maxLevel?: number;  // Maximum heading level to include (default: 6)
+  minLevel?: number; // Minimum heading level to include (default: 2)
+  maxLevel?: number; // Maximum heading level to include (default: 6)
   stripTags?: boolean; // Strip HTML tags from titles (default: true)
 }
 
@@ -39,10 +50,7 @@ export interface TOCOptions {
  * const toc = generateTOCFromHtml(renderedContent);
  * // => [{ level: 2, title: 'Introduction', id: 'introduction' }, ...]
  */
-export function generateTOCFromHtml(
-  htmlContent: string,
-  options: TOCOptions = {}
-): TOCHeading[] {
+export function generateTOCFromHtml(htmlContent: string, options: TOCOptions = {}): TOCHeading[] {
   const { minLevel = 2, maxLevel = 6, stripTags = true } = options;
 
   const headingRegex = /<h([2-6])[^>]*>(.*?)<\/h\1>/gi;
@@ -135,7 +143,7 @@ export function generateHeadingId(title: string): string {
   return title
     .toLowerCase()
     .replace(/[^\w\s-]/g, '') // Remove special characters
-    .replace(/\s+/g, '-');    // Replace spaces with hyphens
+    .replace(/\s+/g, '-'); // Replace spaces with hyphens
 }
 
 /**
@@ -153,8 +161,9 @@ export function generateHeadingId(title: string): string {
  */
 export function initCollapsibleCategories(): void {
   // Prevent multiple initialization
-  if ((window as any).rediaccDocsSidebarInitialized) return;
-  (window as any).rediaccDocsSidebarInitialized = true;
+  const win = window as WindowWithSidebarInit;
+  if (win.rediaccDocsSidebarInitialized) return;
+  win.rediaccDocsSidebarInitialized = true;
 
   /**
    * Set collapsed/expanded state of a category
@@ -177,15 +186,14 @@ export function initCollapsibleCategories(): void {
    */
   const categoryItems = document.querySelectorAll('[data-category][data-item-count]');
 
-  categoryItems.forEach(item => {
+  categoryItems.forEach((item) => {
     // Skip if already initialized
-    if ((item as any).dataset.initialized === 'true') return;
-    (item as any).dataset.initialized = 'true';
+    const dataset = (item as HTMLElement).dataset as CategoryDataset;
+    if (dataset.initialized === 'true') return;
+    dataset.initialized = 'true';
 
-    const button = item.querySelector('.category-header') as HTMLButtonElement | null;
-    const category = (item as any).dataset.category as string;
-    const itemCount = parseInt((item as any).dataset.itemCount, 10);
-    const isActive = (item as any).dataset.isActive === 'true';
+    const button = item.querySelector('.category-header');
+    const category = dataset.category ?? '';
 
     if (!button) return;
 
@@ -201,7 +209,7 @@ export function initCollapsibleCategories(): void {
     // Otherwise, keep the HTML's initial state (no flash)
 
     // Click handler
-    button.addEventListener('click', function (e: Event) {
+    button.addEventListener('click', (e: Event) => {
       e.preventDefault();
       const currentExpanded = item.getAttribute('aria-expanded') === 'true';
       const newExpanded = !currentExpanded;
@@ -211,7 +219,7 @@ export function initCollapsibleCategories(): void {
     });
 
     // Keyboard navigation
-    button.addEventListener('keydown', function (e: KeyboardEvent) {
+    button.addEventListener('keydown', (e: KeyboardEvent) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         button.click();
@@ -234,16 +242,16 @@ export function initCollapsibleCategories(): void {
  * initTOCActiveState({ selector: '.article-body h2, .article-body h3' });
  */
 export interface TOCActiveStateOptions {
-  selector?: string;        // CSS selector for elements to observe (default: headings in article)
+  selector?: string; // CSS selector for elements to observe (default: headings in article)
   containerSelector?: string; // CSS selector for TOC container
-  rootMargin?: string;       // Intersection observer root margin (default: '-100px 0px -66%')
+  rootMargin?: string; // Intersection observer root margin (default: '-100px 0px -66%')
 }
 
 export function initTOCActiveState(options: TOCActiveStateOptions = {}): () => void {
   const {
     selector = '.article-body h2, .article-body h3, .article-body h4',
     containerSelector = '.toc-sidebar',
-    rootMargin = '-100px 0px -66%'
+    rootMargin = '-100px 0px -66%',
   } = options;
 
   const container = document.querySelector(containerSelector);
@@ -252,28 +260,31 @@ export function initTOCActiveState(options: TOCActiveStateOptions = {}): () => v
   const headings = document.querySelectorAll(selector);
   if (headings.length === 0) return () => {}; // No-op if no headings found
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      const id = entry.target.id;
-      if (!id) return;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        if (!id) return;
 
-      const tocLink = container?.querySelector(`a[href="#${id}"]`);
-      if (!tocLink) return;
+        const tocLink = container.querySelector(`a[href="#${id}"]`);
+        if (!tocLink) return;
 
-      if (entry.isIntersecting) {
-        // Remove active class from all links
-        container?.querySelectorAll('a').forEach(link => {
-          link.classList.remove('active');
-        });
+        if (entry.isIntersecting) {
+          // Remove active class from all links
+          container.querySelectorAll('a').forEach((link) => {
+            link.classList.remove('active');
+          });
 
-        // Add active class to current link
-        tocLink.classList.add('active');
-      }
-    });
-  }, { rootMargin });
+          // Add active class to current link
+          tocLink.classList.add('active');
+        }
+      });
+    },
+    { rootMargin }
+  );
 
   // Start observing all headings
-  headings.forEach(heading => {
+  headings.forEach((heading) => {
     observer.observe(heading);
   });
 
@@ -305,11 +316,11 @@ export function initSidebarSearch(options: SidebarSearchOptions = {}): void {
   const {
     selector = '.docs-sidebar',
     inputSelector = '.sidebar-search-input',
-    highlightMatches = true
+    highlightMatches: _highlightMatches = true,
   } = options;
 
   const sidebar = document.querySelector(selector);
-  const input = document.querySelector(inputSelector) as HTMLInputElement | null;
+  const input = document.querySelector(inputSelector);
 
   if (!sidebar || !input) return;
 
@@ -322,10 +333,10 @@ export function initSidebarSearch(options: SidebarSearchOptions = {}): void {
 
     if (searchTerm.length === 0) {
       // Reset view
-      categoryItems.forEach(item => {
+      categoryItems.forEach((item) => {
         (item as HTMLElement).style.display = '';
       });
-      docLinks.forEach(link => {
+      docLinks.forEach((link) => {
         (link as HTMLElement).style.display = '';
         link.classList.remove('search-match');
       });
@@ -333,12 +344,12 @@ export function initSidebarSearch(options: SidebarSearchOptions = {}): void {
     }
 
     // Filter and highlight
-    categoryItems.forEach(item => {
+    categoryItems.forEach((item) => {
       const links = item.querySelectorAll('.doc-link');
       let hasMatch = false;
 
-      links.forEach(link => {
-        const text = link.textContent?.toLowerCase() || '';
+      for (const link of links) {
+        const text = String(link.textContent).toLowerCase();
         const matches = text.includes(searchTerm);
 
         if (matches) {
@@ -349,7 +360,7 @@ export function initSidebarSearch(options: SidebarSearchOptions = {}): void {
           (link as HTMLElement).style.display = 'none';
           link.classList.remove('search-match');
         }
-      });
+      }
 
       // Show category if it has matching items
       (item as HTMLElement).style.display = hasMatch ? '' : 'none';

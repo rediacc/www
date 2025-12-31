@@ -1,13 +1,13 @@
-import type { Language, InterpolationParams } from './types';
-import enTranslations from './translations/en.json';
+import arTranslations from './translations/ar.json';
 import deTranslations from './translations/de.json';
+import enTranslations from './translations/en.json';
 import esTranslations from './translations/es.json';
 import frTranslations from './translations/fr.json';
 import jaTranslations from './translations/ja.json';
-import arTranslations from './translations/ar.json';
 import ruTranslations from './translations/ru.json';
 import trTranslations from './translations/tr.json';
 import zhTranslations from './translations/zh.json';
+import type { Language, InterpolationParams } from './types';
 
 const translations = {
   en: enTranslations,
@@ -24,8 +24,13 @@ const translations = {
 /**
  * Get a nested value from an object using a dot-notation path
  */
-function getNestedValue(obj: any, path: string): any {
-  return path.split('.').reduce((current, key) => current?.[key], obj);
+function getNestedValue(obj: Record<string, unknown>, path: string): unknown {
+  return path.split('.').reduce<unknown>((current, key) => {
+    if (current && typeof current === 'object' && key in current) {
+      return (current as Record<string, unknown>)[key];
+    }
+    return undefined;
+  }, obj);
 }
 
 /**
@@ -47,11 +52,7 @@ function interpolate(text: string, params?: InterpolationParams): string {
  * @param params - Optional parameters for interpolation
  * @returns Translated string or the key if translation not found
  */
-export function getTranslation(
-  lang: Language,
-  key: string,
-  params?: InterpolationParams
-): string {
+export function getTranslation(lang: Language, key: string, params?: InterpolationParams): string {
   const translation = getNestedValue(translations[lang], key);
 
   if (translation === undefined) {
@@ -73,10 +74,7 @@ export function getTranslation(
  * @param key - Translation key pointing to an array
  * @returns Array of strings or empty array if not found
  */
-export function getTranslationArray(
-  lang: Language,
-  key: string
-): string[] {
+export function getTranslationArray(lang: Language, key: string): string[] {
   const translation = getNestedValue(translations[lang], key);
 
   if (!Array.isArray(translation)) {
@@ -93,10 +91,7 @@ export function getTranslationArray(
  * @param key - Translation key pointing to an object
  * @returns Object with translations or empty object if not found
  */
-export function getTranslationObject(
-  lang: Language,
-  key: string
-): any {
+export function getTranslationObject(lang: Language, key: string): Record<string, unknown> {
   const translation = getNestedValue(translations[lang], key);
 
   if (typeof translation !== 'object' || translation === null) {
@@ -113,11 +108,8 @@ export function getTranslationObject(
  */
 export function createTranslator(lang: Language = 'en') {
   return {
-    t: (key: string, params?: InterpolationParams) =>
-      getTranslation(lang, key, params),
-    ta: (key: string) =>
-      getTranslationArray(lang, key),
-    to: (key: string) =>
-      getTranslationObject(lang, key),
+    t: (key: string, params?: InterpolationParams) => getTranslation(lang, key, params),
+    ta: (key: string) => getTranslationArray(lang, key),
+    to: (key: string) => getTranslationObject(lang, key),
   };
 }

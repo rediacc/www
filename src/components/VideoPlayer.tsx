@@ -13,25 +13,18 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
   subtitle,
   videoSrc,
   posterSrc,
-  id = "video"
+  id = 'video',
 }) => {
   return (
     <section className="video-player" id={id}>
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">{title}</h2>
-          <p className="section-subtitle">
-            {subtitle}
-          </p>
+          <p className="section-subtitle">{subtitle}</p>
         </div>
         <div className="video-container">
           <div className="video-wrapper">
-            <video
-              className="video-element"
-              controls
-              preload="metadata"
-              poster={posterSrc}
-            >
+            <video className="video-element" controls preload="metadata" poster={posterSrc}>
               <source src={videoSrc} type="video/mp4" />
               Your browser does not support the video tag.
             </video>

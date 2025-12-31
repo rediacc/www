@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Fuse from 'fuse.js';
-import { useTranslation } from '../i18n/react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { getLanguageFromPath } from '../i18n/language-utils';
+import { useTranslation } from '../i18n/react';
 import type { Language } from '../i18n/types';
 
 interface SearchItem {
@@ -24,7 +24,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   const [results, setResults] = useState<SearchItem[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [isLoading, setIsLoading] = useState(false);
-  const [searchData, setSearchData] = useState<SearchItem[]>([]);
   const [fuse, setFuse] = useState<Fuse<SearchItem> | null>(null);
   const [currentLang, setCurrentLang] = useState<Language>('en');
   const { t } = useTranslation(currentLang);
@@ -43,7 +42,6 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       try {
         const response = await fetch('/search-index.json');
         const data = await response.json();
-        setSearchData(data);
 
         // Initialize Fuse.js with the data
         const fuseInstance = new Fuse(data, {
@@ -59,7 +57,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       }
     };
 
-    loadSearchData();
+    void loadSearchData();
   }, []);
 
   // Handle search input changes
@@ -91,9 +89,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      setSelectedIndex((prev) =>
-        prev < results.length - 1 ? prev + 1 : prev
-      );
+      setSelectedIndex((prev) => (prev < results.length - 1 ? prev + 1 : prev));
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       setSelectedIndex((prev) => (prev > 0 ? prev - 1 : -1));
@@ -122,11 +118,10 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   // Scroll selected item into view
   useEffect(() => {
     if (selectedIndex >= 0 && resultsContainerRef.current) {
-      const selectedElement =
-        resultsContainerRef.current.children[selectedIndex];
-      if (selectedElement) {
-        selectedElement.scrollIntoView({ block: 'nearest' });
-      }
+      const selectedElement = resultsContainerRef.current.children[selectedIndex] as
+        | HTMLElement
+        | undefined;
+      selectedElement?.scrollIntoView({ block: 'nearest' });
     }
   }, [selectedIndex]);
 
@@ -138,16 +133,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   };
 
   // Group results by category
-  const groupedResults = results.reduce(
-    (acc, item) => {
-      if (!acc[item.category]) {
-        acc[item.category] = [];
-      }
-      acc[item.category].push(item);
-      return acc;
-    },
-    {} as Record<string, SearchItem[]>
-  );
+  const groupedResults: Record<string, SearchItem[]> = {};
+  for (const item of results) {
+    if (Object.hasOwn(groupedResults, item.category)) {
+      groupedResults[item.category].push(item);
+    } else {
+      groupedResults[item.category] = [item];
+    }
+  }
 
   // Highlight matching text with proper escaping
   const highlightMatch = (text: string, query: string): React.ReactNode => {
@@ -160,10 +153,10 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
       const parts = text.split(regex);
 
       return parts.map((part, i) => {
-        if (part && part.toLowerCase() === query.toLowerCase()) {
+        if (part.toLowerCase() === query.toLowerCase()) {
           return <mark key={i}>{part}</mark>;
         }
-        return part ? <span key={i}>{part}</span> : null;
+        return <span key={i}>{part}</span>;
       });
     } catch {
       return text;
@@ -173,10 +166,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
   if (!isOpen) return null;
 
   return (
-    <div
-      className="search-modal-backdrop"
-      onClick={handleBackdropClick}
-    >
+    <div className="search-modal-backdrop" onClick={handleBackdropClick}>
       <div className="search-modal-content">
         <div className="search-modal-header">
           <div className="search-modal-input-wrapper">
@@ -214,7 +204,9 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
 
           {!isLoading && query.trim() && results.length === 0 && (
             <div className="search-modal-no-results">
-              <h3>{t('common.search.noResults')} for "{query}"</h3>
+              <h3>
+                {t('common.search.noResults')} for &quot;{query}&quot;
+              </h3>
               <div className="search-modal-suggestions">
                 <p>{t('common.search.suggestions.title')}</p>
                 <ul>
@@ -233,12 +225,10 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
                 <h4 className="search-modal-category-title">{category}</h4>
                 <ul className="search-modal-results-list">
                   {categoryResults.map((result, index) => {
-                    const overallIndex = Object.entries(groupedResults)
-                      .slice(
-                        0,
-                        Object.keys(groupedResults).indexOf(category)
-                      )
-                      .reduce((sum, [, items]) => sum + items.length, 0) + index;
+                    const overallIndex =
+                      Object.entries(groupedResults)
+                        .slice(0, Object.keys(groupedResults).indexOf(category))
+                        .reduce((sum, [, items]) => sum + items.length, 0) + index;
 
                     return (
                       <li

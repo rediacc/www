@@ -18,7 +18,8 @@ export const EXTERNAL_LINKS = {
    * Used for high-intent CTAs (pricing, solutions, sales contact)
    * Update this URL when changing scheduling platforms
    */
-  SCHEDULE_CONSULTATION: 'https://outlook.office.com/owa/calendar/RediaccConsultationServices@rediacc.com/bookings/?ismsaljsauthenabled',
+  SCHEDULE_CONSULTATION:
+    'https://outlook.office.com/owa/calendar/RediaccConsultationServices@rediacc.com/bookings/?ismsaljsauthenabled',
 } as const;
 
 /**

@@ -1,13 +1,18 @@
 import React from 'react';
 import { useTranslation } from '../i18n/react';
 
+interface WindowWithImageModal extends Window {
+  openImageModal?: (src: string, alt: string) => void;
+}
+
 const Problem: React.FC = () => {
   const { t } = useTranslation();
 
   const openImageModal = (src: string, alt: string) => {
     // This function will be available from the global script
-    if (typeof window !== 'undefined' && (window as any).openImageModal) {
-      (window as any).openImageModal(src, alt);
+    const win = window as WindowWithImageModal;
+    if (typeof window !== 'undefined' && win.openImageModal) {
+      win.openImageModal(src, alt);
     }
   };
 
@@ -16,9 +21,7 @@ const Problem: React.FC = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">{t('problem.title')}</h2>
-          <p className="section-subtitle">
-            {t('problem.subtitle')}
-          </p>
+          <p className="section-subtitle">{t('problem.subtitle')}</p>
         </div>
         <div className="problem-content">
           <div className="scenario-grid">
@@ -32,7 +35,9 @@ const Problem: React.FC = () => {
                     className="scenario-image clickable-image"
                     loading="lazy"
                     decoding="async"
-                    onClick={() => openImageModal('/assets/images/problem.svg', t('problem.reality.imageAlt'))}
+                    onClick={() =>
+                      openImageModal('/assets/images/problem.svg', t('problem.reality.imageAlt'))
+                    }
                   />
                 </div>
               </div>
@@ -47,7 +52,9 @@ const Problem: React.FC = () => {
                     className="scenario-image clickable-image"
                     loading="lazy"
                     decoding="async"
-                    onClick={() => openImageModal('/assets/images/solution.svg', t('problem.solution.imageAlt'))}
+                    onClick={() =>
+                      openImageModal('/assets/images/solution.svg', t('problem.solution.imageAlt'))
+                    }
                   />
                 </div>
               </div>

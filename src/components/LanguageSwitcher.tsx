@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getLanguageName, getLanguageFlag } from '../i18n/language-utils';
-import type { Language } from '../i18n/types';
 import { setLanguageCookie } from '../utils/language-cookie';
+import type { Language } from '../i18n/types';
 import '../styles/language-switcher.css';
 
 interface LanguageSwitcherProps {
@@ -31,17 +31,28 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
     <div className="language-switcher">
       {showFallbackNotice && (
         <div className="translation-notice">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="16" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="16" x2="12" y2="12" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
           </svg>
-          <span>Este contenido no está disponible en {getLanguageName(currentLang).toLowerCase()}. Mostrando versión en inglés.</span>
+          <span>
+            Este contenido no está disponible en {getLanguageName(currentLang).toLowerCase()}.
+            Mostrando versión en inglés.
+          </span>
         </div>
       )}
 
       <div className="language-selector">
         <button
+          type="button"
           className="language-trigger"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Select language"
@@ -58,7 +69,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             stroke="currentColor"
             strokeWidth="2"
           >
-            <polyline points="6 9 12 15 18 9"></polyline>
+            <polyline points="6 9 12 15 18 9" />
           </svg>
         </button>
 
@@ -80,6 +91,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         )}
       </div>
 
+      {/* eslint-disable-next-line react/no-unknown-property */}
       <style jsx>{`
         .language-switcher {
           display: flex;
