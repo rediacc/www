@@ -61,7 +61,7 @@ const categoryStates = categories.map(category => {
     itemCount,
     categoryId,
     hasActiveDoc,
-    expandedAttr: initialExpanded ? 'true' : 'false'
+    expandedAttr: initialExpanded ? 'true' as const : 'false' as const
   };
 });
 ---

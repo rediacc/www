@@ -7,7 +7,7 @@ import jaTranslations from './translations/ja.json';
 import ruTranslations from './translations/ru.json';
 import trTranslations from './translations/tr.json';
 import zhTranslations from './translations/zh.json';
-import type { Language, InterpolationParams } from './types';
+import type { Language, InterpolationParams, Translations, PathValue } from './types';
 
 const translations = {
   en: enTranslations,
@@ -99,7 +99,7 @@ export function getTranslationObject(lang: Language, key: string): Record<string
     return {};
   }
 
-  return translation;
+  return translation as Record<string, unknown>;
 }
 
 /**
@@ -110,6 +110,7 @@ export function createTranslator(lang: Language = 'en') {
   return {
     t: (key: string, params?: InterpolationParams) => getTranslation(lang, key, params),
     ta: (key: string) => getTranslationArray(lang, key),
-    to: (key: string) => getTranslationObject(lang, key),
+    to: <P extends string>(key: P): PathValue<Translations, P> =>
+      getNestedValue(translations[lang], key) as PathValue<Translations, P>,
   };
 }

@@ -192,7 +192,7 @@ export function initCollapsibleCategories(): void {
     if (dataset.initialized === 'true') return;
     dataset.initialized = 'true';
 
-    const button = item.querySelector('.category-header');
+    const button = item.querySelector<HTMLButtonElement>('.category-header');
     const category = dataset.category ?? '';
 
     if (!button) return;

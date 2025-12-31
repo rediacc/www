@@ -91,8 +91,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
         )}
       </div>
 
-      {/* eslint-disable-next-line react/no-unknown-property */}
-      <style jsx>{`
+      <style dangerouslySetInnerHTML={{ __html: `
         .language-switcher {
           display: flex;
           flex-direction: column;
@@ -124,7 +123,7 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({
             padding: 0.6rem 0.75rem;
           }
         }
-      `}</style>
+      ` }} />
     </div>
   );
 };

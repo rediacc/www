@@ -59,7 +59,7 @@ const LanguageMenu: React.FC<LanguageMenuProps> = ({
       const langData = languages.find((l) =>
         typeof l === 'string' ? l === lang : l.lang === lang
       );
-      if (typeof langData !== 'string' && 'url' in langData) {
+      if (langData && typeof langData !== 'string' && 'url' in langData) {
         return langData.url;
       }
     }

@@ -41,10 +41,10 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
     const loadSearchData = async () => {
       try {
         const response = await fetch('/search-index.json');
-        const data = await response.json();
+        const data: SearchItem[] = await response.json();
 
         // Initialize Fuse.js with the data
-        const fuseInstance = new Fuse(data, {
+        const fuseInstance = new Fuse<SearchItem>(data, {
           keys: ['content', 'excerpt', 'category'],
           threshold: 0.3,
           minMatchCharLength: 2,
