@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import { execSync } from 'child_process';
 
 import react from '@astrojs/react';
-import sitemap from '@astrojs/sitemap';
+import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap';
 
 // Integration to generate search index before build
 const searchIndexIntegration = {
@@ -61,57 +61,57 @@ export default defineConfig({
         // Homepage - highest priority
         if (url.match(/\/(en|de|es|fr|ja|ar|ru|tr|zh)\/?$/)) {
           item.priority = 1.0;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         // Root homepage
         else if (url === 'https://www.rediacc.com/') {
           item.priority = 1.0;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         // Solutions pages - high priority
         else if (url.includes('/solutions/')) {
           item.priority = 0.9;
-          item.changefreq = 'monthly';
+          item.changefreq = ChangeFreqEnum.MONTHLY;
         }
         // Pricing page - high priority
         else if (url.includes('/pricing')) {
           item.priority = 0.9;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         // Blog listing pages - high priority, frequent updates
         else if (url.match(/\/blog\/?$/)) {
           item.priority = 0.8;
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
         }
         // Docs listing pages - high priority
         else if (url.match(/\/docs\/?$/)) {
           item.priority = 0.8;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         // Individual blog posts - medium-high priority, frequent updates
         else if (url.includes('/blog/') && !url.endsWith('/blog/')) {
           item.priority = 0.7;
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
         }
         // Individual doc pages - medium-high priority
         else if (url.includes('/docs/') && !url.endsWith('/docs/')) {
           item.priority = 0.7;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         // Team page - medium-high priority
         else if (url.includes('/team')) {
           item.priority = 0.7;
-          item.changefreq = 'monthly';
+          item.changefreq = ChangeFreqEnum.MONTHLY;
         }
         // Contact page - medium priority
         else if (url.includes('/contact')) {
           item.priority = 0.6;
-          item.changefreq = 'monthly';
+          item.changefreq = ChangeFreqEnum.MONTHLY;
         }
         // Other pages - lower priority
         else {
           item.priority = 0.5;
-          item.changefreq = 'monthly';
+          item.changefreq = ChangeFreqEnum.MONTHLY;
         }
 
         return item;
