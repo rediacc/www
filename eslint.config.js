@@ -194,6 +194,14 @@ export default tseslint.config(
           minimumCoverage: 100,
         },
       ],
+      // Translation staleness - detect when English values change
+      'i18n/translation-staleness': [
+        'error',
+        {
+          translationsDir: 'src/i18n/translations',
+          hashFileName: '.translation-hashes.json',
+        },
+      ],
     },
   },
 

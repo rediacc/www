@@ -11,7 +11,13 @@
     "lint:fix": "eslint . --fix",
     "format": "biome format --write src/",
     "format:check": "biome format src/",
-    "fix": "biome format --write src/ && eslint . --fix"
+    "fix": "biome format --write src/ && eslint . --fix",
+    "validate:content": "node scripts/validate-content.js",
+    "validate:content:strict": "node scripts/validate-content.js --strict",
+    "validate": "npm run lint && npm run validate:content",
+    "i18n:generate-hashes": "node scripts/generate-translation-hashes.js",
+    "i18n:update-hashes": "node scripts/generate-translation-hashes.js",
+    "i18n:check-hashes": "node scripts/check-translation-hashes.js"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.0",

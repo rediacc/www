@@ -14,6 +14,7 @@ import { crossLanguageConsistency } from './cross-language-consistency.js';
 import { translationCoverage } from './translation-coverage.js';
 import { noUntranslatedValues } from './no-untranslated-values.js';
 import { interpolationConsistency } from './interpolation-consistency.js';
+import { translationStaleness } from './translation-staleness.js';
 
 /**
  * Plugin for JSON translation file validation
@@ -26,6 +27,7 @@ export const i18nJsonPlugin = {
     'translation-coverage': translationCoverage,
     'no-untranslated-values': noUntranslatedValues,
     'interpolation-consistency': interpolationConsistency,
+    'translation-staleness': translationStaleness,
   },
 };
 
@@ -36,6 +38,7 @@ export { crossLanguageConsistency } from './cross-language-consistency.js';
 export { translationCoverage } from './translation-coverage.js';
 export { noUntranslatedValues } from './no-untranslated-values.js';
 export { interpolationConsistency } from './interpolation-consistency.js';
+export { translationStaleness } from './translation-staleness.js';
 
 // Default export for ESLint plugin
 export default i18nJsonPlugin;

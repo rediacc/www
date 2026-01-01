@@ -18,7 +18,9 @@ let coverageCache = new Map();
 const getSupportedLanguages = (translationsDir) => {
   try {
     const files = fs.readdirSync(translationsDir);
-    return files.filter((f) => f.endsWith('.json')).map((f) => f.replace('.json', ''));
+    return files
+      .filter((f) => f.endsWith('.json') && !f.startsWith('.'))
+      .map((f) => f.replace('.json', ''));
   } catch {
     return [];
   }
