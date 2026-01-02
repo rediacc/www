@@ -182,17 +182,17 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 5. Eklenmiş olan makinalar ile ilgili değişiklik yapmak için ![Resim 12.4](/assets/images/UserGuideEng/12_4EditButon.png)  **Edit** butonuna basın.Açılan sayfadan makine ile ilgili düzenlemeleri yaptıktan sonra **save** butonuna basın. (Resim 12.3)
 
-![Resim 12.25](/assets/images/UserGuideEng/12_5EditForm.png)
+![Resim 12.5](/assets/images/UserGuideEng/12_5EditForm.png)
 (Resim 12.3)
 
 6. Eklenmiş olan makinalar ile ilgili geçmişe dönük yapılan işlemleri görmek için ![Resim 12.6](/assets/images/UserGuideEng/12_6TracaButon.png)  **Trace** butonuna basın.Açılan sayfada makine ile ilgili geçmişe dönük yapılan işlemler listelenir. (Resim 12.4)
 
-![Resim 12.25](/assets/images/UserGuideEng/12_7TraceList.png)
+![Resim 12.7](/assets/images/UserGuideEng/12_7TraceList.png)
 (Resim 12.4)
 
 7. Eklenmiş olan bir makinayı silmek için ![Resim 12.7](/assets/images/UserGuideEng/12_8DeleteButon.png)  **Delete** butonuna basın.Açılan sayfada **Delete** butonuna basın.Silme işlemi tamamlanmıştır. (Resim 12.5)
 
-![Resim 12.25](/assets/images/UserGuideEng/12_9DeleteForm.png)
+![Resim 12.9](/assets/images/UserGuideEng/12_9DeleteForm.png)
 (Resim 12.5)
 
 
@@ -243,10 +243,10 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
  ![Resim 17](/assets/images/UserGuideEng/17_0ForkButon.png) (Resim 17)
 3. Açılan menüden **fork** butonuna basın.   (Resim 17)
 
-4. Açılan formdan **Add to Queqe** butonuna basın(Resim 17.1)
+4. Açılan formdan **Add to Queue** butonuna basın (Resim 17.1)
  ![Resim 17.1](/assets/images/UserGuideEng/17_1ForkForm.png) (Resim 17.1)
-4. **Completed** mesajını gördüğünüzde *forklama* işlemi tamamlanmıştır. **Close** ile pencereyi kapatın. (Resim 18)
-![Resim 14](/assets/images/UserGuideEng/18_RepoComplated.png) (Resim 18)
+5. **Completed** mesajını gördüğünüzde *forklama* işlemi tamamlanmıştır. **Close** ile pencereyi kapatın. (Resim 18)
+![Resim 18](/assets/images/UserGuideEng/18_RepoComplated.png) (Resim 18)
 ---
 
 #### c) Repo “Up” İşlemi
@@ -276,7 +276,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 ![Resim 23](/assets/images/UserGuideEng/23_DeployButon1.png) (Resim 23)
 
-4. Açılan formdan zorunlu alanları doldurun ve **Add to Queu** tuşuna basın.  (Resim 24)   
+4. Açılan formdan zorunlu alanları doldurun ve **Add to Queue** tuşuna basın. (Resim 24)   
 
 ![Resim 24](/assets/images/UserGuideEng/24_DeployForm.png) (Resim 24)
 
@@ -359,11 +359,9 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 2. **fx** butonuna basın ve açılan menüden **delete repository** butonuna tıklayın. (Resim 40) 
 ![Resim 40](/assets/images/UserGuideEng/40_DeleteRopoButon.png) (Resim 40)
  
-3. Açılan formu doldurun ve **save** tuşuna basın.(Resim 41)
-![Resim 41](/assets/images/UserGuideEng/38_RenameForm.png) 
-(Resim 41)
+3. Açılan formda **Delete** butonuna basın. Silme işlemi tamamlanmıştır.
 
-----
+---
 #### k) Repo “repo View Details” İşlemi
 
 1. Bir repo seçin ve   **View Details** butonuna basın. (Resim 42) 
@@ -375,18 +373,14 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
  ### 2.1.3 Repo Connection İşlemleri
 
-#### a) desktop-aap
+#### a) desktop-app
 
 1. desktop-app işlemi  için  Local butonuna basın (Resim 49)![Resim 49](/assets/images/UserGuideEng/49_RepoConnecionLocal.png)(Resim 49)
 
 2. Açılan listeden **desktop-app** butonuna basın (Resim 50)
-![Resim 50](/assets/images/UserGuideEng/50_0RepoConnection)  (Resim 50)
-3. . Açılan sayfadan **Open xdg-open** butonuna basın (Resim 50.1)
-![Resim 50.1](/assets/images/UserGuideEng/50_1DesktopOpenPage.png)  (Resim 50.1)
-<!-- 
-3. **Create** butonuna basın.  
-![Resim 14](/assets/images/UserGuideEng/14_RepoForm.png)  (Resim 14)
-4. Açılan pencerede **Completed** mesajını gördükten sonra **Close** butonuna basın. (Resim 15)    -->
+![Resim 50](/assets/images/UserGuideEng/50_0RepoConnection.png) (Resim 50)
+3. Açılan sayfadan **Open xdg-open** butonuna basın (Resim 50.1)
+![Resim 50.1](/assets/images/UserGuideEng/50_1DesktopOpenPage.png) (Resim 50.1)
 
 ---
 ## 2.3 Settings
@@ -406,7 +400,7 @@ a) **Profile Şifre değiştirme İşlemi**
  **Storage** depola ile ilgili işlemler yapılır.
 
  a) **Storage İşlemi** 
-   1- **Storage** menüsü altındaki *Add Strorage* butonuna tıklayın.(Resim 56)
+   1- **Storage** menüsü altındaki *Add Storage* butonuna tıklayın. (Resim 56)
    ![Resim 56](/assets/images/UserGuideEng/56_0StrogeAddButon.png)  (Resim 56)
    2- Açılan formdan zorunlu alanları doldurun.*Create* butonuna basın. (Resim 56.1)
     ![Resim 56.1](/assets/images/UserGuideEng/56_1StrogeForm.png)  (Resim 56.1) 
@@ -416,7 +410,7 @@ a) **Profile Şifre değiştirme İşlemi**
 ## 2.5 Credentials
  **Credentials** oluşturulan repoların şifreleri  ile ilgili işlemler yapılır.
 
- ## 2.5.1 Credentials İşlemi 
+ ### 2.5.1 Credentials İşlemi 
    a)- **Edit İşlemi**
    1-Credentials  menüsü altındaki bir repo seçin ve *Edit* butonuna tıklayın.(Resim 57)
    ![Resim 57](/assets/images/UserGuideEng/57_0Credentials.png)  (Resim 57)
