@@ -1,6 +1,24 @@
 import type { Language } from './types';
 
-export const SUPPORTED_LANGUAGES: Language[] = ['en', 'de', 'es', 'fr', 'ja', 'ar', 'ru', 'tr', 'zh'];
+interface CollectionEntry {
+  slug: string;
+  collection: string;
+  data: {
+    language?: Language;
+  };
+}
+
+export const SUPPORTED_LANGUAGES: Language[] = [
+  'en',
+  'de',
+  'es',
+  'fr',
+  'ja',
+  'ar',
+  'ru',
+  'tr',
+  'zh',
+];
 export const DEFAULT_LANGUAGE: Language = 'en';
 
 /**
@@ -27,15 +45,15 @@ export function isSupportedLanguage(lang: string | undefined): lang is Language 
  */
 export function getAvailableTranslations(
   slug: string,
-  allPosts: any[],
+  allPosts: CollectionEntry[],
   collection: 'blog' | 'docs'
 ): { lang: Language; url: string }[] {
-  const baseSlug = slug.split('/').pop() || slug;
+  const baseSlug = slug.split('/').pop() ?? slug;
   const translations = allPosts
     .filter((post) => post.slug === baseSlug && post.collection === collection)
     .map((post) => ({
-      lang: post.data.language || DEFAULT_LANGUAGE,
-      url: `/${post.data.language || DEFAULT_LANGUAGE}/${collection}/${post.slug}`,
+      lang: post.data.language ?? DEFAULT_LANGUAGE,
+      url: `/${post.data.language ?? DEFAULT_LANGUAGE}/${collection}/${post.slug}`,
     }));
 
   // If no translations found, return empty array

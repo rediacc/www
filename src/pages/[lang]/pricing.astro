@@ -103,12 +103,13 @@ const allPlans = [
 const technicalMetrics = ta('pages.pricing.technicalSummary.metrics');
 const technicalValues = to('pages.pricing.technicalSummary.values');
 
+type PlanId = 'community' | 'pro' | 'business' | 'enterprise';
 const technicalCards = allPlans.map(plan => ({
   id: plan.id,
   name: plan.name,
   metrics: technicalMetrics.map((metric: any) => ({
     label: metric.label,
-    value: technicalValues?.[plan.id]?.[metric.key] ?? '—'
+    value: technicalValues?.[plan.id as PlanId]?.[metric.key as keyof typeof technicalValues[PlanId]] ?? '—'
   }))
 }));
 ---

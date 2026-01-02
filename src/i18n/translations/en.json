@@ -133,29 +133,17 @@
       {
         "title": "Multi-Cloud Always",
         "description": "Single-cloud is dangerous. Deploy anywhere. Fail over fast.",
-        "benefits": [
-          "Survive AWS outages",
-          "Zero vendor lock-in",
-          "Tested failover ready"
-        ]
+        "benefits": ["Survive AWS outages", "Zero vendor lock-in", "Tested failover ready"]
       },
       {
         "title": "Verified Backups",
         "description": "Verified recovery guaranteed. Tested backups. Complete history.",
-        "benefits": [
-          "Automatic verification",
-          "Extended retention",
-          "Recover in minutes"
-        ]
+        "benefits": ["Automatic verification", "Extended retention", "Recover in minutes"]
       },
       {
         "title": "Encryption Control",
         "description": "Everything encrypted. Everything audited. Complete control.",
-        "benefits": [
-          "Encryption you control",
-          "Full audit trail",
-          "Migration-safe"
-        ]
+        "benefits": ["Encryption you control", "Full audit trail", "Migration-safe"]
       },
       {
         "title": "Development Environments",
@@ -653,9 +641,7 @@
           "tiers": [
             {
               "planId": "community",
-              "included": [
-                "Self-service documentation, video tutorials, and community forum"
-              ],
+              "included": ["Self-service documentation, video tutorials, and community forum"],
               "available": [
                 "Standard Implementation ($9,999) or tiered packages (Small $7,499 · Medium $14,999 · Large $29,999 · Enterprise custom)",
                 "Emergency Response engagement ($29,999 on-demand)"
@@ -767,10 +753,7 @@
       },
       "trust": {
         "heading": "Enterprise-Grade Security & Reliability",
-        "items": [
-          "Bank-level encryption",
-          "99.9% uptime commitment"
-        ]
+        "items": ["Bank-level encryption", "99.9% uptime commitment"]
       },
       "ui": {
         "popular": "Most popular",

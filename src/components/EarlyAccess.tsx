@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTranslation } from '../i18n/react';
 import { CONTACT_EMAIL } from '../config/constants';
+import { useTranslation } from '../i18n/react';
 
 const EarlyAccess: React.FC = () => {
   const { t, ta, to } = useTranslation();
@@ -13,9 +13,7 @@ const EarlyAccess: React.FC = () => {
         <div className="early-access-content">
           <div className="early-access-text">
             <h2 className="section-title">{t('earlyAccess.title')}</h2>
-            <p className="section-subtitle">
-              {t('earlyAccess.subtitle')}
-            </p>
+            <p className="section-subtitle">{t('earlyAccess.subtitle')}</p>
             <ul className="early-access-benefits">
               {benefits.map((benefit, index) => (
                 <li key={index}>{benefit}</li>
@@ -31,7 +29,9 @@ const EarlyAccess: React.FC = () => {
               className="form"
             >
               <div className="form-group">
-                <label htmlFor="name" className="form-label">{formFields.name?.label}</label>
+                <label htmlFor="name" className="form-label">
+                  {formFields.name.label}
+                </label>
                 <input
                   type="text"
                   id="name"
@@ -39,14 +39,16 @@ const EarlyAccess: React.FC = () => {
                   className="form-input"
                   required
                   aria-describedby="name-error"
-                  autoComplete={formFields.name?.autoComplete}
+                  autoComplete={formFields.name.autoComplete}
                   suppressHydrationWarning
                 />
-                <div className="form-error" id="name-error" role="alert" aria-live="polite"></div>
+                <div className="form-error" id="name-error" role="alert" aria-live="polite" />
               </div>
 
               <div className="form-group">
-                <label htmlFor="email" className="form-label">{formFields.email?.label}</label>
+                <label htmlFor="email" className="form-label">
+                  {formFields.email.label}
+                </label>
                 <input
                   type="email"
                   id="email"
@@ -54,14 +56,16 @@ const EarlyAccess: React.FC = () => {
                   className="form-input"
                   required
                   aria-describedby="email-error"
-                  autoComplete={formFields.email?.autoComplete}
+                  autoComplete={formFields.email.autoComplete}
                   suppressHydrationWarning
                 />
-                <div className="form-error" id="email-error" role="alert" aria-live="polite"></div>
+                <div className="form-error" id="email-error" role="alert" aria-live="polite" />
               </div>
 
               <div className="form-group">
-                <label htmlFor="organization" className="form-label">{formFields.organization?.label}</label>
+                <label htmlFor="organization" className="form-label">
+                  {formFields.organization.label}
+                </label>
                 <input
                   type="text"
                   id="organization"
@@ -69,44 +73,61 @@ const EarlyAccess: React.FC = () => {
                   className="form-input"
                   required
                   aria-describedby="organization-error"
-                  autoComplete={formFields.organization?.autoComplete}
+                  autoComplete={formFields.organization.autoComplete}
                   suppressHydrationWarning
                 />
-                <div className="form-error" id="organization-error" role="alert" aria-live="polite"></div>
+                <div
+                  className="form-error"
+                  id="organization-error"
+                  role="alert"
+                  aria-live="polite"
+                />
               </div>
 
               <div className="form-group">
-                <label htmlFor="role" className="form-label">{formFields.role?.label}</label>
+                <label htmlFor="role" className="form-label">
+                  {formFields.role.label}
+                </label>
                 <input
                   type="text"
                   id="role"
                   name="role"
                   className="form-input"
-                  autoComplete={formFields.role?.autoComplete}
+                  autoComplete={formFields.role.autoComplete}
                   suppressHydrationWarning
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="use-case" className="form-label">{formFields.useCase?.label}</label>
+                <label htmlFor="use-case" className="form-label">
+                  {formFields.useCase.label}
+                </label>
                 <select id="use-case" name="use-case" className="form-select">
-                  <option value="">{formFields.useCase?.options?.placeholder}</option>
-                  <option value="development-acceleration">{formFields.useCase?.options?.developmentAcceleration}</option>
-                  <option value="disaster-recovery">{formFields.useCase?.options?.disasterRecovery}</option>
-                  <option value="ai-safe-operations">{formFields.useCase?.options?.aiSafeOperations}</option>
-                  <option value="multiple">{formFields.useCase?.options?.multiple}</option>
-                  <option value="other">{formFields.useCase?.options?.other}</option>
+                  <option value="">{formFields.useCase.options.placeholder}</option>
+                  <option value="development-acceleration">
+                    {formFields.useCase.options.developmentAcceleration}
+                  </option>
+                  <option value="disaster-recovery">
+                    {formFields.useCase.options.disasterRecovery}
+                  </option>
+                  <option value="ai-safe-operations">
+                    {formFields.useCase.options.aiSafeOperations}
+                  </option>
+                  <option value="multiple">{formFields.useCase.options.multiple}</option>
+                  <option value="other">{formFields.useCase.options.other}</option>
                 </select>
               </div>
 
               <div className="form-group">
-                <label htmlFor="message" className="form-label">{formFields.message?.label}</label>
+                <label htmlFor="message" className="form-label">
+                  {formFields.message.label}
+                </label>
                 <textarea
                   id="message"
                   name="message"
                   className="form-textarea"
                   rows={4}
-                  placeholder={formFields.message?.placeholder}
+                  placeholder={formFields.message.placeholder}
                   suppressHydrationWarning
                 />
               </div>

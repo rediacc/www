@@ -800,10 +800,7 @@
       },
       "trust": {
         "heading": "Sécurité et fiabilité de niveau entreprise",
-        "items": [
-          "Cryptage au niveau bancaire",
-          "Engagement de disponibilité de 99,9 %"
-        ]
+        "items": ["Cryptage au niveau bancaire", "Engagement de disponibilité de 99,9 %"]
       },
       "ui": {
         "anchor": "Ancrage stratégique",

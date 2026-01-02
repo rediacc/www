@@ -11,10 +11,10 @@ interface Props {
 }
 
 const { lang = 'en', faqs } = Astro.props;
-const { t, ta } = createTranslator(lang);
+const { t, to } = createTranslator(lang);
 
 // Use provided FAQs or fall back to translations
-const faqData = faqs || ta('pages.pricing.faq.items');
+const faqData = faqs || to('pages.pricing.faq.items');
 ---
 
 <section class="faq-section section-light">

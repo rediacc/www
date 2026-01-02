@@ -58,7 +58,7 @@ const categories = Object.keys(docsByCategory).sort();
 const currentUrl = `/${lang}/docs/`;
 ---
 
-<BaseLayout lang={lang}>
+<BaseLayout lang={lang} title={t('pages.docs.title')}>
   <div class="docs-page">
     <DocsSidebar currentLang={lang} currentUrl={currentUrl} />
 
@@ -91,11 +91,11 @@ const currentUrl = `/${lang}/docs/`;
       <section class="all-docs-section" id="all-documentation">
         <h2>{t('pages.docs.allDocumentation')}</h2>
         {categories.map(category => (
-          <div key={category} class="doc-category" id={category.toLowerCase().replace(/\s+/g, '-')}>
+          <div class="doc-category" id={category.toLowerCase().replace(/\s+/g, '-')}>
             <h3>{category}</h3>
             <ul class="doc-items">
               {docsByCategory[category].map(doc => (
-                <li key={doc.slug}>
+                <li>
                   <article class="doc-item">
                     <h4>
                       <a href={`/${lang}/docs/${getBaseSlug(doc.slug)}`}>{doc.data.title}</a>

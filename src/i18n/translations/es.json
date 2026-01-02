@@ -275,7 +275,7 @@
     },
     "home": {
       "imageModal": {
-        "indicator": "{{actual}} / {{total}}"
+        "indicator": "{{current}} / {{total}}"
       },
       "meta": {
         "description": "Transforme el desarrollo con la automatización de infraestructura de Rediacc. Obtenga entornos instantáneos, recuperación ante desastres y operaciones seguras para IA.",
@@ -464,9 +464,7 @@
                 "Implementación estándar ($9999) o paquetes escalonados (Pequeño $7499 · Mediano $14999 · Grande $29999 · Empresa personalizada)",
                 "Compromiso de respuesta de emergencia ($29,999 a pedido)"
               ],
-              "included": [
-                "Documentación de autoservicio, tutoriales en vídeo y foro comunitario"
-              ],
+              "included": ["Documentación de autoservicio, tutoriales en vídeo y foro comunitario"],
               "planId": "comunidad"
             },
             {
@@ -800,10 +798,7 @@
       },
       "trust": {
         "heading": "Seguridad y confiabilidad de nivel empresarial",
-        "items": [
-          "Cifrado a nivel bancario",
-          "Compromiso de tiempo de actividad del 99,9%"
-        ]
+        "items": ["Cifrado a nivel bancario", "Compromiso de tiempo de actividad del 99,9%"]
       },
       "ui": {
         "anchor": "Ancla estratégica",
@@ -1478,11 +1473,7 @@
         "title": "Multinube siempre"
       },
       {
-        "benefits": [
-          "Verificación automática",
-          "Retención extendida",
-          "Recuperarse en minutos"
-        ],
+        "benefits": ["Verificación automática", "Retención extendida", "Recuperarse en minutos"],
         "description": "Recuperación verificada garantizada. Copias de seguridad probadas. Historia completa.",
         "title": "Copias de seguridad verificadas"
       },

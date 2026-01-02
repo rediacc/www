@@ -96,7 +96,7 @@
   "footer": {
     "columns": {
       "organization": "Unternehmen",
-      "legal": "Legal",
+      "legal": "Rechtliches",
       "product": "Produkt",
       "support": "Unterstützung"
     },
@@ -464,9 +464,7 @@
                 "Standardimplementierung (9.999 $) oder gestaffelte Pakete (klein: 7.499 $, mittel: 14.999 $, groß: 29.999 $, benutzerdefiniert für Unternehmen)",
                 "Notfalleinsatz (29.999 $ auf Anfrage)"
               ],
-              "included": [
-                "Self-Service-Dokumentation, Video-Tutorials und Community-Forum"
-              ],
+              "included": ["Self-Service-Dokumentation, Video-Tutorials und Community-Forum"],
               "planId": "Gemeinschaft"
             },
             {
@@ -800,10 +798,7 @@
       },
       "trust": {
         "heading": "Sicherheit und Zuverlässigkeit auf Unternehmensniveau",
-        "items": [
-          "Verschlüsselung auf Bankebene",
-          "99,9 % Verfügbarkeitsgarantie"
-        ]
+        "items": ["Verschlüsselung auf Bankebene", "99,9 % Verfügbarkeitsgarantie"]
       },
       "ui": {
         "anchor": "Strategischer Anker",
