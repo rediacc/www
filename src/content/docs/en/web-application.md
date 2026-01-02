@@ -26,25 +26,25 @@ Bu dokümanın amacı:
 
 ### 1.1 Kayıt Olma
 
-![Resim 1](/assets/images/UserGuideEng/1_Login.png)(Resim 1)
+![Resim 1](/assets/images/UserGuideEng/01_login.png)(Resim 1)
 
 1. Tarayıcıdan [https://www.rediacc.com/](https://www.rediacc.com/) adresine gidin.  
 2. Sağ üst köşedeki **Login** butonuna tıklayın. (Resim 1)  
-3. Açılan ekrandan **Register** butonuna tıklayın.(Resim 1.1)![Resim 1.1](/assets/images/UserGuideEng/1_1_Register.png) (Resim1.1)
+3. Açılan ekrandan **Register** butonuna tıklayın.(Resim 1.1)![Resim 1.1](/assets/images/UserGuideEng/01_1_register.png) (Resim1.1)
 
 4. Açılan formda aşağıdaki bilgileri doldurun: (Resim 2)  
    - **Şirket Adı**  
    - **E-posta adresi**  
    - **Şifre**
 
-![Resim 2](/assets/images/UserGuideEng/2_CreateAcount.png)
+![Resim 2](/assets/images/UserGuideEng/02_create_account.png)
 (Resim 2)
 
 4. **Create Account** butonuna tıklayın.  
    E-posta adresinize bir doğrulama kodu gönderilecektir.  
 5. E-postanıza gelen doğrulama kodunu **Activation Code** alanına yazarak **Verify Account** butonuna bastığınızda hesabınız etkinleşecektir.(Resim 3)
 
-![Resim 3](/assets/images/UserGuideEng/3_VerificationCode.png)
+![Resim 3](/assets/images/UserGuideEng/03_verification_code.png)
 (Resim 3)
 
 ---
@@ -54,12 +54,12 @@ Bu dokümanın amacı:
 1. Ana sayfada sağ üst köşedeki **Login** butonuna tıklayın.(Resim 1)
 2. E-posta ve parolanızı girin ve **Sign In** butonuna basın.(Resim 4)
 
-![Resim 4](/assets/images/UserGuideEng/4_SignIn.png) 
+![Resim 4](/assets/images/UserGuideEng/04_sign_in.png) 
 (Resim 4)
 
 3. Başarılı girişten sonra **Ana ekrana**  yönlendirilirsiniz. (Resim 5)
 
-![Resim 5](/assets/images/UserGuideEng/5_Dashboard.png)(Resim 5)
+![Resim 5](/assets/images/UserGuideEng/05_dashboard.png)(Resim 5)
 
 ---
 
@@ -70,41 +70,41 @@ Giriş işleminden sonra karşınıza çıkan ekran temel olarak **Organization*
 ## 2.1. Organization--> Users
 
    2.1.1 Kullanıcı işlemleri için **Organization** altındaki **Users** sekmesine tıklayın.Açılan sayfadan **"+"** simgesine tıklayın.   (Resim 6)
-![Resim 6](/assets/images/UserGuideEng/6_Users.png)  
+![Resim 6](/assets/images/UserGuideEng/06_users.png)  
 (Resim 6)
    1. **Create User** butonuna tıklayın ve açılan formu doldurun. (Resim 7)
  
-![Resim 7](/assets/images/UserGuideEng/7_UserAdd.png) 
+![Resim 7](/assets/images/UserGuideEng/07_user_add.png) 
 (Resim 7)
 
 2. **Create** butonuna basın. Kullanıcı ekleme işlemi tamamlanmıştır. (Resim 8)
-![Resim 8](/assets/images/UserGuideEng/8_UserList.png)
+![Resim 8](/assets/images/UserGuideEng/08_user_list.png)
 (Resim 8)
 
   2.1.2. **Permissions** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Permissions"** butonuna tıklayın.   (Resim 6.1)
-![Resim 6.1](/assets/images/UserGuideEng/6_1UsersPermissions.png)  
+![Resim 6.1](/assets/images/UserGuideEng/06_1_users_permissions.png)  
 (Resim 6.1)
 
 2.1.3. Açılan ekrandan bir *Permissions Grup* seçin ve **Assign** butonuna basın. Permissions işlemi tamamlanmıştır.(Resim 6.2)
-![Resim 6.2](/assets/images/UserGuideEng/6_2_UserPermissionsForm.png) 
+![Resim 6.2](/assets/images/UserGuideEng/06_2_user_permissions_form.png) 
 (Resim 6.2)
 
  2.1.4 **Users Activate** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Activate"** butonuna tıklayın.   (Resim 6.3)
 
-![Resim 6.3](/assets/images/UserGuideEng/6_3_UsersActivition.png)  
+![Resim 6.3](/assets/images/UserGuideEng/06_3_users_activation.png)  
 (Resim 6.3)
 
 2.1.5. Açılan ekrandan bir *General.Yes*  butonuna basın. Activate işlemi tamamlanmıştır.(Resim 6.4)
-![Resim 6.4](/assets/images/UserGuideEng/6_4_UsersActivatiYes.png) 
+![Resim 6.4](/assets/images/UserGuideEng/06_4_users_activation_confirm.png) 
 (Resim 6.4)
 
  2.1.6 **Users Trace** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Trace"** butonuna tıklayın.   (Resim 6.5)
 
-![Resim 6.5](/assets/images/UserGuideEng/6_5_UsersTrace.png)  
+![Resim 6.5](/assets/images/UserGuideEng/06_5_users_trace.png)  
 (Resim 6.5)
 
 2.1.7. Açılan ekrandan bir *Export*  butonu altında istediğimiz formatı tıkladığımızda *Trace* işlemi tamamlanmıştır.(Resim 6.6)
-![Resim 6.6](/assets/images/UserGuideEng/6_6_UserTaceExport.png) 
+![Resim 6.6](/assets/images/UserGuideEng/06_6_user_trace_export.png) 
 (Resim 6.6)
 
 ---
@@ -112,39 +112,39 @@ Giriş işleminden sonra karşınıza çıkan ekran temel olarak **Organization*
 ## 2.2. Organization--> Teams
 2.2.1  **'Teams'** işlemi için  **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
 
-![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) 
+![Resim 10](/assets/images/UserGuideEng/10_teams_create.png) 
 ( Resim 10)
 2.2.2 *Create* butonuna basarak takım oluşturun.
 
 2.2.3  **'Teams Edit'** işlemi için bir **Teams** seçin  **Edit** butonuna tıklayın ve açılan Formda değişiklikleri yaptıktan sonra *Save* butonuna tıklayın.Edit işlemi tamamlanmıştır. (Resim 10.1)
 
-![Resim 10.1](/assets/images/UserGuideEng/10_1TeamsEditForm.png) 
+![Resim 10.1](/assets/images/UserGuideEng/10_1_teams_edit_form.png) 
 ( Resim 10.1)
 
 2.2.4  **Teams Members** işlemi için bir **Teams** seçin  **Members** butonuna tıklayın ve açılan Formda *Add Member* sekmesine tıklayın. Bir kullanıcı seçtikten sonra *Add Member '+' * tuşuna basın. (Resim 10.2)
 
-![Resim 10.2](/assets/images/UserGuideEng/10_2TeamsMembersForm.png) 
+![Resim 10.2](/assets/images/UserGuideEng/10_2_teams_members_form.png) 
 ( Resim 10.2)
 
 2.2.5  **Teams Trace** işlemi için bir **Teams** menüsü altınta  **Trace** butonuna tıklayın ve açılan Formdan *Export* butonuna basın ve liste almak istediğiniz formata tıklayın.*Trace işlemi* tamamlanmıştır. (Resim 10.3)
 
-![Resim 10.3](/assets/images/UserGuideEng/10_3TeamsTrace.png) 
+![Resim 10.3](/assets/images/UserGuideEng/10_3_teams_trace.png) 
 ( Resim 10.3)
 
 2.2.6  **Teams Delete** işlemi için bir **Teams** menüsü altınta bir **Teams** seçin ve  *Delete* butonuna basın ve açılan formdan *general.yes* butonuna basın silme işlemi tamamlanmıştır. (Resim 10.4)
 
-![Resim 10.4](/assets/images/UserGuideEng/10_4TeamsDelete.png) 
+![Resim 10.4](/assets/images/UserGuideEng/10_4_teams_delete.png) 
 ( Resim 10.4)
 ## 2.3. Organization--> Access
 
 2.3.1  **Create Permission Group** işlemi için **Access** menüsü tıklayın ve açılan sayfanın sağ üst köşesindeki **+** simgesine tıklayın *(Create Group)*.Açılan formdan *Grup adını yazın* ve *Ok* butonuna basın. (Resim 10.5)
 
-![Resim 10.5](/assets/images/UserGuideEng/10_5CreateAccess.png) 
+![Resim 10.5](/assets/images/UserGuideEng/10_5_create_access.png) 
 ( Resim 10.5)
 
 2.3.2  **Permission** işlemi için **Access** menüsü altınta bir **Users** seçin ve  *Permission* butonuna basın.Açılan formda seçili User'e ait yetkiler listelenecektir.İstediğiniz yetkiyi seçin ve *Remove* butonuna basın *Permission* işlemi tamamlanmıştır. (Resim 10.5.1)
 
-![Resim 10.5.1](/assets/images/UserGuideEng/10_5Access_Permission.png) 
+![Resim 10.5.1](/assets/images/UserGuideEng/10_5_1_access_permission.png) 
 ( Resim 10.5.1)
 
 ---
@@ -158,60 +158,60 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1.1 Yeni bir makina eklemek için **Machines** bölümü seçiliyken sağ üst köşedeki **Add Machine** butonuna tıklayın. (Resim 11)
 
-![Resim 11](/assets/images/UserGuideEng/11_MachinesAdd.png) (Resim 11)
+![Resim 11](/assets/images/UserGuideEng/11_machines_add.png) (Resim 11)
 
 1.2 Açılan formdan zorunlu alanları doldurduktan sonra **Test Connection** butonuna tıklayın ve bağlantı başarılı olduğunda **Create** butonuna basın. (Resim 12)
 
-![Resim 12](/assets/images/UserGuideEng/12_0MachineCreate.png)
+![Resim 12](/assets/images/UserGuideEng/12_0_machine_create.png)
 (Resim 12)
 
 1.3 Açılan formdan **Test Complated** mesajı görüldüğünde **close** butonuna basarak makine ekleme işlemini tamamlayın.(Resim 12.1)
-![Resim 12.1](/assets/images/UserGuideEng/12_1MachineCreate2.png)
+![Resim 12.1](/assets/images/UserGuideEng/12_1_machine_create_complete.png)
 (Resim 12.1)
 
-2.1 *Connectivity Test* için en az bir makina eklenmiş ise ![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1ConnectivyTest.png)  **Connectivity Test** butonuna basın.
+2.1 *Connectivity Test* için en az bir makina eklenmiş ise ![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1_connectivity_test_button.png)  **Connectivity Test** butonuna basın.
 
-2.2 Açılan formdan  bir makina seçerek *Run Test* butonuna basın Test işlemi tamamlanmıştır.![Resim 12.1.1](/assets/images/UserGuideEng/12_2_1_ConnecTestForm.png)  **Connectivity Test** butonuna basın.
+2.2 Açılan formdan  bir makina seçerek *Run Test* butonuna basın Test işlemi tamamlanmıştır.![Resim 12.1.1](/assets/images/UserGuideEng/12_2_2_connectivity_test_form.png)  **Connectivity Test** butonuna basın.
 
-3.**Refresh** işlemi için **Refresh** butonuna basın. ![Resim 12.3](/assets/images/UserGuideEng/12_2_3Refresh.png)   Makine listeleme işlemi tamamlanmıştır.
+3.**Refresh** işlemi için **Refresh** butonuna basın. ![Resim 12.3](/assets/images/UserGuideEng/12_2_3_refresh.png)   Makine listeleme işlemi tamamlanmıştır.
 
-4.Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.3](/assets/images/UserGuideEng/12_3viewDetals.png)  **View Details** butonuna basın.Açılan sayfadan makine ile ilgili bilgilere ulaşabilirsiniz.  (Resim 12.2)
+4.Eklenmiş olan makinaların detayını görmek için bir makine seçip ![Resim 12.3](/assets/images/UserGuideEng/12_3_view_details_button.png)  **View Details** butonuna basın.Açılan sayfadan makine ile ilgili bilgilere ulaşabilirsiniz.  (Resim 12.2)
 
-![Resim 12.2](/assets/images/UserGuideEng/12_2MachineViewDetals.png)
+![Resim 12.2](/assets/images/UserGuideEng/12_2_machine_view_details.png)
 (Resim 12.2)
 
-5. Eklenmiş olan makinalar ile ilgili değişiklik yapmak için ![Resim 12.4](/assets/images/UserGuideEng/12_4EditButon.png)  **Edit** butonuna basın.Açılan sayfadan makine ile ilgili düzenlemeleri yaptıktan sonra **save** butonuna basın. (Resim 12.3)
+5. Eklenmiş olan makinalar ile ilgili değişiklik yapmak için ![Resim 12.4](/assets/images/UserGuideEng/12_4_edit_button.png)  **Edit** butonuna basın.Açılan sayfadan makine ile ilgili düzenlemeleri yaptıktan sonra **save** butonuna basın. (Resim 12.3)
 
-![Resim 12.5](/assets/images/UserGuideEng/12_5EditForm.png)
+![Resim 12.5](/assets/images/UserGuideEng/12_5_edit_form.png)
 (Resim 12.3)
 
-6. Eklenmiş olan makinalar ile ilgili geçmişe dönük yapılan işlemleri görmek için ![Resim 12.6](/assets/images/UserGuideEng/12_6TracaButon.png)  **Trace** butonuna basın.Açılan sayfada makine ile ilgili geçmişe dönük yapılan işlemler listelenir. (Resim 12.4)
+6. Eklenmiş olan makinalar ile ilgili geçmişe dönük yapılan işlemleri görmek için ![Resim 12.6](/assets/images/UserGuideEng/12_6_trace_button.png)  **Trace** butonuna basın.Açılan sayfada makine ile ilgili geçmişe dönük yapılan işlemler listelenir. (Resim 12.4)
 
-![Resim 12.7](/assets/images/UserGuideEng/12_7TraceList.png)
+![Resim 12.7](/assets/images/UserGuideEng/12_7_trace_list.png)
 (Resim 12.4)
 
-7. Eklenmiş olan bir makinayı silmek için ![Resim 12.7](/assets/images/UserGuideEng/12_8DeleteButon.png)  **Delete** butonuna basın.Açılan sayfada **Delete** butonuna basın.Silme işlemi tamamlanmıştır. (Resim 12.5)
+7. Eklenmiş olan bir makinayı silmek için ![Resim 12.7](/assets/images/UserGuideEng/12_8_delete_button.png)  **Delete** butonuna basın.Açılan sayfada **Delete** butonuna basın.Silme işlemi tamamlanmıştır. (Resim 12.5)
 
-![Resim 12.9](/assets/images/UserGuideEng/12_9DeleteForm.png)
+![Resim 12.9](/assets/images/UserGuideEng/12_9_delete_form.png)
 (Resim 12.5)
 
 
-8. Eklenmiş olan bir makinaye *Remote* olmak için ![Resim 12.10](/assets/images/UserGuideEng/12_10RemoteButon.png)  **Remote** butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **Setup** butonuna basın.Açılan sayfadan *Task Complated* mesajını gördüğünüzde *Setup* işlemi tamamlanmıştır. (Resim 12.11)
+8. Eklenmiş olan bir makinaye *Remote* olmak için ![Resim 12.10](/assets/images/UserGuideEng/12_10_remote_button.png)  **Remote** butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **Setup** butonuna basın.Açılan sayfadan *Task Complated* mesajını gördüğünüzde *Setup* işlemi tamamlanmıştır. (Resim 12.11)
 
-![Resim 12.11](/assets/images/UserGuideEng/12_11ServerSetup.png)
+![Resim 12.11](/assets/images/UserGuideEng/12_11_server_setup.png)
 (Resim 12.11)
 
-9. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **Hello** butonuna basın.![Resim 12.12](/assets/images/UserGuideEng/12_12RemotoHello.png)  Açılan sayfadan *Task Complated* mesajını gördüğünüzde *Hello* işlemi tamamlanmıştır. (Resim 12.13)
+9. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **Hello** butonuna basın.![Resim 12.12](/assets/images/UserGuideEng/12_12_remote_hello.png)  Açılan sayfadan *Task Complated* mesajını gördüğünüzde *Hello* işlemi tamamlanmıştır. (Resim 12.13)
 
-![Resim 12.13](/assets/images/UserGuideEng/12_13_RemoteHelloCompl.png)
+![Resim 12.13](/assets/images/UserGuideEng/12_13_remote_hello_complete.png)
 (Resim 12.13)
 
 10. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Run on Server** butonuna basın ve **advanced** butonuna basın.Açılan sayfadan *Machine Functions* menüsünden istediğiniz fonksiyonu seçip *Add to Queue* butonun basın İşlem tamamlanmıştır. (Resim 12.14)
 
-![Resim 12.14](/assets/images/UserGuideEng/12_14_RemoteAdvanced.png)
+![Resim 12.14](/assets/images/UserGuideEng/12_14_remote_advanced.png)
 (Resim 12.14)
 
-11. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Connectivity Test** butonuna basın.![Resim 12.15](/assets/images/UserGuideEng/12_15Connectivy_Test.png) connectivity Test işlemi tamamlanmıştır.
+11. Eklenmiş olan bir makinayi seçip *Remote* butonuna basın.Açılan menüden **Connectivity Test** butonuna basın.![Resim 12.15](/assets/images/UserGuideEng/12_15_connectivity_test.png) connectivity Test işlemi tamamlanmıştır.
 
 
 
@@ -223,30 +223,30 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1. Yeni bir repo oluşturmak için, *"Machines"* sekmesinden eklemiş olduğunuz *"Machine"* seçin **'+' Create Repo** butonuna basın (Resim13)
 
-![Resim 13](/assets/images/UserGuideEng/13_CreateRepoAdd.png) (Resim 13)
+![Resim 13](/assets/images/UserGuideEng/13_create_repo_add.png) (Resim 13)
 
 2. Açılan formdan zorunlu alanları doldurun: (Resim 14)
 
    - **Şablon seçmeyi unutmayın !**
 3. **Create** butonuna basın.  
-![Resim 14](/assets/images/UserGuideEng/14_RepoForm.png)  (Resim 14)
+![Resim 14](/assets/images/UserGuideEng/14_repo_form.png)  (Resim 14)
 4. Açılan pencerede **Completed** mesajını gördükten sonra **Close** butonuna basın. (Resim 15)  
-![Resim 15](/assets/images/UserGuideEng/15_RepoComplate.png)  (Resim 15)
+![Resim 15](/assets/images/UserGuideEng/15_repo_complete.png)  (Resim 15)
 5. Repo oluşturma işlemi tamamlanmıştır. (Resim 16)
-![Resim 16](/assets/images/UserGuideEng/16_Repolist.png) (Resim 16)
+![Resim 16](/assets/images/UserGuideEng/16_repo_list.png) (Resim 16)
 ---
 
 #### b) Repo Fork İşlemi
 
 1. Oluşturulan repoyu seçin.  
 2. **fx** butonuna tıklayın.  (Resim 17)
- ![Resim 17](/assets/images/UserGuideEng/17_0ForkButon.png) (Resim 17)
+ ![Resim 17](/assets/images/UserGuideEng/17_0_fork_button.png) (Resim 17)
 3. Açılan menüden **fork** butonuna basın.   (Resim 17)
 
 4. Açılan formdan **Add to Queue** butonuna basın (Resim 17.1)
- ![Resim 17.1](/assets/images/UserGuideEng/17_1ForkForm.png) (Resim 17.1)
+ ![Resim 17.1](/assets/images/UserGuideEng/17_1_fork_form.png) (Resim 17.1)
 5. **Completed** mesajını gördüğünüzde *forklama* işlemi tamamlanmıştır. **Close** ile pencereyi kapatın. (Resim 18)
-![Resim 18](/assets/images/UserGuideEng/18_RepoComplated.png) (Resim 18)
+![Resim 18](/assets/images/UserGuideEng/18_repo_completed.png) (Resim 18)
 ---
 
 #### c) Repo “Up” İşlemi
@@ -254,18 +254,18 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 1. “Up” yapmak istediğiniz repoyu seçin.  (Resim 19)  
 2. **fx** tuşuna basın.  
 3. **up** tuşuna basın.  
-![Resim 19](/assets/images/UserGuideEng/19_RepoUp.png) (Resim 19)
+![Resim 19](/assets/images/UserGuideEng/19_repo_up.png) (Resim 19)
 4. “Completed” mesajını gördüğünüzde işlem tamamlanmıştır. (Resim 20)
-![Resim 20](/assets/images/UserGuideEng/20_RepoUpComplate.png) (Resim 20)
+![Resim 20](/assets/images/UserGuideEng/20_repo_up_complete.png) (Resim 20)
 ---
 #### d) Repo “Down” İşlemi
 
 1. “Down” yapmak istediğiniz repoyu seçin.  (Resim 21)  
 2. **fx** tuşuna basın.  
 3. **down** tuşuna basın.  
-![Resim 21](/assets/images/UserGuideEng/21_DownButon.png) (Resim 21)
+![Resim 21](/assets/images/UserGuideEng/21_down_button.png) (Resim 21)
 4. “Completed” mesajını gördüğünüzde işlem tamamlanmıştır. (Resim 22)
-![Resim 22](/assets/images/UserGuideEng/22_DownComplated.png) (Resim 22)
+![Resim 22](/assets/images/UserGuideEng/22_down_completed.png) (Resim 22)
 ---
 
 #### e) Repo “deploy” İşlemi
@@ -274,15 +274,15 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 2. **fx** tuşuna basın.  
 3. **deploy** tuşuna basın. (Resim 23)  
 
-![Resim 23](/assets/images/UserGuideEng/23_DeployButon1.png) (Resim 23)
+![Resim 23](/assets/images/UserGuideEng/23_deploy_button.png) (Resim 23)
 
 4. Açılan formdan zorunlu alanları doldurun ve **Add to Queue** tuşuna basın. (Resim 24)   
 
-![Resim 24](/assets/images/UserGuideEng/24_DeployForm.png) (Resim 24)
+![Resim 24](/assets/images/UserGuideEng/24_deploy_form.png) (Resim 24)
 
 5. “Completed” mesajını gördüğünüzde işlem tamamlanmıştır. (Resim 25)
 
-![Resim 25](/assets/images/UserGuideEng/25_DeployComplated.png) (Resim 25)
+![Resim 25](/assets/images/UserGuideEng/25_deploy_completed.png) (Resim 25)
 
 ---
 
@@ -290,13 +290,13 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1. **“backup”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **backup** butonuna tıklayın. (Resim 26) 
-![Resim 26](/assets/images/UserGuideEng/26_BackupButon.png) (Resim 26)
+![Resim 26](/assets/images/UserGuideEng/26_backup_button.png) (Resim 26)
 3. Açılan formdan zorunlu alanları doldurun ve **Add to Queue** tuşuna basın. 
-![Resim 27](/assets/images/UserGuideEng/27_BackupForm.png) 
+![Resim 27](/assets/images/UserGuideEng/27_backup_form.png) 
    
  
 4. “Completed” mesajı geldiğinde işlem tamamlanmıştır. (Resim 28)
-![Resim 28](/assets/images/UserGuideEng/28_BackupComplated.png) (Resim 28)
+![Resim 28](/assets/images/UserGuideEng/28_backup_completed.png) (Resim 28)
 
 ---
 
@@ -304,13 +304,13 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1. **“templates”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **templates** butonuna tıklayın. (Resim 29) 
-![Resim 29](/assets/images/UserGuideEng/29_TemplatesButon.png) (Resim 29)
+![Resim 29](/assets/images/UserGuideEng/29_templates_button.png) (Resim 29)
 3. Açılan formdan bir **"templates"** seçin ve **Add to Queue** tuşuna basın.(Resim 30)
-![Resim 30](/assets/images/UserGuideEng/30_TemplatedForm.png) 
+![Resim 30](/assets/images/UserGuideEng/30_templates_form.png) 
    
  
 4. “Completed” mesajı geldiğinde işlem tamamlanmıştır. (Resim 31)
-![Resim 31](/assets/images/UserGuideEng/31_TemplatedComplated.png) (Resim 31)
+![Resim 31](/assets/images/UserGuideEng/31_templates_completed.png) (Resim 31)
 
 ---
 
@@ -319,24 +319,24 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1. **“unmount”** işlemi yapılacak repoyu seçin.  
 2. **fx--> advanced** butonuna basın ve açılan menüden **unmount** butonuna tıklayın. (Resim 32) 
-![Resim 32](/assets/images/UserGuideEng/32_UnmountButon.png) (Resim 32)
+![Resim 32](/assets/images/UserGuideEng/32_unmount_button.png) (Resim 32)
   
    
 3. “Completed” mesajı geldiğinde işlem tamamlanmıştır. (Resim 33)
-![Resim 33](/assets/images/UserGuideEng/33_UnmoundComplated.png) (Resim 33)
+![Resim 33](/assets/images/UserGuideEng/33_unmount_completed.png) (Resim 33)
 
 ---
 #### i) Repo “expand” İşlemi
 
 1. **“expand”** işlemi yapılacak repoyu seçin.  
 2. **fx--> advanced** butonuna basın ve açılan menüden **expand** butonuna tıklayın. (Resim 34) 
-![Resim 34](/assets/images/UserGuideEng/34_ExpandButon.png) (Resim 34)
+![Resim 34](/assets/images/UserGuideEng/34_expand_button.png) (Resim 34)
  
  3. Açılan formdan  **"New Size"** alanını doldurun ve **Add to Queue** tuşuna basın.(Resim 35)
-![Resim 35](/assets/images/UserGuideEng/35_ExpandForm.png) (Resim 35)
+![Resim 35](/assets/images/UserGuideEng/35_expand_form.png) (Resim 35)
 
 4. “Completed” mesajı geldiğinde işlem tamamlanmıştır. (Resim 36)
-![Resim 36](/assets/images/UserGuideEng/36_ExpandComplated.png) (Resim 36)
+![Resim 36](/assets/images/UserGuideEng/36_expand_completed.png) (Resim 36)
 
 ---
 
@@ -344,10 +344,10 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1. **“rename”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **rename** butonuna tıklayın. (Resim 37) 
-![Resim 37](/assets/images/UserGuideEng/37_RenameButon.png) (Resim 37)
+![Resim 37](/assets/images/UserGuideEng/37_rename_button.png) (Resim 37)
  
  3. Açılan formu doldurun ve **save** tuşuna basın.(Resim 38)
-![Resim 38](/assets/images/UserGuideEng/38_RenameForm.png) 
+![Resim 38](/assets/images/UserGuideEng/38_rename_form.png) 
 (Resim 38)
 
 4. “rename” işlemi tamamlanmıştır. 
@@ -357,7 +357,7 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 1. **“delete repository”** işlemi yapılacak repoyu seçin.  
 2. **fx** butonuna basın ve açılan menüden **delete repository** butonuna tıklayın. (Resim 40) 
-![Resim 40](/assets/images/UserGuideEng/40_DeleteRopoButon.png) (Resim 40)
+![Resim 40](/assets/images/UserGuideEng/40_delete_repo_button.png) (Resim 40)
  
 3. Açılan formda **Delete** butonuna basın. Silme işlemi tamamlanmıştır.
 
@@ -365,9 +365,9 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 #### k) Repo “repo View Details” İşlemi
 
 1. Bir repo seçin ve   **View Details** butonuna basın. (Resim 42) 
-![Resim 42](/assets/images/UserGuideEng/42_RepoWievButon.png) (Resim 42)
+![Resim 42](/assets/images/UserGuideEng/42_repo_view_button.png) (Resim 42)
 2. Seçilen repo ile ilgili bilgiler açılacaktır. (Resim 43) 
-![Resim 43](/assets/images/UserGuideEng/43_RepoDetailsView.png) (Resim 43)
+![Resim 43](/assets/images/UserGuideEng/43_repo_details_view.png) (Resim 43)
  
 ---
 
@@ -375,12 +375,12 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
 
 #### a) desktop-app
 
-1. desktop-app işlemi  için  Local butonuna basın (Resim 49)![Resim 49](/assets/images/UserGuideEng/49_RepoConnecionLocal.png)(Resim 49)
+1. desktop-app işlemi  için  Local butonuna basın (Resim 49)![Resim 49](/assets/images/UserGuideEng/49_repo_connection_local.png)(Resim 49)
 
 2. Açılan listeden **desktop-app** butonuna basın (Resim 50)
-![Resim 50](/assets/images/UserGuideEng/50_0RepoConnection.png) (Resim 50)
+![Resim 50](/assets/images/UserGuideEng/50_0_repo_connection.png) (Resim 50)
 3. Açılan sayfadan **Open xdg-open** butonuna basın (Resim 50.1)
-![Resim 50.1](/assets/images/UserGuideEng/50_1DesktopOpenPage.png) (Resim 50.1)
+![Resim 50.1](/assets/images/UserGuideEng/50_1_desktop_open_page.png) (Resim 50.1)
 
 ---
 ## 2.3 Settings
@@ -388,11 +388,11 @@ Bu bölüm, **Machines**, **Repo** ve **Storage** kaynaklarının eklenmesi, lis
  
 a) **Profile Şifre değiştirme İşlemi** 
    1- **Setting->Profiles**  butonuna tıklayın.(Resim 55)
-   ![Resim 55](/assets/images/UserGuideEng/55_0ProfilesButon.png)  (Resim 55)
+   ![Resim 55](/assets/images/UserGuideEng/55_0_profiles_button.png)  (Resim 55)
    2- Açılan sayfadan *Change Password* butonuna tıklayın (Resim 55.1)
-    ![Resim 55.1](/assets/images/UserGuideEng/55_1ProfilesChangeButon.png)  (Resim 55.1)
+    ![Resim 55.1](/assets/images/UserGuideEng/55_1_profiles_change_button.png)  (Resim 55.1)
    3- Açılan formdan yeni Password girdikten sonra *Change Password* butonuna tıklayın (Resim 55.2)
-    ![Resim 55.2](/assets/images/UserGuideEng/55_2ProfilesChangeForm.png)  (Resim 55.2)
+    ![Resim 55.2](/assets/images/UserGuideEng/55_2_profiles_change_form.png)  (Resim 55.2)
 
 ---
 
@@ -401,9 +401,9 @@ a) **Profile Şifre değiştirme İşlemi**
 
  a) **Storage İşlemi** 
    1- **Storage** menüsü altındaki *Add Storage* butonuna tıklayın. (Resim 56)
-   ![Resim 56](/assets/images/UserGuideEng/56_0StrogeAddButon.png)  (Resim 56)
+   ![Resim 56](/assets/images/UserGuideEng/56_0_storage_add_button.png)  (Resim 56)
    2- Açılan formdan zorunlu alanları doldurun.*Create* butonuna basın. (Resim 56.1)
-    ![Resim 56.1](/assets/images/UserGuideEng/56_1StrogeForm.png)  (Resim 56.1) 
+    ![Resim 56.1](/assets/images/UserGuideEng/56_1_storage_form.png)  (Resim 56.1) 
 
 ---
 
@@ -413,34 +413,34 @@ a) **Profile Şifre değiştirme İşlemi**
  ### 2.5.1 Credentials İşlemi 
    a)- **Edit İşlemi**
    1-Credentials  menüsü altındaki bir repo seçin ve *Edit* butonuna tıklayın.(Resim 57)
-   ![Resim 57](/assets/images/UserGuideEng/57_0Credentials.png)  (Resim 57)
+   ![Resim 57](/assets/images/UserGuideEng/57_0_credentials.png)  (Resim 57)
    2- Açılan formdan değişiklikeri yaptıktan sonra *Save* butonuna basın. (Resim 57.1)
-    ![Resim 57.1](/assets/images/UserGuideEng/57_1CredentialsForm.png)  (Resim 57.1) 
+    ![Resim 57.1](/assets/images/UserGuideEng/57_1_credentials_form.png)  (Resim 57.1) 
    b- **Trace İşlemi** 
    1-Credentials menüsü altındaki bir repo seçin ve *Trace* butonuna tıklayın.(Resim 57.2)
-   ![Resim 57](/assets/images/UserGuideEng/57_2_Credentials_TraceButon.png)  (Resim 57.2)
+   ![Resim 57](/assets/images/UserGuideEng/57_2_credentials_trace_button.png)  (Resim 57.2)
    
    2- Açılan sayfada seçilen reponun *Denetim Geçmişi* - listelenmiştir. *Export* butonuna tıklayıp istenilen formatta listeyi dışa aktarımını sağlayın. (Resim 57.3)
-   ![Resim 57](/assets/images/UserGuideEng/57_3CredentialsListeEXport.png)  (Resim 57.3)
+   ![Resim 57](/assets/images/UserGuideEng/57_3_credentials_list_export.png)  (Resim 57.3)
 
 c- **Delete İşlemi** 
    1-Credentials menüsü altındaki bir repo seçin ve *Delete* butonuna tıklayın.(Resim 57.4)
-   ![Resim 57.4](/assets/images/UserGuideEng/57_4CredentalsDelete.png)  (Resim 57.4)
+   ![Resim 57.4](/assets/images/UserGuideEng/57_4_credentials_delete.png)  (Resim 57.4)
    
    2- Açılan sayfadan  *Delete* - butonuna basın.Silme işlemi tamamlanmıştır. (Resim 57.5)
-   ![Resim 57.5](/assets/images/UserGuideEng/57_5CredentalsDelete.png)  (Resim 57.5)
+   ![Resim 57.5](/assets/images/UserGuideEng/57_5_credentials_delete_confirm.png)  (Resim 57.5)
 
 ## 2.6.1 Queue İşlemi 
    1-Queue menüsüne tıklayın.(Resim 58)
-   ![Resim 58](/assets/images/UserGuideEng/58_0QueueButon.png)  (Resim 58)
+   ![Resim 58](/assets/images/UserGuideEng/58_0_queue_button.png)  (Resim 58)
    2- Açılan sayfadan *export*  butonuna tıklayın.Açılan menüden dışa aktarım için format seçin.Aktarım işlemi tamamlanmıştır. (Resim 58.1)
-    ![Resim 58.1](/assets/images/UserGuideEng/58_1QueuExport.png)  (Resim 58.1) 
+    ![Resim 58.1](/assets/images/UserGuideEng/58_1_queue_export.png)  (Resim 58.1) 
 ## 2.7.1 Audit İşlemi 
    
    1-Audit menüsüne tıklayın.(Resim 59)
-   ![Resim 59](/assets/images/UserGuideEng/59_0AuditButonList.png)  (Resim 59)
+   ![Resim 59](/assets/images/UserGuideEng/59_0_audit_list.png)  (Resim 59)
    2- Açılan sayfadan *export*  butonuna tıklayın.Açılan menüden dışa aktarım için format seçin.Aktarım işlemi tamamlanmıştır. (Resim 58.1)
-    ![Resim 59.1](/assets/images/UserGuideEng/59_1AuditButonList.png)  (Resim 59.1) 
+    ![Resim 59.1](/assets/images/UserGuideEng/59_1_audit_export.png)  (Resim 59.1) 
 
 ---
 **© 2025 Rediacc Platformu – Tüm Hakları Saklıdır.**
