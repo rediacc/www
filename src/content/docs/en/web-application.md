@@ -81,43 +81,71 @@ Giriş işleminden sonra karşınıza çıkan ekran temel olarak **Organization*
 ![Resim 8](/assets/images/UserGuideEng/8_UserList.png)
 (Resim 8)
 
-  2.1.1 **Permissions** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Permissions"** butonuna tıklayın.   (Resim 6.1)
+  2.1.2. **Permissions** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Permissions"** butonuna tıklayın.   (Resim 6.1)
 ![Resim 6.1](/assets/images/UserGuideEng/6_1UsersPermissions.png)  
 (Resim 6.1)
 
-2.1.2. Açılan ekrandan bir *Permissions Grup* seçin ve **Assign** butonuna basın. Permissions işlemi tamamlanmıştır.(Resim 6.2)
+2.1.3. Açılan ekrandan bir *Permissions Grup* seçin ve **Assign** butonuna basın. Permissions işlemi tamamlanmıştır.(Resim 6.2)
 ![Resim 6.2](/assets/images/UserGuideEng/6_2_UserPermissionsForm.png) 
 (Resim 6.2)
 
- 2.2.1 **Users Activate** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Activate"** butonuna tıklayın.   (Resim 6.3)
+ 2.1.4 **Users Activate** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Activate"** butonuna tıklayın.   (Resim 6.3)
 
 ![Resim 6.3](/assets/images/UserGuideEng/6_3_UsersActivition.png)  
 (Resim 6.3)
 
-2.2.2. Açılan ekrandan bir *General.Yes*  butonuna basın. Activate işlemi tamamlanmıştır.(Resim 6.4)
+2.1.5. Açılan ekrandan bir *General.Yes*  butonuna basın. Activate işlemi tamamlanmıştır.(Resim 6.4)
 ![Resim 6.4](/assets/images/UserGuideEng/6_4_UsersActivatiYes.png) 
 (Resim 6.4)
 
- 2.3.1 **Users Trace** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Trace"** butonuna tıklayın.   (Resim 6.5)
+ 2.1.6 **Users Trace** işlemi için **Organization** altındaki **Users** sekmesine tıklayın.Bir kullanıcı seçtikten sonra **"Trace"** butonuna tıklayın.   (Resim 6.5)
 
 ![Resim 6.5](/assets/images/UserGuideEng/6_5_UsersTrace.png)  
 (Resim 6.5)
 
-2.3.2. Açılan ekrandan bir *Export*  butonu altında istediğimiz formatı tıkladığımızda *Trace* işlemi tamamlanmıştır.(Resim 6.6)
+2.1.7. Açılan ekrandan bir *Export*  butonu altında istediğimiz formatı tıkladığımızda *Trace* işlemi tamamlanmıştır.(Resim 6.6)
 ![Resim 6.6](/assets/images/UserGuideEng/6_6_UserTaceExport.png) 
 (Resim 6.6)
 
-3.1.1  **'Teams'** işlemi için  **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
+---
+
+## 2.2. Organization--> Teams
+2.2.1  **'Teams'** işlemi için  **Create Teams** butonuna tıklayın ve açılan Formu doldurun:   (Resim 10)
 
 ![Resim 10](/assets/images/UserGuideEng/10_TeamsCreate.png) 
 ( Resim 10)
-3.1.2 *Create* butonuna basarak takım oluşturun.
+2.2.2 *Create* butonuna basarak takım oluşturun.
 
-3.2.1  **'Teams Edit'** işlemi için bir **Teams** seçin  **Edit** butonuna tıklayın ve açılan Formda değişiklikleri yaptıktan sonra *Save* butonuna tıklayın.Edit işlemi tamamlanmıştır. (Resim 10.1)
+2.2.3  **'Teams Edit'** işlemi için bir **Teams** seçin  **Edit** butonuna tıklayın ve açılan Formda değişiklikleri yaptıktan sonra *Save* butonuna tıklayın.Edit işlemi tamamlanmıştır. (Resim 10.1)
 
 ![Resim 10.1](/assets/images/UserGuideEng/10_1TeamsEditForm.png) 
 ( Resim 10.1)
 
+2.2.4  **Teams Members** işlemi için bir **Teams** seçin  **Members** butonuna tıklayın ve açılan Formda *Add Member* sekmesine tıklayın. Bir kullanıcı seçtikten sonra *Add Member '+' * tuşuna basın. (Resim 10.2)
+
+![Resim 10.2](/assets/images/UserGuideEng/10_2TeamsMembersForm.png) 
+( Resim 10.2)
+
+2.2.5  **Teams Trace** işlemi için bir **Teams** menüsü altınta  **Trace** butonuna tıklayın ve açılan Formdan *Export* butonuna basın ve liste almak istediğiniz formata tıklayın.*Trace işlemi* tamamlanmıştır. (Resim 10.3)
+
+![Resim 10.3](/assets/images/UserGuideEng/10_3TeamsTrace.png) 
+( Resim 10.3)
+
+2.2.6  **Teams Delete** işlemi için bir **Teams** menüsü altınta bir **Teams** seçin ve  *Delete* butonuna basın ve açılan formdan *general.yes* butonuna basın silme işlemi tamamlanmıştır. (Resim 10.4)
+
+![Resim 10.4](/assets/images/UserGuideEng/10_4TeamsDelete.png) 
+( Resim 10.4)
+## 2.3. Organization--> Access
+
+2.3.1  **Create Permission Group** işlemi için **Access** menüsü tıklayın ve açılan sayfanın sağ üst köşesindeki **+** simgesine tıklayın *(Create Group)*.Açılan formdan *Grup adını yazın* ve *Ok* butonuna basın. (Resim 10.5)
+
+![Resim 10.5](/assets/images/UserGuideEng/10_5CreateAccess.png) 
+( Resim 10.5)
+
+2.3.2  **Permission** işlemi için **Access** menüsü altınta bir **Users** seçin ve  *Permission* butonuna basın.Açılan formda seçili User'e ait yetkiler listelenecektir.İstediğiniz yetkiyi seçin ve *Remove* butonuna basın *Permission* işlemi tamamlanmıştır. (Resim 10.5.1)
+
+![Resim 10.5.1](/assets/images/UserGuideEng/10_5Access_Permission.png) 
+( Resim 10.5.1)
 
 ---
 ### 2.2 Machines
