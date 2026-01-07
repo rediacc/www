@@ -421,7 +421,7 @@ Repositories are isolated environments for storing code, data, or applications. 
 | `vault` | string | No | - | JSON configuration (size, type, settings) | {"size": "10G", "type": "docker"} |
 | `parentRepo` | string | No | - |  |  |
 | `repository` | string | Yes | - |  |  |
-| `repoGuid` | string | Yes | - |  |  |
+| `repositoryGuid` | string | Yes | - |  |  |
 
 
 #### Examples

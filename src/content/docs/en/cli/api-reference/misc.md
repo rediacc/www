@@ -195,7 +195,7 @@ promote-repository-to-grand command
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
 | `team` | string | Yes | - |  |  |
-| `repoName` | string | Yes | - |  |  |
+| `repositoryName` | string | Yes | - |  |  |
 
 
 #### Examples
@@ -216,7 +216,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/PromoteRepositoryToGra
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{
     "team": "example-team",
-    "repoName": "example-repo_name"
+    "repositoryName": "example-repository_name"
 }'
 ```
 

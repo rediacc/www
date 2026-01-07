@@ -144,7 +144,7 @@ language: ru
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ### Загрузка файлов
@@ -152,7 +152,7 @@ language: ru
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup
 ```
 
@@ -162,7 +162,7 @@ language: ru
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --mirror \
   --confirm
 ```
@@ -172,7 +172,7 @@ language: ru
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup \
   --verify
 ```
@@ -198,7 +198,7 @@ language: ru
 ```bash
 ./rediacc term \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ## Файлы конфигурации

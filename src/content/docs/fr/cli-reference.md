@@ -144,7 +144,7 @@ Supprime le jeton d'authentification stocké.
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ### Télécharger des fichiers
@@ -152,7 +152,7 @@ Supprime le jeton d'authentification stocké.
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup
 ```
 
@@ -162,7 +162,7 @@ Supprime le jeton d'authentification stocké.
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --mirror \
   --confirm
 ```
@@ -172,7 +172,7 @@ Supprime le jeton d'authentification stocké.
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup \
   --verify
 ```
@@ -198,7 +198,7 @@ Supprime le jeton d'authentification stocké.
 ```bash
 ./rediacc term \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ## Fichiers de configuration

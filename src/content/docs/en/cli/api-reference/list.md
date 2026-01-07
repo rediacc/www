@@ -925,7 +925,7 @@ rediacc list team-repositories dev-team
 List all repositories in dev-team
 
 ```bash
-rediacc list team-repositories prod --output json | jq '.[].repoName'
+rediacc list team-repositories prod --output json | jq '.[].repositoryName'
 ```
 Extract repository names from production team
 

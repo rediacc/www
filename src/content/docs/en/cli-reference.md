@@ -143,7 +143,7 @@ Removes stored authentication token.
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ### Download Files
@@ -151,7 +151,7 @@ Removes stored authentication token.
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup
 ```
 
@@ -161,7 +161,7 @@ Removes stored authentication token.
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --mirror \
   --confirm
 ```
@@ -171,7 +171,7 @@ Removes stored authentication token.
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup \
   --verify
 ```
@@ -197,7 +197,7 @@ Removes stored authentication token.
 ```bash
 ./rediacc term \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ## Configuration Files

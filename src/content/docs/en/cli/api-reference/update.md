@@ -372,7 +372,7 @@ Changes the name of an existing repository within a team. Repository data and co
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
 | `team` | string | Yes | - | Team that owns the repository | dev-team |
-| `currentRepoName` | string | Yes | - |  |  |
+| `currentRepositoryName` | string | Yes | - |  |  |
 | `newName` | string | Yes | - | New repository name (unique within team) | new-app |
 
 
@@ -394,7 +394,7 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateRepositoryName" 
   -H "Rediacc-RequestToken: YOUR_TOKEN_HERE" \
   -d '{
     "team": "dev-team",
-    "currentRepoName": "example-current_repo_name",
+    "currentRepositoryName": "example-current_repository_name",
     "newName": "new-app"
 }'
 ```
@@ -695,4 +695,3 @@ curl -X POST "https://www.rediacc.com/api/StoredProcedure/UpdateTeamName" \
 #### Success Message
 
 `Successfully updated team name: {name} → {new_name}`
-

@@ -144,7 +144,7 @@ Elimina el token de autenticación almacenado.
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ### Descargar archivos
@@ -152,7 +152,7 @@ Elimina el token de autenticación almacenado.
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup
 ```
 
@@ -162,7 +162,7 @@ Elimina el token de autenticación almacenado.
 ./rediacc sync upload \
   --local ./src \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --mirror \
   --confirm
 ```
@@ -172,7 +172,7 @@ Elimina el token de autenticación almacenado.
 ```bash
 ./rediacc sync download \
   --machine prod-01 \
-  --repo webapp \
+  --repository webapp \
   --local ./backup \
   --verify
 ```
@@ -198,7 +198,7 @@ Elimina el token de autenticación almacenado.
 ```bash
 ./rediacc term \
   --machine prod-01 \
-  --repo webapp
+  --repository webapp
 ```
 
 ## Archivos de configuración
