@@ -24,13 +24,13 @@
     "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "^3.6.0",
     "@types/react": "^19.1.15",
-    "@types/react-dom": "^19.1.9",
+    "@types/react-dom": "^19.2.3",
     "astro": "^5.14.1",
     "astro-seo": "^0.8.4",
     "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
