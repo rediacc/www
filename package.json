@@ -20,12 +20,12 @@
     "i18n:check-hashes": "node scripts/check-translation-hashes.js"
   },
   "dependencies": {
-    "@astrojs/react": "^4.4.0",
-    "@astrojs/rss": "^4.0.13",
-    "@astrojs/sitemap": "^3.6.0",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/rss": "^4.0.14",
+    "@astrojs/sitemap": "^3.6.1",
     "@types/react": "^19.1.15",
     "@types/react-dom": "^19.1.9",
-    "astro": "^5.14.1",
+    "astro": "^5.16.8",
     "astro-seo": "^0.8.4",
     "fuse.js": "^7.1.0",
     "gray-matter": "^4.0.3",
