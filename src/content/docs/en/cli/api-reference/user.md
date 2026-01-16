@@ -28,14 +28,14 @@ Activate a user account
 
 #### Details
 
-Activates a newly created user account using an activation code. Users must be activated before they can log in. Default code is 111111 for testing.
+Activates a newly created user account using an activation code. Users must be activated before they can log in. Default code is AAA111 for testing.
 
 #### Parameters
 
 | Parameter | Type | Required | Default | Description | Example |
 |-----------|------|----------|---------|-------------|---------|
 | `email` | string | Yes | - | Email address of user to activate | newuser@organization.com |
-| `code` | string | No | - | Activation code (default: 111111) | 123456 |
+| `code` | string | No | - | Activation code (default: AAA111) | ABC123 |
 
 
 #### Examples
